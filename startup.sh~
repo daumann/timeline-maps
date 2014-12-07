@@ -1,0 +1,8 @@
+sudo /etc/init.d/postgresql start
+Validating models...
+
+0 errors found
+December 02, 2014 - 16:15:33
+Django version 1.6.5, using settings 'umap.settings.local'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

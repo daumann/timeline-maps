@@ -1,0 +1,49 @@
+{% load compress %}
+{% compress js %}
+    <script src="{{ STATIC_URL }}staticReqs/leaflet-src.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/Leaflet.Editable.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet-hash.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/Leaflet.i18n.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/Leaflet.EditInOSM.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/Control.MiniMap.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/csv2geojson.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/togeojson.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/osmtogeojson.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/Control.Loading.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet.markercluster-src.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet.draw-src.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet.measurecontrol.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet.contextmenu-src.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet.label-src.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/GeoRSSToGeoJSON.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/leaflet-heat.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/togpx.js"></script>
+    <script src="{{ STATIC_URL }}staticReqs/tokml.js"></script>
+{% endcompress %}
+{% if locale %}
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/locale/{{ locale }}.js"></script>
+{% endif %}
+{% compress js %}
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.core.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.popup.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.xhr.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.forms.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.icon.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.features.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.layer.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.controls.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.slideshow.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.tableeditor.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/leaflet.storage.js"></script>
+    <script src="{{ STATIC_URL }}storage/contrib/js/storage.ui.default.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+    <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/vis.js"></script>
+<!--    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet-src.js"></script>   -->
+
+<script src="{{ STATIC_URL }}staticLeafletStorage/src/js/LeafletPlayback.js"></script>
+<script src="{{ STATIC_URL }}staticLeafletStorage/src/js/demo-tracks.js"></script>
+<script src="{{ STATIC_URL }}staticLeafletStorage/src/js/example_1.js"></script>
+    
+ 
+{% endcompress %}

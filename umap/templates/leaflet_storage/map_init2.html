@@ -1,0 +1,30 @@
+{% load leaflet_storage_tags %}
+    <div id="map" style="width: 100%;position: absolute;top: 0;/* bottom: 0; */left: 0;right: 0;bottom: 120px;"></div>
+    <div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
+    <script type="text/javascript">
+        var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
+
+        $( "#timeline" ).mouseup(function(event) {
+
+            if (isdragging) return;
+            console.debug("!mouseup");
+            //      if (staticCore.eventParams.dragging) return;
+
+            var deltaX = event.clientX,
+                    x = deltaX,
+
+                    time = staticCore.body.util.toTime(x);
+
+            staticCore.setCustomTime(time);
+
+            // fire a timechange event
+            staticCore.body.emitter.emit('timechange', {
+                time: new Date(staticCore.customTime.valueOf())
+            });
+
+
+        });
+
+
+
+    </script>
