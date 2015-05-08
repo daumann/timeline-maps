@@ -1,0 +1,44 @@
+#824 - Mariquita
+
+culture = guajiro
+religion = south_american
+capital = "Mariquita"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = andean
+discovered_by = south_american
+
+1537.1.1   = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 420
+		culture = castillian
+		religion = catholic
+		trade_goods = fur
+	     } # Gonzalo Jimanez de Quesada
+1550.1.1   = { citysize = 1540  }
+1562.1.1   = { add_core = SPA }
+1600.1.1   = { citysize = 1720 }
+1650.1.1   = { citysize = 2540 }
+1700.1.1   = { citysize = 3222 }
+1750.1.1   = { citysize = 4650 }
+1800.1.1   = { citysize = 7819 }
+1810.7.20  = {	owner = COL
+		controller = COL
+		add_core = COL
+	     } # Colombia declares independence
+1819.8.7   = { remove_core = SPA } # Colombia's independence is recongnized
+
+1849.10.12 = { capital = "Manizales" }
+1850.1.1   = { citysize = 16000 }
+1900.1.1   = { citysize = 60000 }
+1950.1.1   = { citysize = 200000 }
+2005.1.1   = { citysize = 438587 }
+
+
+

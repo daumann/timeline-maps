@@ -1,0 +1,39 @@
+newEntry2752 - Carmen.txt
+#779 - Serranos
+
+culture = het
+religion = south_american
+capital = "Carmen"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10 
+native_ferocity = 3
+native_hostileness = 0	
+discovered_by = south_american
+
+1520.1.1  = { discovered_by = SPA } # Ferdinand Magellan
+1779.1.1  = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+	citysize = 450
+	culture = castillian
+	religion = catholic
+	trade_goods = grain
+}
+1816.7.9  = {	owner = LAP
+		controller = LAP
+		add_core = LAP
+		remove_core = SPA
+	    } # Argentina is declared independent
+
+1828.1.1   = { capital = "Bahia Blanca" }
+1850.1.1   = { citysize = 15000 }
+1900.1.1   = { citysize = 50000 }
+1950.1.1   = { citysize = 150000 }
+2010.1.1   = { citysize = 301572 }
+
+
+

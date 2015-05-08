@@ -1,0 +1,134 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -2
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 0
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = kannada
+religion = hinduism
+technology_group = indian
+capital = 2211	# Banavasi
+
+345.1.1 = {
+	monarch = {
+		name = "Mayurasharma"
+		dynasty = "Kadamba"
+		adm = 3
+		dip = 3
+		mil = 1
+	}
+}
+
+365.1.1 = {
+	monarch = {
+		name = "Kangavarma"
+		dynasty = "Kadamba"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+390.1.1 = {
+	monarch = {
+		name = "Bagitarha"
+		dynasty = "Kadamba"
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+}
+
+415.1.1 = {
+	monarch = {
+		name = "Raghu"
+		dynasty = "Kadamba"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+435.1.1 = {
+	monarch = {
+		name = "Kakusthavarma"
+		dynasty = "Kadamba"
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}
+
+455.1.1 = {
+	monarch = {
+		name = "Santivarma"
+		dynasty = "Kadamba"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+460.1.1 = {
+	monarch = {
+		name = "Mrigeshavarma"
+		dynasty = "Kadamba"
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+480.1.1 = {
+	monarch = {
+		name = "Srivamandhativarma"
+		dynasty = "Kadamba"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+485.1.1 = {
+	monarch = {
+		name = "Ravivarma"
+		dynasty = "Kadamba"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+519.1.1 = {
+	monarch = {
+		name = "Harivarma"
+		dynasty = "Kadamba"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+525.1.1 = {
+	monarch = {
+		name = "Vishnuvarma"
+		dynasty = "Kadamba"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+535.1.1 = {
+	monarch = {
+		name = "Simhavarma"
+		dynasty = "Kadamba"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}

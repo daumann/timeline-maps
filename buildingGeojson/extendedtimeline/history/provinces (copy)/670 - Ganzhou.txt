@@ -1,0 +1,78 @@
+#670 - Ganzhou
+
+owner = HND
+controller = HND
+culture = hakka
+religion = confucianism
+capital = "Ganzhou"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 30140
+add_core = HND
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 7724 }
+200.1.1 = { citysize = 9448 }
+220.1.1 = { owner = WUU controller = WUU add_core = WUU remove_core = HND }
+280.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = WUU }
+300.1.1 = { citysize = 11172 }
+400.1.1 = { citysize = 12897 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 14621 }
+502.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LNG }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+600.1.1 = { citysize = 16345 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 18069 }
+800.1.1 = { citysize = 19794 }
+900.1.1 = { citysize = 21518 }
+907.6.1 = { owner = MNN controller = MNN add_core = MNN remove_core = TNG }
+945.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = MNN }
+975.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = TNG }
+1000.1.1 = { citysize = 23242 }
+1100.1.1 = { citysize = 24967 }
+1200.1.1 = { citysize = 26691 }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA add_core = CXI remove_core = SNG }
+1300.1.1 = { citysize = 28415 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 30140 }
+
+1450.1.1 = { citysize = 32180 }
+1500.1.1 = { citysize = 34550 }
+1550.1.1 = { citysize = 38700 }
+1595.1.1 = { discovered_by = SPA }
+1600.1.1 = { citysize = 41570 }
+1646.10.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+1648.4.15 = { 	controller = MNG 
+		owner = MNG
+		}
+1649.1.1 = {	owner = QNG
+		controller = QNG
+		}
+1650.1.1 = { citysize = 45100 }
+1675.1.1 = { controller = CZH }
+1680.1.1 = { controller = QNG }
+1700.1.1 = { citysize = 49887 }
+1740.1.1 = { tax_assessor = yes }
+1750.1.1 = { citysize = 52138 }
+1800.1.1 = { citysize = 56890 }
+
+1850.1.1   = { citysize = 100000 }
+1900.1.1   = { citysize = 300000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CXI }
+1950.1.1   = { citysize = 900000 }
+2010.1.1   = { citysize = 8969900 }
+
+
+

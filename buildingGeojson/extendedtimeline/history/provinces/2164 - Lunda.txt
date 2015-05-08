@@ -1,0 +1,35 @@
+newEntry2164 - Lunda.txt
+culture = chokwe
+religion = shamanism
+capital = "Matamba"
+native_size = 90
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_ferocity = 4.5
+native_hostileness = 9 
+discovered_by = KON
+discovered_by = LOA
+discovered_by = NDO
+
+1350.1.1 = { owner = NDO controller = NDO add_core = NDO citysize = 1050 trade_goods = slaves }
+
+1450.1.1 = { citysize = 1600 }
+1483.1.1 = { discovered_by = POR } # Diogo Cão
+1500.1.1 = { citysize = 1780 }
+1550.1.1 = { citysize = 2170 }
+1600.1.1 = { citysize = 3500 }
+1650.1.1 = { citysize = 4220 }
+1671.1.1 = { owner = POR controller = POR add_core = POR }
+1700.1.1 = { citysize = 5900 }
+#1744.1.1 Portuguese Invasion resulting in nominal Vassalage.
+1750.1.1 = { citysize = 6500 }
+1800.1.1 = { citysize = 6900 }
+
+1912.8.8   = { religion = catholic capital = "Saurimo" }
+1950.1.1   = { citysize = 10000 }
+1975.11.11 = { owner = AGL controller = AGL add_core = AGL remove_core = POR remove_core = NDO }
+2010.1.1   = { citysize = 100000 }
+
+

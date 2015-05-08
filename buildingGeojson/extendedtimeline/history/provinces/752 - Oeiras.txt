@@ -1,0 +1,34 @@
+newEntry752 - Oeiras.txt
+#752 - Oeiras
+
+culture = ge
+religion = south_american
+capital = "Oeiras"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 8
+discovered_by = south_american
+
+1500.4.23 = { discovered_by = POR }
+1650.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	citysize = 400
+	culture = portugese
+	religion = catholic
+	trade_goods = grain #Cattle
+}
+1695.1.1 = { citysize = 1000 }
+1700.1.1  = { citysize = 2190 }
+1750.1.1  = { citysize = 4070 }
+1800.1.1  = { citysize = 5120 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+
+
+

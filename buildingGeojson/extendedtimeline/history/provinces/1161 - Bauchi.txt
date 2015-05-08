@@ -1,0 +1,40 @@
+newEntry1161 - Bauchi.txt
+#1161 - Bauchi
+
+culture = hausa
+religion = african
+capital = "Bauchi"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 60
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = sub_saharan
+
+1807.1.1 = {
+		owner = SOK
+		controller = SOK
+		add_core = SOK
+		is_city = yes
+		trade_goods = grain
+	   } # The Fulani Empire
+
+1850.1.1   = { citysize = 20000 }
+1890.1.1   = { discovered_by = GBR }
+1900.1.1   = { citysize = 50000 }
+1903.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 150000 }
+1960.10.1  = { owner = NIG controller = NIG add_core = NIG remove_core = GBR remove_core = SOK }
+2004.1.1   = { citysize = 316173 }
+
+
+

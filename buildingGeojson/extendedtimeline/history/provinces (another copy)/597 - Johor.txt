@@ -1,0 +1,59 @@
+#597 - Johor
+
+culture = malayan
+religion = hinduism
+capital = "Johor"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 2
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+native_size = 20
+native_ferocity = 1
+native_hostileness = 5
+
+770.1.1 = { owner = SRI controller = SRI add_core = SRI citysize = 1000 trade_goods = chinaware }
+900.1.1 = { citysize = 1205 }
+1000.1.1 = { citysize = 1411 }
+1100.1.1 = { citysize = 1617 }
+1200.1.1 = { citysize = 1822 religion = sunni }
+1288.1.1 = { owner = SIN controller = SIN add_core = SIN remove_core = SRI }
+1293.1.1 = { owner = MAJ controller = MAJ add_core = MAJ remove_core = SIN }
+1300.1.1 = { citysize = 2028 }
+1324.1.1 = { owner = MLC controller = MLC add_core = MLC remove_core = MAJ }
+1399.1.1 = { citysize = 2234 }
+
+1450.1.1 = { citysize = 2800 }
+1500.1.1 = { citysize = 3200 }
+1509.1.1 = { discovered_by = POR }
+1521.1.1 = { discovered_by = SPA }
+1528.1.1 = {
+		owner = JOH
+		controller = JOH
+		add_core = JOH
+}
+1528.1.1 = { capital = "Kota Tingi" } # Alauddin Riayat Shah moved the capital
+1550.1.1 = { citysize = 4385 }
+1600.1.1 = { citysize = 5700 }
+1650.1.1 = { citysize = 6210 }
+1700.1.1 = { citysize = 7830 }
+1750.1.1 = { citysize = 8500 }
+1800.1.1 = { citysize = 9450 }
+
+1850.1.1   = { citysize = 18000 }
+1885.1.1   = { capital = "Johor Bahru" }
+1900.1.1   = { citysize = 100000 }
+1914.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1942.1.31  = { controller = JAP }
+1945.8.1   = { controller = GBR }
+1946.4.1   = { add_core = MSA remove_core = MLC }
+1950.1.1   = { citysize = 700000 }
+1957.8.31  = { owner = MSA controller = MSA remove_core = GBR }
+1963.9.16  = { owner = MLA controller = MLA add_core = MLA remove_core = MSA }
+2010.1.1   = { citysize = 1463800 }
+
+
+

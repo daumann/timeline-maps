@@ -1,0 +1,199 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = 4
+mercantilism = 0.1
+#offensive_defensive = -4
+#land_naval = -5
+#quality_quantity = -5
+#serfdom_freesubjects = -3
+technology_group = chinese
+religion = buddhism
+primary_culture = mongol
+capital = 2891	# Ulan-Bator
+
+1911.12.29 = {
+	government = theocratic_government
+	monarch = {
+		name = "Bogd Khan"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1924.11.26 = {
+	government = communist_dictatorship
+	religion = secularism
+	monarch = {
+		name = "Navaandorjiin Jadambaa"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+1924.11.29 = {
+	monarch = {
+		name = "Peljidiin Genden"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1927.11.16 = {
+	monarch = {
+		name = "Jamtsangiin Damdinsüren"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1929.1.24 = {
+	monarch = {
+		name = "Khorloogiin Choibalsan"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1930.4.27 = {
+	monarch = {
+		name = "Losolyn Laagan"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1932.7.2 = {
+	monarch = {
+		name = "Anandyn Amar"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1936.3.22 = {
+	monarch = {
+		name = "Dansranbilegiin Dogsom"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1940.7.6 = {
+	monarch = {
+		name = "Gonchigiin Bumtsend"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1953.9.23 = {
+	monarch = {
+		name = "Sükhbaataryn Yanjmaa"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1954.7.7 = {
+	monarch = {
+		name = "Jamsrangiin Sambuu"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1972.5.20 = {
+	monarch = {
+		name = "Tsagaanlamyn Dügersüren"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1972.6.29 = {
+	monarch = {
+		name = "Sonomyn Luvsan"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+1974.6.11 = {
+	monarch = {
+		name = "Yumjaagiin Tsedenbal"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1984.8.23 = {
+	monarch = {
+		name = "Nyamyn Jagvaral"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1984.12.12 = {
+	monarch = {
+		name = "Jambyn Batmönkh"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1990.3.21 = {
+	monarch = {
+		name = "Punsalmaagin Ochirbat"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1992.2.12 = { government = constitutional_republic }
+
+1997.6.20 = {
+	monarch = {
+		name = "Natsagiin Bagabandi"
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}
+
+2005.6.24 = {
+	monarch = {
+		name = "Nambaryn Enkhbayar"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}
+
+2009.6.18 = {
+	monarch = {
+		name = "Tsakhiagiin Elbegdorj"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

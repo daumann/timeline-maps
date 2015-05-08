@@ -1,0 +1,90 @@
+newEntry503 - Kutch.txt
+#503 - Kutch
+
+owner = WSA
+controller = WSA
+culture = gujarati
+religion = hinduism
+capital = "Lakhiyarvira"
+trade_goods = salt
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1142
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+100.1.1 = { citysize = 1285 }
+200.1.1 = { citysize = 1571 }
+300.1.1 = { citysize = 1857 }
+400.1.1 = { citysize = 2142 }
+405.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+489.1.1 = { owner = SND controller = SND add_core = SND remove_core = GUP }
+500.1.1 = { citysize = 2428 }
+600.1.1 = { citysize = 2714 }
+700.1.1 = { citysize = 3000 }
+711.1.1 = { owner = KAT controller = KAT add_core = KAT remove_core = SND }
+767.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = KAT }
+800.1.1 = { citysize = 3285 }
+900.1.1 = { citysize = 3571 }
+1000.1.1 = { citysize = 3857 }
+1036.1.1 = { owner = KAT controller = KAT add_core = KAT remove_core = GUR }
+1100.1.1 = { citysize = 4142 }
+1200.1.1 = { citysize = 4428 }
+1290.1.1 = { owner = DLH controller = DLH add_core = DLH add_core = GUJ }
+1300.1.1 = { citysize = 4714 }
+1347.1.1 = { owner = KAT controller = KAT remove_core = DLH }
+1399.1.1 = { citysize = 5000 }
+
+1450.1.1 = { citysize = 7000 }
+1472.1.1 = {
+	owner = GUJ
+	controller = GUJ
+} #Conquered by Gujarat from Tribes
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 11000 }
+1510.1.1 = { capital = Bhuj }
+1544.1.1 = {
+	owner = BNG
+	controller = BNG
+} #Sur Expansionism
+1545.1.1 = {
+	owner = KAT
+	controller = KAT
+} #Death of Sher Shah Sur
+1550.1.1 = { citysize = 14000 }
+1592.1.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} #Under some form of Mughal control, was raided from time to time by them since 1573
+1600.1.1 = { citysize = 18000 marketplace = yes discovered_by = TUR }
+1650.1.1 = { citysize = 24000 }
+1700.1.1 = { citysize = 26000 }
+1724.1.1 = {
+	owner = KAT
+	controller = KAT
+	remove_core = MUG
+}
+1750.1.1 = { citysize = 27000 }
+1800.1.1 = { citysize = 29000 }
+1819.1.1 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+}
+	   
+1850.1.1  = { citysize = 14420 }
+1900.1.1  = { citysize = 14420 }
+1930.1.1  = { add_core = IND remove_core = KAT }
+1947.8.15 = { owner = IND controller = IND remove_core = GBR capital = "Gandhidham" }
+1950.1.1  = { citysize = 14420 }
+2008.1.1  = { citysize = 289429 }
+
+
+

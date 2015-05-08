@@ -1,0 +1,88 @@
+newEntry701 - Ordos.txt
+#701 - Ordos
+
+owner = SXI
+controller = SXI
+culture = mongol
+religion = buddhism
+capital = "Ordos"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 4
+citysize = 1109
+add_core = SXI
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 1219 }
+200.1.1 = { citysize = 1438 }
+300.1.1 = { citysize = 1657 }
+329.1.1 = { owner = ZAO controller = ZAO add_core = ZAO remove_core = SXI }
+351.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = ZAO }
+400.1.1 = { citysize = 1877 }
+417.1.1 = { owner = XIA controller = XIA add_core = XIA remove_core = QIN }
+431.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = XIA }
+500.1.1 = { citysize = 2096 }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = WEI }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+600.1.1 = { citysize = 2315 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 2534 }
+800.1.1 = { citysize = 2754 }
+900.1.1 = { citysize = 2973 }
+907.6.1 = { owner = LIO controller = LIO add_core = LIO remove_core = TNG }
+1000.1.1 = { citysize = 3192 }
+1100.1.1 = { citysize = 3412 }
+1125.1.1 = { owner = XIA controller = XIA add_core = XIA remove_core = LIO }
+1200.1.1 = { citysize = 3631 }
+1227.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = XIA }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 3850 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1388.1.1 = { owner = MNG controller = MNG add_core = MNG }
+1399.1.1 = { citysize = 4070 }
+
+1449.10.1 = {	owner = OIR
+		controller = OIR }
+1450.1.1 = { citysize = 4500 }
+1454.1.1 = {	owner = KHA
+		controller = KHA
+		add_core = KHA
+		} # Mark?rgis Khan of the Gold Family rises to power after Esen's death.
+1500.1.1 = { citysize = 4987 }
+1552.1.1 = {	owner = KHA
+		controller = KHA
+		add_core = KHA
+	   } # The Oirads are defeated & Altan Khan reunites the the area.
+1543.1.1 = { revolt_risk = 8 } # Fighting broke out between the Mongols
+1550.1.1 = { citysize = 5536 }
+1552.1.1 = { revolt_risk = 0 } # The Oirads are defeated & Mongolia is reunited under Altan Khan
+1586.1.1 = { religion = buddhism } # State religion
+1600.1.1 = { citysize = 6800 }
+1635.4.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = KHA
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+	    } # The Qing Dynasty
+1650.1.1 = { citysize = 7450 }
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+1700.1.1 = { citysize = 8100 }
+1750.1.1 = { citysize = 8653 }
+1800.1.1 = { citysize = 9240 }
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 150000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1950.1.1   = { citysize = 800000 }
+2010.1.1   = { citysize = 1977785 }
+
+
+

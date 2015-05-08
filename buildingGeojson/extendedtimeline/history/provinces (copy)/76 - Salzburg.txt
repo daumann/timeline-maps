@@ -1,0 +1,96 @@
+#76 - Salzburg
+
+owner = ROM
+controller = ROM 
+culture = austrian
+religion = germanic
+capital = "Iuvavum"
+trade_goods = salt
+hre = no
+base_tax = 10
+manpower = 4
+citysize = 1000
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1100 }
+200.1.1 = { citysize = 1300 }
+300.1.1 = { citysize = 1500 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1700 }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO }
+500.1.1 = { citysize = 1900 }
+550.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = GOS capital = "Salzburg" }
+591.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = FRK }
+600.1.1 = { citysize = 2100 }
+623.1.1 = { owner = SAZ controller = SAZ add_core = SAZ remove_core = AVR }
+659.1.1 = { owner = CAR controller = CAR add_core = CAR remove_core = SAZ }
+700.1.1 = { religion = chalcedonism citysize = 2300 }
+745.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = CAR }
+800.1.1 = { citysize = 2500 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 2700 }
+911.11.10 = { owner = BAV controller = BAV add_core = BAV remove_core = FRE }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 2900 }
+1077.1.1 = { fort1 = yes }
+1100.1.1 = { citysize = 3100 }
+1200.1.1 = { citysize = 3400 }
+1278.1.1 = { owner = SLZ controller = SLZ add_core = SLZ remove_core = BAV }
+1300.1.1 = { citysize = 3700 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1   = { citysize = 4500 }
+1500.1.1   = { citysize = 5980 }
+1535.1.1   = { marketplace = yes }
+1550.1.1   = { citysize = 7000 constable = yes }
+1600.1.1   = { citysize = 9500 }
+1628.1.1   = { temple = yes } # The Salzburg Cathedral is rebuilt
+1650.1.1   = { citysize = 11400 }
+1700.1.1   = { citysize = 13600 }
+1720.1.1   = { tax_assessor = yes }
+1731.11.11 = { unrest = 5 } # Leopold von Firmian declared that all Protestants would be banished
+1732.1.1   = { unrest = 0 }
+1750.1.1   = { citysize = 15340 }
+1800.1.1   = { citysize = 17200 }
+1803.1.1   = {	owner = ETR
+		controller = ETR
+		add_core = ETR
+	     } # Given to Ferdinand III of Tuscany
+1805.12.26 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = ETR
+	     } # Treaty of Pressburg, annexed by Habsburg
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1809.10.14 = {	owner = BAV
+		controller = BAV
+		add_core = BAV
+		remove_core = HAB
+	     } # Treaty of Schönbrunn
+1814.5.30  = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = BAV
+	     } # Treaty of Paris
+
+1869.1.1   = { citysize = 27858 }
+1900.1.1   = { citysize = 48945 remove_core = SLZ }
+1934.1.1   = { citysize = 69447 }
+1938.3.12  = { owner = GER controller = GER add_core = GER } # Austria annexed by Nazi Germany
+1945.5.5   = { controller = USA }
+1945.5.8   = { owner = HAB controller = HAB remove_core = GER }
+1951.1.1   = { citysize = 102927 }
+1981.1.1   = { citysize = 139426 }
+2012.1.1   = { citysize = 148521 }
+
+
+

@@ -1,0 +1,42 @@
+newEntry2637 - Mani.txt
+#846 - Yucatan
+
+culture = yucatec
+owner = ITZ
+controller = ITZ
+add_core = ITZ
+is_city = yes
+religion = mesoamerican_religion
+capital = "Uxmal"
+trade_goods = cocoa
+hre = no
+base_tax = 4
+manpower = 1
+add_local_autonomy = 25
+discovered_by = mesoamerican
+
+930.1.1 = { owner = TLT controller = TLT add_core = TLT }
+940.1.1 = { temple = yes } #Kukulcan temple
+970.1.1 = { owner = ITZ controller = ITZ add_core = ITZ remove_core = TLT }
+987.1.1 = { owner = MAY controller = MAY add_core = MAY remove_core = ITZ capital = "Mayapan" }
+1441.1.1 = { owner = XIU controller = XIU add_core = XIU capital = "Mani" }
+
+1542.1.23  = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		citysize = 5250
+		culture = castillian
+		religion = catholic
+		capital = "Merida"
+	    } # the lord of Mani submits peacefully to the Spanish and converts
+1567.1.1  = { add_core = SPA }
+1810.9.16  = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 100000 }
+1950.1.1   = { citysize = 500000 }
+2010.1.1   = { citysize = 970377 }
+
+
+

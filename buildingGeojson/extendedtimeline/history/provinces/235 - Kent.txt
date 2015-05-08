@@ -1,0 +1,89 @@
+newEntry235 - Kent.txt
+#235 - Kent
+
+owner = ROM
+controller = ROM
+culture = briton
+religion = druidism
+hre = no
+base_tax = 6
+trade_goods = grain
+manpower = 2
+capital = "Durovernum Cantiacorum"
+citysize = 1000
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { fort1 = yes }
+200.1.1 = { citysize = 1200 }
+300.1.1 = { citysize = 1400 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1600 }
+420.1.1 = { owner = KEN controller = KEN add_core = KEN remove_core = ROW capital = "Cantwaraburh" culture = anglo_saxon religion = germanic }
+500.1.1 = { citysize = 1800 }
+600.1.1 = { citysize = 2000 }
+616.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 2200 }
+785.1.1 = { owner = MRC controller = MRC add_core = MRC }
+796.1.1 = { owner = KEN controller = KEN remove_core = MRC }
+800.1.1 = { citysize = 2400 }
+867.1.1 = { religion = catholic }
+871.1.1 = { owner = WSX controller = WSX add_core = WSX capital = "Canterbury" }
+900.1.1 = { citysize = 2600 }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG remove_core = WSX }
+1000.1.1 = { citysize = 2800 }
+1050.1.1 = { remove_core = KEN }
+1066.12.25 = { culture = english }
+1070.1.1 = { temple = yes } # Canterbury Cathedral
+1100.1.1 = { citysize = 3100 }
+1200.1.1 = { citysize = 3400 }
+1300.1.1 = { citysize = 3700 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1  = { citysize = 4500 }
+1450.5.1  = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Jack Cade's rebellion
+1450.7.12 = { revolt = {} controller = ENG }
+1453.1.1  = { unrest = 5 } # Start of the War of the Roses
+1459.1.1  = { unrest = 7 } # Increasing Disorder & Piracy Along South Coast
+1460.1.1  = { unrest = 0 revolt = { type = pretender_rebels size = 2 } controller = REB }
+1461.6.28 = { revolt = {} unrest = 2 controller = ENG } # Coronation of Edward IV
+1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1  = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1513.1.1  = { shipyard = yes } # Deptford
+1525.1.1  = { fort2 = yes }
+1538.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 3500 marketplace = yes } # Marketplace Estimated
+1570.1.1  = { citysize = 4500 }
+1575.1.1  = { constable = yes } # Estimated
+1580.1.1  = { religion = reformed }
+1588.1.1  = { wharf = yes } # Chatham
+1600.1.1  = { citysize = 6000 } # Influx of Walloons
+1642.8.22 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Start of First English Civil War
+1646.5.5  = { revolt = {} controller = ENG } # End of First English Civil War
+1648.5.11 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
+1648.6.1  = { revolt = {} controller = ENG }
+#1675.1.1  = { customs_house = yes } # Estimated
+1700.1.1  = { citysize = 7000 }
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1800.1.1  = { citysize = 9000 }
+
+1841.1.1   = { capital = "Brighton" }
+1850.1.1   = { citysize = 15000 }
+1900.1.1   = { citysize = 120000 }
+1950.1.1   = { citysize = 140000 }
+2001.1.1   = { citysize = 155919 }
+
+
+

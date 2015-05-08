@@ -1,0 +1,76 @@
+#570 - Naga
+
+owner = MLB
+controller = MLB
+culture = chin
+religion = animism
+capital = "Imphal"
+trade_goods = cloth
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 3257
+fort1 = yes
+add_core = MLB
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 3514 }
+200.1.1 = { citysize = 4028 }
+300.1.1 = { citysize = 4542 }
+400.1.1 = { citysize = 5057 }
+500.1.1 = { citysize = 5571 }
+600.1.1 = { citysize = 6085 }
+700.1.1 = { citysize = 6600 }
+800.1.1 = { citysize = 7114 }
+900.1.1 = { citysize = 7628 }
+1000.1.1 = { citysize = 8142 }
+1200.1.1 = { citysize = 9171 }
+1300.1.1 = { citysize = 9685 }
+1399.1.1 = { citysize = 10200 }
+
+1450.1.1 = { citysize = 6100 }
+1500.1.1 = { citysize = 7240 }
+1550.1.1 = { citysize = 8135 }
+1600.1.1 = { citysize = 9867 }
+1650.1.1 = { citysize = 11007 }
+1700.1.1 = { citysize = 12450 }
+1732.1.1 = {
+	revolt_risk = 5
+	religion = hinduism
+} # King Pamheiba expelled everyone who opposed vaisnavism
+1735.1.1 = { revolt_risk = 0 }
+1750.1.1 = { citysize = 14890 }
+1758.1.1 = {
+	owner = TAU
+	controller = TAU
+	add_core = TAU
+}
+1760.1.1 = { discovered_by = GBR }
+1769.1.1 = { revolt_risk = 6 }
+1773.1.1 = { revolt_risk = 0 }
+1782.1.1 = {
+	owner = MLB
+	controller = MLB
+	add_core = MLB
+	remove_core = TAU
+}
+1800.1.1 = { citysize = 17000 }
+1819.1.1 = {
+	owner = TAU
+	controller = TAU
+	add_core = TAU
+}
+
+1826.1.1   = { owner = MLB controller = MLB add_core = MLB remove_core = TAU }
+1850.1.1   = { citysize = 25000 }
+1891.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1900.1.1   = { citysize = 35000 }
+1930.1.1   = { add_core = IND remove_core = MLB }
+1947.8.15  = { owner = IND controller = IND remove_core = GBR }
+1950.1.1   = { citysize = 50000 }
+2011.1.1   = { citysize = 78584 }
+
+
+

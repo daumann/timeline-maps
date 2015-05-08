@@ -1,0 +1,86 @@
+#378 - Beirut
+
+owner = ROM
+controller = ROM
+culture = aramaic
+religion = chalcedonism
+capital = "Tripoli"
+trade_goods = grain
+hre = no
+base_tax = 6
+manpower = 4
+citysize = 3610
+fort1 = yes
+add_core = ROM
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 4221 }
+200.1.1 = { citysize = 5442 }
+269.1.1 = { add_core = PLM revolt = { type = nationalist_rebels size = 1 } controller = REB }
+272.1.1 = { controller = ROM remove_core = PLM revolt = {} }
+300.1.1 = { citysize = 6664 }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 7885 }
+500.1.1 = { citysize = 9107 }
+600.1.1 = { citysize = 10328 }
+610.1.1 = { revolt = { type = heretic_rebels size = 4 } controller = REB } # Jewish revolt
+613.1.1 = { revolt = {} controller = BYZ }
+645.1.1 = { owner = RAS controller = RAS add_core = RAS }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS remove_core = BYZ }
+700.1.1 = { citysize = 11549 }
+720.1.1 = { culture = al_suryah_arabic }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 12771 }
+867.1.1 = { religion = catholic }
+868.1.1 = { owner = TUL controller = TUL add_core = TUL remove_core = ABB }
+900.1.1 = { citysize = 13992 }
+905.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = TUL }
+945.1.1 = { owner = SYR controller = SYR add_core = SYR remove_core = ABB }
+1000.1.1 = { citysize = 15214 }
+1002.1.1 = { owner = FAT controller = FAT add_core = FAT }
+1073.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = FAT }
+1100.1.1 = { citysize = 16435 }
+1102.1.1 = { owner = TPL controller = TPL add_core = TPL remove_core = SEL }
+1109.6.10 = { owner = TOU controller = TOU add_core = TOU }
+1112.1.1 = { owner = TPL controller = TPL remove_core = TOU }
+1200.1.1 = { citysize = 17657 }
+1289.4.26 = { owner = MAM controller = MAM add_core = MAM remove_core = TPL capital = "Trablos" }
+1300.1.1 = { citysize = 18878 }
+1377.1.1 = { revolt = { type = pretender_rebels size = 3 } controller = REB }
+1382.1.1 = { revolt = {} controller = MAM }
+1399.1.1 = { citysize = 20100 }
+
+1450.1.1 = { citysize = 22170 }
+1500.1.1 = { citysize = 25440 fort2 = yes }
+1516.8.24 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+	   } # Part of the Ottoman Empire
+1550.1.1 = { citysize = 31989 }
+1600.1.1 = { citysize = 35211 }
+1650.1.1 = { citysize = 38570 }
+1700.1.1 = { citysize = 41200 }
+1750.1.1 = {	citysize = 59600
+		tax_assessor = yes
+	   }
+1800.1.1 = { citysize = 72100 }
+
+1850.1.1   = { citysize = 100000 capital = "Beirut" }
+1867.6.8   = { remove_core = MAM }
+1900.1.1   = { citysize = 200000 }
+1920.3.8   = { owner = SYR controller = SYR }
+1920.7.24  = { owner = FR2 controller = FR2 add_core = FR2 add_core = LEB remove_core = SYR remove_core = TUR }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1941.7.1   = { owner = FR2 controller = FR2 remove_core = FRV } # Taken by Free France
+1943.11.22 = { owner = LEB controller = LEB remove_core = FR2 }
+1950.1.1   = { citysize = 300000 }
+2009.1.1   = { citysize = 361366 }
+
+
+

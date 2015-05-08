@@ -1,0 +1,71 @@
+#593 - Ligore
+
+owner = LGK
+controller = LGK
+add_core = LGK
+citysize = 1000
+culture = malayan
+religion = buddhism
+capital = "Thalang"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 2
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+150.1.1 = { owner = FUN controller = FUN add_core = FUN }
+300.1.1 = { citysize = 1266 }
+400.1.1 = { citysize = 1533 }
+500.1.1 = { citysize = 1800 }
+550.1.1 = { owner = LGK controller = LGK add_core = LGK remove_core = FUN }
+600.1.1 = { citysize = 2066 }
+700.1.1 = { citysize = 2333 }
+770.1.1 = { owner = SRI controller = SRI add_core = SRI remove_core = LGK }
+800.1.1 = { citysize = 2600 }
+900.1.1 = { citysize = 2866 }
+1000.1.1 = { citysize = 3133 }
+1100.1.1 = { citysize = 3399 }
+1180.1.1 = { owner = LIG controller = LIG add_core = LIG remove_core = SRI }
+1200.1.1 = { citysize = 3666 }
+1285.1.1 = { add_core = SUK }
+1300.1.1 = { citysize = 3933 }
+1350.1.1 = { add_core = AYU remove_core = SUK }
+1399.1.1 = { citysize = 4200 }
+
+1405.1.1 = { discovered_by = MNG }
+1450.1.1 = { citysize = 8000 }
+1500.1.1 = { citysize = 8670 }
+1509.1.1 = { discovered_by = POR }
+1521.1.1 = { discovered_by = SPA }
+1550.1.1 = { citysize = 9055 }
+1570.1.1 = {
+		owner = AYU
+		controller = AYU
+}
+1600.1.1 = { citysize = 11000 }
+1650.1.1 = { citysize = 12340 }
+1700.1.1 = { citysize = 13830 }
+1750.1.1 = { citysize = 14000 }
+1767.4.1 = {
+		owner = LIG
+		controller = LIG
+}
+1769.1.1 = {
+		owner = AYU
+		controller = AYU
+		remove_core = LIG
+}
+1800.1.1 = { citysize = 15253 }
+1809.1.1 = { add_core = TAU }
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 50000 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU capital = "Phuket" }
+1950.1.1   = { citysize = 75000 }
+2005.1.1   = { citysize = 105417 }
+
+
+

@@ -1,0 +1,82 @@
+newEntry225 - Cordoba.txt
+#225 - Córdoba
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = animism
+hre = no
+base_tax = 5
+trade_goods = wool
+manpower = 2
+fort1 = yes
+capital = "Corduba" 
+citysize = 1000
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 1121 }
+200.1.1 = { citysize = 1342 }
+300.1.1 = { citysize = 1564 }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1785 }
+409.1.1 = { owner = VAN controller = VAN add_core = VAN }
+425.1.1 = { owner = ROW controller = ROW remove_core = VAN }
+430.1.1 = { religion = arianism }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL }
+500.1.1 = { citysize = 2007 }
+552.1.1 = { owner = BYZ controller = BYZ add_core = BYZ religion = chalcedonism }
+570.1.1 = { owner = GVI controller = GVI remove_core = BYZ }
+600.1.1 = { citysize = 2228 }
+700.1.1 = { citysize = 2449 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI capital = "Qurtubah" }
+740.1.1 = { religion = sunni }
+750.1.1 = { culture = andalucian }
+800.1.1 = { citysize = 2671 }
+900.1.1 = { citysize = 2892 }
+1000.1.1 = { citysize = 3114 }
+1023.1.1 = { owner = CRD controller = CRD add_core = CRD remove_core = UMA }
+1070.1.1 = { owner = SEV controller = SEV add_core = SEV }
+1091.1.1 = { owner = AMR controller = AMR add_core = AMR remove_core = SEV }
+1100.1.1 = { citysize = 3335 }
+1147.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = AMR }
+1200.1.1 = { citysize = 3557 }
+1236.6.29 = { owner = CAS controller = CAS add_core = CAS remove_core = AMH remove_core = CRD capital = "Córdoba" }
+1280.1.1 = { religion = catholic }
+1300.1.1 = { citysize = 3778 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1   = { citysize = 5000 }
+1500.1.1   = { citysize = 10700 }
+1516.1.23  = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1550.1.1   = { citysize = 17470 }
+1600.1.1   = { citysize = 28000 } # Estimation
+1610.1.12  = { culture = castillian } # Decree for the expulsion of the morisques in Andalucía, unlike Valencia, this was performed uneventfully.
+1650.1.1   = { citysize = 18700 } # Epidemic
+1700.1.1   = { citysize = 25325 }
+1713.4.11  = { remove_core = CAS }
+1750.1.1   = { citysize = 29910 }
+1800.1.1   = { citysize = 32500 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1811.1.1   = { revolt = {} controller = SPA }
+1812.10.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 57814 }
+1900.1.1   = { citysize = 102846 }
+1950.1.1   = { citysize = 182952 }
+2008.1.1   = { citysize = 325453 }
+
+
+

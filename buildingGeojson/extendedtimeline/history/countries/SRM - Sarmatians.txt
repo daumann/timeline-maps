@@ -1,0 +1,15 @@
+government = steppe_horde
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 3
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -3
+primary_culture = sarmatian
+religion = tengri
+technology_group = nomad_group
+capital = 288
+

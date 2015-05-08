@@ -1,0 +1,49 @@
+#1024 - Echigo
+
+owner = EMI
+controller = EMI
+culture = emishi
+religion = animism
+capital = "Naoetsu"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 3385
+add_core = EMI
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 3771 }
+200.1.1 = { citysize = 4542 }
+300.1.1 = { citysize = 5314 }
+400.1.1 = { citysize = 6085 }
+500.1.1 = { citysize = 6857 }
+600.1.1 = { citysize = 7628 }
+607.1.1 = { religion = buddhism }
+650.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = EMI }
+700.1.1 = { citysize = 8400 }
+712.1.1 = { religion = shinto }
+750.1.1 = { culture = japanese }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 9171 }
+900.1.1 = { citysize = 9942 }
+1000.1.1 = { citysize = 10714 }
+1100.1.1 = { citysize = 11485 }
+1192.1.1 = { owner = UES controller = UES add_core = UES remove_core = JAP }
+1200.1.1 = { citysize = 12257 }
+1300.1.1 = { citysize = 13028 }
+1399.1.1 = { citysize = 13800 }
+
+1542.1.1 = { discovered_by = POR }
+1598.1.10 = { add_core = JAP owner = JAP controller = JAP } # Uesugi Kagekatsu moved from Echigo to Aizu-Yonezawa
+1598.9.18 = { add_core = TKG owner = TKG controller = TKG remove_core = JAP } # The conflict after the death of Hideyoshi
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1850.1.1  = { citysize = 40000 capital = "Niigata" }
+1900.1.1  = { citysize = 120000 }
+1950.1.1  = { citysize = 400000 }
+2012.1.31 = { citysize = 804193 }
+
+
+

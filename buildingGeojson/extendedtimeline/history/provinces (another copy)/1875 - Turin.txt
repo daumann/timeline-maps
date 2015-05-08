@@ -1,0 +1,90 @@
+#1875 - Cuneo (can't change filename)
+
+owner = ROM
+controller = ROM
+culture = gallian
+religion = hellenism
+hre = no
+base_tax = 5
+trade_goods = wine
+manpower = 5
+fort1 = yes
+capital = "Ebrodunum"
+citysize = 1000		# Estimated
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1500 }
+300.1.1 = { citysize = 2000 }
+330.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2500 }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO }
+500.1.1 = { citysize = 3000 }
+553.1.1 = { owner = LOM controller = LOM add_core = LOM remove_core = GOS culture = lombard capital = "Cuneo" }
+600.1.1 = { citysize = 3500 }
+700.1.1 = { citysize = 4100 }
+773.1.1 = { owner = FRK controller = FRK add_core = FRK }
+800.1.1 = { citysize = 4800 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = ITA controller = ITA add_core = ITA remove_core = FRM remove_core = LOM }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 5500 }
+962.2.2 = { hre = yes owner = LOM controller = LOM add_core = LOM remove_core = ITA }
+1000.1.1 = { citysize = 6200 }
+1003.1.1 = { owner = SAV controller = SAV add_core = SAV remove_core = LOM }
+1100.1.1 = { citysize = 6900 }
+1198.1.1 = { owner = CUN controller = CUN }
+1200.1.1 = { citysize = 7600 }
+1282.1.1 = { owner = NAP controller = NAP add_core = NAP }
+1300.1.1 = { citysize = 8300 }
+1382.1.1 = { owner = SAV controller = SAV remove_core = NAP }
+1399.1.1 = { citysize = 9000 }
+
+1450.1.1 = { citysize = 9800 }
+1500.1.1 = { citysize = 10040 }
+1536.1.1 = { owner = FRA controller = FRA add_core = FRA } 
+1550.1.1 = { citysize = 11070 }
+1562.1.1 = { owner = SAV controller = SAV remove_core = FRA } 
+1570.1.1 = { marketplace = yes }
+1600.1.1 = { citysize = 10350 }
+1650.1.1 = { citysize = 11580 marketplace = yes }
+1680.1.1 = { courthouse = yes }
+1700.1.1 = { citysize = 11000 tax_assessor = yes }
+1713.4.12 = {
+	owner = SIC
+	controller = SIC
+	add_core = SIC
+} # Treaty of Utrecht
+1720.1.1 = {
+	owner = SPI
+	controller = SPI
+	add_core = SPI
+	remove_core = SIC
+} # Kingdom of Piedmont-Sardinia
+1750.1.1 = { citysize = 11500 }
+1792.4.20 = { controller = FRA } # Conquered by the French
+1796.4.25 = { owner = FRA add_core = FRA } # The Republic of Alba
+1800.1.1 = { citysize = 12000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {
+	owner = SPI
+	controller = SPI
+	remove_core = FRA
+} # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+
+1850.1.1  = { citysize = 20000 }
+1861.3.17 = { owner = ITA controller = ITA add_core = ITA remove_core = SPI }
+1900.1.1  = { citysize = 30000 }
+1950.1.1  = { citysize = 40000 }
+2009.4.30 = { citysize = 55308 }
+
+
+

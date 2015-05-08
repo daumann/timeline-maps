@@ -1,0 +1,58 @@
+newEntry275 - Polotsk.txt
+#275 - Polotsk
+
+culture = byelorussian
+religion = slavic
+hre = no
+base_tax = 4
+trade_goods = unknown
+manpower = 5
+capital = "Polotsk"
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = KRI controller = KRI add_core = KRI citysize = 9000 trade_goods = iron }
+800.1.1 = { discovered_by = western }
+880.1.1 = { owner = KRU controller = KRU add_core = KRU add_core = PLT fort1 = yes remove_core = KRI }
+988.1.1 = { religion = orthodox }
+1000.1.1 = { citysize = 11000 }
+1054.2.20 = { owner = PLT controller = PLT add_core = PLT remove_core = KRU }
+1100.1.1 = { citysize = 13000 }
+1200.1.1 = { citysize = 15000 discovered_by = nomad_group }
+1252.1.1 = { owner = LIT controller = LIT add_core = LIT }
+1399.1.1 = { citysize = 17500 }
+
+1450.1.1   = { citysize = 22000 }
+1480.1.1   = { marketplace = yes } # Main center of trade in the state.
+1500.1.1   = { citysize = 25300 }
+1503.1.1   = { temple = yes } # Cathedral of Saint Sophia, established 1044 - 1066
+1550.1.1   = { citysize = 29095 fort2 = yes }
+1563.2.15  = { controller = RUS } # Captured by Ivan the Terrible, during the Livonian war
+1569.7.1   = {	owner = PLC
+	     	add_core = PLC
+	     } # Union of Lublin
+1579.9.30   = {	controller = PLC } # Retaken by Stephan Bathory
+1600.1.1   = { citysize = 33459 } 
+1650.1.1   = { fort3 = yes citysize = 38478 }
+1700.1.1   = { citysize = 20000 } # After the devastating wars with Muscovy
+1750.1.1   = { citysize = 12000 } # Russian wars
+1772.8.5   = {	add_core = RUS
+		owner = RUS
+		controller = RUS
+		remove_core = PLC
+	     } # First partition of Poland
+1794.3.24  = { unrest = 5 } # Kosciuszko uprising, minimize the Russian influence
+1794.11.16 = { unrest = 0 }
+1800.1.1   = { citysize = 9000 }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 80000 }
+1918.3.25  = { add_core = BLR remove_core = PLT }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1941.6.10  = { controller = GER }
+1944.7.26  = { controller = SOV }
+1950.1.1   = { citysize = 250000 }
+1990.7.27  = { owner = BLR controller = BLR remove_core = RUS remove_core = SOV }
+2009.1.1   = { citysize = 356000 }
+
+
+

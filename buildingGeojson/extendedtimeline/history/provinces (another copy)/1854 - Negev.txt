@@ -1,0 +1,72 @@
+#1854 - Negev
+
+owner = NAB
+controller = NAB
+culture = bedouin_arabic
+religion = nabataean
+capital = "Beersheba"
+trade_goods = salt
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1000
+add_core = NAB
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = nomad_group
+
+106.6.1 = { owner = ROM controller = ROM add_core = ROM remove_core = NAB }
+150.1.1 = { religion = hellenism }
+200.1.1 = { citysize = 1071 }
+269.1.1 = { add_core = PLM revolt = { type = nationalist_rebels size = 1 } controller = REB culture = aramaic }
+272.1.1 = { controller = ROM remove_core = PLM revolt = {} culture = bedouin_arabic }
+300.1.1 = { citysize = 1157 fort1 = yes }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1242 }
+500.1.1 = { citysize = 1328 }
+600.1.1 = { citysize = 1414 }
+635.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = BYZ }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+680.1.1 = { religion = sunni }
+700.1.1 = { citysize = 1500 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 1585 }
+868.1.1 = { owner = TUL controller = TUL add_core = TUL remove_core = ABB }
+900.1.1 = { citysize = 1671 }
+905.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = TUL }
+969.1.1 = { owner = FAT controller = FAT add_core = FAT remove_core = ABB }
+1000.1.1 = { citysize = 1757 }
+1099.7.1 = { owner = KOJ controller = KOJ add_core = KOJ remove_core = FAT }
+1100.1.1 = { citysize = 1842 }
+1188.1.1 = { owner = AYY controller = AYY add_core = AYY remove_core = KOJ }
+1200.1.1 = { citysize = 1928 }
+1250.1.1 = { owner = MAM controller = MAM add_core = MAM remove_core = AYY }
+1300.1.1 = { citysize = 2014 }
+1399.1.1 = { citysize = 2100 }
+
+1450.1.1 = { citysize = 2250 }
+1500.1.1 = { citysize = 2400 }
+1517.1.1 = { owner = TUR controller = TUR add_core = TUR } # Conquered by the Ottomans
+1550.1.1 = { citysize = 2910 }
+1600.1.1 = { citysize = 3330 }
+1650.1.1 = { citysize = 1005 } # Decline in trade, agriculture and population
+1690.1.1 = { marketplace = yes }
+1700.1.1 = { citysize = 1802 }
+1750.1.1 = { citysize = 2645 }
+1800.1.1 = { citysize = 3800 }
+
+1850.1.1   = { citysize = 20000 }
+1867.6.8   = { remove_core = MAM }
+1900.1.1   = { citysize = 60000 culture = israeli }
+1920.3.8   = { owner = SYR controller = SYR add_core = SYR }
+1920.7.24  = { owner = GBR controller = GBR add_core = GBR add_core = ISR remove_core = SYR remove_core = TUR }
+1948.5.14  = { owner = ISR controller = ISR remove_core = GBR religion = jewish }
+1950.1.1   = { citysize = 120000 }
+2012.1.1   = { citysize = 194300 }
+
+
+

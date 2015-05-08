@@ -1,0 +1,44 @@
+country_decisions = {
+
+	form_soviet_union = {
+		major = yes
+		potential = {
+			tag = RUS
+			OR = {
+				government = communist_dictatorship
+				government = socialist_republic
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			add_prestige = 20
+			change_tag = SOV
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	end_of_soviet_union = {
+		major = yes
+		potential = {
+			tag = SOV
+			NOT = {	government = communist_dictatorship }
+			NOT = {	government = socialist_republic }
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			add_prestige = 20
+			change_tag = RUS
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

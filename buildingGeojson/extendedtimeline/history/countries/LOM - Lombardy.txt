@@ -1,0 +1,412 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = 1
+#quality_quantity = -1
+#serfdom_freesubjects = -2
+primary_culture = lombard
+religion = germanic
+technology_group = barbarian
+capital = 104	# Milano
+
+50.1.1 = {
+	monarch = {
+		name = "Shava"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+100.1.1 = {
+	monarch = {
+		name = "Agelmund"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+150.1.1 = {
+	monarch = {
+		name = "Lamissio"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+200.1.1 = {
+	monarch = {
+		name = "Agio"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+250.1.1 = {
+	monarch = {
+		name = "Agilmund"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+300.1.1 = {
+	monarch = {
+		name = "Laiamicho"
+		dynasty = "Lombard"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+360.1.1 = {
+	monarch = {
+		name = "Lethuc"
+		dynasty = "Lething"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+430.1.1 = {
+	monarch = {
+		name = "Aldihoc"
+		dynasty = "Lething"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+470.1.1 = {
+	monarch = {
+		name = "Godehoc"
+		dynasty = "Lething"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+490.1.1 = {
+	monarch = {
+		name = "Claffo"
+		dynasty = "Lething"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+
+500.1.1 = {
+	monarch = {
+		name = "Tato"
+		dynasty = "Lething"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+510.1.1 = {
+	monarch = {
+		name = "Wacho"
+		dynasty = "Lething"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+		
+539.6.1 = {
+	monarch = {
+		name = "Waltari"
+		dynasty = "Lething"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+540.1.1 = { religion = arianism }
+
+546.6.1 = {
+	monarch = {
+		name = "Audoin"
+		dynasty = "Gausian"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+565.6.1 = {
+	monarch = {
+		name = "Alboin"
+		dynasty = "Gausian"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+570.1.1 = { government = feudal_monarchy technology_group = western }
+
+572.6.1 = {
+	monarch = {
+		name = "Cleph"
+		dynasty = "Clephian"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+574.6.1 = {
+	monarch = {
+		name = "(regency council)"
+		regent = yes
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+584.6.1 = {
+	monarch = {
+		name = "Authari"
+		dynasty = "Chephian"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+591.1.1 = {
+	monarch = {
+		name = "Agilulf"
+		dynasty = "Clephian"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+600.1.1 = { religion = chalcedonism }
+
+616.6.1 = {
+	monarch = {
+		name = "Adaloald"
+		dynasty = "von Bayern"
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}
+
+620.1.1 = { religion = arianism }
+
+626.6.1 = {
+	monarch = {
+		name = "Arioald"
+		dynasty = "Lombardian"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+636.6.1 = {
+	monarch = {
+		name = "Rothari"
+		dynasty = "Harodingian"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+		
+652.6.1 = {
+	monarch = {
+		name = "Rodoald"
+		dynasty = "Harodingian"
+		adm = 6
+		dip = 6
+		mil = 5
+	}
+}
+
+653.6.1 = {
+	monarch = {
+		name = "Aripert I"
+		dynasty = "von Bayern"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+654.1.1 = { religion = chalcedonism }
+
+661.6.1 = {
+	monarch = {
+		name = "Perctarit"
+		dynasty = "von Bayern"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+
+662.6.1 = {
+	monarch = {
+		name = "Grimuald"
+		dynasty = "di Benevento"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+671.4.1 = {
+	monarch = {
+		name = "Garibald"
+		dynasty = "di Benevento"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+671.8.1 = {
+	monarch = {
+		name = "Perctarit"
+		dynasty = "von Bayern"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+688.6.1 = {
+	monarch = {
+		name = "Cunincpert"
+		dynasty = "von Bayern"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+
+700.6.1 = {
+	monarch = {
+		name = "Liutpert"
+		dynasty = "von Bayern"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+701.4.1 = {
+	monarch = {
+		name = "Radingpert"
+		dynasty = "von Bayern"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}
+		
+701.8.1 = {
+	monarch = {
+		name = "Aripert II"
+		dynasty = "von Bayern"
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+712.4.1 = {
+	monarch = {
+		name = "Ansprand"
+		dynasty = "Astian"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+712.8.1 = {
+	monarch = {
+		name = "Liutprand"
+		dynasty = "Astian"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+744.4.1 = {
+	monarch = {
+		name = "Hildeprand"
+		dynasty = "Astian"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+744.8.1 = {
+	monarch = {
+		name = "Ratchis"
+		dynasty = "Friulian"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+749.6.1 = {
+	monarch = {
+		name = "Aistulf"
+		dynasty = "Friulian"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
+756.6.1 = {
+	monarch = {
+		name = "Desiderius"
+		dynasty = "Alachisling"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}
+
+867.1.1 = { religion = catholic }

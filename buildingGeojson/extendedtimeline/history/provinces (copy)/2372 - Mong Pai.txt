@@ -1,0 +1,79 @@
+#588 - Mongnai
+
+owner = PYU
+controller = PYU
+culture = karen
+religion = animism
+capital = "Mong Pai"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1078
+add_core = PYU
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 1157 }
+200.1.1 = { citysize = 1314 }
+300.1.1 = { citysize = 1471 }
+400.1.1 = { citysize = 1628 }
+500.1.1 = { citysize = 1785 }
+600.1.1 = { citysize = 1942 }
+700.1.1 = { citysize = 2100 }
+800.1.1 = { citysize = 2257 }
+849.1.1 = { owner = PAG controller = PAG add_core = PAG remove_core = PYU }
+900.1.1 = { citysize = 2414 }
+1000.1.1 = { citysize = 2571 }
+1100.1.1 = { citysize = 2728 }
+1200.1.1 = { citysize = 2885 }
+1296.1.1 = { owner = HSE controller = HSE add_core = HSE remove_core = PAG }
+1300.1.1 = { citysize = 3042 }
+1399.1.1 = { citysize = 3200 }
+
+1450.1.1 = { citysize = 3900 }
+1500.1.1 = { citysize = 4670 }
+1502.1.1 = {
+		controller = SST
+		owner = SST
+		add_core = SST
+		remove_core = HSE
+}
+1535.1.1 = { discovered_by = POR }
+1554.1.1 = { add_core = TAU }
+1557.11.1 = { controller = TAU } # The Shan dynasty is overthrown
+1563.4.1 = { owner = TAU }
+1599.1.1 = {
+		owner = SST
+		controller = SST
+}
+1600.1.1 = { citysize = 5200 }
+1605.1.1 = {
+		owner = TAU
+		controller = TAU
+}
+1650.1.1 = { citysize = 6540 }
+1700.1.1 = { citysize = 7600 }
+1750.1.1 = { citysize = 8240 }
+1752.1.1 = {
+		owner = SST
+		controller = SST
+}
+1754.1.1 = {
+		owner = TAU
+		controller = TAU
+}
+1800.1.1 = { citysize = 9800 }
+
+1850.1.1   = { citysize = 20000 }
+1885.11.29 = { owner = GBR controller = GBR add_core = GBR add_core = BRM remove_core = TAU remove_core = SST capital = "Loikaw" }
+1900.1.1   = { citysize = 60000 }
+1942.5.1   = { controller = THL }
+1945.3.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1950.1.1   = { citysize = 120000 }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM }
+2010.1.1   = { citysize = 200000 }
+
+
+

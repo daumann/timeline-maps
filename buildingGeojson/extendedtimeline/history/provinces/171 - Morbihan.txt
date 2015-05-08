@@ -1,0 +1,80 @@
+newEntry171 - Morbihan.txt
+# 171 Morbihan
+
+owner = ROM
+controller = ROM
+capital = "Vannes"
+citysize = 1000
+culture = gallian
+religion = druidism
+hre = no
+base_tax = 4
+trade_goods = fish
+manpower = 4
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1100 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB }
+268.1.1 = { controller = ROM remove_core = GLL revolt = {} }
+300.1.1 = { citysize = 1200 }
+390.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1300 }
+461.11.1 = { owner = VNS controller = VNS add_core = VNS }
+480.6.1 = { remove_core = ROW }
+500.1.1 = { citysize = 1400 }
+570.1.1 = { owner = BRO controller = BRO add_core = BRO remove_core = VNS culture = briton capital = "Rohan" }
+600.1.1 = { citysize = 1500 culture = breton }
+700.1.1 = { citysize = 1600 }
+800.1.1 = { citysize = 1700 fort1 = yes }
+846.1.1 = { controller = BRI owner = BRI add_core = BRI remove_core = BRO }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 1800 }
+907.1.1 = { owner = DAN controller = DAN }
+937.1.1 = { owner = BRI controller = BRI }
+1000.1.1 = { citysize = 1900 }
+1100.1.1 = { citysize = 2000 }
+1200.1.1 = { citysize = 2100 }
+1300.1.1 = { citysize = 2300 }
+1399.1.1 = { citysize = 2500 }
+
+1450.1.1   = { citysize = 3500 }
+1453.1.1   = { add_core = FRA }
+1500.1.1   = { citysize = 4000 }
+1532.8.4   = { owner = FRA controller = FRA } # Union Treaty
+1550.1.1   = { citysize = 5000 fort2 = yes }
+1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1594.1.1   = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1650.1.1   = {	citysize = 12000
+		constable = yes
+		fort3 = yes
+	     	wharf = yes
+	     	capital = "Lorient"
+	     }
+1660.1.1   = { marketplace = yes }
+1700.1.1   = { citysize = 14000 }
+1730.1.1   = { courthouse = yes }
+1740.1.1   = { fort4 = yes }
+1750.1.1   = { citysize = 16000 }
+1770.1.1   = { tax_assessor = yes }
+
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+		remove_core = BRI
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 38000 }
+1940.6.14  = { owner = GER controller = GER } # France surrendered to Nazi Garmany
+1944.8.25  = { owner = FR2 controller = FR2 } # France liberated by allied forces
+1950.1.1   = { citysize = 48000 }
+2000.1.1   = { citysize = 58135 }
+
+
+

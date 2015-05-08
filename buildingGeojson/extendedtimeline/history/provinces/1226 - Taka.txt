@@ -1,0 +1,56 @@
+newEntry1226 - Taka.txt
+#1226 - Taka
+
+owner = AKS
+controller = AKS
+add_core = AKS
+citysize = 2000
+culture = nubian 
+religion = african
+capital = "Qoz Rajab"
+manpower = 1
+trade_goods = wool
+hre = no
+base_tax = 1
+discovered_by = MER
+discovered_by = BLE
+discovered_by = AKS
+discovered_by = MAK
+discovered_by = NOB
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+
+600.1.1 = { 	owner = XXX
+		controller = XXX
+		remove_core = AKS
+		native_size = 30
+		native_ferocity = 4
+		native_hostileness = 9
+		trade_goods = unknown
+		citysize = 0
+	  }
+1200.1.1 = { discovered_by = MAM }
+1300.1.1 = { discovered_by = muslim discovered_by = ottoman }
+
+1821.6.14  = { owner = TUR controller = TUR add_core = TUR citysize = 1000 trade_goods = wool }
+1830.1.1   = { religion = sunni }
+1840.1.1   = { capital = "Kassala" }
+1850.1.1   = { citysize = 16000 }
+1867.6.8   = { owner = EGY controller = EGY add_core = EGY }
+1882.9.13  = { owner = GBR controller = GBR add_core = GBR remove_core = TUR }
+1899.6.19  = { add_core = SUD remove_core = NUB }
+1900.1.1   = { citysize = 40000 }
+1950.1.1   = { citysize = 120000 }
+1956.1.1   = { owner = SUD controller = SUD remove_core = GBR remove_core = EGY }
+2007.1.1   = { citysize = 419030 }
+
+
+

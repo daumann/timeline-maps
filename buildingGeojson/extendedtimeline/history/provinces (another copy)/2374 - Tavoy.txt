@@ -1,0 +1,73 @@
+#591 - Tenasserim
+
+owner = MNX
+controller = MNX
+culture = mon
+religion = buddhism
+capital = "Tavoy"
+trade_goods = tropical_wood
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 1107
+add_core = MNX
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1214 }
+150.1.1 = { owner = FUN controller = FUN add_core = FUN remove_core = MNX }
+200.1.1 = { citysize = 1428 }
+300.1.1 = { citysize = 1642 }
+400.1.1 = { citysize = 1857 }
+500.1.1 = { citysize = 2071 }
+550.1.1 = { owner = THA controller = THA add_core = THA remove_core = FUN }
+600.1.1 = { citysize = 2285 }
+700.1.1 = { citysize = 2499 }
+800.1.1 = { citysize = 2714 }
+880.1.1 = { owner = KHM controller = KHM add_core = KHM }
+900.1.1 = { citysize = 2928 }
+1000.1.1 = { citysize = 3142 }
+1057.5.17 = { owner = PAG controller = PAG add_core = PAG remove_core = THA remove_core = KHM }
+1100.1.1 = { citysize = 3357 }
+1200.1.1 = { citysize = 3571 }
+1285.1.1 = { owner = SUK controller = SUK add_core = SUK remove_core = PAG }
+1300.1.1 = { citysize = 3785 }
+1350.1.1 = { owner = AYU controller = AYU add_core = AYU remove_core = SUK }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1 = { citysize = 4800 }
+1500.1.1 = { citysize = 5740 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 7351 }
+1564.1.1 = {	owner = TAU
+		controller = TAU
+		add_core = TAU
+	   }
+1594.1.1 = {	owner = AYU
+		controller = AYU
+	   }
+1600.1.1 = { citysize = 8858 }
+1614.1.1 = { owner = TAU controller = TAU } # Taungu regained Tenasserim
+1650.1.1 = { citysize = 10450 }
+1700.1.1 = { citysize = 12230 }
+1745.11.1 = { owner = AYU controller = AYU }
+1750.1.1 = { citysize = 14223 }
+1761.1.1 = { owner = TAU controller = TAU citysize = 72000 }
+1794.1.1 = { remove_core = AYU }
+1800.1.1 = { citysize = 16570 }
+
+1850.1.1   = { citysize = 30000 }
+1852.12.20 = { owner = GBR controller = GBR add_core = GBR }
+1885.11.29 = { add_core = BRM remove_core = TAU remove_core = PEG }
+1900.1.1   = { citysize = 60000 }
+1942.5.1   = { controller = JAP }
+1945.5.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1950.1.1   = { citysize = 90000 }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM capital = "Dawei" }
+2004.1.1   = { citysize = 139900 }
+
+
+

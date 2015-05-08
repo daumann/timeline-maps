@@ -1,0 +1,88 @@
+newEntry130 - Istria.txt
+#130 - Istria
+
+owner = ROM
+controller = ROM
+culture = roman
+religion = hellenism
+capital = "Pazin"
+trade_goods = wool
+hre = no
+base_tax = 6
+manpower = 3
+citysize = 1400
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1500 }
+300.1.1 = { religion = chalcedonism citysize = 1800 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2100 }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO culture = gothic }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO }
+490.1.1 = { religion = arianism }
+500.1.1 = { citysize = 2400 }
+540.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+550.1.1 = { religion = chalcedonism }
+600.1.1 = { citysize = 2700 }
+630.1.1 = { culture = croatian }
+700.1.1 = { citysize = 3000 }
+751.1.1 = { owner = LOM controller = LOM add_core = LOM remove_core = GOS remove_core = BYZ }
+789.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = LOM }
+800.1.1 = { citysize = 3300 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 3500 }
+911.11.10 = { owner = BAV controller = BAV add_core = BAV remove_core = FRE add_core = CAR add_core = VER }
+976.1.1 = { owner = CAR controller = CAR remove_core = BAV }
+1000.1.1 = { citysize = 3800 }
+1077.4.3 = { owner = AQU controller = AQU add_core = AQU remove_core = CAR remove_core = VER }
+1100.1.1 = { citysize = 4100 }
+1200.1.1 = { citysize = 4400 }
+1267.2.15 = { owner = VEN controller = VEN add_core = VEN }
+1300.1.1 = { citysize = 4700 }
+1399.1.1 = { citysize = 5000 }
+
+1420.1.1   = { remove_core = AQU }
+1450.1.1   = { citysize = 5400 }
+1500.1.1   = { citysize = 6000 }
+1550.1.1   = { citysize = 6988 fort2 = yes } # The fort is rebuilt
+1600.1.1   = { citysize = 7560 }
+1650.1.1   = { citysize = 8900 marketplace = yes }
+1700.1.1   = { citysize = 9200 }
+1750.1.1   = { citysize = 10200 }
+1797.10.17 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+	     } # Treaty of Campo Formio
+1800.1.1   = { citysize = 11700 }
+1805.12.26 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = HAB
+	     } # Treaty of Pressburg
+1813.9.20 = { controller = HAB } # Occupied by Austrian forces
+1814.4.6  = {	owner = HAB
+		add_core = HAB
+		remove_core = FRA
+	    } # Napoleon abdicates
+
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 80000 }
+1919.9.10  = { owner = ITA controller = ITA add_core = ITA remove_core = HAB remove_core = VEN }
+1943.9.8   = { owner = GER controller = GER add_core = YUG add_core = CRO remove_core = ITA }
+1945.5.8   = { owner = YUG controller = YUG }
+1950.1.1   = { citysize = 120000 }
+1991.1.1   = { citysize = 162814 }
+1991.6.25  = { owner = CRO controller = CRO remove_core = YUG }
+2012.1.1   = { citysize = 128735 }
+
+
+

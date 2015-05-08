@@ -1,0 +1,80 @@
+#55 - Oldenburg
+
+owner = FRS
+controller = FRS
+add_core = FRS
+citysize = 1000
+culture = dutch
+religion = germanic
+capital = "Oldenburg"
+trade_goods = salt
+hre = no
+base_tax = 3
+manpower = 2
+discovered_by = western
+discovered_by = barbarian
+
+600.1.1 = { discovered_by = eastern }
+700.1.1 = { citysize = 1100 }
+734.1.1 = { owner = FRK controller = FRK add_core = FRK }
+800.1.1 = { citysize = 1200 religion = chalcedonism culture = hannoverian }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = LOT controller = LOT add_core = LOT remove_core = FRM }
+867.1.1 = { religion = catholic }
+870.8.8 = { owner = FRE controller = FRE add_core = FRE }
+900.1.1 = { citysize = 1300 }
+911.11.10 = { owner = LOT controller = LOT add_core = LOT add_core = FRI remove_core = FRE remove_core = FRS }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 1400 discovered_by = muslim discovered_by = ottoman }
+1100.1.1 = { citysize = 1500 }
+1101.1.1 = { owner = OLD controller = OLD add_core = OLD remove_core = FRI remove_core = LOT }
+1108.1.1 = { fort1 = yes }
+1200.1.1 = { citysize = 1600 }
+1300.1.1 = { citysize = 1800 }
+1399.1.1 = { citysize = 2000 }
+
+1448.9.1  = { owner = DAN controller = DAN add_core = DAN }
+1450.1.1  = { citysize = 2400 }
+1454.1.1  = { owner = OLD controller = OLD remove_core = DAN }
+1500.1.1  = { citysize = 2300 }
+1531.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 3200 }
+1600.1.1  = { citysize = 3900 }
+1607.1.1  = { fort2 = yes }
+1650.1.1  = { citysize = 4300 }
+1667.1.1  = {	owner = DAN
+		controller = DAN
+		add_core = DAN
+		citysize = 4100	
+	    } # United in a Dynastic union with Denmark after Count Anton Guenther's death. Plague
+1680.1.1  = { marketplace = yes }
+1682.1.1  = { fort3 = yes }
+1700.1.1  = { citysize = 5000 }
+1750.1.1  = { citysize = 6100 }
+1773.1.1  = {	owner = OLD
+		controller = OLD
+		remove_core = DAN
+	    } # Oldenburg is sold to the house of Holstein-Gottorp
+1800.1.1  = { citysize = 6900 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1810.1.1  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+	    } # Controlled by France
+1813.1.1  = {	owner = SHL
+		controller = SHL
+		remove_core = FRA
+	    } # Control is returned
+
+1837.1.1   = { citysize = 9280 }
+1855.1.1   = { citysize = 11370 }
+1871.1.1   = { citysize = 13928 }
+1871.1.18  = { owner = GER controller = GER add_core = GER  } # German unification
+1900.1.1   = { citysize = 50000 remove_core = OLD }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.1.1   = { citysize = 120000 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2011.12.31 = { citysize = 162481 }
+
+
+

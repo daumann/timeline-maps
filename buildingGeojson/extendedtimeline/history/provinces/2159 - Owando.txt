@@ -1,0 +1,27 @@
+newEntry2159 - Owando.txt
+culture = kongolese
+religion = shamanism
+capital = "Owando"
+native_size = 90
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_ferocity = 4.5
+native_hostileness = 9 
+
+1880.1.1   = { discovered_by = FR2 }
+1889.1.1   = { owner = FR2 controller = FR2 add_core = FR2 religion = catholic citysize = 2000 trade_goods = naval_supplies }
+1900.1.1   = { citysize = 5000 }
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 10000 }
+1960.8.15  = { owner = CNG controller = CNG add_core = CNG remove_core = FR2 }
+2009.1.1   = { citysize = 20000 }
+
+

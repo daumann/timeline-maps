@@ -1,0 +1,370 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = gothic
+religion = germanic
+technology_group = barbarian
+historical_friend = GOS
+capital = 196	# Toulouse
+
+
+369.1.1 = {
+	monarch = {
+		name = "Athanaric"
+		dynasty = "Terving"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+395.1.1 = {
+	religion = arianism
+	monarch = {
+		name = "Alaric I"
+		dynasty = "Balti"
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+410.1.1 = {
+	monarch = {
+		name = "Athaulf"
+		dynasty = "Balti"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+415.1.1 = {
+	monarch = {
+		name = "Sigeric"
+		dynasty = "Balti"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+415.6.1 = {
+	monarch = {
+		name = "Wallia"
+		dynasty = "Balti"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+419.1.1 = {
+	monarch = {
+		name = "Theodoric I"
+		dynasty = "Balti"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+451.1.1 = {
+	monarch = {
+		name = "Thorismund"
+		dynasty = "Balti"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+453.6.1 = {
+	monarch = {
+		name = "Theodoric II"
+		dynasty = "Balti"
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+466.6.1 = {
+	monarch = {
+		name = "Euric"
+		dynasty = "Balti"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+477.1.1 = { government = feudal_monarchy }
+
+484.6.1 = {
+	monarch = {
+		name = "Alaric II"
+		dynasty = "Balti"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+507.6.1 = {
+	monarch = {
+		name = "Gesalec"
+		dynasty = "Balti"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+# 511-526 in union with ostrogoths
+
+526.6.1 = {
+	monarch = {
+		name = "Amalaric"
+		dynasty = "Balti"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+531.6.1 = {
+	monarch = {
+		name = "Theudis"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+536.1.1 = { technology_group = western }
+
+548.6.1 = {
+	monarch = {
+		name = "Theudigisel"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+549.6.1 = {
+	monarch = {
+		name = "Agila I"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+554.6.1 = {
+	monarch = {
+		name = "Athanagild"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+568.6.1 = {
+	monarch = {
+		name = "Liuva I"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+569.6.1 = {
+	monarch = {
+		name = "Liugivild"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+586.6.1 = {
+	monarch = {
+		name = "Reccared I"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+	religion = chalcedonism #Reccared was the first catholic king of the visigoths 
+}
+
+
+601.6.1 = {
+	monarch = {
+		name = "Liuva II"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+603.6.1 = {
+	monarch = {
+		name = "Witteric"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+610.6.1 = {
+	monarch = {
+		name = "Gundemar"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+612.6.1 = {
+	monarch = {
+		name = "Sisebut"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+621.4.1 = {
+	monarch = {
+		name = "Reccared II"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+621.8.1 = {
+	monarch = {
+		name = "Suintila"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+631.6.1 = {
+	monarch = {
+		name = "Sisenand"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+636.6.1 = {
+	monarch = {
+		name = "Chintila"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+640.6.1 = {
+	monarch = {
+		name = "Tulga"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+641.6.1 = {
+	monarch = {
+		name = "Chindasuinth"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+653.6.1 = {
+	monarch = {
+		name = "Recceswinth"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+672.6.1 = {
+	monarch = {
+		name = "Wamba"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+680.6.1 = {
+	monarch = {
+		name = "Erwig"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+687.6.1 = {
+	monarch = {
+		name = "Egica"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+702.6.1 = {
+	monarch = {
+		name = "Wittiza"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+710.6.1 = {
+	monarch = {
+		name = "Roderic"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+711.6.1 = {
+	monarch = {
+		name = "Agila II"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+714.6.1 = {
+	monarch = {
+		name = "Ardo"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}

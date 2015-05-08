@@ -1,0 +1,92 @@
+newEntry162 - Zemplen.txt
+#162 - Carpathia
+
+owner = GEP
+controller = GEP
+add_core = GEP
+citysize = 1000
+culture = gepid
+religion = germanic
+trade_goods = naval_supplies
+capital = "Kassa"
+hre = no
+base_tax = 2
+manpower = 2
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+400.1.1 = { religion = arianism }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS }
+469.1.1 = { owner = GEP controller = GEP remove_core = HNS fort1 = yes }
+500.1.1 = { citysize = 1500 }
+567.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = GEP religion = tengri }
+600.1.1 = { citysize = 2000 culture = ruthenian }
+700.1.1 = { citysize = 2500 }
+800.1.1 = { citysize = 3000 }
+804.1.1 = { owner = HUN controller = HUN add_core = HUN remove_core = AVR }
+900.1.1 = { citysize = 3800 }
+950.1.1 = { fort1 = yes }
+1000.1.1 = { citysize = 4600 }
+1010.1.1 = { religion = catholic }
+1100.1.1 = { citysize = 5400 }
+1200.1.1 = { citysize = 6200 }
+1300.1.1 = { citysize = 7000 }
+1399.1.1 = { citysize = 7850 }
+
+1450.1.1  = { citysize = 5400 }
+1485.1.1  = { marketplace = yes }
+1500.1.1  = { citysize = 6060 }
+1508.1.1  = { temple = yes } # St. Elisabeth Cathedral
+1526.8.30 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		add_core = TRA
+		fort2 = yes
+   	    } # Battle of Mohács, the end of the independent Kingdom of Hungary, Hungary came under military rule
+1545.1.1  = { religion = protestant } # Synod of Erdod
+1550.1.1  = { citysize = 6228 }
+1570.1.1   = {remove_core = TRA	} #Treaty of Speyer
+1600.1.1  = { citysize = 7110 }
+1604.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # The nobility in Royal Hungary rebelled against Habsburg & Jesuit repression
+1606.1.1  = { revolt = {} controller = HAB } # Peace treaty
+1619.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Occupied by Gabriel Bethlen
+1620.1.1  = { revolt = {} courthouse = yes }
+1626.1.1  = { controller = HAB courthouse = yes } # The 3rd Peace of Pressburg
+1640.1.1  = { religion = catholic }
+1648.1.1  = {	owner = TRA
+		controller = TRA
+		add_core = TRA
+	   	remove_core = HAB
+	    } # Kosice is united with Transylvania
+1650.1.1  = { citysize = 7933 fort3 = yes }
+1682.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Occupied by Imrich Tokoli
+1685.1.1  = {	revolt = {}
+		owner = HAB
+	        controller = HAB
+	        add_core = HAB
+	        remove_core = TRA
+	    } # Imrich Tokoli surrendered to the emperor's soldiers
+1700.1.1  = { citysize = 8447 tax_assessor = yes }
+1703.1.1  = { unrest = 6 } # Kuruc rebellion, lead by Francisc Rakoczy
+1710.1.1  = { citysize = 6213 } # Great plague
+1711.1.1  = { unrest = 0 } # Treaty of Szatmar, the House of Habsburg recognized as the new ruler
+1800.1.1  = { citysize = 6954 }
+
+1830.1.1   = { culture = slovak }
+1850.1.1   = { citysize = 25000 }
+1890.1.1   = { citysize = 28900 }
+1918.10.28 = { owner = CZS controller = CZS add_core = CZS remove_core = HAB remove_core = HUN capital = "Kosice" }
+1921.1.1   = { citysize = 52900 }
+1939.3.14  = { owner = SVK controller = SVK add_core = SVK }
+1939.4.4   = { owner = HUN controller = HUN } # Slovak-Hungarian War
+1942.1.1   = { citysize = 67000 }
+1944.3.1   = { owner = SVK controller = SVK }
+1945.5.8   = { owner = CZS controller = CZS }
+1980.1.1   = { citysize = 202400 }
+1992.12.31 = { owner = SVK controller = SVK remove_core = CZS }
+
+

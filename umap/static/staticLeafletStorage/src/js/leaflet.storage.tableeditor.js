@@ -1,6 +1,7 @@
 L.S.TableEditor = L.Class.extend({
 
     initialize: function (datalayer) {
+        console.debug("initializing datalayer", datalayer);
         this.datalayer = datalayer;
         this.table = L.DomUtil.create('div', 'table');
         this.header = L.DomUtil.create('div', 'thead', this.table);
@@ -52,6 +53,7 @@ L.S.TableEditor = L.Class.extend({
                 callback: feature.resetLabel
             }
         );
+        
         this.body.appendChild(builder.build());
     },
 

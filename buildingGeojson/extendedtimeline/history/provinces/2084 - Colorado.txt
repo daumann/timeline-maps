@@ -1,0 +1,36 @@
+newEntry2084 - Colorado.txt
+culture = navajo
+religion = totemism
+capital = "Colorado"
+native_size = 90
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_ferocity = 4.5
+native_hostileness = 9 
+
+1820.1.1   = { discovered_by = USA discovered_by = MEX }
+1858.11.1  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant
+		citysize = 400
+		trade_goods = grain
+		capital = "Denver"
+	      }
+1870.1.1   = { citysize = 4759 }
+1900.1.1   = { citysize = 133859 }
+1930.1.1   = { citysize = 287861 }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 415786 }
+1980.1.1   = { citysize = 492365 }
+2010.1.1   = { citysize = 600158 }
+
+

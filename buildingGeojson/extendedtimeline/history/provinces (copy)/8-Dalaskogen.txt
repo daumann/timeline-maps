@@ -1,0 +1,56 @@
+#Dalaskogen, northwesten part of Dalarna, including Mora and entire Siljan area.
+
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 1
+trade_goods = unknown
+manpower = 2
+capital = "Mora"
+native_hostileness = 1
+native_size = 10
+native_ferocity = 3
+
+10.1.1   = {
+		add_permanent_province_modifier = {
+			name = stora_kopparberget_modifier
+			duration = -1
+		}
+}
+
+550.1.1 = { discovered_by = VES discovered_by = SVE discovered_by = NOR }
+750.1.1 = { discovered_by = JMT owner = JMT controller = JMT add_core = JMT citysize = 1000 trade_goods = copper }
+950.1.1 = { discovered_by = western discovered_by = eastern }
+960.1.1 = { owner = NOR controller = NOR add_core = NOR remove_core = JMT }
+1020.1.1 = { religion = catholic }
+1050.1.1 = { owner = SWE controller = SWE add_core = SWE remove_core = NOR }
+1200.1.1 = { citysize = 1100 }
+1399.1.1 = { citysize = 1200 }
+
+1434.6.1  = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Engelbrekt rebellion
+1436.4.27  = { revolt = {} controller = SWE } # Engelbrekt was murdered by Måns Bengtsson Natt och Dag
+1436.4.28  = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde elected leader
+1438.3.1   = { revolt = {} controller = SWE } # Unclear date
+1438.10.1  = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Karl Knutsson Bonde, unclear date
+1440.9.1 = { revolt = {} controller = SWE } # Christopher III elected Union King
+1448.6.20 = { revolt = {} controller = SWE } # Karl VIII is elected king of Sweden
+1450.1.1  = { citysize = 1400 }
+1480.1.1  = { citysize = 1600 }
+1510.1.1  = { citysize = 1900 }
+1527.6.1  = { religion = protestant}
+1540.1.1  = { fort1 = yes } # estimated
+1560.1.1  = { citysize = 2300 }
+1612.1.1  = { regimental_camp = yes } #Dalregementet
+1612.1.1  = { fort2 = yes } # estimated
+1617.1.1  = { base_tax = 4 } #Copper is king!
+1635.1.1  = { courthouse = yes } #minor court belonging to Svea Hovrätt
+1650.1.1  = { citysize = 2800 }
+1680.1.1  = { fort3 = yes } # estimated
+1700.1.1  = { workshop = yes } #Local production explodes
+1720.1.1  = { citysize = 3500 }
+1730.1.1  = { fort4 = yes } # estimated
+1780.1.1  = { citysize = 3800 }
+1810.1.1  = { citysize = 4000 }
+
+
+

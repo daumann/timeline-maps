@@ -1,0 +1,28 @@
+#1191 - Sena
+
+culture = chewa
+religion = african
+capital = "Manthimba"
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 2
+native_size = 90
+native_ferocity = 4.5
+native_hostileness = 9
+
+1550.1.1   = { discovered_by = POR }
+1876.1.1   = { 	owner = GBR 
+		controller = GBR 
+		add_core = GBR 
+		citysize = 5000 
+		trade_goods = wool
+		religion = catholic 
+		capital = "Blantyre"
+	     }
+1950.1.1   = { citysize = 150000 }
+1964.7.6   = { owner = MWI controller = MWI add_core = MWI remove_core = GBR }
+2012.1.1   = { citysize = 728285 }
+
+
+

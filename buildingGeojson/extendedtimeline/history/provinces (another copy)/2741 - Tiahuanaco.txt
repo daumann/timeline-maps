@@ -1,0 +1,60 @@
+#802 - Chuquiabo
+
+culture = aimara
+religion = inti
+capital = "Tiahuanaco"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_size = 25
+native_ferocity = 2
+native_hostileness = 8
+discovered_by = andean
+discovered_by = south_american
+
+375.1.1 = { owner = TIW controller = TIW add_core = TIW citysize = 1000 trade_goods = grain }
+500.1.1 = { citysize = 1180 }
+600.1.1 = { citysize = 1360 }
+700.1.1 = { citysize = 1540 }
+800.1.1 = { citysize = 1720 }
+900.1.1 = { citysize = 1900 }
+1000.1.1 = { citysize = 2080 }
+1100.1.1 = { citysize = 2260 }
+1200.1.1 = { citysize = 2440 }
+1300.1.1 = { citysize = 2620 }
+1380.1.1 = { owner = PCJ controller = PCJ add_core = PCJ remove_core = TIW }
+1400.1.1 = { citysize = 2800 }
+
+1476.1.1 = {
+	owner = INC
+	controller = INC
+	add_core = INC
+}
+1500.1.1  = { citysize = 4000 }
+1533.8.29 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		add_core = SPA
+		culture = castillian
+		religion = catholic
+	    }# The death of Atahualpa
+1550.1.1  = { citysize = 4810 }
+1558.8.29 = { add_core = SPA }
+1650.1.1  = { citysize = 6420 }
+1700.1.1  = { citysize = 7980 }
+1750.1.1  = { citysize = 8130 }
+1800.1.1  = { citysize = 8450 }
+1809.7.16 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Bolivian War of Independence
+
+1825.8.6   = { revolt = {} owner = BOL controller = BOL add_core = BOL }
+1836.10.28 = { owner = PEU controller = PEU add_core = PEU }
+1839.8.25  = { owner = BOL controller = BOL remove_core = PEU }
+1847.7.21  = { remove_core = SPA }
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 100000 }
+1950.1.1   = { citysize = 450000 }
+2008.1.1   = { citysize = 877363 }
+
+
+

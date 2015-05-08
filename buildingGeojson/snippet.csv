@@ -1,0 +1,1000 @@
+Gelre	-500	dutch	germanic	Groningen	FRS	FRS	1000
+Gelre	400	dutch	germanic	Groningen	FRS	FRS	1500
+Gelre	500	dutch	germanic	Groningen	FRS	FRS	2000
+Gelre	600	dutch	germanic	Groningen	FRS	FRS	2500
+Gelre	700	dutch	germanic	Groningen	FRS	FRS	3000
+Gelre	734	dutch	germanic	Groningen	FRK	FRS	3000
+Gelre	800	dutch	chalcedonism	Groningen	FRK	FRS	3000
+Gelre	840	dutch	chalcedonism	Groningen	FRM	FRS	3000
+Gelre	855	dutch	chalcedonism	Groningen	LOT	FRS	3000
+Gelre	867	dutch	catholic	Groningen	LOT	FRS	3000
+Gelre	870	dutch	catholic	Groningen	FRE	FRS	3000
+Gelre	900	dutch	catholic	Groningen	FRE	FRS	4000
+Gelre	911	dutch	catholic	Groningen	LOT	FRS	4000
+Gelre	1000	dutch	catholic	Groningen	LOT	FRS	5000
+Gelre	1100	dutch	catholic	Groningen	LOT	FRS	6000
+Gelre	1101	dutch	catholic	Groningen	FRI	FRS	6000
+Gelre	1200	dutch	catholic	Groningen	FRI	FRS	7000
+Gelre	1300	dutch	catholic	Groningen	FRI	FRS	8000
+Gelre	1399	dutch	catholic	Groningen	FRI	FRS	9000
+Gelre	1450	dutch	catholic	Groningen	FRI	FRS	11000
+Gelre	1473	dutch	catholic	Groningen	BUR	FRS	11000
+Gelre	1477	dutch	catholic	Groningen	FRI	FRS	11000
+Gelre	1498	dutch	catholic	Groningen	SAX	FRS	11000
+Gelre	1500	dutch	catholic	Groningen	SAX	FRS	18000
+Gelre	1515	dutch	catholic	Groningen	HAB	REB	18000
+Gelre	1519	dutch	catholic	Groningen	SPA	REB	18000
+Gelre	1524	dutch	catholic	Groningen	SPA	SPA	18000
+Gelre	1550	dutch	catholic	Groningen	SPA	SPA	26000
+Gelre	1568	dutch	reformed	Groningen	SPA	SPA	26000
+Gelre	1579	dutch	reformed	Groningen	NED	SPA	26000
+Gelre	1600	dutch	reformed	Groningen	NED	SPA	30000
+Gelre	1650	dutch	reformed	Groningen	NED	SPA	35000
+Gelre	1800	dutch	reformed	Groningen	NED	SPA	40000
+Gelre	1810	dutch	reformed	Groningen	FRA	FRA	40000
+Gelre	1813	dutch	reformed	Groningen	NED	NED	40000
+Gelre	1850	dutch	reformed	Groningen	NED	NED	80000
+Gelre	1900	dutch	reformed	Groningen	NED	NED	120000
+Gelre	1940	dutch	reformed	Groningen	GER	GER	120000
+Gelre	1945	dutch	reformed	Groningen	NED	GBR	120000
+Gelre	1950	dutch	reformed	Groningen	NED	GBR	180000
+Nunavik	-500	cree	totemism	Cree	na	na	1000
+Nunavik	1668	english	protestant	Cree	ENG	ENG	100
+Nunavik	1700	english	protestant	Cree	ENG	ENG	520
+Nunavik	1707	english	protestant	Cree	GBR	GBR	520
+Nunavik	1750	english	protestant	Cree	GBR	GBR	1200
+Nunavik	1800	english	protestant	Cree	GBR	GBR	1750
+Nunavik	1850	english	protestant	Cree	GBR	GBR	1400
+Nunavik	1870	english	protestant	Cree	CAN	GBR	1400
+Nunavik	1900	english	protestant	Cree	CAN	GBR	1600
+Nunavik	1950	english	protestant	Cree	CAN	GBR	1800
+Nunavik	1980	english	protestant	Waskaganish	CAN	GBR	1800
+Cree	-500	anishinabe	totemism	Sault	na	na	1000
+Cree	1668	cosmopolitan_french	catholic	Sault Ste. Marie	FRA	FRA	100
+Cree	1763	english	protestant	Sault Ste. Marie	GBR	GBR	1200
+Cree	1800	english	protestant	Sault Ste. Marie	GBR	GBR	2590
+Cree	1851	english	protestant	Sault Ste. Marie	GBR	GBR	3000
+Cree	1867	english	protestant	Sault Ste. Marie	CAN	GBR	3000
+Cree	1881	english	protestant	Sault Ste. Marie	CAN	GBR	5000
+Cree	1901	english	protestant	Sault Ste. Marie	CAN	GBR	7169
+Cree	1931	english	protestant	Sault Ste. Marie	CAN	GBR	23082
+Cree	1951	english	protestant	Sault Ste. Marie	CAN	GBR	32452
+Cree	1981	english	protestant	Sault Ste. Marie	CAN	GBR	82697
+Sault	-500	cree	totemism	Abitbi	na	na	1000
+Sault	1686	cosmopolitan_french	catholic	Abitbi	FRA	FRA	250
+Sault	1760	cosmopolitan_french	catholic	Abitbi	FRA	GBR	250
+Sault	1763	cosmopolitan_french	catholic	Abitbi	GBR	GBR	250
+Sault	1800	cosmopolitan_french	catholic	Abitbi	GBR	GBR	8000
+Sault	1870	cosmopolitan_french	catholic	Abitbi	CAN	GBR	8000
+Sault	1910	cosmopolitan_french	catholic	Amos	CAN	GBR	8000
+Abitbi	-500	cree	totemism	Moose Cree	na	na	1000
+Abitbi	1679	english	protestant	Moose Cree	ENG	ENG	100
+Abitbi	1700	english	protestant	Moose Cree	ENG	ENG	550
+Abitbi	1707	english	protestant	Moose Cree	GBR	GBR	550
+Abitbi	1750	english	protestant	Moose Cree	GBR	GBR	1220
+Abitbi	1800	english	protestant	Moose Cree	GBR	GBR	1850
+Abitbi	1850	english	protestant	Moose Cree	GBR	GBR	1600
+Abitbi	1870	english	protestant	Moose Cree	CAN	GBR	1600
+Abitbi	1900	english	protestant	Moose Cree	CAN	GBR	1900
+Abitbi	1905	english	protestant	Moose Factory	CAN	GBR	1900
+Abitbi	1950	english	protestant	Moose Factory	CAN	GBR	2100
+Moose Cree	-500	cree	totemism	Attawapiskat	na	na	1000
+Moose Cree	1689	english	protestant	Attawapiskat	ENG	ENG	100
+Moose Cree	1707	english	protestant	Attawapiskat	GBR	ENG	100
+Moose Cree	1750	english	protestant	Attawapiskat	GBR	ENG	880
+Moose Cree	1800	english	protestant	Attawapiskat	GBR	ENG	1150
+Moose Cree	1850	english	protestant	Attawapiskat	GBR	ENG	1300
+Moose Cree	1870	english	protestant	Attawapiskat	CAN	ENG	1300
+Moose Cree	1900	english	protestant	Attawapiskat	CAN	ENG	1500
+Moose Cree	1950	english	protestant	Attawapiskat	CAN	ENG	1700
+Attawapiskat	-500	cree	totemism	Swampy Cree	na	na	1000
+Attawapiskat	1682	english	protestant	Swampy Cree	ENG	ENG	100
+Attawapiskat	1707	english	protestant	Swampy Cree	GBR	GBR	100
+Attawapiskat	1750	english	protestant	Swampy Cree	GBR	GBR	880
+Attawapiskat	1800	english	protestant	Swampy Cree	GBR	GBR	1144
+Attawapiskat	1820	english	protestant	York Factory	GBR	GBR	1144
+Swampy Cree	-500	cree	totemism	Chipewyan	na	na	1000
+Swampy Cree	1717	english	protestant	Churchill	GBR	GBR	150
+Swampy Cree	1750	english	protestant	Churchill	GBR	GBR	550
+Swampy Cree	1800	english	protestant	Churchill	GBR	GBR	1400
+Chipewyan	-500	anishinabe	totemism	Ojibwa	na	na	1000
+Chipewyan	1660	anishinabe	totemism	Ojibwa	OJI	OJI	1000
+Chipewyan	1710	anishinabe	totemism	Ojibwa	XXX	XXX	0
+Chipewyan	1717	cosmopolitan_french	catholic	Fort Kaministiquia	FRA	FRA	100
+Chipewyan	1763	english	protestant	Fort Kaministiquia	GBR	GBR	400
+Chipewyan	1800	english	protestant	Fort Kaministiquia	GBR	GBR	1505
+Chipewyan	1820	english	protestant	Thunder Bay	GBR	GBR	1505
+Chipewyan	1850	english	protestant	Thunder Bay	GBR	GBR	4000
+Chipewyan	1867	english	protestant	Thunder Bay	CAN	GBR	4000
+Chipewyan	1900	english	protestant	Thunder Bay	CAN	GBR	16000
+Chipewyan	1931	english	protestant	Thunder Bay	CAN	GBR	46095
+Chipewyan	1951	english	protestant	Thunder Bay	CAN	GBR	66108
+Chipewyan	1981	english	protestant	Thunder Bay	CAN	GBR	112486
+Ojibwa	-500	nakota	totemism	Manitoba	na	na	1000
+Ojibwa	1734	cosmopolitan_french	catholic	Fort Maurepas	FRA	FRA	100
+Ojibwa	1763	english	protestant	Fort Maurepas	GBR	GBR	450
+Ojibwa	1861	english	protestant	Fort Maurepas	GBR	GBR	3000
+Ojibwa	1870	english	protestant	Fort Maurepas	CAN	GBR	3000
+Ojibwa	1873	english	protestant	Winnipeg	CAN	GBR	3000
+Ojibwa	1881	english	protestant	Winnipeg	CAN	GBR	7995
+Ojibwa	1901	english	protestant	Winnipeg	CAN	GBR	42540
+Ojibwa	1931	english	protestant	Winnipeg	CAN	GBR	218785
+Ojibwa	1951	english	protestant	Winnipeg	CAN	GBR	235710
+Ojibwa	1981	english	protestant	Winnipeg	CAN	GBR	564373
+Winnipeg	-500	cree	totemism	Atikaki	na	na	1000
+Winnipeg	1763	english	protestant	Atikaki	GBR	GBR	500
+Winnipeg	1870	english	protestant	Atikaki	CAN	GBR	500
+Friesland	-500	roman	hellenism	Albingaunum	ROM	ROM	3000
+Friesland	100	roman	hellenism	Albingaunum	ROM	ROM	4000
+Friesland	200	roman	hellenism	Albingaunum	ROM	ROM	6000
+Friesland	300	roman	hellenism	Albingaunum	ROM	ROM	8000
+Friesland	395	roman	hellenism	Albingaunum	ROW	ROM	8000
+Friesland	400	roman	hellenism	Albingaunum	ROW	ROM	10000
+Friesland	450	roman	chalcedonism	Albingaunum	ROW	ROM	10000
+Friesland	476	roman	chalcedonism	Albingaunum	ODO	ROM	10000
+Friesland	489	roman	chalcedonism	Albingaunum	GOS	ROM	10000
+Friesland	500	roman	chalcedonism	Albingaunum	GOS	ROM	12000
+Friesland	551	roman	chalcedonism	Albingaunum	BYZ	ROM	12000
+Friesland	600	roman	chalcedonism	Albingaunum	BYZ	ROM	15000
+Friesland	641	lombard	chalcedonism	Albingaunum	BYZ	ROM	15000
+Friesland	700	lombard	chalcedonism	Albingaunum	BYZ	ROM	18000
+Friesland	774	lombard	chalcedonism	Albingaunum	FRK	ROM	18000
+Friesland	800	lombard	chalcedonism	Albingaunum	FRK	ROM	21000
+Friesland	840	lombard	chalcedonism	Albingaunum	FRM	ROM	21000
+Canyon	-500	na	na	na	na	na	1000
+Canyon	867	na	catholic	na	na	na	1000
+Canyon	900	na	catholic	na	na	na	24000
+Canyon	962	na	catholic	na	LOM	na	24000
+Canyon	1000	na	catholic	na	LOM	na	27000
+Canyon	1005	na	catholic	Genova	LOM	na	27000
+Canyon	1100	na	catholic	Genova	LOM	na	30000
+Canyon	1200	na	catholic	Genova	LOM	na	35000
+Canyon	1300	na	catholic	Genova	LOM	na	40000
+Canyon	1318	na	catholic	Genova	NAP	na	40000
+Canyon	1343	na	catholic	Genova	GEN	na	40000
+Canyon	1399	na	catholic	Genova	GEN	na	45000
+Canyon	1450	na	catholic	Genova	GEN	na	50000
+Canyon	1477	na	catholic	Genova	GEN	GEN	50000
+Canyon	1478	na	catholic	Genova	GEN	REB	50000
+Canyon	1488	na	catholic	Genova	GEN	GEN	50000
+Canyon	1499	na	catholic	Genova	FRA	FRA	50000
+Canyon	1500	na	catholic	Genova	FRA	FRA	60000
+Canyon	1507	na	catholic	Genova	FRA	FRA	60000
+Canyon	1512	na	catholic	Genova	FRA	REB	60000
+Canyon	1513	na	catholic	Genova	FRA	FRA	60000
+Canyon	1522	na	catholic	Genova	GEN	FRA	60000
+Canyon	1527	na	catholic	Genova	FRA	FRA	60000
+Canyon	1528	na	catholic	Genova	GEN	FRA	60000
+Canyon	1550	na	catholic	Genova	GEN	FRA	65000
+Canyon	1600	na	catholic	Genova	GEN	FRA	71000
+Canyon	1650	na	catholic	Genova	GEN	FRA	90000
+Canyon	1700	na	catholic	Genova	GEN	FRA	80000
+Canyon	1750	na	catholic	Genova	GEN	FRA	87000
+Canyon	1800	na	catholic	Genova	GEN	FRA	91000
+Canyon	1805	na	catholic	Genova	FRA	FRA	91000
+Canyon	1814	na	catholic	Genova	SPI	SPI	91000
+Canyon	1850	na	catholic	Genova	SPI	SPI	150000
+Canyon	1861	na	catholic	Genova	ITA	SPI	242447
+Canyon	1881	na	catholic	Genova	ITA	SPI	289234
+Canyon	1901	na	catholic	Genova	ITA	SPI	377610
+Canyon	1921	na	catholic	Genova	ITA	SPI	541562
+Canyon	1936	na	catholic	Genova	ITA	SPI	634646
+Canyon	1961	na	catholic	Genova	ITA	SPI	784194
+Canyon	1981	na	catholic	Genova	ITA	SPI	762895
+Atikaki	-500	cree	totemism	Manitoba	na	na	1000
+Atikaki	1741	cosmopolitan_french	catholic	Fort Dauphin	FRA	FRA	100
+Atikaki	1763	english	protestant	Fort Dauphin	GBR	GBR	300
+Atikaki	1850	english	protestant	Fort Dauphin	GBR	GBR	1500
+Atikaki	1870	english	protestant	Fort Dauphin	CAN	GBR	1500
+Atikaki	1881	english	protestant	Fort Dauphin	CAN	GBR	3000
+Atikaki	1882	english	protestant	Brandon	CAN	GBR	3000
+Atikaki	1901	english	protestant	Brandon	CAN	GBR	5620
+Atikaki	1931	english	protestant	Brandon	CAN	GBR	17082
+Atikaki	1951	english	protestant	Brandon	CAN	GBR	20598
+Atikaki	1981	english	protestant	Brandon	CAN	GBR	36242
+Manitoba	-500	cree	totemism	Woods cree	na	na	1000
+Manitoba	1763	english	protestant	Woods cree	GBR	GBR	450
+Manitoba	1800	english	protestant	Woods cree	GBR	GBR	1400
+Manitoba	1870	english	protestant	Woods cree	CAN	GBR	1400
+Woods Cree	-500	japanese	animism	Kagoshima	KYU	KYU	1464
+Woods Cree	100	japanese	animism	Kagoshima	KYU	KYU	1628
+Woods Cree	200	japanese	animism	Kagoshima	KYU	KYU	1957
+Woods Cree	300	japanese	animism	Kagoshima	KYU	KYU	2285
+Woods Cree	400	japanese	animism	Kagoshima	KYU	KYU	2614
+Woods Cree	500	japanese	animism	Kagoshima	KYU	KYU	2942
+Woods Cree	600	japanese	animism	Kagoshima	KYU	KYU	3271
+Woods Cree	607	japanese	buddhism	Kagoshima	KYU	KYU	3271
+Woods Cree	700	japanese	buddhism	Kagoshima	KYU	KYU	3599
+Woods Cree	712	japanese	shinto	Kagoshima	KYU	KYU	3599
+Woods Cree	720	japanese	shinto	Kagoshima	YAM	KYU	3599
+Woods Cree	794	japanese	shinto	Kagoshima	JAP	KYU	3599
+Woods Cree	800	japanese	shinto	Kagoshima	JAP	KYU	3928
+Woods Cree	900	japanese	shinto	Kagoshima	JAP	KYU	4257
+Woods Cree	1000	japanese	shinto	Kagoshima	JAP	KYU	4585
+Woods Cree	1100	japanese	shinto	Kagoshima	JAP	KYU	4914
+Woods Cree	1192	japanese	shinto	Kagoshima	SMZ	KYU	4914
+Woods Cree	1200	japanese	shinto	Kagoshima	SMZ	KYU	5242
+Woods Cree	1300	japanese	shinto	Kagoshima	SMZ	KYU	5571
+Woods Cree	1399	japanese	shinto	Kagoshima	SMZ	KYU	5900
+Woods Cree	1850	japanese	shinto	Kagoshima	SMZ	KYU	40000
+Woods Cree	1868	japanese	shinto	Kagoshima	JAP	KYU	40000
+Woods Cree	1900	japanese	shinto	Kagoshima	JAP	KYU	120000
+Woods Cree	1950	japanese	shinto	Kagoshima	JAP	KYU	300000
+Satsuma	-500	korean	buddhism	Gongju	BKJ	BKJ	4328
+Satsuma	100	korean	buddhism	Gongju	BKJ	BKJ	6776
+Satsuma	200	korean	buddhism	Gongju	BKJ	BKJ	8552
+Satsuma	300	korean	buddhism	Gongju	BKJ	BKJ	10329
+Satsuma	400	korean	buddhism	Gongju	BKJ	BKJ	12105
+Satsuma	500	korean	buddhism	Gongju	BKJ	BKJ	13882
+Satsuma	600	korean	buddhism	Gongju	BKJ	BKJ	15658
+Satsuma	660	korean	buddhism	Gongju	SLL	BKJ	15658
+Satsuma	700	korean	buddhism	Gongju	SLL	BKJ	17434
+Satsuma	800	korean	buddhism	Gongju	SLL	BKJ	19211
+Satsuma	900	korean	buddhism	Gongju	SLL	BKJ	20987
+Satsuma	935	korean	buddhism	Gongju	KOR	BKJ	20987
+Satsuma	1000	korean	buddhism	Gongju	KOR	BKJ	22764
+Satsuma	1100	korean	buddhism	Gongju	KOR	BKJ	24540
+Satsuma	1200	korean	buddhism	Gongju	KOR	BKJ	26317
+Satsuma	1300	korean	buddhism	Gongju	KOR	BKJ	28093
+Satsuma	1392	korean	confucianism	Gongju	KOR	BKJ	28093
+Satsuma	1399	korean	confucianism	Gongju	KOR	BKJ	29870
+Satsuma	1450	korean	confucianism	Gongju	KOR	BKJ	12000
+Satsuma	1500	korean	confucianism	Gongju	KOR	BKJ	13000
+Satsuma	1550	korean	confucianism	Gongju	KOR	BKJ	14000
+Satsuma	1592	korean	confucianism	Gongju	KOR	JAP	14000
+Satsuma	1593	korean	confucianism	Gongju	KOR	KOR	14000
+Satsuma	1597	korean	confucianism	Gongju	KOR	KOR	14000
+Satsuma	1600	korean	confucianism	Gongju	KOR	KOR	13000
+Satsuma	1700	korean	confucianism	Gongju	KOR	KOR	14000
+Satsuma	1750	korean	confucianism	Gongju	KOR	KOR	16000
+Satsuma	1800	korean	confucianism	Gongju	KOR	KOR	17000
+Satsuma	1910	korean	confucianism	Gongju	JAP	KOR	17000
+Satsuma	1932	korean	confucianism	Daejeon	JAP	KOR	17000
+Satsuma	1945	korean	confucianism	Daejeon	KOR	KOR	17000
+Chungcheong	-500	japanese	animism	Funai	KYU	KYU	6100
+Chungcheong	100	japanese	animism	Funai	KYU	KYU	1735
+Chungcheong	200	japanese	animism	Funai	KYU	KYU	2071
+Chungcheong	300	japanese	animism	Funai	KYU	KYU	2407
+Chungcheong	400	japanese	animism	Funai	KYU	KYU	2742
+Chungcheong	500	japanese	animism	Funai	KYU	KYU	3078
+Chungcheong	600	japanese	animism	Funai	KYU	KYU	3414
+Chungcheong	607	japanese	buddhism	Funai	KYU	KYU	3414
+Chungcheong	650	japanese	buddhism	Funai	YAM	KYU	3414
+Chungcheong	700	japanese	buddhism	Funai	YAM	KYU	3750
+Chungcheong	712	japanese	shinto	Funai	YAM	KYU	3750
+Chungcheong	794	japanese	shinto	Funai	JAP	KYU	3750
+Chungcheong	800	japanese	shinto	Funai	JAP	KYU	4085
+Chungcheong	900	japanese	shinto	Funai	JAP	KYU	4421
+Chungcheong	1000	japanese	shinto	Funai	JAP	KYU	4757
+Chungcheong	1100	japanese	shinto	Funai	JAP	KYU	5092
+Chungcheong	1192	japanese	shinto	Funai	OTM	KYU	5092
+Chungcheong	1200	japanese	shinto	Funai	OTM	KYU	5428
+Chungcheong	1300	japanese	shinto	Funai	OTM	KYU	5764
+Chungcheong	1399	japanese	shinto	Funai	OTM	KYU	6100
+Chungcheong	1587	japanese	shinto	Funai	OTM	KYU	6100
+Chungcheong	1600	japanese	shinto	Funai	TKG	KYU	6100
+Chungcheong	1603	japanese	shinto	Funai	JAP	KYU	6100
+Hälsingland	-500	ryukyuan	animism	Shuri	na	na	1000
+Hälsingland	1187	ryukyuan	animism	Shuri	RYU	na	1000
+Hälsingland	1450	ryukyuan	animism	Shuri	RYU	na	9100
+Hälsingland	1500	ryukyuan	animism	Shuri	RYU	na	10576
+Hälsingland	1550	ryukyuan	animism	Shuri	RYU	na	11300
+Hälsingland	1600	ryukyuan	animism	Shuri	RYU	na	12900
+Hälsingland	1609	ryukyuan	animism	Shuri	RYU	JAP	12900
+Hälsingland	1611	ryukyuan	animism	Shuri	RYU	RYU	12900
+Hälsingland	1624	ryukyuan	shinto	Shuri	RYU	RYU	12900
+Hälsingland	1650	ryukyuan	shinto	Shuri	RYU	RYU	14880
+Hälsingland	1700	ryukyuan	shinto	Shuri	RYU	RYU	15340
+Hälsingland	1750	ryukyuan	shinto	Shuri	RYU	RYU	17150
+Hälsingland	1800	ryukyuan	shinto	Shuri	RYU	RYU	19880
+Hälsingland	1850	ryukyuan	shinto	Shuri	RYU	RYU	30000
+Hälsingland	1879	ryukyuan	shinto	Naha	RYU	RYU	30000
+Hälsingland	1900	ryukyuan	shinto	Naha	RYU	RYU	70000
+Hälsingland	1950	ryukyuan	shinto	Naha	RYU	RYU	160000
+Okinawa	-500	vietnamese	buddhism	Thanh Hoa	HND	HND	2236
+Okinawa	100	vietnamese	buddhism	Thanh Hoa	HND	HND	1214
+Okinawa	137	vietnamese	buddhism	Thanh Hoa	HND	REB	1214
+Okinawa	138	vietnamese	buddhism	Thanh Hoa	HND	HND	1214
+Okinawa	156	vietnamese	buddhism	Thanh Hoa	HND	REB	1214
+Okinawa	160	vietnamese	buddhism	Thanh Hoa	HND	HND	1214
+Okinawa	178	vietnamese	buddhism	Thanh Hoa	HND	REB	1214
+Okinawa	181	vietnamese	buddhism	Thanh Hoa	HND	HND	1214
+Okinawa	200	vietnamese	buddhism	Thanh Hoa	HND	HND	1428
+Okinawa	220	vietnamese	buddhism	Thanh Hoa	WUU	HND	1428
+Okinawa	280	vietnamese	buddhism	Thanh Hoa	JIN	HND	1428
+Okinawa	299	vietnamese	buddhism	Thanh Hoa	JIN	REB	1428
+Okinawa	300	vietnamese	buddhism	Thanh Hoa	JIN	REB	1642
+Okinawa	323	vietnamese	buddhism	Thanh Hoa	JIN	JIN	1642
+Okinawa	400	vietnamese	buddhism	Thanh Hoa	JIN	JIN	1857
+Okinawa	420	vietnamese	buddhism	Thanh Hoa	LSO	JIN	1857
+Okinawa	468	vietnamese	buddhism	Thanh Hoa	LSO	REB	1857
+Okinawa	479	vietnamese	buddhism	Thanh Hoa	QIC	REB	1857
+Okinawa	485	vietnamese	buddhism	Thanh Hoa	QIC	QIC	1857
+Okinawa	500	vietnamese	buddhism	Thanh Hoa	QIC	QIC	2071
+Okinawa	502	vietnamese	buddhism	Thanh Hoa	LNG	QIC	2071
+Okinawa	544	vietnamese	buddhism	Thanh Hoa	DAI	QIC	2071
+Okinawa	600	vietnamese	buddhism	Thanh Hoa	DAI	QIC	2285
+Okinawa	602	vietnamese	buddhism	Thanh Hoa	SUI	QIC	2285
+Okinawa	618	vietnamese	buddhism	Thanh Hoa	TNG	QIC	2285
+Okinawa	620	vietnamese	buddhism	Thanh Hoa	TNG	REB	2285
+Okinawa	623	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2285
+Okinawa	678	vietnamese	buddhism	Thanh Hoa	TNG	REB	2285
+Okinawa	679	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2285
+Okinawa	700	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2499
+Okinawa	722	vietnamese	buddhism	Thanh Hoa	TNG	REB	2499
+Okinawa	723	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2499
+Okinawa	791	vietnamese	buddhism	Thanh Hoa	TNG	REB	2499
+Okinawa	800	vietnamese	buddhism	Thanh Hoa	TNG	REB	2714
+Okinawa	802	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2714
+Okinawa	819	vietnamese	buddhism	Thanh Hoa	TNG	REB	2714
+Okinawa	820	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2714
+Okinawa	900	vietnamese	buddhism	Thanh Hoa	TNG	TNG	2928
+Okinawa	905	vietnamese	buddhism	Thanh Hoa	DAI	TNG	2928
+Okinawa	1000	vietnamese	buddhism	Thanh Hoa	DAI	TNG	3142
+Okinawa	1100	vietnamese	buddhism	Thanh Hoa	DAI	TNG	3357
+Okinawa	1200	vietnamese	buddhism	Thanh Hoa	DAI	TNG	3571
+Okinawa	1300	vietnamese	buddhism	Thanh Hoa	DAI	TNG	3785
+Okinawa	1399	vietnamese	buddhism	Thanh Hoa	DAI	TNG	4000
+Okinawa	1413	vietnamese	buddhism	Thanh Hoa	MNG	REB	4000
+Okinawa	1427	vietnamese	buddhism	Thanh Hoa	DAI	DAI	4000
+Okinawa	1450	vietnamese	buddhism	Thanh Hoa	DAI	DAI	3880
+Okinawa	1500	vietnamese	buddhism	Thanh Hoa	DAI	DAI	4010
+Okinawa	1527	vietnamese	buddhism	Thanh Hoa	TOK	TOK	4010
+Okinawa	1550	vietnamese	buddhism	Thanh Hoa	TOK	TOK	4755
+Okinawa	1600	vietnamese	buddhism	Thanh Hoa	TOK	TOK	6200
+Okinawa	1650	vietnamese	buddhism	Thanh Hoa	TOK	TOK	7480
+Okinawa	1700	vietnamese	buddhism	Thanh Hoa	TOK	TOK	8340
+Okinawa	1750	vietnamese	buddhism	Thanh Hoa	TOK	TOK	9077
+Okinawa	1786	vietnamese	buddhism	Thanh Hoa	DAI	DAI	9077
+Okinawa	1800	vietnamese	buddhism	Thanh Hoa	DAI	DAI	9500
+Okinawa	1802	vietnamese	buddhism	Thanh Hoa	ANN	ANN	9500
+Okinawa	1850	vietnamese	buddhism	Thanh Hoa	ANN	ANN	40000
+Okinawa	1886	vietnamese	buddhism	Thanh Hoa	FR2	ANN	40000
+Okinawa	1900	vietnamese	buddhism	Thanh Hoa	FR2	ANN	150000
+Okinawa	1940	vietnamese	buddhism	Thanh Hoa	FR2	JAP	150000
+Okinawa	1945	vietnamese	buddhism	Thanh Hoa	NVI	JAP	150000
+Okinawa	1950	vietnamese	buddhism	Thanh Hoa	NVI	JAP	500000
+Okinawa	1976	vietnamese	buddhism	Thanh Hoa	VTN	JAP	500000
+Nghe An	-500	japanese	animism	Yamaguchi	KIB	KIB	1353
+Nghe An	100	japanese	animism	Yamaguchi	KIB	KIB	1507
+Nghe An	200	japanese	animism	Yamaguchi	KIB	KIB	1814
+Nghe An	300	japanese	animism	Yamaguchi	KIB	KIB	2121
+Nghe An	400	japanese	animism	Yamaguchi	KIB	KIB	2428
+Nghe An	500	japanese	animism	Yamaguchi	KIB	KIB	2735
+Nghe An	550	japanese	buddhism	Yamaguchi	KIB	KIB	2735
+Nghe An	580	japanese	buddhism	Yamaguchi	YAM	KIB	2735
+Nghe An	600	japanese	buddhism	Yamaguchi	YAM	KIB	3042
+Nghe An	700	japanese	buddhism	Yamaguchi	YAM	KIB	3350
+Nghe An	712	japanese	shinto	Yamaguchi	YAM	KIB	3350
+Nghe An	794	japanese	shinto	Yamaguchi	JAP	KIB	3350
+Nghe An	800	japanese	shinto	Yamaguchi	JAP	KIB	3657
+Nghe An	900	japanese	shinto	Yamaguchi	JAP	KIB	3964
+Nghe An	1000	japanese	shinto	Yamaguchi	JAP	KIB	4271
+Nghe An	1100	japanese	shinto	Yamaguchi	JAP	KIB	4578
+Nghe An	1192	japanese	shinto	Yamaguchi	OUC	KIB	4578
+Nghe An	1200	japanese	shinto	Yamaguchi	OUC	KIB	4885
+Nghe An	1300	japanese	shinto	Yamaguchi	OUC	KIB	5192
+Nghe An	1399	japanese	shinto	Yamaguchi	OUC	KIB	5500
+Nghe An	1557	japanese	shinto	Yamaguchi	MRI	KIB	5500
+Nghe An	1603	japanese	shinto	Hagi	MRI	KIB	5500
+Nghe An	1850	japanese	shinto	Yamaguchi	MRI	KIB	5500
+Nghe An	1868	japanese	shinto	Yamaguchi	JAP	KIB	5500
+Nghe An	1900	japanese	shinto	Yamaguchi	JAP	KIB	50000
+Nghe An	1950	japanese	shinto	Yamaguchi	JAP	KIB	120000
+Nagato	-500	japanese	animism	Izumo	IZU	IZU	1344
+Nagato	100	japanese	animism	Izumo	IZU	IZU	1488
+Nagato	200	japanese	animism	Izumo	IZU	IZU	1776
+Nagato	300	japanese	animism	Izumo	IZU	IZU	2064
+Nagato	400	japanese	animism	Izumo	IZU	IZU	2352
+Nagato	500	japanese	animism	Izumo	IZU	IZU	2640
+Nagato	530	japanese	animism	Izumo	YAM	IZU	2640
+Nagato	580	japanese	buddhism	Izumo	YAM	IZU	2640
+Nagato	600	japanese	buddhism	Izumo	YAM	IZU	2928
+Nagato	700	japanese	buddhism	Izumo	YAM	IZU	3217
+Nagato	712	japanese	shinto	Izumo	YAM	IZU	3217
+Nagato	794	japanese	shinto	Izumo	JAP	IZU	3217
+Nagato	800	japanese	shinto	Izumo	JAP	IZU	3505
+Nagato	900	japanese	shinto	Izumo	JAP	IZU	3793
+Nagato	1000	japanese	shinto	Matsue	JAP	IZU	3793
+Nagato	1100	japanese	shinto	Matsue	JAP	IZU	4369
+Nagato	1192	japanese	shinto	Matsue	YMN	IZU	4369
+Nagato	1200	japanese	shinto	Matsue	YMN	IZU	4657
+Nagato	1300	japanese	shinto	Matsue	YMN	IZU	4945
+Nagato	1399	japanese	shinto	Matsue	YMN	IZU	5234
+Nagato	1486	japanese	shinto	Matsue	AMA	IZU	5234
+Nagato	1566	japanese	shinto	Matsue	MRI	IZU	5234
+Nagato	1600	japanese	shinto	Matsue	TKG	IZU	5234
+Nagato	1603	japanese	shinto	Matsue	JAP	IZU	5234
+Nagato	1850	japanese	shinto	Matsue	JAP	IZU	20000
+Nagato	1900	japanese	shinto	Matsue	JAP	IZU	40000
+Nagato	1950	japanese	shinto	Matsue	JAP	IZU	90000
+Izumo	-500	japanese	animism	Himeji	IZU	IZU	2300
+Izumo	100	japanese	animism	Himeji	IZU	IZU	2445
+Izumo	200	japanese	animism	Himeji	IZU	IZU	2891
+Izumo	300	japanese	animism	Himeji	IZU	IZU	3337
+Izumo	400	japanese	animism	Himeji	IZU	IZU	3782
+Izumo	500	japanese	animism	Himeji	IZU	IZU	4228
+Izumo	530	japanese	animism	Himeji	YAM	IZU	4228
+Izumo	600	japanese	animism	Himeji	YAM	IZU	4674
+Izumo	607	japanese	buddhism	Himeji	YAM	IZU	4674
+Izumo	700	japanese	buddhism	Himeji	YAM	IZU	5119
+Izumo	712	japanese	shinto	Himeji	YAM	IZU	5119
+Izumo	794	japanese	shinto	Himeji	JAP	IZU	5119
+Izumo	800	japanese	shinto	Himeji	JAP	IZU	5565
+Izumo	900	japanese	shinto	Himeji	JAP	IZU	6011
+Izumo	1000	japanese	shinto	Himeji	JAP	IZU	6457
+Izumo	1100	japanese	shinto	Himeji	JAP	IZU	6902
+Izumo	1192	japanese	shinto	Himeji	YMN	IZU	6902
+Izumo	1200	japanese	shinto	Himeji	YMN	IZU	7348
+Izumo	1300	japanese	shinto	Himeji	YMN	IZU	7794
+Izumo	1399	japanese	shinto	Himeji	YMN	IZU	8240
+Izumo	1468	japanese	shinto	Himeji	HSK	IZU	8240
+Izumo	1532	japanese	shinto	Himeji	AMA	IZU	8240
+Izumo	1566	japanese	shinto	Himeji	HSK	IZU	8240
+Izumo	1578	japanese	shinto	Himeji	JAP	IZU	8240
+Izumo	1600	japanese	shinto	Himeji	IKE	IZU	8240
+Izumo	1850	japanese	shinto	Himeji	IKE	IZU	40000
+Izumo	1868	japanese	shinto	Himeji	JAP	IZU	40000
+Izumo	1889	japanese	shinto	Kobe	JAP	IZU	40000
+Izumo	1900	japanese	shinto	Kobe	JAP	IZU	100000
+Izumo	1950	japanese	shinto	Kobe	JAP	IZU	600000
+Liguria	-500	roman	hellenism	Nicaea	ROM	ROM	1200
+Liguria	100	roman	hellenism	Nicaea	ROM	ROM	1500
+Liguria	200	roman	hellenism	Nicaea	ROM	ROM	2200
+Liguria	300	roman	hellenism	Nicaea	ROM	ROM	2900
+Liguria	380	roman	chalcedonism	Nicaea	ROM	ROM	2900
+Liguria	395	roman	chalcedonism	Nicaea	ROW	ROM	2900
+Liguria	400	roman	chalcedonism	Nicaea	ROW	ROM	3600
+Liguria	476	roman	chalcedonism	Nicaea	ODO	ROM	3600
+Liguria	489	roman	chalcedonism	Nicaea	GOS	ROM	3600
+Liguria	500	gothic	chalcedonism	Nicaea	GOS	ROM	3600
+Liguria	553	lombard	chalcedonism	Nicaea	GOS	ROM	3600
+Liguria	600	lombard	chalcedonism	Nicaea	GOS	ROM	5000
+Liguria	641	lombard	chalcedonism	Nice	GOS	ROM	5000
+Liguria	700	lombard	chalcedonism	Nice	GOS	ROM	5700
+Liguria	800	lombard	chalcedonism	Nice	GOS	ROM	6400
+Liguria	840	lombard	chalcedonism	Nice	FRM	ROM	6400
+Liguria	855	lombard	chalcedonism	Nice	PRO	ROM	6400
+Liguria	863	lombard	chalcedonism	Nice	ITA	ROM	6400
+Liguria	867	lombard	catholic	Nice	ITA	ROM	6400
+Liguria	879	lombard	catholic	Nice	PRO	ROM	6400
+Liguria	887	lombard	catholic	Nice	PRO	ROM	6400
+Liguria	900	lombard	catholic	Nice	PRO	ROM	7200
+Liguria	933	lombard	catholic	Nice	BUR	ROM	7200
+Liguria	961	lombard	catholic	Nice	PRO	ROM	7200
+Liguria	1000	lombard	catholic	Nice	NIC	ROM	8000
+Liguria	1100	lombard	catholic	Nice	NIC	ROM	9000
+Liguria	1200	lombard	catholic	Nice	NIC	ROM	10000
+Liguria	1300	lombard	catholic	Nice	NIC	ROM	11000
+Liguria	1388	lombard	catholic	Nice	SAV	ROM	11000
+Liguria	1399	lombard	catholic	Nice	SAV	ROM	12000
+Liguria	1450	lombard	catholic	Nice	SAV	ROM	14000
+Liguria	1500	lombard	catholic	Nice	SAV	ROM	15000
+Liguria	1600	lombard	catholic	Nice	SAV	ROM	16000
+Liguria	1700	lombard	catholic	Nice	SAV	ROM	15000
+Liguria	1706	lombard	catholic	Nice	SAV	FRA	15000
+Liguria	1713	lombard	catholic	Nice	SIC	SIC	15000
+Liguria	1720	lombard	catholic	Nice	SPI	SPI	15000
+Liguria	1750	lombard	catholic	Nice	SPI	SPI	16000
+Liguria	1792	lombard	catholic	Nice	SPI	FRA	16000
+Liguria	1797	lombard	catholic	Nice	FRA	FRA	16000
+Liguria	1800	lombard	catholic	Nice	FRA	FRA	13000
+Liguria	1814	lombard	catholic	Nice	SPI	SPI	13000
+Liguria	1828	lombard	catholic	Nice	SPI	SPI	28840
+Liguria	1848	lombard	catholic	Nice	SPI	SPI	36804
+Liguria	1860	lombard	catholic	Nice	FRA	FRA	36804
+Liguria	1861	lombard	catholic	Nice	FRA	FRA	48273
+Liguria	1870	lombard	catholic	Nice	FR2	FR2	48273
+Liguria	1881	lombard	catholic	Nice	FR2	FR2	66279
+Liguria	1901	lombard	catholic	Nice	FR2	FR2	105109
+Liguria	1926	lombard	catholic	Nice	FR2	FR2	185000
+Liguria	1940	lombard	catholic	Nice	ITA	ITA	185000
+Liguria	1943	lombard	catholic	Nice	FRV	ITA	185000
+Liguria	1944	lombard	catholic	Nice	FR2	ITA	185000
+Liguria	1946	lombard	catholic	Nice	FR2	ITA	210000
+Liguria	1962	lombard	catholic	Nice	FR2	ITA	293000
+Liguria	1982	lombard	catholic	Nice	FR2	ITA	337085
+Harima	-500	japanese	animism	Kyoto	YAM	YAM	9503
+Harima	100	japanese	animism	Kyoto	YAM	YAM	11007
+Harima	200	japanese	animism	Kyoto	YAM	YAM	14014
+Harima	300	japanese	animism	Kyoto	YAM	YAM	17021
+Harima	400	japanese	animism	Kyoto	YAM	YAM	20028
+Harima	500	japanese	animism	Kyoto	YAM	YAM	23035
+Harima	600	japanese	animism	Kyoto	YAM	YAM	26042
+Harima	607	japanese	buddhism	Kyoto	YAM	YAM	26042
+Harima	700	japanese	buddhism	Kyoto	YAM	YAM	29050
+Harima	712	japanese	shinto	Kyoto	YAM	YAM	29050
+Harima	794	japanese	shinto	Kyoto	JAP	YAM	29050
+Harima	800	japanese	shinto	Kyoto	JAP	YAM	32057
+Harima	900	japanese	shinto	Kyoto	JAP	YAM	35064
+Harima	1000	japanese	shinto	Kyoto	JAP	YAM	38071
+Harima	1100	japanese	shinto	Kyoto	JAP	YAM	41078
+Harima	1200	japanese	shinto	Kyoto	JAP	YAM	44085
+Harima	1300	japanese	shinto	Kyoto	JAP	YAM	47092
+Harima	1399	japanese	shinto	Kyoto	JAP	YAM	50100
+Harima	1850	japanese	shinto	Kyoto	JAP	YAM	100000
+Harima	1900	japanese	shinto	Kyoto	JAP	YAM	250000
+Harima	1950	japanese	shinto	Kyoto	JAP	YAM	800000
+Kyoto	-500	japanese	animism	Naniwa	YAM	YAM	12942
+Kyoto	100	japanese	animism	Naniwa	YAM	YAM	15885
+Kyoto	200	japanese	animism	Naniwa	YAM	YAM	21771
+Kyoto	300	japanese	animism	Naniwa	YAM	YAM	27657
+Kyoto	400	japanese	animism	Naniwa	YAM	YAM	33542
+Kyoto	500	japanese	animism	Naniwa	YAM	YAM	39428
+Kyoto	600	japanese	animism	Naniwa	YAM	YAM	45314
+Kyoto	607	japanese	buddhism	Naniwa	YAM	YAM	45314
+Kyoto	700	japanese	buddhism	Naniwa	YAM	YAM	51199
+Kyoto	712	japanese	shinto	Naniwa	YAM	YAM	51199
+Kyoto	794	japanese	shinto	Naniwa	JAP	YAM	51199
+Kyoto	800	japanese	shinto	Naniwa	JAP	YAM	57085
+Kyoto	900	japanese	shinto	Naniwa	JAP	YAM	62971
+Kyoto	1000	japanese	shinto	Naniwa	JAP	YAM	68857
+Kyoto	1100	japanese	shinto	Naniwa	JAP	YAM	74742
+Kyoto	1192	japanese	shinto	Naniwa	HSK	YAM	74742
+Kyoto	1200	japanese	shinto	Naniwa	HSK	YAM	80628
+Kyoto	1300	japanese	shinto	Naniwa	HSK	YAM	86514
+Kyoto	1399	japanese	shinto	Naniwa	HSK	YAM	92400
+Kyoto	1478	japanese	shinto	Sakai	HSK	YAM	92400
+Kyoto	1569	japanese	shinto	Sakai	ODA	YAM	92400
+Kyoto	1573	japanese	shinto	Sakai	JAP	YAM	92400
+Kyoto	1850	japanese	shinto	Sakai	JAP	YAM	200000
+Kyoto	1889	japanese	shinto	Osaka	JAP	YAM	200000
+Kyoto	1900	japanese	shinto	Osaka	JAP	YAM	400000
+Settsu	-500	cham	hinduism	Indrapura	HUY	HUY	2246
+Settsu	100	cham	hinduism	Indrapura	HUY	HUY	6642
+Settsu	192	cham	hinduism	Indrapura	CHA	HUY	6642
+Settsu	200	cham	hinduism	Indrapura	CHA	HUY	8285
+Settsu	300	cham	hinduism	Indrapura	CHA	HUY	9928
+Settsu	400	cham	hinduism	Indrapura	CHA	HUY	11571
+Settsu	500	cham	hinduism	Indrapura	CHA	HUY	13214
+Settsu	600	cham	hinduism	Indrapura	CHA	HUY	14857
+Settsu	700	cham	hinduism	Indrapura	CHA	HUY	16500
+Settsu	800	cham	hinduism	Indrapura	CHA	HUY	18142
+Settsu	900	cham	hinduism	Indrapura	CHA	HUY	19785
+Settsu	1000	cham	hinduism	Indrapura	CHA	HUY	21428
+Settsu	1100	cham	hinduism	Indrapura	CHA	HUY	23071
+Settsu	1200	cham	hinduism	Indrapura	CHA	HUY	24714
+Settsu	1300	cham	hinduism	Indrapura	CHA	HUY	26357
+Settsu	1399	cham	hinduism	Indrapura	CHA	HUY	28000
+Settsu	1407	cham	hinduism	Indrapura	DAI	DAI	9000
+Settsu	1450	cham	hinduism	Indrapura	DAI	DAI	11000
+Settsu	1500	cham	hinduism	Indrapura	DAI	DAI	9500
+Settsu	1527	cham	hinduism	Indrapura	TOK	TOK	9500
+Settsu	1550	cham	hinduism	Indrapura	TOK	TOK	10000
+Settsu	1558	cham	hinduism	Indrapura	ANN	ANN	10000
+Settsu	1600	vietnamese	buddhism	Indrapura	ANN	ANN	11000
+Settsu	1650	vietnamese	buddhism	Indrapura	ANN	ANN	13000
+Settsu	1700	vietnamese	buddhism	Indrapura	ANN	ANN	14000
+Settsu	1750	vietnamese	buddhism	Indrapura	ANN	ANN	15000
+Settsu	1776	vietnamese	buddhism	Indrapura	DAI	DAI	15000
+Settsu	1800	vietnamese	buddhism	Indrapura	DAI	DAI	15500
+Settsu	1802	vietnamese	buddhism	Indrapura	ANN	ANN	15500
+Settsu	1850	vietnamese	buddhism	Da Nang	ANN	ANN	15500
+Settsu	1858	vietnamese	buddhism	Da Nang	FRA	ANN	15500
+Settsu	1870	vietnamese	buddhism	Da Nang	FR2	FR2	15500
+Settsu	1900	vietnamese	buddhism	Da Nang	FR2	FR2	120000
+Settsu	1941	vietnamese	buddhism	Da Nang	FR2	JAP	120000
+Settsu	1945	vietnamese	buddhism	Da Nang	FR2	JAP	120000
+Settsu	1949	vietnamese	buddhism	Da Nang	SVI	JAP	120000
+Settsu	1950	vietnamese	buddhism	Da Nang	SVI	JAP	250000
+Settsu	1976	vietnamese	buddhism	Da Nang	VTN	JAP	250000
+Amaravati	-500	japanese	animism	Fukui	YAM	YAM	3287
+Amaravati	100	japanese	animism	Fukui	YAM	YAM	3575
+Amaravati	200	japanese	animism	Fukui	YAM	YAM	4150
+Amaravati	300	japanese	animism	Fukui	YAM	YAM	4725
+Amaravati	400	japanese	animism	Fukui	YAM	YAM	5300
+Amaravati	500	japanese	animism	Fukui	YAM	YAM	5875
+Amaravati	580	japanese	buddhism	Fukui	YAM	YAM	5875
+Amaravati	600	japanese	buddhism	Fukui	YAM	YAM	6450
+Amaravati	700	japanese	buddhism	Fukui	YAM	YAM	7025
+Amaravati	712	japanese	shinto	Fukui	YAM	YAM	7025
+Amaravati	794	japanese	shinto	Fukui	JAP	YAM	7025
+Amaravati	800	japanese	shinto	Fukui	JAP	YAM	7600
+Amaravati	900	japanese	shinto	Fukui	JAP	YAM	8175
+Amaravati	1000	japanese	shinto	Fukui	JAP	YAM	8750
+Amaravati	1100	japanese	shinto	Fukui	JAP	YAM	9325
+Amaravati	1192	japanese	shinto	Fukui	SBA	YAM	9325
+Amaravati	1200	japanese	shinto	Fukui	SBA	YAM	9900
+Amaravati	1300	japanese	shinto	Fukui	SBA	YAM	10475
+Amaravati	1366	japanese	shinto	Fukui	HTK	YAM	10475
+Amaravati	1380	japanese	shinto	Fukui	SBA	YAM	10475
+Amaravati	1399	japanese	shinto	Fukui	SBA	YAM	11050
+Amaravati	1471	japanese	shinto	Ichijodani	ASA	YAM	11050
+Amaravati	1573	japanese	shinto	Ichijodani	JAP	YAM	11050
+Amaravati	1575	japanese	shinto	Kitanosho	JAP	YAM	11050
+Amaravati	1601	japanese	shinto	Fukui	JAP	YAM	11050
+Amaravati	1850	japanese	shinto	Fukui	JAP	YAM	40000
+Amaravati	1900	japanese	shinto	Fukui	JAP	YAM	80000
+Amaravati	1950	japanese	shinto	Fukui	JAP	YAM	160000
+Echizen	-500	emishi	animism	Naoetsu	EMI	EMI	3385
+Echizen	100	emishi	animism	Naoetsu	EMI	EMI	3771
+Echizen	200	emishi	animism	Naoetsu	EMI	EMI	4542
+Echizen	300	emishi	animism	Naoetsu	EMI	EMI	5314
+Echizen	400	emishi	animism	Naoetsu	EMI	EMI	6085
+Echizen	500	emishi	animism	Naoetsu	EMI	EMI	6857
+Echizen	600	emishi	animism	Naoetsu	EMI	EMI	7628
+Echizen	607	emishi	buddhism	Naoetsu	EMI	EMI	7628
+Echizen	650	emishi	buddhism	Naoetsu	YAM	EMI	7628
+Echizen	700	emishi	buddhism	Naoetsu	YAM	EMI	8400
+Echizen	712	emishi	shinto	Naoetsu	YAM	EMI	8400
+Echizen	750	japanese	shinto	Naoetsu	YAM	EMI	8400
+Echizen	794	japanese	shinto	Naoetsu	JAP	EMI	8400
+Echizen	800	japanese	shinto	Naoetsu	JAP	EMI	9171
+Echizen	900	japanese	shinto	Naoetsu	JAP	EMI	9942
+Echizen	1000	japanese	shinto	Naoetsu	JAP	EMI	10714
+Echizen	1100	japanese	shinto	Naoetsu	JAP	EMI	11485
+Echizen	1192	japanese	shinto	Naoetsu	UES	EMI	11485
+Echizen	1200	japanese	shinto	Naoetsu	UES	EMI	12257
+Echizen	1300	japanese	shinto	Naoetsu	UES	EMI	13028
+Echizen	1399	japanese	shinto	Naoetsu	UES	EMI	13800
+Echizen	1598	japanese	shinto	Naoetsu	TKG	EMI	13800
+Echizen	1603	japanese	shinto	Naoetsu	JAP	EMI	13800
+Echizen	1850	japanese	shinto	Niigata	JAP	EMI	13800
+Echizen	1900	japanese	shinto	Niigata	JAP	EMI	120000
+Echizen	1950	japanese	shinto	Niigata	JAP	EMI	400000
+Echigo	-500	emishi	animism	Yamagata	EMI	EMI	1116
+Echigo	100	emishi	animism	Yamagata	EMI	EMI	1232
+Echigo	200	emishi	animism	Yamagata	EMI	EMI	1464
+Echigo	300	emishi	animism	Yamagata	EMI	EMI	1696
+Echigo	400	emishi	animism	Yamagata	EMI	EMI	1928
+Echigo	500	emishi	animism	Yamagata	EMI	EMI	2160
+Echigo	600	emishi	animism	Yamagata	EMI	EMI	2392
+Echigo	607	emishi	buddhism	Yamagata	EMI	EMI	2392
+Echigo	700	emishi	buddhism	Yamagata	EMI	EMI	2625
+Echigo	712	emishi	shinto	Yamagata	EMI	EMI	2625
+Echigo	800	emishi	shinto	Yamagata	EMI	EMI	2857
+Echigo	802	emishi	shinto	Yamagata	JAP	EMI	2857
+Echigo	900	emishi	shinto	Yamagata	JAP	EMI	3089
+Echigo	950	japanese	shinto	Yamagata	JAP	EMI	3089
+Echigo	1000	japanese	shinto	Yamagata	JAP	EMI	3321
+Echigo	1100	japanese	shinto	Yamagata	JAP	EMI	3553
+Echigo	1192	japanese	shinto	Yamagata	SBA	EMI	3553
+Echigo	1200	japanese	shinto	Yamagata	SBA	EMI	3785
+Echigo	1300	japanese	shinto	Yamagata	SBA	EMI	4017
+Echigo	1399	japanese	shinto	Yamagata	SBA	EMI	4250
+Echigo	1598	japanese	shinto	Yamagata	UES	EMI	4250
+Echigo	1850	japanese	shinto	Yamagata	UES	EMI	30000
+Echigo	1868	japanese	shinto	Yamagata	JAP	EMI	30000
+Echigo	1900	japanese	shinto	Yamagata	JAP	EMI	70000
+Echigo	1950	japanese	shinto	Yamagata	JAP	EMI	150000
+Dewa	-500	emishi	animism	Aizu	EMI	EMI	1114
+Dewa	100	emishi	animism	Aizu	EMI	EMI	1228
+Dewa	200	emishi	animism	Aizu	EMI	EMI	1457
+Dewa	300	emishi	animism	Aizu	EMI	EMI	1685
+Dewa	400	emishi	animism	Aizu	EMI	EMI	1914
+Dewa	500	emishi	animism	Aizu	EMI	EMI	2142
+Dewa	600	emishi	animism	Aizu	EMI	EMI	2371
+Dewa	607	emishi	buddhism	Aizu	EMI	EMI	2371
+Dewa	700	emishi	buddhism	Aizu	EMI	EMI	2600
+Dewa	712	emishi	shinto	Aizu	EMI	EMI	2600
+Dewa	800	emishi	shinto	Aizu	EMI	EMI	2828
+Dewa	802	emishi	shinto	Aizu	JAP	EMI	2828
+Dewa	900	emishi	shinto	Aizu	JAP	EMI	3057
+Dewa	950	japanese	shinto	Aizu	JAP	EMI	3057
+Dewa	1000	japanese	shinto	Aizu	JAP	EMI	3285
+Dewa	1100	japanese	shinto	Aizu	JAP	EMI	3514
+Dewa	1192	japanese	shinto	Aizu	DTE	EMI	3514
+Dewa	1200	japanese	shinto	Aizu	DTE	EMI	3742
+Dewa	1300	japanese	shinto	Aizu	DTE	EMI	3971
+Dewa	1399	japanese	shinto	Aizu	DTE	EMI	4200
+Dewa	1601	japanese	shinto	Sendai	DTE	EMI	4200
+Dewa	1850	japanese	shinto	Sendai	DTE	EMI	30000
+Dewa	1868	japanese	shinto	Sendai	JAP	EMI	30000
+Dewa	1900	japanese	shinto	Sendai	JAP	EMI	130000
+Dewa	1950	japanese	shinto	Sendai	JAP	EMI	500000
+Mutsu	-500	emishi	animism	Ota	EMI	EMI	4416
+Mutsu	100	emishi	animism	Ota	EMI	EMI	4832
+Mutsu	200	emishi	animism	Ota	EMI	EMI	5664
+Mutsu	300	emishi	animism	Ota	EMI	EMI	6496
+Mutsu	400	emishi	animism	Ota	EMI	EMI	7328
+Mutsu	500	emishi	animism	Ota	EMI	EMI	8160
+Mutsu	600	emishi	animism	Ota	EMI	EMI	8992
+Mutsu	607	emishi	buddhism	Ota	EMI	EMI	8992
+Mutsu	650	emishi	buddhism	Ota	YAM	EMI	8992
+Mutsu	700	emishi	buddhism	Ota	YAM	EMI	9824
+Mutsu	712	emishi	shinto	Ota	YAM	EMI	9824
+Mutsu	750	japanese	shinto	Ota	YAM	EMI	9824
+Mutsu	794	japanese	shinto	Ota	JAP	EMI	9824
+Mutsu	800	japanese	shinto	Ota	JAP	EMI	10657
+Mutsu	900	japanese	shinto	Ota	JAP	EMI	11489
+Mutsu	1000	japanese	shinto	Ota	JAP	EMI	12321
+Mutsu	1100	japanese	shinto	Ota	JAP	EMI	13153
+Mutsu	1192	japanese	shinto	Ota	UES	EMI	13153
+Mutsu	1200	japanese	shinto	Ota	UES	EMI	13985
+Mutsu	1300	japanese	shinto	Ota	UES	EMI	14817
+Mutsu	1399	japanese	shinto	Ota	UES	EMI	15650
+Mutsu	1564	japanese	shinto	Ota	HJO	EMI	15650
+Mutsu	1590	japanese	shinto	Ota	TKG	EMI	15650
+Mutsu	1603	japanese	shinto	Ota	JAP	EMI	15650
+Mutsu	1609	japanese	shinto	Mito	JAP	EMI	15650
+Mutsu	1850	japanese	shinto	Mito	JAP	EMI	40000
+Mutsu	1900	japanese	shinto	Mito	JAP	EMI	80000
+Mutsu	1950	japanese	shinto	Mito	JAP	EMI	160000
+Hitachi	-500	emishi	animism	Edo	EMI	EMI	10375
+Hitachi	100	emishi	animism	Edo	EMI	EMI	12750
+Hitachi	200	emishi	animism	Edo	EMI	EMI	17500
+Hitachi	250	emishi	animism	Edo	YAM	EMI	17500
+Hitachi	300	emishi	animism	Edo	YAM	EMI	22250
+Hitachi	400	emishi	animism	Edo	YAM	EMI	27000
+Hitachi	500	emishi	animism	Edo	YAM	EMI	31750
+Hitachi	550	japanese	animism	Edo	YAM	EMI	31750
+Hitachi	600	japanese	animism	Edo	YAM	EMI	36500
+Hitachi	607	japanese	buddhism	Edo	YAM	EMI	36500
+Hitachi	700	japanese	buddhism	Edo	YAM	EMI	41250
+Hitachi	712	japanese	shinto	Edo	YAM	EMI	41250
+Hitachi	794	japanese	shinto	Edo	JAP	EMI	41250
+Hitachi	800	japanese	shinto	Edo	JAP	EMI	46000
+Hitachi	900	japanese	shinto	Edo	JAP	EMI	50750
+Hitachi	1000	japanese	shinto	Edo	JAP	EMI	55500
+Hitachi	1100	japanese	shinto	Edo	JAP	EMI	60250
+Hitachi	1192	japanese	shinto	Edo	UES	EMI	60250
+Hitachi	1200	japanese	shinto	Edo	UES	EMI	65000
+Hitachi	1300	japanese	shinto	Kawagoe	UES	EMI	65000
+Hitachi	1349	japanese	shinto	Kawagoe	JAP	EMI	65000
+Hitachi	1399	japanese	shinto	Kawagoe	JAP	EMI	74500
+Hitachi	1546	japanese	shinto	Kawagoe	HJO	EMI	74500
+Hitachi	1590	japanese	shinto	Edo	TKG	EMI	74500
+Hitachi	1603	japanese	shinto	Edo	JAP	EMI	74500
+Hitachi	1850	japanese	shinto	Edo	JAP	EMI	400000
+Hitachi	1868	japanese	shinto	Tokyo	JAP	EMI	400000
+Musachi	-500	emishi	animism	Kofu	YAM	YAM	1439
+Musachi	100	emishi	animism	Kofu	YAM	YAM	1578
+Musachi	150	japanese	animism	Kofu	YAM	YAM	1578
+Musachi	200	japanese	animism	Kofu	YAM	YAM	1857
+Musachi	300	japanese	animism	Kofu	YAM	YAM	2135
+Musachi	400	japanese	animism	Kofu	YAM	YAM	2414
+Musachi	500	japanese	animism	Kofu	YAM	YAM	2692
+Musachi	600	japanese	animism	Kofu	YAM	YAM	2971
+Musachi	607	japanese	buddhism	Kofu	YAM	YAM	2971
+Musachi	700	japanese	buddhism	Kofu	YAM	YAM	3249
+Musachi	712	japanese	shinto	Kofu	YAM	YAM	3249
+Musachi	794	japanese	shinto	Kofu	JAP	YAM	3249
+Musachi	800	japanese	shinto	Kofu	JAP	YAM	3528
+Musachi	900	japanese	shinto	Kofu	JAP	YAM	3807
+Musachi	1000	japanese	shinto	Kofu	JAP	YAM	4085
+Musachi	1100	japanese	shinto	Kofu	JAP	YAM	4364
+Musachi	1192	japanese	shinto	Kofu	TKD	YAM	4364
+Musachi	1200	japanese	shinto	Kofu	TKD	YAM	4642
+Musachi	1300	japanese	shinto	Kofu	TKD	YAM	4921
+Musachi	1399	japanese	shinto	Kofu	TKD	YAM	5200
+Musachi	1582	japanese	shinto	Kofu	JAP	YAM	5200
+Musachi	1600	japanese	shinto	Kofu	TKG	YAM	5200
+Musachi	1603	japanese	shinto	Kofu	JAP	YAM	5200
+Musachi	1850	japanese	shinto	Kofu	JAP	YAM	20000
+Musachi	1900	japanese	shinto	Kofu	JAP	YAM	50000
+Musachi	1950	japanese	shinto	Kofu	JAP	YAM	120000
+Nice	-500	roman	hellenism	Taurinorum	ROM	ROM	2500
+Nice	100	roman	hellenism	Taurinorum	ROM	ROM	3000
+Nice	200	roman	hellenism	Taurinorum	ROM	ROM	5000
+Nice	300	roman	chalcedonism	Taurinorum	ROM	ROM	5000
+Nice	395	roman	chalcedonism	Taurinorum	ROW	ROM	5000
+Nice	400	roman	chalcedonism	Taurinorum	ROW	ROM	9000
+Nice	476	roman	chalcedonism	Taurinorum	ODO	ROM	9000
+Nice	489	roman	chalcedonism	Taurinorum	GOS	ROM	9000
+Nice	500	roman	arianism	Taurinorum	GOS	ROM	9000
+Nice	553	lombard	arianism	Taurinorum	GOS	ROM	9000
+Nice	600	lombard	chalcedonism	Taurinorum	GOS	ROM	9000
+Nice	700	lombard	chalcedonism	Taurinorum	GOS	ROM	15000
+Nice	773	lombard	chalcedonism	Taurinorum	FRK	ROM	15000
+Nice	800	lombard	chalcedonism	Taurinorum	FRK	ROM	17000
+Nice	840	lombard	chalcedonism	Taurinorum	FRM	ROM	17000
+Nice	855	lombard	chalcedonism	Taurinorum	ITA	ROM	17000
+Nice	867	lombard	catholic	Taurinorum	ITA	ROM	17000
+Nice	900	lombard	catholic	Taurinorum	ITA	ROM	19000
+Nice	962	lombard	catholic	Taurinorum	LOM	ROM	19000
+Nice	1000	lombard	catholic	Taurinorum	LOM	ROM	21000
+Nice	1003	lombard	catholic	Taurinorum	SAV	ROM	21000
+Nice	1100	lombard	catholic	Taurinorum	SAV	ROM	24000
+Nice	1200	lombard	catholic	Taurinorum	SAV	ROM	27000
+Nice	1300	lombard	catholic	Taurinorum	SAV	ROM	30000
+Nice	1399	lombard	catholic	Taurinorum	SAV	ROM	35000
+Nice	1450	lombard	catholic	Taurinorum	SAV	ROM	40000
+Nice	1499	lombard	catholic	Taurinorum	FRA	ROM	40000
+Nice	1520	lombard	catholic	Taurinorum	FRA	ROM	45000
+Nice	1529	lombard	catholic	Taurinorum	SAV	ROM	45000
+Nice	1536	lombard	catholic	Taurinorum	SAV	FRA	45000
+Nice	1538	lombard	catholic	Taurinorum	FRA	FRA	45000
+Nice	1550	lombard	catholic	Taurinorum	FRA	FRA	52000
+Nice	1559	lombard	catholic	Taurinorum	SAV	FRA	52000
+Nice	1563	lombard	catholic		SAV	FRA	52000
+Nice	1600	lombard	catholic		SAV	FRA	76000
+Nice	1650	lombard	catholic		SAV	FRA	89000
+Nice	1700	lombard	catholic		SAV	FRA	94000
+Nice	1713	lombard	catholic		SIC	SIC	94000
+Nice	1720	lombard	catholic		SPI	SPI	94000
+Nice	1750	lombard	catholic		SPI	SPI	112000
+Nice	1791	lombard	catholic		SPI	FRA	112000
+Nice	1792	lombard	catholic		FRA	FRA	112000
+Nice	1800	lombard	catholic		FRA	FRA	145000
+Nice	1814	lombard	catholic		SPI	SPI	145000
+Nice	1840	lombard	catholic		SPI	SPI	160000
+Nice	1861	lombard	catholic		ITA	SPI	173305
+Nice	1881	lombard	catholic		ITA	SPI	250655
+Nice	1901	lombard	catholic		ITA	SPI	329691
+Nice	1921	lombard	catholic		ITA	SPI	499823
+Nice	1936	lombard	catholic		ITA	SPI	629115
+Nice	1951	lombard	catholic		ITA	SPI	719300
+Nice	1991	lombard	catholic		ITA	SPI	962507
+Shinano	-500	japanese	animism	Kiyosu	YAM	YAM	3275
+Shinano	100	japanese	animism	Kiyosu	YAM	YAM	3550
+Shinano	200	japanese	animism	Kiyosu	YAM	YAM	4101
+Shinano	300	japanese	animism	Kiyosu	YAM	YAM	4652
+Shinano	400	japanese	animism	Kiyosu	YAM	YAM	5202
+Shinano	500	japanese	animism	Kiyosu	YAM	YAM	5753
+Shinano	600	japanese	animism	Kiyosu	YAM	YAM	6304
+Shinano	607	japanese	buddhism	Kiyosu	YAM	YAM	6304
+Shinano	700	japanese	buddhism	Kiyosu	YAM	YAM	6854
+Shinano	712	japanese	shinto	Kiyosu	YAM	YAM	6854
+Shinano	794	japanese	shinto	Kiyosu	JAP	YAM	6854
+Shinano	800	japanese	shinto	Kiyosu	JAP	YAM	7405
+Shinano	900	japanese	shinto	Kiyosu	JAP	YAM	7956
+Shinano	1000	japanese	shinto	Kiyosu	JAP	YAM	8507
+Shinano	1100	japanese	shinto	Kiyosu	JAP	YAM	9057
+Shinano	1192	japanese	shinto	Kiyosu	SBA	YAM	9057
+Shinano	1200	japanese	shinto	Kiyosu	SBA	YAM	9608
+Shinano	1300	japanese	shinto	Kiyosu	SBA	YAM	10159
+Shinano	1399	japanese	shinto	Kiyosu	SBA	YAM	10710
+Shinano	1450	japanese	shinto	Kiyosu	SBA	YAM	11230
+Shinano	1532	japanese	shinto	Nagoya	ODA	YAM	11230
+Shinano	1573	japanese	shinto	Nagoya	JAP	YAM	11230
+Shinano	1850	japanese	shinto	Nagoya	JAP	YAM	50000
+Shinano	1900	japanese	shinto	Nagoya	JAP	YAM	200000
+Shinano	1950	japanese	shinto	Nagoya	JAP	YAM	800000
+Owari	-500	ainu	animism	Kamikawa	ANU	ANU	1000
+Owari	1679	japanese	shinto	Kamikawa	JAP	JAP	1000
+Owari	1850	japanese	shinto	Kamikawa	JAP	JAP	4000
+Owari	1900	japanese	shinto	Kamikawa	JAP	JAP	20000
+Owari	1922	japanese	shinto	Asahikawa	JAP	JAP	20000
+Owari	1950	japanese	shinto	Asahikawa	JAP	JAP	120000
+Kamikawa	-500	ainu	animism	Kuril	na	na	1000
+Kamikawa	1300	ainu	animism	Kuril	ANU	na	1000
+Kamikawa	1646	japanese	shinto	Kuril	JAP	JAP	1000
+Kamikawa	1900	japanese	shinto	Kuril	JAP	JAP	1100
+Kamikawa	1945	japanese	shinto	Kurilsk	JAP	JAP	1100
+Kamikawa	1950	japanese	shinto	Kurilsk	JAP	JAP	1500
+Kamikawa	1991	japanese	shinto	Kurilsk	RUS	JAP	1500
+Kurils	-500	ainu	shamanism	Sakhalin	na	na	1000
+Kurils	1206	ainu	shamanism	Sakhalin	MYR	na	1000
+Kurils	1679	japanese	shinto	Sakhalin	JAP	JAP	1000
+Kurils	1850	japanese	shinto	Sakhalin	JAP	JAP	5000
+Kurils	1882	japanese	shinto	Yuzhno-Sakhalinsk	JAP	JAP	5000
+Kurils	1900	japanese	shinto	Yuzhno-Sakhalinsk	JAP	JAP	20000
+Kurils	1907	japanese	shinto	Otomari	JAP	JAP	20000
+Kurils	1908	japanese	shinto	Toyohara	JAP	JAP	20000
+Kurils	1945	japanese	shinto	Yuzhno-Sakhalinsk	JAP	JAP	20000
+Kurils	1950	russian	shinto	Yuzhno-Sakhalinsk	JAP	JAP	20000
+Kurils	1991	russian	shinto	Yuzhno-Sakhalinsk	RUS	JAP	20000
+Sakhalin	-500	kamchatkan	shamanism	Kamchatka	na	na	1000
+Sakhalin	1300	kamchatkan	shamanism	Kamchatka	KMC	na	1000
+Sakhalin	1732	russian	orthodox	Kamchatka	RUS	RUS	1000
+Sakhalin	1740	russian	orthodox	Petropavlovsk	RUS	RUS	1000
+Sakhalin	1800	russian	orthodox	Petropavlovsk	RUS	RUS	4060
+Sakhalin	1850	russian	orthodox	Petropavlovsk	RUS	RUS	8000
+Sakhalin	1900	russian	orthodox	Petropavlovsk	RUS	RUS	20000
+Sakhalin	1922	russian	orthodox	Petropavlovsk	SOV	RUS	20000
+Sakhalin	1950	russian	orthodox	Petropavlovsk	SOV	RUS	80000
+Sakhalin	1991	russian	orthodox	Petropavlovsk	RUS	RUS	80000
+Kamchatka	-500	kamchatkan	shamanism	Penzhinsky	na	na	1000
+Kamchatka	1732	russian	orthodox	Palana	RUS	RUS	450
+Kamchatka	1750	russian	orthodox	Palana	RUS	RUS	800
+Kamchatka	1800	russian	orthodox	Palana	RUS	RUS	1120
+Kamchatka	1850	russian	orthodox	Palana	RUS	RUS	1500
+Kamchatka	1900	russian	orthodox	Palana	RUS	RUS	2000
+Kamchatka	1922	russian	orthodox	Palana	SOV	RUS	2000
+Kamchatka	1950	russian	orthodox	Palana	SOV	RUS	2500
+Kamchatka	1991	russian	orthodox	Palana	RUS	RUS	2500
+Penchisky	-500	yukagyr	shamanism	Srednekolymsk	na	na	1000
+Penchisky	1643	russian	shamanism	Srednekolymsk	na	na	1000
+Penchisky	1900	russian	shamanism	Srednekolymsk	na	na	600
+Penchisky	1922	russian	shamanism	Srednekolymsk	SOV	na	600
+Penchisky	1950	russian	shamanism	Srednekolymsk	SOV	na	1500
+Penchisky	1991	russian	shamanism	Srednekolymsk	RUS	na	1500
+Podzhiversk	-500	yukagyr	shamanism	Omolon	na	na	1000
+Podzhiversk	1300	yukagyr	shamanism	Omolon	HOD	na	1000
+Podzhiversk	1643	russian	shamanism	Omolon	HOD	na	1000
+Podzhiversk	1922	russian	shamanism	Omolon	SOV	na	1000
+Podzhiversk	1955	russian	shamanism	Bilibino	SOV	na	1000
+Nizhe-Kolymsk	-500	yukagyr	shamanism	Karalveyem	na	na	1000
+Nizhe-Kolymsk	1768	russian	orthodox	Karalveyem	RUS	RUS	388
+Nizhe-Kolymsk	1900	russian	orthodox	Karalveyem	RUS	RUS	1000
+Nizhe-Kolymsk	1922	russian	orthodox	Karalveyem	SOV	RUS	1000
+Nizhe-Kolymsk	1967	russian	orthodox	Pevek	SOV	RUS	1000
+Anadyrsk	-500	yukagyr	shamanism	Verkhoyansk	na	na	1000
+Anadyrsk	1638	russian	orthodox	Verkhoyansk	RUS	RUS	150
+Anadyrsk	1700	russian	orthodox	Verkhoyansk	RUS	RUS	300
+Anadyrsk	1750	russian	orthodox	Verkhoyansk	RUS	RUS	450
+Anadyrsk	1800	russian	orthodox	Verkhoyansk	RUS	RUS	800
+Anadyrsk	1850	russian	orthodox	Verkhoyansk	RUS	RUS	900
+Anadyrsk	1900	russian	orthodox	Verkhoyansk	RUS	RUS	1000
+Anadyrsk	1922	russian	orthodox	Verkhoyansk	SOV	RUS	1000
+Anadyrsk	1950	russian	orthodox	Verkhoyansk	SOV	RUS	1100
+Anadyrsk	1991	russian	orthodox	Verkhoyansk	RUS	RUS	1100
+Niklas	-500	roman	hellenism	Mediolanum	ROM	ROM	18000
+Niklas	100	roman	hellenism	Mediolanum	ROM	ROM	20000
+Niklas	200	roman	hellenism	Mediolanum	ROM	ROM	25000
+Niklas	300	roman	hellenism	Mediolanum	ROM	ROM	30000
+Niklas	313	roman	chalcedonism	Mediolanum	ROM	ROM	30000
+Niklas	395	roman	chalcedonism	Mediolanum	ROW	ROM	30000
+Niklas	400	roman	chalcedonism	Mediolanum	ROW	ROM	35000
+Niklas	476	roman	chalcedonism	Mediolanum	ODO	ROM	35000
+Niklas	489	roman	chalcedonism	Mediolanum	GOS	ROM	35000
+Niklas	500	gothic	chalcedonism	Mediolanum	GOS	ROM	35000
+Niklas	551	gothic	chalcedonism	Mediolanum	BYZ	ROM	35000
+Niklas	569	lombard	chalcedonism	Mediolanum	BYZ	ROM	35000
+Niklas	600	lombard	chalcedonism	Mediolanum	BYZ	ROM	45000
+Niklas	700	lombard	chalcedonism	Mediolanum	BYZ	ROM	50000
+Niklas	773	lombard	chalcedonism	Milano	BYZ	ROM	50000
+Niklas	800	lombard	chalcedonism	Milano	BYZ	ROM	55000
+Niklas	840	lombard	chalcedonism	Milano	FRM	ROM	55000
+Niklas	855	lombard	chalcedonism	Milano	ITA	ROM	55000
+Niklas	867	lombard	catholic	Milano	ITA	ROM	55000
+Niklas	900	lombard	catholic	Milano	ITA	ROM	60000
+Niklas	962	lombard	catholic	Milano	LOM	ROM	60000
+Niklas	1000	lombard	catholic	Milano	LOM	ROM	70000
+Niklas	1100	lombard	catholic	Milano	LOM	ROM	80000
+Niklas	1183	lombard	catholic	Milano	MLO	ROM	80000
+Niklas	1200	lombard	catholic	Milano	MLO	ROM	90000
+Niklas	1300	lombard	catholic	Milano	MLO	ROM	100000
+Niklas	1399	lombard	catholic	Milano	MLO	ROM	110000
+Niklas	1450	lombard	catholic	Milano	MLO	ROM	120000
+Niklas	1499	lombard	catholic	Milano	MLO	FRA	120000
+Niklas	1500	lombard	catholic	Milano	MLO	FRA	132000
+Niklas	1504	lombard	catholic	Milano	FRA	FRA	132000
+Niklas	1512	lombard	catholic	Milano	MLO	FRA	132000
+Niklas	1516	lombard	catholic	Milano	FRA	FRA	132000
+Niklas	1521	lombard	catholic	Milano	FRA	SPA	132000
+Niklas	1522	lombard	catholic	Milano	MLO	SPA	132000
+Niklas	1526	lombard	catholic	Milano	MLO	HAB	132000
+Niklas	1529	lombard	catholic	Milano	MLO	MLO	132000
+Niklas	1535	lombard	catholic	Milano	SPA	SPA	132000
+Niklas	1550	lombard	catholic	Milano	SPA	SPA	100000
+Niklas	1600	lombard	catholic	Milano	SPA	SPA	161000
+Niklas	1650	lombard	catholic	Milano	SPA	SPA	143000
+Niklas	1700	lombard	catholic	Milano	SPA	SPA	169000
+Niklas	1714	lombard	catholic	Milano	HAB	HAB	169000
+Niklas	1750	lombard	catholic	Milano	HAB	HAB	177000
+Niklas	1796	lombard	catholic	Milano	MLO	MLO	177000
+Niklas	1797	lombard	catholic	Milano	ITA	ITA	177000
+Niklas	1800	lombard	catholic	Milano	ITA	ITA	183000
+Niklas	1814	lombard	catholic	Milano	HAB	REB	183000
+Niklas	1821	lombard	catholic	Milano	HAB	HAB	183000
+Niklas	1840	lombard	catholic	Milano	HAB	HAB	200000
+Niklas	1848	lombard	catholic	Milano	HAB	HAB	200000
+Niklas	1859	lombard	catholic	Milano	SPI	HAB	200000
+Niklas	1861	lombard	catholic	Milano	ITA	HAB	267618
+Niklas	1881	lombard	catholic	Milano	ITA	HAB	354041
+Niklas	1901	lombard	catholic	Milano	ITA	HAB	538478
+Niklas	1911	lombard	catholic	Milano	ITA	HAB	701401
+Niklas	1931	lombard	catholic	Milano	ITA	HAB	960660
+Niklas	1961	lombard	catholic	Milano	ITA	HAB	1582421
+Verkhoyansk	-500	yukagyr	shamanism	Suntar Khayata	na	na	1000
+Verkhoyansk	1732	russian	orthodox	Suntar Khayata	RUS	RUS	350
+Verkhoyansk	1750	russian	orthodox	Suntar Khayata	RUS	RUS	870
+Verkhoyansk	1782	russian	orthodox	Suntar Khayata	RUS	RUS	1100
+Verkhoyansk	1800	russian	orthodox	Suntar Khayata	RUS	RUS	1250
+Verkhoyansk	1850	russian	orthodox	Suntar Khayata	RUS	RUS	2000
+Verkhoyansk	1900	russian	orthodox	Suntar Khayata	RUS	RUS	3200
+Verkhoyansk	1922	russian	orthodox	Suntar Khayata	SOV	RUS	3200
+Verkhoyansk	1936	russian	orthodox	Susuman	SOV	RUS	3200
+Verkhoyansk	1950	russian	orthodox	Susuman	SOV	RUS	4500
+Verkhoyansk	1991	russian	orthodox	Susuman	RUS	RUS	4500
+Suntar Khayat	-500	kamchatkan	shamanism	Gizhiga	na	na	1000
+Suntar Khayat	1300	kamchatkan	shamanism	Gizhiga	CHV	na	1000
+Suntar Khayat	1732	russian	orthodox	Gizhiga	RUS	RUS	1000
+Suntar Khayat	1757	russian	orthodox	Gizhiga	RUS	RUS	1450
+Suntar Khayat	1800	russian	orthodox	Gizhiga	RUS	RUS	1500
+Suntar Khayat	1850	russian	orthodox	Gizhiga	RUS	RUS	2000
+Suntar Khayat	1900	russian	orthodox	Gizhiga	RUS	RUS	2600
+Suntar Khayat	1922	russian	orthodox	Gizhiga	SOV	RUS	2600
+Suntar Khayat	1930	russian	orthodox	Omsukchan	SOV	RUS	2600
+Suntar Khayat	1950	russian	orthodox	Omsukchan	SOV	RUS	3200
+Suntar Khayat	1991	russian	orthodox	Omsukchan	RUS	RUS	3200
+Gizhiga	-500	yakut	shamanism	Sakha	na	na	1000
+Gizhiga	1632	russian	orthodox	Sakha	RUS	RUS	380
+Gizhiga	1672	russian	orthodox	Sakha	RUS	RUS	1154
+Gizhiga	1697	russian	orthodox	Sakha	RUS	RUS	1500
+Gizhiga	1750	russian	orthodox	Sakha	RUS	RUS	1960
+Gizhiga	1800	russian	orthodox	Sakha	RUS	RUS	2100
+Gizhiga	1850	russian	orthodox	Sakha	RUS	RUS	3000
+Gizhiga	1900	russian	orthodox	Ust-Nera	RUS	RUS	3000
+Gizhiga	1922	russian	orthodox	Ust-Nera	SOV	RUS	3000

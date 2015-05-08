@@ -1,0 +1,77 @@
+#1749 - Cadiz
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = hellenism
+hre = no
+base_tax = 6
+trade_goods = naval_supplies
+manpower = 3
+fort1 = yes
+capital = "Gades" 
+citysize = 5000
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 1121 }
+200.1.1 = { citysize = 1342 }
+300.1.1 = { citysize = 1564 culture = roman }
+310.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1785 }
+409.1.1 = { owner = VAN controller = VAN add_core = VAN religion = arianism culture = vandal capital = "Gibraltar" }
+425.1.1 = { owner = ROW controller = ROW remove_core = VAN }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL culture = gothic }
+500.1.1 = { citysize = 2007 }
+552.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+555.1.1 = { religion = chalcedonism }
+572.1.1 = { owner = GVI controller = GVI remove_core = BYZ }
+600.1.1 = { citysize = 2228 }
+700.1.1 = { citysize = 2449 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI capital = "Qadis" }
+740.1.1 = { religion = sunni }
+750.1.1 = { culture = andalucian }
+800.1.1 = { citysize = 2671 }
+900.1.1 = { citysize = 2892 }
+1000.1.1 = { citysize = 3114 }
+1023.1.1 = { owner = AGC controller = AGC add_core = AGC remove_core = UMA }
+1058.1.1 = { owner = SEV controller = SEV add_core = SEV }
+1091.1.1 = { owner = AMR controller = AMR add_core = AMR remove_core = SEV remove_core = AGC }
+1100.1.1 = { citysize = 3335 }
+1147.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = AMR }
+1200.1.1 = { citysize = 3557 }
+1262.1.1 = { owner = CAS controller = CAS add_core = CAS remove_core = AMH remove_core = CRD capital = "Cadiz" }
+1300.1.1 = { citysize = 3778 }
+1320.1.1 = { religion = catholic }
+1399.1.1 = { citysize = 4000 }
+
+1492.1.1 = { citysize = 8000 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1520.1.1   = { shipyard = yes }
+1535.1.1  = { courthouse = yes citysize = 15000 } # Judge of Yndias
+1596.1.1 = { fort3 = yes }
+1610.1.12 = { culture = castillian }
+1680.1.1 = { marketplace = yes citysize = 25000 shipyard = yes }
+1713.4.11  = { remove_core = CAS }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0.5 } controller = REB  }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 44285 }
+1900.1.1   = { citysize = 65372 }
+1950.1.1   = { citysize = 96499 }
+1999.1.1   = { citysize = 142449 }
+2008.1.1   = { citysize = 127200 }
+
+
+

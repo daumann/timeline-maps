@@ -1,0 +1,59 @@
+newEntry811 - Tarma.txt
+#811 - Tarma
+
+culture = inca
+religion = inti
+capital = "Jauja"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_size = 12
+native_ferocity = 1 
+native_hostileness = 1
+discovered_by = andean
+discovered_by = south_american
+
+500.1.1 = { owner = HRI controller = HRI add_core = HRI citysize = 1000 trade_goods = wool }
+1200.1.1 = { owner = WKA controller = WKA add_core = WKA remove_core = HRI }
+
+1450.1.1  = { citysize = 2430 }
+1460.1.1 = {
+	owner = CSU
+	controller = CSU
+	add_core = CSU
+}
+1467.1.1 = {
+	owner = INC
+	controller = INC
+	add_core = INC
+}
+1533.8.29 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		add_core = SPA
+		culture = castillian
+		religion = catholic
+	    }# The death of Atahualpa
+1537.1.1  = { unrest = 8 } # Fighting breaks out when Almagro seizes Cuzco
+1538.1.1  = { unrest = 5 } # Almagro is defeated & executed
+1541.1.1  = { unrest = 6 } # Pizzaro is assassinated by supporters of Almagro, his brother assumes control
+1548.1.1  = { unrest = 0 } # Gonzalo Pizzaro is also executed & Spain regains control
+1550.1.1  = { citysize = 2980 }
+1558.8.29 = { add_core = SPA }
+1600.1.1  = { citysize = 3270 }
+1650.1.1  = { citysize = 3840 }
+1700.1.1  = { citysize = 4205 }
+1750.1.1  = { citysize = 4760 }
+1800.1.1  = { citysize = 5100 }
+
+1821.7.28  = { owner = PEU controller = PEU add_core = PEU }
+1850.1.1   = { citysize = 8000 }
+1879.8.14  = { remove_core = SPA }
+1900.1.1   = { citysize = 20000 }
+1950.1.1   = { citysize = 40000 }
+2001.1.1   = { citysize = 60542 }
+
+
+
+

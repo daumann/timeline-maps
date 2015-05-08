@@ -1,0 +1,79 @@
+newEntry50 - Brandenburg.txt
+#50 - Brandenburg
+
+owner = LOM
+controller = LOM
+add_core = LOM
+citysize = 2000
+culture = lombard
+religion = germanic
+hre = no
+base_tax = 7
+trade_goods = cloth
+manpower = 5
+capital = "Brandenburg an der Havel"
+discovered_by = western
+discovered_by = barbarian
+
+200.1.1 = { citysize = 3000 }
+300.1.1 = { citysize = 4000 }
+400.1.1 = { citysize = 5000 owner = POM controller = POM add_core = POM remove_core = LOM culture = pommeranian }
+500.1.1 = { citysize = 6000 discovered_by = eastern }
+600.1.1 = { citysize = 7000 owner = VEL controller = VEL add_core = VEL remove_core = RUG culture = saxon religion = slavic }
+700.1.1 = { citysize = 8000 }
+800.1.1 = { citysize = 9000 }
+900.1.1 = { citysize = 10000 discovered_by = muslim discovered_by = ottoman }
+929.1.1 = { owner = SAX controller = SAX add_core = SAX remove_core = VEL fort1 = yes }
+948.1.1 = { owner = BRA controller = BRA add_core = BRA remove_core = SAX religion = catholic }
+962.2.2 = { hre = yes }
+#983 - c. 1150 controlled by Slavic peoples
+1000.1.1 = { citysize = 11000 }
+1100.1.1 = { citysize = 13000 }
+1200.1.1 = { citysize = 16000 }
+1237.1.1 = {  capital = "Berlin" }
+1300.1.1 = { citysize = 20000 }
+1399.1.1 = { citysize = 25000 }
+
+1450.1.1   = { citysize = 28000 }
+1500.1.1   = { citysize = 31000 marketplace = yes }
+1525.1.1   = { citysize = 37500 fort2 = yes }
+1539.1.1   = { religion = protestant }
+1550.1.1   = { citysize = 43500 }
+1575.1.1   = { citysize = 49000 constable = yes }
+1600.1.1   = { citysize = 57000 }
+1625.1.1   = { citysize = 67000 regimental_camp = yes }
+1631.1.1   = { citysize = 27400 } # Devastating population losses in Thirty Years War
+1650.1.1   = { citysize = 29500 culture = prussian }
+1675.1.1   = { citysize = 34000 fort3 = yes }
+1685.1.1   = { workshop = yes } # Immigration of Huegenots boosts economy
+1700.1.1   = { citysize = 61000 tax_assessor = yes }
+1701.1.18  = {	owner = PRU
+		controller = PRU
+		add_core = PRU
+		remove_core = BRA
+		base_tax = 8
+		manpower = 7
+	     } # Friedrich III becomes king of Prussia
+1725.1.1   = { citysize = 82000 courthouse = yes fort4 = yes base_tax = 10 }
+1750.1.1   = { citysize = 108000 manpower = 12 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1806.10.27 = { controller = FRA }
+1807.7.9   = { controller = PRU } # The Second treaty of Tilsit
+
+1825.1.1   = { citysize = 219968 }
+1849.12.3  = { citysize = 418733 }
+1867.12.3  = { citysize = 702400 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1875.12.1  = { citysize = 969050 }
+1900.1.1   = { remove_core = PRU }
+1900.12.1  = { citysize = 1888848 }
+#1933.7.16  = { citysize = 4242501 }
+1945.5.2   = { controller = SOV }
+1945.5.8   = { owner = EGE controller = EGE add_core = EGE }
+#1946.10.29 = { citysize = 3170832 }
+#1980.12.31 = { citysize = 3048759 }
+1990.10.3  = { owner = GER controller = GER remove_core = EGE }
+#2012.3.31  = { citysize = 3510032 }
+
+
+

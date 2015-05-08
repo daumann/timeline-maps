@@ -1,0 +1,71 @@
+#921 - Bayougoula
+
+culture = choctaw
+religion = totemism
+capital = "Bayougoula"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 15
+native_ferocity = 2
+native_hostileness = 8
+discovered_by = north_american
+
+1200.1.1  = { owner = PLA controller = PLA add_core = PLA is_city = yes trade_goods = cotton }
+1420.1.1  = {	owner = XXX
+		controller = XXX
+		remove_core = PLA
+		citysize = 0
+		native_size = 15
+		native_ferocity = 2
+		native_hostileness = 8
+		trade_goods = unknown
+}
+
+1519.1.1  = { discovered_by = SPA } # Alvarez de Piñeda explored the Gulf Coast
+1670.1.1  = { discovered_by = FRA } # Robert Cavelier de La Salle
+1719.1.1  = {	owner = FRA
+		controller = FRA
+		capital = "Baton Rouge"
+		culture = cosmopolitan_french
+		religion = catholic
+		citysize = 1850
+		fort1 = yes
+		trade_goods = cotton
+	    } # Pierre Le Moyne d'lberville
+1741.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 2590 }
+1763.2.10 = {
+	owner = GBR
+	controller = GBR
+	remove_core = FRA
+	culture = english
+	religion = protestant
+} # Treaty of Paris - ceded to Britain, France gave up its claim
+1783.9.3 = { owner = SPA controller = SPA } # Spanish occupation
+1800.1.1 = { citysize = 3350 }
+1808.9.3 = { add_core = SPA }
+1813.4.1 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	remove_core = SPA
+} # Captured by the Americans
+
+1830.1.1   = { citysize = 46082 }
+1850.1.1   = { citysize = 116375 }
+1861.1.26  = { owner = LOU controller = LOU add_core = LOU }
+1861.2.8   = { owner = CSA controller = CSA add_core = CSA remove_core = LOU }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+1880.1.1   = { citysize = 216090 }
+1890.1.1   = { culture = american }
+1900.1.1   = { citysize = 287104 }
+1930.1.1   = { citysize = 458762 }
+1950.1.1   = { citysize = 570445 }
+1980.1.1   = { citysize = 557515 }
+2010.1.1   = { citysize = 343829 }
+
+
+
+

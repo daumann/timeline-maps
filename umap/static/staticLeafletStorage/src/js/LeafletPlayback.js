@@ -519,7 +519,7 @@ L.Playback.TracksLayer = L.Class.extend({
         }
     
         this.layer = new L.GeoJSON(null, layer_options);
-
+/*
         var overlayControl = {
             'GPS Tracks' : this.layer
         };
@@ -527,6 +527,8 @@ L.Playback.TracksLayer = L.Class.extend({
         L.control.layers(null, overlayControl, {
             collapsed : false
         }).addTo(map);
+        
+        */
     },
 
     // clear all geoJSON layers
@@ -562,7 +564,7 @@ L.Playback.DateControl = L.Control.extend({
         var datetime = L.DomUtil.create('div', 'datetimeControl', this._container);
 
         // date time
-        this._date = L.DomUtil.create('p', '', datetime);
+        this._date = L.DomUtil.create('p', 'datetimeValue', datetime);
        // this._time = L.DomUtil.create('p', '', datetime);
         
         
@@ -581,7 +583,12 @@ L.Playback.DateControl = L.Control.extend({
             
 
             if (lastDate != newDate){
-                console.debug("year changed from",lastDate,"to",newDate);
+                
+                $("text").empty()
+                $("g").empty()
+                currLabel = 0;
+                isNewDate = true;
+                console.log("year changed from",lastDate,"to",newDate);
                 if($("#year_"+lastDate).length != 0)
                     $("#year_"+lastDate).find(".layer-toggle")[0].click()
                 if($("#year_"+newDate).length != 0)
@@ -589,9 +596,27 @@ L.Playback.DateControl = L.Control.extend({
                 lastDate = newDate;
                 self._date.innerHTML = newDate; // L.Playback.Util.DateStr(1369786384250);
                 console.debug("year changed");
+                
+                
 
-                
-                
+
+                if  ($(".datetimeValue").hasClass('leaflet-clickable')){
+                if($(".datetimeValue")[0].innerHTML.substring(0,1) != "-"){
+                    newObject.properties.description = "chronasYear"+$(".datetimeValue")[0].innerHTML;
+                }
+                else{
+                    newObject.properties.description = "chronasYear"+$(".datetimeValue")[0].innerHTML.substr(1)+"_BC";
+                }
+                L.DomEvent.on($(".datetimeValue")[0], 'click', newObject._onMouseClick, newObject);
+                }
+
+                if($("#chronasWiki").hasClass("wikiYear")){
+
+                    $("#chronasWiki")[0].setAttribute("src",newObject.properties.description.replace("chronasYear","http://en.wikipedia.org/wiki/")+"?printable=yes")
+                }
+
+
+
                 //$("#browse_data_toggle_4").find(".layer-toggle")[0].click()
             }
             

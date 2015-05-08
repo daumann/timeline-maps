@@ -1,0 +1,54 @@
+newEntry366 - The Canarias.txt
+#366 - The Canarias
+
+culture = berber
+religion = animism
+capital = "The Canarias"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 0
+
+1402.1.1  = { discovered_by = western
+	      discovered_by = muslim
+		  discovered_by = ottoman
+	      discovered_by = CAS
+	      owner = CAS
+	      controller = CAS
+	      add_core = CAS
+	      citysize = 100
+	    } # Castilian control
+1478.1.1  = { capital = "Las Palmas" }
+1483.4.1  = {	citysize = 500
+		religion = catholic
+		culture = castillian
+		trade_goods = sugar
+	    } #After a successful campaign, indigenous king Majarteme converts to catholicism and adopts the name Fernando
+1493.1.1  = { citysize = 700 } # Conquest of the island of La Palma
+1496.1.1  = { citysize = 1000 } # Conquest of Tenerife, the archipelago is fully incorporated into the crown, some indigenous redoubts still wage war
+1516.1.23 = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	    } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1550.1.1  = { citysize = 1900 }
+1600.1.1  = { citysize = 2760 }
+1650.1.1  = { citysize = 3300 }
+1700.1.1  = { citysize = 5010 }
+1713.4.11 = { remove_core = CAS }
+1730.1.1  = { citysize = 2500 } # volcanic eruption
+1750.1.1  = { citysize = 3700 }
+1800.1.1  = { citysize = 5230 }
+
+1850.1.1  = { citysize = 20000 }
+1900.1.1  = { citysize = 50000 }
+1925.1.1  = { citysize = 70000 }
+1950.1.1  = { citysize = 150000 }
+1970.1.1  = { citysize = 280000 }
+1991.1.1  = { citysize = 354887 }
+2010.1.1  = { citysize = 383308 }
+
+
+

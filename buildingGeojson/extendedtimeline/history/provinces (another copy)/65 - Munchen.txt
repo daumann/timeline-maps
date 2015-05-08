@@ -1,0 +1,78 @@
+# 65 - München
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = bavarian
+religion = germanic
+base_tax = 14
+trade_goods = grain
+manpower = 3
+capital = "Albiancum"
+citysize = 2000
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2500 }
+179.1.1 = { fort1 = yes }
+200.1.1 = { citysize = 3500 }
+300.1.1 = { citysize = 4500 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 5500 }
+450.1.1 = { owner = ALM controller = ALM add_core = ALM capital = "München" } # Unspecified German peoples
+480.6.1 = { remove_core = ROW }
+496.1.1 = { owner = FRK controller = FRK add_core = FRK }
+500.1.1 = { citysize = 6500 }
+600.1.1 = { citysize = 7500 }
+720.1.1 = { religion = chalcedonism }
+750.1.1 = { citysize = 8500 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 9500 }
+911.11.10 = { owner = BAV controller = BAV add_core = BAV remove_core = FRE remove_core = ALM }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 10500 }
+1200.1.1 = { citysize = 11500 }
+1300.1.1 = { citysize = 12500 }
+1399.1.1 = { citysize = 13500 }
+
+1450.1.1  = { citysize = 15000 }
+1453.1.1  = { marketplace = yes }
+1520.1.1  = { constable = yes }
+1525.1.1  = { temple = yes } # Completion of the Frauenkirche (Tower tops/Welsche Hauben)
+1550.1.1  = { citysize = 19000 }
+1565.1.1  = { regimental_camp = yes }
+1592.1.1  = { workshop = yes } # Hofbräuhaus München 
+1600.1.1  = { citysize = 24000 }
+1620.1.1  = { courthouse = yes }
+1632.1.1  = { base_tax = 12 } # Swedish troops ravage the countryside and extort 300.000$ from Munich. 
+1634.1.1  = { citysize = 14000 } # Plague kills large parts of the population
+1700.1.1  = { citysize = 25000 base_tax = 14 } 
+1704.8.13 = { controller = HAB owner = HAB } # Bavaria is conquered by the Emperor, is however 10 years later restored for the balance of power
+1714.9.7  = { controller = BAV owner = BAV }
+1742.2.1  = { controller = HAB } # Austrian troops take Munich and Bavaria
+1745.1.1  = { controller = BAV } # Against Peace and their vote in the Emperor election Bavaria is returned to the Wittelsbachs
+1750.1.1  = { citysize = 40000 }
+1777.1.1  = { unrest = 3 } # Bavarian line of the Wittlelsbach family dies out and is replaced by the Pwesternate branch of the family. The people in Munich hate the new duke.
+1779.1.1  = { unrest = 0 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1849.12.3  = { citysize = 96398 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1875.12.1  = { citysize = 193024 }
+1900.1.1   = { remove_core = BAV }
+1900.12.1  = { citysize = 499959 }
+1925.7.16  = { citysize = 680704 }
+1945.5.3   = { controller = GBR }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.9.13  = { citysize = 831937 }
+1980.12.31 = { citysize = 1298941 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2011.12.31 = { citysize = 1378176 }
+
+
+

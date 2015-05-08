@@ -1,0 +1,70 @@
+#584 - Kyuakse
+
+owner = PYU
+controller = PYU
+culture = burmese
+religion = buddhism
+capital = "Kyuakse"
+trade_goods = ivory
+hre = no
+base_tax = 6
+manpower = 4
+citysize = 1000
+add_core = PYU
+discovered_by = chinese
+discovered_by = indian
+
+200.1.1 = { citysize = 1200 }
+300.1.1 = { citysize = 1450 }
+400.1.1 = { citysize = 1700 }
+500.1.1 = { citysize = 1950 }
+600.1.1 = { citysize = 2200 }
+700.1.1 = { citysize = 2450 }
+800.1.1 = { citysize = 2700 }
+849.1.1 = { owner = PAG controller = PAG add_core = PAG remove_core = PYU }
+900.1.1 = { citysize = 2950 }
+1000.1.1 = { citysize = 3200 }
+1100.1.1 = { citysize = 3450 }
+1200.1.1 = { citysize = 3700 }
+1297.12.17 = { owner = MYI controller = MYI add_core = MYI add_core = SAG remove_core = PAG capital = "Myinsang" }
+1300.1.1 = { citysize = 3950 }
+1310.4.13 = { capital = "Pinya" }
+1364.4.1 = { owner = AVA controller = AVA add_core = AVA remove_core = MYI capital = "Ava" }
+1399.1.1 = { citysize = 4200 }
+
+1450.1.1 = { citysize = 4800 }
+1500.1.1 = { citysize = 5100 }
+1527.1.1 = {
+	owner = SST
+	controller = SST
+	add_core = SST
+	remove_core = AVA
+}
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 5920 }
+1554.1.1 = { add_core = TAU }
+1555.1.22 = { controller = TAU }
+1563.4.1 = {	
+	owner = TAU
+	remove_core = SST
+}
+1600.1.1 = { citysize = 6750 }
+1650.1.1 = { citysize = 8011 }
+1700.1.1 = { citysize = 8955 }
+1750.1.1 = { citysize = 9800 }
+1800.1.1 = { citysize = 10200 }
+
+1850.1.1   = { citysize = 30000 }
+1857.2.18  = { capital = "Mandalay" }
+1885.11.29 = { owner = GBR controller = GBR add_core = GBR add_core = BRM remove_core = TAU }
+1900.1.1   = { citysize = 80000 }
+1942.5.1   = { controller = JAP }
+1945.3.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1950.1.1   = { citysize = 167000 }
+1980.1.1   = { citysize = 499000 }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM }
+2005.1.1   = { citysize = 1034000 }
+
+
+

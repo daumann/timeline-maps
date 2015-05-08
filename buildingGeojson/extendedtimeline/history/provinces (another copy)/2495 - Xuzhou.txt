@@ -1,0 +1,66 @@
+#685 - Huai'an (can't change file name)
+
+owner = HND
+controller = HND
+culture = chihan
+religion = confucianism
+capital = "Xuzhou"
+trade_goods = iron
+hre = no
+base_tax = 6
+manpower = 3
+citysize = 14392
+add_core = HND
+add_core = WEI
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 19785 }
+200.1.1 = { citysize = 30571 }
+220.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = HND }
+265.2.4 = { owner = JIN controller = JIN add_core = JIN remove_core = WUU }
+300.1.1 = { citysize = 41357 }
+400.1.1 = { citysize = 52142 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 62928 }
+502.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = QIC }
+550.6.7 = { owner = QIC controller = QIC add_core = QIC remove_core = WEI }
+577.2.28 = { owner = CZH controller = CZH add_core = CZH remove_core = QIC }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+600.1.1 = { citysize = 73714 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 84500 }
+800.1.1 = { citysize = 95285 }
+900.1.1 = { citysize = 106071 }
+907.6.1 = { owner = LNG controller = LNG add_core = LNG remove_core = TNG }
+923.11.19 = { owner = TNG controller = TNG add_core = TNG remove_core = LNG }
+936.1.11 = { owner = JIN controller = JIN add_core = JIN remove_core = TNG }
+947.3.10 = { owner = HND controller = HND add_core = HND remove_core = JIN }
+951.2.13 = { owner = CZH controller = CZH add_core = CZH remove_core = HND }
+960.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = CZH }
+1000.1.1 = { citysize = 116857 }
+1100.1.1 = { citysize = 127642 }
+1127.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = SNG }
+1200.1.1 = { citysize = 138428 }
+1234.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = CSH remove_core = JIN }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 149214 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 160000 }
+
+1601.1.1 = { discovered_by = SPA }
+1645.6.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CSH }
+1938.1.1   = { controller = JAP }
+1945.8.15  = { controller = CHN }
+
+
+

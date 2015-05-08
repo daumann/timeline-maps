@@ -1,0 +1,73 @@
+newEntry2520 - Wadi Halfa.txt
+#1228 - Dongola
+
+owner = MEO
+controller = MEO
+add_core = MEO
+culture = nubian 
+religion = egyptian
+capital = "Wadi Halfa"
+manpower = 1
+trade_goods = grain
+hre = no
+base_tax = 1
+citysize = 1142
+discovered_by = MEO
+discovered_by = BLE
+discovered_by = AKS
+discovered_by = MAK
+discovered_by = NOB
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+
+100.1.1 = { citysize = 1285 }
+200.1.1 = { citysize = 1571 }
+300.1.1 = { citysize = 1857 }
+340.1.1 = { religion = african }
+350.1.1 = { owner = MAK controller = MAK add_core = MAK remove_core = MEO }
+400.1.1 = { citysize = 2142 fort1 = yes }
+500.1.1 = { citysize = 2428 }
+550.1.1 = { religion = coptic }
+600.1.1 = { citysize = 2714 }
+700.1.1 = { citysize = 3000 }
+800.1.1 = { citysize = 3285 }
+900.1.1 = { citysize = 3571 }
+1000.1.1 = { citysize = 3857 }
+1100.1.1 = { citysize = 4142 }
+1200.1.1 = { citysize = 4428 discovered_by = MAM }
+1276.1.1 = { owner = MAM controller = MAM add_core = MAM }
+1286.1.1 = { owner = MAK controller = MAK remove_core = MAM }
+1300.1.1 = { citysize = 4714 }
+
+1450.1.1 = { citysize = 1400 }
+# 1453.1.1 = { controller = REB } # Under control of Awlad Kenz
+1517.1.1 = { add_core = TUR } # Mamluks fall to Ottomans, Ottomans do not advance up Nile
+1540.1.1 = {	owner = TUR
+		controller = TUR		
+		citysize = 1450
+	   } #Ottomans occupy Lower Nubia
+1600.1.1 = { citysize = 1500 }
+1650.1.1 = { citysize = 1550 }
+1700.1.1 = { citysize = 1600 }
+1750.1.1 = { citysize = 1650 }
+1800.1.1 = { citysize = 1700 }
+
+1850.1.1   = { citysize = 9000 }
+1867.6.8   = { owner = EGY controller = EGY add_core = EGY }
+1882.9.13  = { owner = GBR controller = GBR add_core = GBR remove_core = TUR }
+1899.6.19  = { add_core = SUD }
+1900.1.1   = { citysize = 10000 }
+1950.1.1   = { citysize = 11500 }
+1956.1.1   = { owner = SUD controller = SUD remove_core = GBR remove_core = EGY }
+2010.1.1   = { citysize = 13473 }
+
+
+

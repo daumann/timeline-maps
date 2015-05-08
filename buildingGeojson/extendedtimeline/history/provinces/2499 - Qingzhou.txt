@@ -1,0 +1,84 @@
+newEntry2499 - Qingzhou.txt
+#690 - Shandong Bandao
+
+owner = HND
+controller = HND
+culture = chihan
+religion = confucianism
+capital = "Qingzhou"
+trade_goods = iron
+hre = no
+base_tax = 5
+manpower = 4
+citysize = 7607
+add_core = HND
+add_core = WEI
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 9214 }
+200.1.1 = { citysize = 12428 }
+220.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = HND }
+265.2.4 = { owner = JIN controller = JIN add_core = JIN remove_core = WEI }
+300.1.1 = { citysize = 15642 }
+329.1.1 = { owner = ZAO controller = ZAO add_core = ZAO remove_core = JIN }
+351.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = ZAO }
+384.1.1 = { owner = YAN controller = YAN add_core = YAN remove_core = QIN }
+400.1.1 = { citysize = 18857 }
+410.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = YAN }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = LSO }
+500.1.1 = { citysize = 22071 }
+550.6.7 = { owner = QIC controller = QIC add_core = QIC remove_core = WEI }
+577.2.28 = { owner = CZH controller = CZH add_core = CZH remove_core = QIC }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+600.1.1 = { citysize = 25285 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 28499 }
+800.1.1 = { citysize = 31714 }
+900.1.1 = { citysize = 34928 }
+907.6.1 = { owner = LNG controller = LNG add_core = LNG remove_core = TNG }
+923.11.19 = { owner = TNG controller = TNG add_core = TNG remove_core = LNG }
+936.1.11 = { owner = JIN controller = JIN add_core = JIN remove_core = TNG }
+947.1.1 = { owner = HND controller = HND add_core = HND remove_core = JIN }
+951.2.13 = { owner = CZH controller = CZH add_core = CZH remove_core = HND }
+960.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = CZH }
+1000.1.1 = { citysize = 38142 }
+1100.1.1 = { citysize = 41357 }
+1127.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = SNG }
+1200.1.1 = { citysize = 44571 }
+1234.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = CSH remove_core = JIN }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 47785 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 51000 }
+
+1450.1.1 = { citysize = 54200 }
+1500.1.1 = { citysize = 59800 }
+1519.1.1 = { discovered_by = POR } # Tome Pires
+1550.1.1 = { citysize = 64333 }
+1600.1.1 = { citysize = 68570 }
+1644.4.1 = { owner = CSH controller = CSH } # The Shun dynasty of Li Zicheng
+1644.11.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+1650.1.1 = { citysize = 61110 }
+1662.1.1 = { remove_core = MNG }
+1700.1.1 = { citysize = 75424 }
+1750.1.1 = { citysize = 79600 }
+1800.1.1 = { citysize = 82540 }
+
+1850.1.1   = { citysize = 150000 }
+1900.1.1   = { citysize = 500000 }
+1912.2.12  = { add_core = CHN owner = CHN controller = CHN remove_core = QNG remove_core = CSH capital = "Zibo" }
+1914.11.7  = { controller = JAP }
+1919.7.28  = { controller = CHN }
+1938.3.1   = { controller = JAP }
+1945.8.15  = { controller = CHN }
+
+
+

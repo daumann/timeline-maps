@@ -1,0 +1,88 @@
+newEntry222 - Almeria.txt
+#222 - Almería
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = hellenism
+hre = no
+base_tax = 2
+trade_goods = grain
+manpower = 2
+capital = "Acci" 
+citysize = 1200
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1407 }
+200.1.1 = { citysize = 1914 }
+300.1.1 = { citysize = 2421 culture = roman }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2928 }
+409.1.1 = { owner = VAN controller = VAN add_core = VAN }
+425.1.1 = { owner = ROW controller = ROW remove_core = VAN }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL }
+500.1.1 = { citysize = 3435 culture = gothic religion = arianism }
+552.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+600.1.1 = { citysize = 3942 fort1 = yes }
+620.1.1 = { owner = GVI controller = GVI remove_core = BYZ }
+700.1.1 = { citysize = 4450 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI }
+750.1.1 = { religion = sunni }
+800.1.1 = { citysize = 4957 culture = andalucian }
+900.1.1 = { citysize = 5464 }
+955.1.1 = { capital = "Al-Mara'a" }
+1000.1.1 = { citysize = 5971 }
+1011.1.1 = { owner = ALR controller = ALR add_core = ALR remove_core = UMA }
+1038.1.1 = { owner = VAL controller = VAL add_core = VAL }
+1041.1.1 = { owner = ALR controller = ALR remove_core = VAL }
+1091.10.1 = { owner = AMR controller = AMR add_core = AMR }
+1100.1.1 = { citysize = 6478 }
+1145.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = AMR remove_core = ALR }
+1147.10.1 = { controller = CAS }
+1149.4.1 = { controller = AMH }
+1200.1.1 = { citysize = 6985 }
+1238.1.1 = { owner = GRA controller = GRA add_core = GRA remove_core = AMH capital = "Almería" }
+1300.1.1 = { citysize = 7492 }
+1399.1.1 = { citysize = 8000 }
+
+1450.1.1   = { citysize = 9000 }
+1487.1.1   = { revolt = { type = religious_rebels size = 2 } controller = REB } # After King Muhammad X pacts with the Catholic Kings, Muhammad El Zagal flees to Almería to proceed the war against the christians from there.
+1489.12.10 = { revolt = {} controller = CAS owner = CAS add_core = CAS } # After the capitulation of the town of Baza, Sultan Muhammad El Zagal gives the port of Almería to the Catholic Kings
+1499.12.1  = { unrest = 2 } # The Inquisition forces Spanish muslims to convert back to Christianity. Occasional revolts occur.
+1500.1.1   = { citysize = 10870 }
+1502.2.1   = { unrest = 0 religion = catholic } # New capitulations where all the subjects of Granada are baptised and fully incorporated into the legal system of Castilla
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1550.1.1   = { citysize = 12500 }
+1568.12.25 = { unrest = 15 } # Sublevation of the morisques in the kingdom of Granada.
+1570.10.28 = { unrest = 0 culture = castillian } # To quell the revolt, the morisques in Granada are forcefully deported to other Spanish territories
+1600.1.1   = { citysize = 13800 }
+1650.1.1   = { citysize = 14300 }
+1700.1.1   = { citysize = 15000 }
+1713.4.11  = { remove_core = CAS }
+1750.1.1   = { citysize = 16720 }
+1800.1.1   = { citysize = 18750 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1811.1.1   = { revolt = {} controller = SPA }
+1812.10.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 32489 }
+1900.1.1   = { citysize = 56296 }
+1950.1.1   = { citysize = 97548 }
+1999.1.1   = { citysize = 169027 }
+2010.1.1   = { citysize = 190013 }
+
+
+

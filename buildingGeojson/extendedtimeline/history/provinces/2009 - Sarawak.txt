@@ -1,0 +1,51 @@
+newEntry2009 - Sarawak.txt
+#2009 - Sarawak
+
+culture = bornean
+religion = hinduism
+capital = "Kuching"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_size = 60
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = chinese
+
+620.1.1 = { owner = BEI controller = BEI add_core = BEI citysize = 8000 trade_goods = spices }
+800.1.1 = { citysize = 11728 }
+900.1.1 = { citysize = 15457 }
+1000.1.1 = { citysize = 19185 }
+1100.1.1 = { citysize = 22914 }
+1200.1.1 = { citysize = 26642 fort1 = yes }
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+1330.1.1 = { religion = sunni }
+1399.1.1 = { citysize = 34100 }
+
+1450.1.1 = { citysize = 38000 }
+1500.1.1 = { citysize = 43870 }
+1521.1.1 = { discovered_by = SPA }
+1550.1.1 = { citysize = 47500 }
+1578.4.16 = { owner = SPA controller = SPA } # Captured by Spain
+1578.6.26 = { owner = BEI controller = BEI }
+1600.1.1 = { citysize = 49657 }
+1650.1.1 = { citysize = 52100 }
+1672.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Civil war over succession
+1673.1.1 = { revolt = {} controller = BEI }
+1700.1.1 = { citysize = 54660 }
+1750.1.1 = { citysize = 56374 }
+1800.1.1 = { citysize = 58222 }
+
+1841.8.14  = { owner = GBR controller = GBR add_core = GBR }
+1850.1.1   = { citysize = 80000 }
+1900.1.1   = { citysize = 160000 }
+1941.12.24 = { controller = JAP }
+1945.8.15  = { controller = GBR }
+1946.4.1   = { add_core = MSA remove_core = BEI }
+1950.1.1   = { citysize = 320000 }
+1963.7.22  = { owner = MSA controller = MSA remove_core = GBR }
+1963.9.16  = { owner = MLA controller = MLA add_core = MLA remove_core = MSA }
+2011.1.1   = { citysize = 617887 }
+
+

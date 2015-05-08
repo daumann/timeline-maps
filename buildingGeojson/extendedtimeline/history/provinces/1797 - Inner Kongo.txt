@@ -1,0 +1,29 @@
+newEntry1797 - Inner Kongo.txt
+culture = mongo
+religion = african
+capital = "Mbandaka"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 90
+native_ferocity = 2
+native_hostileness = 9
+
+1883.1.1   = { discovered_by = BEL discovered_by = GBR } #Henry Morton Stanley
+1886.1.1   = { owner = BEL controller = BEL add_core = BEL citysize = 5000 capital = "Coquilhatville" trade_goods = naval_supplies religion = catholic }
+1900.1.1   = { citysize = 10000 }
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 100000 }
+1960.7.1   = { owner = DRC controller = DRC add_core = DRC remove_core = BEL }
+1966.1.1   = { capital = "Mbandaka" }
+2004.1.1   = { citysize = 729257 }
+
+
+

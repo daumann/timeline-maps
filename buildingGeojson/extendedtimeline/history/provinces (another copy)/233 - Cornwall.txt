@@ -1,0 +1,82 @@
+#233 - Cornwall
+
+owner = DUM
+controller = DUM
+culture = briton
+religion = druidism
+hre = no
+base_tax = 4
+trade_goods = copper
+manpower = 3
+capital = "Isca Dumnoniorum"
+citysize = 1000
+add_core = DUM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+50.1.1 = { owner = ROM controller = ROM add_core = ROM }
+200.1.1 = { culture = welsh }
+300.1.1 = { citysize = 1600 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1900 }
+410.1.1 = { owner = DUM controller = DUM add_core = DUM remove_core = ROW capital = "Escanceaster" }
+500.1.1 = { citysize = 2200 religion = chalcedonism }
+600.1.1 = { citysize = 2500 }
+700.1.1 = { citysize = 2800 }
+710.1.1 = { owner = CRN controller = CRN add_core = CRN remove_core = DUM }
+800.1.1 = { citysize = 3200 }
+867.1.1 = { religion = catholic }
+890.1.1 = { owner = WSX controller = WSX add_core = WSX }
+900.1.1 = { citysize = 3600 }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG remove_core = WSX }
+928.1.1 = { fort1 = yes }
+1000.1.1 = { citysize = 4000 }
+1066.1.1 = { capital = "Exeter" }
+1100.1.1 = { citysize = 4400 }
+1200.1.1 = { citysize = 4800 }
+1250.1.1 = { culture = english }
+1300.1.1 = { citysize = 5400 }
+1399.1.1 = { citysize = 6000 }
+
+1450.1.1  = { citysize = 7500 }
+1453.1.1  = { unrest = 5 } # Start of the War of the Roses
+1461.6.1  = { unrest = 2 } # Coronation of Edward IV
+1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1470.9.1  = { revolt = { type = revolutionary_rebels size = 2 } controller = REB }
+1470.10.6 = { revolt = {} controller = ENG } # Readeption of Henry VI
+1471.1.1  = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1550.1.1  = { citysize = 8000 }
+1575.1.1  = { religion = protestant }
+1600.1.1  = { citysize = 9000 religion = reformed fort2 = yes }
+1650.1.1  = { citysize = 10000 marketplace = yes } # Marketplace Estimated
+#1675.1.1  = { customs_house = yes } # Estimated
+1690.1.1  = { shipyard = yes } # Plymouth Dockyard
+1700.1.1  = { citysize = 14000 }
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+		remove_core = ENG
+	    } 
+1750.1.1  = { citysize = 16000 capital = "Plymouth" }
+1800.1.1  = { citysize = 40000 }
+
+1821.1.1 =   { citysize = 50000 }
+1841.1.1 =   { citysize = 60000 }
+1850.1.1 =   { remove_core = CRN }
+1861.1.1 =   { citysize = 100000 }
+1881.1.1 =   { citysize = 150000 }
+1901.1.1 =   { citysize = 200000 }
+1931.1.1 =   { citysize = 220000 }
+1961.1.1 =   { citysize = 230000 }
+1981.1.1 =   { citysize = 240000 }
+2010.1.1 =   { citysize = 258700 }
+
+
+

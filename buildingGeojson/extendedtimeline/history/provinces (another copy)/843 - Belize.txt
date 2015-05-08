@@ -1,0 +1,54 @@
+#843 - Belize
+
+owner = TIK
+controller = TIK
+culture = yucatec
+religion = mesoamerican_religion
+capital = "Lamanai" 
+trade_goods = sugar 
+hre = no 
+base_tax = 4 
+manpower = 1 
+citysize = 1500 
+add_local_autonomy = 25
+add_core = TIK
+discovered_by = mesoamerican
+
+987.1.1 = { owner = MAY controller = MAY add_core = MAY remove_core = TIK }
+1100.1.1 = { capital = "Belize" }
+1194.1.1 = { owner = ITZ controller = ITZ add_core = ITZ remove_core = MAY }
+
+1450.1.1  = { citysize = 1900 }
+1500.1.1  = { citysize = 2400 }
+1502.1.1  = { discovered_by = CAS } # Christopher Columbus, no attempt to colonize
+1516.1.23 = { discovered_by = SPA }
+1550.1.1  = { citysize = 3800 }
+1600.1.1  = { citysize = 4100 }
+1638.1.1  = {	owner = ENG
+		controller = ENG
+		culture = english
+		religion = protestant
+		citysize = 4340 
+	    } # British privateers settled in the area 
+1650.1.1  = { citysize = 4750 capital = "Belize town" }
+1663.1.1  = { add_core = ENG }
+1700.1.1  = { citysize = 5190 }
+1707.5.12  = {
+	discovered_by = GBR
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = ENG
+}
+1750.1.1  = { citysize = 5860 }
+1800.1.1  = { citysize = 6500 } 
+
+1850.1.1   = { citysize = 7000 }
+1900.1.1   = { citysize = 10000 }
+1950.1.1   = { citysize = 15000 }
+1971.1.1   = { capital = "Belmopan" }
+1981.9.21  = { owner = BLZ controller = BLZ add_core = BLZ remove_core = GBR }
+2009.1.1   = { citysize = 20000 }
+
+
+

@@ -1,0 +1,68 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 170  72  67 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+}
+
+monarch_names = {
+	"Derbar Raja #0" = 20
+	"Phra Ong #0" = 20
+	"Tun Derma #0" = 20
+	"Tun Perkasa #0" = 20
+	"Zainal #0" = 20
+
+	"Azura #0" = -1
+}
+
+leader_names = {
+	Mahawangsa
+	Gemeron
+	Dewa
+	Jiwa
+	Agung
+	Slamet
+	Budi
+	Harto
+	Karno
+	Wani
+	Mas
+	Kencono
+	Ratri
+}
+
+ship_names = {
+	Parameswara "Sultan Iskandar" Bendahara Laksamana
+	Temenggung "Penghulu bendahari" Shahbandar
+	"Hukum Kanun" "Undang-Undang" "Pulau Bakung"
+	"Pulau Lingga" Kepulauan "Pulau Singkep" "Kepulauan Riau"
+	"Pulau Rempang" "Pulau Kundur" "Pulau Padang"
+	"Pulau Bengkaus" "Pulau Tinggi" "Pulau Sibu"
+	"Pulau Tioman" "Pulau Aur" "Pulau Rupat"
+	"Pulau Rangsang" "Pulau Tebing Tinggi"
+}
+
+
+

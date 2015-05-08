@@ -1,0 +1,72 @@
+newEntry1127 - Tuat.txt
+#1127 - Tuat
+
+culture = tuareg
+capital = "Tawat"
+religion = african
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+850.1.1 = { religion = sunni }
+1054.1.1 = { 	owner = AMR 
+		controller = AMR 
+		add_core = AMR 
+		citysize = 1500 
+		trade_goods = grain 
+	   }
+1121.1.1 = { 	owner = XXX 
+		controller = XXX 
+		remove_core = AMR 
+		citysize = 0 
+		trade_goods = unknown
+		native_size = 30
+		native_ferocity = 4
+		native_hostileness = 9
+	   }
+
+1555.1.1 = {	discovered_by = MOR
+		owner = MOR
+		controller = MOR
+		add_core = MOR
+		citysize = 3000
+		trade_goods = salt
+	   } # Moroccans occupy oasis of Tawat
+1600.1.1 = { citysize = 3500 }
+1630.1.1 = {
+	owner = SOS
+	controller = SOS
+	add_core = SOS
+}
+1631.1.1 = {
+	owner = TFL
+	controller = TFL
+	add_core = TFL
+	remove_core = SOS
+}	#Alaouites
+1650.1.1 = { citysize = 4000 }
+1668.9.7 = {
+	owner = MOR
+	controller = MOR
+	remove_core = TFL
+} #Alaouites reunifies the country
+1700.1.1 = { citysize = 4500 }
+1750.1.1 = { citysize = 5000 }
+1800.1.1 = { citysize = 5500 }
+
+1850.1.1   = { citysize = 7000 }
+1900.1.1   = { citysize = 10000 }
+1901.1.1   = { owner = FR2 controller = FR2 add_core = FR2 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1942.11.16 = { owner = FR2 controller = FR2 remove_core = FRV } # Under Free French control after Operation Torch
+1962.7.3   = { owner = AGR controller = AGR add_core = AGR remove_core = FR2 remove_core = MOR }
+1966.1.1   = { citysize = 13300 }
+1987.1.1   = { citysize = 28600 }
+2008.1.1   = { citysize = 43903 }
+
+
+

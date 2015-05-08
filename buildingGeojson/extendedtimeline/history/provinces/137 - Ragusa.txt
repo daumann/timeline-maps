@@ -1,0 +1,81 @@
+newEntry137 - Ragusa.txt
+#137 - Ragusa
+
+owner = ROM
+controller = ROM
+culture = illyrian
+religion = hellenism
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 1800
+add_core = ROM
+capital = "Epidaurum"
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2000 }
+200.1.1 = { citysize = 2400 }
+300.1.1 = { citysize = 2800 religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 3200 }
+480.1.1 = { owner = ODO controller = ODO add_core = ODO remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO }
+500.1.1 = { citysize = 3600 }
+535.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = GOS capital = "Iadera" }
+600.1.1 = { citysize = 4000 }
+650.1.1 = { capital = "Ragusa" culture = croatian }
+700.1.1 = { citysize = 4500 fort1 = yes }
+800.1.1 = { citysize = 5000 }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 5500 }
+1000.1.1 = { citysize = 6000 }
+1050.1.1 = { owner = DOC controller = DOC add_core = DOC }
+1100.1.1 = { citysize = 6600 }
+1165.1.1 = { owner = BYZ controller = BYZ remove_core = DOC }
+1200.1.1 = { citysize = 7200 }
+1205.1.1 = { owner = VEN controller = VEN add_core = VEN religion = catholic }
+1300.1.1 = { citysize = 7800 fort2 = yes }
+1358.2.18 = { owner = RAG controller = RAG add_core = RAG remove_core = VEN remove_core = BYZ }
+1399.1.1 = { citysize = 8500 }
+
+1450.1.1  = { citysize = 9500 }
+1460.1.1  = { marketplace = yes }
+1500.1.1  = { citysize = 10230 }
+1550.1.1  = { citysize = 12990 shipyard = yes } # Ragusa reached its peak
+1600.1.1  = { citysize = 13790 fort2 = yes }
+1610.1.1  = { fine_arts_academy = yes } # Became the center of the "Dalmatian renaissance"
+#1630.1.1  = { customs_house = yes }
+1650.1.1  = { citysize = 14005 fort3 = yes }
+1667.1.1  = { citysize = 9102 } # Earthquake, the city gradually declined, -5000
+1690.1.1  = { tax_assessor = yes }
+1700.1.1  = { citysize = 8763 courthouse = yes }
+1750.1.1  = { citysize = 9012 }
+1800.1.1  = { citysize = 9400 }
+1806.5.26 = { controller = FRA } # Occupied by French troops
+1806.6.17 = { controller = RAG } # The French are defeated
+1806.7.12 = { controller = FRA }
+1807.7.9  = { owner = FRA add_core = FRA } # Treaty of Tilsit
+1813.9.20 = { controller = HAB } # Occupied by Austrian forces
+1814.4.6  = {	owner = HAB
+		add_core = HAB
+		remove_core = FRA
+	    } # Napoleon abdicates
+
+1850.1.1   = { citysize = 14000 }
+1900.1.1   = { citysize = 26000 }
+1918.12.1  = { owner = YUG controller = YUG add_core = YUG add_core = CRO remove_core = HAB remove_core = RAG capital = "Dubrovnik" }
+1941.4.6   = { owner = ITA controller = ITA }
+1941.4.10  = { owner = CRO controller = CRO }
+1945.5.8   = { owner = YUG controller = YUG }
+1950.1.1   = { citysize = 40000 }
+1991.6.25  = { owner = CRO controller = CRO remove_core = YUG }
+2011.1.1   = { citysize = 42641 }
+
+
+

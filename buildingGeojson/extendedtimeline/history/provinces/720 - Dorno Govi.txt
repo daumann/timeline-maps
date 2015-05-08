@@ -1,0 +1,82 @@
+newEntry720 - Dorno Govi.txt
+#720 - Tshiyet Noyan
+
+owner = XIO
+controller = XIO
+culture = mongol
+religion = tengri
+capital = "Dornogovi"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 1823
+add_core = XIO
+discovered_by = chinese
+discovered_by = nomad_group
+
+91.2.1 = { owner = XIB controller = XIB add_core = XIB remove_core = XIO }
+100.1.1 = { citysize = 2046 }
+200.1.1 = { citysize = 2492 }
+300.1.1 = { citysize = 2939 }
+330.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = XIB }
+400.1.1 = { citysize = 3385 }
+500.1.1 = { citysize = 3832 }
+547.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU }
+600.1.1 = { citysize = 4278 }
+700.1.1 = { citysize = 4725 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GOK }
+765.1.1 = { religion = manichaeism }
+800.1.1 = { citysize = 5171 }
+830.1.1 = { religion = tengri }
+848.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = UIG }
+900.1.1 = { citysize = 5617 }
+907.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KHT }
+1000.1.1 = { citysize = 6064 fort1 = yes }
+1100.1.1 = { citysize = 6510 }
+1125.1.1 = { owner = KMO controller = KMO add_core = KMO remove_core = LIO }
+1200.1.1 = { citysize = 6957 }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KMO }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 7403 religion = buddhism }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1399.1.1 = { citysize = 7850 }
+
+1450.1.1 = { citysize = 8200 }
+1500.1.1 = { citysize = 9150 }
+1510.1.1 = {	owner = KHA
+		controller = KHA
+		add_core = KHA
+	   } # The Oirads are defeated & Mongolia is reunited under Dayan Khan
+1550.1.1 = { citysize = 10580 }
+#1586.1.1 = { religion = buddhism } # State religion
+1600.1.1 = { citysize = 11999 }
+1635.4.1 = {	owner = KLK
+		controller = KLK
+		add_core = KLK
+		}
+1650.1.1 = { citysize = 13480 }
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+1688.1.1 = {	owner = ZUN
+		controller = ZUN
+		}
+1696.1.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+	   } # Kangxi leads Qing army pushing Zunghars back
+1700.1.1 = { citysize = 15555 }
+1709.1.1 = { discovered_by = SPA }
+1750.1.1 = { citysize = 17100 }
+1800.1.1 = { citysize = 18957 }
+
+1840.1.1   = { add_core = MGL remove_core = OIR remove_core = KHA }
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 100000 }
+1911.12.29 = { owner = MGL controller = MGL add_core = MGL remove_core = QNG }
+1931.1.1   = { capital = "Sainshand" }
+1950.1.1   = { citysize = 500000 }
+2012.4.30  = { citysize = 1221000 }
+
+
+

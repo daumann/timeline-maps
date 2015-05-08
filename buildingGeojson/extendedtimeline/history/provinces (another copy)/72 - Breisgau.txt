@@ -1,0 +1,91 @@
+#72 - Breisgau
+
+owner = ALM
+controller = ALM
+add_core = ALM
+citysize = 1000
+culture = rheinlaender
+religion = germanic
+base_tax = 4
+trade_goods = grain 
+manpower = 1
+capital = "Raurica" 
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+75.1.1 = { owner = ROM controller = ROM add_core = ROM capital = "Augusta Rauricorum" }
+100.1.1 = { citysize = 1400 }
+260.1.1 = { owner = ALM controller = ALM remove_core = ROM citysize = 1800 capital = "Freiburg" }
+400.1.1 = { citysize = 2200 }
+496.1.1 = { owner = FRK controller = FRK add_core = FRK }
+500.1.1 = { citysize = 2600 }
+600.1.1 = { religion = chalcedonism citysize = 3000 }
+700.1.1 = { citysize = 3400 }
+800.1.1 = { citysize = 3600 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 4000 }
+911.11.10 = { owner = SWA controller = SWA add_core = SWA remove_core = FRE remove_core = ALM }
+962.2.2 = { hre = yes }
+1000.1.1 = { fort1 = yes citysize = 4600 }
+1100.1.1 = { citysize = 5200 }
+1112.1.1 = { owner = BAD controller = BAD add_core = BAD remove_core = SWA }
+1200.1.1 = { citysize = 5800 marketplace = yes }
+1300.1.1 = { citysize = 6400 }
+1399.1.1 = { citysize = 7000 }
+
+1450.1.1 = { citysize = 8000 }
+1453.1.1 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = BAD
+}
+1495.1.1 = { workshop = yes }
+1497.1.1 = { temple = yes } # Freiburger Münster 
+1502.1.1 = { university = yes } # Freiburg has one of Germany's oldest Universities (founded 1457)
+1510.1.1 = { fort2 = yes } # Breisach is one of the most important Fortresses on the upper Rhine
+1524.4.1 = { unrest = 8 } # Peasant Revolts - 18.000 peasants take Freiburg (May)
+1524.12.1 = { unrest = 0 }
+#1525.1.1 = { customs_house = yes }
+1548.1.1 = { regimental_camp = yes }
+1550.1.1 = { citysize = 10000 }
+1565.1.1 = { marketplace = yes }
+1600.1.1 = { citysize = 14000 }
+1600.1.1 = { fort3 = yes }
+1608.1.1 = { citysize = 10000 } # Great plague
+1615.1.1 = { tax_assessor = yes }
+1646.1.1 = { fort2 = yes }
+1650.1.1 = { citysize = 12000 }
+1700.1.1 = { citysize = 14000 }
+1750.1.1 = { citysize = 17000 }
+1797.10.17 = {
+	owner = MOD
+	controller = MOD
+	add_core = MOD
+ 	remove_core = HAB
+ } # Treaty of Campo Formio
+1805.12.26 = {
+	owner = BAD
+	controller = BAD
+	add_core = BAD
+	remove_core = MOD
+ } # Treaty of Pressburg
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 40000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1900.1.1   = { citysize = 120000 remove_core = BAD }
+1945.4.1   = { controller = FR2 }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.1.1   = { citysize = 200000 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2010.12.31 = { citysize = 224191 }
+
+
+

@@ -1,0 +1,46 @@
+newEntry2420 - Barito.txt
+#639 - Banjarmasin
+
+culture = bornean
+religion = hinduism
+capital = "Barito"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 3
+native_size = 40
+native_ferocity = 8
+native_hostileness = 5
+discovered_by = chinese
+
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+
+1521.1.1 = { discovered_by = POR }
+1526.9.24 =  {
+	owner = BNJ
+	controller = BNJ
+	add_core = BNJ
+	fort1 = yes
+	religion = sunni
+	citysize = 5000
+	trade_goods = spices
+} # Banjar Sultanate was founded
+
+1850.1.1   = { citysize = 10000 }
+1860.1.1   = { owner = NED controller = NED add_core = NED }
+1900.1.1   = { citysize = 40000 }
+1912.9.10  = { add_core = IDN remove_core = BNJ }
+1930.1.1   = { citysize = 66000 }
+1942.2.10  = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.1   = { controller = ENG }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 200000 }
+1957.7.17  = { capital = "Palangkaraya" }
+1990.1.1   = { citysize = 444000 }
+2010.1.1   = { citysize = 625395 }
+
+
+

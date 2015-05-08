@@ -1,0 +1,54 @@
+newEntry1171 - Ndongo.txt
+#1171 - Ndongo
+
+culture = ovimbundu
+religion = shamanism
+capital = "Kabasa"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 3
+native_size = 70
+native_ferocity = 2
+native_hostileness = 7 
+discovered_by = KON
+discovered_by = LOA
+discovered_by = NDO
+
+1350.1.1 = { owner = NDO controller = NDO add_core = NDO citysize = 1050 trade_goods = slaves }
+
+1450.1.1 = { citysize = 1600 }
+1483.1.1 = { discovered_by = POR } # Diogo Cão
+1500.1.1 = { citysize = 1780 }
+1550.1.1 = { citysize = 2170 }
+1600.1.1 = { citysize = 3500 }
+1628.1.1 = {	add_core = POR
+		owner = POR
+		controller = POR
+	    } # Effectively under Portuguese control
+1650.1.1 = { citysize = 4220 }
+1670.1.1 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 1
+		leader = "Filipe Hari"
+	}
+	controller = REB
+}
+1671.1.1 = {
+	revolt = { }
+	controller = POR
+}
+1700.1.1 = { citysize = 5900 }
+1750.1.1 = { citysize = 6500 }
+1800.1.1 = { citysize = 6900 }
+
+1850.1.1   = { citysize = 10000 }
+1885.1.1   = { capital = "Malanje" }
+1900.1.1   = { citysize = 30000 trade_goods = grain }
+1950.1.1   = { citysize = 90000 }
+1975.11.11 = { owner = AGL controller = AGL add_core = AGL remove_core = KON remove_core = POR }
+2011.1.1   = { citysize = 222000 }
+
+
+

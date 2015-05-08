@@ -1,0 +1,25 @@
+#1151 - Bonny
+
+culture = northern_bantu
+religion = african
+capital = "Bonny"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 2
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9 
+discovered_by = sub_saharan
+
+1472.1.1 = { discovered_by = POR } # Frenão do Pó
+1804.1.1 = { discovered_by = SOK }
+
+1900.1.1   = { owner = GBR controller = GBR add_core = GBR citysize = 1000 trade_goods = grain religion = protestant }
+1913.1.1   = { capital = "Port Harcourt" }
+1950.1.1   = { citysize = 400000 }
+1960.10.1  = { owner = NIG controller = NIG add_core = NIG remove_core = GBR remove_core = SOK }
+2006.1.1   = { citysize = 1382592 }
+
+
+

@@ -1,0 +1,443 @@
+government = imperial_government
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 2
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -5
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = 0
+#quality_quantity = -2
+#serfdom_freesubjects = -4
+primary_culture = japanese
+religion = animism
+technology_group = chinese
+capital = 1832	# Yamato
+
+1.1.1 = {
+	monarch = {
+		name = "Suinin"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+71.1.1 = {
+	monarch = {
+		name = "Keiko"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+131.1.1 = {
+	monarch = {
+		name = "Seimu"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+192.1.1 = {
+	monarch = {
+		name = "Chuai"
+		dynasty = "Yamato"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+201.1.1 = {
+	monarch = {
+		name = "Jingu"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+270.1.1 = {
+	monarch = {
+		name = "Ojin"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+311.1.1 = {
+	monarch = {
+		name = "Nintoku"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+400.1.1 = {
+	monarch = {
+		name = "Richu"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+406.1.1 = {
+	monarch = {
+		name = "Hanzei"
+		dynasty = "Yamato"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+411.1.1 = {
+	monarch = {
+		name = "Ingyo"
+		dynasty = "Yamato"
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+453.1.1 = {
+	monarch = {
+		name = "Anko"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+456.1.1 = {
+	monarch = {
+		name = "Yuryaku"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+480.1.1 = {
+	monarch = {
+		name = "Seinei"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+485.1.1 = {
+	monarch = {
+		name = "Kenzo"
+		dynasty = "Yamato"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+488.1.1 = {
+	monarch = {
+		name = "Ninken"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+498.1.1 = {
+	monarch = {
+		name = "Buretsu"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+507.1.1 = {
+	monarch = {
+		name = "Keitai"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+531.1.1 = {
+	monarch = {
+		name = "Ankan"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+535.1.1 = {
+	monarch = {
+		name = "Senka"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+539.1.1 = {
+	monarch = {
+		name = "Kimmei"
+		dynasty = "Yamato"
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
+
+572.1.1 = {
+	monarch = {
+		name = "Bidatsu"
+		dynasty = "Yamato"
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}
+
+585.1.1 = {
+	monarch = {
+		name = "Yomei"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+587.1.1 = {
+	monarch = {
+		name = "Sushun"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+592.1.1 = {
+	monarch = {
+		name = "Suiko"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 6
+		female = yes
+	}
+}
+
+607.1.1 = { religion = buddhism }
+
+629.1.1 = {
+	monarch = {
+		name = "Jomei"
+		dynasty = "Yamato"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+642.1.1 = {
+	monarch = {
+		name = "Kogyoku"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+645.1.1 = {
+	monarch = {
+		name = "Kotoku"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 4
+		mil = 6
+	}
+}
+
+655.1.1 = {
+	monarch = {
+		name = "Saimei"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 5
+		female = yes
+	}
+}
+
+661.1.1 = {
+	monarch = {
+		name = "Tenji"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+672.1.7 = {
+	monarch = {
+		name = "Kobun"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+672.8.21 = {
+	monarch = {
+		name = "Temmu"
+		dynasty = "Yamato"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}
+
+686.10.1 = {
+	monarch = {
+		name = "Jito"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 2
+		mil = 2
+		female = yes
+	}
+}
+
+697.9.23 = {
+	monarch = {
+		name = "Mommu"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+707.7.18 = {
+	monarch = {
+		name = "Gemmei"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}
+
+712.1.1 = { religion = shinto }
+
+715.10.3 = {
+	monarch = {
+		name = "Gensho"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 4
+		mil = 3
+		female = yes
+	}
+}
+
+724.3.3 = {
+	monarch = {
+		name = "Shomu"
+		dynasty = "Yamato"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+749.8.19 = {
+	monarch = {
+		name = "Koken"
+		dynasty = "Yamato"
+		adm = 1
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+
+758.12.7 = {
+	monarch = {
+		name = "Junnin"
+		dynasty = "Yamato"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+765.1.26 = {
+	monarch = {
+		name = "Koken"
+		dynasty = "Yamato"
+		adm = 1
+		dip = 4
+		mil = 4
+		female = yes
+	}
+}
+
+
+770.10.23 = {
+	monarch = {
+		name = "Konin"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+
+781.4.30 = {
+	monarch = {
+		name = "Kammu"
+		dynasty = "Yamato"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

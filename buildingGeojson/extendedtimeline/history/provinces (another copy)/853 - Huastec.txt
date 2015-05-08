@@ -1,0 +1,46 @@
+#853 - Huastec
+
+owner = TEO
+controller = TEO
+add_core = TEO
+citysize = 1500
+culture = aztek 
+religion = nahuatl
+capital = "Huastec" 
+trade_goods = gold
+hre = no 
+base_tax = 3
+manpower = 1 
+discovered_by = mesoamerican
+
+496.1.1 = { owner = TLT controller = TLT add_core = TLT remove_core = TEO capital = "Tula" base_tax = 5 }
+1179.1.1 = { base_tax = 3 capital = "Huastec" }
+1250.1.1 = { owner = AZT controller = AZT add_core = AZT remove_core = TLT }
+
+1450.1.1  = { citysize = 2500 }
+1500.1.1  = { citysize = 2850 }
+1519.1.1  = { discovered_by = SPA } 
+1521.8.13 = {	owner = SPA 
+		controller = SPA 
+		citysize = 6580
+		religion = catholic
+		culture = castillian
+		capital = "Pachuca"
+	    } # The last Aztec emperor surrendered, end of the Aztec Empire
+1546.1.1  = { add_core = SPA } 
+1600.1.1  = { citysize = 4750 } 
+1650.1.1  = { citysize = 5640 } 
+1700.1.1  = { citysize = 6877 } 
+1750.1.1  = { citysize = 7100 } 
+1800.1.1  = { citysize = 8230 }
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+1812.8.10 = { controller = MEX } # Conquered by José María Morelos
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 60000 }
+1950.1.1   = { citysize = 150000 }
+2010.1.1   = { citysize = 275578 }
+
+
+

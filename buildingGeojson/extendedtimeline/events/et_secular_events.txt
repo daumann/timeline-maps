@@ -1,0 +1,147 @@
+# Secularism Abandoned
+country_event = {
+	id = et.28
+	title = "et.EVTNAME28"
+	desc = "et.EVTDESC28"
+	picture = RELIGION_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "et.EVTOPTA28"
+		trigger = {
+			any_owned_province = {
+				religion = catholic
+			}
+		}
+		change_religion = catholic
+	}
+	option = {
+		name = "et.EVTOPTB28"
+		trigger = {
+			any_owned_province = {
+				religion = protestant
+			}
+		}
+		change_religion = protestant
+	}
+	option = {
+		name = "et.EVTOPTC28"
+		trigger = {
+			any_owned_province = {
+				religion = reformed
+			}
+		}
+		change_religion = reformed
+	}
+	option = {
+		name = "et.EVTOPTD28"
+		trigger = {
+			any_owned_province = {
+				religion = orthodox
+			}
+		}
+		change_religion = orthodox
+	}
+	option = {
+		name = "et.EVTOPTE28"
+		trigger = {
+			any_owned_province = {
+				religion = sunni
+			}
+		}
+		change_religion = sunni
+	}
+	option = {
+		name = "et.EVTOPTF28"
+		trigger = {
+			any_owned_province = {
+				religion = shiite
+			}
+		}
+		change_religion = shiite
+	}
+	option = {
+		name = "et.EVTOPTG28"
+		trigger = {
+			any_owned_province = {
+				religion = buddhism
+			}
+		}
+		change_religion = buddhism
+	}
+	option = {
+		name = "et.EVTOPTH28"
+		trigger = {
+			any_owned_province = {
+				religion = hinduism
+			}
+		}
+		change_religion = hinduism
+	}
+	option = {
+		name = "et.EVTOPTI28"
+		trigger = {
+			any_owned_province = {
+				religion = confucianism
+			}
+		}
+		change_religion = confucianism
+	}
+	option = {
+		name = "et.EVTOPTJ28"
+		trigger = {
+			any_owned_province = {
+				religion = shinto
+			}
+		}
+		change_religion = shinto
+	}
+	option = {
+		name = "et.EVTOPTK28"
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+			}
+		}
+		change_religion = jewish
+	}
+	option = {
+		name = "et.EVTOPTL28"
+		trigger = {
+			any_owned_province = {
+				religion = zoroastrianism
+			}
+		}
+		change_religion = zoroastrianism
+	}
+	option = {
+		name = "et.EVTOPTM28"
+	}
+}
+
+#Clear Secular provinces
+province_event = {
+
+	id = et.54
+	title = "et.EVTNAME54"
+	desc = "et.EVTDESC54"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		religion = secularism
+		is_city = yes
+		any_neighbor_province = { NOT = { religion = secularism } }
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = "et.EVTOPTA54"
+		random_neighbor_province = {
+			limit = { NOT = { religion = secularism } }
+			ROOT = { change_religion = PREV }
+		}
+	}
+}

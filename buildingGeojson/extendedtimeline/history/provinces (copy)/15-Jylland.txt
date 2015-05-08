@@ -1,0 +1,37 @@
+#Jylland, incl. Aarhus, Aalborg, Viborg and Kolding
+
+owner = JUT
+controller = JUT
+add_core = JUT
+citysize = 1000
+culture = danish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 3
+trade_goods = grain
+manpower = 2
+capital = "Aarhus"
+discovered_by = western
+discovered_by = barbarian
+
+650.1.1 = { owner = DAN controller = DAN add_core = DAN remove_core = JUT discovered_by = eastern }
+900.1.1 = { religion = catholic marketplace = yes }
+934.1.1 = { fort1 = yes }
+1000.1.1 = { citysize = 1100 }
+1100.1.1 = { discovered_by = muslim discovered_by = ottoman }
+1200.1.1 = { citysize = 1300 }
+1300.1.1 = { temple = yes }
+1399.1.1 = { citysize = 1500 }
+
+1534.8.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
+1534.11.2 = { revolt = {} controller = DAN } # Liberated by Christian III
+1536.1.1  = { religion = protestant }
+1627.8.1 = { controller = HAB }
+1629.5.22 = { controller = DAN }
+1644.1.25 = { controller = SWE } # Torstenssons War- Captured by Lennart Torstensson
+1645.8.13 = { controller = DAN } # The Peace of Brömsebro
+
+1940.4.9   = { owner = GER controller = GER }
+1945.5.4   = { owner = DAN controller = DAN }
+
+

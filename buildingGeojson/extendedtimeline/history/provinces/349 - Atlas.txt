@@ -1,0 +1,85 @@
+newEntry349 - Atlas.txt
+#349 - Atlas
+
+owner = TFL
+controller = TFL
+add_core = TFL
+culture = berber
+religion = african
+capital = "Figuig"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1040
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = ROM
+discovered_by = ROW
+
+100.1.1 = { citysize = 1081 }
+200.1.1 = { citysize = 1163 }
+300.1.1 = { owner = ALT controller = ALT add_core = ALT remove_core = TFL }
+400.1.1 = { citysize = 1327 discovered_by = VAN }
+420.1.1 = { religion = chalcedonism }
+500.1.1 = { citysize = 1409 }
+600.1.1 = { citysize = 1491 discovered_by = western }
+708.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = ALT }
+740.1.1 = { religion = sunni }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+780.1.1 = { religion = ibadi }
+789.1.1 = { owner = MOR controller = MOR add_core = MOR remove_core = ABB }
+800.1.1 = { citysize = 1654 }
+900.1.1 = { citysize = 1736 }
+922.1.1 = { owner = FAT controller = FAT }
+925.1.1 = { owner = MOR controller = MOR }
+927.1.1 = { owner = FAT controller = FAT }
+937.1.1 = { owner = MOR controller = MOR }
+974.1.1 = { owner = TFL controller = TFL add_core = TFL remove_core = MOR }
+1000.1.1 = { citysize = 1818 }
+1040.1.1 = { owner = AMR controller = AMR add_core = AMR remove_core = TFL }
+1100.1.1 = { citysize = 1900 fort1 = yes }
+1121.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = AMR }
+1200.1.1 = { citysize = 1982 }
+1235.1.1 = { owner = TLC controller = TLC add_core = TLC remove_core = AMH }
+1269.1.1 = { owner = MOR controller = MOR add_core = MOR }
+1300.1.1 = { citysize = 2064 }
+1359.1.1 = { owner = TLC controller = TLC add_core = TLC remove_core = MOR }
+1399.1.1 = { citysize = 2146 }
+
+1450.1.1 = { citysize = 2800 }
+1500.1.1 = { citysize = 3264 }
+1549.1.1 = {
+	owner = MOR
+	controller = MOR
+	add_core = MOR
+} #Conquered by the Saadians
+1550.1.1 = { citysize = 4070 }
+1600.1.1 = { citysize = 4855 }
+1603.8.1 = { unrest = 5 } # The death of the Saadita Ahmad I al-Mansur
+1631.1.1 = {
+	owner = TFL
+	controller = TFL
+	add_core = TFL
+	unrest = 0
+}	#Alaouites
+1650.1.1 = { citysize = 5100 }
+1668.9.7 = {
+	owner = MOR
+	controller = MOR
+} #Alaouites reunifies the country
+1700.1.1 = { citysize = 6287 }
+1750.1.1 = { citysize = 7081 }
+1800.1.1 = { citysize = 7354 }
+
+1850.1.1   = { citysize = 6000 }
+1900.1.1   = { citysize = 8000 }
+1912.3.30  = { owner = FR2 controller = FR2 add_core = FR2 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1942.11.16 = { owner = FR2 controller = FR2 remove_core = FRV } # Under Free French control after Operation Torch
+1950.1.1   = { citysize = 10000 }
+1956.3.2   = { owner = MOR controller = MOR remove_core = FR2 }
+2004.1.1   = { citysize = 12516 }
+
+
+

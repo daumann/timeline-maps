@@ -1,0 +1,78 @@
+#40 - Memel
+
+culture = old_prussian
+religion = romuva
+capital = "Memel"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 4
+native_hostileness = 3
+native_size = 7
+native_ferocity = 2
+discovered_by = PRS
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = CUR controller = CUR add_core = CUR citysize = 1000 trade_goods = grain }
+700.1.1 = { discovered_by = western }
+1100.1.1 = { citysize = 1500 }
+1200.1.1 = { citysize = 2000 discovered_by = muslim discovered_by = ottoman }
+1252.1.1 = { owner = TEU controller = TEU add_core = TEU religion = catholic culture = prussian }
+1253.1.1 = { fort1 = yes }
+1300.1.1 = { citysize = 2500 remove_core = CUR }
+1350.1.1 = { citysize = 3500 }
+1399.1.1 = { citysize = 4500 }
+
+1450.1.1   = { citysize = 4800 }
+1454.2.10  = { add_core = POL revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Thirteen years' war
+1466.10.19 = {	revolt = {}
+		controller = TEU
+		add_core = PRU
+		marketplace = yes
+		} # "Peace of Torun", became a Polish fief
+1500.1.1   = { citysize = 5657 }
+1525.2.10  = {	owner = PRU
+		controller = PRU
+		remove_core = TEU
+		remove_core = POL
+		religion = protestant
+	     } # Albert of Prussia
+1540.1.1   = { fort2 = yes } # Fortress established in Memel
+1550.1.1   = { citysize = 6656 }
+1593.1.1   = { shipyard = yes } # Commercial shipbuilding
+1600.1.1   = { citysize = 7830 }
+1618.8.28  = {	owner = BRA
+		controller = BRA
+		add_core = BRA
+		} # Prussia in a personal union with Brandenburg
+1627.1.1   = { fort3 = yes } # Fortifications around the city
+1650.1.1   = { citysize = 10212 }
+1667.1.1   = { tax_assessor = yes }
+1700.1.1   = { citysize = 8838 } # Great plague
+1701.1.18  = {	owner = PRU
+		controller = PRU
+		remove_core = BRA
+		manpower = 5
+		} # Kingdom of Prussia
+1723.1.1   = { fort3 = yes }
+1750.1.1   = { citysize = 11750 base_tax = 5  }
+1757.9.1   = { controller = RUS } # captured by Russia after Gross-Jägersdorf
+1762.1.5   = { controller = PRU } # Russians withdraw
+1800.1.1   = { citysize = 15000 }
+
+1850.1.1   = { citysize = 17000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER remove_core = PRU } # German unification
+1905.1.1   = { citysize = 20700 }
+1919.6.28  = { owner = MEM controller = MEM add_core = MEM remove_core = GER }
+1923.1.19  = { owner = LIT controller = LIT add_core = LIT remove_core = MEM capital = "Klaipeda" culture = lithuanian }
+1924.1.1   = { citysize = 36187 }
+1939.3.22  = { owner = GER controller = GER add_core = GER }
+1945.1.28  = { controller = SOV }
+1945.5.8   = { owner = SOV controller = SOV add_core = SOV remove_core = GER }
+1950.1.1   = { citysize = 48500 }
+1979.1.1   = { citysize = 176648 }
+1990.3.11  = { owner = LIT controller = LIT remove_core = SOV }
+2009.1.1   = { citysize = 161300 }
+
+
+

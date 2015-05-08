@@ -1,0 +1,78 @@
+newEntry641 - Makassar.txt
+#641 - Makassar
+
+culture = sulawesi
+religion = animism
+capital = "Makassar"
+trade_goods = unknown
+hre = no
+base_tax = 8
+manpower = 5
+native_size = 60
+native_ferocity = 2
+native_hostileness = 6
+discovered_by = ATJ
+discovered_by = MAJ
+discovered_by = MKS
+discovered_by = BLI
+discovered_by = BAN
+discovered_by = BEI
+discovered_by = BLM
+discovered_by = BTN
+discovered_by = CRB
+discovered_by = DMK
+discovered_by = PGR
+discovered_by = PLB
+discovered_by = PSA
+discovered_by = SAK
+discovered_by = SUN
+discovered_by = KUT
+discovered_by = BNJ
+discovered_by = LFA
+discovered_by = LNO
+discovered_by = LUW
+discovered_by = MGD
+discovered_by = TER
+discovered_by = TID
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = center_of_trade_modifier
+		duration = -1
+	}
+}
+
+1280.1.1 = { owner = MKS controller = MKS add_core = MKS trade_goods = spices citysize = 60000 religion = sunni }
+1320.1.1 = { fort1 = yes discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+1399.1.1 = { citysize = 70100 }
+
+1450.1.1 = { citysize = 76560 }
+1500.1.1 = { citysize = 79555 }
+1511.1.1 = { discovered_by = POR }
+1520.1.1 = { fort2 = yes }
+1550.1.1 = { citysize = 81053 }
+1600.1.1 = { citysize = 82400 }
+1650.1.1 = { citysize = 84060 }
+1667.1.1 = {	owner = NED
+		controller = NED
+		add_core = NED
+	   } # Conquered by the Dutch
+1700.1.1 = { citysize = 85900 }
+1750.1.1 = { citysize = 86200 }
+1800.1.1 = { citysize = 87800 }
+
+1850.1.1   = { citysize = 90000 }
+1900.1.1   = { citysize = 300000 }
+1912.9.10  = { add_core = IDN remove_core = MKS }
+1942.2.9   = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 700000 }
+1971.1.1   = { capital = "Ujung Pandang" }
+1999.1.1   = { capital = "Makassar" }
+2010.1.1   = { citysize = 1334090 }
+
+
+

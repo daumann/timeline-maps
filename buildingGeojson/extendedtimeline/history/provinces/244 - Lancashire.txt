@@ -1,0 +1,81 @@
+newEntry244 - Lancashire.txt
+#244 - Lancashire
+
+owner = BRG
+controller = BRG
+culture = briton
+religion = druidism
+hre = no
+base_tax = 6
+trade_goods = cloth
+manpower = 3
+capital = "Deva Vitrix"
+citysize = 5000
+add_core = BRG
+fort1 = yes
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+71.1.1 = { controller = ROM }
+78.1.1 = { owner = ROM add_core = ROM }
+100.1.1 = { citysize = 6000 }
+200.1.1 = { citysize = 8000 }
+380.1.1 = { add_core = RHE remove_core = BRG culture = welsh }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 10000 }
+410.1.1 = { owner = RHE controller = RHE add_core = RHE remove_core = ROW remove_core = BRG capital = "Deverdoeu" citysize = 1500 }
+600.1.1 = { citysize = 1600 }
+630.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 1700 }
+720.1.1 = { owner = NOL controller = NOL add_core = NOL culture = anglo_saxon }
+800.1.1 = { citysize = 1800 capital = "Chester" }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 1900 }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG remove_core = RHE }
+1000.1.1 = { citysize = 2000 remove_core = NOL }
+1066.12.25 = { culture = english }
+1100.1.1 = { citysize = 2200 }
+1200.1.1 = { citysize = 2400 }
+1300.1.1 = { citysize = 2600 }
+1399.1.1 = { citysize = 2800 }
+
+1450.1.1  = { citysize = 3000 }
+1453.1.1  = { unrest = 5 } # Start of the War of the Roses
+1461.6.1  = { unrest = 2 } # Coronation of Edward IV
+1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1  = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1520.1.1  = { citysize = 4000 }
+1575.1.1  = { courthouse = yes } # Estimated
+1600.1.1  = { citysize = 6000 marketplace = yes fort2 = yes } # Estimated
+1644.1.1  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Estimated
+1645.1.1  = { revolt = {} controller = ENG }
+1650.1.1  = { citysize = 8000 }
+1700.1.1  = { citysize = 15000 capital = "Liverpool" tax_assessor = yes} # Includes Manchester; Tax Assessor Estimated
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1715.1.1  = { shipyard = yes }
+#1725.1.1  = { customs_house = yes } # Estimated
+1750.1.1  = { citysize = 40000 textile = yes workshop = yes regimental_camp = yes } # Manufactory, Workshop, Regimental Camp Estimated
+1775.1.1  = { constable = yes } # Estimated
+1800.1.1  = { citysize = 160000 }
+
+1850.1.1   = { citysize = 310000 }
+1870.1.1   = { citysize = 540000 }
+1900.1.1   = { citysize = 710000 }
+1930.1.1   = { citysize = 840000 }
+1950.1.1   = { citysize = 770000 }
+1980.1.1   = { citysize = 500000 }
+2007.1.1   = { citysize = 466400 }
+
+
+

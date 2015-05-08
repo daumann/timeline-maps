@@ -1,0 +1,269 @@
+government = feudal_monarchy
+mercantilism = 0.1
+primary_culture = malvi
+religion = hinduism
+technology_group = indian
+capital = 526	# Mandu
+
+800.1.1 = {
+	monarch = {
+		name = "Upendra I"
+		dynasty = "Paramara"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+818.1.1 = {
+	monarch = {
+		name = "Vairisimha I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+843.1.1 = {
+	monarch = {
+		name = "Siyaka I"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+893.1.1 = {
+	monarch = {
+		name = "Vakpatiraja I"
+		dynasty = "Paramara"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+918.1.1 = {
+	monarch = {
+		name = "Vairisimha II"
+		dynasty = "Paramara"
+		adm = 1
+		mil = 3
+		dip = 5
+	}
+}
+
+948.1.1 = {
+	monarch = {
+		name = "Siyaka II"
+		dynasty = "Paramara"
+		adm = 2
+		mil = 2
+		dip = 4
+	}
+}
+
+974.1.1 = {
+	monarch = {
+		name = "Vakpatiraja II"
+		dynasty = "Paramara"
+		adm = 2
+		mil = 3
+		dip = 2
+	}
+}
+
+995.1.1 = {
+	monarch = {
+		name = "Sindhuraja I"
+		dynasty = "Paramara"
+		adm = 2
+		mil = 3
+		dip = 3
+	}
+}
+
+1010.1.1 = {
+	monarch = {
+		name = "Bhoja I"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+1055.1.1 = {
+	monarch = {
+		name = "Jayasimha I"
+		dynasty = "Paramara"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+
+1069.1.1 = {
+	monarch = {
+		name = "Udayaditya I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1087.1.1 = {
+	monarch = {
+		name = "Lakshmanadeva I"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1094.1.1 = {
+	monarch = {
+		name = "Naravarmandeva I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 3
+		mil = 4
+	}
+}
+
+1134.1.1 = {
+	monarch = {
+		name = "Yasovarman I"
+		dynasty = "Paramara"
+		adm = 1
+		dip = 2
+		mil = 5
+	}
+}
+
+1142.1.1 = {
+	monarch = {
+		name = "Jayavarman I"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+1143.1.1 = {
+	monarch = {
+		name = "Ballala I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1160.1.1 = {
+	monarch = {
+		name = "Vindhyavarman I"
+		dynasty = "Paramara"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1193.1.1 = {
+	monarch = {
+		name = "Subhatavarman I"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1210.1.1 = {
+	monarch = {
+		name = "Arjunavarman I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1218.1.1 = {
+	monarch = {
+		name = "Devapala I"
+		dynasty = "Paramara"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1239.1.1 = {
+	monarch = {
+		name = "Jaitugideva I"
+		dynasty = "Paramara"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1256.1.1 = {
+	monarch = {
+		name = "Jayavarman II"
+		dynasty = "Paramara"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+1269.1.1 = {
+	monarch = {
+		name = "Jayasimha II"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1274.1.1 = {
+	monarch = {
+		name = "Arjunavarman II"
+		dynasty = "Paramara"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
+
+1286.1.1 = {
+	monarch = {
+		name = "Bhoja II"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+1395.1.1 = {
+	monarch = {
+		name = "Mahlakadeva I"
+		dynasty = "Paramara"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+

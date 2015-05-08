@@ -1,0 +1,17 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -1
+#centralization_decentralization = -4
+#innovative_narrowminded = 1
+#mercantilism_freetrade = 3
+mercantilism = 0.1
+#offensive_defensive = 2
+#land_naval = -3
+#quality_quantity = -1
+#serfdom_freesubjects = 2
+primary_culture = basque
+religion = chalcedonism
+technology_group = western
+capital = 210	# Pamplona
+
+600.1.1 = { government = feudal_monarchy }
+

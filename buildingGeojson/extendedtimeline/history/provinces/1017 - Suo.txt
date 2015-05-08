@@ -1,0 +1,50 @@
+newEntry1017 - Suo.txt
+#1017 - Nagato
+
+owner = KIB
+controller = KIB
+culture = japanese
+religion = animism
+capital = "Yamaguchi"
+trade_goods = chinaware
+hre = no
+base_tax = 6
+manpower = 3
+citysize = 1353
+add_core = KIB
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 1507 }
+200.1.1 = { citysize = 1814 }
+300.1.1 = { citysize = 2121 }
+400.1.1 = { citysize = 2428 }
+500.1.1 = { citysize = 2735 }
+550.1.1 = { religion = buddhism }
+580.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = KIB }
+600.1.1 = { citysize = 3042 }
+700.1.1 = { citysize = 3350 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 3657 }
+900.1.1 = { citysize = 3964 }
+1000.1.1 = { citysize = 4271 }
+1100.1.1 = { citysize = 4578 }
+1192.1.1 = { owner = OUC controller = OUC add_core = OUC remove_core = JAP }
+1200.1.1 = { citysize = 4885 }
+1300.1.1 = { citysize = 5192 }
+1399.1.1 = { citysize = 5500 }
+
+1542.1.1   = { discovered_by = POR }
+1555.10.1   = { add_core = MRI }
+1557.4.3   = { owner = MRI controller = MRI remove_core = OUC }
+1603.1.1   = { capital = "Hagi" }
+
+1850.1.1  = { citysize = 20000 capital = "Yamaguchi" }
+1868.1.3  = { owner = JAP controller = JAP add_core = JAP remove_core = MRI }
+1900.1.1  = { citysize = 50000 }
+1950.1.1  = { citysize = 120000 }
+2010.12.1 = { citysize = 198971 }
+
+
+

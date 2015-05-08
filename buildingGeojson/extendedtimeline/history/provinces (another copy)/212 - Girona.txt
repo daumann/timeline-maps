@@ -1,0 +1,92 @@
+#212 - Girona
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = animism
+hre = no
+base_tax = 4
+trade_goods = fish 
+manpower = 5
+capital = "Gerunda" 
+citysize = 1000	
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1121 }
+200.1.1 = { citysize = 1342 }
+300.1.1 = { citysize = 1564 }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1785 }
+476.9.4 = { owner = GVI controller = GVI add_core = GVI remove_core = ROW }
+500.1.1 = { citysize = 2007 culture = gothic religion = arianism }
+600.1.1 = { citysize = 2228 }
+690.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 2449 fort1 = yes }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI culture = catalan }
+785.1.1 = { owner = FRK controller = FRK add_core = FRK capital = "Girona" }
+795.1.1 = { owner = CAT controller = CAT add_core = CAT remove_core = FRK remove_core = UMA }
+800.1.1 = { citysize = 2671 }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 2892 }
+1000.1.1 = { citysize = 3114 }
+1100.1.1 = { citysize = 3335 }
+1137.8.11 = { owner = ARA controller = ARA add_core = ARA remove_core = CAT }
+1200.1.1 = { citysize = 3557 }
+1300.1.1 = { citysize = 3778 }
+1399.1.1 = { citysize = 4000 }	# census of 1462, also includes the town of Figueres  
+
+1412.6.29  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Jaime de Urgell Uprising
+1413.1.1   = { revolt = {} revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell" } controller = REB }
+1413.8.31  = { revolt = {} controller = ARA }
+1450.1.1   = { citysize = 4500 }
+1461.9.23  = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Catalan nobility revolts against King Joan, later the "Remensa" peasant revolt erupts, which is used by the King to erode the Catalan nobility. 
+1462.4.11  = { revolt = {} controller = CAS } # Catalan nobility revolts against King Joan, later the Remença peasant revolt erupts.
+1463.1.1   = { revolt = { type = pretender_rebels size = 1 leader = "Pere de Portugal" } controller = REB } # Jaime de Urgell Uprising
+1466.6.30  = { revolt = {} controller = PRO citysize = 3300 } # census of 1473 (population lost due to the war). Succession war against Provence
+1469.1.1   = { controller = ARA }
+1484.1.1   = { unrest = 3 } # Second Remença revolt
+1486.4.21  = { unrest = 0 } # King Ferràn arbit rates a resolution between the revolted peasants and the catalan nobles. 
+1497.1.1   = { citysize = 6000 temple = yes } # census of 1497 
+1506.1.1   = { citysize = 4500 } # Epidemic
+1515.1.1   = { citysize = 6000 } # census of 1515, population stagnated due to epidemics
+1516.1.23  = { controller = SPA owner = SPA add_core = SPA } #Ferdinand the Catholic dies, Charles inherits Aragon and becomes regent of Castille
+1525.1.1   = { citysize = 4300 } # Epidemic
+1540.1.1   = { constable = yes }
+1553.1.1   = { citysize = 7800 } # census of 1553
+1568.1.1   = { marketplace = yes } # Opening of the "Taula de Canvi"
+1600.1.1   = { citysize = 8100 }
+1640.6.7   = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # "Corpus of blood". The Viceroy is killed and the Catalan sublevation begins, fastly spreading to other cities. 
+1641.1.1   = {	revolt = {}
+		owner = FRA
+		controller = FRA
+		add_core = FRA
+	     } # Louis XIII of France, Count of Barcelona.
+1650.1.1   = { citysize = 8900 }
+1652.10.11 = { owner = SPA controller = SPA remove_core = FRA } # Barcelona surrenders
+1684.3.1   = { controller = FRA } # France defeats the Spanish army in Girona
+1684.6.1   = { controller = SPA } # Spain retakes the city
+1693.6.1   = { controller = FRA } # France occupies northern Catalonia
+1697.9.20  = { controller = SPA } # Peace of Ryswick
+1700.1.1   = { citysize = 9360 }
+1705.10.9  = { controller = HAB } # Catalonia recognises Archduke Carlos as its sovereign, joining the Anglo-Austrian cause in the War of Spanish Succession. The loyalist troops in Barcelona are defeated.
+1711.1.25  = { controller = SPA } # French troops take Girona
+1713.7.13  = { remove_core = ARA add_core = CAT }
+1750.1.1   = { citysize = 10500 }
+1800.1.1   = { citysize = 11070 }
+1813.8.31  = { revolt = { type = pretender_rebels size = 1 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 19032 }
+1900.1.1   = { citysize = 32722 }
+1950.1.1   = { citysize = 56258 }
+2010.1.1   = { citysize = 96722 }
+2012.1.1   = { add_core = CAT }
+
+

@@ -1,0 +1,31 @@
+culture = samoyed
+religion = shamanism
+capital = "Norilsk"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 50
+native_ferocity = 2
+native_hostileness = 5
+
+1820.1.1  = { discovered_by = RUS discovered_by = SOV }
+1920.1.1  = { discovered_by = western }
+1934.1.1  = {	owner = SOV
+		controller = SOV
+		add_core = RUS
+		add_core = SOV
+		religion = orthodox
+		culture = russian	
+		citysize = 3000
+		trade_goods = copper
+	   }
+1939.1.1   = { citysize = 14000 }
+1959.1.1   = { citysize = 118000 }
+1970.1.1   = { citysize = 135000 }
+1979.1.1   = { citysize = 180400 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+1992.1.1   = { citysize = 165400 }
+2005.1.1   = { citysize = 131900 }
+
+

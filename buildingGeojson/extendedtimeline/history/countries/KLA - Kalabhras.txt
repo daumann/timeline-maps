@@ -1,0 +1,44 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = kannada
+religion = hinduism
+technology_group = indian
+capital = 540
+
+450.1.1 = {
+	monarch = {
+		name = "Achchutavikranta"
+		dynasty = "Kalabhras"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
+
+500.1.1 = {
+	monarch = {
+		name = "Tiraiyan"
+		dynasty = "Kalabhras"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+550.1.1 = {
+	monarch = {
+		name = "Pulli"
+		dynasty = "Kalabhras"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}

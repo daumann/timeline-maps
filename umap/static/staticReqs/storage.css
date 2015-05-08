@@ -2,12 +2,13 @@
 /* Map details */
 /* *********** */
 #map {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 120px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .clearafter:after {
@@ -1287,7 +1288,7 @@ a.storage-control-text {
 }
 .storage-popup-content img,
 .storage-popup-content iframe {
-    max-width: 300px !important;
+    /* max-width: 300px !important; */
 }
 .storage-popup-large iframe,
 .storage-popup-large img {

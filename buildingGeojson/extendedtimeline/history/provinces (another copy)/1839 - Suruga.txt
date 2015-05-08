@@ -1,0 +1,53 @@
+#1839 - Totomi
+
+owner = YAM
+controller = YAM
+culture = japanese
+religion = animism
+capital = "Sunpu"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 1116
+add_core = YAM
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 1232 }
+200.1.1 = { citysize = 1464 }
+300.1.1 = { citysize = 1696 }
+400.1.1 = { citysize = 1928 }
+500.1.1 = { citysize = 2160 }
+600.1.1 = { citysize = 2392 }
+607.1.1 = { religion = buddhism }
+700.1.1 = { citysize = 2625 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 2857 }
+900.1.1 = { citysize = 3089 }
+1000.1.1 = { citysize = 3321 }
+1100.1.1 = { citysize = 3553 }
+1192.1.1 = { owner = IMG controller = IMG add_core = IMG remove_core = JAP }
+1200.1.1 = { citysize = 3785 }
+1300.1.1 = { citysize = 4017 }
+1399.1.1 = { citysize = 4250 }
+
+1501.1.1   = { add_core = TKG }
+1568.12.1   = { add_core = TKD }
+1569.5.17   = { remove_core = IMG }
+1575.7.9   = { owner = TKG controller = TKG  }
+1582.4.3 = { remove_core = TKD }
+1590.8.10   = { add_core = IKE owner = IKE controller = IKE remove_core = TKG }
+1600.9.15 = { owner = TKG controller = TKG add_core = TKG remove_core = IKE }
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1850.1.1  = { citysize = 40000 }
+1869.1.1  = { capital = "Shizuoka" }
+1900.1.1  = { citysize = 120000 }
+1950.1.1  = { citysize = 360000 }
+2012.1.1  = { citysize = 723317 }
+
+
+
+

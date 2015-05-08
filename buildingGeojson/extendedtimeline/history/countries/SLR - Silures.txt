@@ -1,0 +1,18 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 5
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -1
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+primary_culture = briton
+religion = druidism
+technology_group = barbarian
+capital = 241
+
+410.1.1 = { government = feudal_monarchy }
+536.1.1 = { technology_group = western }
+680.1.1 = { religion = catholic }

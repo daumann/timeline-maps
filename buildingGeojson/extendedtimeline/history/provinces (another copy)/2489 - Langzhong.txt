@@ -1,0 +1,65 @@
+#680 - Shenquing
+
+owner = HND
+controller = HND
+culture = sichuanese
+religion = confucianism
+capital = "Langzhong"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 9894
+add_core = HND
+add_core = SHU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 12789 }
+200.1.1 = { citysize = 18578 }
+220.1.1 = { owner = SHU controller = SHU add_core = SHU remove_core = HND }
+263.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = SHU }
+266.2.4 = { owner = JIN controller = JIN add_core = JIN remove_core = WEI }
+300.1.1 = { citysize = 24367 }
+400.1.1 = { citysize = 30157 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 35946 }
+502.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIC }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = LNG }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+600.1.1 = { citysize = 41735 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 47525 }
+800.1.1 = { citysize = 53314 }
+900.1.1 = { citysize = 59103 }
+907.6.1 = { owner = CUU controller = CUU add_core = CUU remove_core = TNG }
+951.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = CUU }
+975.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = TNG }
+1000.1.1 = { citysize = 64892 }
+1100.1.1 = { citysize = 70682 }
+1200.1.1 = { citysize = 76471 }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA add_core = CXI remove_core = SNG }
+1300.1.1 = { citysize = 82260 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 88050 }
+
+1644.10.1 = {	owner = CXI
+				controller = CXI
+			} # Zhang Xianzhong's Xi empire
+1646.12.1  = {	owner = QNG
+				controller = QNG
+				add_core = QNG
+			} # The Qing Conquest Continues 
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1673.12.1 = { controller = CZH } # Three Feudatories revolt
+1681.10.1 = { controller = QNG }
+
+1850.1.1   = { citysize = 200000 }
+1900.1.1   = { citysize = 500000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CXI }
+
+
+

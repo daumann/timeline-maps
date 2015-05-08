@@ -1,0 +1,15 @@
+{
+"Crimea":["UKR","russian","orthodox","Yevpatoria",502600,284],
+"Kaffa":["UKR","russian","orthodox","Feodosiya",240000,285],
+"Badiyat Ash Sham":["IRQ","al_iraqiya_arabic","sunni","Ar Rutba",20000,406],
+"Dayr Az Zor":["SYR","al_suryah_arabic","chalcedonism","Ar-Raqqah",211857,407],
+"Mysore":["IND","kannada","hinduism","Mysore",500000,533],
+"Sinjar":["IRQ","al_iraqiya_arabic","shiite","Sindjar",1800000,2272],
+"As Sahiliyah":["IRQ","al_iraqiya_arabic","sunni","Ar Ramadi",20000,2273],
+"Tikrit":["IRQ","al_iraqiya_arabic","shiite","Tikrit",7216040,2274],
+"Al Jawf":["ADE","yemeni","shiite","Marib",1747627,2539],
+"Rahba":["SYR","al_suryah_arabic","chalcedonism","Damascus",1711000,2548],
+"Theodoro":["UKR","russian","orthodox","Sevastopol",240000,2608],
+"Tyn":["UKR","russian","orthodox","Donetsk",1500000,2611],
+"Bahmut":["UKR","russian","orthodox","Voroshilovgrad",1500000,2612]
+}

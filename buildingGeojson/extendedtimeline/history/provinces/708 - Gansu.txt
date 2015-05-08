@@ -1,0 +1,78 @@
+newEntry708 - Gansu.txt
+#708 - Gansu
+
+owner = HND
+controller = HND
+culture = chihan
+religion = buddhism
+capital = "Zhangye"
+trade_goods = wool
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 2914
+add_core = HND
+add_core = WEI
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 3228 }
+200.1.1 = { citysize = 3857 }
+220.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = HND }
+266.2.4 = { owner = JIN controller = JIN add_core = JIN remove_core = WEI }
+300.1.1 = { citysize = 4485 }
+351.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = JIN }
+394.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIN }
+400.1.1 = { citysize = 5114 }
+420.1.1 = { owner = WEI controller = WEI add_core = WEI remove_core = LNG }
+500.1.1 = { citysize = 5742 }
+557.1.1 = { owner = CZH controller = CZH add_core = CZH remove_core = WEI }
+581.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CZH }
+600.1.1 = { citysize = 6371 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+640.1.1 = { religion = confucianism }
+700.1.1 = { citysize = 6999 }
+763.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = TNG }
+800.1.1 = { citysize = 7628 }
+900.1.1 = { citysize = 8257 }
+907.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = UIG }
+1000.1.1 = { citysize = 8885 }
+1038.1.1 = { owner = XIA controller = XIA add_core = XIA remove_core = LIO }
+1100.1.1 = { citysize = 9514 }
+1200.1.1 = { citysize = 10142 }
+1227.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = CSH remove_core = XIA }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 10771 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 11400 }
+
+1450.1.1 = { citysize = 13400 }
+1500.1.1 = { citysize = 14899 }
+1550.1.1 = { citysize = 16210 }
+1600.1.1 = { citysize = 17548 }
+1644.1.1 = {	revolt_risk = 0
+				owner = CSH
+				controller = CSH
+			} # Li Zicheng's Shun empire
+1645.2.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+1650.1.1 = { citysize = 14854 }
+1662.1.1 = { remove_core = MNG }
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+1700.1.1 = { citysize = 21000 }
+1750.1.1 = { citysize = 23185 }
+1800.1.1 = { citysize = 25412 }
+
+1850.1.1   = { citysize = 40000 capital = "Wuwei" }
+1900.1.1   = { citysize = 100000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CSH }
+1950.1.1   = { citysize = 600000 }
+2000.1.1   = { citysize = 1930200 }
+
+
+

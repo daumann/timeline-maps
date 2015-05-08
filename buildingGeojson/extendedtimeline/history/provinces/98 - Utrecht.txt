@@ -1,0 +1,100 @@
+newEntry98 - Utrecht.txt
+# 98 Utrecht - Principal cities: Utrecht
+
+owner = FRS
+controller = FRS
+add_core = FRS
+capital = "Dorestad"
+citysize = 5000
+culture = dutch
+religion = germanic
+hre = no
+base_tax = 9
+trade_goods = cloth
+manpower = 3
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 6000 }
+300.1.1 = { citysize = 8000 }
+400.1.1 = { citysize = 10000 }
+500.1.1 = { citysize = 12000 }
+600.1.1 = { citysize = 15000 marketplace = yes }
+650.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 16000 }
+734.1.1 = { owner = FRK controller = FRK }
+800.1.1 = { citysize = 17000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+850.1.1 = { citysize = 9500 capital = "Utrecht" marketplace = no base_tax = 7 } # Viking raids and decline of Dorestad
+855.9.30 = { owner = LOT controller = LOT add_core = LOT remove_core = FRM }
+867.1.1 = { religion = catholic }
+870.8.8 = { owner = FRE controller = FRE add_core = FRE remove_core = LOT }
+900.1.1 = { citysize = 10000 }
+911.11.10 = { owner = LOT controller = LOT add_core = LOT add_core = UTR remove_core = FRE remove_core = FRS }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 11000 }
+1024.1.1 = { owner = UTR controller = UTR remove_core = LOT }
+1100.1.1 = { citysize = 12000 }
+1200.1.1 = { citysize = 13000 }
+1300.1.1 = { citysize = 14000 }
+1399.1.1 = { citysize = 15500 }
+
+1450.1.1   = { citysize = 17500 }
+1500.1.1   = { citysize = 22500 }
+1505.1.1   = { marketplace = yes }
+1515.1.5   = { add_core = HAB } # Charles V ascends to the throne
+1520.1.1   = { temple = yes } # Dom of Utrecht finished
+1527.1.1   = { fort2 = yes }
+1528.6.21  = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V annexes Utrecht
+1540.1.1   = { courthouse = yes }
+1550.1.1   = { citysize = 30000 }
+1559.5.12  = { unrest = 3 } # New bishoprics in the Lowlands create an outrage
+1565.1.1   = { unrest = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
+1566.4.5   = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+1567.9.10  = { unrest = 4 } # Counts of Egmont & Hoorne arrested
+1568.6.5   = { unrest = 6 } # Counts of Egmont & Hoorne beheaded
+1569.1.1   = { unrest = 12 } # The Duke of Alba reforms the taxation system ('tiende penning')
+1570.1.1   = { unrest = 20 } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1572.1.1   = { religion = reformed }
+1572.6.10  = { unrest = 0 revolt = { type = nationalist_rebels size = 2 } controller = REB } # Rebels rise up in large parts of the Netherlands
+1579.1.23  = { revolt = {} owner = NED controller = NED add_core = NED remove_core = SPA } # Union of Utrecht
+1590.1.1   = { regimental_camp = yes } # Professionalisation of the Army
+1600.1.1   = { citysize = 37500 }
+1605.1.1   = { workshop = yes }
+1612.1.1   = { constable = yes }
+1648.10.24 = { hre = no } # The Peace of Westphalia
+1650.1.1   = { fort3 = yes citysize = 42500 }
+1672.5.25  = { controller = FRA } # France blitzes through the Lowlands in the Franco-Dutch War and even takes Utrecht!
+1678.8.10  = { controller = NED } # Peace of Nijmegen (France-Netherlands)
+1681.1.1   = { base_tax = 10 } # Protestants expelled from France
+1700.1.1   = { citysize = 45000 }
+1725.1.1   = { fort4 = yes }
+1750.1.1   = { citysize = 42000 }
+1785.12.1  = { unrest = 7 } # Unrest in Utrecht
+1786.1.1   = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # 'The Patriots' take control of Utrecht
+1786.9.13  = { revolt = {} controller = NED } # With the help of 20,000 Prussians, the Dutch government regains control
+1800.1.1   = { citysize = 44000 }
+1810.7.10  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+	     } # Annexed by France
+1813.11.30 = {	owner = NED
+		controller = NED
+		remove_core = FRA
+	     } # William returns to the Netherlands
+
+1850.1.1   = { citysize = 70000 }
+1900.1.1   = { citysize = 102086 remove_core = UTR }
+1930.1.1   = { citysize = 153208 }
+1940.5.14  = { controller = GER }
+1940.5.17  = { owner = GER } # Netherlands surrendered to Nazi Germany
+1945.5.5   = { owner = NED controller = NED }
+1960.1.1   = { citysize = 254186 }
+2012.2.1   = { citysize = 316448 }
+
+
+

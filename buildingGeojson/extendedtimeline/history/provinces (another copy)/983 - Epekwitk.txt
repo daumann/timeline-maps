@@ -1,0 +1,47 @@
+#983 - Epekwitk
+
+culture = mikmaq
+religion = totemism
+capital = "Epekwitk"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 1
+discovered_by = north_american
+
+1534.1.1  = { discovered_by = FRA } # Jacques Cartier
+1707.5.12 = { discovered_by = GBR }
+1720.1.1  = {	owner = FRA
+		controller = FRA
+		citysize = 300
+		culture = cosmopolitan_french
+		religion = catholic
+		trade_goods = naval_supplies
+	    } # Founding of Port la Joie
+1745.1.1  = { add_core = FRA }
+1750.1.1  = { citysize = 700 }
+1758.8.1  = { controller = GBR fort1 = yes } # British control, Fort Amherst is built
+1763.2.10 = {	owner = GBR
+		remove_core = FRA
+		culture = english
+		religion = protestant
+	    } # Treaty of Paris, the island is ceded to Britain
+1768.1.1  = { capital = "Charlottetown" }
+1788.2.10 = { add_core = GBR }
+1800.1.1  = { citysize = 1245 }
+
+1851.1.1   = { citysize = 4717 }
+1873.7.1   = { owner = CAN add_core = CAN controller = CAN remove_core = GBR }
+1881.1.1   = { citysize = 11485 }
+1901.1.1   = { citysize = 12080 }
+1931.1.1   = { citysize = 12361 }
+1951.1.1   = { citysize = 15887 }
+1981.1.1   = { citysize = 15282 }
+2011.1.1   = { citysize = 34562 }
+
+
+
+

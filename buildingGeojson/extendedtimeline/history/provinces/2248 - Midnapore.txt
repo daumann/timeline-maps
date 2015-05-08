@@ -1,0 +1,115 @@
+newEntry2248 - Midnapore.txt
+#561 - Bangala
+
+owner = KAL
+controller = KAL
+culture = bengali
+religion = jainism
+capital = "Midnapore"
+trade_goods = spices #Opium
+hre = no
+base_tax = 5
+manpower = 3
+citysize = 5014
+fort1 = yes
+add_core = KAL
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 6028 }
+200.1.1 = { citysize = 8057 }
+300.1.1 = { citysize = 10085 }
+320.1.1 = { owner = GUP controller = GUP add_core = GUP }
+400.1.1 = { citysize = 12114 }
+500.1.1 = { citysize = 14142 }
+600.1.1 = { owner = KAL controller = KAL add_core = KAL remove_core = GUP }
+700.1.1 = { citysize = 18200 }
+770.1.1 = { owner = PAA controller = PAA add_core = PAA remove_core = KAL religion = buddhism }
+800.1.1 = { citysize = 20228 }
+900.1.1 = { citysize = 22257 }
+1000.1.1 = { citysize = 24285 }
+1100.1.1 = { citysize = 26314 }
+1174.1.1 = { owner = ORI controller = ORI add_core = ORI remove_core = PAA }
+1200.1.1 = { religion = hinduism }
+1399.1.1 = { citysize = 32400 }
+
+1450.1.1 = { citysize = 17000 }
+1500.1.1 = {
+	citysize = 19000 
+	discovered_by = POR
+}
+1550.1.1 = { citysize = 22000 }
+1568.1.1 = {
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+} # Annexed to Bengal
+1576.1.1 = {
+	owner = ORI
+	controller = ORI
+} # Orissa resurgent after Akbar's defeat of Bengal
+1591.1.1 = { controller = MUG } # The Mughal Empire
+1592.1.1 = {
+	owner = MUG
+	add_core = MUG
+} # The Mughal Empire
+1600.1.1 = { citysize = 24000 }
+1622.10.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #With some aid from Golconda Khurrams rebelion against his father continues
+1623.5.1 = {
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #Defeated, retreats into Bengal
+1624.1.1 = {
+	controller = MUG
+	revolt = { }
+} #Khurram is defeated and is chased away by Mughal forces and rebelious Zamindars. Takes refuge in Ahmednagar and eventually surrenders on terms dictated by Nur Jahan
+1650.1.1 = { citysize = 26000}
+1657.9.14 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Muhammed Shuja's Faction"
+		leader = "Muhammed Shuja Timurid"
+	}
+} # Shah Jahan falls ill, his sons starts civil war
+1658.12.28 = {
+	controller = MUG
+	revolt = { }
+} # Muhammed Shuja defeated by Aurangzeb
+1700.1.1 = { citysize = 29000 }
+1707.3.15 = {
+	owner = BNG
+	controller = BNG
+}
+1750.1.1 = { citysize = 33000 }
+1760.1.1 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = MUG
+} # Given to GBR by Mir Qasim
+1800.1.1 = { citysize = 38000 }
+
+1850.1.1  = { citysize = 200000 }
+1900.1.1  = { citysize = 600000 }
+1930.1.1  = { add_core = IND remove_core = BNG }
+1947.8.15 = { owner = IND controller = IND remove_core = GBR }
+
+
+

@@ -1,0 +1,95 @@
+#1772 - Presburg
+
+owner = QUA
+controller = QUA
+add_core = QUA
+citysize = 1000
+culture = austrian
+religion = germanic
+capital = "Pressburg"
+trade_goods = grain
+hre = no
+base_tax = 8
+manpower = 4
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+300.1.1 = { citysize = 1500 }
+365.1.1 = { owner = GEP controller = GEP add_core = GEP remove_core = QUA }
+400.1.1 = { citysize = 2000 }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS }
+454.1.1 = { owner = HER controller = HER add_core = HER remove_core = HNS remove_core = GEP }
+500.1.1 = { citysize = 2500 }
+568.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = GEP }
+570.1.1 = { religion = tengri }
+600.1.1 = { citysize = 3000 }
+623.1.1 = { owner = SAZ controller = SAZ add_core = SAZ remove_core = HER }
+659.1.1 = { owner = NIT controller = NIT add_core = NIT remove_core = SAZ culture = czech religion = slavic }
+700.1.1 = { citysize = 3500 }
+800.1.1 = { citysize = 4000 }
+833.1.1 = { owner = MRV controller = MRV add_core = MRV remove_core = NIT fort1 = yes }
+850.1.1 = { religion = chalcedonism }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 5000 }
+902.1.1 = { owner = HUN controller = HUN add_core = HUN remove_core = MRV culture = hungarian }
+1000.1.1 = { citysize = 6000 }
+1100.1.1 = { citysize = 7000 }
+1200.1.1 = { citysize = 8000 }
+1300.1.1 = { citysize = 9000 }
+1399.1.1 = { citysize = 10200 }
+
+1432.1.1  = { unrest = 10 } # The city is attacked by Hussites
+1434.1.1  = { unrest = 0 }
+1440.1.1  = { unrest = 10 } # Struggles between the supporters of Ladislaus and Elisabeth of Hungary
+1443.1.1  = { unrest = 0 }
+1450.1.1  = { citysize = 11580 }
+1480.1.1  = { marketplace = yes }
+1490.1.1  = { controller = HAB } # Occupied
+1491.11.7 = { controller = HUN }
+1500.1.1  = { citysize = 12980 }
+1526.8.30 = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+	    add_core = TRA
+		} # Battle of Mohács, the end of the independent Kingdom of Hungary
+1532.1.1  = { fort2 = yes }
+1545.1.1  = { religion = protestant } # Synod of Erdod
+1550.1.1  = { citysize = 14000 }
+1563.1.1  = { temple = yes } # St. Martin's cathedral, 1452
+1570.1.1   = {remove_core = TRA	} #Treaty of Speyer
+1581.1.1  = { fort3 = yes } # Extended defense against the Ottoman troops
+1600.1.1  = { citysize = 15910 }
+1604.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # The nobility in Royal Hungary rebelled against Habsburg & Jesuit repression
+1606.1.1  = { revolt = {} controller = HAB religion = reformed } # Peace treaty, guaranteed religious toleration
+1619.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Bethlen uprisings
+1626.1.1  = { revolt = {} controller = HAB constable = yes } # The 3rd Peace of Pressburg, puts an end to the Bethlen uprisings
+1650.1.1  = { citysize = 16530 }
+1660.1.1  = { religion = catholic }
+1700.1.1  = { citysize = 18780 } # The area was largely depopulated under Ottoman rule, new settlement policy under Habsburg rule
+1703.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Kuruc rebellion, lead by Francisc Rakoczy
+1710.1.1  = { revolt = {} citysize = 16220 } # Plague
+1711.1.1  = { controller = HAB } # The House of Habsburg recognized as the new ruler
+1728.1.1  = { tax_assessor = yes } # The economy flourishes
+1750.1.1  = { citysize = 19100 }
+1800.1.1  = { citysize = 21300 }
+
+1830.1.1   = { culture = slovak }
+1869.1.1   = { citysize = 73771 }
+1880.1.1   = { citysize = 82660 }
+1900.1.1   = { citysize = 109346 }
+1918.10.28 = { owner = CZS controller = CZS add_core = CZS remove_core = HAB remove_core = HUN capital = "Bratislava" }
+1921.1.1   = { citysize = 221758 }
+1939.3.14  = { owner = SVK controller = SVK add_core = SVK }
+1945.4.4   = { controller = SOV }
+1945.5.8   = { owner = CZS controller = CZS }
+1950.1.1   = { citysize = 284946 }
+1980.1.1   = { citysize = 371463 }
+1992.12.31 = { owner = SVK controller = SVK remove_core = CZS }
+2011.3.26  = { citysize = 384277 }
+
+
+

@@ -1,0 +1,16 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -1
+#quality_quantity = 3
+#serfdom_freesubjects = -5
+primary_culture = cuman
+religion = tengri
+technology_group = nomad_group
+capital = 466	# Sarai
+
+900.1.1 = { religion = sunni }

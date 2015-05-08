@@ -1,0 +1,33 @@
+#752 - Oeiras
+
+culture = ge
+religion = south_american
+capital = "Barra"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = south_american
+
+1500.4.23 = { discovered_by = POR } # Pedro Álvares Cabral
+1610.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	citysize = 460
+	religion = catholic
+	culture = portugese
+	trade_goods = grain
+}
+1650.1.1  = { citysize = 5488 }
+1700.1.1  = { citysize = 7537 }
+1750.1.1  = { citysize = 9710 }
+1800.1.1  = { citysize = 12444 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+
+
+

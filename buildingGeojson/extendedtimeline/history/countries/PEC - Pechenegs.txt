@@ -1,0 +1,44 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -1
+#quality_quantity = 3
+#serfdom_freesubjects = -5
+primary_culture = cuman
+religion = tengri
+technology_group = nomad_group
+capital = 466	# Sarai
+
+940.1.1 = {
+	monarch = {
+		name = "Kyrya"
+		dynasty = "Pecheneg"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}
+
+975.1.1 = {
+	monarch = {
+		name = "Metiga"
+		dynasty = "Pecheneg"
+		adm = 1
+		mil = 4
+		dip = 4
+	}
+}
+
+985.1.1 = {
+	monarch = {
+		name = "Kuchug"
+		dynasty = "Pecheneg"
+		adm = 3
+		mil = 5
+		dip = 1
+	}
+}

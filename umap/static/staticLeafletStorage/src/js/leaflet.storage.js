@@ -1,3 +1,52 @@
+var staticName = '';
+var untilD;
+var nextLoop = true;
+var isEditing = false;
+
+function myLoop (that) {
+    console.debug("!!!!! save options to DB! STARTING loop "+ $(document.getElementsByName('datalayer')).find('option:selected').text() +" until "+ untilD);
+    
+    currentDatalayerSelect.sync();
+    
+    setTimeout(function () {          
+        console.debug("START SAVING!! (Click)");
+        //that.save;
+        $("#realSave")[0].click()
+        
+        setTimeout(function () {
+
+            console.debug("COMPARE",parseInt($(document.getElementsByName("datalayer")).find("option:selected").text() ),
+            "(?) <",
+                parseInt(untilD)
+            );
+            if (parseInt($(document.getElementsByName("datalayer")).find("option:selected").text() ) < parseInt(untilD) ) {
+                console.debug("START SAVE");
+                console.debug("!!!!! changing datalayer from "+ $(document.getElementsByName("datalayer")).val());
+                    
+                $(document.getElementsByName("datalayer")).val(
+                    $(document.getElementsByName("datalayer")).find("option").filter(function() {
+                        return $(this).text() == parseInt($(document.getElementsByName("datalayer")).find("option:selected").text()) + 1;             }).val()
+                );
+                console.debug("!!!!! to " + $(document.getElementsByName("datalayer")).val());
+                
+                if($(document.getElementsByName("datalayer")).find("option:selected").text() == untilD){
+                    insideLoop = false;
+                }
+                myLoop(that);
+                
+            }
+            else{
+                insideLoop = false;
+                dontDrawLabels = false;
+                console.debug("!!!!! EXITING loop");
+               
+            }
+        }, 2000)
+       
+    }, 1000)
+}
+
+
 L.Map.mergeOptions({
     base_layers: null,
     overlay_layers: null,
@@ -16,7 +65,7 @@ L.Map.mergeOptions({
     default_weight: 3,
     default_iconClass: 'Default',
     default_zoomTo: 16,
-    default_popupContentTemplate: '# {name}\n{description}',
+    default_popupContentTemplate: '{wikiUrl}', // '# {name}\n{description}\n{birthday}\n{wikiUrl}',
     attributionControl: false,
     allowEdit: true,
     homeControl: true,
@@ -365,6 +414,8 @@ L.Storage.Map.include({
     },
 
     backupOptions: function () {
+        console.debug(this.options);
+        console.debug(this.options.tilelayer);
         this._backupOptions = L.extend({}, this.options);
         this._backupOptions.tilelayer = L.extend({}, this.options.tilelayer);
         this._backupOptions.limitBounds = L.extend({}, this.options.limitBounds);
@@ -841,9 +892,18 @@ L.Storage.Map.include({
     },
 
     save: function () {
+
+        
+  
+            
+        
+       //TODO: save hier
         if (!this.isDirty) {
             return;
         }
+
+  
+        
         // save options to DB
         var editableOptions = [
             'zoom',
@@ -882,28 +942,61 @@ L.Storage.Map.include({
             'shortCredit',
             'longCredit'
         ], properties = {};
+        
         for (var i = editableOptions.length - 1; i >= 0; i--) {
             if (typeof this.options[editableOptions[i]] !== 'undefined') {
+                console.debug(i,editableOptions[i]," is ",this.options[editableOptions[i]])
+                
                 properties[editableOptions[i]] = this.options[editableOptions[i]];
             }
+            else{
+                console.debug ("isundefined = "+editableOptions[i])
+            }
+          
         }
+        
+        properties["popupTemplate"] = "SimplePanel";
+        
+        
         var geojson = {
             type: 'Feature',
             geometry: this.geometry(),
             properties: properties
         };
+        
+        
+        
         this.backupOptions();
+
+       // document.getElementsByName("name")[0].value = document.getElementById("preset-input-name").value;
+        
         var formData = new FormData();
-        formData.append('name', this.options.name);
+       // formData.append('name', this.options.name);
+        formData.append('name', "vas"); // document.getElementById("preset-input-name").value);// document.getElementsByName("name")[0].value);
+        
         formData.append('center', JSON.stringify(this.geometry()));
         formData.append('settings', JSON.stringify(geojson));
-        this.post(this.getSaveUrl(), {
+
+            //console.debug("!j!:",j);
+        console.debug("JSON.stringify(geojson)2",JSON.stringify(geojson));
+        console.debug("formData1",formData);
+
+                
+
+
+            this.post(this.getSaveUrl(), {
             data: formData,
             callback: function (data) {
+                
+                console.debug("saving data: ");
+                console.debug(data);
+                console.debug(this);
+                
                 var duration = 3000;
                 if (!this.options.storage_id) {
                     duration = 100000; // we want a longer message at map creation (TODO UGLY)
                     this.options.storage_id = data.id;
+
                     if (history && history.pushState) {
                         history.pushState({}, this.options.name, data.url);
                     } else {
@@ -915,15 +1008,30 @@ L.Storage.Map.include({
                 } else {
                     msg = L._('Map has been saved!');
                 }
+                
                 // Delegate alert to the end of the save process
                 // (how to do that the light and clean way without endless and unmaintainable callbacks chains?)
                 this._post_save_alert = {content: msg, level: 'info', duration: duration};
                 L.S.fire('ui:end');
                 this.isDirty = false;
                 this.continueSaving();
+
+                nextLoop = true;
             },
             context: this
         });
+
+     //   }, (j*500));
+
+           
+            
+            
+            currentDatalayerSelect.sync();
+            
+            
+     // }
+      //  }
+        
     },
 
     getEditUrl: function() {
@@ -951,9 +1059,11 @@ L.Storage.Map.include({
     },
 
     defaultDataLayer: function () {
+        console.debug("inside defaultDataLayer ")
         var datalayer, fallback;
         for (var i in this.datalayers) {
             if (this.datalayers.hasOwnProperty(i)) {
+                console.debug("option ",this.datalayers[i])
                 datalayer = this.datalayers[i];
                 if (!datalayer.isRemoteLayer() && datalayer.isBrowsable()) {
                     if (datalayer.isVisible()) {
@@ -966,6 +1076,7 @@ L.Storage.Map.include({
         }
         if (fallback) {
             // No datalayer visible, let's force one
+            console.debug("No datalayer visible, let's force one ")
             this.addLayer(fallback.layer);
             return fallback;
         }
@@ -973,6 +1084,7 @@ L.Storage.Map.include({
     },
 
     getDataLayerByStorageId: function (storage_id) {
+        console.debug("getDataLayerByStorageId");
         var datalayer;
         for (var i in this.datalayers) {
             if (this.datalayers.hasOwnProperty(i)) {
@@ -1149,6 +1261,13 @@ L.Storage.Map.include({
 
     enableEdit: function() {
         L.DomUtil.addClass(document.body, 'storage-edit-enabled');
+       isEditing = true;
+/*
+        if( $("#areaPolys")[0])
+            $("#areaPolys")[0].setAttribute("filter","");
+     */
+        if($("filter")[0])
+            $("filter")[0].innerHTML = '<feGaussianBlur stdDeviation="0"></feGaussianBlur>'
         this.editEnabled = true;
         this.fire('edit:enabled');
     },
@@ -1157,6 +1276,13 @@ L.Storage.Map.include({
         if (this.isDirty) return;
         L.DomUtil.removeClass(document.body, 'storage-edit-enabled');
         this.editedFeature = null;
+        /*
+        if( $("#areaPolys")[0])
+            $("#areaPolys")[0].setAttribute("filter","url(#blur)");
+     */
+        if($("filter")[0])
+            $("filter")[0].innerHTML = '<feGaussianBlur stdDeviation="10"></feGaussianBlur>'
+        isEditing = false;
         this.editEnabled = false;
         this.fire('edit:disabled');
     },
@@ -1192,7 +1318,9 @@ L.Storage.Map.include({
         });
     },
 
+
     initEditBar: function () {
+        dontDrawLabels = true;
         var container = L.DomUtil.create('div', 'storage-main-edit-toolbox', this._controlContainer),
             title = L.DomUtil.add('h3', '', container, L._('Editing') + '&nbsp;'),
             name = L.DomUtil.create('a', 'storage-click-to-edit', title),
@@ -1203,10 +1331,63 @@ L.Storage.Map.include({
         L.DomEvent.on(name, 'click', this.edit, this);
         this.on('synced', L.bind(setName, this));
         this.help.button(title, 'edit');
+
+        var saveDummy = L.DomUtil.create('a', 'leaflet-control-edit-save button', container);
+        saveDummy.href = '#';
+        saveDummy.title = L._('Save current edits') + ' (Ctrl-S)';
+        saveDummy.innerHTML = L._('Save');
+        saveDummy.onclick = function(){
+
+            console.debug("save button clicked");
+
+            untilD = $('#dateEnd').val();
+
+            console.debug('from - ', $(document.getElementsByName("datalayer")).val())
+
+            $(document.getElementsByName("datalayer")).val(
+                $(document.getElementsByName("datalayer")).find("option").filter(function() {
+                    return $(this).text() == $('#dateStart').val();             }).val()
+            );
+            
+            console.debug('to -> ', $(document.getElementsByName("datalayer")).val())
+
+            setTimeout(function () {
+                insideLoop = true;
+                myLoop(this);
+            }, 500)
+            
+        }
+        
         var save = L.DomUtil.create('a', 'leaflet-control-edit-save button', container);
         save.href = '#';
+        save.id = "realSave";
         save.title = L._('Save current edits') + ' (Ctrl-S)';
         save.innerHTML = L._('Save');
+        save.style.display = "none";
+
+
+        
+        
+/*
+        save.onclick = function(){
+            console.debug("save button clicked");
+
+            untilD = $('#dateEnd').val();
+            
+            $(document.getElementsByName("datalayer")).val(
+                $(document.getElementsByName("datalayer")).find("option").filter(function() {
+                    return $(this).text() == $('#dateStart').val();             }).val()
+            );
+            
+                setTimeout(function () {
+                    insideLoop = true;
+                    myLoop(this);
+                }, 500)
+            
+            
+        };
+*/
+        
         var cancel = L.DomUtil.create('a', 'leaflet-control-edit-cancel button', container);
         cancel.href = '#';
         cancel.title = L._('Cancel edits');
@@ -1344,6 +1525,7 @@ L.Storage.Map.include({
         options = options || {};
         options.listener = this;
         L.S.Xhr.post(url, options);
+        console.debug(options);
     },
 
     get: function (url, options) {

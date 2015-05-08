@@ -1,0 +1,81 @@
+newEntry165 - Bern.txt
+#165 - Bern
+
+owner = ROM
+controller = ROM 
+culture = rheinlaender
+religion = germanic
+capital = "Aventicum"
+trade_goods = iron
+hre = no
+base_tax = 5
+manpower = 3
+citysize = 1000
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1100 }
+300.1.1 = { citysize = 1300 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1500 }
+410.1.1 = { owner = ALM controller = ALM add_core = ALM capital = "Bern" }
+480.6.1 = { remove_core = ROW }
+496.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = ALM }
+500.1.1 = { citysize = 1700 }
+600.1.1 = { citysize = 1900 }
+620.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 2100 }
+800.1.1 = { citysize = 2300 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = LOT controller = LOT add_core = LOT remove_core = FRM }
+867.1.1 = { religion = catholic }
+870.8.8  = { owner = FRE controller = FRE add_core = FRE remove_core = LOT }
+888.1.1  = { owner = BUR controller = BUR add_core = BUR remove_core = FRW }
+900.1.1  = { citysize = 2500 fort1 = yes }
+962.2.2  = { hre = yes }
+1000.1.1 = { citysize = 2700 }
+1100.1.1 = { citysize = 2900 }
+1200.1.1 = { citysize = 3100 }
+1313.1.1 = { citysize = 3300 owner = SWI controller = SWI add_core = SWI remove_core = BUR }
+1399.1.1 = { citysize = 3500 }
+
+1450.1.1  = { citysize = 4000 }
+1500.1.1  = { citysize = 4520 }
+1513.7.3  = { unrest = 7 } # Luzern Peasant War
+1515.1.1  = { unrest = 0 }
+1528.1.1  = { religion = reformed }
+1550.1.1  = { citysize = 5000 marketplace = yes }
+1600.1.1  = { citysize = 6200 }
+1648.10.24 = { hre = no } # end of Thirty Years War
+1650.1.1  = { citysize = 7500 constable = yes }
+1653.1.1  = { unrest = 5 } # Peasant rebellion against overtaxation
+1654.1.1  = { unrest = 0 }
+1656.1.1  = { unrest = 7 } # Protestants are expelled from Schwyz which lead to the First War of Villmergen
+1657.1.1  = { unrest = 2 } # An agreement is concluded at Villmergren but tensions remain
+1700.1.1  = { citysize = 9870 }
+1705.1.1  = { tax_assessor = yes }
+1750.1.1  = { citysize = 11000 }
+1798.3.5  = { controller = FRA } # French occupation
+1798.4.12 = { controller = SWI } # The establishment of the Helvetic Republic
+1798.4.15 = { revolt = { type = revolutionary_rebels size = 3 } controller = REB } # The Nidwalden Revolt
+1798.9.1  = { revolt = {} controller = SWI } # The revolt is supressed
+1800.1.1  = { citysize = 12038 }
+1802.6.1  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Swiss rebellion
+1802.9.18 = { revolt = {} controller = SWI }
+
+1850.1.1  = { citysize = 29670 }
+1880.1.1  = { citysize = 44087 }
+1910.1.1  = { citysize = 90937 }
+1930.1.1  = { citysize = 111783 }
+1950.1.1  = { citysize = 146499 }
+1970.1.1  = { citysize = 162405 }
+1990.1.1  = { citysize = 136338 }
+2010.12.1 = { citysize = 133920 }
+
+
+

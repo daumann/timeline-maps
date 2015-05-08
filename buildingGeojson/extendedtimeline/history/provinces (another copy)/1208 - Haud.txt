@@ -1,0 +1,58 @@
+#1208 - Haud
+
+culture = somali
+religion = african
+capital = "Wardheer"
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 1 
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9 	
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+discovered_by = ZIM
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+
+1200.1.1 = { religion = sunni }
+1300.1.1 = {	owner = MRE
+		controller = MRE
+		add_core = MRE
+		citysize = 5000
+		trade_goods = wool
+	   }
+
+1526.1.1 = { owner = ADA controller = ADA } #Ahmad Gran secures control over Marehan
+1550.1.1 = { discovered_by = TUR }
+1555.1.1 = { owner = MRE controller = MRE } #Northern part of province no longer conrolled by ADA
+1650.1.1 = {	citysize = 0
+		native_size = 40
+		native_ferocity = 4
+		native_hostileness = 9 	
+		owner = XXX
+		controller = XXX
+		trade_goods = unknown
+		remove_core = MRE
+	   } # Majeerteen takes over Marehan
+
+1897.1.1   = { owner = ETH controller = ETH add_core = ETH citysize = 1000 capital = "Werder" trade_goods = grain }
+1933.1.1   = { owner = ITA controller = ITA }
+1941.3.27  = { controller = GBR }
+1941.11.27 = { owner = ETH controller = ETH }
+1950.1.1   = { citysize = 6000 }
+1977.7.20  = { controller = SOM }
+1978.3.15  = { controller = ETH }
+2005.1.1   = { citysize = 18357 }
+
+
+

@@ -1,0 +1,90 @@
+newEntry126 - Malta.txt
+#126 - Malta
+
+owner = ROM
+controller = ROM
+culture = greek
+religion = hellenism 
+hre = no 
+base_tax = 3
+trade_goods = fish
+manpower = 2
+capital = "Melita" 
+citysize = 1000
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1200 }
+300.1.1 = { citysize = 1600 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2000 }
+454.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = ROW }
+464.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = VAN }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = GVI }
+500.1.1 = { citysize = 2500 religion = chalcedonism }
+533.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = GOS }
+600.1.1 = { citysize = 3000 }
+700.1.1 = { citysize = 3500 }
+800.1.1 = { citysize = 4000 }
+867.1.1 = { religion = catholic }
+870.1.1 = { owner = SCL controller = SCL add_core = SCL capital = "Medina" fort1 = yes culture = maltese }
+880.1.1 = { religion = sunni }
+900.1.1 = { citysize = 2000 }
+1000.1.1 = { citysize = 2500 }
+1048.1.1 = { owner = BYZ controller = BYZ remove_core = SCL }
+1091.1.1 = { owner = SIC controller = SIC add_core = SIC add_core = NAP remove_core = BYZ }
+1100.1.1 = { citysize = 3000 }
+1122.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1127.1.1 = { revolt = {} controller = SIC religion = catholic }
+1200.1.1 = { citysize = 3500 }
+1300.1.1 = { citysize = 4000 }
+
+1409.7.25 = {	owner = ARA
+		controller = ARA
+		add_core = ARA
+	    } # Martin I inherits Sicily from his son
+1450.1.1  = { citysize = 4500 }
+1500.1.1  = { citysize = 5000 }  # Estimated 
+1516.1.23 = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+	    	remove_core = ARA
+	    } # Unification of Spain
+1530.1.1  = {	owner = KNI
+		controller = KNI
+		add_core = KNI
+		remove_core = SPA
+	    	remove_core = NAP
+	    } # Malta given to the Knights
+1530.1.1  = { citysize = 6000 }  # Estimated 
+1550.1.1  = { citysize = 7000 }  # Estimated 
+1566.3.28 = { capital = "Valletta" marketplace = yes }
+1571.1.1  = { fort2 = yes } # Valletta completed
+1600.1.1  = { citysize = 7000 }  # Estimated 
+1650.1.1  = { citysize = 8000 }  # Estimated 
+1700.1.1  = { citysize = 8000 }  # Estimated 
+1750.1.1  = { citysize = 9000 }  # Estimated 
+1775.1.1  = { unrest = 4 } # Revolt headed by priest Gaetano Mannarino failed.
+1776.1.1  = { unrest = 0 }
+1798.6.9  = { controller = FRA } # Occupied by French troops
+1800.1.1  = { controller = KNI citysize = 10000 } # British protectorate
+1814.5.30 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    } # Treaty of Paris
+
+1850.3.1  = { citysize = 9500 }
+1900.3.1  = { citysize = 10000 }
+1921.1.1  = { add_core = MLT remove_core = KNI }
+1940.3.1  = { citysize = 6000 }
+1950.3.1  = { citysize = 7500 }
+1964.9.21 = { owner = MLT controller = MLT remove_core = GBR }
+2011.3.1  = { citysize = 6966 }
+
+
+

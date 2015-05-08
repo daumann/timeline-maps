@@ -1,0 +1,74 @@
+newEntry600 - Ayutthaya.txt
+#600 - Ayutthaya
+
+owner = MNX 
+controller = MNX
+culture = central_thai
+religion = buddhism
+capital = "Lavo"
+trade_goods = ivory
+hre = no
+base_tax = 6
+manpower = 4
+citysize = 7333
+add_core = MNX
+fort1 = yes
+discovered_by = chinese
+discovered_by = indian
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+100.1.1 = { citysize = 9667 }
+150.1.1 = { owner = FUN controller = FUN add_core = FUN remove_core = MNX }
+200.1.1 = { citysize = 14335 }
+300.1.1 = { citysize = 19003 }
+400.1.1 = { citysize = 23671 }
+500.1.1 = { citysize = 28339 }
+550.1.1 = { owner = DVA controller = DVA add_core = DVA remove_core = FUN } 
+600.1.1 = { citysize = 33007 }
+661.1.1 = { owner = LAV controller = LAV add_core = LAV remove_core = DVA }
+700.1.1 = { citysize = 37675 }
+800.1.1 = { citysize = 42342 }
+880.1.1 = { owner = KHM controller = KHM add_core = KHM }
+900.1.1 = { citysize = 47010 }
+1000.1.1 = { citysize = 51678 }
+1060.1.1 = { owner = LAV controller = LAV remove_core = KHM }
+1087.1.1 = { capital = "Ayutthaya" }
+1100.1.1 = { citysize = 56346 }
+1200.1.1 = { citysize = 61014 }
+1285.1.1 = { owner = SUK controller = SUK add_core = SUK remove_core = LAV }
+1300.1.1 = { citysize = 65682 }
+1350.1.1 = { owner = AYU controller = AYU add_core = AYU remove_core = SUK }
+1399.1.1 = { citysize = 70350 }
+
+1450.1.1 = { citysize = 76500 }
+1500.1.1 = { citysize = 82000 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 96500 }
+1600.1.1 = { citysize = 81400 marketplace = yes }
+1650.1.1 = { citysize = 40570 } #customs_house = yes
+1700.1.1 = { citysize = 46100 }
+1750.1.1 = { citysize = 49750 }
+1760.1.1 = { citysize = 41222 } # Sacked
+1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
+1768.1.1 = { capital = "Thonburi" }
+1774.1.1 = { unrest = 0 }
+1782.4.21 = { capital = "Bangkok" }
+1800.1.1 = { citysize = 44880 }
+
+1840.1.1   = { citysize = 100000 }
+1880.1.1   = { citysize = 255000 }
+1910.1.1   = { citysize = 365000 }
+1929.1.1   = { citysize = 713384 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU }
+1947.1.1   = { citysize = 1178881 }
+1980.1.1   = { citysize = 4697071 }
+2005.1.1   = { citysize = 5658953 }
+
+
+

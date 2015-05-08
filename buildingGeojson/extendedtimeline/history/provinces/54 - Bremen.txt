@@ -1,0 +1,96 @@
+newEntry54 - Bremen.txt
+#54 - Stade
+
+owner = SAX
+controller = SAX
+add_core = SAX
+citysize = 1000
+culture = saxon
+religion = germanic
+capital = "Bremervörde"
+trade_goods = fish
+hre = no
+base_tax = 8
+manpower = 4
+discovered_by = western
+discovered_by = barbarian
+
+300.1.1 = { citysize = 1100 }
+400.1.1 = { citysize = 1200 }
+500.1.1 = { citysize = 1300 }
+600.1.1 = { citysize = 1400 discovered_by = eastern }
+700.1.1 = { citysize = 1500 }
+747.1.1 = { religion = chalcedonism }
+789.1.1 = { temple = yes }
+800.1.1 = { citysize = 2000 }
+804.1.1 = { owner = FRK controller = FRK add_core = FRK }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 3000 }
+911.11.10 = { owner = SAX controller = SAX remove_core = FRE }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 4000 discovered_by = muslim discovered_by = ottoman }
+1032.1.1 = { fort1 = yes }
+1100.1.1 = { citysize = 5000 }
+1186.1.1 = { owner = BRE controller = BRE add_core = BRE remove_core = SAX culture = hannoverian }
+1200.1.1 = { citysize = 6000 }
+1300.1.1 = { citysize = 7000 }
+1399.1.1 = { citysize = 8000 }
+
+1450.1.1 = { citysize = 9000 }
+1500.1.1 = { citysize = 10000 }
+1510.1.1 = { fort2 = yes }
+1529.1.1 = { religion = protestant }
+1540.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 11000 constable = yes }
+1600.1.1 = { citysize = 12000 regimental_camp = yes }
+1620.1.1 = { fort3 = yes }
+1648.1.1 = { capital = "Stade" } 
+1650.1.1 = { citysize = 13500 fort4 = yes }
+1700.1.1 = { citysize = 15000 tax_assessor = yes }
+1719.9.30 = {
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+} # The Treaty of Stockholm
+1750.1.1 = { citysize = 18000 }
+1800.1.1 = { citysize = 20000 }
+1803.7.5 = { controller = FRA } # French control
+1805.12.15 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+	remove_core = HAN
+} # Treaty of Schoenbrunn, ceded to Prussia
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1807.7.9 = {
+	owner = WES
+	controller = WES
+	add_core = WES
+	remove_core = PRU
+} # The Second Treaty of Tilsit, the kingdom of Westfalia
+1810.12.13 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	remove_core = WES
+} # Annexed by France
+1814.4.11 = {
+	owner = HAN
+	controller = HAN
+	add_core = HAN
+	remove_core = FRA
+} # Napoleon abdicated unconditionally
+
+1827.1.1   = { capital = "Bremerhaven" }
+1850.1.1   = { citysize = 40000 }
+1866.8.23  = { owner = PRU controller = PRU add_core = PRU remove_core = HAN } # Peace of Prague
+1871.1.18  = { owner = GER controller = GER add_core = GER remove_core = PRU } # German unification
+1900.1.1   = { citysize = 70000 remove_core = BRE }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.1.1   = { citysize = 100000 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2010.11.30 = { citysize = 113464 }
+
+
+

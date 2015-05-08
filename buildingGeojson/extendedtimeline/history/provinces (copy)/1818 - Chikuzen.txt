@@ -1,0 +1,64 @@
+#1818 - Chikuzen
+
+owner = KYU
+controller = KYU
+culture = japanese
+religion = animism
+capital = "Chikuzen"
+trade_goods = chinaware
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 1889
+add_core = KYU
+fort1 = yes
+discovered_by = chinese
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+100.1.1 = { citysize = 2078 }
+200.1.1 = { citysize = 2457 }
+300.1.1 = { citysize = 2835 }
+400.1.1 = { citysize = 3214 }
+500.1.1 = { citysize = 3592 }
+560.1.1 = { religion = buddhism }
+600.1.1 = { citysize = 3971 }
+650.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = KYU }
+700.1.1 = { citysize = 4349 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 4728 }
+900.1.1 = { citysize = 5107 }
+1000.1.1 = { citysize = 5485 }
+1100.1.1 = { citysize = 5864 }
+1192.1.1 = { owner = OUC controller = OUC add_core = OUC remove_core = JAP }
+1200.1.1 = { citysize = 6242 }
+1300.1.1 = { citysize = 6621 capital = "Hakata" }
+1399.1.1 = { citysize = 7000 }
+
+1542.1.1   = { discovered_by = POR }
+1550.1.1   = { add_core = OTM }
+1557.4.3   = { owner = OTM controller = OTM }
+1584.3.1 = { add_core = SMZ owner = SMZ controller = SMZ }
+#Battle of Okitanawate
+1587.5.15 = { add_core = MRI owner = MRI controller = MRI remove_core = SMZ }
+#Hideyoshi's conquest of Kyushu
+1600.10.21 = { add_core = TKG owner = TKG controller = TKG remove_core = MRI }
+#Battle of Sekigahara - Kobayakawa changes sides
+1603.1.1   = { capital = "Fukuoka" }
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+
+1850.1.1  = { citysize = 30000 }
+1868.1.3  = { remove_core = OUC }
+1900.1.1  = { citysize = 150000 }
+1950.1.1  = { citysize = 700000 }
+2012.4.1  = { citysize = 1483052 }
+
+
+

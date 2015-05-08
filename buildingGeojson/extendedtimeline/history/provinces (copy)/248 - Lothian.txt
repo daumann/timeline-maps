@@ -1,0 +1,81 @@
+#248 - Lothian
+
+owner = PIC
+controller = PIC
+add_core = PIC
+citysize = 1300
+culture = briton
+religion = druidism
+hre = no
+base_tax = 7
+trade_goods = fish
+manpower = 3
+capital = "Din Eidyn"
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+84.1.1 = { owner = ROM controller = ROM add_core = ROM }
+100.1.1 = { citysize = 1500 }
+160.1.1 = { owner = PIC controller = PIC }
+180.1.1 = { controller = ROM }
+185.1.1 = { controller = PIC }
+200.1.1 = { citysize = 2000 }
+209.1.1 = { controller = ROM }
+213.1.1 = { controller = PIC remove_core = ROM }
+300.1.1 = { citysize = 2500 }
+400.1.1 = { citysize = 3000 }
+410.1.1 = { owner = GOD controller = GOD add_core = GOD remove_core = PIC culture = welsh }
+500.1.1 = { citysize = 3600 }
+589.1.1 = { religion = chalcedonism }
+600.1.1 = { citysize = 4200 }
+638.1.1 = { owner = NOL controller = NOL add_core = NOL remove_core = GOD capital = "Edinburgh" }
+700.1.1 = { citysize = 4800 }
+800.1.1 = { citysize = 5400 }
+867.1.1 = { religion = catholic }
+867.3.23 = { owner = SCO controller = SCO add_core = SCO remove_core = NOL }
+900.1.1  = { citysize = 6000 }
+1000.1.1 = { citysize = 6600 }
+1066.12.25 = { culture = scottish }
+1074.1.1 = { fort1 = yes }
+1100.1.1 = { citysize = 7200 }
+1124.1.1 = { temple = yes } #St Giles Cathedral, Edinburgh
+1200.1.1 = { citysize = 7800 }
+1296.1.1 = { controller = ENG }
+1300.1.1 = { citysize = 8400 }
+1314.1.1 = { controller = SCO }
+1334.1.1 = { controller = ENG }
+1341.1.1 = { controller = SCO }
+1399.1.1 = { citysize = 9000 }
+
+1450.1.1   = { citysize = 10000 }
+1482.8.1   = { controller = ENG }
+1483.3.1   = { controller = SCO }
+1500.1.1   = { marketplace = yes } # Estimated
+1532.1.1   = { courthouse = yes } # College of Justice
+1547.10.1  = { controller = ENG } # Rough Wooing
+1550.1.1   = { controller = SCO } # Scots Evict English with French Aid
+1560.1.1   = { fort2 = yes }
+1560.8.1   = { religion = reformed }
+1600.1.1   = { citysize = 30000 }
+1650.1.1   = { citysize = 35000 }
+1650.12.24 = { controller = ENG } # Cromwell Captures Edinburgh Castle
+1652.4.21  = { controller = SCO } # Union of Scotland and the Commonwealth
+1700.1.1   = { citysize = 45000 constable = yes } #customs_house = yes Constable, Customs House Estimated
+1707.5.12  = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	     }
+1750.1.1   = { citysize = 57000 regimental_camp = yes tax_assessor = yes } # Regimental Camp, Tax Assessor Estimated
+1800.1.1   = { citysize = 81000 }
+
+1850.1.1   = { citysize = 127378 }
+1900.1.1   = { citysize = 200310 }
+1950.1.1   = { citysize = 315001 }
+2011.1.1   = { citysize = 495360 }
+
+
+

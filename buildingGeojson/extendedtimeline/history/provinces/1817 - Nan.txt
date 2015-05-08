@@ -1,0 +1,49 @@
+newEntry1817 - Nan.txt
+#1817 - Higo
+
+culture = northern_thai
+religion = buddhism
+capital = "Nan"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+fort1 = yes
+discovered_by = chinese
+discovered_by = indian
+
+500.1.1 = { religion = buddhism }
+550.1.1 = { owner = DVA controller = DVA add_core = DVA citysize = 11000 trade_goods = grain }
+600.1.1 = { citysize = 11357 }
+661.1.1 = { owner = HRP controller = HRP add_core = HRP remove_core = DVA }
+700.1.1 = { citysize = 12750 }
+800.1.1 = { citysize = 14142 }
+900.1.1 = { citysize = 15535 }
+1000.1.1 = { citysize = 16928 }
+1100.1.1 = { citysize = 18321 }
+1200.1.1 = { citysize = 19714 }
+1238.1.1 = { owner = SUK controller = SUK add_core = SUK remove_core = HRP }
+1300.1.1 = { citysize = 21107 }
+1399.1.1 = { citysize = 22500 }
+
+1430.1.1 = { owner = LNA controller = LNA add_core = LNA remove_core = SUK }
+1450.1.1 = { citysize = 6000 }
+1500.1.1 = { citysize = 7000 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 8500 }
+1558.4.2 = { add_core = TAU } # Burmese vassal
+1600.1.1 = { citysize = 8600 }
+1650.1.1 = { citysize = 9000 }
+1700.1.1 = { citysize = 10000 }
+1750.1.1 = { citysize = 12000 }
+1775.1.1 = { add_core = AYU } # Siamnese vassal
+1800.1.1 = { citysize = 13500 }
+
+1850.1.1   = { citysize = 35000 }
+1900.1.1   = { citysize = 45000 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU }
+1950.1.1   = { citysize = 65000 }
+2007.1.1   = { citysize = 93141 }
+
+
+

@@ -1,0 +1,75 @@
+# 66 - Bamberg
+
+owner = EAL
+controller = EAL
+add_core = EAL
+citysize = 1000
+culture = rheinlaender
+religion = germanic
+base_tax = 3
+trade_goods = wine
+manpower = 2
+capital = "Bamberg"
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+260.1.1 = { owner = BUR controller = BUR add_core = BUR remove_core = EAL culture = burgundian }
+350.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = BUR culture = vandal }
+409.1.1 = { owner = BUR controller = BUR add_core = BUR remove_core = VAN culture = burgundian }
+411.1.1 = { owner = HRM controller = HRM add_core = HRM remove_core = BUR culture = hessian }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS remove_core = HRM }
+454.1.1 = { owner = THU controller = THU add_core = THU remove_core = HNS culture = bavarian }
+531.1.1 = { owner = FRK controller = FRK add_core = FRK }
+800.1.1 = { religion = chalcedonism }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 1700 }
+902.1.1 = { fort1 = yes }
+911.11.10 = { owner = FRC controller = FRC add_core = FRC remove_core = FRE }
+939.10.23 = { owner = BAM controller = BAM add_core = BAM remove_core = FRC }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 2400 }
+1007.1.1 = { remove_core = THU }
+1100.1.1 = { citysize = 3000 }
+1200.1.1 = { citysize = 3800 }
+1245.1.1 = { owner = WBG controller = WBG add_core = WBG remove_core = FRC }
+1300.1.1 = { citysize = 4600 }
+1399.1.1 = { citysize = 5500 }
+
+1450.1.1  = { citysize = 7000 }
+#1525.1.1  = { customs_house = yes }
+1540.1.1  = { marketplace = yes }
+1550.1.1  = { citysize = 12000 }
+1580.1.1  = { constable = yes }
+1590.1.1  = { temple = yes }
+1600.1.1  = { citysize = 14000 }
+1620.1.1  = { constable = yes }
+1650.1.1  = { citysize = 8000 }
+1700.1.1  = { citysize = 12000 }
+1720.1.1  = { courthouse = yes }
+1750.1.1  = { citysize = 14000 }
+1800.1.1  = { citysize = 15000 }
+1803.1.1  = {	owner = BAV
+		controller = BAV
+		add_core = BAV
+		remove_core = BAM
+	    } # Annexed by Bavaria
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 23000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1885.1.1   = { citysize = 31521 }
+1900.1.1   = { remove_core = BAV }
+1905.1.1   = { citysize = 45308 }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.1.1   = { citysize = 60000 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2011.12.31 = { citysize = 70084 }
+
+
+

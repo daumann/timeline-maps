@@ -1,3 +1,6 @@
+var currentDatalayerSelect;
+var currentThis;
+
 L.Storage.ElementHelper = L.Class.extend({
     includes: [L.Mixin.Events],
 
@@ -28,6 +31,9 @@ L.Storage.ElementHelper = L.Class.extend({
     },
 
     sync: function () {
+        console.debug("syncing this:", this)
+        if(this.field == "datalayer")
+            currentThis = this;
         this.set();
         this.fire('synced');
     },
@@ -405,7 +411,7 @@ L.S.ElementHelper.IconClassSwitcher = L.S.ElementHelper.SelectAbstract.extend({
 L.S.ElementHelper.PopupTemplate = L.S.ElementHelper.SelectAbstract.extend({
 
     selectOptions: [
-        [undefined, L._('inherit')],
+        ['SimplePanel', L._('inherit')],
         ['Default', L._('Name and description')],
         ['Large', L._('Name and description (large)')],
         ['Table', L._('Table')],
@@ -433,8 +439,12 @@ L.S.ElementHelper.LayerTypeChooser = L.S.ElementHelper.SelectAbstract.extend({
 });
 
 L.S.ElementHelper.DataLayerSwitcher = L.S.ElementHelper.SelectAbstract.extend({
+    
+    
 
     getOptions: function () {
+        console.debug("insideDataLayerSwitcher",this);
+        currentDatalayerSelect = this;
         var options = [];
         this.map.eachDataLayer(function (datalayer) {
             if(datalayer.isLoaded() && !datalayer.isRemoteLayer() && datalayer.isBrowsable()) {
@@ -445,15 +455,27 @@ L.S.ElementHelper.DataLayerSwitcher = L.S.ElementHelper.SelectAbstract.extend({
     },
 
     toHTML: function () {
+        console.debug("insideDataLayerSwitcher",this);
+        currentDatalayerSelect = this;
         return L.stamp(this.obj.datalayer);
     },
 
     toJS: function () {
+        console.debug("insideDataLayerSwitcher",this);
+        currentDatalayerSelect = this;
+        console.debug("returning ", this.map.datalayers[this.value()])
         return this.map.datalayers[this.value()];
     },
 
     set: function () {
+        
+        console.debug("insideDataLayerSwitcher",this);
+        currentDatalayerSelect = this;
+        console.debug("changing datalayer!!!!!!!!!!!!!!!!!!!!!!!! ");
+        console.debug(this);
+        console.debug(this.obj);
         this.obj.changeDataLayer(this.toJS());
+        
     }
 
 });
@@ -668,6 +690,10 @@ L.Storage.FormBuilder = L.Class.extend({
         if (this.options.className) {
             L.DomUtil.addClass(this.form, this.options.className);
         }
+
+        
+        
+     //   document.getElementById("storage-feature-properties").innerHTML="TEEEEEEEEST"+
     },
 
     build: function () {
@@ -768,6 +794,9 @@ L.Storage.FormBuilder = L.Class.extend({
     },
 
     defaultOptions: {
+        birthday: {label: L._('birthday'), handler: 'IntInput', helpEntries: 'textFormatting'},
+        wikiUrl: {label: L._('wikiUrl'), helpEntries: 'textFormatting'},
+        population: {label: L._('population'), handler: 'IntInput', helpEntries: 'textFormatting'},
         name: {label: L._('name')},
         description: {label: L._('description'), handler: 'Textarea', helpEntries: 'textFormatting'},
         color: {handler: 'ColorPicker', label: L._('color'), helpText: L._('Must be a CSS valid name (eg.: DarkBlue or #123456)')},
@@ -783,7 +812,7 @@ L.Storage.FormBuilder = L.Class.extend({
         iconUrl: {handler: 'IconUrl', label: L._('symbol of the icon')},
         popupTemplate: {handler: 'PopupTemplate', label: L._('template to use for the popup')},
         popupContentTemplate: {label: L._('Popup content template'), handler: 'Textarea', helpEntries: ['dynamicProperties', 'textFormatting'], helpText: L._('You can use formatting and &#123;properties&#125; from your features.'), placeholder: '# {name}'},
-        datalayer: {handler: 'DataLayerSwitcher', label: L._('Choose the layer of the feature')},
+        datalayer: {handler: 'DataLayerSwitcher', label: L._('In the year...')},
         moreControl: {handler: 'CheckBox', helpText: L._('Do you want to display the «more» control?')},
         datalayersControl: {handler: 'CheckBox', helpText: L._('Do you want to display the data layers control?')},
         zoomControl: {handler: 'CheckBox', helpText: L._('Do you want to display zoom control?')},

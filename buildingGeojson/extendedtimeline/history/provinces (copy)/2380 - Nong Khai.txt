@@ -1,0 +1,66 @@
+#612 - Khorat
+
+owner = KHM
+controller = KHM
+culture = khmer
+religion = buddhism
+capital = "Nong Khai"
+trade_goods = silk
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 3400
+add_core = KHM
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 3800 }
+200.1.1 = { citysize = 4600 }
+300.1.1 = { citysize = 5400 }
+400.1.1 = { citysize = 6200 }
+450.1.1 = { owner = CNA controller = CNA add_core = CNA remove_core = FUN }
+500.1.1 = { citysize = 7000 }
+600.1.1 = { citysize = 7800 }
+700.1.1 = { citysize = 8600 }
+800.1.1 = { citysize = 9400 }
+802.1.1 = { owner = KHM controller = KHM add_core = KHM remove_core = CNA }
+900.1.1 = { citysize = 10200 }
+1000.1.1 = { citysize = 11000 }
+1100.1.1 = { citysize = 11800 }
+1200.1.1 = { citysize = 12600 }
+1300.1.1 = { citysize = 13400 culture = lao }
+1354.1.1 = { owner = LXA controller = LXA add_core = LXA remove_core = KHM }
+1380.1.1 = { add_core = AYU }
+1399.1.1 = { citysize = 14200 }
+
+1450.1.1 = { citysize = 5200 }
+1500.1.1 = { citysize = 5680 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 6900 }
+1579.1.1 = { unrest = 5 } # Revolt against vassalization
+1580.1.1 = { unrest = 0 }
+1593.1.1 = { unrest = 4 } # Revolt against Burmese vassalization
+1600.1.1 = { citysize = 7750 }
+1603.1.1 = { unrest = 0 }
+1650.1.1 = { citysize = 8670 }
+1694.1.1 = { add_core = AYU } # Siamnese Intervention
+1700.1.1 = { citysize = 9680 }
+1707.1.1 = {	citysize = 4000
+		owner = VIE
+		controller = VIE
+		add_core = VIE
+	   	remove_core = LXA
+	   } # Lan Xangs declared itself independent, partitioned into three kingdoms; Vientiane, Champasak & Luang Prabang
+1750.1.1 = { citysize = 11255 }
+1800.1.1 = { citysize = 13480 }
+
+1828.11.12 = { owner = AYU controller = AYU add_core = AYU remove_core = VIE }
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 80000 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU }
+1950.1.1   = { citysize = 120000 }
+1960.1.1   = { culture = central_thai }
+2011.1.1   = { citysize = 166217 }
+
+
+

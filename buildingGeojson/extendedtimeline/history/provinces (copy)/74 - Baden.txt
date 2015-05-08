@@ -1,0 +1,65 @@
+#74 - Baden
+
+owner = ALM
+controller = ALM
+add_core = ALM
+citysize = 1000
+capital = "Baden"
+trade_goods = wine
+religion = germanic
+culture = rheinlaender
+base_tax = 3
+manpower = 1
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+75.1.1 = { owner = ROM controller = ROM add_core = ROM fort1 = yes capital = "Portus" }
+260.1.1 = { owner = ALM controller = ALM remove_core = ROM citysize = 1100 capital = "Baden" }
+400.1.1 = { citysize = 1200 }
+411.1.1 = { owner = BUR controller = BUR add_core = BUR remove_core = ALM }
+437.1.1 = { owner = ALM controller = ALM add_core = ALM remove_core = BUR }
+496.1.1 = { owner = FRK controller = FRK add_core = FRK }
+500.1.1 = { citysize = 1400 }
+600.1.1 = { religion = chalcedonism citysize = 1600 }
+700.1.1 = { citysize = 1800 }
+800.1.1 = { citysize = 2200 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 2500 }
+911.11.10 = { owner = SWA controller = SWA add_core = SWA remove_core = FRE remove_core = ALM }
+962.2.2 = { hre = yes }
+1000.1.1 = { fort1 = yes citysize = 2800 }
+1100.1.1 = { citysize = 3100 }
+1112.1.1 = { owner = BAD controller = BAD add_core = BAD remove_core = SWA }
+1200.1.1 = { citysize = 3400 }
+1300.1.1 = { citysize = 3700 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1  = { citysize = 5000 }
+1500.1.1  = { marketplace = yes }
+1538.1.1  = { religion = protestant } # Protestant majority
+1600.1.1  = { citysize = 8000 constable = yes }
+1650.1.1  = { religion = catholic }
+1700.1.1  = { citysize = 10000 } #customs_house = yes
+1750.1.1  = { regimental_camp = yes tax_assessor = yes }
+1771.1.1  = { base_tax = 4 manpower = 2 citysize = 14000 } # Baden-Baden Line dies without heirs, thus the possessions of the Baden family are reunited in one hand (Baden-Durlach).
+1792.10.3 = { controller = FRA } # Occupied by French troops
+1796.8.7  = { controller = BAD }
+1800.1.1  = { citysize = 15000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 20000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1900.1.1   = { citysize = 35000 remove_core = BAD }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.1.1   = { citysize = 50000 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2010.12.31 = { citysize = 54445 }
+
+
+

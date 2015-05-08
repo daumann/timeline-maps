@@ -1,0 +1,543 @@
+      2 #1000 - Cree
+      2 #1001 - Sault
+      2 #1004 - Attawapiskat
+      2 #1007 - Ojibwa
+      2 #1011 - Woods Cree
+      2 #1016 - Shikoku
+      2 #1036 - Podzhiversk
+      2 #1038 - Anadyrsk
+      2 #1042 - Kamnuskoye
+      2 #1050 - Deren
+      2 #1051 - Uchurskoye
+      2 #1052 - Verkohzehkoye
+      2 #1056 - Barguzinsky
+      2 #1064 - Tomsk
+      2 #1065 - Kuznetsk
+      2 #1066 - Altai
+      2 #1070 - Koda
+      2 #1071 - Tara
+      2 #1078 - Middle Urals
+      2 #1081 - Bolgar
+      2 #1119 - Grain Coast
+      2 #1124 - Wasuju
+      2 #1127 - Tuat
+      2 #112 - Venezia
+      2 #1130 - Tadimekket
+      2 #1131 - Massina
+      2 #1134 - Jenne
+      2 #1136 - Gurma
+      2 #1140 - Abomey
+      2 #1141 - Whydah
+      2 #1143 - Borgu
+      2 #1145 - Nupe
+      2 #1148 - Gobir
+      2 #1157 - Borno
+      2 #1158 - Kanem
+      2 #1159 - Bagirmi
+      2 #1164 - Cameroon
+      2 #1174 - Greater Namaqualand
+      2 #1176 - Roggeveld
+      2 #1181 - Natal
+      2 #1184 - Zimbabwe
+      2 #1187 - Urungwe
+      2 #1191 - Sena
+      2 #1192 - Quelimane
+      2 #1197 - Ujiji
+      2 #1207 - Ogaden
+      2 #1212 - Zeila
+      2 #1213 - Shoa
+      2 #1214 - Awsa
+      2 #1216 - Dar Nuba
+      2 #1217 - Fazughli
+      2 #1221 - Taqali
+      2 #1222 - Gezira
+      2 #1227 - Tigre
+      2 #1228 - Dongola
+      2 #1229 - Berber
+      2 #1520.7.1 = {     } # Arghuns
+      2 #1748 - La Mancha
+      2 #1782 - Central Siberia
+      2 #1787 - Himalaya
+      2 #1813 - Keewatin
+      2 #1823 - Iwami
+      2 #1824 - Wenzhou
+      2 #1829 - Xiamen
+      2 #1836 - Nanyang
+      2 #1838 - Hefei
+      2 #1846 - Yazgod
+      2 #1856 - Uiji
+      2 #1966 - Chelyaba
+      2 #1974 - Yedishkul
+      2 #2003 - Ktunaxa
+      2 #2004 - Al Qusayr
+      2 #2009 - Sarawak
+      2 #2010 - Connecticut
+      2 #2012 - Arsigantegok
+      2 # 2016 - Bungi = Red River Country
+      2 #2016 - Togo
+      2 #2023 - Munsee #North-eastern Pennsylvania
+      2 #2124 - Ubykhia
+      2 #2129 - Ouham
+      2 #262 - Krakow
+      2 #275 - Polotsk
+      2 #277 - Grodno
+      2 #285 - Kaffa
+      2 #290 - Poltava
+      2 #299 - Voronezh
+      2 #303 - Saratow
+      2 #304 - Pensa
+      2 # 310 - Novgorod
+      2 #317 - Bursa
+      2 #319 - Antalya
+      2 #323 - Konya
+      2 #324 - Karaman
+      2 #325 - Kastamon
+      2 #327 - Adana
+      2 #328 - Sinope
+      2 #329 - Sivas
+      2 #331 - Erserum
+      2 #332 - Mus
+      2 #336 - Tlemcen
+      2 #339 - Kabylia
+      2 #340 - Constantine
+      2 #342 - Toubkhal
+      2 #343 - Fez
+      2 #344 - Marrakech
+      2 #345 - Safi
+      2 #346 - Figuig
+      2 #347 - Ifni
+      2 #348 - Sus
+      2 #349 - Atlas
+      2 #351 - Biskra
+      2 #353 - Gabes
+      2 #359 - Asyut
+      2 #377 - Aleppo
+      2 #379 - Judea
+      2 #380 - Al Karak
+      2 #383 - Tabouk
+      2 #386 - Asir
+      2 #390 - Sana'a
+      2 #393 - Jabal Shammar
+      2 #394 - Al Hasa
+      2 #397 - Beni Yas
+      2 #400 - Muscat
+      2 #401 - Dhofar
+      2 #408 - Basra
+      2 #409 - Karbala
+      2 #411 - Mosul
+      2 #412 - Khuzestan
+      2 #41 - Ostpreussen
+      2 #420 - Qarabagh
+      2 #427 - Gurgan
+      2 #429 - Fars
+      2 #434 - Makran
+      2 #435 - Sistan
+      2 #437 - Atak
+      2 #438 - Kara Kum
+      2 #441 - Khiva
+      2 #443 - Ust Yurt
+      2 #447 - Kandahar
+      2 #449 - Gharchistan
+      2 #451 - Kabulistan
+      2 #455 - Kyrzyl-Kum
+      2 #461 - Moghulistan
+      2 #463 - Alania
+      2 #469 - Mordvar
+      2 #470 - Baybaktu
+      2 #473 - Samara
+      2 #474 - Uralsk
+      2 #477 - Nadym
+      2 #478 - Argyn
+      2 #479 - Kerey
+      2 #485 - Moron
+      2 #504 - Sind
+      2 #505 - Bakkar
+      2 #506 - Multan
+      2 #511 - Sutlej
+      2 #515 - Kathiawar
+      2 #517 - Baroda
+      2 #521 - Panipat
+      2 #526 - Malwa
+      2 #530 - Konkan
+      2 #532 - Raichur Doab
+      2 #536 - Madurai
+      2 #540 - Bangalore
+      2 #541 - Kondavidu
+      2 #543 - Golconda
+      2 #546 - Nagpur
+      2 #547 - Bastar
+      2 #549 - Parlakimidi
+      2 #552 - Orissa
+      2 #554 - Gorka
+      2 #556 - Allahabad
+      2 #557 - Katmandu
+      2 #558 - Maital
+      2 #560 - Jharkand
+      2 #562 - Koch
+      2 #563 - Pandua
+      2 #566 - Assam
+      2 #570 - Naga
+      2 #573 - Korales
+      2 #576 - Indus
+      2 #578 - Kohistan
+      2 #579 - Arakan
+      2 #583 - Hsenwi
+      2 #584 - Kyuakse
+      2 #588 - Mongnai
+      2 #590 - Moulmein
+      2 #591 - Tenasserim
+      2 #592 - Ratchaburi
+      2 #595 - Perak
+      2 #596 - Malacca
+      2 #599 - Kelantan
+      2 #604 - Udong
+      2 #609 - Siem Reap
+      2 #611 - Thakhek
+      2 #613 - Thang Long
+      2 #615 - Luang Prabang
+      2 #616 - Viet Bac
+      2 #618 - Aru
+      2 #621 - Benkulen
+      2 #624 - Banten
+      2 #625 - Priangan
+      2 #626 - Mataram
+      2 #629 - Demak
+      2 #631 - Bali-Lombok
+      2 #637 - Sabah
+      2 #640 - Sukadane
+      2 #641 - Makassar
+      2 #642 - Bone
+      2 #645 - Buru
+      2 #652 - Maguindanao
+      2 #653 - Tagoloan
+      2 #654 - Visayas
+      2 #659 - Riau
+      2 #663 - Wenshan
+      2 #666 - Hainan
+      2 #669 - Fuzhou (can't change file name)
+      2 #671 - Changsha
+      2 #672 - Chenzhou
+      2 #673 - Bozhou
+      2 #675 - Liangshan
+      2 #681 - Yichuan
+      2 #683 - Nanchang
+      2 #685 - Huai'an (can't change file name)
+      2 #686 - Anqing (can't change file name)
+      2 #687 - Running
+      2 #690 - Shandong Bandao
+      2 #693 - Sanguan
+      2 #694 - Changzhi
+      2 #700 - Shaanxi
+      2 #702 - Ulaanchab
+      2 #706 - Amdo
+      2 #707 - Yumen
+      2 #709 - Ningxia
+      2 #711 - Qarqan
+      2 #714 - Dzungaria
+      2 #715 - Urumqi
+      2 #717 - Hovd
+      2 #718 - Jasagdu
+      2 #720 - Tshiyet Noyan
+      2 #734 - Gangwon
+      2 #736 - Gyeongsang
+      2 #737 - Jeolla
+      2 #739 - Altishar
+      2 #740 - Ladakh
+      2 #742 - Guayana
+      2 #744 - Demerara
+      2 #745 - Suriname
+      2 #747 - Tucujulandia
+      2 #749 - Maranhao
+      2 #751 - Ceara
+      2 #752 - Oeiras
+      2 #769 - Santana
+      2 #770 - Tape
+      2 #772 - Uruguay
+      2 #778 - Rio de la Plata
+      2 #783 - Patagonia Occidental
+      2 #784 - Huillimapu
+      2 #786 - Salinas Grande
+      2 #792 - Copiapo
+      2 #793 - Atacama
+      2 #794 - Jujuy
+      2 #796 - Arica
+      2 #798 - Charcas
+      2 #799 - Chaco Boreal
+      2 #800 - Chiquitos
+      2 #801 - Caranga
+      2 #805 - Arequipa
+      2 #808 - Cuzco
+      2 #809 - Lima
+      2 #810 - Huancavelica
+      2 #812 - Chanchan
+      2 #816 - Tumbes
+      2 #820 - Quito
+      2 #823 - Cauca
+      2 #824 - Mariquita
+      2 #825 - Bogota
+      2 #826 - Choco
+      2 #829 - Magdalena
+      2 #830 - Maracaibo
+      2 #835 - Panama 
+      2 #836 - Chorotega
+      2 #852 - Mexico
+      2 #853 - Huastec
+      2 #855 - Huichol
+      2 #857 - Guachichil
+      2 #862 - Yaqui
+      2 #864 - Concho
+      2 #865 - Cochimi
+      2 #868 - Chumash
+      2 #870 - Yorkuts
+      2 #871 - Pomo
+      2 #876 - Yavapai
+      2 #881 - Piro
+      2 #884 - Karankawa
+      2 #886 - Waco
+      2 #887 - Tonkawa
+      2 #888 - Atakapa
+      2 #889 - Arapaho
+      2 #893 - Chitimacha
+      2 #896 - Ozark
+      2 #897 - Quapaw
+      2 #898 - Kansas
+      2 #900 - Tamaroa
+      2 #901 - Pawnee
+      2 #904 - Nakota
+      2 #905 - Iowa
+      2 #909 - Mandan
+      2 #910 - Chippewa
+      2 #912 - Sauk
+      2 #916 - Kaskaskia
+      2 #919 - Chickasaw
+      2 #920 - Choctaw
+      2 #922 - Mobile
+      2 #923 - Pensacola
+      2 #927 - Timucua
+      2 #930 - Yamasee
+      2 #931 - Chiaha
+      2 #933 - Catawba
+      2 #934 - Shawnee
+      2 #940 - Kentucky
+      2 #944 - Potawatomi
+      2 #945 - Michigan
+      2 #946 - Wyandot
+      2 #949 - Monacan
+      2 #953 - Conoy
+      2 #954 - Allegheny
+      2 #955 - Susquehanna
+      2 #957 - Delaware
+      2 #962 - Unami
+      2 #963 - Mahican
+      2 #964 - Mohawk
+      2 #968 - Massachusetts
+      2 #969 - Pocumtuk
+      2 #975 - Tsimshian
+      2 #977 - Yakutat
+      2 #978 - Alaska
+      2 #979 - Aleut
+      2 #980 - Beothuk
+      2 #983 - c. 1150 controlled by Slavic peoples
+      2 #989 - Ontario
+      2 #990 - Kwedech
+      2 #991 - Ottawa
+      2 #992 - Algonquin
+      3 #1049 - Saghalian Oula
+      3 #1062 - Kachinsk
+      3 #1082 - Kazan
+      3 #1115 - Brakna
+      3 #1117 - Futa Jallon
+      3 #1120 - Bambuk
+      3 #1135 - Yatenga
+      3 #1137 - Wagadugi
+      3 #1138 - Kumasi
+      3 #1139 - Gold Coast
+      3 #1142 - Dendi
+      3 #1147 - Benin
+      3 #1155 - Kano
+      3 #1156 - Damagaram
+      3 #1160 - Mandara
+      3 #1198 - Tabora
+      3 #1205 - Mogadishu
+      3 #1210 - Ifat
+      3 #1211 - Harer
+      3 #1218 - Kefa
+      3 #1220 - Dar Ja'al
+      3 #1223 - Gojjam
+      3 #1224 - Gonder
+      3 #1226 - Taka
+      3 #1230 - Massawa
+      3 #1765 - Nis
+      3 #1969 - Syghnak
+      3 #2006 - Apsáalooke
+      3 #2023 - Mpumalanga
+      3 #283 - Zaporozhia
+      3 #287 - Kouban
+      3 #291 - Kharkov
+      3 #338 - Al-Djazair
+      3 #354 - Tripolitania
+      3 #356 - Cyrenaica
+      3 #360 - Nile
+      3 #382 - Damascus
+      3 #384 - Medina
+      3 #385 - Mecca
+      3 #410 - Iraq-i-Arab
+      3 #414 - Hamadan
+      3 #418 - Van
+      3 #432 - Kerman
+      3 #436 - Khurasan
+      3 #459 - Chuy
+      3 #468 - Khazaria (Burtasia)
+      3 #472 - Zheteru
+      3 #475 - Ufa
+      3 #476 - Kypshak
+      3 #480 - Kulunda
+      3 #486 - Guantanamo		
+      3 #490 - Barahonas
+      3 #507 - Lahore
+      3 #508 - Jammu
+      3 #510 - Chandigarh
+      3 #514 - Jodphur
+      3 #516 - Ahmadabad
+      3 #518 - Udaipur
+      3 #519 - Jaipur
+      3 #522 - Delhi
+      3 #523 - Lucknow
+      3 #542 - Telingana
+      3 #550 - Mandla
+      3 #553 - Cuttack
+      3 #555 - Oudh
+      3 #559 - Bihar
+      3 #561 - Bangala
+      3 #572 - Jaffna
+      3 #575 - Baluchistan
+      3 #577 - Quetta
+      3 #581 - Sagaing
+      3 #582 - Kachin
+      3 #593 - Ligore
+      3 #601 - Sukthothai
+      3 #605 - Prey Nokor
+      3 #607 - Vijaya
+      3 #617 - Aceh
+      3 #620 - Siak
+      3 #628 - Surabaya
+      3 #643 - Pose
+      3 #656 - Manila
+      3 #660 - Xishuan Banna
+      3 #661 - Dali
+      3 #676 - U-Tsang
+      3 #678 - Kham
+      3 #680 - Shenquing
+      3 #684 - Hangzhou (can't change file name)
+      3 #689 - Fengyuan
+      3 #691 - Jinan
+      3 #699 - Lanzhou
+      3 #708 - Gansu
+      3 #712 - Uighuristan
+      3 #719 - Sayin Noyan
+      3 #723 - Xilin Gol
+      3 #725 - Hinggan
+      3 #726 - Liaodong
+      3 #727 - Heilongjiang
+      3 #729 - Wusuli
+      3 #732 - Hamgyeong
+      3 #738 - Taiwan
+      3 #748 - Grao Para
+      3 #758 - Goias
+      3 #767 - Mato Grosso
+      3 #773 - Banda Oriental
+      3 #774 - Mbaracayu
+      3 #779 - Serranos
+      3 #780 - Tehuelmapu
+      3 #785 - Pehuenmapu
+      3 #788 - Cuyo
+      3 #789 - Pampas
+      3 #791 - Catamarca
+      3 #795 - Chichas
+      3 #797 - Caracara
+      3 #803 - Moxos
+      3 #804 - Puno
+      3 #813 - Cajamarca
+      3 #831 - Caracas
+      3 #834 - Barinas
+      3 #837 - Nicaragua
+      3 #841 - Guatemala
+      3 #845 - Campeche
+      3 #847 - Mixtec
+      3 #850 - Tlaxcala
+      3 #854 - Sayultecas
+      3 #858 - Tamaulipas
+      3 #861 - Coahuila
+      3 #872 - Kalapuya
+      3 #879 - Apache
+      3 #880 - Pueblo
+      3 #924 - Alabama
+      3 #926 - Seminole
+      3 #929 - Muskogee
+      3 #932 - Santee
+      3 #937 - Tuscarora
+      3 #938 - Pamlico
+      3 #942 - Wea
+      3 #951 - Kanawha
+      3 #952 - Powhatan
+      3 #970 - Pennacook
+      3 #971 - Abnaki
+      3 #984 - Acadia
+      3 #986 - Kespek
+      3 #995 - Atiamekw
+      3 #996 - Innu
+      3 #997 - Labrador
+      3 #Great Basin
+      4 #1002 - Abitbi
+      4 #1116 - Wolof
+      4 #1121 - Bure
+      4 #1125 - Worodugu
+      4 #1132 - Timbuktu
+      4 #1204 - Lamu
+      4 #1209 - Berbera
+      4 #1781 - Western Siberia
+      4 #1821 - Nanjing
+      4 #341 - Tunis
+      4 #361 - Cairo
+      4 #425 - Dagestan
+      4 #428 - Ajam
+      4 #430 - Laristan
+      4 #433 - Dash-i-Lut
+      4 #471 - Alimuly
+      4 #564 - Vanga
+      4 #622 - Palembang
+      4 #639 - Banjarmasin
+      4 #665 - Jiangmen
+      4 #667 - Guangzhou
+      4 #677 - Qamdo
+      4 #688 - Kaifeng (can't change file name)
+      4 #741 - Cumana
+      4 #750 - Alpercatas
+      4 #754 - Itamaraca
+      4 #755 - Pernambuco
+      4 #765 - Minas Gerais
+      4 #768 - Guayra
+      4 #775 - Xeres
+      4 #776 - Itenines
+      4 #790 - Chaco Austral
+      4 #814 - Huanuco
+      4 #840 - Honduras
+      4 #848 - Tohancapan
+      4 #851 - Tarasco
+      4 #874 - Salish
+      4 #882 - Mescalero
+      4 #985 - Micmac
+      4 #988 - Huron
+      4 #Ajuuraan
+      5 #392 - Nejd
+      5 #612 - Khorat
+      5 #619 - Minangkabau
+      5 #638 - Kutei
+      5 #730 - Haixi
+      5 #777 - Parana
+      5 #781 - Patagonia Oriental
+      5 #844 - Zapotec
+      5 #846 - Yucatan
+      5 #849 - Tlapanec
+      7 #759 - Diamentina
+      8 #1206 - Majerteen

@@ -1,0 +1,87 @@
+#1773 - Achaea
+
+owner = ROM
+controller = ROM
+culture = greek
+religion = hellenism
+capital = "Corinth"
+trade_goods = wine
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 1000
+add_core = ROM
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+
+200.1.1 = { citysize = 1200 }
+300.1.1 = { citysize = 1400 }
+360.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1600 }
+500.1.1 = { citysize = 1800 }
+600.1.1 = { citysize = 2000 }
+700.1.1 = { citysize = 2200 }
+800.1.1 = { citysize = 2500 }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 2800 }
+1000.1.1 = { citysize = 3100 }
+1100.1.1 = { citysize = 3400 }
+1147.1.1 = { capital = "Patrae" }
+1200.1.1 = { citysize = 3700 }
+1205.1.1 = { owner = ACH controller = ACH add_core = ACH capital = "Andravida" }
+1249.1.1 = { capital = "Mystras" fort1 = yes }
+1300.1.1 = { citysize = 4000 }
+1349.1.1 = { add_core = MOE }
+1399.1.1 = { citysize = 4300 }
+
+1432.1.1  = { owner = BYZ
+	      controller = BYZ
+	    } # To Morea
+1453.5.29 = {	owner = ACH
+		controller = ACH
+	    } # The fall of the Byzantine Empire
+1455.1.1  = { owner = MOE controller = MOE remove_core = ACH }
+1460.1.1  = { owner = TUR controller = TUR add_core = TUR }
+1464.1.1  = { controller = VEN }
+1470.1.1  = { controller = TUR }
+1500.1.1  = { citysize = 5500 }
+1502.1.1  = { remove_core = BYZ }
+1532.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Rebellion against the Ottoman rule
+1533.1.1  = { revolt = {} controller = TUR }
+1550.1.1  = { citysize = 6200 }
+1555.1.1  = { unrest = 5 } # General discontent with the Janissaries' dominance
+1556.1.1  = { unrest = 0 }
+1571.1.1  = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Rebellion against Ottoman rule
+1572.1.1  = { revolt = {} marketplace = yes controller = TUR } # Estimated
+1600.1.1  = { citysize = 5500 }
+1650.1.1  = { citysize = 4300 }
+1688.1.1  = { controller = VEN } # Occupied by Venice
+1690.1.1  = { base_tax = 1 } #The Decentralizing Effect of the Provincial System
+1699.1.26 = { owner = VEN add_core = VEN } # Annexed by the Venetian republic
+1700.1.1  = { citysize = 4400 }
+1716.1.1  = { tax_assessor = yes } # Revival of commerce, agriculture/trade
+1718.1.1  = { owner = TUR controller = TUR remove_core = VEN }
+1750.1.1  = { citysize = 5000 add_core = GRE }
+1800.1.1  = { citysize = 5150 }
+
+1832.8.30 = { owner = GRE controller = GRE remove_core = TUR capital = "Patrai" }
+1853.1.1  = { citysize = 15854 }
+1879.1.1  = { citysize = 25494 }
+1896.1.1  = { citysize = 37728 }
+1928.1.1  = { citysize = 61278 }
+1941.4.27 = { controller = GER }
+1941.7.1  = { owner = ITA controller = ITA }
+1943.9.8  = { owner = GER controller = GER }
+1944.10.1 = { controller = GBR }
+1945.5.8  = { owner = GRE controller = GRE }
+1951.1.1  = { citysize = 87570 }
+1981.1.1  = { citysize = 142163 }
+2011.1.1  = { citysize = 214585 }
+
+
+

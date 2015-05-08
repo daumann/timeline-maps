@@ -1,0 +1,167 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = gothic
+religion = germanic
+technology_group = barbarian
+historical_friend = GVI
+capital = 114	# Romagna
+
+220.1.1 = {
+	monarch = {
+		name = "Filimer"
+		dynasty = "Goth"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+250.1.1 = {
+	monarch = {
+		name = "Cniva"
+		dynasty = "Goth"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+350.1.1 = {
+	monarch = {
+		name = "Vandalarius"
+		dynasty = "Amal"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+400.1.1 = {
+	monarch = {
+		name = "Thorismund"
+		dynasty = "Amal"
+		adm = 4
+		dip = 3
+		mil = 5
+	}
+}
+
+440.1.1 = {
+	monarch = {
+		name = "Valamir"
+		dynasty = "Amal"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+465.1.1 = {
+	monarch = {
+		name = "Videmir"
+		dynasty = "Amal"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+470.1.1 = { religion = arianism }
+
+470.1.1 = {
+	monarch = {
+		name = "Theodemir"
+		dynasty = "Amal"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+489.1.1 = { government = feudal_monarchy }
+
+493.1.1 = {
+	monarch = {
+		name = "Theodoric"
+		dynasty = "Amal"
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+
+526.1.1 = {
+	monarch = {
+		name = "Athalaric"
+		dynasty = "Amal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+534.1.1 = {
+	monarch = {
+		name = "Theodahad"
+		dynasty = "Amal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+536.1.1 = { technology_group = western }
+
+536.1.1 = {
+	monarch = {
+		name = "Witiges"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+540.1.1 = {
+	monarch = {
+		name = "Ildibad"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+541.1.1 = {
+	monarch = {
+		name = "Eraric"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+541.6.1 = {
+	monarch = {
+		name = "Totila"
+		adm = 4
+		dip = 6
+		mil = 6
+	}
+}
+
+552.6.1 = {
+	monarch = {
+		name = "Theia"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+

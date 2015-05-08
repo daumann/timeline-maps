@@ -1,0 +1,37 @@
+#905 - Iowa
+
+culture = chiwere
+religion = totemism
+capital = "Iowa"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 25
+native_ferocity = 2
+native_hostileness = 9
+discovered_by = north_american
+
+1684.1.1   = { discovered_by = FRA } # Nicolas Perrot
+1809.1.1   = {	owner = USA
+	 	controller = USA
+		citysize = 350
+		trade_goods = fur
+		religion = protestant
+		culture = american 
+		capital = "Fort Lisa"
+	     } #Fort Lisa (actually on other side of river, but here for gameplay reasons)
+
+1830.1.1   = { is_city = yes add_core = USA }
+1851.9.22  = { capital = "Des Moines" }
+1850.1.1   = { citysize = 4000 }
+1880.1.1   = { citysize = 10104 }
+1900.1.1   = { citysize = 25656 }
+1930.1.1   = { citysize = 56097 }
+1950.1.1   = { citysize = 72296 }
+1980.1.1   = { citysize = 110243 }
+2010.1.1   = { citysize = 126326 }
+
+
+
+

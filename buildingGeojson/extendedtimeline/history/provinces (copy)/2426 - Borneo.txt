@@ -1,0 +1,58 @@
+#639 - Banjarmasin
+
+culture = bornean
+religion = hinduism
+capital = "Putussibau"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 40
+native_ferocity = 6
+native_hostileness = 9
+discovered_by = ATJ
+discovered_by = MAJ
+discovered_by = MKS
+discovered_by = BLI
+discovered_by = BAN
+discovered_by = BEI
+discovered_by = BLM
+discovered_by = BTN
+discovered_by = CRB
+discovered_by = DMK
+discovered_by = PGR
+discovered_by = PLB
+discovered_by = PSA
+discovered_by = SAK
+discovered_by = SUN
+discovered_by = KUT
+discovered_by = BNJ
+discovered_by = LFA
+discovered_by = LNO
+discovered_by = LUW
+discovered_by = MGD
+discovered_by = TER
+discovered_by = TID
+
+1840.1.1   = { discovered_by = NED }
+1860.1.1   = {	owner = NED
+		controller = NED
+		add_core = NED
+		citysize = 2000
+		trade_goods = tropical_wood
+	     }
+1900.1.1   = { citysize = 40000 }
+1912.9.10  = { add_core = IDN }
+1930.1.1   = { citysize = 66000 }
+1942.2.10  = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.1   = { controller = ENG }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 200000 }
+1990.1.1   = { citysize = 444000 }
+2010.1.1   = { citysize = 625395 }
+
+
+

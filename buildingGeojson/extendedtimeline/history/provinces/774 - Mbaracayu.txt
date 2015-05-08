@@ -1,0 +1,37 @@
+newEntry774 - Mbaracayu.txt
+#774 - Mbaracayu
+
+culture = ge
+religion = south_american
+capital = "Coxim"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = south_american
+
+1727.3.4 = {
+	discovered_by = POR
+	add_core = POR
+	owner = POR
+	controller = POR
+	citysize = 280
+	culture = portugese
+	religion = catholic
+	trade_goods = tea
+} # Ranchers from São Paulo occupied the region in search of more productive land
+1750.1.1 = { citysize = 2890 }
+1800.1.1 = { citysize = 5900 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+1850.1.1   = { citysize = 10000 }
+1899.1.1   = { capital = "Campo Grande" }
+1900.1.1   = { citysize = 60000 }
+1950.1.1   = { citysize = 300000 }
+2010.1.1   = { citysize = 787204 }
+
+
+

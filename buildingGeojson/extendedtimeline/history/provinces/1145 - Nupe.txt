@@ -1,0 +1,51 @@
+newEntry1145 - Nupe.txt
+#1145 - Nupe
+
+culture = nupe  
+religion = african
+capital = "Nupe"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9 
+discovered_by = sub_saharan
+
+1300.1.1 = { owner = OYO controller = OYO add_core = OYO citysize = 4000 trade_goods = coffee }
+1430.1.1 = { owner = NUP controller = NUP add_core = NUP remove_core = OYO }
+
+1484.1.1 = { unrest = 6 } #Campaigns by the Katsina Hausa against their Nupe enemies
+1670.1.1 = { owner = OYO controller = OYO  add_core = OYO unrest = 3 } #Oyo establishes hegemony over Nupe
+1690.1.1 = { unrest = 6 } #Uprising against Oyo domination
+1700.1.1 = { citysize = 6500 }
+1790.1.1 = { religion = sunni unrest = 3 } #Islamic revival led by Usman dan Fodio gains infleunce in Nupe
+1791.1.1 = {
+	unrest = 0
+	owner = NUP
+	controller = NUP
+	remove_core = OYO
+} # Nupe ejects Oyo overlords
+1806.1.1 = {	owner = SOK
+	controller = SOK
+	add_core = SOK
+} # The Fulani Empire
+
+1850.1.1   = { citysize = 15000 }
+1890.1.1   = { discovered_by = GBR }
+1900.1.1   = { citysize = 50000 }
+1903.1.1   = { capital = "Ilorin" owner = GBR controller = GBR add_core = GBR }
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 150000 }
+1960.10.1  = { owner = NIG controller = NIG add_core = NIG remove_core = GBR remove_core = SOK }
+2012.1.1   = { citysize = 304113 }
+
+
+

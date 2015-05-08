@@ -1,0 +1,34 @@
+newEntry2969 - Yamasee.txt
+#929 - Muskogee
+
+culture = creek
+religion = totemism
+capital = "Yamasee"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1524.1.1   = { discovered_by = POR } # Diego Gomez
+1650.1.1 = { owner = CRE
+		controller = CRE
+		is_city = yes
+		add_core = CRE
+		trade_goods = cotton } #Formation of the Creek confederacy
+1814.8.9  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant 
+		capital = "Macon" } #Treaty of Fort Jackson ending the Creek War
+
+1861.1.19  = { owner = CSA controller = CSA add_core = CSA }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+
+
+
+

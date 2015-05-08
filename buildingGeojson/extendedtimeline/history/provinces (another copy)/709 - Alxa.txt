@@ -1,0 +1,78 @@
+#709 - Ningxia
+
+owner = SXI
+controller = SXI
+culture = mongol
+religion = buddhism
+capital = "Alxa"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 2732
+add_core = SXI
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 2965 }
+200.1.1 = { citysize = 3430 }
+300.1.1 = { citysize = 3895 }
+329.1.1 = { owner = ZAO controller = ZAO add_core = ZAO remove_core = SXI }
+351.1.1 = { owner = QIN controller = QIN add_core = QIN remove_core = ZAO }
+360.1.1 = { fort1 = yes }
+394.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIN }
+400.1.1 = { citysize = 4360 }
+414.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = LNG }
+500.1.1 = { citysize = 4825 }
+547.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU }
+600.1.1 = { citysize = 5290 }
+700.1.1 = { citysize = 5755 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GOK }
+800.1.1 = { citysize = 6220 }
+900.1.1 = { citysize = 6685 }
+907.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = UIG }
+1000.1.1 = { citysize = 7150 }
+1038.1.1 = { owner = XIA controller = XIA add_core = XIA remove_core = LIO }
+1100.1.1 = { citysize = 7615 }
+1200.1.1 = { citysize = 8080 }
+1227.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = QIN remove_core = XIA }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 8545 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1399.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = KHA }
+
+1450.1.1 = { citysize = 10570 }
+1500.1.1 = { citysize = 12260 } # Repairs of the Great Wall
+1510.1.1 = {
+	owner = KHA
+	controller = KHA
+	add_core = KHA
+} # The Oirads are defeated & Mongolia is reunited under Dayan Khan
+1550.1.1 = { citysize = 14115 }
+1600.1.1 = { citysize = 16188 }
+1635.4.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = KHA
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+	    } # The Qing Dynasty
+1650.1.1 = { citysize = 17850 }
+1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+1700.1.1 = { citysize = 19120 }
+1750.1.1 = { citysize = 21555 }
+1800.1.1 = { citysize = 23800 }
+
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 100000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1950.1.1   = { citysize = 600000 }
+1976.1.1   = { capital = "Wuhai" }
+2000.1.1   = { citysize = 1290170 }
+
+
+

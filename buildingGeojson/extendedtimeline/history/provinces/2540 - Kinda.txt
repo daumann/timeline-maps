@@ -1,0 +1,82 @@
+newEntry2540 - Kinda.txt
+#2540 - Kinda
+
+owner = QAT
+controller = QAT
+culture = yemeni
+religion = south_arabian
+capital = "Timna"
+trade_goods = sugar
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1000
+add_core = QAT
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+
+180.1.1 = { owner = HIM controller = HIM add_core = HIM }
+220.1.1 = { owner = QAT controller = QAT }
+280.1.1 = { owner = HIM controller = HIM add_core = HIM remove_core = QAT }
+500.1.1 = { citysize = 1100 }
+525.1.1 = { owner = ADE controller = ADE add_core = ADE remove_core = HIM }
+600.1.1 = { citysize = 1200 }
+635.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = ADE religion = sunni capital = "Al Mukalla" }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 1300 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 1400 }
+897.1.1 = { owner = ADE controller = ADE add_core = ADE remove_core = ABB }
+900.1.1 = { religion = shiite }
+1200.1.1 = { fort1 = yes }
+1230.1.1 = { religion = sunni }
+
+1450.1.1 = { citysize = 3500 }
+1480.1.1 = { discovered_by = TUR }
+1488.1.1 = { discovered_by = POR } # Pêro da Covilhã
+1500.1.1 = { citysize = 5877 }
+1538.1.1 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+	   } # Part of the Ottoman empire
+1547.1.1 = { owner = POR controller = POR } # Occupied by Portugal
+1550.1.1 = { citysize = 6700 }
+1551.1.1 = {	owner = ADE
+		controller = ADE
+		remove_core = TUR
+	   }
+1567.1.1 = { unrest = 4 } # Revolt against the Ottomans
+1570.1.1 = { unrest = 0 }
+1597.9.1 = { unrest = 5 } # Qasimi state, revolt against the Ottomans
+1600.1.1 = { citysize = 8120 }
+1602.1.1 = { unrest = 0 }
+1650.1.1 = { citysize = 9356 }
+1700.1.1 = { citysize = 11768 marketplace = yes }
+1750.1.1 = { citysize = 12377 }
+1800.1.1 = { citysize = 14320 }
+
+1850.1.1   = { citysize = 30000 }
+1869.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1900.1.1   = { citysize = 70000 }
+1950.1.1   = { citysize = 150000 }
+1967.11.30 = { owner = YEM controller = YEM add_core = YEM remove_core = GBR }
+1990.5.22  = { owner = ADE controller = ADE remove_core = YEM }
+1994.5.21  = { add_core = YEM revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1994.7.7   = { remove_core = YEM revolt = {} controller = ADE }
+2005.1.1   = { citysize = 323000 }
+2015.2.6   = { revolt = { type = sunni_rebels size = 1 } controller = REB }
+
+
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+n=2014
+for i in {1..13000}
+do    
+
+	#touch datalayers2/DL$n.geojson
+	tr -d '\n' < /home/aumannd/.virtualenvs/umap/var/uploads/datalayer/6/6/DL$n.geojson >> datalayers2/DL$n.geojson
+
+   (( n -= 1 )) 
+done
+
+# echo "new content" >> DL$n.geojson
+
+# 

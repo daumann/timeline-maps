@@ -1,0 +1,51 @@
+newEntry2959 - Yazoo.txt
+#919 - Chickasaw
+
+culture = chickasaw
+religion = totemism
+capital = "Yazoo"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1200.1.1  = { owner = PLA controller = PLA add_core = PLA is_city = yes trade_goods = cotton }
+1420.1.1  = {	owner = XXX
+		controller = XXX
+		remove_core = PLA
+		citysize = 0
+		native_size = 5
+		native_ferocity = 1
+		native_hostileness = 2
+		trade_goods = unknown
+}
+
+1540.1.1  = { discovered_by = SPA } # Hernando De Soto
+1650.1.1  = {	owner = CHI
+		controller = CHI
+		add_core = CHI
+		trade_goods = cotton
+		is_city = yes } #Natives disruptiosn of the Beaver wars
+1786.1.10= { owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant } #Treaty of Hopewell (with the Chickasaw), come under US authority
+
+1824.1.1   = { capital = "Greenville" }
+1850.1.1   = { citysize = 5500 }
+1861.1.9   = { owner = CSA controller = CSA add_core = CSA }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+1900.1.1   = { citysize = 5800 }
+1930.1.1   = { citysize = 6361 }
+1950.1.1   = { citysize = 11527 }
+1980.1.1   = { citysize = 23905 }
+2010.1.1   = { citysize = 48982 }
+
+
+
+

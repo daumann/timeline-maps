@@ -1,0 +1,119 @@
+#Spread of Buddhism to Japan
+province_event = {
+
+	id = et.19
+	title = "et.EVTNAME19"
+	desc = "et.EVTDESC19"
+	picture = BUDDHA_eventPicture
+	
+	trigger = {
+		region = japanese_region
+		NOT = { religion = buddhism }
+		is_year = 550
+		NOT = { is_religion_enabled = shinto }
+		NOT = { is_year = 800 }
+		OR = {
+			NOT = { religion = confucianism }
+			owner = { NOT = { religion = confucianism } }
+		}
+	}
+	mean_time_to_happen = {
+		months = 1200
+
+		modifier = {
+			factor = 0.8
+			is_year = 650
+		}
+		modifier = {
+			factor = 0.8
+			any_neighbor_province = { religion = buddhism }
+		}
+	}
+	
+	option = {
+		name = "et.EVTOPTA19"
+		change_religion = buddhism
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}
+
+#Birth of Shinto 
+province_event = {
+
+	id = et.20
+	title = "et.EVTNAME20"
+	desc = "et.EVTDESC20"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { is_religion_enabled = shinto }
+		region = japanese_region
+		culture = japanese
+		is_year = 712
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = "et.EVTOPTA20"
+		change_religion = shinto
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+		enable_religion = shinto
+	}
+}
+
+#Spread of Shinto 
+province_event = {
+
+	id = et.21
+	title = "et.EVTNAME21"
+	desc = "et.EVTDESC21"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	trigger = {
+		region = japanese_region
+		is_religion_enabled = shinto
+		culture = japanese
+		NOT = { religion = shinto }
+		is_year = 700
+		NOT = { is_year = 1200 }
+	}
+	mean_time_to_happen = {
+		months = 1000
+
+		modifier = {
+			factor = 0.8
+			religion = animism
+		}
+		modifier = {
+			factor = 0.8
+			owner = { religion = animism }
+		}
+		modifier = {
+			factor = 0.7
+			is_year = 800
+		}
+		modifier = {
+			factor = 0.7
+			any_neighbor_province = { religion = shinto }
+		}
+	}
+	
+	option = {
+		name = "et.EVTOPTA21"
+		change_religion = shinto
+		add_province_modifier = {
+			name = "religious_zeal_at_conv"
+			duration = 3650
+		}
+	}
+}

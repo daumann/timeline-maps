@@ -1,0 +1,217 @@
+country_decisions = {
+
+	hold_grand_tournament = {
+		potential = {
+			religion_group = christian
+			government = feudal_monarchy
+			NOT = { is_year = 1400 }
+			NOT = { has_country_modifier = grand_tournament }
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 20
+			mil_tech = 32
+		}
+		effect = {
+			add_mil_power = -20
+			add_prestige = 5
+			add_country_modifier = {
+				name = "grand_tournament"
+				duration = 3650
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	form_hre = {
+		major = yes
+		potential = {
+			always = no
+			emperor = { tag = JMA }
+			NOT = { exists = ROW }
+			NOT = { exists = ROM }
+			NOT = { exists = FRK }
+			NOT = { exists = HLR }
+			religion = catholic
+			government = feudal_monarchy
+		}
+		allow = {
+			OR = {
+				owns = 118
+				PAP = { is_subject_of = ROOT }
+			}
+			num_of_cities = 10
+			legitimacy = 80
+		}
+		effect = {
+			elector = yes
+			lombardia = { set_in_empire = yes }
+			every_owned_province = { set_in_empire = yes }
+			every_country = {
+				limit = { is_subject_of = ROOT }
+				elector = yes
+				every_owned_province = { set_in_empire = yes }
+			}
+			every_country = {
+				limit = {
+					culture_group = ROOT
+					religion = ROOT
+				}
+				every_owned_province = { 
+					limit = { NOT = { region = british_isles } }
+					set_in_empire = yes 
+				}
+			}
+			JMA = { 
+				elector = no
+				kill_ruler = yes 
+			}
+			3089 = { 
+				set_in_empire = no 
+				cede_province = XXX
+				remove_core = JMA
+			}
+		
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	barbarian_government_reform = {
+		major = yes
+		potential = {
+			government = barbarian_tribe
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 17
+			adm_power = 100
+			OR = {
+				adm_tech = 21
+				religion_group = christian
+				religion_group = muslim
+				religion = zoroastrianism
+				religion = judaism
+			}
+		}
+		effect = {
+			add_adm_power = -100
+			add_stability = -1
+			change_government = feudal_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	barbarian_technology_reform = {
+		major = yes
+		potential = {
+			technology_group = barbarian
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 19
+			adm_power = 100
+			NOT = { government = barbarian_tribe }
+			NOT = { government = tribal_despotism }
+			NOT = { government = tribal_democracy }
+			NOT = { government = tribal_federation }
+		}
+		effect = {
+			add_adm_power = -100
+			add_stability = -1
+			if = {
+				limit = { 
+					OR = {
+						culture_group = germanic
+						culture_group = scandinavian
+						culture_group = british
+						culture_group = gaelic
+						culture_group = latin
+						culture_group = iberian
+						culture_group = french
+						primary_culture = basque
+					}
+				}
+				change_technology_group = western
+				change_unit_type = western
+			}
+			if = {
+				limit = {
+					NOT = { culture_group = germanic }
+					NOT = { culture_group = scandinavian }
+					NOT = { culture_group = british }
+					NOT = { culture_group = gaelic }
+					NOT = { culture_group = latin }
+					NOT = { culture_group = iberian }
+					NOT = { culture_group = french }
+					NOT = { primary_culture = basque }
+				}
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
+		}
+	}
+
+	nomad_government_reform = {
+		major = yes
+		potential = {
+			government = steppe_horde
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			change_government = feudal_monarchy
+		}
+	}
+
+	barbarian_government_reform_2 = {
+		major = yes
+		potential = {
+			technology_group = barbarian
+			OR = {
+				government = tribal_despotism
+				government = tribal_democracy
+				government = tribal_federation
+			}
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 40
+			adm_power = 100
+		}
+		effect = {
+			add_adm_power = -100
+			add_stability = -1
+			change_government = feudal_monarchy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	barbarian_unit_reform = {
+		major = yes
+		potential = {
+			technology_group = western
+			unit_type = barbarian
+		}
+		allow = {
+			is_at_war = no
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			change_unit_type = western
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

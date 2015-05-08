@@ -1,0 +1,165 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 3
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -3
+#quality_quantity = 3
+#serfdom_freesubjects = -4
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+capital = 1821
+
+394.1.1 = {
+	monarch = {
+		name = "Taizu"
+		dynasty = "Liang"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+400.1.1 = {
+	monarch = {
+		name = "Luzuan"
+		dynasty = "Liang"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+401.1.1 = {
+	monarch = {
+		name = "Juqu Mengxun"
+		dynasty = "Liang"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+433.1.1 = {
+	monarch = {
+		name = "Juqu Mujian"
+		dynasty = "Liang"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+442.1.1 = {
+	monarch = {
+		name = "Juqu Wuhui"
+		dynasty = "Liang"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+444.1.1 = {
+	monarch = {
+		name = "Juqu Anzhou"
+		dynasty = "Liang"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+502.1.1 = {
+	monarch = {
+		name = "Wu"
+		dynasty = "Liang"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+549.1.1 = {
+	monarch = {
+		name = "Jianwen"
+		dynasty = "Liang"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+551.1.1 = {
+	monarch = {
+		name = "Yu Zhang"
+		dynasty = "Liang"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+552.1.1 = {
+	monarch = {
+		name = "Yuan"
+		dynasty = "Liang"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+555.1.1 = {
+	monarch = {
+		name = "Zhen Yang"
+		dynasty = "Liang"
+		adm = 1
+		dip = 3
+		mil = 2
+		female = yes
+	}
+}
+
+555.6.1 = {
+	monarch = {
+		name = "Jing"
+		dynasty = "Liang"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+907.6.1 = {
+	monarch = {
+		name = "Taizu"
+		dynasty = "Liang"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}
+
+912.7.18 = {
+	monarch = {
+		name = "Zhou Yougui"
+		dynasty = "Liang"
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}
+
+913.3.27 = {
+	monarch = {
+		name = "Modi"
+		dynasty = "Liang"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}

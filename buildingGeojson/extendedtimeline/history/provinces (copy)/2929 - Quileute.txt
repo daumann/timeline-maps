@@ -1,0 +1,47 @@
+#874 - Salish
+
+culture = salish
+religion = totemism
+capital = "Quileute"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1543.1.1 = { discovered_by = SPA }
+1778.1.1 = { discovered_by = GBR }
+1800.1.1 = { owner = SAL
+		controller = SAL
+		add_core = SAL
+		trade_goods = fish
+		is_city = yes } #Salish grouping occupy large areas at contact
+1791.1.1 = {	owner = SPA
+		controller = SPA
+		religion = catholic
+		culture = castillian
+		capital = "Puerto Ángeles"
+	   }
+1792.1.1 = {	owner = GBR
+		controller = GBR
+		culture = english
+		religion = protestant
+		capital = "Port Angeles"
+	   } # The Nootka convention settled the dispute
+1815.1.1 = { add_core = GBR remove_core = SAL }
+
+1846.6.15  = { owner = USA add_core = USA controller = USA remove_core = GBR } # Oregon Treaty
+1850.1.1   = { citysize = 8000 }
+1869.12.2  = { culture = american }
+1900.1.1   = { citysize = 80671 }
+1930.1.1   = { citysize = 365583 }
+1950.1.1   = { citysize = 467591 }
+1980.1.1   = { citysize = 493846 }
+2011.7.1   = { citysize = 620778 }
+
+
+
+

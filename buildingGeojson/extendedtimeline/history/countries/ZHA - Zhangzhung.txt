@@ -1,0 +1,6 @@
+government = despotic_monarchy
+primary_culture = tibetan
+religion = buddhism
+technology_group = chinese
+mercantilism = 0.1
+capital = 2452	# Kyunglung

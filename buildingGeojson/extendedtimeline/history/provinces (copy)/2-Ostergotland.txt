@@ -1,0 +1,59 @@
+#Östergötland, contains Norrköping, Linköping etc.
+
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 3
+trade_goods = unknown
+manpower = 2
+capital = "Skänninge"
+native_hostileness = 1
+native_size = 15
+native_ferocity = 2
+
+380.1.1 = { 	owner = GEE 
+		controller = GEE 
+		add_core = GEE 
+		citysize = 1000 
+		discovered_by = GEE 
+		discovered_by = GEW 
+		trade_goods = grain
+	  }
+550.1.1 = { discovered_by = SVE discovered_by = DAN }
+600.1.1 = { discovered_by = western discovered_by = eastern }
+970.1.1 = { owner = SWE controller = SWE add_core = SWE remove_core = GEE }
+1000.1.1 = { religion = catholic }
+1200.1.1 = { discovered_by = muslim discovered_by = ottoman }
+1287.1.1 = { citysize = 1200 capital = "Linköping" fort1 = yes }
+
+1450.1.1  = { citysize = 1500 }
+1487.1.1  = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The Axelsson Tott Family
+1487.5.24 = { revolt = {} controller = SWE } # The Demise of the Axelsson Tott Family
+1497.3.13 = { controller = DAN } # Danish loyalists at Danish DoW
+1497.10.6 = { controller = SWE } # Hans I become King and Sweden a Danish Vassal
+1500.1.1  = { citysize = 1450 } # Estimated
+1501.8.1  = { controller = DAN } # Danish loyalists at Swedish DoW and breaking of vassalage
+1503.6.1  = { controller = SWE } # Retaken by Sweden
+# 1520.3.6  = { owner = DAN controller = DAN } # The Council accept Christian II as King
+# 1521.7.15 = { owner = SWE controller = SWE } # Liberated by locals and joins Gustav Eriksson Wasa
+1527.6.1  = { religion = protestant}
+1542.1.1  = { fort2 = yes }
+1570.1.1  = { citysize = 2057 }
+1610.1.1  = { citysize = 2524 }
+1625.1.1  = { fort3 = yes }
+1635.1.1  = { courthouse = yes } # minor court belonging to Svea Hovrätt
+1636.1.1  = { regimental_camp = yes } # Östgöta infanteriregemente
+1650.1.1  = { marketplace = yes }# major upswing in the grain belt
+1650.1.1  = { citysize = 3180 }
+1654.1.1  = { tax_assessor = yes } # Result of "The Great Reduction"
+1690.1.1  = { capital = "Norrköping" }
+1690.1.1  = { citysize = 4357 }
+1700.1.1  = { fort4 = yes }
+1730.1.1  = { citysize = 4803 }
+#1730.1.1  = { customs_house = yes } # Due to the support of manufactories
+1770.1.1  = { citysize = 7933 }
+1810.1.1  = { citysize = 9048 }
+1820.1.1  = { citysize = 11000 } # Interpolated
+
+
+

@@ -1,0 +1,87 @@
+newEntry2604 - Plovdiv.txt
+#1765 - Nis
+
+owner = ROM
+controller = ROM
+culture = thracian
+religion = hellenism
+capital = "Trimontium"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 2300
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 2600 }
+200.1.1 = { citysize = 3200 }
+300.1.1 = { citysize = 3800 }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { capital = "Philippopolis" }
+500.1.1 = { citysize = 5000 }
+600.1.1 = { citysize = 5600 }
+700.1.1 = { citysize = 6200 religion = chalcedonism }
+800.1.1 = { citysize = 6800 }
+812.1.1 = { owner = BUL controller = BUL }
+834.1.1 = { add_core = BUL culture = bulgarian }
+856.1.1 = { owner = BYZ controller = BYZ }
+867.1.1 = { religion = orthodox }
+894.1.1 = { owner = BUL controller = BUL add_core = BUL }
+900.1.1 = { citysize = 7400 }
+969.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+1000.1.1 = { citysize = 8200 }
+1100.1.1 = { citysize = 8800 fort1 = yes }
+1200.1.1 = { citysize = 9600 }
+1204.4.13 = { owner = LAT controller = LAT add_core = LAT }
+1207.1.1 = { owner = BUL controller = BUL add_core = BUL }
+1208.1.1 = { owner = LAT controller = LAT }
+1225.1.1 = { owner = BUL controller = BUL remove_core = LAT }
+1263.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+1300.1.1 = { citysize = 10200 }
+1322.1.1 = { owner = BUL controller = BUL }
+1323.1.1 = { owner = BYZ controller = BYZ }
+1344.1.1 = { owner = BUL controller = BUL capital = "Plovdiv" }
+1364.1.1 = { owner = TUR controller = TUR add_core = TUR }
+1399.1.1 = { citysize = 11000 }
+
+#Country breaks
+#1402.1.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Interregnum
+1404.1.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1413.1.1  = { revolt = {} controller = TUR }
+1450.1.1  = { citysize = 12070 }
+1500.1.1  = { citysize = 13100 }
+1550.1.1  = { citysize = 13870 }
+1555.1.1  = { unrest = 5 } # General discontent against the Janissaries' dominance
+1556.1.1  = { unrest = 2 }
+1560.1.1  = { marketplace = yes }
+1598.1.1  = { unrest = 6 } # Oppositions around Tarnovo
+1600.1.1  = { citysize = 13440 unrest = 0 }
+1620.1.1  = { fort2 = yes }
+1650.1.1  = { citysize = 14780 }
+1688.1.1  = { unrest = 6 } # Rebellion against Ottoman rule, centered on Chiprovtzi
+1689.1.1  = { unrest = 0 } # Brutally suppressed by Janissaries
+1700.1.1  = { citysize = 15773 }
+1750.1.1  = { citysize = 16980 }
+1780.1.1  = { tax_assessor = yes }
+1793.1.1  = { unrest = 5 } # Pasvanoglu  Rebellion
+1798.1.1  = { unrest = 0 }
+1800.1.1  = { citysize = 17467 }
+
+1850.1.1  = { citysize = 80000 }
+1878.1.4  = { controller = RUS }
+1878.3.3  = { controller = TUR }
+1885.9.6  = { owner = BUL controller = BUL remove_core = TUR }
+1900.1.1  = { citysize = 200000 }
+1950.1.1  = { citysize = 700000 }
+2011.1.1  = { citysize = 1204685 }
+
+
+

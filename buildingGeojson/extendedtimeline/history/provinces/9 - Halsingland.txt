@@ -1,0 +1,36 @@
+newEntry9 - Halsingland.txt
+#Hälsingland-Gästrikland-Medelpad, from Gävle to Näs
+
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 2
+trade_goods = unknown
+manpower = 2
+capital = "Gävle"
+native_hostileness = 3
+native_size = 10
+native_ferocity = 2
+
+500.1.1 = { discovered_by = GEE discovered_by = GEW }
+550.1.1 = { discovered_by = SVE discovered_by = DAN owner = SVE controller = SVE add_core = SVE citysize = 800 trade_goods = fish }
+580.1.1 = { citysize = 1000 is_city = yes }
+600.1.1 = { discovered_by = western discovered_by = eastern }
+970.1.1 = { owner = SWE controller = SWE add_core = SWE remove_core = SVE }
+1000.1.1 = { religion = catholic }
+1200.1.1 = { marketplace = yes }
+1350.1.1 = { fort1 = yes }
+1399.1.1 = { citysize = 1100 }
+
+# 1520.3.6  = { owner = DAN controller = DAN } #The Council accept Christian II as King
+# 1521.4.30 = { owner = SWE controller = SWE } #The population joins the uprising
+1527.6.1  = { religion = protestant}
+1560.1.1  = { fort2 = yes } #
+1634.1.1  = { regimental_camp = yes } #Hälsinge regemente
+1635.1.1  = { courthouse = yes } #minor court belonging to Svea Hovrätt
+1640.1.1  = { fort3 = yes } #
+1670.1.1  = { tax_assessor = yes } #Due to the "Staplepolicy act"
+1730.1.1  = { constable = yes } #Due to the support of manufactories
+
+
+

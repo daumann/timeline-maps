@@ -1,0 +1,72 @@
+newEntry673 - Bozhou.txt
+#673 - Bozhou
+
+owner = HND
+controller = HND
+culture = yi
+religion = animism
+capital = "Bozhou"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 5937
+add_core = HND
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 6875 }
+200.1.1 = { citysize = 8750 }
+220.1.1 = { owner = WUU controller = WUU add_core = WUU remove_core = HND }
+280.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = WUU }
+300.1.1 = { citysize = 10625 }
+400.1.1 = { citysize = 12500 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 14375 }
+502.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LNG }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+600.1.1 = { citysize = 16250 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 18125 }
+800.1.1 = { citysize = 20000 }
+900.1.1 = { citysize = 21875 }
+907.6.1 = { owner = CUU controller = CUU add_core = CUU remove_core = TNG }
+951.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = CUU }
+975.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = TNG }
+1000.1.1 = { citysize = 23750 }
+1100.1.1 = { citysize = 25625 }
+1200.1.1 = { citysize = 27500 }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA add_core = CXI remove_core = SNG }
+1300.1.1 = { citysize = 29375 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 31250 }
+
+1644.10.1 = {	owner = CXI
+		controller = CXI
+			} # Zhang Xianzhong's Xi empire
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1658.12.1 = {	owner = QNG
+		controller = QNG
+		}
+1662.4.1 =  {	owner = CZH
+		controller = CZH
+		add_core = CZH
+		} # Three Feudatories - Wu Sangui titled as Prince of Pingxi in Yunnan
+1681.10.1 = {	owner = QNG
+	controller = QNG
+	add_core = QNG
+}
+
+1850.1.1   = { citysize = 100000 }
+1900.1.1   = { citysize = 400000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CXI capital = "Zunyi" }
+1950.1.1   = { citysize = 950000 }
+2010.1.1   = { citysize = 5000000 }
+
+
+

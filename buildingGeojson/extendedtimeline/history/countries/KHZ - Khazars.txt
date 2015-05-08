@@ -1,0 +1,129 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -4
+#quality_quantity = 4
+#serfdom_freesubjects = -5
+primary_culture = khazar
+religion = tengri
+technology_group = nomad_group
+capital = 2263	# Balanjar
+
+630.1.1 = {
+	monarch = {
+		name = "Irbis"
+		dynasty = "Ashina"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+680.1.1 = {
+	monarch = {
+		name = "Busir"
+		dynasty = "Khazar"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+720.1.1 = {
+	monarch = {
+		name = "Bihar"
+		dynasty = "Khazar"
+		adm = 1
+		mil = 3
+		dip = 4
+	}
+}
+
+740.1.1 = {
+	monarch = {
+		name = "Parsbit"
+		dynasty = "Khazar"
+		adm = 2
+		mil = 3
+		dip = 4
+		female = yes
+	}
+}
+
+750.1.1 = { capital = 464 } #Atil
+
+810.1.1 = {
+	monarch = {
+		name = "Zachariah"
+		dynasty = "Khazar"
+		adm = 2
+		mil = 4
+		dip = 1
+	}
+}
+
+840.1.1 = { religion = jewish }
+
+870.1.1 = {
+	monarch = {
+		name = "Bulan"
+		dynasty = "Khazar"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+910.1.1 = {
+	monarch = {
+		name = "Obadiah"
+		dynasty = "Khazar"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+930.1.1 = {
+	monarch = {
+		name = "Aaron II"
+		dynasty = "Khazar"
+		adm = 1
+		mil = 3
+		dip = 5
+	}
+}
+
+950.1.1 = {
+	monarch = {
+		name = "Joseph"
+		dynasty = "Khazar"
+		adm = 4
+		mil = 2
+		dip = 4
+	}
+}
+
+980.1.1 = {
+	monarch = {
+		name = "David"
+		dynasty = "Khazar"
+		adm = 2
+		mil = 3
+		dip = 2
+	}
+}
+
+1000.1.1 = {
+	monarch = {
+		name = "Georgius"
+		dynasty = "Khazar"
+		adm = 3
+		mil = 2
+		dip = 5
+	}
+}

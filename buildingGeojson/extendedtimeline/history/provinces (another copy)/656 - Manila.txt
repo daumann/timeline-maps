@@ -1,0 +1,47 @@
+#656 - Manila
+
+culture = filipino
+religion = animism
+capital = "Manila"
+trade_goods = unknown
+hre = no
+base_tax = 5
+manpower = 2
+native_size = 70
+native_ferocity = 2
+native_hostileness = 9
+discovered_by = chinese
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+1521.1.1  = { discovered_by = SPA } # Ferdinand Magellan 
+1570.1.1  = {	owner = SPA
+		controller = SPA
+		add_core = SPA
+	   	is_city = yes
+		fort1 = yes
+	   	religion = catholic
+		trade_goods = spices
+	    }
+1762.10.6 = { controller = GBR unrest = 6 } # Captured by the British East India Company. Diego Silang rebellion
+1763.2.10 = { controller = SPA } # Spain regained control
+1763.9.10 = { unrest = 0 } # The revolts are defeated
+
+1850.1.1   = { citysize = 50000 }
+1872.1.1   = { add_core = PHI }
+1898.8.12  = { owner = USA controller = USA add_core = USA remove_core = SPA }
+1903.1.1   = { citysize = 219928 }
+1942.1.2   = { controller = JAP }
+1945.3.1   = { controller = USA }
+1946.7.4   = { owner = PHI controller = PHI remove_core = USA }
+1960.1.1   = { citysize = 1138611 }
+1980.1.1   = { citysize = 1630485 }
+2010.1.1   = { citysize = 1652171 }
+
+
+

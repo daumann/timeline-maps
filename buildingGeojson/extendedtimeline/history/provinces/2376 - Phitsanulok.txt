@@ -1,0 +1,60 @@
+newEntry2376 - Phitsanulok.txt
+#601 - Sukthothai
+
+owner = KHM
+controller = KHM
+culture = central_thai
+religion = buddhism
+capital = "Phitsanulok"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 3352
+add_core = KHM
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 3705 }
+200.1.1 = { citysize = 4410 }
+300.1.1 = { citysize = 5115 }
+400.1.1 = { citysize = 5820 }
+450.1.1 = { owner = CNA controller = CNA add_core = CNA remove_core = KHM }
+500.1.1 = { citysize = 6525 }
+550.1.1 = { owner = DVA controller = DVA add_core = DVA remove_core = CNA }
+600.1.1 = { citysize = 7230 }
+661.1.1 = { owner = LAV controller = LAV add_core = LAV remove_core = DVA }
+700.1.1 = { citysize = 7935 }
+800.1.1 = { citysize = 8640 }
+880.1.1 = { owner = KHM controller = KHM add_core = KHM }
+900.1.1 = { citysize = 9345 }
+1000.1.1 = { citysize = 10050 }
+1060.1.1 = { owner = LAV controller = LAV remove_core = KHM }
+1100.1.1 = { citysize = 10755 }
+1200.1.1 = { citysize = 11460 }
+1238.1.1 = { owner = SUK controller = SUK add_core = SUK remove_core = LAV }
+1300.1.1 = { citysize = 12165 }
+1350.1.1 = { owner = AYU controller = AYU add_core = AYU remove_core = SUK }
+1399.1.1 = { citysize = 12870 }
+
+1450.1.1 = { citysize = 16500 }
+1500.1.1 = { citysize = 22000 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 26500 }
+1600.1.1 = { citysize = 21400 marketplace = yes }
+1650.1.1 = { citysize = 10570 } #customs_house = yes
+1700.1.1 = { citysize = 16100 }
+1750.1.1 = { citysize = 19750 }
+1760.1.1 = { citysize = 21222 } # Sacked
+1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
+1774.1.1 = { unrest = 0 }
+1800.1.1 = { citysize = 24880 }
+
+1850.1.1   = { citysize = 35000 }
+1900.1.1   = { citysize = 45000 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU }
+1950.1.1   = { citysize = 65000 }
+2007.1.1   = { citysize = 93141 }
+
+
+

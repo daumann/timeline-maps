@@ -1,0 +1,109 @@
+newEntry156 - Temes.txt
+#156 - Banat
+
+owner = DAC
+controller = DAC
+culture = dacian
+religion = zamolxism
+capital = "Argidava"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 2400
+add_core = DAC
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2700 }
+106.1.1 = { owner = ROM controller = ROM add_core = ROM }
+150.1.1 = { fort1 = yes }
+160.1.1 = { remove_core = DAC }
+200.1.1 = { citysize = 3200 }
+273.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = ROM capital = "Timisoara" culture = gothic religion = germanic }
+300.1.1 = { citysize = 3700 }
+370.1.1 = { owner = HNS controller = HNS add_core = HNS remove_core = GVI }
+400.1.1 = { citysize = 4200 }
+469.1.1 = { owner = GEP controller = GEP add_core = GEP remove_core = HNS culture = gepid }
+500.1.1 = { citysize = 4700 }
+567.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = GEP culture = avar religion = tengri }
+600.1.1 = { citysize = 5200 }
+700.1.1 = { citysize = 5700 }
+800.1.1 = { citysize = 6200 }
+804.1.1 = { owner = BUL controller = BUL add_core = BUL remove_core = AVR }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 6700 }
+1000.1.1 = { citysize = 7200 }
+1003.1.1 = { owner = HUN controller = HUN add_core = HUN remove_core = BUL culture = hungarian }
+1100.1.1 = { citysize = 7700 }
+1200.1.1 = { citysize = 8200 }
+1300.1.1 = { citysize = 8800 }
+1399.1.1 = { citysize = 9400 }
+
+1450.1.1 = { citysize = 6480 }
+1500.1.1 = { citysize = 7394 }
+1510.1.1 = { citysize = 6451 } # Great plague
+1514.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebel peasant troops led by Gheorghe Doja
+1514.6.1 = { revolt = {} controller = HUN } # Estimated
+1526.8.30 = {
+	owner = TRA 
+	add_core = TRA
+} #Hungary fractured after Battle of Mohacs, controller since 1514
+1550.1.1 = { citysize = 8767 }
+1551.7.19 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	add_core = TUR
+} # Ferdinand gains Transylvania from Treaty of Weissenburg, provoking the Ottomans
+1552.7.17 = { controller = TUR } # Ottoman occupation of Temesvar, gained control over region
+1556.10.1 = {
+	owner = TRA
+	controller = TRA
+}# Isabella Jagiello is restored as queen of Transylvania, and cedes Banat
+1562.6.1 = { remove_core = HAB } # The end of the Ottoman-Habsburg War
+1567.1.1 = { religion = reformed } # Synod of Debrecen
+1570.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = HAB
+	remove_core = TRA
+} #Treaty of Speyer gives Temes to Habsburgs, but Ottomans hold the region
+1600.1.1 = { citysize = 11264 }
+1650.1.1 = { citysize = 13067 }
+1700.1.1 = { citysize = 11670 }
+1703.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Kuruc rebellion, lead by Francisc Rakoczy
+1718.1.1 = {
+	revolt = {}
+	owner = HAB
+	controller = HAB
+	remove_core = TUR
+} # The House of Habsburg is recognized as new ruler
+1720.1.1 = { marketplace = yes courthouse = yes }
+1723.4.25 = { fort2 = yes } # New fortress is constructed
+1728.1.1 = { workshop = yes }
+1738.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Uprising against the imperial authority
+1738.2.1 = { citysize = 8929 } # Plague
+1739.1.1 = { revolt = {} controller = HAB }
+1750.1.1 = { citysize = 9036 }
+1762.1.1 = { fort3 = yes citysize = 11634 } # Arad fortress established, plague
+1769.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Anti Habsburg uprisings
+1770.1.1 = { revolt = {} controller = HAB } # Estimated
+1800.1.1 = { citysize = 6450 }
+
+1847.1.1   = { citysize = 18103 }
+1869.1.1   = { citysize = 32725 }
+1900.1.1   = { citysize = 53033 }
+1918.10.31 = { owner = HUN controller = HUN add_core = HUN remove_core = HAB }
+1920.6.4   = { owner = RMN controller = RMN add_core = RMN remove_core = HUN } #Treaty of Trianon
+1930.1.1   = { citysize = 91580 culture = romanian }
+1956.1.1   = { citysize = 142257 }
+1977.1.1   = { citysize = 269353 }
+2011.1.1   = { citysize = 303708 }
+
+
+

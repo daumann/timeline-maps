@@ -1,0 +1,16 @@
+government = tribal_despotism
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 2
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -4
+primary_culture = afghani
+religion = hinduism
+technology_group = muslim
+capital = 451	# Kabulistan
+
+

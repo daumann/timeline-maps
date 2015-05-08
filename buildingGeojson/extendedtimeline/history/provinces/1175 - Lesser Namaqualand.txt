@@ -1,0 +1,34 @@
+newEntry1175 - Lesser Namaqualand.txt
+#1175 - Lesser Namaqualand
+
+culture = bantu
+religion = african
+capital = "Lesser Namaqualand"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 7
+
+1481.1.1 = { discovered_by = POR } # Bartolomeu Dias
+
+1835.1.1   = { 	owner = GBR 
+		controller = GBR 
+		add_core = GBR 
+		citysize = 3000 
+		trade_goods = grain
+		religion = protestant
+		capital = "Rustenburg" 
+	     }
+1880.1.1   = { citysize = 20000 trade_goods = gold }
+1886.1.1   = { capital = "Johannesburg" }
+1900.1.1   = { citysize = 60000 }
+1910.3.31  = { add_core = RSA }
+1950.1.1   = { citysize = 200000 }
+1960.10.5  = { owner = RSA controller = RSA remove_core = GBR }
+2001.1.1   = { citysize = 1009035 }
+
+
+

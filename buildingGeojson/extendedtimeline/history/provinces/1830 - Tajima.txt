@@ -1,0 +1,52 @@
+newEntry1830 - Tajima.txt
+#1830 - Tajima
+
+owner = IZU
+controller = IZU
+culture = japanese
+religion = animism
+capital = "Tottori"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 1891
+add_core = IZU
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 2082 }
+200.1.1 = { citysize = 2464 }
+300.1.1 = { citysize = 2846 }
+400.1.1 = { citysize = 3228 }
+500.1.1 = { citysize = 3610 }
+530.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = IZU }
+580.1.1 = { religion = buddhism }
+600.1.1 = { citysize = 3992 }
+700.1.1 = { citysize = 4375 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 4757 }
+900.1.1 = { citysize = 5139 }
+1000.1.1 = { citysize = 5521 }
+1100.1.1 = { citysize = 5903 }
+1192.1.1 = { owner = YMN controller = YMN add_core = YMN remove_core = JAP }
+1200.1.1 = { citysize = 6285 }
+1300.1.1 = { citysize = 6667 }
+1399.1.1 = { citysize = 7050 }
+
+1569.1.1 = { add_core = ODA }
+1573.7.3 = { add_core = JAP remove_core = ODA }
+# Nobunaga ousts Yoshiaki
+1580.5.21 = { owner = JAP controller = JAP }
+1580.7.2 = { remove_core = YMN }
+1582.9.8 = { add_core = HSK owner = HSK controller = HSK remove_core = JAP }
+1600.10.21 = { add_core = JAP owner = JAP controller = JAP remove_core = HSK }
+# Battle of Sekigahara
+1850.1.1  = { citysize = 40000 }
+1900.1.1  = { citysize = 80000 }
+1950.1.1  = { citysize = 120000 }
+2012.1.31 = { citysize = 196353 }
+
+
+

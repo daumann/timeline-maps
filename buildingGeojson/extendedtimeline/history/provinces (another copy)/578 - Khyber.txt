@@ -1,0 +1,89 @@
+#578 - Kohistan
+
+owner = IPA
+controller = IPA
+culture = afghani
+religion = hinduism
+capital = "Peshawar"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 2237
+fort1 = yes
+add_core = IPA
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+76.1.1 = { owner = KUS controller = KUS add_core = KUS remove_core = IPA }
+100.1.1 = { citysize = 2475 }
+200.1.1 = { citysize = 2950 }
+300.1.1 = { citysize = 3425 }
+375.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = KUS }
+400.1.1 = { citysize = 3900 }
+500.1.1 = { citysize = 4375 }
+550.1.1 = { owner = SHH controller = SHH add_core = SHH remove_core = HEP }
+600.1.1 = { citysize = 4850 }
+700.1.1 = { citysize = 5325 }
+800.1.1 = { citysize = 5800 }
+870.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = SHH }
+900.1.1 = { citysize = 6275 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+1000.1.1 = { citysize = 6750 }
+1002.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1100.1.1 = { citysize = 7225 }
+1175.1.1 = { owner = GHU controller = GHU add_core = GHU remove_core = GHZ }
+1200.1.1 = { fort2 = yes } #Bala Hisar
+1215.1.1 = { owner = DLH controller = DLH add_core = DLH remove_core = GHU }
+1300.1.1 = { citysize = 8175 }
+1380.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = DLH }
+1399.1.1 = { citysize = 8650 }
+
+1449.1.1 = { owner = KHO
+	     controller = KHO
+	     add_core = KHO
+	     remove_core = TIM
+	   } # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+1450.1.1 = { citysize = 12000 }
+1500.1.1 = { citysize = 14000 }
+1507.7.1 = {	owner = TIM
+		controller = TIM
+		add_core = TIM
+	   } # Kabul falls to Babur
+1526.4.21 = {	owner = MUG
+		controller = MUG
+		add_core = MUG
+	     	remove_core = TIM } #Battle of Panipat
+1550.1.1 = { citysize = 16000 }
+1600.1.1 = { citysize = 17000 }
+1625.1.1 = { marketplace = yes }
+1650.1.1 = { citysize = 19000 }
+1672.1.1 = { revolt = { type = nationalist_rebels size = 1 name = "Pathans" } }
+1675.1.1 = { revolt = { } }
+1673.1.1 = { discovered_by = ENG }
+1677.1.1 = { discovered_by = FRA }
+1700.1.1 = { citysize = 35000 }
+1707.5.12 = { discovered_by = GBR }
+1737.1.1 = { controller = PER } # Captured by Persia, Nadir Shah
+1739.5.1 = { owner = PER } # Captured by Persia, Nadir Shah
+1747.10.1 = {	owner = AFG
+	   	controller = AFG
+	   	add_core = AFG
+	   	remove_core = MUG
+	   } # Ahmad Shah established the Durrani empire
+1750.1.1 = { citysize = 40000 }
+1800.1.1 = { citysize = 90000 }
+
+1834.1.1   = { owner = PUN controller = PUN add_core = PUN remove_core = AFG }
+1849.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 60000 }
+1930.12.29 = { add_core = PAK remove_core = PUN }
+1947.8.14  = { owner = PAK controller = PAK remove_core = GBR }
+1951.1.1   = { citysize = 95940 }
+1981.1.1   = { citysize = 340286 }
+2011.1.1   = { citysize = 1151868 }
+
+
+

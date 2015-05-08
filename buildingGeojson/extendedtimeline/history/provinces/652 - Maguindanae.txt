@@ -1,0 +1,40 @@
+newEntry652 - Maguindanae.txt
+#652 - Maguindanao
+
+culture = filipino
+religion = animism
+capital = "Maguindanao"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 3
+native_size = 60
+native_ferocity = 4
+native_hostileness = 7
+discovered_by = chinese
+
+1450.1.1 = { religion = sunni }
+1520.1.1 = {
+		owner = MGD
+		controller = MGD
+		add_core = MGD
+		citysize = 5200
+		religion = sunni
+		trade_goods = spices
+	   } # Sultanate of Maguindanao
+1527.1.1 = { discovered_by = SPA }
+
+1888.1.1   = { owner = SPA controller = SPA add_core = SPA capital = "Dadiangás" }
+1872.1.1   = { add_core = PHI }
+1898.8.12  = { owner = USA controller = USA add_core = USA remove_core = SPA }
+1900.1.1   = { citysize = 40000 }
+1942.1.2   = { controller = JAP }
+1945.3.1   = { controller = USA }
+1946.7.4   = { owner = PHI controller = PHI remove_core = USA }
+1950.1.1   = { citysize = 200000 }
+1954.6.1   = { capital = "General Santos" }
+1980.1.1   = { citysize = 614124 }
+2010.1.1   = { citysize = 1449296 }
+
+
+

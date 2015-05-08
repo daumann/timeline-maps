@@ -1,0 +1,80 @@
+newEntry206 - Galicia.txt
+#206 - Galicia
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = animism
+hre = no
+base_tax = 4
+trade_goods = fish
+manpower = 3
+capital = "Lucus" 
+citysize = 1000
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1121 }
+200.1.1 = { citysize = 1342 }
+300.1.1 = { citysize = 1564 }
+395.1.17 = { citysize = 1100000 controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1785 }
+409.6.1 = { owner = EAL controller = EAL add_core = EAL culture = galician religion = germanic }
+450.1.1 = { remove_core = ROW }
+466.1.1 = { religion = arianism }
+500.1.1 = { citysize = 2007 }
+561.5.1 = { religion = chalcedonism }
+584.1.1 = { owner = GVI controller = GVI add_core = GVI add_core = GAL remove_core = EAL }
+600.1.1 = { citysize = 2228 }
+700.1.1 = { citysize = 2449 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI }
+739.1.1 = { owner = ASR controller = ASR add_core = ASR remove_core = UMA capital = "A Corunha" }
+800.1.1 = { citysize = 2671 fort1 = yes }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 2892 }
+910.12.10 = { owner = GAL controller = GAL remove_core = ASR }
+914.1.1 = { owner = LON controller = LON add_core = LON }
+1000.1.1 = { citysize = 3114 }
+1065.6.1 = { owner = GAL controller = GAL }
+1072.1.1 = { owner = LON controller = LON }
+1100.1.1 = { citysize = 3335 }
+1200.1.1 = { citysize = 3557 }
+1211.1.1 = { temple = yes } # Santiago de Compostela pilgrimage
+1230.9.23 = { owner = CAS controller = CAS add_core = CAS remove_core = LON }
+1300.1.1 = { citysize = 3778 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1   = { citysize = 5000 }
+1467.1.1   = { unrest = 4 } # Second war of the "irmandiños"
+1470.1.1   = { unrest = 0 } # End of the Second war of the "irmandiños"
+1475.6.2   = { controller = POR }
+1476.3.2   = { controller = CAS }
+1479.1.1   = { remove_core = GAL }
+1500.1.1   = { citysize = 6800 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castilla
+1550.1.1   = { citysize = 7105 marketplace = yes }
+1650.1.1   = { citysize = 10776 }
+1700.1.1   = { citysize = 14350 }
+1713.4.11  = { remove_core = CAS }
+1750.1.1   = { citysize = 19870 }
+1800.1.1   = { citysize = 22700 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 2 leader = "Fernando" } controller = REB }
+1809.1.1   = { revolt = {} controller = SPA }
+1812.10.1  = { revolt = { type = pretender_rebels size = 2 leader = "Fernando" } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 41189 }
+1900.1.1   = { citysize = 74736 }
+1950.1.1   = { citysize = 135607 }
+2008.1.1   = { citysize = 246056 }
+
+
+

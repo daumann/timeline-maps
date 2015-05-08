@@ -1,0 +1,109 @@
+newEntry539 - Tondainadu.txt
+#539 - Madras
+
+owner = CLS
+controller = CLS
+culture = telegu
+religion = hinduism
+capital = "Kanchipuram"
+trade_goods = cloth
+hre = no
+base_tax = 5
+manpower = 3
+citysize = 7407
+add_core = CLS
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+100.1.1 = { citysize = 9814 }
+200.1.1 = { citysize = 14628 owner = PAN controller = PAN add_core = PAN remove_core = CLS }
+220.1.1 = { owner = PLL controller = PLL add_core = PLL remove_core = PAN }
+300.1.1 = { citysize = 19442 }
+400.1.1 = { citysize = 24257 }
+500.1.1 = { citysize = 29071 }
+600.1.1 = { citysize = 33885 }
+700.1.1 = { citysize = 38700 }
+800.1.1 = { citysize = 43514 }
+869.1.1 = { owner = CLS controller = CLS add_core = CLS remove_core = PLL capital = "Pulicat" }
+900.1.1 = { citysize = 48328 }
+1000.1.1 = { citysize = 53142 }
+1100.1.1 = { citysize = 57957 }
+1200.1.1 = { citysize = 62771 }
+1279.1.1 = { owner = PAN controller = PAN add_core = PAN remove_core = CLS }
+1300.1.1 = { citysize = 67585 marketplace = yes }
+1350.1.1 = { owner = VIJ controller = VIJ add_core = VIJ remove_core = PAN }
+1355.1.1 = {
+		marketplace = yes #The main import/export port for the huge city of Vijayanagar
+		dock = yes	#The main import/export port for the huge city of Vijayanagar
+	   }
+1399.1.1 = { citysize = 72400 }
+
+1450.1.1 = { citysize = 35000 }
+1482.5.1 = { controller = ORI }
+1489.1.1 = { controller = VIJ }
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 38000 }
+1550.1.1 = { citysize = 38500 }
+1600.1.1 = { citysize = 36000 }
+1616.1.1 = {
+	owner = NED
+	controller = NED
+	add_core = NED
+	remove_core = VIJ
+} # Dutch east india company's capital
+1639.1.1 = {
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+	remove_core = NED
+	capital = "Madras"
+	fort2 = yes
+} # Ceded by Vijayanagara & Company Capital
+1640.1.1  = { citysize = 15000 } # Fort St George
+1700.1.1  = { citysize = 25000 }
+1707.5.12 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = ENG
+}
+1746.9.1 = { controller = FRA }
+1748.10.18 = { controller = GBR } #Peace of Aachen
+1750.1.1 = { citysize = 55000 }
+1758.6.7 = { controller = FRA }
+1760.1.22 = { controller = GBR } #Battle of Wandiwash
+1800.1.1 = { citysize = 125000 }
+1806.7.10 = {
+	revolt = {
+		type = nationalist_rebels
+		size = 3
+	}
+	controller = REB
+} # The Vellore Mutiny
+1806.7.11 = {
+	revolt = {}
+	controller = GBR
+} # British control is restored
+
+1850.1.1  = { citysize = 200000 }
+1900.1.1  = { citysize = 400000 }
+1930.1.1  = { add_core = IND }
+1947.8.15 = { owner = IND controller = IND remove_core = GBR }
+1950.1.1  = { citysize = 950000 }
+1970.1.1  = { citysize = 1600000 }
+1996.1.1  = { capital = "Chennai" }
+#2011.1.1  = { citysize = 4681087 }
+
+
+

@@ -1,0 +1,84 @@
+newEntry71 - Ansbach.txt
+# 71 - Leiningen
+
+owner = EAL
+controller = EAL
+add_core = EAL
+citysize = 1000
+culture = rheinlaender
+religion = germanic
+trade_goods = salt
+capital = "Hall"
+manpower = 1
+base_tax = 5
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+300.1.1 = { citysize = 1500 }
+380.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = EAL }
+400.1.1 = { citysize = 2000 }
+409.1.1 = { owner = ALM controller = ALM add_core = ALM remove_core = VAN }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS }
+454.1.1 = { owner = ALM controller = ALM remove_core = HNS }
+496.1.1 = { owner = FRK controller = FRK add_core = FRK }
+500.1.1 = { citysize = 2500 culture = bavarian }
+600.1.1 = { religion = chalcedonism citysize = 3000 }
+700.1.1 = { citysize = 3500 }
+800.1.1 = { citysize = 4000 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 4600 }
+911.11.10 = { owner = SWA controller = SWA add_core = SWA remove_core = FRE remove_core = ALM }
+962.2.2 = { hre = yes }
+1000.1.1 = { fort1 = yes citysize = 5200 }
+1100.1.1 = { citysize = 5900 }
+1147.1.1 = { owner = OET controller = OET add_core = OET remove_core = SWA }
+1200.1.1 = { citysize = 6600 }
+1300.1.1 = { citysize = 7300 }
+1331.1.1 = { owner = NUM controller = NUM add_core = NUM }
+1398.1.1 = { citysize = 8000 owner = ANS controller = ANS add_core = ANS remove_core = NUM remove_core = OET }
+
+1450.1.1   = { citysize = 9000 }
+1500.1.1   = { citysize = 10000 marketplace = yes }
+1522.1.1   = { religion = protestant }
+1525.1.1   = { unrest = 6 }
+1526.1.1   = { unrest = 0 }
+1600.1.1   = { citysize = 12000 constable = yes fort2 = yes }
+#1680.1.1   = { customs_house = yes }
+1700.1.1   = { citysize = 16000 regimental_camp = yes }
+1750.1.1   = { tax_assessor = yes }
+1791.12.2  = {	owner = PRU
+		controller = PRU
+		add_core = PRU
+	     } # Ansbach is sold to Prussia
+1805.12.15 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = PRU
+	     } # Treaty of Schönbrunn
+1806.1.1   = {	owner = BAV
+		controller = BAV
+		add_core = BAV
+		remove_core = FRA
+	     } # Ceded to Bavaria
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 24000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1900.1.1   = { remove_core = BAV remove_core = ANS capital = "Heilbronn" }
+1900.12.1  = { citysize = 37891 }
+1925.7.16  = { citysize = 45520 }
+1945.4.12  = { controller = USA }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.9.13  = { citysize = 64643 }
+1975.7.30  = { citysize = 114999 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2010.12.31 = { citysize = 122879 }
+
+
+

@@ -1,0 +1,82 @@
+# 191 Nevers - Principal cities: Nevers
+
+owner = ROM
+controller = ROM 
+capital = "Noviodunum"
+citysize = 1000
+culture = gallian
+religion = druidism
+hre = no
+base_tax = 6
+trade_goods = grain
+manpower = 4
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1110 }
+200.1.1 = { citysize = 1371 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB }
+268.1.1 = { controller = ROM remove_core = GLL revolt = {} }
+300.1.1 = { citysize = 1632 }
+360.1.1 = { fort1 = yes capital = "Nevirnum" religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1892 }
+461.11.1 = { owner = BUR controller = BUR add_core = BUR remove_core = ROW capital = "Nevers" culture = burgundian }
+500.1.1 = { citysize = 2153 }
+534.1.1 = { owner = FRK controller = FRK add_core = FRK }
+600.1.1 = { citysize = 2414 }
+700.1.1 = { citysize = 2675 }
+800.1.1 = { citysize = 2935 }
+840.6.21 = { owner = FRW controller = FRW add_core = FRW remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 3196 }
+987.7.3 = { owner = FRA controller = FRA add_core = FRA remove_core = FRW }
+1000.1.1 = { citysize = 3457 }
+1032.1.1 = { owner = BUR controller = BUR add_core = BUR add_core = NEV remove_core = FRA }
+1100.1.1 = { citysize = 3717 }
+1200.1.1 = { citysize = 3978 }
+1300.1.1 = { citysize = 4239 }
+1322.7.22 = { owner = FLA controller = FLA add_core = FLA }
+1384.1.30 = { owner = BUR controller = BUR add_core = BUR }
+1399.1.1 = { citysize = 4500 }
+
+1450.1.1   = { citysize = 5500 }
+1465.1.1   = { owner = NEV controller = NEV add_core = NEV remove_core = BUR } # Charles the Bold expells the Count of Nevers from court
+1500.1.1   = { citysize = 7000 }
+1530.1.1   = { fort2 = yes }
+1539.1.1   = { owner = FRA controller = FRA add_core = FRA remove_core = NEV }
+1550.1.1   = { citysize = 8000 marketplace = yes }
+1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1594.1.1   = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1600.1.1   = { citysize = 9000 }
+1639.1.1   = { unrest = 3 }
+1640.1.1   = { fort3 = yes }
+1641.1.1   = { unrest = 0 }
+1650.1.1   = { citysize = 10000 constable = yes }
+1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1   = { unrest = 4 } # An unstable peace is concluded
+1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1700.1.1   = { citysize = 11000 }
+1710.1.1   = { fort4 = yes }
+1750.1.1   = { citysize = 13000 courthouse = yes tax_assessor = yes }
+
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+		remove_core = BUR
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 30000 }
+1940.6.14  = { owner = GER controller = GER } # France surrendered to Nazi Garmany
+1944.8.25  = { owner = FR2 controller = FR2 } # France liberated by allied forces
+1950.1.1   = { citysize = 40000 }
+2004.1.1   = { citysize = 43082 }
+
+
+

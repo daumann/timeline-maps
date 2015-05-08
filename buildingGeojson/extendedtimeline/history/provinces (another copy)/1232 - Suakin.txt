@@ -1,0 +1,89 @@
+#1232 - Suakin
+
+owner = BLE
+controller = BLE
+add_core = BLE
+culture = nubian #beja
+religion = egyptian
+capital = "Suakin"
+citysize = 1021
+manpower = 1
+trade_goods = slaves
+hre = no
+base_tax = 2
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+
+100.1.1 = { citysize = 1242 }
+200.1.1 = { citysize = 1685 }
+300.1.1 = { citysize = 2128 }
+400.1.1 = { citysize = 2571 }
+500.1.1 = { citysize = 3014 }
+600.1.1 = { citysize = 3457 }
+650.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = BLE }
+655.1.1 = { religion = sunni }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 3899 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 4342 }
+868.1.1 = { owner = TUL controller = TUL add_core = TUL remove_core = ABB }
+900.1.1 = { citysize = 4785 }
+905.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = TUL }
+969.1.1 = { owner = FAT controller = FAT add_core = FAT remove_core = ABB }
+1000.1.1 = { citysize = 5228 discovered_by = western }
+1100.1.1 = { citysize = 5671 }
+1171.1.1 = { owner = AYY controller = AYY add_core = AYY remove_core = FAT }
+1200.1.1 = { citysize = 6114 }
+1250.1.1 = { owner = MAM controller = MAM add_core = MAM remove_core = AYY }
+1300.1.1 = { citysize = 6557 }
+1399.1.1 = { citysize = 7000 }
+
+1450.1.1 = { citysize = 8000 }
+1500.1.1 = { citysize = 9000 }
+1510.1.1 = {	discovered_by = NUB
+		owner = NUB
+		controller = NUB
+		add_core = NUB
+		remove_core = MAM
+	   } # Funj replace Mamluks in control of Suakin
+1524.1.1 = {	owner = TUR
+		controller = TUR
+		add_core = TUR	
+	   } # Ottomans occupy Suakin
+1550.1.1 = { citysize = 10000 }
+1571.1.1 = { unrest = 8 } # Local Beja revolt against Ottoman governors
+1572.1.1 = { unrest = 0 } # Ottomans crush Beja revolt
+1600.1.1 = { citysize = 12000 }
+1650.1.1 = { citysize = 12500 }
+1700.1.1 = { citysize = 13500 }
+1750.1.1 = { citysize = 14500 }
+1800.1.1 = { citysize = 15500 }
+
+1850.1.1   = { citysize = 20000 }
+1867.6.8   = { owner = EGY controller = EGY add_core = EGY }
+1882.9.13  = { owner = GBR controller = GBR add_core = GBR remove_core = TUR }
+1899.6.19  = { add_core = SUD remove_core = NUB }
+1900.1.1   = { citysize = 50000 }
+1909.1.1   = { capital = "Port Sudan" }
+1950.1.1   = { citysize = 150000 }
+1956.1.1   = { owner = SUD controller = SUD remove_core = GBR remove_core = EGY }
+2007.1.1   = { citysize = 489275 }
+
+
+

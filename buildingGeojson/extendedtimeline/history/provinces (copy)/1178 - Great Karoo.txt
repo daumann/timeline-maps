@@ -1,0 +1,32 @@
+#1178 - Great Karoo
+
+culture = bantu
+religion = african
+capital = "Great Karoo"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 1
+
+1750.1.1 = { discovered_by = NED } # Farmers migrated up to the Great Fish river
+
+1846.1.1   = { 	owner = GBR 
+		controller = GBR 
+		add_core = GBR 
+		citysize = 3000 
+		trade_goods = copper
+		religion = reformed
+	     }
+1880.1.1   = { citysize = 6000 }
+1900.1.1   = { citysize = 20000 }
+1903.1.1   = { capital = "De Aar" }
+1910.3.31  = { add_core = RSA }
+1950.1.1   = { citysize = 80000 }
+1960.10.5  = { owner = RSA controller = RSA remove_core = GBR }
+2001.1.1   = { citysize = 328773 }
+
+
+

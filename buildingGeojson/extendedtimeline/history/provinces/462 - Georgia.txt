@@ -1,0 +1,72 @@
+newEntry462 - Georgia.txt
+#462 - Georgia
+
+owner = PON
+controller = PON
+add_core = PON
+citysize = 1000
+culture = georgian
+religion = hellenism
+capital = "Phasis"
+trade_goods = wine
+hre = no
+base_tax = 2
+manpower = 2
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = nomad_group
+
+62.1.1 = { owner = ROM controller = ROM add_core = ROM }
+80.1.1 = { remove_core = PON }
+350.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+654.1.1 = { owner = IBE controller = IBE add_core = IBE add_core = RAS remove_core = BYZ }
+661.1.1 = { add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 1700 }
+750.1.1 = { add_core = ABB remove_core = UMA }
+780.1.1 = { owner = ABK controller = ABK add_core = ABK remove_core = IBE remove_core = ABB }
+800.1.1 = { citysize = 2400 fort1 = yes }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 3100 }
+1000.1.1 = { citysize = 3800 }
+1008.1.1 = { owner = GEO controller = GEO add_core = GEO remove_core = ABK capital = "Batumi" }
+1100.1.1 = { citysize = 4500 }
+1200.1.1 = { citysize = 5200 }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = ILK controller = ILK add_core = ILK remove_core = MGE }
+1300.1.1 = { citysize = 5900 }
+1314.1.1 = { owner = GEO controller = GEO add_core = GEO remove_core = ILK }
+1399.1.1 = { citysize = 6600 }
+
+1458.1.1  = { revolt_risk = 5 } # Safavid campaign against Georgia
+1460.1.1  = { revolt_risk = 0 } # Defeated by Shirwan Shah
+1463.1.1  = { owner = IME controller = IME add_core = IME } # Independence of Imereti
+1614.1.1  = { revolt_risk = 6 } # Overrun several times by Persian troops
+1617.1.1  = { revolt_risk = 2 citysize = 5240 } # Thousands were killed or resettled in Iran
+1625.1.1  = { revolt_risk = 8 } # Insurrection, headed by Giorgi Saakadze
+1630.1.1  = { revolt_risk = 0 }
+1650.1.1  = { citysize = 6500 }
+1659.1.1  = { revolt_risk = 4 } # Anti-Ottoman revolts
+1665.1.1  = { revolt_risk = 0 }
+1700.1.1  = { citysize = 8560 }
+1750.1.1  = { citysize = 10287 }
+1800.1.1  = { citysize = 14200 }
+1810.2.20 = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+	    } # Annexed by Russia
+
+1850.1.1   = { citysize = 16000 }
+1900.1.1   = { citysize = 20000 }
+1918.5.26  = { owner = GEO controller = GEO }
+1921.2.25  = { owner = RUS controller = RUS }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 30000 }
+1991.4.9   = { owner = GEO controller = GEO remove_core = SOV remove_core = RUS }
+2010.1.1   = { citysize = 39100 }
+
+

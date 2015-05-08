@@ -1,0 +1,67 @@
+#Country Name: Please seefilename.
+
+graphical_culture = africangfx
+
+color = { 169  50  129 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Philibert #0" = 10
+	"Gabriel #0" = 10
+	"Richard #0" = 10
+	"Gilles #0" = 10
+	"Didier #0" = 10
+	"Albert #0" = 10
+	"Norbert #0" = 10
+	"Marc #0" = 10
+	"Andry #0" = 10
+	"Jean #0" = 10
+	"Roland #0" = 10
+	"Herizo #0" = 10
+	"Ny Hasina #0" = 10
+	"Elia #0" = -10
+	"Pety #0" = 10
+	"Jules #0" = 10
+	"Daniel #0" = 10
+	"Manandafy #0" = 10
+	"Philippe #0" = 10
+	"Ferdinand #0" = 10
+	"Salman #0" = 10
+}
+
+leader_names = {
+	Tsiranana Ramanantsoa Ratsimandrava Andriamahazo Ratsiraka Zafy Ratsirahonana
+	Ravalomanana Rajoelina Lahiniriko Razafimahaleo Andriamanjato Ravelomanantsoa
+	Rakotoniaina Randrianjoary Rajakoba Rakotonirina Razakarimanana Khan
+}
+
+ship_names = {
+	Mlima Moto Moshi Homu Ukungu Nyota
+	Jua Maji Mwezi Mnyama Samaki Ndege
+	Mbwa Nyoka Ua Damu
+}
+
+
+

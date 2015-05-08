@@ -1,0 +1,68 @@
+#725 - Hinggan
+
+owner = XIB
+controller = XIB
+culture = chahar
+religion = tengri
+capital = "Sartu"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 3
+citysize = 2760
+add_core = XIB
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 3021 }
+200.1.1 = { citysize = 3542 }
+300.1.1 = { citysize = 4064 }
+330.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = XIB }
+400.1.1 = { citysize = 4585 }
+500.1.1 = { citysize = 5107 }
+547.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU }
+560.1.1 = { religion = buddhism }
+600.1.1 = { citysize = 5628 }
+700.1.1 = { citysize = 6150 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GOK }
+800.1.1 = { citysize = 6671 }
+848.1.1 = { owner = KHT controller = KHT add_core = KHT remove_core = UIG }
+900.1.1 = { citysize = 7192 fort1 = yes }
+907.1.1 = { owner = LIO controller = LIO add_core = LIO remove_core = KHT }
+1000.1.1 = { citysize = 7714 }
+1100.1.1 = { citysize = 8235 }
+1115.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = LIO }
+1200.1.1 = { citysize = 8757 }
+1214.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = JIN }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 9278 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1389.1.1 = { owner = KRC controller = KRC add_core = KRC remove_core = KHA }
+1399.1.1 = { citysize = 9800 }
+
+1624.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = KRC
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+	    } # The Qing Dynasty
+1709.1.1 = { discovered_by = SPA }
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 70000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1932.2.4   = { controller = JAP }
+1932.2.18  = { owner = MCK controller = MCK add_core = MCK }
+1945.8.15  = { owner = CHN controller = CHN remove_core = MCK }
+1950.1.1   = { citysize = 180000 }
+1959.1.1   = { capital = "Taching" trade_goods = oil }
+1979.1.1   = { capital = "Daqing" }
+2004.1.1   = { citysize = 290000 }
+
+
+

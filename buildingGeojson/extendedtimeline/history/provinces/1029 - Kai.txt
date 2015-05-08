@@ -1,0 +1,49 @@
+newEntry1029 - Kai.txt
+#1029 - Shinano
+
+owner = YAM
+controller = YAM
+culture = emishi
+religion = animism
+capital = "Kofu"
+trade_goods = gold
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 1439
+add_core = YAM
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 1578 }
+150.1.1 = { culture = japanese }
+200.1.1 = { citysize = 1857 }
+300.1.1 = { citysize = 2135 }
+400.1.1 = { citysize = 2414 }
+500.1.1 = { citysize = 2692 }
+600.1.1 = { citysize = 2971 }
+607.1.1 = { religion = buddhism }
+700.1.1 = { citysize = 3249 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 3528 }
+900.1.1 = { citysize = 3807 }
+1000.1.1 = { citysize = 4085 }
+1100.1.1 = { citysize = 4364 }
+1192.1.1 = { owner = TKD controller = TKD add_core = TKD remove_core = JAP }
+1200.1.1 = { citysize = 4642 }
+1300.1.1 = { citysize = 4921 }
+1399.1.1 = { citysize = 5200 }
+
+1542.1.1   = { discovered_by = POR }
+1582.4.3 = { add_core = JAP owner = JAP controller = JAP remove_core = TKD }
+1600.9.15 = { owner = TKG controller = TKG add_core = TKG remove_core = JAP }
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1850.1.1  = { citysize = 20000 }
+1900.1.1  = { citysize = 50000 }
+1950.1.1  = { citysize = 120000 }
+2011.9.1  = { citysize = 243564 }
+
+
+

@@ -1,0 +1,87 @@
+newEntry239 - Gloucestershire.txt
+#239 - Gloucestershire
+
+owner = ERG
+controller = ERG
+culture = briton
+religion = druidism
+hre = no
+base_tax = 6
+trade_goods = fish
+manpower = 4
+capital = "Abona"
+citysize = 1000
+add_core = ERG
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+43.1.1 = { owner = ROM controller = ROM add_core = ROM }
+300.1.1 = { culture = welsh }
+380.1.1 = { add_core = ERG }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2500 }
+410.1.1 = { owner = ERG controller = ERG add_core = ERG remove_core = ROW capital = "Brycgstow" culture = welsh }
+500.1.1 = { citysize = 3000 }
+590.1.1 = { owner = WSX controller = WSX add_core = WSX }
+600.1.1 = { citysize = 3500 culture = anglo_saxon religion = germanic }
+645.1.1 = { owner = MRC controller = MRC add_core = MRC }
+648.1.1 = { owner = WSX controller = WSX remove_core = MRC }
+650.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 4000 }
+800.1.1 = { citysize = 4500 }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 5000 }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG remove_core = ERG capital = "Bristol" }
+1000.1.1 = { citysize = 5600 remove_core = WSX }
+1066.12.25 = { culture = english }
+1088.1.1 = { fort1 = yes }
+1100.1.1 = { citysize = 6200 }
+1200.1.1 = { citysize = 6800 }
+1300.1.1 = { citysize = 7400 }
+1377.1.1 = { citysize = 9518 }
+
+1450.1.1  = { citysize = 10000 }
+1453.1.1  = { unrest = 5 } # Start of the War of the Roses
+1461.6.1  = { unrest = 2 } # Coronation of Edward IV
+1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1  = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1475.1.1  = { marketplace = yes } # Estimated
+1483.6.26 = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1520.1.1  = { citysize = 10000 }
+1541.1.1  = { religion = protestant temple = yes } # Gloucester Cathedral, from a Dissolved Benedictine Priory
+1575.1.1  = { shipyard = yes base_tax = 7 } # Estimated
+1600.1.1  = { citysize = 12000 fort2 = yes } # customs_house = yes Customs House Estimated
+1642.8.22 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Start of First English Civil War
+1643.7.26 = { revolt = {} controller = ENG }
+1645.9.10 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Surrender of Bristol
+1646.5.5  = { revolt = {} controller = ENG } # End of First English Civil War
+1650.1.1  = { citysize = 18000 }
+1675.1.1  = { constable = yes } # Estimated
+1700.1.1  = { citysize = 21000 }
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1750.1.1  = { citysize = 45000 }
+1775.1.1  = { tax_assessor = yes } # Estimated
+1800.1.1  = { citysize = 61000 }
+
+1821.1.1 = { citysize = 99151 }
+1841.1.1 = { citysize = 144803 }
+1861.1.1 = { citysize = 194229 }
+1881.1.1 = { citysize = 262797 }
+1901.1.1 = { citysize = 323698 }
+1931.1.1 = { citysize = 384204 }
+1961.1.1 = { citysize = 425214 }
+1991.1.1 = { citysize = 396559 }
+2011.1.1 = { citysize = 428200 }
+
+
+

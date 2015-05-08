@@ -1,0 +1,53 @@
+newEntry602 - Chiang Rai.txt
+#602 - Chiang Rai
+
+culture = northern_thai
+religion = animism
+capital = "Chiang Rai"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_size = 10
+native_ferocity = 2
+native_hostileness = 1
+discovered_by = chinese
+discovered_by = indian
+
+500.1.1 = { religion = buddhism }
+550.1.1 = { owner = DVA controller = DVA add_core = DVA citysize = 11000 trade_goods = grain }
+600.1.1 = { citysize = 11357 }
+661.1.1 = { owner = HRP controller = HRP add_core = HRP remove_core = DVA }
+700.1.1 = { citysize = 12750 }
+800.1.1 = { citysize = 14142 }
+900.1.1 = { citysize = 15535 }
+1000.1.1 = { citysize = 16928 }
+1100.1.1 = { citysize = 18321 }
+1200.1.1 = { citysize = 19714 }
+1292.1.1 = { owner = LNA controller = LNA add_core = LNA remove_core = HRP }
+1300.1.1 = { citysize = 21107 }
+1399.1.1 = { citysize = 22500 }
+
+1450.1.1 = { citysize = 24500 }
+1500.1.1 = { citysize = 27800 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 29654 }
+1558.4.2 = { add_core = TAU } # Burmese vassal
+1600.1.1 = { citysize = 31240 }
+1650.1.1 = { citysize = 33000 }
+1700.1.1 = { citysize = 35487 }
+1727.1.1 = { unrest = 6 } # Lan Na revolter against Taungu
+1732.1.1 = { unrest = 0 }
+1750.1.1 = { citysize = 37720 }
+1775.1.15 = { add_core = AYU } # Siamese vassal
+1800.1.1 = { citysize = 39750 }
+
+1850.1.1   = { citysize = 50000 }
+1884.1.1   = { owner = AYU controller = AYU add_core = AYU remove_core = LNA }
+1900.1.1   = { citysize = 80000 }
+1932.7.24  = { owner = THL controller = THL add_core = THL remove_core = AYU }
+1950.1.1   = { citysize = 120000 }
+2010.1.1   = { citysize = 199699 }
+
+
+

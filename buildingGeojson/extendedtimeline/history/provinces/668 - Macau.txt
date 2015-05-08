@@ -1,0 +1,80 @@
+newEntry668 - Macau.txt
+#668 - Macau
+
+owner = HND
+controller = HND
+culture = cantonese
+religion = confucianism
+capital = "Macau"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 1000
+add_core = HND
+add_core = WUU
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+200.1.1 = { citysize = 1042 }
+220.1.1 = { owner = WUU controller = WUU add_core = WUU remove_core = HND }
+280.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = WUU }
+300.1.1 = { citysize = 1114 }
+400.1.1 = { citysize = 1185 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 1257 }
+502.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LNG }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+600.1.1 = { citysize = 1328 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 1399 }
+800.1.1 = { citysize = 1471 }
+900.1.1 = { citysize = 1542 }
+907.6.1 = { owner = HND controller = HND add_core = HND remove_core = TNG }
+971.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = HND }
+1000.1.1 = { citysize = 1614 }
+1100.1.1 = { citysize = 1685 }
+1200.1.1 = { citysize = 1757 }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA add_core = CZH remove_core = SNG }
+1300.1.1 = { citysize = 1828 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 1900 }
+
+1450.1.1 = { citysize = 2600 }
+1500.1.1 = { citysize = 3180 }
+1514.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 6200 }
+# 1550.1.1 - Portuguese trading post
+1557.1.1 = { marketplace = yes } # Portuguese settlers
+1600.1.1 = { citysize = 7345 }
+1605.1.1 = { fort1 = yes }
+1650.1.1 = { citysize = 8100 } #customs_house = yes
+1662.1.1 = {
+	owner = CZH
+	controller = CZH
+	remove_core = MNG
+} # The Three Feudatories
+1670.1.1 = {	owner = POR
+	controller = POR
+	add_core = POR
+} # Leased by Portugal
+1700.1.1 = { citysize = 9564 }
+1750.1.1 = { citysize = 10457 }
+1760.1.1 = { tax_assessor = yes }
+1800.1.1 = { citysize = 13458 }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 80000 }
+1912.2.12  = { add_core = CHN remove_core = CZH }
+1950.1.1   = { citysize = 300000 }
+1999.12.20 = { owner = CHN controller = CHN remove_core = POR }
+2012.1.1   = { citysize = 568700 }
+
+
+

@@ -1,0 +1,146 @@
+
+rise_of_islam = {
+	land_morale = 1.0
+	discipline = 0.2
+	global_tax_modifier = 0.25
+	global_manpower_modifier = 0.25
+	diplomatic_reputation = 5
+	global_unrest = -4
+	infantry_cost = -0.5
+	cavalry_cost = -0.5
+	land_forcelimit_modifier = 0.5
+}
+
+grand_tournament = {
+	prestige = 0.5
+	stability_cost_modifier = -0.10
+}
+
+recent_conversion = {
+	global_unrest = 2
+	stability_cost_modifier = 0.20
+}
+
+nomadic_conquest = {
+	global_unrest = -2
+	global_tax_modifier = 0.5
+	global_manpower_modifier = 0.5
+	land_morale = 1.0
+	discipline = 0.2
+	infantry_cost = -0.5
+	cavalry_cost = -0.5
+	land_forcelimit_modifier = 0.5
+}
+
+pax_romana = {
+	global_unrest = -1
+	stability_cost_modifier = -0.10
+	global_manpower_modifier = -0.10
+	land_forcelimit_modifier = -0.10
+	core_creation = 0.10
+	land_maintenance_modifier = 0.2
+}
+
+empire_destabilized = {
+	global_tax_modifier = -0.2
+	stability_cost_modifier = 0.2
+	global_manpower_modifier = -0.2
+	land_forcelimit_modifier = -0.2
+	global_unrest = 1
+}
+
+empire_declining = {
+	global_tax_modifier = -0.4
+	stability_cost_modifier = 0.4
+	global_manpower_modifier = -0.4
+	land_forcelimit_modifier = -0.4
+	global_unrest = 2
+	production_efficiency = -0.1
+	trade_efficiency = -0.1
+}
+
+empire_fragmenting = {
+	global_tax_modifier = -0.6
+	stability_cost_modifier = 0.6
+	global_manpower_modifier = -0.6
+	land_forcelimit_modifier = -0.6
+	production_efficiency = -0.2
+	trade_efficiency = -0.2
+	global_unrest = 3
+}
+
+empire_collapsing = {
+	global_tax_modifier = -0.8
+	stability_cost_modifier = 0.8
+	global_manpower_modifier = -0.8
+	land_forcelimit_modifier = -0.8
+	production_efficiency = -0.3
+	trade_efficiency = -0.3
+	global_unrest = 4
+}
+
+total_collapse = {
+	global_tax_modifier = -2
+	stability_cost_modifier = 2
+	global_manpower_modifier = -2
+	land_forcelimit_modifier = -2
+	production_efficiency = -0.6
+	trade_efficiency = -0.6
+	global_unrest = 6
+}
+
+country_restabilized = {
+	stability_cost_modifier = 0.10
+}
+
+barbarian_migration = {
+	global_manpower_modifier = 0.5
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.2
+	land_morale = 0.50
+}
+
+gods_pleased = {
+	global_missionary_strength = 0.02
+	land_morale = 0.10
+	stability_cost_modifier = -0.10
+}
+
+norse_exploration = {
+	prestige = 0.2
+}
+
+norse_colonization = {
+	colonists = 1
+	range = 1
+}
+
+working_class_benefits = {
+	global_tax_modifier = -0.2
+	global_manpower_modifier = -0.1
+	global_unrest = -1
+}
+
+working_class_restricted = {
+	global_unrest = 1
+}
+
+suppress_marxist_thinkers = {
+	global_unrest = 1
+}
+
+corrupted_government = {
+	global_unrest = 1
+}
+
+mass_deportation = {
+	global_unrest = 2
+}
+
+minority_restrictions = {
+	global_unrest = 1
+}
+
+suppress_fascist_thinkers = {
+	global_unrest = 1
+}

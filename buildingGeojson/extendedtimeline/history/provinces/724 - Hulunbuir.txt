@@ -1,0 +1,66 @@
+newEntry724 - Hulunbuir.txt
+#724 - Yakesa
+
+culture = chahar
+religion = tengri
+capital = "Hulunbuir"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+discovered_by = chinese
+discovered_by = nomad_group
+native_size = 15
+native_ferocity = 1
+native_hostileness = 3
+
+580.1.1 = { owner = GOK controller = GOK add_core = GOK citysize = 1000 trade_goods = wool }
+700.1.1 = { citysize = 1200 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GOK }
+800.1.1 = { citysize = 1400 }
+848.1.1 = { owner = TAT controller = TAT add_core = TAT remove_core = UIG }
+1200.1.1 = { citysize = 1900 }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = TAT }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { fort1 = yes }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1389.1.1 = { owner = KRC controller = KRC add_core = KRC remove_core = KHA }
+1399.1.1 = { citysize = 2500 }
+
+1450.1.1 = { citysize = 2910 }
+1500.1.1 = { citysize = 3800 }
+1550.1.1 = { citysize = 4350 }
+1552.1.1 = {	owner = KHA
+		controller = KHA
+		add_core = KHA
+	   } # The Oirads are defeated & Altan Khan reunites the the area.
+1586.1.1 = { religion = buddhism } # State religion
+1600.1.1 = { citysize = 5520 }
+1624.1.1 = {	owner = MCH
+		controller = MCH
+		add_core = MCH
+		remove_core = KHA
+	    } # The Later Jin Khanate
+1636.5.15 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		remove_core = MCH
+	    } # The Qing Dynasty
+1650.1.1 = { citysize = 6704 }
+1700.1.1 = { citysize = 7240 }
+1709.1.1 = { discovered_by = SPA }
+1750.1.1 = { citysize = 8620 }
+1800.1.1 = { citysize = 9200 }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 60000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1932.2.18  = { owner = MCK controller = MCK add_core = MCK }
+1945.8.15  = { owner = CHN controller = CHN remove_core = MCK }
+1950.1.1   = { citysize = 200000 }
+1983.1.1   = { capital = "Yakeshi" }
+2007.1.1   = { citysize = 391627 }
+
+
+

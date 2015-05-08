@@ -1,0 +1,83 @@
+newEntry2388 - Prek Ruisey.txt
+#605 - Prey Nokor
+
+owner = FUN
+controller = FUN
+culture = khmer
+religion = hinduism
+capital = "Prek Russey"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 3264
+add_core = FUN
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+10.1.1   = {
+		add_permanent_province_modifier = {
+			name = mekong_estuary_modifier
+			duration = -1
+		}
+}
+
+100.1.1 = { citysize = 3528 }
+200.1.1 = { citysize = 4057 }
+300.1.1 = { citysize = 4585 }
+400.1.1 = { citysize = 5114 }
+500.1.1 = { citysize = 5642 }
+550.1.1 = { owner = CNA controller = CNA add_core = CNA remove_core = FUN }
+600.1.1 = { citysize = 6171 }
+700.1.1 = { citysize = 6699 }
+800.1.1 = { citysize = 7228 }
+802.1.1 = { owner = KHM controller = KHM add_core = KHM remove_core = CNA }
+900.1.1 = { citysize = 7757 }
+1000.1.1 = { citysize = 8285 }
+1100.1.1 = { citysize = 8814 }
+1200.1.1 = { citysize = 9342 }
+1300.1.1 = { citysize = 9871 }
+1399.1.1 = { citysize = 10400 }
+
+1450.1.1 = { citysize = 7800 }
+1500.1.1 = { citysize = 10583 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 11358 }
+1600.1.1 = { citysize = 13544 }
+#1623.1.1 = { customs_house = yes }
+1650.1.1 = { citysize = 15187 }
+1700.1.1 = { citysize = 17280 }
+1750.1.1 = { citysize = 18450 }
+1769.1.1 = {
+	unrest = 6 # Tai Son revolt
+		} # Tai Son revolt
+1788.9.1 = {
+		unrest = 0
+		owner = ANN
+		controller = ANN
+		add_core = ANN
+		remove_core = KHM
+	   } # Nguyen recovered the land
+1800.1.1 = { citysize = 20580 }
+
+1850.1.1   = { citysize = 40000 }
+1858.1.1   = { owner = FRA controller = FRA add_core = FRA }
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1886.4.1   = { add_core = VTN remove_core = DAI }
+1900.1.1   = { citysize = 100000 capital = "Can Tho" }
+1941.7.1   = { controller = JAP }
+1945.8.23  = { controller = FR2 }
+1949.11.9  = { owner = SVI controller = SVI add_core = SVI remove_core = FR2 }
+1950.1.1   = { citysize = 400000 }
+1960.1.1   = { culture = vietnamese }
+1976.7.2   = { owner = VTN controller = VTN remove_core = SVI }
+2004.1.1   = { citysize = 1121000 }
+
+
+

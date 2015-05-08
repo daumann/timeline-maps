@@ -1,0 +1,132 @@
+country_decisions = {
+
+	dummy_empire_declining = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = empire_destabilized
+			add_country_modifier = {
+				name = empire_declining
+			duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_empire_fragmenting = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = empire_declining
+			add_country_modifier = {
+				name = empire_fragmenting
+			duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_empire_collapsing = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = empire_fragmenting
+			add_country_modifier = {
+				name = empire_collapsing
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_clear_decline = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			remove_country_modifier = empire_destabilized
+			remove_country_modifier = empire_declining
+			remove_country_modifier = empire_fragmenting
+			remove_country_modifier = empire_collapsing
+			remove_country_modifier = total_collapse
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_pax_romana = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = pax_romana
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_rise_of_islam = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = rise_of_islam
+				duration = 10950
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	dummy_nomad_conquest = {
+		potential = {
+			always = no
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = nomadic_conquest
+				duration = 21900
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

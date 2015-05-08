@@ -1,0 +1,127 @@
+#525 - Ajmer
+
+owner = WSA
+controller = WSA
+culture = kanauji
+religion = hinduism
+capital = "Gwalior"
+trade_goods = dyes
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 3321
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 3643 }
+200.1.1 = { citysize = 4286 }
+300.1.1 = { citysize = 4929 }
+375.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+400.1.1 = { citysize = 5572 }
+500.1.1 = { citysize = 6216 }
+580.1.1 = { owner = CCH controller = CCH add_core = CCH remove_core = GUP }
+600.1.1 = { citysize = 6859 }
+606.1.1 = { owner = HRS controller = HRS add_core = HRS remove_core = CCH }
+647.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = HRS }
+700.1.1 = { citysize = 7502 }
+780.1.1 = { owner = PAA controller = PAA add_core = PAA remove_core = GUR }
+800.1.1 = { citysize = 8145 }
+880.1.1 = { owner = CCH controller = CCH add_core = CCH remove_core = PAA }
+900.1.1 = { citysize = 8788 }
+1000.1.1 = { citysize = 9432 }
+1100.1.1 = { citysize = 10075 }
+1192.1.1 = { owner = PRR controller = PRR add_core = PRR remove_core = CCH }
+1200.1.1 = { citysize = 10718 }
+1226.1.1 = { owner = GWA controller = GWA add_core = GWA remove_core = PRR }
+1250.1.1 = { fort2 = yes }
+1300.1.1 = { citysize = 11361 }
+1399.1.1 = { citysize = 12005 }
+
+1450.1.1 = { citysize = 78000 }
+1500.1.1 = { citysize = 90000 }
+1518.5.1 = { owner = DLH controller = DLH } #Conquered by Ibrahim Lodi
+1526.4.21 = {
+	owner = GWA
+	controller = GWA
+} # Panipat
+1527.1.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Conquered by Mughals
+1540.1.1 = {
+	owner = GWA
+	controller = GWA
+} # Sher Shah Conquers Delhi
+1543.1.1 = { 
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+	fort3 = yes
+} # Suri Expansion
+1550.1.1 = { citysize = 70000 }
+1553.1.1 = {
+	owner = DLH
+	controller = DLH
+	remove_core = BNG
+} #Death of Islam Shah Sur, Suri empire split
+1558.1.1 = { controller = MUG }	#Gwalior surrenders after almost a two year seige
+1558.2.1 = { owner = MUG}
+1600.1.1 = { citysize = 55000 }
+1622.5.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 3
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #Should be named Khurram at this point
+1622.6.1 = {
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #Should be named Khurram at this point
+1622.8.1 = { controller = MUG revolt = { } } #Defeated and flees south to Khandesh
+1650.1.1 = { citysize = 39000 }
+1658.2.10 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Aurangzeb's Faction"
+		leader = "Aurangzeb Alamgir Timurid"
+	}
+} # Battle of Dharmat, Murad Bakhsh and Aurangzeb beat Shah Jahans army
+1658.6.8 = {
+	controller = MUG
+	revolt = { }
+} #Shah Jahan surrenders and becomes the prisoner of his son Aurangzeb
+1690.1.1 = { discovered_by = ENG }
+1700.1.1 = { citysize = 30000 }
+1707.5.12 = { discovered_by = GBR }
+1737.1.1 = {
+	owner = GWA
+	controller = GWA
+	remove_core = MUG
+}
+1750.1.1 = { citysize = 45000 }
+1800.1.1 = { citysize = 60000 }
+
+1850.1.1  = { citysize = 50000 }
+1900.1.1  = { citysize = 120000 }
+1930.1.1  = { add_core = IND }
+1947.8.15 = { owner = IND controller = IND remove_core = GWA }
+1950.1.1  = { citysize = 300000 }
+2011.1.1  = { citysize = 542580 }
+
+
+

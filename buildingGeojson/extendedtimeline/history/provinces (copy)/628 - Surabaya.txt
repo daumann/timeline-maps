@@ -1,0 +1,59 @@
+#628 - Surabaya
+
+culture = javanese
+religion = hinduism
+capital = "Jepara"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 3
+native_size = 30
+native_ferocity = 2
+native_hostileness = 6
+discovered_by = chinese
+
+752.1.1 = { owner = MTR controller = MTR add_core = MTR citysize = 8000 trade_goods = cotton }
+1019.1.1 = { owner = BLI controller = BLI add_core = BLI remove_core = MTR }
+1045.1.1 = { owner = KDR controller = KDR add_core = KDR remove_core = BLI }
+1222.1.1 = { owner = SIN controller = SIN add_core = SIN remove_core = KDR }
+1293.1.1 = { owner = MAJ controller = MAJ add_core = MAJ remove_core = SIN capital = "Demak" }
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+
+1475.1.1  = {
+		owner = DMK
+		controller = DMK
+		add_core = DMK
+		remove_core = MAJ
+		religion = sunni
+} # Demak Sultanate was established
+1509.1.1 = { discovered_by = POR }
+1587.1.1  = {
+		owner = MTR
+		controller = MTR
+		add_core = MTR
+		remove_core = DMK
+} # Mataram Sultanate was established
+1613.1.1 = { discovered_by = NED } # The Dutch arrived
+1631.1.1 = { unrest = 5 } # Rebellion against Mataram rule
+1636.1.1 = { unrest = 0 }
+1650.1.1 = { citysize = 34480 }
+1682.1.1 = { owner = NED controller = NED add_core = NED capital = "Semarang" }
+1700.1.1 = { citysize = 35100 }
+1750.1.1 = { citysize = 36860 }
+1800.1.1 = { citysize = 38889 }
+
+1840.1.1   = { religion = sunni }
+1850.1.1   = { citysize = 70000 }
+1900.1.1   = { citysize = 250000 }
+1912.9.10  = { add_core = IDN remove_core = MTR }
+1942.3.1   = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 950000 }
+1980.1.1   = { citysize = 1400000 }
+#2010.1.1   = { citysize = 2765908 }
+
+
+

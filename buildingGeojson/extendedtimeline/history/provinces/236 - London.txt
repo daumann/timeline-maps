@@ -1,0 +1,103 @@
+newEntry236 - London.txt
+#236 - London
+
+owner = ROM
+controller = ROM
+culture = briton
+religion = druidism
+hre = no
+base_tax = 6
+trade_goods = grain
+manpower = 6
+capital = "Londinium"
+citysize = 10000
+add_core = ROM
+fort1 = yes
+marketplace = yes
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = thames_estuary_modifier
+			duration = -1
+		}
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+100.1.1 = { citysize = 30000 }
+140.1.1 = { citysize = 50000 }
+200.1.1 = { citysize = 30000 }
+250.1.1 = { religion = hellenism }
+300.1.1 = { citysize = 15000 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+420.1.1 = { owner = ESX controller = ESX add_core = ESX remove_core = ROW capital = "Lundenwic" religion = germanic base_tax = 8 culture = anglo_saxon }
+500.1.1 = { citysize = 4500 }
+600.1.1 = { citysize = 5000 }
+670.1.1 = { owner = MRC controller = MRC add_core = MRC remove_core = ESX }
+675.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 5500 }
+800.1.1 = { citysize = 6000 }
+867.1.1 = { religion = catholic }
+871.1.1 = { controller = DAN }
+886.1.1 = { controller = MRC }
+900.1.1 = { citysize = 6500 }
+911.1.1 = { owner = WSX controller = WSX add_core = WSX remove_core = MRC capital = "London" }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG }
+1000.1.1 = { citysize = 7000 }
+1027.1.1 = { remove_core = WSX }
+1050.1.1 = { citysize = 10000 base_tax = 10 }
+1065.12.28 = { temple = yes } #Westminster Abbey
+1066.12.25 = { culture = english }
+1078.1.1 = { fort2 = yes } #Tower of London
+1100.1.1 = { citysize = 15000 }
+1200.1.1 = { citysize = 20000 base_tax = 12 }
+1300.1.1 = { citysize = 25000 }
+1350.1.1 = { citysize = 30000 }
+
+1450.1.1  = { citysize = 40000 }
+1453.1.1  = { unrest = 5 } # Start of the War of the Roses
+1459.1.1  = { unrest = 7 } # Increasing Popularity of Warwick in London
+1460.1.1  = { unrest = 0 revolt = { type = revolutionary_rebels size = 1 } controller = REB }
+1461.6.1  = { revolt = {} unrest = 2 controller = ENG } # Coronation of Edward IV
+1467.1.1  = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1  = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4  = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26 = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23 = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1500.1.1  = { constable = yes } # Estimated
+1520.1.1  = { citysize = 60000 }
+1525.1.1  = { courthouse = yes } # Estimated
+1536.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 80000 }
+1575.1.1  = { regimental_camp = yes } # Estimated
+1580.1.1  = { base_tax = 13 }
+#1585.1.1  = { customs_house = yes } # Estimated
+1600.1.1  = { citysize = 200000 }
+1640.1.1  = { workshop = yes } # Estimated
+1642.8.22 = { revolt = { type = revolutionary_rebels size = 2 leader = "Oliver Cromwell" } controller = REB } # Start of First English Civil War
+1646.5.5  = { revolt = {} controller = ENG } # End of First English Civil War
+1650.1.1  = { tax_assessor = yes fort3 = yes base_tax = 15 } # Estimated
+1665.1.1  = { citysize = 400000 }
+1666.1.1  = { citysize = 315000 } # Great Plague of London
+1700.1.1  = { citysize = 575000 fine_arts_academy = yes } # First Bequest to the British Museum
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    	base_tax = 16
+	    }
+1741.1.1  = { war_college = yes base_tax = 18 } # Royal Military Academy, Woolwich
+1750.1.1  = { citysize = 675000 }
+1800.1.1  = { citysize = 900000 }
+
+
+
+

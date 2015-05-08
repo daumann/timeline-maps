@@ -1,0 +1,40 @@
+#852 - Mexico
+
+owner = TEO
+controller = TEO
+add_core = TEO
+culture = aztek 
+religion = nahuatl
+capital = "Tolluca"
+trade_goods = gold
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 15000
+discovered_by = mesoamerican
+
+800.1.1 = { owner = TLT controller = TLT add_core = TLT remove_core = TEO }
+1250.1.1 = { owner = AZT controller = AZT add_core = AZT remove_core = TLT }
+
+1521.8.13 = {	discovered_by = SPA
+		owner = SPA 
+		controller = SPA 
+		citysize = 6580
+		religion = catholic
+		culture = castillian
+		capital = "Toluca"
+	    } # The last Aztec emperor surrendered, Mexico city is founded on top of the ruins 
+1546.1.1  = { add_core = SPA } 
+1810.9.16 = { owner = MEX add_core = MEX controller = MEX } # Mexican War of Independence
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+1847.8.7   = { controller = USA }
+1848.2.2   = { controller = MEX } # Treaty of Guadalupe Hidalgo
+1850.1.1   = { citysize = 200000 }
+1900.1.1   = { citysize = 600000 }
+1930.1.1   = { citysize = 1200000 }
+#1950.1.1   = { citysize = 2000000 }
+#2010.1.1   = { citysize = 8857188 }
+
+
+

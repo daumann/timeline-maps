@@ -1,0 +1,79 @@
+#1770 - Ostmarch
+
+owner = MRM
+controller = MRM
+add_core = MRM
+citysize = 1000
+culture = bavarian
+religion = germanic
+base_tax = 6
+trade_goods = wine 
+manpower = 6
+capital = "Krems" 
+hre = no
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1500 }
+300.1.1 = { citysize = 2000 }
+395.1.1 = { owner = RUG controller = RUG add_core = RUG remove_core = MRM }
+400.1.1 = { citysize = 2500 }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS }
+454.1.1 = { owner = LOM controller = LOM add_core = LOM remove_core = HNS remove_core = RUG culture = lombard }
+500.1.1 = { citysize = 3000 }
+568.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = LOM }
+600.1.1 = { citysize = 3500 }
+623.1.1 = { owner = SAZ controller = SAZ add_core = SAZ remove_core = AVR culture = czech }
+659.1.1 = { owner = NIT controller = NIT add_core = NIT remove_core = SAZ }
+700.1.1 = { citysize = 4000 }
+790.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = NIT }
+800.1.1 = { citysize = 5000 }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+880.1.1 = { owner = MRV controller = MRV add_core = MRV remove_core = FRE fort1 = yes religion = catholic }
+894.1.1 = { owner = BOH controller = BOH add_core = BOH }
+900.1.1 = { citysize = 6000 }
+950.1.1 = { culture = austrian }
+962.2.2 = { hre = yes }
+976.1.1 = { owner = HAB controller = HAB add_core = HAB remove_core = MRV remove_core = BOH }
+1000.1.1 = { citysize = 7000 }
+1100.1.1 = { citysize = 8000 }
+1200.1.1 = { citysize = 9000 }
+1260.7.1 = { owner = BOH controller = BOH add_core = BOH } #Battle of Kressenbrunn
+1278.8.26 = { owner = HAB controller = HAB remove_core = BOH } #Death of Ottokar II
+1300.1.1 = { citysize = 10000 }
+1399.1.1 = { citysize = 11000 }
+
+1450.1.1 = { citysize = 20000 }
+1500.1.1 = { regimental_camp = yes }
+1500.1.1 = { citysize = 26000 }
+1526.1.1 = { courthouse = yes }
+1535.1.1 = { fort2 = yes }
+1540.1.1 = { citysize = 40000 constable = yes }
+1545.1.1 = { manpower = 3 }
+1550.1.1 = { marketplace = yes }
+1599.1.1 = { fort3 = yes }
+1600.1.1 = { citysize = 58000 }
+1620.1.1 = { tax_assessor = yes }
+1650.1.1 = { fort4 = yes }
+1650.1.1 = { manpower = 4 }
+1650.1.1 = { citysize = 70000 }
+1700.1.1 = { citysize = 130000 }
+1700.1.1 = { manpower = 6 }
+1750.1.1 = { citysize = 200000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1869.1.1   = { citysize = 18023 }
+1900.1.1   = { citysize = 21022 }
+1938.3.12  = { owner = GER controller = GER add_core = GER } # Austria annexed by Nazi Germany
+1945.5.8   = { owner = HAB controller = HAB remove_core = GER }
+1951.1.1   = { citysize = 22410 }
+1981.1.1   = { citysize = 23076 }
+2012.1.1   = { citysize = 24110 }
+
+
+

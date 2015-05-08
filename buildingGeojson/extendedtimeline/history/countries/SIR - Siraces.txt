@@ -1,0 +1,24 @@
+government = steppe_horde
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 3
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -3
+primary_culture = circassian
+religion = tengri
+technology_group = nomad_group
+capital = 2124
+
+41.1.1 = {
+	monarch = {
+		name = "Zorsines"
+		dynasty = "Siraces"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

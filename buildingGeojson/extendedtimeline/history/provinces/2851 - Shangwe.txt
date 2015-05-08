@@ -1,0 +1,52 @@
+newEntry2851 - Shangwe.txt
+#1189 - Shangwe
+
+culture = tonga
+religion = african
+capital = "Shangwe"
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 2
+native_size = 90
+native_ferocity = 4.5
+native_hostileness = 9
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+discovered_by = ZIB
+
+1220.1.1 = { owner = ZIB controller = ZIB add_core = ZIB citysize = 4300 trade_goods = grain add_local_autonomy = 50 }
+1300.1.1 = { citysize = 4000 }
+1399.1.1 = { citysize = 5000 }
+1430.1.1 = { owner = ZIM controller = ZIM add_core = ZIM remove_core = ZIB }
+
+1450.1.1 = { citysize = 7000 }
+1500.1.1 = { citysize = 8500 }
+1513.1.1 = { discovered_by = POR } #Travels of Antonio Fernandes in hinterland of Sofala
+1600.1.1 = { citysize = 9000 }
+1700.1.1 = { citysize = 9500 }
+1750.1.1 = { citysize = 10000 }
+1800.1.1 = { citysize = 10500 }
+
+1855.1.1   = { discovered_by = GBR } # David Livingstone
+1897.1.1   = { 	owner = GBR 
+		controller = GBR 
+		add_core = GBR 
+		remove_core = ZIM
+		religion = catholic 
+		capital = "Livingstone"
+	     }
+1935.1.1   = { capital = "Lusaka" }
+1950.1.1   = { citysize = 200000 }
+1964.10.24 = { owner = ZAM controller = ZAM add_core = ZAM remove_core = GBR }
+2010.1.1   = { citysize = 1742979 }
+
+

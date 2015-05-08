@@ -1,0 +1,64 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -5
+#quality_quantity = 3
+#serfdom_freesubjects = -5
+primary_culture = turkish
+religion = tengri
+technology_group = nomad_group
+capital = 459	# Suyab
+
+575.1.1 = {
+	monarch = {
+		name = "Tardu"
+		dynasty = "Ashina"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+603.1.1 = {
+	monarch = {
+		name = "Heshana"
+		dynasty = "Ashina"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+611.1.1 = {
+	monarch = {
+		name = "Shekuei"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+618.1.1 = {
+	monarch = {
+		name = "Tong Yabghu"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+628.1.1 = {
+	monarch = {
+		name = "Yukuk Shad"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

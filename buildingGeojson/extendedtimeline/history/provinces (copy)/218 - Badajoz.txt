@@ -1,0 +1,83 @@
+#218 - Badajoz
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = hellenism
+hre = no
+base_tax = 5
+trade_goods = wool 
+manpower = 4
+fort1 = yes
+capital = "Emerita Augusta" 
+citysize = 1000
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1121 }
+200.1.1 = { citysize = 1342 }
+300.1.1 = { citysize = 1564 }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1785 }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL }
+500.1.1 = { citysize = 2007 }
+600.1.1 = { citysize = 2228 }
+700.1.1 = { citysize = 2449 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI capital = "Batlabus" }
+750.1.1 = { religion = sunni }
+800.1.1 = { citysize = 2671 culture = andalucian }
+900.1.1 = { citysize = 2892 }
+1000.1.1 = { citysize = 3114 }
+1011.1.1 = { owner = BDJ controller = BDJ add_core = BDJ remove_core = UMA }
+1027.1.1 = { owner = SEV controller = SEV add_core = SEV }
+1034.1.1 = { owner = BDJ controller = BDJ remove_core = SEV }
+1094.1.1 = { owner = AMR controller = AMR add_core = AMR }
+1100.1.1 = { citysize = 3335 }
+1144.1.1 = { owner = BDJ controller = BDJ remove_core = AMR }
+1151.1.1 = { owner = AMH controller = AMH add_core = AMH }
+1200.1.1 = { citysize = 3557 }
+1230.1.1 = { owner = LON controller = LON add_core = LON remove_core = AMH remove_core = BDJ capital = "Badajoz" culture = castillian }
+1230.9.23 = { owner = CAS controller = CAS add_core = CAS remove_core = LON }
+1260.1.1 = { religion = catholic }
+1300.1.1 = { citysize = 3778 }
+1399.1.1 = { citysize = 4000 }
+
+1450.1.1   = { citysize = 5000 }
+1464.5.1   = { unrest = 3 } # Nobiliary uprising against King Enrique, Castilla goes into anarchy
+1468.9.18  = { unrest = 0 } # Pactos de los Toros de Guisando. Isabel of Castille becomes heir to the throne and a temporary peace is achieved
+1470.1.1   = { unrest = 3 } # Isabel marries with Fernando of Aragon, breaking the Pacts of Guisando. King Enrique choses his daughter Juana ("La Beltraneja") as new heiress and a succession War erupts.
+1475.6.2   = { controller = POR }
+1479.2.25  = { controller = CAS }
+1479.9.4   = { unrest = 0 } # Peace of Alcaçovas, between Queen Isabel and King Alfonso of Portugal who had entered the war supporting her wife Juana
+1500.1.1   = { citysize = 7630 }
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1550.1.1   = { citysize = 9760 }
+1600.1.1   = { citysize = 10800 constable = yes }
+1650.1.1   = { citysize = 11000 }
+1700.1.1   = { citysize = 12400 }
+1713.4.11  = { remove_core = CAS }
+1750.1.1   = { citysize = 13700 }
+1800.1.1   = { citysize = 14100 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 1 } controller = REB }
+1809.1.1   = { revolt = {} controller = SPA }
+1812.7.26  = { revolt = { type = pretender_rebels size = 1 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 25394 }
+1900.1.1   = { citysize = 45733 }
+1950.1.1   = { citysize = 82364 }
+2007.1.1   = { citysize = 148334 }
+
+
+

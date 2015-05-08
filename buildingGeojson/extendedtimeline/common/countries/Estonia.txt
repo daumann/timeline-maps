@@ -1,0 +1,71 @@
+#Estonia
+
+graphical_culture = easterngfx
+
+color = { 83  76  194 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	eastern_medieval_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	hungarian_hussar
+	polish_musketeer
+	polish_hussar
+	polish_tercio
+	polish_winged_hussar
+	russian_lancer
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+}
+
+monarch_names = {
+	"Ylle #0" = 10
+	"Culle #0" = 10
+	"Enu #0" = 10
+	"Tappete #0" = 10
+	"Yalde #0" = 10
+	"Melete #0" = 10
+	"Lembitu #0" = 10
+	"Unnepeve #0" = 10
+	"Meeme #0" = 10
+	"Jaan #0" = 10
+	"Andrus #0" = 10
+	"Elmar #0" = 10
+	"Ivari #0" = 10
+	"Rein #0" = 10
+	"Sulev #0" = 10
+	"Kalju #0" = 10
+	"Peeter #0" = 10
+	"Ants #0" = 10
+}
+
+leader_names = { 
+	Alver Bruns Burman Eek Hellat Jänes
+	Karp Koiv Kotli Kuusik Lapin Lohk
+	Mutso Natus Prii Puusepp Siinmaa
+}
+
+ship_names = {
+	George "Maria Mighell" Cristofer
+	Barbara Margaret Leonard Thomas
+	Julian Johan Katerina
+}
+
+
+

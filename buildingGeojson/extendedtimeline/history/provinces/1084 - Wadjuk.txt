@@ -1,0 +1,35 @@
+newEntry1084 - Wadjuk.txt
+#1084 - Wadjuk
+
+culture = aboriginal
+religion = animism
+capital = "Wadjuk"
+hre = no
+trade_goods = unknown
+manpower = 1
+base_tax = 2
+native_size = 5
+native_ferocity = 1
+native_hostileness = 9
+
+1697.1.10 = { discovered_by = NED } # Willem de Vlamingh
+
+1829.5.2   = { 	owner = GBR
+		controller = GBR
+		citysize = 100
+		culture = english
+		religion = protestant
+	     }
+1829.6.12  = { capital = "Perth" trade_goods = grain }
+1840.1.1   = { add_core = GBR }
+1854.1.1   = { citysize = 4001 }
+1881.1.1   = { citysize = 9955 }
+1901.1.1   = { citysize = 67431 }
+1921.1.1   = { citysize = 170213 }
+1942.10.9  = { owner = AUS controller = AUS add_core = AUS remove_core = GBR } #Statute of Westminster
+1947.1.1   = { citysize = 302968 }
+1981.1.1   = { citysize = 898918 }
+2010.1.1   = { citysize = 1696062 }
+
+
+

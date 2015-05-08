@@ -1,0 +1,83 @@
+#338 - Al-Djazair
+
+owner = ROM
+controller = ROM  
+culture = berber
+religion = african
+capital = "Medea"
+trade_goods = grain
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1692
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 2385 }
+200.1.1 = { citysize = 3771 }
+300.1.1 = { citysize = 5157 }
+360.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 6542 }
+429.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = ROW religion = arianism }
+500.1.1 = { citysize = 7928 }
+534.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = VAN }
+560.1.1 = { religion = chalcedonism }
+600.1.1 = { citysize = 9314 fort1 = yes }
+699.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = BYZ }
+700.1.1 = { citysize = 10700 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+760.1.1 = { religion = sunni culture = algerian }
+777.1.1 = { owner = TLC controller = TLC add_core = TLC remove_core = ABB religion = ibadi }
+800.1.1 = { citysize = 12085 }
+900.1.1 = { citysize = 13471 }
+909.1.1 = { owner = FAT controller = FAT add_core = FAT remove_core = TLC }
+940.1.1 = { religion = shiite }
+1000.1.1 = { citysize = 14857 }
+1018.1.1 = { owner = KBA controller = KBA add_core = KBA remove_core = FAT }
+1050.1.1 = { religion = sunni }
+1100.1.1 = { citysize = 16242 }
+1152.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = KBA }
+1200.1.1 = { citysize = 17628 }
+1235.1.1 = { owner = TLC controller = TLC add_core = TLC remove_core = AMH }
+1300.1.1 = { citysize = 19014 }
+1337.1.1 = { owner = MOR controller = MOR }
+1348.1.1 = { owner = TLC controller = TLC }
+1352.1.1 = { owner = MOR controller = MOR }
+1359.1.1 = { owner = TLC controller = TLC }
+1399.1.1 = { citysize = 20400 }
+
+1517.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+	remove_core = TLC
+}
+
+1830.7.5   = {  owner = FRA 
+		controller = FRA 
+		add_core = FRA 
+		add_core = AGR
+		remove_core = ALG
+	     } # Conquered by France
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 150000 }
+1940.1.1   = { citysize = 300000 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1942.11.16 = { owner = FR2 controller = FR2 remove_core = FRV } # Under Free French control after Operation Torch
+1960.1.1   = { citysize = 900000 }
+1962.7.3   = { owner = AGR controller = AGR remove_core = FR2 }
+1977.1.1   = { citysize = 1353826 }
+#1998.1.1   = { citysize = 2988145 }
+
+
+

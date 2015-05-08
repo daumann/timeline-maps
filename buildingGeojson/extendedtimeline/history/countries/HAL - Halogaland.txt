@@ -1,0 +1,35 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 4
+#quality_quantity = 2
+#serfdom_freesubjects = 2
+primary_culture = norwegian
+religion = norse_pagan_reformed
+technology_group = western
+capital = 21
+
+810.1.1 = {
+	monarch = {
+		name = "Godgest"
+		dynasty = "Hölgi"
+		dip = 5
+		adm = 4
+		mil = 4
+	}
+}
+
+840.1.1 = {
+	monarch = {
+		name = "Håkon Grjotgardsson"
+		dynasty = "Hölgi"
+		dip = 4
+		adm = 4
+		mil = 6
+	}
+}
+

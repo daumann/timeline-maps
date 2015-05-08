@@ -1,0 +1,95 @@
+owner = KUS
+controller = KUS
+culture = afghani
+religion = buddhism
+capital = "Kunduz"
+trade_goods = cotton
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 1000
+add_core = KUS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+fort1 = yes
+
+200.1.1 = { citysize = 1051 }
+300.1.1 = { citysize = 1126 }
+375.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = KUS }
+400.1.1 = { citysize = 1202 }
+500.1.1 = { citysize = 1277 }
+567.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP }
+593.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+600.1.1 = { citysize = 1353 }
+650.1.1 = { owner = SHH controller = SHH add_core = SHH remove_core = WGO }
+663.1.1 = { owner = UMA controller = UMA add_core = UMA }
+670.1.1 = { owner = SHH controller = SHH remove_core = UMA }
+700.1.1 = { citysize = 1429 }
+715.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = SHH }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 1504 }
+819.1.1 = { owner = SAM controller = SAM add_core = SAM remove_core = ABB }
+870.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = SAM }
+900.1.1 = { citysize = 1580 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+920.1.1 = { religion = sunni }
+1000.1.1 = { citysize = 1655 }
+1002.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1040.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = GHZ }
+1100.1.1 = { citysize = 1731 }
+1152.1.1 = { owner = GHU controller = GHU add_core = GHU remove_core = SEL }
+1200.1.1 = { citysize = 1806 }
+1215.1.1 = { owner = KHW controller = KHW add_core = AFG remove_core = GHU }
+1220.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = ILK controller = ILK add_core = ILK remove_core = MGE }
+1300.1.1 = { citysize = 1882 }
+1335.1.1 = { owner = KRT controller = KRT add_core = KRT remove_core = ILK }
+1380.1.1 = { owner = TIM controller = TIM add_core = TIM add_core = MUG remove_core = KRT }
+1399.1.1 = { citysize = 1958 }
+
+1449.1.1 = { owner = KHO
+	     controller = KHO
+	     add_core = KHO
+	     remove_core = TIM
+	   } # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+1450.1.1 = { citysize = 2300 }
+1457.7.19 = { controller = TIM }
+1457.8.30 = { owner = TIM add_core = TIM remove_core = KHO }
+1500.1.1 = { citysize = 2534 }
+1502.1.1 = { owner = KHO
+	     controller = KHO
+	     add_core = KHO
+	   } # The end of the Timurids in Samarkand
+1507.7.1 = {	owner = TIM
+		controller = TIM
+		add_core = TIM
+	   } # Kabul falls to Babur
+1526.4.21 = {	owner = MUG
+		controller = MUG
+		add_core = MUG
+	     	remove_core = TIM } #Battle of Panipat
+1550.1.1 = { citysize = 3100 }
+1566.1.1 = { revolt = { type = nationalist_rebels size = 0 name = "Hakim Timurid's Faction" } controller = REB }	#Hakim, should be pretender that declares independence
+1566.6.1 = { revolt = { } owner = AFG controller = AFG } #Independent of the Mughal empire
+1585.1.1 = { controller = BUK owner = BUK add_core = BUK remove_core = MUG }	# Man Singh occupies Kabulistan after death of Mirza Hakim, Balkh generally falls under Uzbekh controll after this point
+1600.1.1 = { citysize = 4874 discovered_by = TUR }
+1650.1.1 = { citysize = 5354 }
+1673.1.1 = { discovered_by = ENG }
+1677.1.1 = { discovered_by = FRA }
+1707.5.12 = { discovered_by = GBR }
+1737.1.1 = { owner = PER controller = PER } #Conquered by Nadir Shah
+1748.1.1 = { owner = SHY controller = SHY }
+1750.1.1 = { citysize = 6670 }
+1751.1.1 = {	owner = AFG
+	   	controller = AFG
+	   } # Added to Afghan Empire
+1800.1.1 = { citysize = 7100 }
+
+1850.1.1   = { citysize = 16000 }
+1900.1.1   = { citysize = 60000 }
+1950.1.1   = { citysize = 200000 }
+2009.1.1   = { citysize = 375000 }
+
+
+

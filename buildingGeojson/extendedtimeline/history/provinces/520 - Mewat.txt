@@ -1,0 +1,121 @@
+newEntry520 - Mewat.txt
+#520 - Bikaner
+
+owner = WSA
+controller = WSA
+culture = rajput
+religion = hinduism
+capital = "Alwar"
+trade_goods = cloth
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 3492
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = chinese
+
+100.1.1 = { citysize = 3985 }
+200.1.1 = { citysize = 4971 }
+300.1.1 = { citysize = 5957 }
+360.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+400.1.1 = { citysize = 6942 }
+500.1.1 = { citysize = 7928 }
+580.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = GUP }
+600.1.1 = { citysize = 8914 }
+620.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = GUR controller = GUR remove_core = HRS }
+700.1.1 = { citysize = 9900 }
+780.1.1 = { owner = PAA controller = PAA add_core = PAA }
+800.1.1 = { citysize = 10885 }
+880.1.1 = { owner = GUR controller = GUR remove_core = PAA }
+900.1.1 = { citysize = 11871 }
+1000.1.1 = { citysize = 12857 }
+1002.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = GUR }
+1100.1.1 = { citysize = 13842 }
+1187.1.1 = { owner = GHU controller = GHU add_core = GHU remove_core = GHZ }
+1200.1.1 = { citysize = 14828 }
+1215.1.1 = { owner = DLH controller = DLH add_core = DLH add_core = MEW remove_core = GHU }
+1226.1.1 = { owner = MEW controller = MEW remove_core = DLH }
+1300.1.1 = { citysize = 15814 }
+1399.1.1 = { citysize = 16800 }
+
+1450.1.1 = { citysize = 31000 }
+1500.1.1 = { citysize = 28000 }
+1530.1.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Mughal Conquest
+1540.1.1 = {
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+} # Delhi falls to Sher Shah Suri
+1550.1.1 = { citysize = 33000 }
+1553.1.1 = {
+	owner = DLH
+	controller = DLH
+} # Split of Suri Empire
+1555.7.23 = {
+	owner = MUG
+	controller = MUG
+	remove_core = BNG
+} # Humayun Returns
+1556.10.7 = { controller = DLH }	# Hemu
+1556.11.5 = {
+		controller = MUG
+}	# Panipat 2
+1600.1.1 = { citysize = 36000 }
+1650.1.1 = { citysize = 38000 }
+1669.1.1 = { revolt_risk = 6 } # The Jats revolted against Aurangzeb's rule
+1670.1.1 = { revolt_risk = 0 }
+1685.1.1 = { controller = REB revolt = { type = nationalist_rebels size = 1 } }
+1690.1.1 = { discovered_by = ENG }
+1691.1.1 = { controller = MUG revolt = { } }
+1700.1.1 = { citysize = 46000 }
+1707.3.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		leader = "Muhammad Azam Shah Timurid"
+	}
+} #Pretender
+1707.5.12 = { discovered_by = GBR }
+1707.6.13 = {
+	controller = MUG
+	revolt = {  }
+} #Pretender beaten
+1714.1.1 = {
+	owner = MEW
+	controller = MEW
+	remove_core = MUG
+	capital = "Deeg"
+} # Jagir granted to the Jats
+1733.1.1 = { capital = "Bharatpur" }
+1750.1.1 = { citysize = 62000 }
+1784.1.1 = {
+	controller = GWA
+	owner = GWA
+	capital = "Alwar"
+} # Marathas
+1803.1.1 = {
+	owner = MEW
+	controller = MEW
+	citysize = 75000
+} # British dependency
+	   
+1850.1.1  = { citysize = 80000 }
+1900.1.1  = { citysize = 180000 }
+1930.1.1  = { add_core = IND }
+1947.8.15 = { owner = IND controller = IND remove_core = MEW }
+1950.1.1  = { citysize = 400000 }
+2009.1.1  = { citysize = 723982 }
+
+
+

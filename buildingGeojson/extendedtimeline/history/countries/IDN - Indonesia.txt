@@ -1,0 +1,78 @@
+government = constitutional_republic
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 0
+#innovative_narrowminded = 0
+#mercantilism_freetrade = 2
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = 3
+#quality_quantity = -1
+#serfdom_freesubjects = -1
+primary_culture = sulawesi
+religion = sunni
+technology_group = chinese
+capital = 630	# Jakarta
+
+1945.8.18 = {
+	monarch = {
+		name = "Sukarno"
+		adm = 3
+		mil = 3
+		dip = 4
+	}
+}
+
+1967.3.12 = {
+	monarch = {
+		name = "Suharto"
+		adm = 4
+		mil = 4
+		dip = 2
+	}
+}
+
+1998.5.21 = {
+	monarch = {
+		name = "Bavharuddin Jusuf Habibie"
+		adm = 3
+		mil = 4
+		dip = 3
+	}
+}
+
+1999.10.20 = {
+	monarch = {
+		name = "Abdurrahman Wahid"
+		adm = 3
+		mil = 4
+		dip = 2
+	}
+}
+
+2001.7.23 = {
+	monarch = {
+		name = "Megawati Sukarnoputri"
+		adm = 4
+		mil = 2
+		dip = 4
+		female = yes
+	}
+}
+
+2004.10.20 = {
+	monarch = {
+		name = "Susilo Bambang Yodhoyono"
+		adm = 3
+		mil = 4
+		dip = 4
+	}
+}
+
+2014.10.20 = {
+	monarch = {
+		name = "Joko Widodo"
+		adm = 4
+		mil = 2
+		dip = 4
+	}
+}

@@ -1,0 +1,109 @@
+newEntry2247 - Lakhnor.txt
+#561 - Bangala
+
+owner = SUH
+controller = SUH
+culture = bengali
+religion = hinduism
+capital = "Lakhnor"
+trade_goods = naval_supplies
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 5014
+fort1 = yes
+add_core = SUH
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 6028 }
+200.1.1 = { citysize = 8057 }
+300.1.1 = { citysize = 10085 }
+320.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = SUH }
+400.1.1 = { citysize = 12114 }
+500.1.1 = { citysize = 14142 }
+600.1.1 = { citysize = 16171 owner = MAU controller = MAU add_core = MAU remove_core = GUP }
+625.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = MAU controller = MAU remove_core = HRS }
+700.1.1 = { citysize = 18200 }
+750.1.1 = { owner = PAA controller = PAA add_core = PAA remove_core = MAU }
+800.1.1 = { citysize = 20228 }
+900.1.1 = { citysize = 22257 }
+1000.1.1 = { citysize = 24285 }
+1100.1.1 = { temple = yes }
+1174.1.1 = { owner = SEN controller = SEN add_core = SEN remove_core = PAA }
+1200.1.1 = { marketplace = yes }
+1230.1.1 = { owner = NIZ controller = NIZ add_core = NIZ remove_core = SEN }
+1280.1.1 = { owner = DLH controller = DLH add_core = BNG add_core = DLH remove_core = NIZ }
+1300.1.1 = { constable = yes }
+1342.1.1 = { owner = BNG controller = BNG remove_core = DLH }
+1399.1.1 = { citysize = 32400 }
+
+1576.7.12 = {
+	owner = MUG
+	controller = MUG
+	revolt_risk = 8
+} #Mughal takeover, but the land remains in the hand of Afghan and Hindu landowners with interests vested against the Mughal dynasty and a deep hatred for the Mughal state
+1587.1.1 = {
+	revolt_risk = 0
+	add_core = MUG
+} # Integrated into Mughal Empire
+1622.10.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #With some aid from Golconda Khurrams rebelion against his father continues
+1623.5.1 = {
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #Defeated, retreats into Bengal
+1624.1.1 = {
+	controller = MUG
+	revolt = { }
+} #Khurram is defeated and is chased away by Mughal forces and rebelious Zamindars. Takes refuge in Ahmednagar and eventually surrenders on terms dictated by Nur Jahan
+1627.1.1 = { discovered_by = POR }
+1657.1.1 = { capital = "Bardhaman" }
+1657.9.14 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Muhammed Shuja's Faction"
+		leader = "Muhammed Shuja Timurid"
+	}
+} # Shah Jahan falls ill, his sons starts civil war
+1658.12.28 = {
+	controller = MUG
+	revolt = { }
+} # Muhammed Shuja defeated by Aurangzeb
+1707.3.15 = {
+	owner = BNG
+	controller = BNG
+	remove_core = MUG
+}
+1750.1.1 = { citysize = 200000 }
+1765.1.1 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	capital = "Burdwan"
+} # Given to GBR by Mughal Empire (was formerly british puppet)
+
+1850.1.1  = { citysize = 200000 }
+1900.1.1  = { citysize = 600000 }
+1930.1.1  = { add_core = IND remove_core = BNG }
+1947.8.15 = { owner = IND controller = IND remove_core = GBR capital = "Bardhaman" }
+
+
+

@@ -1,0 +1,38 @@
+culture = maipurean
+religion = south_american
+capital = "Acre"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 90
+native_ferocity = 2
+native_hostileness = 9
+discovered_by = south_american
+
+1650.1.1  = { discovered_by = SPA }
+1750.1.1  = {	owner = SPA
+		controller = SPA
+		add_core = BOL
+		citysize = 600
+		culture = castillian
+		religion = catholic
+		trade_goods = coffee
+	    }
+1775.1.1  = { add_core = SPA }
+1800.1.1  = { citysize = 1500 }
+1809.7.16 = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Bolivian War of Independence
+
+1825.8.6   = { revolt = {} owner = BOL controller = BOL }
+1836.10.28 = { owner = PEU controller = PEU add_core = PEU }
+1839.8.25  = { owner = BOL controller = BOL remove_core = PEU }
+1847.7.21  = { remove_core = SPA }
+1850.1.1   = { citysize = 5000 }
+1882.12.28 = { capital = "Rio Branco" }
+1899.1.1   = { add_core = BRZ culture = portugese }
+1900.1.1   = { citysize = 30000 }
+1903.11.17 = { owner = BRZ controller = BRZ remove_core = BOL }
+1950.1.1   = { citysize = 120000 }
+2012.1.1   = { citysize = 305731 }
+
+

@@ -1,0 +1,61 @@
+#46 - Mecklenburg
+
+owner = RUG
+controller = RUG
+add_core = RUG
+citysize = 1500
+culture = pommeranian
+religion = germanic
+hre = no
+base_tax = 5
+trade_goods = grain
+manpower = 3
+capital = "Rostock"
+discovered_by = western
+discovered_by = barbarian
+
+200.1.1 = { citysize = 2000 }
+300.1.1 = { citysize = 2500 }
+395.1.1 = { owner = SAX controller = SAX add_core = SAX remove_core = RUG }
+400.1.1 = { citysize = 3000 }
+500.1.1 = { citysize = 4000 }
+570.1.1 = { owner = OBO controller = OBO add_core = OBO remove_core = SAX religion = romuva }
+600.1.1 = { citysize = 5000 discovered_by = eastern }
+700.1.1 = { fort1 = yes }
+800.1.1 = { citysize = 6000 }
+900.1.1 = { citysize = 7000 }
+1000.1.1 = { citysize = 9000 discovered_by = muslim discovered_by = ottoman }
+1100.1.1 = { citysize = 11000 }
+1131.1.1 = { owner = MKL controller = MKL add_core = MKL remove_core = OBO hre = yes }
+1160.1.1 = { owner = SAX controller = SAX add_core = SAX religion = catholic }
+1181.1.1 = { owner = MKL controller = MKL remove_core = SAX }
+1200.1.1 = { citysize = 13000 }
+1300.1.1 = { citysize = 15000 }
+1399.1.1 = { citysize = 17800 }
+
+1450.1.1  = { citysize = 19800 }
+1500.1.1  = { citysize = 15600 marketplace = yes }
+1525.1.1  = { citysize = 15800 fort2 = yes }
+1531.1.1  = { religion = protestant }
+1550.1.1  = { citysize = 16000 }
+1575.1.1  = { citysize = 16200 }
+1600.1.1  = { citysize = 16400 }
+1625.1.1  = { citysize = 16600}
+1650.1.1  = { citysize = 16700 constable = yes fort3 = yes }
+1677.1.1  = { citysize = 10800 unrest = 4 }# Disastrous fire in Rostock
+1700.1.1  = { citysize = 11900 }
+1725.1.1  = { citysize = 13300}
+1750.1.1  = { citysize = 16400 courthouse = yes fort4 = yes } # customs_house = yes Add customs house to reflect rapid economic growth
+1775.1.1  = { citysize = 19000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 60000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1900.1.1   = { citysize = 130000 remove_core = MKL }
+1945.5.8   = { owner = EGE controller = EGE add_core = EGE }
+1950.1.1   = { citysize = 200000 }
+1990.10.3  = { owner = GER controller = GER remove_core = EGE }
+2010.12.31 = { citysize = 202735 }
+
+
+

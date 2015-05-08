@@ -1,0 +1,106 @@
+#433 - Dash-i-Lut
+
+owner = PRT
+controller = PRT
+culture = persian
+religion = zoroastrianism
+capital = "Ardakan"
+trade_goods = cloth
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1562
+add_core = PRT
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+fort1 = yes
+
+100.1.1 = { citysize = 1625 }
+200.1.1 = { citysize = 1750 }
+224.1.1 = { owner = SAS controller = SAS add_core = SAS remove_core = PRT }
+300.1.1 = { citysize = 1875 }
+400.1.1 = { citysize = 2000 }
+500.1.1 = { citysize = 2125 }
+600.1.1 = { citysize = 2250 }
+643.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = SAS }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 2375 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 2500 }
+820.1.1 = { religion = sunni }
+850.1.1 = { owner = TAH controller = TAH add_core = TAH remove_core = ABB }
+873.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = TAH }
+900.1.1 = { citysize = 2625 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+934.1.1 = { owner = BUY controller = BUY add_core = BUY remove_core = SAM }
+1000.1.1 = { citysize = 2750 }
+1030.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = BUY }
+1040.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = GHZ }
+1100.1.1 = { citysize = 2875 }
+1153.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = SEL }
+1200.1.1 = { citysize = 3000 }
+1231.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = PER remove_core = KHW }
+1260.1.1 = { owner = ILK controller = ILK add_core = ILK remove_core = MGE }
+1270.1.1 = { religion = shiite }
+1300.1.1 = { citysize = 3125 }
+1335.1.1 = { owner = MOZ controller = MOZ add_core = MOZ remove_core = ILK }
+1380.1.1 = { add_core = TIM }
+1393.1.1 = { owner = TIM controller = TIM add_core = TIM add_core = KHO remove_core = MOZ }
+1399.1.1 = { citysize = 3250 }
+
+1449.1.1 = {
+	owner = KHO
+	controller = KHO
+	add_core = KHO
+	remove_core = TIM
+} # Khorasan
+1450.1.1 = { citysize = 3500 }
+1458.6.28 = { controller = QAR }
+1458.12.22 = { controller = TIM owner = TIM add_core = TIM } #Abu Said negotiates peace with Jahan Shah and the area falls to Timurids of Samarkand
+1464.1.1 = { revolt_risk = 3 } # Pillaged by Timurid rebels
+1465.1.1 = { revolt_risk = 0 }
+1469.8.27 = { controller = KHO owner = KHO remove_core = TIM }#Death of Abu Said, Timurid lands split again
+1500.1.1 = { citysize = 3870 }
+1505.1.1 = { controller = BUK }
+1507.7.1 = {	owner = BUK
+	add_core = BUK
+	remove_core = KHO
+} # Conquered by Muhammad Shaybani
+1510.1.1 = {	owner = PER
+	controller = PER
+	add_core = PER
+	remove_core = BUK
+} # Part of the Persian empire
+1516.1.1 = { religion = shiite } # Shi'ism became the state religion
+1550.1.1 = { citysize = 4857 }
+1597.12.1 = { base_tax = 2 } # The Reforms of Abbas the Great
+1600.1.1 = { citysize = 6060 }
+1650.1.1 = { citysize = 7080 culture = persian }
+1673.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { revolt_risk = 4 } # The empire began to decline
+1750.1.1 = { citysize = 9358 }
+1750.1.2 = {	owner = KHO
+	controller = KHO
+	remove_core = PER
+	revolt_risk = 0
+} # Shahrokh is allowed to remain as ruler of Khurasan
+1796.1.1 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+} # Conquered by Agha Muhammad Khan
+1800.1.1 = { citysize = 9500 }
+1802.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Nadir Mirza revolt against Qajar Shah
+1803.4.1 = { revolt = {} controller = PER } # Nadir Mirza is killed
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 70000 }
+1935.1.1   = { owner = IRA controller = IRA add_core = IRA remove_core = PER }
+1950.1.1   = { citysize = 200000 }
+2009.1.1   = { citysize = 423006 }
+
+
+

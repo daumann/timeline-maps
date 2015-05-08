@@ -1,0 +1,31 @@
+newEntry2786 - Caceres.txt
+#775 - Xeres
+
+culture = maipurean
+religion = south_american
+capital = "Caceres"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 10
+native_ferocity = 1 
+native_hostileness = 1
+discovered_by = south_american
+
+1778.10.6 = {
+	discovered_by = POR
+	owner = POR
+	controller = POR
+	add_core = POR
+	citysize = 280
+	culture = portugese
+	religion = catholic
+	trade_goods = grain
+} 
+1800.1.1  = { citysize = 1100 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+
+
+

@@ -1,0 +1,48 @@
+#930 - Yamasee
+
+owner = CRE
+controller = CRE
+culture = creek
+religion = totemism
+capital = "Yamasee"
+trade_goods = cotton
+hre = no
+base_tax = 2
+manpower = 1
+is_city = yes
+citysize = 1000
+add_core = CRE
+native_size = 15
+native_ferocity = 7
+native_hostileness = 2
+discovered_by = north_american
+
+1450.1.1  = { citysize = 1300 }
+1500.1.1  = { citysize = 1570 }
+1526.1.1  = { discovered_by = FRA }
+1528.10.1 = { discovered_by = SPA } # Cabeza de Vaca
+1550.1.1  = { citysize = 2314 }
+1600.1.1  = { citysize = 3400 }
+1650.1.1  = { citysize = 4215 }
+1700.1.1  = { citysize = 5570 }
+1750.1.1  = { citysize = 5922 }
+1814.8.9  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant } #Treaty of Fort Jackson ending the Creek War
+
+1828.1.1   = { capital = "Columbus" }
+1850.1.1   = { citysize = 8000 }
+1861.1.19  = { owner = CSA controller = CSA add_core = CSA }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+1880.1.1   = { citysize = 10123 }
+1900.1.1   = { citysize = 17614 }
+1930.1.1   = { citysize = 43131 }
+1950.1.1   = { citysize = 79611 }
+1980.1.1   = { citysize = 169441 }
+2010.1.1   = { citysize = 189885 }
+
+
+
+

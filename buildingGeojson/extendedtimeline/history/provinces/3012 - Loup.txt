@@ -1,0 +1,35 @@
+newEntry3012 - Loup.txt
+#2012 - Arsigantegok
+
+culture = huron
+religion = totemism
+capital = "Loup"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1609.1.1  = { discovered_by = FRA } # Samuel de champlain
+1629.1.1  = { discovered_by = ENG }
+1664.1.1  = {	owner = FRA
+		controller = FRA
+		culture = cosmopolitan_french
+		religion = catholic
+		capital = "Fort Chambly"
+		trade_goods = fur
+		citysize = 255
+	    } # Network of forts established in the region
+1689.1.1  = { citysize = 1000 add_core = FRA }
+1707.5.12  = { discovered_by = GBR }
+1763.2.10 = {	owner = GBR
+		controller = GBR
+		remove_core = FRA
+	    } # Treaty of Paris - ceded to Britain, France gave up its claim
+1776.1.1  = { capital = "Longueuil" }
+1788.2.10 = { add_core = GBR }
+
+1867.7.1   = { owner = CAN add_core = CAN controller = CAN remove_core = GBR }

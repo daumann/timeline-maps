@@ -1,0 +1,64 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 162 93 31  }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas 
+	defensive_ideas
+	quantity_ideas
+	administrative_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+}
+
+historical_units = {
+	mongol_bow
+	mongol_swarm
+	mongol_steppe
+}
+
+monarch_names = {
+	"Surkhay #1" = 30
+	"Eldar #0" = 30
+	"Budai #0" = 30
+	"Alibek #0" = 20
+	"Aidemer #0" = 20
+	"Elisu #0" = -1
+	"Gulandash #0" = -1
+}
+
+leader_names = {
+	Budai
+	Andia
+	Eldar
+	Aidemer
+	Surkhay
+	Umal
+	Murtazali
+	Alibek
+	Muhammad
+	Mazyar
+}
+
+ship_names = {
+	Lakia "Umal Muhammad" Khundzal
+	Kumukh
+	Gazi
+	Machimi
+	Vitskhi
+	Gumuchi
+	Kullal
+	Uri-Mukarki
+	Bartki
+	Tarki
+	Kurkli
+	Avaria
+	Agul
+	Rutul
+}

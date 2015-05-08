@@ -1,0 +1,64 @@
+government = steppe_horde
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 5
+#innovative_narrowminded = 3
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -3
+#quality_quantity = 2
+#serfdom_freesubjects = -5
+primary_culture = turkish
+religion = tengri
+technology_group = nomad_group
+capital = 459	# Balasagun
+
+659.1.1 = {
+	monarch = {
+		name = "Ushyly"
+		dynasty = "Türgesh"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+699.1.1 = {
+	monarch = {
+		name = "Yuzlik"
+		dynasty = "Türgesh"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+706.1.1 = {
+	monarch = {
+		name = "Sakal"
+		dynasty = "Türgesh"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+717.1.1 = {
+	monarch = {
+		name = "Suluk"
+		dynasty = "Türgesh"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+730.1.1 = {
+	monarch = {
+		name = "Bilge"
+		dynasty = "Türgesh"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

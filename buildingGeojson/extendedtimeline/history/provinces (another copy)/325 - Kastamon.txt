@@ -1,0 +1,69 @@
+#325 - Kastamon
+
+owner = ROM
+controller = ROM
+culture = greek
+religion = hellenism
+capital = "Paphlagonia"
+trade_goods = wine
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 3546
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 4092 }
+200.1.1 = { citysize = 5185 }
+300.1.1 = { citysize = 6278 }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 7371 }
+430.1.1 = { religion = chalcedonism }
+500.1.1 = { citysize = 8464 }
+600.1.1 = { citysize = 9557 }
+700.1.1 = { citysize = 10650 }
+800.1.1 = { citysize = 11742 }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 12835 }
+1000.1.1 = { citysize = 13928 }
+1058.1.1 = { capital = "Kastra Komneni" }
+1100.1.1 = { citysize = 15021 }
+1200.1.1 = { citysize = 16114 }
+1204.4.13 = { owner = NCA controller = NCA add_core = NCA }
+1211.1.1 = { owner = RUM controller = RUM add_core = RUM remove_core = NCA capital = "Kastamonu" }
+1220.1.1 = { religion = sunni culture = turkish remove_core = BYZ }
+1292.1.1 = { owner = CND controller = CND add_core = CND remove_core = RUM }
+1300.1.1 = { citysize = 17207 }
+1350.1.1 = { add_core = TUR }
+1399.1.1 = { citysize = 18300 }
+
+1444.1.1  = { add_core = TUR }
+1450.1.1  = { citysize = 21600 }
+1458.1.1  = {	owner = TUR
+		controller = TUR	
+            }
+1481.6.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
+1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
+1500.1.1  = { citysize = 23521 }
+1509.1.1  = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war
+1513.1.1  = { revolt = {} controller = TUR }
+1550.1.1  = { citysize = 25100 marketplace = yes }
+1600.1.1  = { citysize = 26980 }
+1650.1.1  = { citysize = 28966 }
+1700.1.1  = { citysize = 31500 }
+1740.1.1  = { base_tax = 5 } # The decentralizing effect of the provincial system
+
+1850.1.1   = { citysize = 50000 remove_core = CND }
+1900.1.1   = { citysize = 80000 }
+1922.11.1  = { owner = TKY controller = TKY add_core = TKY remove_core = TUR }
+1950.1.1   = { citysize = 100000 }
+2011.1.1   = { citysize = 91012 }
+
+
+

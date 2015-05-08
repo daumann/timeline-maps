@@ -1,0 +1,36 @@
+#844 - Zapotec
+
+culture = putun
+owner = PLQ
+controller = PLQ
+add_core = PLQ
+is_city = yes
+religion = mesoamerican_religion
+capital = "Yaxchilán"
+trade_goods = cocoa
+hre = no
+base_tax = 4
+manpower = 2
+add_local_autonomy = 25
+discovered_by = mesoamerican
+
+800.1.1 = { base_tax = 3 }
+900.1.1 = { base_tax = 2 manpower = 1 }
+987.1.1 = { owner = MAY controller = MAY add_core = MAY remove_core = PLQ }
+1100.1.1 = { capital = "Chiapas" }
+1194.1.1 = { owner = ITZ controller = ITZ add_core = ITZ remove_core = MAY }
+
+1528.1.1   = {	discovered_by = SPA 
+		owner = SPA 
+		controller = SPA 
+		capital = "San Cristóbal de las Casas" }
+1535.1.1   = {	culture = castillian
+		religion = catholic
+	     } # First settlers
+1553.1.1   = { add_core = SPA }
+1810.9.16  = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+
+
+

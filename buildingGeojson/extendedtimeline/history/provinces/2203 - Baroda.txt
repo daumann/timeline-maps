@@ -1,0 +1,108 @@
+newEntry2203 - Baroda.txt
+#516 - Ahmadabad
+
+owner = WSA
+controller = WSA
+culture = gujarati
+religion = hinduism
+capital = "Baroda"
+trade_goods = silk
+hre = no
+base_tax = 5
+manpower = 2
+citysize = 6000
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+100.1.1 = { citysize = 10000 }
+200.1.1 = { citysize = 17981 }
+300.1.1 = { citysize = 26972 }
+400.1.1 = { citysize = 35962 }
+405.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+475.1.1 = { owner = GUJ controller = GUJ add_core = GUJ remove_core = GUP }
+500.1.1 = { citysize = 44953 }
+520.1.1 = { religion = jainism }
+600.1.1 = { citysize = 53944 }
+620.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = GUJ controller = GUJ remove_core = HRS }
+700.1.1 = { citysize = 62935 }
+767.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = GUJ }
+800.1.1 = { citysize = 71925 }
+900.1.1 = { citysize = 80916 }
+942.1.1 = { owner = GUJ controller = GUJ add_core = GUJ remove_core = GUR }
+1000.1.1 = { citysize = 89907 }
+1100.1.1 = { marketplace = yes }
+1180.1.1 = { religion = hinduism }
+1200.1.1 = { citysize = 107888 }
+1297.1.1 = { owner = DLH controller = DLH add_core = DLH }
+1300.1.1 = { dock = yes }
+1391.1.1 = { owner = GUJ controller = GUJ remove_core = DLH }
+1399.1.1 = { citysize = 125870 }
+
+1498.1.1 = { discovered_by = POR }
+1573.6.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Conquered by Akbar
+1600.1.1 = { citysize = 225000 }
+1622.3.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #Should be named Khurram at this point
+1622.7.1 = {
+	controller = MUG
+	revolt = { }
+} #Retaken by Jahangir and Nur Jahan
+1657.9.14 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 3
+		name = "Murad Bakhsh's Faction"
+		leader = "Murad Bakhsh Timurid"
+	}
+} # Shah Jahan falls ill, his sons starts civil war
+1658.1.5 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 4
+		name = "Murad Bakhsh's Faction"
+		leader = "Murad Bakhsh Timurid"
+	}
+} # Surat falls to the forces of Murad Bakhsh, it's coffers significantly strengthening his cause
+1658.6.25 = {
+	controller = MUG
+	revolt = { }
+} # Aurangzeb imprison Murad
+1725.1.1 = {
+	owner = BDA
+	controller = BDA
+	add_core = BDA
+	citysize = 50000
+	remove_core = MUG	
+}
+1750.1.1 = { citysize = 65000 }
+1800.1.1 = { citysize = 80000 }
+
+1850.1.1  = { citysize = 300000 }
+1900.1.1  = { citysize = 700000 }
+1930.1.1  = { add_core = IND remove_core = GUJ }
+1949.5.1  = { owner = IND controller = IND remove_core = BDA remove_core = GUJ }
+1950.1.1  = { citysize = 1600000 }
+1974.1.1  = { capital = "Varodara" }
+#2008.1.1  = { citysize = 5570585 }
+
+
+

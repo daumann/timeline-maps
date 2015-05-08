@@ -1,0 +1,35 @@
+newEntry1784 - Tiam Shan.txt
+#1784 - Tiam Shan
+
+culture = kirgiz
+religion = tengri
+capital = "Tiam Shan"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+discovered_by = nomad_group
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+
+1850.1.1   = { 	owner = QNG 
+		controller = QNG
+		add_core = QNG
+		trade_goods = grain
+		capital = "Zhaosu"
+		citysize = 1000
+	     }
+1890.1.1   = { discovered_by = western }
+1900.1.1   = { citysize = 4000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 8000 }
+2000.1.1   = { citysize = 15000 }
+
+

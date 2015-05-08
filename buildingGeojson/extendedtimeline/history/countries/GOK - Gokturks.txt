@@ -1,0 +1,154 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 5
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -5
+#quality_quantity = 3
+#serfdom_freesubjects = -5
+primary_culture = turkish
+religion = tengri
+technology_group = nomad_group
+capital = 2891	# Ordu Baliq
+
+547.1.1 = {
+	monarch = {
+		name = "Issik"
+		dynasty = "Ashina"
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
+
+554.1.1 = {
+	monarch = {
+		name = "Muqan"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+}
+
+572.1.1 = {
+	monarch = {
+		name = "Taspar"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+581.1.1 = {
+	monarch = {
+		name = "Ishbara"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+587.1.1 = {
+	monarch = {
+		name = "Bagha"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+588.1.1 = {
+	monarch = {
+		name = "Tulan"
+		dynasty = "Ashina"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+603.1.1 = {
+	monarch = {
+		name = "Yami"
+		dynasty = "Ashina"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+611.1.1 = {
+	monarch = {
+		name = "Shibi"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}
+
+619.1.1 = {
+	monarch = {
+		name = "Chuluo"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+620.1.1 = {
+	monarch = {
+		name = "Illig"
+		dynasty = "Ashina"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+639.1.1 = {
+	monarch = {
+		name = "Qilibi"
+		dynasty = "Ashina"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+645.1.1 = {
+	monarch = {
+		name = "Chebi"
+		dynasty = "Ashina"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+650.1.1 = {
+	monarch = {
+		name = "Ashina Nishoufu"
+		dynasty = "Ashina"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+670.1.1 = {
+	monarch = {
+		name = "Ashina Funian"
+		dynasty = "Ashina"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

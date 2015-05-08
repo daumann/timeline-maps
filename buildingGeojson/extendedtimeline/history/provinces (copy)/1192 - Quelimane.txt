@@ -1,0 +1,67 @@
+#1192 - Quelimane
+
+culture = tonga
+religion = african
+capital = "Quelimane"
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 2
+native_size = 40
+native_ferocity = 4.5
+native_hostileness = 9 
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+discovered_by = ZIM
+discovered_by = ZIB
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = zambezi_estuary_modifier
+		duration = -1
+	}
+}
+
+700.1.1 = { owner = SFA controller = SFA add_core = SFA citysize = 1000 trade_goods = ivory }
+915.1.1 = { religion = sunni discovered_by = muslim discovered_by = ottoman }
+1000.1.1 = { citysize = 1300 }
+1100.1.1 = { citysize = 1600 }
+1180.1.1 = { owner = ZAN controller = ZAN add_core = ZAN }
+1200.1.1 = { citysize = 2000 }
+1300.1.1 = { citysize = 2400 owner = SFA controller = SFA }
+1350.1.1 = { add_core = ZIB remove_core = ZAN }
+1399.1.1 = { citysize = 2800 }
+1430.1.1 = { remove_core = ZIB add_core = ZIM }
+
+1450.1.1  = { citysize = 3000 }
+1498.2.15 = { discovered_by = POR } #Vasco Da Gama
+1500.1.1  = { citysize = 4200 }
+#1544 Portuguese establish tradepost
+1571.1.1  = {	owner = POR
+		controller = POR
+		citysize = 2000
+		unrest = 4
+	    } #Portuguese take control of Quelimane as their base for invasion of Mutapa
+1596.1.1  = { add_core = POR }
+1631.1.1  = { unrest = 7 } #Maravi invade region
+1632.1.1  = { unrest = 0 } #Maravi expelled from the region
+1700.1.1  = { citysize = 3000 }  
+1750.1.1  = { trade_goods = grain citysize = 4000 } #becomes major center of cereal production to feed slaves
+1800.1.1  = { citysize = 4500 }
+
+1850.1.1   = { citysize = 10000 }
+1900.1.1   = { citysize = 20000 }
+1950.1.1   = { citysize = 50000 }
+1970.1.1   = { citysize = 71786 }
+1975.6.25  = { owner = MZM controller = MZM add_core = MZM remove_core = POR remove_core = SFA }
+2007.1.1   = { citysize = 192876 }
+
+
+

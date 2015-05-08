@@ -1,0 +1,52 @@
+#636 - Brunei
+
+culture = bornean
+religion = hinduism
+capital = "Brunei"
+trade_goods = unknown
+hre = no
+base_tax = 6
+manpower = 4
+native_size = 60
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = chinese
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+620.1.1 = { owner = BEI controller = BEI add_core = BEI citysize = 8000 trade_goods = spices }
+800.1.1 = { citysize = 11728 }
+900.1.1 = { citysize = 15457 }
+1000.1.1 = { citysize = 19185 }
+1100.1.1 = { citysize = 22914 }
+1200.1.1 = { citysize = 26642 fort1 = yes }
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+1330.1.1 = { religion = sunni }
+1399.1.1 = { citysize = 34100 }
+
+1450.1.1 = { citysize = 38000 }
+1500.1.1 = { citysize = 43870 }
+1521.1.1 = { discovered_by = SPA }
+1550.1.1 = { citysize = 47500 }
+1600.1.1 = { citysize = 49657 }
+1650.1.1 = { citysize = 52100 }
+1672.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Civil war over succession
+1673.1.1 = { revolt = {} controller = BEI }
+1700.1.1 = { citysize = 54660 }
+1750.1.1 = { citysize = 56374 }
+1800.1.1 = { citysize = 58222 }
+
+1850.1.1   = { citysize = 60000 }
+1900.1.1   = { citysize = 80000 }
+1950.1.1   = { citysize = 110000 }
+1970.10.5  = { capital = "Bandar Seri Begawan" }
+2010.1.1   = { citysize = 140000 }
+
+
+
+

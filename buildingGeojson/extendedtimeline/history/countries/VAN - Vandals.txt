@@ -1,0 +1,131 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = vandal
+religion = germanic
+technology_group = barbarian
+capital = 196	# Toulouse
+
+50.1.1 = {
+	monarch = {
+		name = "Aurvandil"
+		dynasty = "Vandal"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+160.1.1 = {
+	monarch = {
+		name = "Raus"
+		dynasty = "Vandal"
+		adm = 4
+		dip = 5
+		mil = 5
+	}
+}
+
+300.1.1 = {
+	monarch = {
+		name = "Wisimar"
+		dynasty = "Vandal"
+		adm = 6
+		dip = 5
+		mil = 6
+	}
+}
+#died 335
+
+359.1.1 = {
+	monarch = {
+		name = "Godigisel"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+407.1.1 = {
+	religion = arianism
+	monarch = {
+		name = "Gunderic"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+428.6.1 = {
+	monarch = {
+		name = "Genseric"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 4
+		mil = 3
+                leader = { name = "Genseric" type = general rank = 0 fire = 3 shock = 5	manuever = 3 siege = 0 }
+	}
+}
+
+477.1.1 = {
+	monarch = {
+		name = "Huneric"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+480.1.1 = { government = feudal_monarchy }
+
+484.1.1 = {
+	monarch = {
+		name = "Gunthamund"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+496.6.1 = {
+	monarch = {
+		name = "Tharasmund"
+		dynasty = "Vandal"
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+523.6.1 = {
+	monarch = {
+		name = "Hilderic"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+530.6.1 = {
+	monarch = {
+		name = "Gelimer"
+		dynasty = "Vandal"
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}
+
+536.1.1 = { technology_group = western }

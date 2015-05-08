@@ -1,0 +1,58 @@
+#738 - Taiwan
+
+culture = polynesian
+religion = animism
+capital = "Sakam"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 2
+native_size = 60
+native_ferocity = 1
+native_hostileness = 5
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+
+1544.1.1 = { discovered_by = POR }
+1624.1.1 = {
+	owner = NED
+	controller = NED
+	citysize = 6500
+	trade_goods = chinaware
+} # The Spanish settlers are driven out by the Dutch
+1626.1.1 = { controller = SPA } # Spanish occupation
+1629.1.1 = { fort1 = yes } # Fort Santo Domingo
+1642.1.1 = { controller = NED } # The Spanish settlers are driven out by the Dutch
+1662.1.1 = {
+	owner = MNG
+	controller = MNG
+	religion = confucianism
+} # Captured by Zheng Chenggong
+1683.1.1 = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+	remove_core = MNG
+} # Submitted to Manchu control
+1700.1.1 = { citysize = 5420 }
+1720.1.1 = { culture = chimin }
+1750.1.1 = { citysize = 6890 }
+1786.1.1 = { unrest = 5 } # Rebellion
+1788.1.1 = { unrest = 0 }
+1800.1.1 = { citysize = 7400 }
+
+1850.1.1   = { citysize = 20000 }
+1895.4.17  = { owner = JAP controller = JAP add_core = JAP capital = "Takau" }
+1900.1.1   = { citysize = 120000 }
+1912.2.12  = { remove_core = QNG add_core = CHN }
+1945.8.15  = { owner = CHN controller = CHN remove_core = JAP capital = "Kaohsiung" }
+1949.10.1  = { owner = TWN controller = TWN add_core = TWN }
+1950.1.1   = { citysize = 900000 }
+1980.1.1   = { citysize = 1400000 }
+#2010.12.1  = { citysize = 2618772 }
+
+
+

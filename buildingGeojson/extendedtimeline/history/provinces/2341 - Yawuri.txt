@@ -1,0 +1,39 @@
+newEntry2341 - Yawuri.txt
+#1145 - Nupe
+
+culture = hausa 
+religion = african
+capital = "Birnin Yawuri"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9 
+discovered_by = sub_saharan
+
+1100.1.1 = { owner = ZZZ controller = ZZZ add_core = ZZZ citysize = 5000 trade_goods = coffee }
+
+1806.1.1 = {	owner = SOK
+	controller = SOK
+	add_core = SOK
+} # The Fulani Empire
+
+1850.1.1   = { citysize = 15000 }
+1890.1.1   = { discovered_by = GBR }
+1900.1.1   = { citysize = 50000 }
+1903.1.1   = { capital = "Kontagora" owner = GBR controller = GBR add_core = GBR }
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 150000 }
+1960.10.1  = { owner = NIG controller = NIG add_core = NIG remove_core = GBR remove_core = SOK }
+2012.1.1   = { citysize = 304113 }
+
+
+

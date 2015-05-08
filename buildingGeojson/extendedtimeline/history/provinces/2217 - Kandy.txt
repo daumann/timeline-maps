@@ -1,0 +1,73 @@
+newEntry2217 - Kandy.txt
+#572 - Jaffna
+
+owner = CEY
+controller = CEY
+culture = sinhala
+religion = buddhism
+capital = "Gampala"
+trade_goods = spices
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 1096
+add_core = CEY
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = chinese
+
+100.1.1 = { citysize = 1193 }
+200.1.1 = { citysize = 1386 }
+300.1.1 = { citysize = 1580 }
+400.1.1 = { citysize = 1773 }
+436.1.1 = { owner = PAN controller = PAN add_core = PAN }
+463.1.1 = { owner = CEY controller = CEY remove_core = PAN }
+500.1.1 = { citysize = 1967 }
+600.1.1 = { citysize = 2160 }
+700.1.1 = { citysize = 2353 }
+800.1.1 = { citysize = 2547 }
+900.1.1 = { citysize = 2740 }
+910.1.1 = { owner = CLS controller = CLS add_core = CLS }
+1000.1.1 = { citysize = 2934 }
+1070.1.1 = { owner = CEY controller = CEY remove_core = CLS }
+1100.1.1 = { citysize = 3127 }
+1200.1.1 = { citysize = 3321 }
+1251.1.1 = { owner = PAN controller = PAN add_core = PAN }
+1300.1.1 = { citysize = 3514 }
+1311.1.1 = { owner = CEY controller = CEY remove_core = PAN }
+1399.1.1 = { citysize = 3708 }
+
+1450.1.1  = { citysize = 8350 }
+1500.1.1  = { citysize = 9400 }
+1505.1.1  = { discovered_by = POR } # Francisco de Almeida
+1542.1.1  = { add_core = POR }
+1550.1.1  = { citysize = 10700 }
+1600.1.1  = { citysize = 11570 }
+1650.1.1  = { citysize = 13400 }
+1660.1.1  = {
+	owner = NED
+	controller = NED
+	add_core = NED
+	remove_core = POR
+	capital = "Kandy"
+} # Dutch control
+1700.1.1  = { citysize = 15100 }
+1750.1.1  = { citysize = 19800 }
+1799.8.1  = { controller = GBR } # Occupied by England
+1800.1.1  = { citysize = 22100 }
+1802.3.25 = {
+	owner = GBR
+	add_core = GBR
+	remove_core = NED
+} # Treaty of Amiens
+
+1850.1.1  = { citysize = 15000 }
+1900.1.1  = { citysize = 30000 }
+1948.2.4  = { owner = CEY controller = CEY remove_core = GBR }
+1950.1.1  = { citysize = 60000 }
+1972.5.22 = { owner = SRL controller = SRL add_core = SRL remove_core = CEY }
+2010.1.1  = { citysize = 90416 }
+
+
+

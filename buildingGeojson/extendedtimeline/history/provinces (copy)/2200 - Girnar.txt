@@ -1,0 +1,73 @@
+#515 - Kathiawar
+
+owner = WSA
+controller = WSA
+culture = gujarati
+religion = hinduism
+capital = "Girnar"
+trade_goods = sugar
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1118
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 1236 }
+200.1.1 = { citysize = 1473 }
+300.1.1 = { citysize = 1709 }
+400.1.1 = { citysize = 1946 }
+405.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+475.1.1 = { owner = KAT controller = KAT add_core = KAT remove_core = GUP }
+500.1.1 = { citysize = 2182 }
+600.1.1 = { citysize = 2419 }
+620.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = KAT controller = KAT remove_core = HRS }
+700.1.1 = { citysize = 2655 }
+767.1.1 = { owner = GUR controller = GUR add_core = GUR }
+800.1.1 = { citysize = 2892 }
+900.1.1 = { citysize = 3128 }
+942.1.1 = { owner = KAT controller = KAT remove_core = GUR }
+1000.1.1 = { citysize = 3365 }
+1100.1.1 = { citysize = 3601 }
+1200.1.1 = { citysize = 3838 }
+1300.1.1 = { citysize = 4074 }
+1330.1.1 = { owner = DLH controller = DLH add_core = DLH }
+1380.1.1 = { owner = KAT controller = KAT remove_core = DLH }
+1399.1.1 = { citysize = 4311 }
+
+1450.1.1 = { citysize = 21000 }
+1470.1.1 = {
+	owner = GUJ
+	controller = GUJ
+	add_core = GUJ
+}
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 21000 }
+1534.12.23  = {
+		capital = "Diu"
+		owner = POR
+		controller = POR
+		add_core = POR
+} #Treaty of Bassein
+1550.1.1 = { citysize = 36000 }
+1600.1.1 = { citysize = 50000 }
+1650.1.1 = { citysize = 37000 }
+1700.1.1 = { citysize = 32000 }
+1750.1.1 = { add_core = BDA	citysize = 26000 } 
+1800.1.1 = { citysize = 24000 }
+
+1850.1.1  = { citysize = 60000 }
+1900.1.1  = { citysize = 170000 }
+1930.1.1  = { add_core = IND remove_core = KAT remove_core = BDA }
+1950.1.1  = { citysize = 800000 }
+1961.1.1  = { owner = IND controller = IND remove_core = POR capital = "Junagadh" }
+2008.1.1  = { citysize = 1606745 }
+
+
+

@@ -1,0 +1,119 @@
+#558 - Maital
+
+owner = MHJ
+controller = MHJ
+culture = bihari
+religion = buddhism
+capital = "Sugauna"
+trade_goods = dyes
+hre = no
+base_tax = 5
+manpower = 4
+citysize = 1214
+add_core = MHJ
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+100.1.1 = { citysize = 1428 }
+120.1.1 = { owner = KUS controller = KUS add_core = KUS remove_core = MHJ }
+200.1.1 = { citysize = 1857 }
+270.1.1 = { owner = NPL controller = NPL add_core = NPL remove_core = KUS }
+300.1.1 = { citysize = 2285 }
+320.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = NPL }
+400.1.1 = { citysize = 2714 }
+500.1.1 = { citysize = 3142 }
+600.1.1 = { citysize = 3571 owner = MAU controller = MAU add_core = MAU remove_core = GUP }
+625.1.1 = { owner = HRS controller = HRS add_core = HRS add_core = TRT remove_core = MAU }
+647.1.1 = { owner = TRT controller = TRT remove_core = HRS }
+700.1.1 = { citysize = 3999 }
+750.1.1 = { owner = PAA controller = PAA add_core = PAA }
+800.1.1 = { citysize = 4428 }
+900.1.1 = { citysize = 4857 }
+1000.1.1 = { citysize = 5285 }
+1019.1.1 = { owner = TRT controller = TRT add_core = TRT remove_core = PAA }
+1100.1.1 = { citysize = 5714 }
+1175.1.1 = { owner = SEN controller = SEN add_core = SEN }
+1193.1.1 = { owner = TRT controller = TRT add_core = TRT remove_core = SEN }
+1250.1.1 = { religion = hinduism }
+1399.1.1 = { citysize = 7000 }
+
+1450.1.1 = { citysize = 22000 }
+1497.1.1 = { controller = DLH }
+1498.1.1 = { controller = TRT }
+1500.1.1 = { citysize = 24000 }
+1524.1.1 = {
+	controller = BNG
+	owner = BNG
+	add_core = BNG
+	capital = "Darbhanga"
+}
+1529.1.1 = { revolt = { type = pretender_rebels } } # Sur control
+1538.1.1 = {
+	controller = BNG
+	revolt = { }
+} # Gaur has fallen
+1538.6.1 = { controller = MUG } # Mughal Invasion
+1539.1.1 = { controller = BNG } # Surs again in control
+1550.1.1 = { citysize = 25000 }
+1575.1.1  = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Annexed to the Mughal Empire
+1600.1.1 = { citysize = 28000 }
+1622.10.1 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Khurrams Faction"
+		leader = "Shah Jahan Timurid"
+	}
+} #With some aid from Golconda Khurrams rebelion against his father continues
+1623.5.1 = {
+	controller = MUG
+	revolt = { }
+} #Defeated, retreats into Bengal
+1627.1.1 = { discovered_by = POR }
+1650.1.1 = { citysize = 30000 }
+1657.9.14 = {
+	controller = REB
+	revolt = {
+		type = pretender_rebels
+		size = 0
+		name = "Muhammed Shuja's Faction"
+		leader = "Muhammed Shuja Timurid"
+	}
+} # Shah Jahan falls ill, his sons starts civil war
+1658.12.28 = {
+	controller = MUG
+	revolt = { }
+} # Muhammed Shuja defeated by Aurangzeb
+1700.1.1 = { citysize = 34000 }
+1707.3.15 = {
+	owner = BNG
+	controller = BNG
+}
+1707.5.12 = { discovered_by = GBR }
+1750.1.1 = { citysize = 32000 }
+1765.1.1 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = MUG
+} # Given to GBR by Mughal Empire (was formerly british puppet)
+1800.1.1 = { citysize = 36000 }
+
+1850.1.1  = { citysize = 60000 }
+1900.1.1  = { citysize = 240000 }
+1930.1.1  = { add_core = IND remove_core = JNP remove_core = BNG }
+1947.8.15 = { owner = IND controller = IND remove_core = GBR }
+1950.1.1  = { citysize = 900000 }
+2001.1.1  = { citysize = 4436275 }
+
+
+

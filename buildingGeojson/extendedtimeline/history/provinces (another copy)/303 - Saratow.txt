@@ -1,0 +1,54 @@
+#303 - Saratow
+    
+culture = bulgarian
+religion = tengri
+hre = no
+base_tax = 3
+trade_goods = unknown    
+manpower = 3
+capital = "Saratow"
+discovered_by = SIB
+discovered_by = KAZ
+discovered_by = NOG
+discovered_by = GOL
+discovered_by = nomad_group
+
+660.1.1 = { owner = VBU controller = VBU add_core = VBU citysize = 1000 trade_goods = grain }
+800.1.1 = { citysize = 1476 discovered_by = eastern }
+900.1.1 = { citysize = 1953 }
+922.1.1 = { religion = sunni }
+1000.1.1 = { citysize = 2430 }
+1100.1.1 = { citysize = 2906 fort1 = yes }
+1200.1.1 = { citysize = 3383 discovered_by = western }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1250.1.1 = { culture = mishary }
+1260.1.1 = { owner = GOL controller = GOL add_core = GOL remove_core = MGE remove_core = VBU }
+1300.1.1 = { citysize = 3860 }
+1399.1.1 = { citysize = 4337 }
+
+1438.1.1  = { add_core = KAZ }
+1450.1.1  = { citysize = 4900 }
+1500.1.1  = { citysize = 5103 }
+1502.6.1  = { owner = KAZ controller = KAZ remove_core = GOL } # Golden Horde destroyed by Crimea, Kazan acquires area
+1550.1.1  = { citysize = 6003 } 
+1552.10.2  = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
+1590.7.12  = { fort2 = yes capital = "Saratov" } # Construction of the Saratow fortress 
+1600.1.1  = { citysize = 7062 culture = russian religion = orthodox }
+1650.1.1  = { citysize = 8309 }
+1670.3.1   = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+1671.4.14   = { revolt = { } controller = RUS unrest = 0 } # Razin captured
+1700.1.1  = { citysize = 9775 marketplace = yes }
+1750.1.1  = { citysize = 11500 }
+1773.9.13  = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured
+1800.1.1  = { citysize = 24700 }
+
+1850.1.1   = { citysize = 70000 }
+1900.1.1   = { citysize = 160000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 600000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 837831 }
+
+
+

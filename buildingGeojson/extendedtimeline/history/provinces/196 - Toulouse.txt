@@ -1,0 +1,105 @@
+newEntry196 - Toulouse.txt
+# 196 Toulouse - Principal cities: Toulouse
+
+owner = ROM
+controller = ROM
+capital = "Tolosa"
+citysize = 1750
+culture = gallian
+religion = hellenism
+hre = no
+base_tax = 7
+trade_goods = wine
+manpower = 5
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+fort1 = yes
+
+100.1.1 = { citysize = 2500 }
+200.1.1 = { citysize = 4000 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB }
+268.1.1 = { controller = ROM remove_core = GLL revolt = {} }
+300.1.1 = { citysize = 5500 }
+313.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 7000 }
+414.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = ROW culture = gothic }
+500.1.1 = { citysize = 8500 }
+507.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = GVI capital = "Toulouse" }
+555.1.1 = { owner = AQT controller = AQT add_core = AQT culture = aquitaine }
+600.1.1 = { citysize = 10000 }
+700.1.1 = { citysize = 11500 }
+768.1.1 = { owner = FRK controller = FRK }
+781.1.1 = { owner = AQT controller = AQT }
+800.1.1 = { citysize = 13000 }
+840.6.21 = { add_core = FRW remove_core = FRK }
+849.1.1 = { owner = TOU controller = TOU add_core = TOU }
+863.1.1 = { owner = CAT controller = CAT add_core = CAT }
+865.1.1 = { owner = TOU controller = TOU remove_core = CAT }
+866.1.1 = { owner = AQT controller = AQT add_core = AQT }
+867.1.1 = { religion = catholic }
+877.10.6 = { owner = AUV controller = AUV add_core = AUV remove_core = AQT }
+886.8.16 = { owner = TOU controller = TOU remove_core = AUV }
+900.1.1 = { citysize = 14500 fort2 = yes } # Exception, very strong forts in the region
+987.7.3 = { add_core = FRA add_core = GUY remove_core = FRW }
+1000.1.1 = { marketplace = yes citysize = 16000 }
+1082.1.1 = { temple = yes } # La Basilique Saint-Sernin
+1100.1.1 = { citysize = 17500 }
+1200.1.1 = { citysize = 19000 }
+1229.1.1 = { university = yes } # L'Université de Toulouse: also tops
+1271.1.1 = { owner = FRA controller = FRA }
+1300.1.1 = { citysize = 20500 }
+1360.5.9 = { owner = ENG controller = ENG } # Treaty of Bretigny
+1377.1.1 = { owner = FRA controller = FRA }
+1399.1.1 = { citysize = 22000 }
+
+1450.1.1 = { citysize = 31000 }
+1500.1.1 = { citysize = 35000 }
+1550.1.1 = { citysize = 40000 constable = yes }
+1560.1.1 = { religion = reformed }
+1565.1.1 = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
+1568.9.1 = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks
+1570.8.8 = { unrest = 10 } # Edict of Saint-Germain: temporary pacification
+1573.9.1 = { unrest = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
+1574.5.1 = { unrest = 7 } # Charles IX dies, situation cools a bit	
+1584.1.1 = { unrest = 12 } # Situation heats up again
+1588.12.1 = { unrest = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+#1590.1.1 = { customs_house = yes } # Henri IV's quest to eliminate corruption and establish state control
+1594.1.1 = { unrest = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1598.4.13 = { unrest = 3 } # Edict of Nantes, alot more freedom to the protestants
+1598.5.2 = { unrest = 0 } # Peace of Vervins, formal end to the Wars of Religion
+1600.1.1 = { citysize = 46000 }
+1635.1.1 = { unrest = 3 }
+1637.1.1 = { unrest = 0 }
+1640.1.1 = { fort3 = yes } # Region decreases in importance, fort is late
+1650.1.1 = { citysize = 42000 }
+1650.1.14 = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1 = { unrest = 4 } # An unstable peace is concluded
+1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
+1686.1.17 = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
+1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
+1700.1.1 = { citysize = 38000 }
+1705.1.1  = { fort4 = yes }
+1720.1.1  = { tax_assessor = yes }
+1750.1.1  = { citysize = 45000 }
+
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 100000 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1944.8.25  = { owner = FR2 controller = FR2 remove_core = FRV } # France liberated by allied forces
+1950.1.1   = { citysize = 200000 }
+2008.1.1   = { citysize = 439553 }
+
+
+

@@ -1,0 +1,81 @@
+newEntry2368 - Malatya.txt
+#332 - Mus
+
+owner = ROM
+controller = ROM
+culture = al_suryah_arabic
+religion = hellenism
+capital = "Melitene"
+trade_goods = cloth
+hre = no
+base_tax = 4
+manpower = 4
+citysize = 1007
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 1064 }
+200.1.1 = { citysize = 1178 }
+269.1.1 = { add_core = PLM revolt = { type = nationalist_rebels size = 1 } controller = REB }
+272.1.1 = { controller = ROM remove_core = PLM revolt = {} }
+300.1.1 = { citysize = 1292 }
+310.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1406 }
+500.1.1 = { citysize = 1520 culture = greek }
+600.1.1 = { citysize = 1634 }
+638.1.1 = { owner = RAS controller = RAS add_core = RAS capital = "Malatya" }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 1748 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 1862 }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 1976 }
+934.5.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+1000.1.1 = { citysize = 2090 fort1 = yes }
+1055.1.1 = { remove_core = ABB }
+1098.1.1 = { owner = EDE controller = EDE add_core = EDE }
+1101.1.1 = { owner = DNI controller = DNI }
+1100.1.1 = { citysize = 2204 }
+1103.1.1 = { owner = SEL controller = SEL }
+1107.1.1 = { owner = DNI controller = DNI }
+1120.1.1 = { religion = sunni culture = turkish }
+1178.1.1 = { owner = RUM controller = RUM add_core = RUM remove_core = DNI }
+1200.1.1 = { citysize = 2318 }
+1258.1.1 = { owner = ARM controller = ARM remove_core = RUM }
+1270.1.1 = { owner = MAM controller = MAM add_core = MAM }
+1300.1.1 = { citysize = 2432 }
+1337.1.1 = { owner = DUL controller = DUL add_core = DUL remove_core = MAM }
+1380.1.1 = { add_core = TUR }
+1399.1.1 = { citysize = 2546 }
+
+1450.1.1 = { citysize = 2600 }
+1500.1.1 = { citysize = 2966 marketplace = yes }
+1514.8.23 = {
+		owner = TUR
+		controller = TUR
+		add_core = TUR		
+}
+1550.1.1 = { citysize = 3008 }
+1600.1.1 = { citysize = 3100 }
+1650.1.1 = { citysize = 3655 }
+1700.1.1 = { citysize = 4005 }
+1750.1.1 = { citysize = 5233 }
+1800.1.1 = { citysize = 6020 }
+
+1850.1.1   = { citysize = 20000 remove_core = DUL }
+1900.1.1   = { citysize = 100000 }
+1916.2.16  = { controller = RUS }
+1918.3.3   = { controller = TUR }
+1922.11.1  = { owner = TKY controller = TKY add_core = TKY remove_core = TUR }
+1950.1.1   = { citysize = 400000 }
+2009.1.1   = { citysize = 843460 }
+
+
+

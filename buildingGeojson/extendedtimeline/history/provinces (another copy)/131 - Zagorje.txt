@@ -1,0 +1,96 @@
+#131 - Croatia
+
+owner = ROM
+controller = ROM
+culture = illyrian
+religion = hellenism
+capital = "Siscia"
+trade_goods = cloth
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1200
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+200.1.1 = { citysize = 1500 }
+300.1.1 = { citysize = 1800 }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2100 }
+455.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ROW }
+460.1.1 = { religion = arianism culture = gothic }
+500.1.1 = { citysize = 2400 }
+540.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = GOS }
+550.1.1 = { religion = chalcedonism }
+600.1.1 = { citysize = 2800 }
+630.1.1 = { add_core = CRO culture = croatian religion = slavic capital = "Zagreb" }
+650.1.1 = { owner = CRO controller = CRO remove_core = BYZ }
+700.1.1 = { citysize = 3200 }
+800.1.1 = { citysize = 3600 }
+870.1.1 = { religion = catholic }
+900.1.1 = { citysize = 4000 }
+1000.1.1 = { citysize = 4400 }
+1100.1.1 = { citysize = 4800 }
+1102.1.1 = { owner = HUN controller = HUN add_core = HUN }
+1165.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+1180.9.24 = { owner = HUN controller = HUN remove_core = BYZ }
+1200.1.1 = { citysize = 5200 }
+1300.1.1 = { citysize = 5600 }
+1399.1.1 = { citysize = 6000 }
+
+1450.1.1   = { citysize = 3700 }
+1500.1.1   = { citysize = 4383 }
+1526.8.30  = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+             } # Battle of Mohács, west area under Habsburg rule while a large part is occupied by the Ottomans.
+1550.1.1   = { citysize = 4171 }
+1560.1.1   = { marketplace = yes }
+1573.1.20  = { revolt = { type = anti_tax_rebels size = 1 } controller = REB } # Peasant uprising against Habsburg rule & the feudal system
+1573.2.9   = { revolt = {} controller = TUR } # Decisively defeated
+1600.1.1   = { citysize = 4933 }
+1650.1.1   = { citysize = 5342 }
+1671.1.1   = { unrest = 5 } # Conspiracy against Habsburg rule uncovered
+1671.5.1   = { unrest = 0 courthouse = yes } # Estimated, the conspirators are executed
+1699.1.1   = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = TUR
+	     } # Treaty of Karlowitz, the Turks are expelled
+1700.1.1   = { citysize = 5137 }
+1750.1.1   = { citysize = 6238 }
+1784.1.1   = { unrest = 7 } # Reforms to introduce German as the official language
+1789.1.1   = { unrest = 0 } # Most of the unpopular reforms were cancelled
+1800.1.1   = { citysize = 6500 }
+1805.12.26 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = HAB
+	     } # Treaty of Pressburg
+1813.9.20 = { controller = HAB } # Occupied by Austrian forces
+1814.4.6  = {	owner = HAB
+		add_core = HAB
+		remove_core = FRA
+	    } # Napoleon abdicates
+
+1857.1.1   = { citysize = 48266 }
+1900.1.1   = { citysize = 111565 }
+1918.12.1  = { owner = YUG controller = YUG add_core = YUG remove_core = HAB }
+1931.1.1   = { citysize = 258024 }
+1941.4.6   = { owner = GER controller = GER }
+1941.4.10  = { owner = CRO controller = CRO }
+1945.5.8   = { owner = YUG controller = YUG }
+1953.1.1   = { citysize = 393919 }
+1981.1.1   = { citysize = 723065 }
+1991.6.25  = { owner = CRO controller = CRO remove_core = YUG }
+2011.1.1   = { citysize = 792875 }
+
+
+

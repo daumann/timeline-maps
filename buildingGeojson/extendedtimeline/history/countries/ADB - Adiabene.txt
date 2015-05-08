@@ -1,0 +1,81 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = assyrian
+religion = jewish
+technology_group = muslim
+capital = 411	# Mosul (Arbela)
+
+34.1.1 = {
+	monarch = {
+		name = "Izates II"
+		dynasty = "bar Monobaz"
+		birth_date = 10.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+58.6.1 = {
+	monarch = {
+		name = "Monobazus II"
+		dynasty = "bar Monobaz"
+		birth_date = 20.1.1
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+75.1.1 = {
+	religion = zoroastrianism
+	monarch = {
+		name = "Meharaspes"
+		dynasty = "Adiabene"
+		birth_date = 50.1.1
+		adm = 6
+		dip = 1
+		mil = 2
+	}
+}
+
+117.1.1 = {
+	monarch = {
+		name = "Rakbakt"
+		dynasty = "Adiabene"
+		birth_date = 100.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+191.1.1 = {
+	monarch = {
+		name = "Narsai"
+		dynasty = "Adiabene"
+		birth_date = 170.1.1
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+200.6.1 = {
+	monarch = {
+		name = "Shahrat"
+		dynasty = "Adiabene"
+		birth_date = 180.1.1
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

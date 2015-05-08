@@ -1,0 +1,397 @@
+#Ideas from Extended Vanilla Experience
+
+LOT_ideas = {
+	start = {
+		infantry_power = 0.10
+		trade_steering = 0.20
+	}
+
+	bonus = {
+		global_trade_power = 0.10
+	}
+	
+	trigger = {
+		tag = LOT
+	}
+	free = yes
+	
+	legacy_of_the_carolingians = {
+		prestige = 1
+	}
+	fertile_land = {
+		production_efficiency = 0.10
+	}
+	dutch_population = {
+		global_manpower_modifier = 0.20
+	}
+	french_military_influence = {
+		land_morale = 0.10
+	}
+	dutch_cities = {
+		global_tax_modifier = 0.10
+	}
+	freedom_of_faith = {
+		tolerance_heretic = 3
+	}
+	philosophers = {
+		technology_cost = -0.05
+	}
+}
+
+HES_ideas = {
+	start = {
+		possible_mercenaries = 0.33
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = HES
+	}
+	free = yes
+	
+	hessian_disipline = {
+		discipline = 0.05
+	}
+	hessian_mercs = {
+		mercenary_cost = -0.25
+		merc_maintenance_modifier = -0.25
+	}
+	merc_trade = {
+		 diplomatic_reputation = 2
+	}
+	military_state = {
+		free_leader_pool = 1
+	}
+	hessian_morale = {
+		land_morale = 0.05
+	}
+	fridericianum_museum = {
+		idea_cost = -0.05
+	}
+	golden_lion = {
+		prestige = 1
+	}
+}
+
+DLH_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.10
+		global_manpower_modifier = 0.20
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.01
+	}
+	
+	trigger = {
+		tag = DLH
+	}
+	free = yes
+	
+	defender_of_india = {
+		prestige = 1
+	}
+	monetary_system = {
+		 global_tax_modifier = 0.10
+	}
+	hardened_army = {
+		discipline = 0.05
+	}
+	muslim_india = {
+		missionaries = 1
+	}
+	exotic_produce = {
+		global_trade_income_modifier = 0.10
+	}
+	defensive_strategy = {
+		defensiveness = 0.20
+	}
+	delhi_morale = {
+		land_morale = 0.05
+	}
+}
+
+MAJ_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.33
+		global_tax_modifier = 0.10
+	}
+	
+	bonus = {
+		global_trade_income_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = MAJ
+	}
+	free = yes
+	
+	marketplace_of_asia = {
+		merchants = 1
+	}
+	tributary_empire = {
+		diplomatic_upkeep = 1
+		vassal_income = 0.15
+	}
+	majapahit_trade_fleet = {
+		light_ship_power = 0.10
+		trade_steering = 0.15
+	}
+	religious_representation = {
+		tolerance_heathen = 2
+	}
+	exotic_trade_goods = {
+		production_efficiency = 0.10
+	}
+	majapahit_court = {
+		stability_cost_modifier = -0.20
+	}
+	maintaining_the_empire = {
+		global_manpower_modifier = 0.20
+	}
+}
+
+KOJ_ideas = {
+	start = {
+		tolerance_heathen = 1
+		global_missionary_strength = 0.03
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = KOJ
+	}
+	free = yes
+	
+	crown_of_thorns = {
+		prestige = 1
+	}
+	latin_patriarch = {
+		papal_influence = 1
+	}
+	frontier_state = {
+		discipline = 0.025
+	}
+	land_of_the_heathen = {
+		missionaries = 1
+	}
+	crusader_aristocracy = {
+		leader_land_shock = 1
+	}
+	crusader_castles = {
+		defensiveness = 0.33
+	}
+	cosmopolitan_nobility = {
+		diplomatic_reputation = 5
+	}
+}
+
+FLA_ideas = {
+	start = {
+		trade_steering = 0.20
+		naval_morale = 0.05
+	}
+	
+	bonus = {
+		production_efficiency = 0.10
+	}
+	
+	trigger = {
+		tag = FLA
+	}
+	free = yes
+
+	flemish_strength = {
+		discipline = 0.025
+	}
+	beguinage = {
+		tolerance_own = 2
+	}
+	urbanisation_of_flanders = {
+		global_tax_modifier = 0.10
+	}
+	flemish_merchants = {
+		merchants = 1
+	}
+	cloth_halls = {
+		global_trade_income_modifier = 0.10
+	}
+	reliance_upon_foreign_goods = {
+		global_foreign_trade_power = 0.10
+		diplomatic_reputation = 1
+	}
+	states_of_flanders = {
+		global_unrest = -1
+	}
+}
+
+HAI_ideas = {
+	start = {
+		ae_impact = -0.05
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		leader_land_fire = 1
+	}
+	
+	trigger = {
+		tag = HAI
+	}
+	free = yes
+
+	economic_diversity = {
+		global_trade_goods_size = 0.10
+	}
+	low_countries_diplomacy = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+		envoy_travel_time = -0.10
+	}
+	the_walloon_method = {
+		production_efficiency = 0.05
+	}
+	wallonian_armies = {
+		discipline = 0.025
+	}
+	bastion_of_northern_catholicism = {
+		global_heretic_missionary_strength = 0.01
+		papal_influence = 1
+	}
+	fortified_towns = {
+		defensiveness = 0.25
+	}
+	wine_calms_the_people = {
+		stability_cost_modifier = -0.10
+	}
+}
+
+BRB_ideas = {
+	start = {
+		global_manpower_modifier = 0.10
+		global_trade_goods_size = 0.05
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+	
+	trigger = {
+		tag = BRB
+	}
+	free = yes
+	
+	walled_cities = {
+		defensiveness = 0.10
+		global_tax_modifier = 0.05
+	}
+	armies_of_brabant = {
+		land_morale = 0.05
+	}
+	trade_city_breda = {
+		global_trade_power = 0.10
+	}
+	brabant_architecture = {
+		prestige = 1
+	}
+	cloth_halls_brb = {
+		global_trade_income_modifier = 0.10
+	}
+	leuven_university = {
+		technology_cost = -0.05
+	}
+	joyous_charter = {
+		legitimacy = 1
+	}
+}
+
+LIE_ideas = {
+	start = {
+		papal_influence = 2
+		missionaries = 1
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.10
+	}
+
+	trigger = {
+		tag = LIE
+	}
+	free = yes
+	
+	burgundian_favour = {
+		improve_relation_modifier = 0.25
+	}
+	guilds_of_liege = {
+		global_tax_modifier = 0.10
+	}
+	founder_of_beguines = {
+		tolerance_own = 1
+		global_heretic_missionary_strength = 0.01
+	}
+	liege_morale = {
+		land_morale = 0.05
+	}
+	athens_of_the_north = {
+		technology_cost = -0.05
+	}
+	stability_above_all = {
+		stability_cost_modifier = -0.10
+	}
+	cathedral_of_st_lambert = {
+		prestige = 1
+	}
+}
+
+french_ideas = {
+	start = {
+		global_manpower_modifier = 0.10
+		cavalry_power = 0.15
+	}
+
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		culture_group = french
+		capital_scope = { continent = europe }
+		NOT = { tag = FRK }
+		NOT = { tag = FRW }
+		NOT = { tag = FRM }
+		NOT = { tag = FRE }
+	}
+	free = yes
+	
+	the_three_estates = {
+		legitimacy = 1
+	}
+	advisors_to_the_king = {
+		diplomatic_reputation = 2
+		diplomatic_upkeep = 1
+	}
+	legacy_of_charlemagne = {
+		discipline = 0.025
+	}
+	land_of_wine = {
+		stability_cost_modifier = -0.10
+	}
+	eldest_daughter_church = {
+		global_missionary_strength = 0.02	
+	}
+	chateau = {
+		defensiveness = 0.10
+		prestige_decay = -0.01
+	}
+	group_the_philosophes = {
+		technology_cost = -0.05
+	}
+}

@@ -1,0 +1,109 @@
+newEntry532 - Raichur Doab.txt
+#532 - Raichur Doab
+
+owner = SAT
+controller = SAT
+culture = kannada
+religion = buddhism
+capital = "Raichur"
+trade_goods = cloth
+hre = no
+base_tax = 5
+manpower = 4
+citysize = 1146
+add_core = SAT
+fort1 = yes
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = chinese
+
+100.1.1 = { citysize = 1292 }
+200.1.1 = { citysize = 1585 }
+220.1.1 = { owner = PLL controller = PLL add_core = PLL remove_core = SAT }
+240.1.1 = { religion = jainism }
+300.1.1 = { citysize = 1878 }
+345.1.1 = { owner = KAD controller = KAD add_core = KAD remove_core = PLL }
+400.1.1 = { citysize = 2171 }
+500.1.1 = { citysize = 2464 }
+543.1.1 = { owner = CLY controller = CLY add_core = CLY remove_core = KAD }
+600.1.1 = { citysize = 2757 }
+700.1.1 = { citysize = 3049 }
+753.1.1 = { owner = RSH controller = RSH add_core = RSH remove_core = CLY }
+800.1.1 = { citysize = 3342 }
+900.1.1 = { citysize = 3635 }
+982.1.1 = { owner = CLY controller = CLY add_core = CLY remove_core = RSH }
+1000.1.1 = { citysize = 3928 }
+1100.1.1 = { citysize = 4221 }
+1186.1.1 = { owner = HOY controller = HOY add_core = HOY remove_core = CLY }
+1200.1.1 = { citysize = 4514 }
+1220.1.1 = { religion = hinduism }
+1300.1.1 = { citysize = 4807 }
+1325.1.1 = { owner = DLH controller = DLH add_core = DLH add_core = BIJ remove_core = HOY }
+1336.1.1 = { owner = VIJ controller = VIJ add_core = VIJ remove_core = DLH }
+1399.1.1 = { citysize = 5100 }
+
+1378.1.1 = {
+	controller = BAH
+	owner = BAH
+}
+1428.1.1 = { add_core = BAH }
+1450.1.1 = { citysize = 14000 }
+1493.1.1 = {
+	owner = VIJ
+	controller = VIJ
+} #Given to VIJ by BAH in exchange for protection against Bijapur
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 18000 }
+1503.1.1 = { owner = BIJ controller = BIJ } #Conquered by Bijapur
+1511.1.1 = { controller = VIJ } # Conquered by Vijayanagar
+1512.1.1 = { owner = VIJ } # Conquered by Vijayanagar
+1515.1.1 = {
+	controller = BIJ
+	owner = BIJ
+} #Falls in Bijapuri hands while VIJ is campaigning in Orissa
+1521.1.1 = { controller = VIJ }
+1522.1.1 = { owner = VIJ }
+1529.1.1 = {
+	owner = BIJ
+	controller = BIJ
+} #Adil Shahi forces seizes Mudgal and Raichur forts during the infighting after Krishna Rayas death
+1534.8.27 = {
+	owner = VIJ
+	controller = VIJ
+} #Adil Shahi nobility revolt against their new ruler while Vijayanagara forces seize the Raichur doab
+1550.1.1 = { citysize = 16000 }
+1565.1.26 = { controller = BIJ } #Lost by Vijayanagar in 1565
+1565.7.1 = {
+	owner = BIJ
+	remove_core = VIJ
+} #Lost by Vijayanagar
+1600.1.1 = { citysize = 17000 }
+1650.1.1 = { citysize = 23000 }
+1685.1.1 = { controller = MUG } # Conquered by the Mughal emperor Aurangzeb
+1686.1.1 = {
+	owner = MUG
+	add_core = MUG
+	remove_core = BAH
+	remove_core = BIJ
+} # Conquered by the Mughal emperor Aurangzeb
+1700.1.1 = { citysize = 27000 }
+1712.1.1 = { add_core = DEC }	#Viceroyalty of the Deccan
+1724.1.1 = {
+	owner = DEC
+	controller = DEC
+	remove_core = MUG
+} # Asif Jah declared himself Nizam-al-Mulk
+1750.1.1 = { citysize = 31000 }
+1800.1.1 = { citysize = 36000 }
+
+1850.1.1  = { citysize = 40000 }
+1900.1.1  = { citysize = 100000 }
+1930.1.1  = { add_core = IND }
+1948.9.1  = { owner = IND controller = IND remove_core = DEC }
+1950.1.1  = { citysize = 220000 }
+2011.1.1  = { citysize = 326360 }
+
+
+

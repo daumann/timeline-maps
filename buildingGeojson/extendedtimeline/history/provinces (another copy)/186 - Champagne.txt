@@ -1,0 +1,96 @@
+# 186 Champagne - Principal cities: Reims
+
+owner = ROM
+controller = ROM
+capital = "Durocortorum"
+citysize = 1500
+culture = gallian
+religion = hellenism
+hre = no
+base_tax = 7
+trade_goods = wine
+manpower = 6
+add_core = ROM
+fort1 = yes
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2000 }
+200.1.1 = { citysize = 3000 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB }
+274.1.1 = { controller = ROM remove_core = GLL revolt = {} }
+280.1.1 = { religion = chalcedonism }
+300.1.1 = { citysize = 4000 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 5000 }
+461.11.1 = { owner = SOI controller = SOI add_core = SOI }
+480.6.1 = { remove_core = ROW }
+486.6.1 = { owner = FRK controller = FRK add_core = FRK remove_core = SOI capital = "Reims" culture = cosmopolitan_french }
+496.1.1 = { temple = yes } # Older cathedral of Reims, coronation place of the French kings
+500.1.1 = { citysize = 6000 }
+600.1.1 = { citysize = 7000 }
+700.1.1 = { citysize = 8000 }
+800.1.1 = { citysize = 9000 }
+840.6.21 = { owner = FRW controller = FRW add_core = FRW remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 10000 }
+987.7.3 = { owner = FRA controller = FRA add_core = FRA add_core = CHP remove_core = FRW }
+1000.1.1 = { citysize = 11000 }
+1100.1.1 = { citysize = 12000 marketplace = yes }
+1200.1.1 = { citysize = 13000 }
+1234.4.7 = { owner = NAV controller = NAV add_core = NAV }
+1300.1.1 = { citysize = 14000 }
+1314.11.29 = { owner = FRA controller = FRA remove_core = NAV }
+1399.1.1 = { citysize = 15000 }
+
+1420.5.12  = { owner = ENG controller = ENG add_core = ENG } # Treaty of Troyes, ceded to the English
+1429.1.1   = { owner = FRA controller = FRA remove_core = ENG } # Retaken by the French
+1450.1.1   = { citysize = 17000 }
+1466.2.10  = { add_core = BUR } # Treaty of Conflans, Champagne is promised to Charles the Bold as dowry
+1477.1.5   = { remove_core = BUR } # Charles the Bold dies
+1500.1.1   = { citysize = 19000 refinery = yes }
+1530.1.1   = { fort2 = yes }
+1550.1.1   = { citysize = 21000 }
+1562.3.1   = { unrest = 7 } # Massacre at Wassy, the fuse is put in the French powder keg
+1563.3.19  = { unrest = 0 } # Temporary truce after the assassination of de Guise
+1570.1.1   = { constable = yes }
+1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1594.1.1   = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1600.1.1   = { citysize = 23000 } #customs_house = yes Henri IV's quest to eliminate corruption and establish state control
+1621.1.1   = { base_tax = 10 } # Richelieu
+1630.1.1   = { fort3 = yes }
+1636.8.30  = { controller = HAB } # Habsburg forces ravage North Eastern France
+1636.9.25  = { controller = FRA } # Bernhard of Saxe-Weimar defeats the invaders and gradually pushes them back
+1650.1.1   = { citysize = 24000 }
+1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1   = { unrest = 4 } # An unstable peace is concluded
+1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.2.15  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Charles of Lorraine marches towards Paris to team up with Condé, ravaging the Champagne
+1652.10.21 = { revolt = {} controller = FRA } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1660.1.1   = { courthouse = yes }
+1680.1.1   = { fort4 = yes }
+1700.1.1   = { citysize = 25000 tax_assessor = yes }
+1740.1.1   = { regimental_camp = yes }
+1750.1.1   = { citysize = 30000 }
+1773.1.1   = { base_tax = 11 } # Turgot & the Economical Reforms
+
+1870.9.4   = {  owner = FR2
+		controller = PRU
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1871.1.18  = { controller = GER }
+1871.5.10  = { controller = FR2 }
+1900.1.1   = { citysize = 80000 }
+1940.6.14  = { owner = GER controller = GER } # France surrendered to Nazi Garmany
+1944.9.1   = { controller = FR2 }
+1945.5.8   = { owner = FR2 }
+1950.1.1   = { citysize = 120000 }
+2008.1.1   = { citysize = 188078 }
+
+
+

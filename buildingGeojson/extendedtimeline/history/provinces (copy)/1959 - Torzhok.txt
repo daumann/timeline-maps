@@ -1,0 +1,45 @@
+#Torzhok
+
+culture = russian
+religion = slavic
+hre = no
+base_tax = 3
+trade_goods = fur
+manpower = 2
+capital = "Torzhok"
+
+550.1.1 = { discovered_by = VYA owner = VYA controller = VYA add_core = VYA citysize = 1000 }
+800.1.1 = { discovered_by = eastern discovered_by = NOR discovered_by = VES }
+862.1.1 = { owner = NOV controller = NOV add_core = NOV remove_core = VYA fort1 = yes }
+882.1.1 = { owner = KRU controller = KRU add_core = KRU remove_core = NOV }
+900.1.1 = { discovered_by = western }
+1000.1.1 = { citysize = 1420 religion = orthodox }
+1054.2.20 = { owner = NOV controller = NOV add_core = NOV remove_core = KRU }
+1100.1.1 = { citysize = 1840 }
+1200.1.1 = { citysize = 2260 discovered_by = nomad_group }
+1300.1.1 = { citysize = 2680 }
+1399.1.1 = { citysize = 3100 }
+
+1450.1.1  = { citysize = 2500 }
+1478.1.15 = {	owner = MOS controller = MOS add_core = MOS remove_core = NOV }
+1500.1.1  = { citysize = 3000 }
+1503.4.1 = {	owner = RUS controller = RUS add_core = RUS remove_core = MOS }
+1550.1.1  = { citysize = 3500 }
+1598.1.7  = { unrest = 5 } # "Time of troubles"
+1600.1.1  = { citysize = 4000 }
+1613.3.3 = { unrest = 0 } # Romanov dynasty
+1650.1.1  = { citysize = 4500 }
+1700.1.1  = { citysize = 5000 }
+1750.1.1  = { citysize = 6000 }
+1800.1.1  = { citysize = 6500 }
+
+1850.1.1   = { citysize = 8000 }
+1900.1.1   = { citysize = 15000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1941.8.9   = { controller = GER }
+1944.2.18  = { controller = SOV }
+1950.1.1   = { citysize = 26000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 31809 }
+
+

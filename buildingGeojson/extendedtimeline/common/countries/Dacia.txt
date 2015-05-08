@@ -1,0 +1,51 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 122  142  86 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	spanish_tercio
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+}
+
+monarch_names = {
+	"Rubobostes #0" = 20
+	"Oroles #0" = 20
+	"Burebista #0" = 20
+	"Cotiso #0" = 20
+	"Decebalus #0" = 20
+	"Deceneus #0" = 20
+	"Tarabostes #0" = 20
+}
+
+leader_names = {
+        ""
+}
+
+ship_names = {
+	Zamolxis Sabazios Zibelthiurdos Cotys Bendis Semele Derzelas 
+	Cottyto Gebeleizis Kogaionon "Heros Karabazmos"
+}
+

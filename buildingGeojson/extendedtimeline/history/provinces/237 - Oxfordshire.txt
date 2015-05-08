@@ -1,0 +1,81 @@
+newEntry237 - Oxfordshire.txt
+#237 - Oxfordshire
+
+owner = ERG
+controller = ERG
+culture = briton
+religion = druidism
+hre = no
+base_tax = 7
+trade_goods = grain
+manpower = 3
+capital = "Coriunum"
+citysize = 1000
+add_core = ERG
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+43.1.1 = { owner = ROM controller = ROM add_core = ROM remove_core = ERG }
+200.1.1 = { citysize = 1300 }
+300.1.1 = { citysize = 1600 }
+380.1.1 = { add_core = ERG }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1900 }
+410.1.1 = { owner = ERG controller = ERG add_core = ERG remove_core = ROW culture = welsh }
+500.1.1 = { citysize = 2200 }
+519.1.1 = { owner = WSX controller = WSX add_core = WSX remove_core = ERG culture = anglo_saxon religion = germanic }
+600.1.1 = { citysize = 2500 }
+645.1.1 = { owner = MRC controller = MRC add_core = MRC }
+648.1.1 = { owner = WSX controller = WSX remove_core = MRC }
+650.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 2800 }
+750.1.1 = { capital = "Oxford" }
+800.1.1 = { citysize = 3100 }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 3400 }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG }
+1000.1.1 = { citysize = 3700 }
+1027.1.1 = { remove_core = WSX }
+1066.1.1 = { fort1 = yes }
+1066.12.25 = { culture = english }
+1096.1.1 = { university = yes } # Oxford University
+1100.1.1 = { citysize = 4000 }
+1200.1.1 = { citysize = 4300 }
+1300.1.1 = { citysize = 4600 }
+1399.1.1 = { citysize = 5000 }
+
+1450.1.1   = { citysize = 6000 }
+1453.1.1   = { unrest = 5 } # Start of the War of the Roses
+1461.6.1   = { unrest = 2 } # Coronation of Edward IV
+1467.1.1   = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1471.1.1   = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.5.4   = { unrest = 2 } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26  = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23  = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1500.1.1   = { marketplace = yes } # Estimated
+1520.1.1   = { citysize = 7000 }
+1560.1.1   = { religion = protestant }
+1600.1.1   = { citysize = 8000 fort2 = yes }
+1642.9.10  = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
+1642.10.24 = { revolt = {} controller = ENG }
+1650.1.1   = { citysize = 10000 }
+1700.1.1   = { citysize = 12000 }
+1707.5.12  = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	     }
+1750.1.1   = { citysize = 15000 tax_assessor = yes } # Tax Assessor Estimated
+1800.1.1   = { citysize = 22000 }
+
+1850.1.1   = { citysize = 35662 }
+1900.1.1   = { citysize = 57808 }
+1950.1.1   = { citysize = 93707 }
+2011.1.1   = { citysize = 151900 }
+
+
+

@@ -1,0 +1,68 @@
+newEntry611 - Thakhek.txt
+#611 - Thakhek
+
+owner = KHM
+controller = KHM
+culture = lao
+religion = buddhism
+capital = "Sikhottabong"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 1097
+add_core = KHM
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 1195 }
+200.1.1 = { citysize = 1391 }
+300.1.1 = { citysize = 1587 }
+400.1.1 = { citysize = 1782 }
+450.1.1 = { owner = CNA controller = CNA add_core = CNA remove_core = KHM }
+500.1.1 = { citysize = 1978 }
+600.1.1 = { citysize = 2174 }
+700.1.1 = { citysize = 2370 }
+800.1.1 = { citysize = 2565 }
+802.1.1 = { owner = KHM controller = KHM add_core = KHM remove_core = CNA }
+900.1.1 = { citysize = 2761 }
+1000.1.1 = { citysize = 2957 }
+1100.1.1 = { citysize = 3152 }
+1200.1.1 = { citysize = 3348 }
+1300.1.1 = { citysize = 3544 }
+1354.1.1 = { owner = LXA controller = LXA add_core = LXA remove_core = KHM }
+1399.1.1 = { citysize = 3740 }
+
+1450.1.1 = { citysize = 4155 }
+1483.1.1 = { add_core = DAI } # Vietnamese Invasion
+1500.1.1 = { citysize = 4800 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 5787 }
+1600.1.1 = { citysize = 7000 }
+1650.1.1 = { citysize = 8860 }
+1694.1.1 = { add_core = TOK } # Vietnamese Intervention
+1700.1.1 = { citysize = 10250 }
+1707.1.1 = {	owner = VIE
+		controller = VIE
+		add_core = VIE
+	   	remove_core = LXA
+	   	remove_core = TOK
+		remove_core = DAI
+	   } # Lan Xang declared itself independent, partitioned into three kingdoms; Vientiane, Champasak & Luang Prabang
+1750.1.1 = { citysize = 11870 }
+1758.1.1 = { unrest = 5 } # Rebellion
+1759.1.1 = { unrest = 0 }
+1800.1.1 = { citysize = 12466 }
+
+1828.11.12 = { owner = AYU controller = AYU add_core = AYU }
+1850.1.1   = { citysize = 15000 }
+1893.10.3  = { owner = FR2 controller = FR2 add_core = FR2 add_core = LAO remove_core = VIE remove_core = AYU }
+1900.1.1   = { citysize = 21000 }
+1941.1.1   = { controller = JAP }
+1945.8.23  = { controller = FR2 }
+1950.1.1   = { citysize = 28000 }
+1953.10.22 = { owner = LAO controller = LAO remove_core = FR2 }
+2012.1.1   = { citysize = 35000 }
+
+
+

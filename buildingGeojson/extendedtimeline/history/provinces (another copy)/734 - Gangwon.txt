@@ -1,0 +1,60 @@
+#734 - Gangwon
+
+owner = DON
+controller = DON
+culture = korean
+religion = buddhism
+capital = "Gangneung"
+trade_goods = fish
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 4639
+add_core = DON
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 5278 }
+200.1.1 = { citysize = 6557 }
+300.1.1 = { citysize = 7835 }
+400.1.1 = { citysize = 9114 }
+420.1.1 = { owner = GOG controller = GOG add_core = GOG remove_core = DON }
+500.1.1 = { citysize = 10392 }
+580.1.1 = { owner = SLL controller = SLL add_core = SLL remove_core = GOG }
+600.1.1 = { citysize = 11671 }
+700.1.1 = { citysize = 12950 }
+800.1.1 = { citysize = 14228 }
+900.1.1 = { citysize = 15507 }
+935.1.1 = { owner = KOR controller = KOR add_core = KOR remove_core = SLL }
+1000.1.1 = { citysize = 16785 }
+1100.1.1 = { citysize = 18064 }
+1200.1.1 = { citysize = 19342 }
+1300.1.1 = { citysize = 20621 }
+1392.1.1 = { religion = confucianism }
+1399.1.1 = { citysize = 21900 }
+
+1450.1.1 = { citysize = 14850 }
+1500.1.1 = { citysize = 17600 }
+1542.1.1   = { discovered_by = POR }
+1550.1.1 = { citysize = 19864 }
+1600.1.1 = { citysize = 12635 } # Great devastation as a result of the Japanese invasion
+1627.1.1  = { add_core = MCH } # Manchu Invasion
+1636.7.1  = { remove_core = MCH } # Qing vassalized Korea
+1650.1.1 = { citysize = 15270 }
+1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+1700.1.1 = { citysize = 19526 }
+1750.1.1 = { citysize = 24588 }
+1800.1.1 = { citysize = 31500 }
+
+1850.1.1   = { citysize = 70000 }
+1900.1.1   = { citysize = 120000 }
+1910.8.20  = { owner = JAP controller = JAP add_core = JAP }
+1912.2.12  = { remove_core = QNG }
+1945.8.15  = { owner = KOR controller = KOR add_core = SKO remove_core = JAP }
+1948.9.9   = { owner = SKO controller = SKO add_core = NKO remove_core = KOR }
+1950.1.1   = { citysize = 180000 }
+2008.1.1   = { citysize = 273130 }
+
+
+

@@ -1,0 +1,88 @@
+#153 - Pecs
+ 
+owner = QUA
+controller = QUA
+add_core = QUA
+citysize = 1000
+culture = austrian
+religion = germanic
+capital = "Buda"
+trade_goods = grain
+hre = no
+base_tax = 5
+manpower = 1
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+325.1.1 = { religion = arianism }
+365.1.1 = { owner = GEP controller = GEP add_core = GEP remove_core = QUA culture = gepid }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS }
+454.1.1 = { owner = GEP controller = GEP add_core = GEP remove_core = HNS fort1 = yes }
+567.1.1 = { owner = AVR controller = AVR add_core = AVR remove_core = GEP culture = avar }
+570.1.1 = { religion = tengri }
+600.1.1 = { citysize = 1400 }
+700.1.1 = { citysize = 1700 }
+800.1.1 = { citysize = 2100 }
+804.1.1 = { owner = BUL controller = BUL add_core = BUL remove_core = AVR }
+884.1.1 = { owner = MRV controller = MRV add_core = MRV remove_core = BUL }
+897.1.1 = { owner = HUN controller = HUN add_core = HUN remove_core = MRV culture = hungarian }
+900.1.1 = { citysize = 2500 }
+1000.1.1 = { citysize = 2900 }
+1010.1.1 = { religion = catholic }
+1100.1.1 = { citysize = 3300 }
+1200.1.1 = { citysize = 3700 }
+1300.1.1 = { citysize = 4100 }
+1399.1.1 = { citysize = 4500 }
+
+1450.1.1 = { citysize = 4700 }
+1500.1.1 = { citysize = 5102 marketplace = yes }
+1506.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Szekely rebellion
+1507.1.1 = { revolt = {} controller = HUN } # Estimated
+1514.4.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Peasant rebellion against Hungary's magnates
+1515.1.1 = { revolt = {} controller = HUN } # Estimated
+1526.8.30 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB 
+	add_core = TRA
+} #Hungary fractured after Battle of Mohacs
+1527.6.1 = { fort2 = yes } # Pécs is rebuilt and fortified
+1529.9.1 = { controller = TUR } # Occupied by Suleiman I during march on Vienna
+1533.6.22 = { owner = TRA } # Pecs ruled by John Zapolya after the end of the Ottoman-Habsburg War	
+1542.1.1 = {
+	owner = TUR
+	controller = HAB 
+	add_core = TUR
+} # Pecs swears allegiance to Ferdinand as Turks seize Hungary
+1543.6.1 = { controller = TUR } # Without Ferdinand's support, the citizens couldn't hold Pecs anymore
+1545.1.1 = { religion = protestant } # Synod of Erdod
+1545.8.1 = { remove_core = HAB } # Treaty of Adrianople ends the Ottoman-Habsburg War
+1550.1.1 = { citysize = 5722 }
+1570.1.1 = {remove_core = TRA } #Treaty of Speyer
+1600.1.1 = { citysize = 6770 }
+1620.1.1 = { religion = catholic }
+1650.1.1 = { citysize = 7544 constable = yes }
+1686.10.22 = {	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = TUR
+} # The Ottomans surrender to the army led by Louis of Baden
+1690.1.1 = { citysize = 5430 } # Plague
+1700.1.1 = { citysize = 7400 tax_assessor = yes }
+1750.1.1 = { citysize = 8100 }
+1800.1.1 = { citysize = 9870 }
+
+1873.11.17 = { citysize = 296867 capital = "Budapest" }
+1900.1.1   = { citysize = 733358 }
+1918.10.31 = { owner = HUN controller = HUN remove_core = HAB }
+1920.1.1   = { citysize = 928669 }
+1945.1.1   = { citysize = 832800 }
+1980.1.1   = { citysize = 2059226 }
+2011.1.1   = { citysize = 1737000 }
+
+
+

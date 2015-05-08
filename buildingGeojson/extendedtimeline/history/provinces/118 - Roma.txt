@@ -1,0 +1,87 @@
+newEntry118 - Roma.txt
+#118 - Roma
+
+owner = ROM
+controller = ROM
+culture = roman
+religion = hellenism
+hre = no
+base_tax = 13
+trade_goods = grain
+manpower = 8
+fort1 = yes 
+capital = "Roma" 
+citysize = 1650000
+marketplace = yes #Forum of Rome
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+64.1.1 = { citysize = 1500000 } # The great fire of Rome
+130.1.1 = { citysize = 1550000 }
+150.1.1 = { citysize = 1400000 } # Roman Empire weakens and Rome gradually declines
+180.1.1 = { citysize = 1350000 }
+210.1.1 = { citysize = 1300000 }
+240.1.1 = { citysize = 1350000 }
+280.1.1 = { citysize = 1200000 religion = chalcedonism }
+330.1.1 = { citysize = 1150000 }
+360.1.1 = { temple = yes } # old St. Peter's Basilica
+395.1.17 = { citysize = 1100000 controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+410.8.24 = { citysize = 1000000 } # Goths of Alaric sack Rome
+455.1.1 = { base_tax = 10 citysize = 80000 } # Vandals of Geiseric sack Rome
+472.7.11 = { citysize = 50000 } # Unpaid Roman troops sack Rome
+476.9.4 = { owner = ODO controller = ODO add_core = ODO add_core = BYZ } #Odoacer's Kingdom
+480.1.1 = { remove_core = ROW }
+480.8.1 = { culture = umbrian }
+488.6.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO } #Ostrogoths take over
+536.6.1 = { owner = BYZ controller = BYZ } # Byzantines led by Belisarius retake Rome
+546.12.17 = { base_tax = 8 citysize = 40000 controller = GOS } #Ostrogoths captured and sacked Rome
+548.1.1 = { controller = BYZ }
+549.1.1 = { citysize = 35000 controller = GOS }
+552.1.1 = { controller = BYZ remove_core = GOS }
+590.1.1 = { citysize = 30000 } #Floods and plague
+710.1.1 = { citysize = 35000 }
+754.6.1 = { citysize = 40000 owner = PAP controller = PAP add_core = PAP remove_core = BYZ }
+800.1.1 = { citysize = 30000 }
+867.1.1 = { religion = catholic }
+1000.1.1 = { citysize = 35000 }
+1200.1.1 = { base_tax = 10 citysize = 40000 }
+1300.1.1   = { base_tax = 12 citysize = 47000 }
+
+1408.1.1   = { owner = NAP controller = NAP add_core = NAP } # Ladislas takes control of Ancona
+1414.8.6   = { owner = PAP controller = PAP remove_core = NAP }
+1450.1.1   = { citysize = 50000 }
+1500.1.1   = { citysize =  55000 } 
+1550.1.1   = { citysize =  45000 }
+1580.1.1   = { regimental_camp = yes } 
+1600.1.1   = { citysize = 105000 } 
+1650.1.1   = { citysize = 124000 } 
+1700.1.1   = { citysize = 138000 tax_assessor = yes } 
+1750.1.1   = { citysize = 156000 add_core = ITA } 
+1800.1.1   = { citysize = 163000 } 
+1809.4.10  = { controller = FRA } # Occupied by French troops
+1809.10.14 = { owner = FRA add_core = FRA } # Treaty of Schönbrunn
+1814.4.11  = {	owner = PAP
+		controller = PAP
+		remove_core = FRA
+	     } # # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+
+1840.1.1  = { citysize = 180000 }
+1861.1.1  = { citysize = 194500 }
+1861.3.17 = { add_core = ITA }
+1870.9.20 = { controller = ITA }
+1870.10.2 = { owner = ITA }
+1881.1.1  = { citysize = 273952 }
+1901.1.1  = { citysize = 422411 }
+1911.1.1  = { citysize = 518917 }
+1931.1.1  = { citysize = 930926 }
+1951.1.1  = { citysize = 1651754 }
+#1981.1.1  = { citysize = 2840259 }
+#2011.9.1  = { citysize = 2777979 }
+
+
+

@@ -1,0 +1,330 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = persian
+religion = zoroastrianism
+technology_group = muslim
+capital = 2289 # Estakhr
+
+
+224.1.1 = {
+	monarch = {
+		name = "Ardashir I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+226.1.1 = { capital = 410 } # Ctesiphon
+
+241.1.1 = {
+	monarch = {
+		name = "Shapur I"
+		dynasty = "Sassanid"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+272.1.1 = {
+	monarch = {
+		name = "Hormizd I"
+		dynasty = "Sassanid"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+273.1.1 = {
+	monarch = {
+		name = "Bahram I"
+		dynasty = "Sassanid"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+276.1.1 = {
+	monarch = {
+		name = "Bahram II"
+		dynasty = "Sassanid"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+293.1.1 = {
+	monarch = {
+		name = "Bahram III"
+		dynasty = "Sassanid"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+293.6.1 = {
+	monarch = {
+		name = "Narseh I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}
+
+302.1.1 = {
+	monarch = {
+		name = "Hormizd II"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+309.1.1 = {
+	monarch = {
+		name = "Shapur II"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+379.1.1 = {
+	monarch = {
+		name = "Ardashir II"
+		dynasty = "Sassanid"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+383.1.1 = {
+	monarch = {
+		name = "Shapur III"
+		dynasty = "Sassanid"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+
+388.1.1 = {
+	monarch = {
+		name = "Bahram IV"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+399.1.1 = {
+	monarch = {
+		name = "Yazdegerd I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+420.1.1 = {
+	monarch = {
+		name = "Bahram V"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+438.1.1 = {
+	monarch = {
+		name = "Yazdegerd II"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+457.1.1 = {
+	monarch = {
+		name = "Hormizd III"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+459.1.1 = {
+	monarch = {
+		name = "Peroz I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+484.1.1 = {
+	monarch = {
+		name = "Balash I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+488.1.1 = {
+	monarch = {
+		name = "Kavadh I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+496.1.1 = {
+	monarch = {
+		name = "Djamasp I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+498.1.1 = {
+	monarch = {
+		name = "Kavadh I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+531.1.1 = {
+	monarch = {
+		name = "Khosrau I"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+579.1.1 = {
+	monarch = {
+		name = "Hormizd IV"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+591.1.1 = {
+	monarch = {
+		name = "Khosrau II"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+628.1.1 = {
+	monarch = {
+		name = "Kavadh II"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+628.6.1 = {
+	monarch = {
+		name = "Ardashir III"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+
+630.1.1 = {
+	monarch = {
+		name = "Borandukht"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+631.1.1 = {
+	monarch = {
+		name = "Azarmidokht"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+		female = yes
+	}
+}
+
+631.6.1 = {
+	monarch = {
+		name = "Hormizd VI"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+632.1.1 = {
+	monarch = {
+		name = "Yazdegerd III"
+		dynasty = "Sassanid"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

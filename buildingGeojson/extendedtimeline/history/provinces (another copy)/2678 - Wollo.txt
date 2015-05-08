@@ -1,0 +1,75 @@
+#1224 - Gonder
+
+owner = AKS
+controller = AKS
+add_core = AKS
+culture = amhara
+religion = african
+capital = "Hayq"
+citysize = 2142
+manpower = 2
+trade_goods = grain
+hre = no
+base_tax = 2
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+
+100.1.1 = { citysize = 2285 }
+200.1.1 = { citysize = 2571 }
+300.1.1 = { citysize = 2857 }
+330.1.1 = { religion = chalcedonism }
+400.1.1 = { citysize = 3142 }
+451.11.1 = { religion = coptic }
+500.1.1 = { citysize = 3428 }
+600.1.1 = { citysize = 3714 }
+700.1.1 = { citysize = 4000 }
+800.1.1 = { citysize = 4285 }
+900.1.1 = { citysize = 4571 }
+960.1.1 = { owner = ETH controller = ETH add_core = ETH remove_core = AKS }
+1000.1.1 = { citysize = 4857 }
+1100.1.1 = { citysize = 5142 }
+1200.1.1 = { citysize = 5428 }
+1300.1.1 = { citysize = 5714 }
+1399.1.1 = { citysize = 6000 }
+
+1450.1.1 = { citysize = 6000 }
+1493.1.1 = { unrest = 6 } # Uprising among the Arho against crown overlordship
+1494.1.1 = { unrest = 0 }
+1500.1.1 = { citysize = 6500 }
+1533.1.1 = { unrest = 7 } # Raids by Ahmad Gran
+1534.1.1 = {	owner = ADA
+		controller = ADA
+		add_core = ADA
+		unrest = 6
+	   } # Ahmad Gran takes over region
+1544.1.1   = {	owner = ETH
+		controller = ETH
+	     } # Adal collapse in highlands in wake of Ahmad Gran's death
+1550.1.1 = { discovered_by = TUR }
+1584.1.1 = { unrest = 7 } # Oromo Raids
+1589.1.1 = { unrest = 7 } # Oromo Raids
+1590.1.1 = { unrest = 0 }
+1647.1.1 = { unrest = 7 } # Oromo Raids
+1648.1.1 = { unrest = 0 }
+
+1850.1.1   = { citysize = 30000 }
+1882.1.1   = { capital = "Dessie" }
+1900.1.1   = { citysize = 60000 }
+1936.5.9   = { owner = ITA controller = ITA }
+1941.11.27 = { owner = ETH controller = ETH }
+1950.1.1   = { citysize = 120000 }
+2008.1.1   = { citysize = 231977 }
+
+
+

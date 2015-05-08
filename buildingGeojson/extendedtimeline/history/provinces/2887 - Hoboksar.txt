@@ -1,0 +1,77 @@
+newEntry2887 - Hoboksar.txt
+#715 - Urumqi
+
+owner = XIO
+controller = XIO
+culture = oirats
+religion = tengri
+capital = "Hoboksar"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 1641
+add_core = XIO
+discovered_by = chinese
+discovered_by = nomad_group
+
+91.2.1 = { owner = XIB controller = XIB add_core = XIB remove_core = XIO }
+100.1.1 = { citysize = 1782 }
+200.1.1 = { citysize = 2064 }
+300.1.1 = { citysize = 2346 }
+330.1.1 = { owner = ROU controller = ROU add_core = ROU remove_core = XIB }
+400.1.1 = { citysize = 2628 }
+500.1.1 = { citysize = 2910 religion = buddhism }
+547.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = ROU }
+600.1.1 = { citysize = 3192 }
+700.1.1 = { citysize = 3475 }
+744.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = GOK }
+765.1.1 = { religion = manichaeism }
+800.1.1 = { citysize = 3757 }
+840.1.1 = { religion = buddhism }
+848.1.1 = { owner = NAI controller = NAI add_core = NAI remove_core = UIG }
+900.1.1 = { citysize = 4039 }
+1000.1.1 = { citysize = 4321 }
+1100.1.1 = { citysize = 4603 }
+1200.1.1 = { citysize = 4885 }
+1203.1.1 = { owner = KMO controller = KMO add_core = KMO remove_core = NAI }
+1206.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KMO }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 5167 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1399.1.1 = { owner = OIR controller = OIR add_core = OIR remove_core = KHA citysize = 5450 }
+
+1450.1.1 = { citysize = 11000 }
+1500.1.1 = { citysize = 12485 }
+1550.1.1 = { citysize = 14088 }
+1600.1.1 = { citysize = 15487 }
+1622.1.1 = { discovered_by = RUS }
+1623.1.1 = {	owner = OIR
+		controller = OIR
+	   	add_core = OIR
+	   	remove_core = CHG
+	   	religion = buddhism
+	   } # The Oirads
+1635.1.1 = {	owner = ZUN
+		controller = ZUN
+		add_core = ZUN
+		}
+1650.1.1 = { citysize = 16990 }
+1700.1.1 = { citysize = 18000 }
+1750.1.1 = { citysize = 20200 }
+1754.1.1 = {	owner = QNG
+		controller = QNG
+		add_core = QNG
+		}
+1800.1.1 = { citysize = 24500 }
+
+1850.1.1   = { citysize = 40000 remove_core = OIR }
+1900.1.1   = { citysize = 150000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1950.1.1   = { citysize = 800000 }
+1980.1.1   = { citysize = 1500000 }
+#2007.1.1   = { citysize = 2744280 }
+
+
+

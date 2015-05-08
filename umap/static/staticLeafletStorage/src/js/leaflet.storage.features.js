@@ -1,3 +1,81 @@
+var staticX;
+var chosenFeature = "initial";
+var containercontainer;
+var builderbuilder;
+var thisthis;
+var insideLoop = false;
+
+var until;
+
+
+function addFeat(){
+    
+    containercontainer.appendChild(builderbuilder.build());
+
+    var properties = [];
+    
+    for (var i in thisthis.properties) {
+        if (typeof thisthis.properties[i] === 'object' ||
+            ['name', 'description'].indexOf(i) !== -1) {continue;}
+
+        console.debug('pushing properties.' + i, {label: i})
+        properties.push(['properties.' + i, {label: i}]);
+    }
+    
+    if (chosenFeature == "preset-list-item preset-landuse-residential")
+    {
+        properties.unshift('properties.wikiUrl');
+        properties.unshift('properties.birthday');
+
+    }
+    else{
+        properties.unshift('properties.color');
+        properties.unshift('properties.wikiUrl');
+        properties.unshift('properties.description');
+        properties.unshift('properties.name');
+
+
+    }
+ 
+    
+    builderbuilder = new L.S.FormBuilder(thisthis, properties,
+        {
+            id: 'storage-feature-properties',
+            callback: thisthis.resetLabel
+        }
+    );
+
+    staticX=thisthis;
+
+    //TODO: Build custom form here
+    form = builderbuilder.build();
+    
+
+    containercontainer.appendChild(form);
+    thisthis.appendEditFieldsets(containercontainer);
+    var advancedActions = L.DomUtil.createFieldset(containercontainer, L._('Advanced actions'));
+    thisthis.getAdvancedEditActions(advancedActions);
+   // L.S.fire('ui:start', {data: {html: containercontainer}});
+    thisthis.map.editedFeature = thisthis;
+
+/*
+
+    var option = document.createElement("option");
+    option.text = document.getElementsByClassName("datetimeValue")[0].innerHTML;
+    option.value = document.getElementsByClassName("datetimeValue")[0].innerHTML;
+    
+    document.getElementsByName("datalayer")[0].add(option);
+
+    document.getElementsByName("datalayer")[0].value = document.getElementsByClassName("datetimeValue")[0].innerHTML;
+
+*/
+
+    
+                    
+    
+    
+}
+
 L.Storage.FeatureMixin = {
 
     form_id: 'feature_form',
@@ -9,6 +87,9 @@ L.Storage.FeatureMixin = {
             options = {};
         }
         // DataLayer the marker belongs to
+        
+      //  console.debug("initialize feature_form datalayer",this.datalayer, options.datalayer)
+     //   console.debug(options.geojson)
         this.datalayer = options.datalayer || null;
         this.properties = {_storage_options: {}};
         if (options.geojson) {
@@ -73,33 +154,128 @@ L.Storage.FeatureMixin = {
         var container = L.DomUtil.create('div'), form ;
 
         var builder = new L.S.FormBuilder(this, ['datalayer'], {
+            
             callback: function () {this.edit(e);}  // removeLayer step will close the edit panel, let's reopen it
+            
         });
         container.appendChild(builder.build());
 
+        if(!insideLoop){
+
+        var Yearlabel = document.createElement("h3");
+        Yearlabel.innerHTML = "Year Range";
+        
+        var input = document.createElement("input");
+        input.type = "number";
+        input.className = "dateStart"; // set the CSS class
+        input.id = "dateStart";
+        input.style.width="45%"
+        input.min = document.getElementsByClassName("datetimeValue")[0].innerHTML;
+        input.max = "2100";
+        input.value = parseInt(document.getElementsByClassName("datetimeValue")[0].innerHTML);
+            
+            console.debug("datestart set to", parseInt(document.getElementsByClassName("datetimeValue")[0].innerHTML));
+
+        var dashBet = document.createElement("label");
+        dashBet.innerHTML = " - ";
+
+        var input2 = document.createElement("input");
+        input2.type = "number";
+        input2.className = "dateEnd"; // set the CSS class
+        input2.id = "dateEnd";
+        input2.min = "-100000";
+        input2.max = "2100";
+        input2.value = parseInt(document.getElementsByClassName("datetimeValue")[0].innerHTML);
+
+
+        container.appendChild(Yearlabel);
+        container.appendChild(input);
+        container.appendChild(dashBet);
+        container.appendChild(input2);
+
+        }
+
+        //var timerange = '<input type="range" name="points" min="0" max="10">';
+        
+       // container.appendChild();
+
+        containercontainer = container;
+        builderbuilder = builder;
+        thisthis = this;
+        
         var properties = [];
+        console.debug(this);
         for (var i in this.properties) {
             if (typeof this.properties[i] === 'object' ||
                 ['name', 'description'].indexOf(i) !== -1) {continue;}
+            
             properties.push(['properties.' + i, {label: i}]);
         }
-        // We always want name and description for now (properties management to come)
-        properties.unshift('properties.description');
-        properties.unshift('properties.name');
+        
+        // We always want name and description for now (properties management to come)        
+        console.debug("!x! chosenFeature: "+chosenFeature);
+
+        $(".preset-list-pane")[0].parentElement.style.display = "block";
+        
+/*
+        if (chosenFeature == "preset-list-item preset-landuse-residential")
+        {
+            properties.unshift('properties.birthday');
+            properties.unshift('properties.population');
+
+        }
+        else{
+            properties.unshift('properties.description');
+            properties.unshift('properties.name');
+
+        }
+      */  
         builder = new L.S.FormBuilder(this, properties,
             {
                 id: 'storage-feature-properties',
                 callback: this.resetLabel
             }
         );
+
+        staticX = this;
+        
+        //TODO: Build custom form here
+        
         form = builder.build();
+                
         container.appendChild(form);
-        this.appendEditFieldsets(container);
-        var advancedActions = L.DomUtil.createFieldset(container, L._('Advanced actions'));
-        this.getAdvancedEditActions(advancedActions);
+  //      this.appendEditFieldsets(container);
+        
+  //      var advancedActions = L.DomUtil.createFieldset(container, L._('Advanced actions'));
+  //      this.getAdvancedEditActions(advancedActions);
         L.S.fire('ui:start', {data: {html: container}});
-        this.map.editedFeature = this;
+  //      this.map.editedFeature = this;
+        
         this.bringToCenter(e);
+        
+        //TODO: uncomment again   document.getElementsByClassName("body")[0].style.display = "none"; 
+        
+        document.getElementsByClassName("body")[0].style.display = "none";
+        
+        var theDiv = document.getElementById("storage-feature-properties");
+        var newNode = document.createElement('div');
+        
+        
+        if (creatingType == "Marker"){
+            newNode.innerHTML = document.getElementById("template1").innerHTML;
+        }
+        
+        if (creatingType == "Polyline"){
+            newNode.innerHTML = document.getElementById("template2").innerHTML;
+        }
+        
+        if (creatingType == "Polygon"){
+            newNode.innerHTML = document.getElementById("template3").innerHTML;
+        }
+                
+        theDiv.parentNode.parentNode.parentNode.appendChild( newNode );
+        
+        
     },
 
     getAdvancedEditActions: function (container) {
@@ -129,7 +305,12 @@ L.Storage.FeatureMixin = {
     endEdit: function () {},
 
     getDisplayName: function () {
-        return this.properties.name || this.properties.title || this.datalayer.options.name;
+        
+        console.debug("properties of layer:")
+        console.debug(this.properties)
+        console.debug(this)
+        
+        return this.properties.name || this.properties.title || this.datalayer.options.name;  //"testTitle!"; // TODO: Check how it is saved and why no properties.name exist! .name is currently the layerTitle
     },
 
     hasPopupFooter: function () {
@@ -260,6 +441,8 @@ L.Storage.FeatureMixin = {
     },
 
     toGeoJSON: function () {
+        console.debug("!!! toGeoJSON")
+        console.debug(this);
         return {
             type: 'Feature',
             geometry: this.geometry(),
@@ -286,6 +469,7 @@ L.Storage.FeatureMixin = {
     },
 
     getContextMenuItems: function (e) {
+        console.debug("getting getContextMenuItems");
         var items = [];
         if (this.map.editEnabled && !this.isReadOnly()) {
             items = items.concat(this.getEditContextMenuItems(e));
@@ -294,6 +478,7 @@ L.Storage.FeatureMixin = {
     },
 
     getEditContextMenuItems: function () {
+        console.debug("getting getEditContextMenuItems");
         return ['-',
             {
                 text: L._('Edit this feature'),
@@ -348,11 +533,13 @@ L.Storage.FeatureMixin = {
     },
 
     resetLabel: function () {
+        console.debug("!RESETTING LABEL!",this.properties.name)
         if (this.label) {
             this.hideLabel();
             delete this.label;
         }
         if (this.getOption('showLabel') && this.properties.name) {
+            console.debug("-!-props", this.properties.name);
             this.bindLabel(L.Util.escapeHTML(this.properties.name), {noHide: true});
             this.showLabel();
         }
@@ -677,6 +864,7 @@ L.Storage.PathMixin = {
 };
 
 L.Storage.Polyline = L.Polyline.extend({
+    
     parentClass: L.Polyline,
     includes: [L.Storage.FeatureMixin, L.Storage.PathMixin, L.Mixin.Events],
 
@@ -836,6 +1024,7 @@ L.Storage.Polygon = L.Polygon.extend({
     includes: [L.Storage.FeatureMixin, L.Storage.PathMixin, L.Mixin.Events],
 
     geometry: function() {
+        console.debug("inside Polygon -> geometry: function() {", latlngs);
         // TODO: add test!
         /* Return a GeoJSON geometry Object */
         /* see: https://github.com/CloudMade/Leaflet/issues/1135 */
@@ -935,3 +1124,61 @@ L.Storage.Polygon = L.Polygon.extend({
         L.DomEvent.on(toPolyline, 'click', this.toPolyline, this);
     }
 });
+
+function chooseFeature(event,ele){
+
+    event.stopPropagation();
+    window.event.cancelBubble = true;
+    
+    
+    chosenFeature = ele.className;
+    
+    console.debug("chooseFeature", ele.className);
+    console.debug(".subgrid", $(ele).find(".subgrid")[0]);
+    
+    if($(ele).find(".subgrid")[0] === undefined){
+
+     
+        
+        d3.select(".preset-list-pane").transition()
+            .styleTween('left', function() { return d3.interpolate('0%', '-100%'); });
+             document.getElementsByClassName("body")[0].style.display = "block";
+        $(".preset-list-pane")[0].parentElement.style.display = "none";
+        addFeat();
+    }
+    else{
+        if($(ele).find(".subgrid")[0].style.opacity == 1){
+            $(ele).find(".subgrid")[0].style.maxHeight = "0px";
+            $(ele).find(".subgrid")[0].style.opacity = 0;           
+        }
+        else{
+            $(ele).find(".subgrid")[0].style.maxHeight = "680px";
+            $(ele).find(".subgrid")[0].style.opacity = 1;
+        }
+
+    }
+
+    //addFeat();
+    
+    /*
+    d3.select(".inspector-body").transition()
+        .styleTween('right', function() { return d3.interpolate('0%', '100%'); });
+        */
+/*
+    d3.select(".preset-list-pane").transition()
+        .styleTween('left', function() { return d3.interpolate('100%', '0%'); });
+
+
+    d3.select(".entity-editor-pane").transition()
+        .styleTween('left', function() { return d3.interpolate('100%', '0%'); });
+     
+    */
+    
+
+
+    
+    
+ /*   d3.select(".body").transition()
+        .styleTween('left', function() { return d3.interpolate('100%', '0%'); });
+   */ 
+}

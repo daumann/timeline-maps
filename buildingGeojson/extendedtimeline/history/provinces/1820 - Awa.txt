@@ -1,0 +1,50 @@
+newEntry1820 - Awa.txt
+#1820 - Awa
+
+owner = KIB
+controller = KIB
+culture = japanese
+religion = animism
+capital = "Tokushima"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 1335
+add_core = KIB
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 1471 }
+200.1.1 = { citysize = 1742 }
+300.1.1 = { citysize = 2014 }
+400.1.1 = { citysize = 2285 }
+500.1.1 = { citysize = 2557 }
+580.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = KIB }
+600.1.1 = { citysize = 2828 }
+607.1.1 = { religion = buddhism }
+700.1.1 = { citysize = 3100 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 3371 }
+900.1.1 = { citysize = 3642 }
+1000.1.1 = { citysize = 3914 }
+1100.1.1 = { citysize = 4185 }
+1192.1.1 = { owner = HSK controller = HSK add_core = HSK remove_core = JAP }
+1200.1.1 = { citysize = 4457 }
+1300.1.1 = { citysize = 4728 }
+1399.1.1 = { citysize = 5000 }
+
+1575.1.1 = { add_core = CSK }
+1580.1.1 = { owner = CSK controller = CSK remove_core = HSK }
+1585.8.23 = { owner = TKG controller = TKG add_core = TKG remove_core = CSK }
+#Hideyoshi's conquest of Shikoku
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1850.1.1  = { citysize = 30000 }
+1900.1.1  = { citysize = 70000 }
+1950.1.1  = { citysize = 150000 }
+2012.1.1  = { citysize = 263372 }
+
+
+

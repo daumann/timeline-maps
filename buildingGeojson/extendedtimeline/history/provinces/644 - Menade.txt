@@ -1,0 +1,69 @@
+newEntry644 - Menade.txt
+#644 - Menade
+
+culture = sulawesi
+religion = animism
+capital = "Manado"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_size = 60
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = ATJ
+discovered_by = MAJ
+discovered_by = MKS
+discovered_by = BLI
+discovered_by = BAN
+discovered_by = BEI
+discovered_by = BLM
+discovered_by = BTN
+discovered_by = CRB
+discovered_by = DMK
+discovered_by = PGR
+discovered_by = PLB
+discovered_by = PSA
+discovered_by = SAK
+discovered_by = SUN
+discovered_by = KUT
+discovered_by = BNJ
+discovered_by = LFA
+discovered_by = LNO
+discovered_by = LUW
+discovered_by = MGD
+discovered_by = TER
+discovered_by = TID
+
+1320.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+
+1511.1.1 = { discovered_by = POR }
+1580.1.1 =  {
+	owner = TER
+	controller = TER
+	add_core = TER
+	religion = sunni
+	citysize = 8000
+	fort1 = yes
+	trade_goods = tropical_wood
+} # Ternate Sultanate expanded
+1658.1.1 = { fort1 = yes }
+1677.1.1 = { owner = NED controller = NED add_core = NED } # Dutch control
+1700.1.1 = { citysize = 7250 }
+1740.1.1 = { religion = reformed }
+1750.1.1 = { citysize = 7966 }
+1800.1.1 = { citysize = 8700 }
+
+1850.1.1   = { citysize = 16000 }
+1900.1.1   = { citysize = 70000 }
+1912.9.10  = { add_core = IDN remove_core = TER }
+1942.1.13  = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 200000 }
+2010.1.1   = { citysize = 408354 }
+
+
+

@@ -1,0 +1,75 @@
+newEntry453 - Qarshi.txt
+#453 - Karshi
+
+owner = KUS
+controller = KUS
+culture = uzbehk
+religion = buddhism
+capital = "Qarshi"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 3
+citysize = 1000
+add_core = KUS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+
+200.1.1 = { citysize = 1038 }
+300.1.1 = { citysize = 1107 }
+320.1.1 = { owner = KID controller = KID add_core = KID remove_core = KUS }
+400.1.1 = { citysize = 1177 }
+420.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = KID }
+500.1.1 = { citysize = 1246 }
+567.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP }
+593.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+600.1.1 = { citysize = 1315 fort1 = yes }
+647.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = WGO }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+670.1.1 = { religion = zoroastrianism }
+700.1.1 = { citysize = 1384 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 1454 }
+819.1.1 = { owner = SAM controller = SAM add_core = SAM remove_core = ABB }
+870.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = SAM }
+890.1.1 = { religion = sunni }
+900.1.1 = { citysize = 1523 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+1000.1.1 = { citysize = 1592 }
+1002.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1040.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = GHZ }
+1100.1.1 = { citysize = 1662 }
+1153.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = SEL }
+1200.1.1 = { citysize = 1731 }
+1215.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = KHW }
+1220.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KHW }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1300.1.1 = { citysize = 1800 }
+1370.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = CHG }
+1399.1.1 = { citysize = 1869 }
+
+1450.1.1 = { citysize = 2100 }
+1501.1.1 = { controller = BUK } # Conquered by Muhammad Shaybani
+1502.1.1 = {	owner = BUK add_core = BUK remove_core = TIM } # The Uzbek Shaybanids brings an end to the Timurid dynasty
+1506.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 2988 }
+1600.1.1 = { citysize = 3265 }
+1650.1.1 = { citysize = 4008 }
+1673.1.1 = { discovered_by = ENG }
+1677.1.1 = { discovered_by = FRA }
+1707.5.12 = { discovered_by = GBR }
+1750.1.1 = { citysize = 6237 }
+1800.1.1 = { citysize = 7120 }
+
+1850.1.1   = { citysize = 10000 }
+1873.8.12  = { owner = RUS controller = RUS add_core = RUS }
+1900.1.1   = { citysize = 35000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1924.10.27 = { add_core = UZB remove_core = BUK }
+1950.1.1   = { citysize = 100000 }
+1991.12.8  = { owner = UZB controller = UZB remove_core = SOV remove_core = RUS }
+2010.1.1   = { citysize = 197600 }
+
+
+

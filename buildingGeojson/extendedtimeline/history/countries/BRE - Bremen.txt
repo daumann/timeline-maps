@@ -1,0 +1,253 @@
+government = theocratic_government
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+primary_culture = hannoverian
+religion = catholic
+technology_group = western
+capital = 54	# Bremen
+
+1186.1.1 = {
+	monarch = {
+		name = "Hartwig II"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1207.11.3 = {
+	monarch = {
+		name = "Burchard I"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1219.8.14 = {
+	monarch = {
+		name = "Gerard II"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1258.8.28 = {
+	monarch = {
+		name = "Hildebold I"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1273.10.11 = {
+	monarch = {
+		name = "Gilbert I"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1306.11.18 = {
+	monarch = {
+		name = "Heinrich I"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1307.4.9 = {
+	monarch = {
+		name = "Florence I"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1309.1.1 = {
+	monarch = {
+		name = "Johann I"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1316.5.19 = {
+	monarch = {
+		name = "Johann II"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1327.5.30 = {
+	monarch = {
+		name = "Burchard II"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1344.8.13 = {
+	monarch = {
+		name = "Otto I"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1348.3.14 = {
+	monarch = {
+		name = "Maurice I"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+
+1360.1.1 = {
+	monarch = {
+		name = "Albert II"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1395.4.14 = {
+	monarch = {
+		name = "Otto II"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1406.6.30 = {
+	monarch = {
+		name = "Johann II"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1421.12.20 = {
+	monarch = {
+		name = "Nicolaus I"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1435.1.1 = {
+	monarch = {
+		name = "Baldwin I"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1441.7.9 = {
+	monarch = {
+		name = "Gerhard III"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1463.4.15 = {
+	monarch = {
+		name = "Heinrich II"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
+
+1496.12.25 = {
+	monarch = {
+		name = "Johann III Rode"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1511.12.5 = {
+	monarch = {
+		name = "Cristoph I"
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+1529.1.1 = { religion = protestant }
+
+1558.1.23 = {
+	monarch = {
+		name = "Georg I"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1558.1.23 = { government = administrative_monarchy}
+
+1566.12.5 = {
+	monarch = {
+		name = "Heinrich III"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1585.4.29 = {
+	monarch = {
+		name = "Johann Adolf I"
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+
+1596.8.30 = {
+	monarch = {
+		name = "Johann Friedrich I"
+		adm = 4
+		dip = 5
+		mil = 4
+	}
+}
+
+1634.9.4 = {
+	monarch = {
+		name = "Friedrich II"
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
+

@@ -1,0 +1,107 @@
+#205 - Savoie
+
+owner = ROM
+controller = ROM
+culture = gallian
+religion = hellenism
+hre = no
+base_tax = 11
+trade_goods = cloth
+manpower = 5
+capital = "Sapaudia"
+citysize = 1050	
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1385 }
+200.1.1 = { citysize = 1971 }
+300.1.1 = { citysize = 2557 }
+340.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 3142 }
+443.1.1 = { owner = BUR controller = BUR add_core = BUR remove_core = ROW capital = "Chambéry" culture = burgundian religion = germanic }
+450.1.1 = { religion = arianism }
+500.1.1 = { citysize = 3728 religion = chalcedonism }
+534.1.1 = { owner = FRK controller = FRK add_core = FRK }
+600.1.1 = { citysize = 4314 }
+700.1.1 = { citysize = 4900 culture = occitain }
+800.1.1 = { citysize = 5485 fort1 = yes }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = PRO controller = PRO add_core = PRO remove_core = FRM }
+863.1.24 = { owner = ITA controller = ITA add_core = ITA remove_core = PRO }
+867.1.1 = { religion = catholic }
+888.1.1  = { owner = BUR controller = BUR remove_core = ITA }
+900.1.1  = { citysize = 6071 }
+1000.1.1 = { citysize = 6657 }
+1032.1.1 = { owner = SAV controller = SAV add_core = SAV remove_core = BUR }
+1033.1.1 = { hre = yes }
+1040.1.1 = { culture = lombard }
+1100.1.1 = { citysize = 7242 }
+1200.1.1 = { citysize = 7828 marketplace = yes }
+1300.1.1 = { citysize = 8414 }
+1399.1.1 = { citysize = 9000 }
+
+1450.1.1   = { citysize = 9800 }
+1499.1.1   = { owner = FRA controller = FRA add_core = FRA } 
+1500.1.1   = { citysize = 10040 }
+1529.1.1   = { owner = SAV controller = SAV } 
+1536.4.1   = { controller = FRA } 
+1538.6.17  = { owner = FRA } # Treaty of Nice
+1550.1.1   = { citysize = 11070 }
+1559.1.1   = { owner = SAV controller = SAV remove_core = FRA } 
+1600.1.1   = { citysize = 10350 }
+1650.1.1   = { citysize = 11580 marketplace = yes }
+1680.1.1   = { courthouse = yes }
+1700.1.1   = { citysize = 11000 tax_assessor = yes }
+1713.4.12  = {	owner = SIC
+		controller = SIC
+		add_core = SIC
+		remove_core = SAV
+	     } # Treaty of Utrecht(2) gave Sicily to the House of Savoy 
+1720.1.1   = {	owner = SPI
+		controller = SPI
+		add_core = SPI
+		remove_core = SIC
+	     } # Kingdom of Piedmont-Sardinia
+1750.1.1   = { citysize = 11500 }
+1791.6.20  = { controller = FRA } # Occupied by French troops
+1792.11.27 = {	owner = FRA
+		add_core = FRA
+	     } # Savoie is annexed
+1800.1.1   = { citysize = 12000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = SPI
+		controller = SPI
+		remove_core = FRA
+	     } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+
+1838.1.1   = { citysize = 15916 }
+1858.1.1   = { citysize = 19035 }
+1860.3.24  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = SPI
+	     } # Treaty of Turin
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1881.1.1   = { citysize = 19622 }
+1890.1.1   = { culture = occitain }
+1901.1.1   = { citysize = 22108 }
+1926.1.1   = { citysize = 23400 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1944.8.25  = { owner = FR2 controller = FR2 remove_core = FRV } # France liberated by allied forces
+1946.1.1   = { citysize = 29975 }
+1968.1.1   = { citysize = 51056 }
+1990.1.1   = { citysize = 54120 }
+2008.1.1   = { citysize = 56835 }
+
+
+

@@ -1,0 +1,92 @@
+government = feudal_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 4
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+primary_culture = hessian
+religion = catholic
+technology_group = western
+capital = 83	# Nassau
+
+939.10.23 = {
+	monarch = {
+		name = "Dudo-Henry"
+		dynasty = "von Laurenburg"
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+
+1123.1.1 = {
+	monarch = {
+		name = "Rupert I"
+		dynasty = "von Nassau"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+1813.10.14 = {
+	monarch = {
+		name = "Friedrich Wilhelm"
+		dynasty = "von Nassau"
+		adm = 5
+		dip = 5
+		mil = 3
+	}
+}
+
+1813.10.14 = {
+	heir = {
+		name = "Wilhelm"
+		monarch_name = "Wilhelm I"
+		dynasty = "von Nassau"
+		birth_date = 1792.6.14
+		death_date = 1839.8.20
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+1816.1.9 = {
+	monarch = {
+		name = "Wilhelm I"
+		dynasty = "von Nassau"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}
+
+1817.7.24 = {
+	heir = {
+		name = "Adolf"
+		monarch_name = "Adolf I"
+		dynasty = "von Nassau"
+		birth_date = 1817.7.24
+		death_date = 1905.11.17
+		claim = 95
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}
+
+1839.8.20 = {
+	monarch = {
+		name = "Adolf I"
+		dynasty = "von Nassau"
+		adm = 4
+		dip = 1
+		mil = 3
+	}
+}

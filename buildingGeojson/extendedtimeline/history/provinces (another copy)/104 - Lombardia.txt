@@ -1,0 +1,114 @@
+#104 - Lombardia
+
+owner = ROM
+controller = ROM
+culture = roman
+religion = hellenism
+hre = no
+base_tax = 14 
+trade_goods = cloth
+manpower = 7
+fort1 = yes
+capital = "Mediolanum"
+citysize = 18000
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 20000 }
+200.1.1 = { citysize = 25000 }
+300.1.1 = { citysize = 30000 }
+313.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 35000 }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO }
+500.1.1 = { citysize = 40000 culture = gothic religion = arianism }
+551.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+569.6.1 = { owner = LOM controller = LOM add_core = LOM remove_core = GOS remove_core = BYZ capital = "Papia" culture = lombard }
+600.1.1 = { citysize = 45000 }
+640.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 50000 }
+773.1.1 = { owner = FRK controller = FRK add_core = FRK capital = "Milano" }
+800.1.1 = { citysize = 55000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = ITA controller = ITA add_core = ITA remove_core = FRM remove_core = LOM }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 60000 }
+962.2.2 = { hre = yes owner = LOM controller = LOM add_core = LOM remove_core = ITA }
+1000.1.1 = { citysize = 70000 }
+1100.1.1 = { citysize = 80000 }
+1183.1.1 = { owner = MLO controller = MLO add_core = MLO remove_core = LOM }
+1200.1.1 = { citysize = 90000 }
+1300.1.1 = { citysize = 100000 }
+1399.1.1 = { citysize = 110000 }
+
+1418.1.1 = { temple = yes } # The Duomo
+1450.1.1 = { citysize = 120000 }
+1499.8.10 = { controller = FRA } # Louis XII of France invades...
+1500.1.1 = { citysize = 132000 }
+1504.1.31 = { owner = FRA add_core = FRA } # ...and seizes Milan, Treaty of Lyon
+1512.1.1 = { controller = MLO owner = MLO } # Massimiliano Sforza restored by the Swiss
+1515.1.1 = { controller = FRA }   # Francis I of France invades...
+1516.8.1 = { owner = FRA }    # ...and seizes Milan, Treaty of Noyon
+1521.1.1 = { controller = SPA }   # The Spanish invades...
+1522.5.1 = { controller = MLO owner = MLO } # ...and restores the Sforzas
+1526.2.1 = { controller = HAB }   # Milan joined the League of Cognac, and is invaded by the Emperor
+1529.8.3 = { controller = MLO remove_core = FRA } # Treaty of Cambrai restores the Sforzas and includes renounciation of French claims
+1535.1.1 = {
+	owner = SPA
+	controller = SPA
+	add_core = SPA
+} # Annexed to Spain after the last Sforza died
+1550.1.1 = { citysize = 100000 }
+1600.1.1 = { citysize = 161000 marketplace = yes }
+1650.1.1 = { citysize = 143000 }
+1700.1.1 = { citysize = 169000 tax_assessor = yes }
+1714.9.7 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = SPA
+} # Treaty of Baden
+1750.1.1 = { citysize = 177000 }
+1796.11.15 = {
+ owner = MLO
+	controller = MLO
+	remove_core = HAB
+} # Transpadane Republic
+1797.6.29 = {
+	owner = ITA
+	controller = ITA
+	add_core = ITA
+} # Cisalpine Republic
+1800.1.1 = { citysize = 183000 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = ITA
+} # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1814.4.20 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Milan insurrection
+
+1821.1.1   = { revolt = {} controller = HAB }
+1840.1.1   = { citysize = 200000 }
+1848.3.25  = { controller = SPI }
+1848.7.25  = { controller = HAB }
+1859.11.10 = { owner = SPI controller = SPI add_core = SPI remove_core = HAB } # Treaty of Zürich
+1861.1.1   = { citysize = 267618 }
+1861.3.17  = { owner = ITA controller = ITA add_core = ITA remove_core = SPI remove_core = MLO }
+1881.1.1   = { citysize = 354041 }
+1901.1.1   = { citysize = 538478 }
+1911.1.1   = { citysize = 701401 }
+1931.1.1   = { citysize = 960660 }
+1961.1.1   = { citysize = 1582421 }
+2011.11.30 = { citysize = 1342337 }
+
+
+

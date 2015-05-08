@@ -1,0 +1,47 @@
+newEntry2666 - Kosti.txt
+#1221 - Taqali
+
+culture = nubian
+religion = african
+capital = "Kosti"
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9 
+manpower = 1
+trade_goods = unknown
+hre = no
+base_tax = 1
+
+1503.1.1 = {	owner = NUB
+	   	controller = NUB
+	   	add_core = NUB
+		discovered_by = NUB
+		citysize = 5000
+		discovered_by = ETH
+		trade_goods = slaves
+	   }
+1550.1.1 = { citysize = 6000 }
+1553.1.1 = { unrest = 8 } #Uprising among the Saqadi
+1554.1.1 = { unrest = 0 }
+1600.1.1 = { citysize = 6500 discovered_by = TUR }
+1620.1.1 = { religion = sunni } #spread of Islam leads to shift in religion affiliation of region
+1650.1.1 = { citysize = 7000 }
+1700.1.1 = { citysize = 7500 }
+1756.1.1 = { unrest = 4 } #Badi IV comes into conflict with aristocrats over new slave army plan
+1761.1.1 = { unrest = 9 } #Badi IV persecutes aristocrats who challenge his authority
+1762.1.1 = { unrest = 0 } #Badi IV deposed by Muhammad Abu Likaylik
+1800.1.1 = { citysize = 8000 }
+
+1821.6.14  = { owner = TUR controller = TUR add_core = TUR }
+1850.1.1   = { citysize = 16000 }
+1867.6.8   = { owner = EGY controller = EGY add_core = EGY }
+1882.9.13  = { owner = GBR controller = GBR add_core = GBR remove_core = TUR trade_goods = wool }
+1899.6.19  = { add_core = SUD remove_core = NUB }
+1900.1.1   = { citysize = 40000 }
+1925.1.1   = { capital = "Wad Madani" }
+1950.1.1   = { citysize = 120000 }
+1956.1.1   = { owner = SUD controller = SUD remove_core = GBR remove_core = EGY }
+2010.1.1   = { citysize = 345290 }
+
+
+

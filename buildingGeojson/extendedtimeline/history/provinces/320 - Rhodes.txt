@@ -1,0 +1,78 @@
+newEntry320 - Rhodes.txt
+#320 - Rhodes
+
+owner = ROM
+controller = ROM
+culture = greek
+religion = hellenism
+capital = "Rhodes"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 3
+citysize = 1928
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2357 }
+200.1.1 = { citysize = 3214 }
+300.1.1 = { citysize = 4071 religion = chalcedonism }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 4928 }
+500.1.1 = { citysize = 5785 }
+600.1.1 = { citysize = 6642 }
+672.1.1 = { controller = UMA }
+675.1.1 = { controller = BYZ }
+700.1.1 = { citysize = 7499 }
+800.1.1 = { citysize = 8357 }
+867.1.1 = { religion = orthodox }
+900.1.1 = { citysize = 9214 }
+1000.1.1 = { citysize = 10071 }
+1090.1.1 = { owner = RUM controller = RUM add_core = RUM }
+1098.1.1 = { owner = BYZ controller = BYZ remove_core = RUM }
+1100.1.1 = { citysize = 10928 }
+1200.1.1 = { citysize = 11785 }
+1204.4.13 = { owner = NCA controller = NCA add_core = NCA }
+1261.1.1 = { owner = BYZ controller = BYZ remove_core = NCA }
+1300.1.1 = { citysize = 12642 }
+1300.1.1 = { owner = MEN controller = MEN add_core = MEN }
+1309.1.1 = { owner = KNI controller = KNI add_core = KNI remove_core = MEN fort2 = yes }
+1340.1.1 = { fort3 = yes }
+1399.1.1 = { citysize = 13499 }
+
+1450.1.1   = { citysize = 14880 }
+1453.5.29  = { remove_core = BYZ }
+1500.1.1   = { citysize = 17510 }
+1522.12.21 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+		remove_core = KNI
+} # Part of the Ottoman Empire
+1550.1.1   = { citysize = 14688 }
+1580.1.1   = { marketplace = yes }
+1600.1.1   = { citysize = 12468 }
+1650.1.1   = { citysize = 12600 }
+1700.1.1   = { citysize = 13460 }
+1720.1.1   = { fort3 = yes }
+1750.1.1   = { citysize = 13910 }
+1800.1.1   = { citysize = 15192 }
+
+1850.1.1   = { citysize = 18000 }
+1900.1.1   = { citysize = 21000 }
+1912.10.18 = { owner = ITA controller = ITA add_core = ITA remove_core = TUR }
+1922.11.1  = { add_core = TKY remove_core = TUR }
+1943.9.8   = { owner = GER controller = GER add_core = GRE remove_core = ITA }
+1944.10.1  = { controller = GBR }
+1944.10.19 = { owner = GRE controller = GRE }
+1951.1.1   = { citysize = 24280 }
+1981.1.1   = { citysize = 41425 }
+2009.1.1   = { citysize = 67700 }
+
+
+

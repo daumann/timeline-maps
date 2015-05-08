@@ -1,0 +1,30 @@
+newEntry2040 - Equatorial Guinea.txt
+culture = fang
+religion = shamanism
+capital = "Equatorial Guinea"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 90
+native_ferocity = 2
+native_hostileness = 9
+
+1472.1.1 = { discovered_by = POR } # Frenão do Pó
+1804.1.1 = { discovered_by = SOK }
+1807.1.1 = {	owner = SOK
+		controller = SOK
+		add_core = SOK
+		citysize = 5000
+		trade_goods = slaves
+		capital = "Bata"
+	   } # The Fulani Empire
+
+1850.1.1   = { citysize = 10000 }
+1885.1.1   = { owner = SPA controller = SPA add_core = SPA trade_goods = naval_supplies }
+1900.1.1   = { citysize = 20000 religion = catholic }
+1950.1.1   = { citysize = 60000 }
+1968.10.12 = { owner = EQG controller = EQG add_core = EQG remove_core = SPA remove_core = SOK }
+2006.1.1   = { citysize = 173046 }
+
+

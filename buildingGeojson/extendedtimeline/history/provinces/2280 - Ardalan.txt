@@ -1,0 +1,89 @@
+newEntry2280 - Ardalan.txt
+#414 - Hamadan
+
+owner = PRT
+controller = PRT
+culture = persian
+religion = zoroastrianism
+capital = "Sanandaj"
+trade_goods = cloth
+hre = no
+base_tax = 3
+manpower = 1
+citysize = 1066
+add_core = PRT
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = indian
+fort1 = yes
+
+100.1.1 = { citysize = 1132 }
+200.1.1 = { citysize = 1265 }
+224.1.1 = { owner = SAS controller = SAS add_core = SAS remove_core = PRT }
+300.1.1 = { citysize = 1397 }
+400.1.1 = { citysize = 1530 }
+500.1.1 = { citysize = 1662 }
+600.1.1 = { citysize = 1795 }
+633.1.1 = { religion = sunni }
+638.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = SAS }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS religion = shiite }
+700.1.1 = { citysize = 1927 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 2060 }
+900.1.1 = { citysize = 2192 }
+934.1.1 = { owner = BUY controller = BUY add_core = BUY remove_core = ABB }
+1000.1.1 = { citysize = 2325 }
+1055.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = BUY }
+1100.1.1 = { culture = kurdish add_core = ARD }
+1153.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = SEL }
+1200.1.1 = { citysize = 2590 }
+1231.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = PER remove_core = KHW }
+1260.1.1 = { owner = ILK controller = ILK add_core = ILK remove_core = MGE }
+1300.1.1 = { citysize = 2722 }
+1335.1.1 = { owner = JAI controller = JAI add_core = JAI remove_core = ILK }
+1380.1.1 = { add_core = TIM }
+1393.1.1 = { owner = TIM controller = TIM remove_core = JAI }
+1399.1.1 = { citysize = 2855 }
+
+1449.1.1  = {	owner = QAR
+		controller = QAR
+		add_core = QAR
+		remove_core = TIM
+	    } # Fars and surroundings to Qara Quyunlu
+1450.1.1  = { citysize = 7850 }
+1458.9.1  = { revolt_risk = 5 } # Civil war
+1458.12.1 = { revolt_risk = 0 }
+1469.2.4  = {	owner = AKK
+		controller = AKK
+		add_core = AKK
+		remove_core = QAR
+	    }
+1496.2.8 = { controller = REB revolt = { type = pretender_rebels size = 0 name = "Muhammad's Faction" leader = "Muhammad Ak Koyunlu" } } # Civil war in Ak Koyunlu
+1500.1.1  = { citysize = 8005 }
+1501.7.1 = { controller = AKK revolt = { } }
+1504.1.1  = {	owner = PER
+		controller = PER
+		remove_core = AKK
+	    } # The Safavids took over
+1550.1.1  = { citysize = 9979 }
+1600.1.1  = { citysize = 11088 }
+1650.1.1  = { citysize = 12870 }
+1673.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }
+1719.1.1  = { revolt_risk = 5 } # Rebellion
+1720.1.1  = { revolt_risk = 0 }
+1747.1.1  = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1  = { revolt_risk = 4 } # The empire began to decline
+1750.1.1  = { citysize = 17450 }
+1779.1.1  = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1800.1.1  = { citysize = 21000 }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 60000 }
+1935.1.1   = { owner = IRA controller = IRA add_core = IRA remove_core = PER }
+1950.1.1   = { citysize = 200000 }
+2008.1.1   = { citysize = 473149 }
+
+
+

@@ -1,0 +1,70 @@
+newEntry580 - Chin.txt
+#580 - Chin
+
+owner = PYU
+controller = PYU
+culture = chin
+religion = animism
+capital = "Kale"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1460
+add_core = PYU
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 1621 }
+200.1.1 = { citysize = 1942 }
+300.1.1 = { citysize = 2264 }
+400.1.1 = { citysize = 2585 }
+500.1.1 = { citysize = 2907 }
+600.1.1 = { citysize = 3228 }
+700.1.1 = { citysize = 3550 }
+800.1.1 = { citysize = 3871 }
+849.1.1 = { owner = PAG controller = PAG add_core = PAG remove_core = PYU }
+900.1.1 = { citysize = 4192 }
+1000.1.1 = { citysize = 4514 }
+1100.1.1 = { citysize = 4835 }
+1200.1.1 = { citysize = 5157 }
+1297.12.17 = { owner = MYI controller = MYI add_core = MYI add_core = SAG remove_core = PAG }
+1300.1.1 = { citysize = 5478 }
+1315.6.16 = { owner = SAG controller = SAG remove_core = MYI }
+1364.4.1 = { owner = AVA controller = AVA add_core = AVA remove_core = SAG }
+1399.1.1 = { citysize = 5800 }
+
+1450.1.1 = { citysize = 6100 }
+1500.1.1 = { citysize = 6300 }
+1527.1.1 = {
+	owner = SST
+	controller = SST
+	add_core = SST
+	remove_core = AVA
+}
+1550.1.1 = { citysize = 7540 }
+1554.1.1 = { add_core = TAU }
+1555.1.22 = { controller = TAU }
+1563.4.1 = {	
+	owner = TAU
+	remove_core = SST
+}
+1600.1.1 = { citysize = 8900 }
+1650.1.1 = { citysize = 9654 }
+1700.1.1 = { citysize = 10500 }
+1750.1.1 = { citysize = 11350 }
+1760.1.1 = { discovered_by = GBR }
+1800.1.1 = { citysize = 12570 }
+
+1850.1.1   = { citysize = 30000 }
+1885.11.29 = { owner = GBR controller = GBR add_core = GBR add_core = BRM remove_core = TAU remove_core = SST capital = "Hakha" }
+1900.1.1   = { citysize = 60000 }
+1942.5.1   = { controller = JAP }
+1945.3.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1950.1.1   = { citysize = 90000 }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM }
+2006.1.1   = { citysize = 130000 }
+
+
+

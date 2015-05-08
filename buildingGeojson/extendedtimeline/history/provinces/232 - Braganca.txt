@@ -1,0 +1,75 @@
+newEntry232 - Braganca.txt
+#232 - Bragança
+
+owner = ROM
+controller = ROM
+culture = celtiberian
+religion = animism
+capital = "Brigantia"
+trade_goods = wine
+hre = no
+base_tax = 6
+manpower = 2
+citysize = 1010
+add_core = ROM
+fort1 = yes
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 1182 }
+200.1.1 = { citysize = 1514 }
+300.1.1 = { citysize = 1846 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2178 religion = chalcedonism }
+409.6.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+500.1.1 = { citysize = 2510 }
+584.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL }
+600.1.1 = { citysize = 2842 }
+700.1.1 = { citysize = 3175 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI culture = portugese }
+800.1.1 = { citysize = 3507 }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 3839 }
+970.1.1 = { owner = LON controller = LON add_core = LON remove_core = UMA capital = "Bragança" }
+1000.1.1 = { citysize = 4171 }
+1065.6.1 = { owner = GAL controller = GAL }
+1072.1.1 = { owner = LON controller = LON }
+1100.1.1 = { citysize = 4503 }
+1139.6.23 = { owner = POR controller = POR add_core = POR }
+1143.10.5 = { remove_core = LON }
+1200.1.1 = { citysize = 4835 }
+1300.1.1 = { citysize = 5167 }
+1399.1.1 = { citysize = 5500 }
+
+1450.1.1  = { citysize = 6800 }
+1500.1.1  = { citysize = 7500 }
+1550.1.1  = { constable = yes }
+1580.8.25 = { controller = SPA }
+1580.8.26 = { controller = POR }
+1600.1.1  = { citysize = 10000 }
+1640.1.1  = { unrest = 8 } # Portugal revolt headed by John of Bragança
+1640.12.1 = { unrest = 0 } # Portugal regained its independence & colonial possessions
+1650.1.1  = { citysize = 11780 marketplace = yes }
+1700.1.1  = { citysize = 12900 }
+1750.1.1  = { citysize = 14005 }
+1800.1.1  = { citysize = 15670 }
+1809.3.29 = { controller = FRA } # Occupied by France
+1809.5.12 = { controller = POR }
+1810.9.26 = { controller = FRA } # Wellington retreats into Lines of Torres Vedras fortification and Masséna can't enter Lisboa due to the scorched earth policy
+1811.1.1  = { controller = POR } # The Napoleonic army retreats from Portugal
+
+1849.1.1 =   { citysize = 16929 }
+1900.1.1 =   { citysize = 30513 }
+1930.1.1 =   { citysize = 29750 }
+1960.1.1 =   { citysize = 37553 }
+1981.1.1 =   { citysize = 35380 }
+1991.1.1 =   { citysize = 33055 }
+2009.1.1 =   { citysize = 34375 }
+
+
+

@@ -51,7 +51,7 @@ $(function() {
     // Playback options
     var playbackOptions = {
 
-        playControl: true,
+        //playControl: true,   //TODO: later put back in
         dateControl: true,
         
         // layer and marker options

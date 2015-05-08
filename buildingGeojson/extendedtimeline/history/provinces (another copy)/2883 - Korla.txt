@@ -1,0 +1,64 @@
+#712 - Uighuristan
+
+owner = XIY
+controller = XIY
+culture = uyghur
+religion = tengri
+capital = "Korla"
+trade_goods = grain
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 2624
+add_core = XIY
+discovered_by = chinese
+discovered_by = nomad_group
+
+70.1.1 = { owner = HND controller = HND add_core = HND }
+100.1.1 = { citysize = 2748 }
+106.1.1 = { owner = XIY controller = XIY add_core = XIY }
+127.1.1 = { owner = HND controller = HND }
+180.1.1 = { religion = buddhism }
+184.1.1 = { owner = XIY controller = XIY add_core = XIY remove_core = HND }
+200.1.1 = { citysize = 2997 }
+300.1.1 = { citysize = 3245 }
+400.1.1 = { citysize = 3494 }
+440.1.1 = { owner = HEP controller = HEP add_core = HEP }
+500.1.1 = { citysize = 3742 }
+567.1.1 = { owner = XIY controller = XIY add_core = XIY remove_core = HEP }
+600.1.1 = { citysize = 3991 }
+650.1.1 = { owner = TNG controller = TNG add_core = TNG }
+670.1.1 = { owner = TIB controller = TIB add_core = TIB remove_core = TNG }
+680.1.1 = { religion = manichaeism }
+692.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = TIB }
+700.1.1 = { citysize = 4239 }
+763.1.1 = { owner = UIG controller = UIG add_core = UIG remove_core = TNG remove_core = XIY }
+800.1.1 = { citysize = 4488 }
+880.1.1 = { religion = buddhism }
+900.1.1 = { citysize = 4737 }
+1000.1.1 = { citysize = 4985 }
+1100.1.1 = { citysize = 5234 }
+1200.1.1 = { citysize = 5482 }
+1209.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = UIG }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1300.1.1 = { citysize = 5731 }
+1389.1.1 = { owner = KAS controller = KAS add_core = KAS remove_core = CHG }
+1399.1.1 = { citysize = 5980 }
+
+1682.1.1 = {	owner = ZUN
+		controller = ZUN
+		add_core = ZUN
+		}
+1755.1.1 = {	owner = KAS
+		controller = KAS
+		add_core = KAS }
+1759.1.1 = {	owner = QNG controller = QNG add_core = QNG } # Part of the Manchu empire
+
+1850.1.1   = { citysize = 20000 remove_core = OIR }
+1900.1.1   = { citysize = 60000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG }
+1950.1.1   = { citysize = 200000 }
+2007.1.1   = { citysize = 430000 }
+
+
+

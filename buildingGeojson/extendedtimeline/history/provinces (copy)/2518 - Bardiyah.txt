@@ -1,0 +1,68 @@
+#356 - Cyrenaica
+
+owner = ROM
+controller = ROM
+culture = al_misr_arabic
+religion = hellenism
+capital = "Bardiyah"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 2135
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 2271 }
+200.1.1 = { citysize = 2542 }
+300.1.1 = { citysize = 2814 }
+395.1.17 = { controller = BYZ owner = BYZ add_core = BYZ remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 3085 }
+500.1.1 = { citysize = 3357 }
+600.1.1 = { citysize = 3628 }
+643.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = BYZ }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 3900 }
+710.1.1 = { religion = sunni }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 4171 }
+868.1.1 = { owner = TUL controller = TUL add_core = TUL remove_core = ABB }
+900.1.1 = { citysize = 4442 }
+905.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = TUL }
+969.1.1 = { owner = FAT controller = FAT add_core = FAT remove_core = ABB }
+1000.1.1 = { citysize = 4714 }
+1100.1.1 = { citysize = 4985 }
+1171.1.1 = { owner = AYY controller = AYY add_core = AYY remove_core = FAT }
+1200.1.1 = { citysize = 5257 }
+1250.1.1 = { owner = MAM controller = MAM add_core = MAM remove_core = AYY }
+1300.1.1 = { citysize = 5528 }
+1399.1.1 = { citysize = 5800 }
+
+1450.1.1 = { citysize = 1200 }
+1500.1.1 = { citysize = 1367 }
+1517.1.1 = {	owner = TUR
+		controller = TUR
+		add_core = TUR
+	   } # Conquered by Ottoman troops
+1550.1.1 = { citysize = 1480 }
+1600.1.1 = { citysize = 1578 }
+1650.1.1 = { citysize = 1678 }
+1700.1.1 = { citysize = 1778 }
+1750.1.1 = { citysize = 1878 }
+1800.1.1 = { citysize = 2000 }
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 80000 }
+1912.10.18 = { owner = ITA controller = ITA add_core = ITA add_core = LIB remove_core = TRP }
+1943.9.8   = { owner = GBR controller = GBR remove_core = ITA }
+1950.1.1   = { citysize = 300000 }
+1951.12.24 = { owner = LIB controller = LIB }
+2011.1.1   = { citysize = 655000 }
+
+
+

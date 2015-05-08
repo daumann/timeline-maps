@@ -1,0 +1,57 @@
+#465 - Bersh
+
+culture = hunnic
+religion = tengri
+capital = "Saraychik"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 3
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+160.1.1 = { owner = HNS controller = HNS add_core = HNS citysize = 1000 trade_goods = salt }
+448.1.1 = { owner = OGH controller = OGH add_core = OGH remove_core = HNS culture = turkish }
+593.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = OGH }
+600.1.1 = { citysize = 1122 }
+659.1.1 = { owner = KHZ controller = KHZ add_core = KHZ remove_core = WGO }
+700.1.1 = { citysize = 1244 }
+800.1.1 = { citysize = 1366 religion = sunni }
+889.1.1 = { owner = PEC controller = PEC add_core = PEC remove_core = KHZ culture = cuman }
+900.1.1 = { citysize = 1488 }
+1000.1.1 = { citysize = 1611 }
+1037.1.1 = { owner = CUM controller = CUM add_core = CUM remove_core = PEC }
+1100.1.1 = { citysize = 1733 }
+1200.1.1 = { citysize = 1855 discovered_by = eastern }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = CUM culture = nogaybak }
+1260.1.1 = { owner = GOL controller = GOL add_core = GOL remove_core = MGE }
+1262.1.1 = { owner = NOG controller = NOG add_core = NOG remove_core = GOL }
+1300.1.1 = { citysize = 1977 fort1 = yes }
+1399.1.1 = { citysize = 2099 }
+
+1450.1.1  = { citysize = 2500 }
+1500.1.1  = { citysize = 2640 }
+1520.1.1  = { owner = KZH controller = KZH add_core = KZH remove_core = NOG culture = khazak } # Qasim Khan crushes the Nogais
+1550.1.1  = { citysize = 3214 }
+1600.1.1  = { citysize = 4781 }
+1645.1.1  = { owner = RUS controller = RUS add_core = RUS remove_core = KZH religion = orthodox capital = "Nizhny Yaitsky Gorodok" } # Yaik Cossacks settle the area
+1650.1.1  = { citysize = 5579 }
+1700.1.1  = { citysize = 6200 }
+1708.1.1  = { capital = "Guryev" } # City renamed
+1750.1.1  = { citysize = 6887 }
+1773.9.13  = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured
+1800.1.1  = { citysize = 7320 }
+
+1850.1.1   = { citysize = 10000 }
+1900.1.1   = { citysize = 30000 }
+1917.12.13 = { add_core = KZK }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 80000 }
+1991.12.16 = { owner = KZK controller = KZK remove_core = SOV remove_core = RUS capital = "Atyrau" }
+1993.1.1   = { trade_goods = oil } #Tengiz field
+2007.1.1   = { citysize = 154100 }
+
+
+

@@ -1,0 +1,117 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -3
+primary_culture = uzbehk
+religion = zoroastrianism
+technology_group = muslim
+capital = 578	# Kohistan
+
+320.1.1 = {
+	monarch = {
+		name = "Kidara I"
+		dynasty = "Kidarite"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+330.1.1 = {
+	monarch = {
+		name = "Kungas"
+		dynasty = "Kidarite"
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
+
+340.1.1 = {
+	monarch = {
+		name = "Varhran I"
+		dynasty = "Kidarite"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+
+
+358.1.1 = {
+	monarch = {
+		name = "Grumbat"
+		dynasty = "Kidarite"
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}
+
+380.1.1 = {
+	monarch = {
+		name = "Brahmi Buddhatala"
+		dynasty = "Kidarite"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+
+420.1.1 = {
+	monarch = {
+		name = "Varhran II"
+		dynasty = "Kidarite"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+440.1.1 = {
+	monarch = {
+		name = "Goboziko"
+		dynasty = "Kidarite"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+460.1.1 = {
+	monarch = {
+		name = "Salanavira"
+		dynasty = "Kidarite"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+480.1.1 = {
+	monarch = {
+		name = "Vinayaditya"
+		dynasty = "Kidarite"
+		adm = 5
+		dip = 3
+		mil = 5
+	}
+}
+
+500.1.1 = {
+	monarch = {
+		name = "Kandik"
+		dynasty = "Kidarite"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

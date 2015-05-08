@@ -1,0 +1,70 @@
+#604 - Udong
+
+owner = FUN
+controller = FUN
+culture = khmer
+religion = buddhism
+capital = "Battambang"
+trade_goods = fish
+hre = no
+base_tax = 2
+manpower = 2
+fort1 = yes
+citysize = 5053
+add_core = FUN
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 6107 }
+200.1.1 = { citysize = 8214 }
+300.1.1 = { citysize = 10321 }
+400.1.1 = { citysize = 12428 }
+500.1.1 = { citysize = 14535 }
+550.1.1 = { owner = CNA controller = CNA add_core = CNA remove_core = FUN }
+600.1.1 = { citysize = 16642 }
+700.1.1 = { citysize = 18750 }
+800.1.1 = { citysize = 20857 }
+802.1.1 = { owner = KHM controller = KHM add_core = KHM remove_core = CNA }
+900.1.1 = { citysize = 22964 }
+1000.1.1 = { citysize = 25071 }
+1100.1.1 = { citysize = 27178 }
+1200.1.1 = { citysize = 29285 }
+1300.1.1 = { citysize = 31392 }
+1399.1.1 = { citysize = 33500 }
+
+1434.1.1 = {
+	owner = AYU
+	controller = AYU
+	add_core = AYU
+}
+1450.1.1 = { citysize = 7500 }
+1500.1.1 = { citysize = 11450 }
+1535.1.1 = { discovered_by = POR }
+1550.1.1 = { citysize = 14890 }
+1600.1.1 = { citysize = 16205 }
+1650.1.1 = { citysize = 22700 }
+1700.1.1 = { citysize = 25100 }
+1750.1.1 = { citysize = 28500 }
+1767.1.1 = {
+	owner = KHM
+	controller = KHM
+}
+1795.1.1 = {
+	owner = AYU
+	controller = AYU
+}
+1800.1.1 = { citysize = 29348 }
+1811.1.1 = { unrest = 5 } # The Siamese-Cambodian Rebellion
+1812.1.1 = { unrest = 0 }
+
+1850.1.1   = { citysize = 75000 }
+1907.1.1   = { owner = FR2 controller = FR2 add_core = FR2 add_core = CMB remove_core = KHM remove_core = AYU }
+1941.7.1   = { controller = JAP }
+1945.8.23  = { controller = FR2 }
+1950.1.1   = { citysize = 334000 }
+1953.11.9  = { owner = CMB controller = CMB remove_core = FR2 }
+1990.1.1   = { citysize = 634000 }
+2012.1.1   = { citysize = 1501725 }
+
+
+

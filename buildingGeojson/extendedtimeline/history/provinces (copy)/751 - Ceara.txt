@@ -1,0 +1,47 @@
+#751 - Ceara
+
+owner = PTG
+controller = PTG
+add_core = PTG
+citysize = 1010
+culture = tupinamba
+religion = south_american
+capital = "Ceara"
+trade_goods = sugar
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 3
+discovered_by = south_american
+
+1500.1.26 = { discovered_by = CAS } # Vicente Yáñez Pinzõn, couldn't make a claim due to the Treaty of Tordesillas
+1500.4.23 = { discovered_by = POR } # Pedro Álvares Cabral
+1516.1.23 = { discovered_by = SPA }
+1603.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	capital = "São Tiago"
+	culture = portugese
+	religion = catholic
+}
+1649.1.1  = { fort1 = yes } # Fort Schoonenborch constructed by the Dutch
+1650.1.1  = { citysize = 2100 }
+1654.1.1  = { capital = "Fortaleza" }
+1700.1.1  = { citysize = 8870 }
+1718.1.1  = { unrest = 6 } # Natives led by Mandu Ladino rebelled against the Portugese expansion
+1725.1.1  = { unrest = 0 } # The rebellion is subdued
+1750.1.1  = { citysize = 10500 }
+1800.1.1  = { citysize = 13240 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 160000 }
+1950.1.1   = { citysize = 800000 }
+1980.1.1   = { citysize = 1200000 }
+#2009.1.1   = { citysize = 2315116 }
+
+
+

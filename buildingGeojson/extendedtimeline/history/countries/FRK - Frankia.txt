@@ -1,0 +1,300 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = cosmopolitan_french
+religion = germanic
+technology_group = barbarian
+capital = 183	# ile-de-france
+
+51.1.1 = {
+	monarch = {
+		name = "Francio"
+		dynasty = "Ripuarian"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+280.1.1 = {
+	monarch = {
+		name = "Ascaric"
+		dynasty = "Ripuarian"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}
+
+340.1.1 = {
+	monarch = {
+		name = "Mallobaudes"
+		dynasty = "Ripuarian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+380.1.1 = {
+	monarch = {
+		name = "Marcomer"
+		dynasty = "Ripuarian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+410.1.1 = {
+	monarch = {
+		name = "Pharamond"
+		dynasty = "Ripuarian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+422.1.1 = {
+	monarch = {
+		name = "Theudemeres"
+		dynasty = "Ripuarian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+483.1.1 = {
+	monarch = {
+		name = "Sigobert"
+		dynasty = "Ripuarian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+487.1.1 = { government = feudal_monarchy }
+
+507.6.1 = {
+	monarch = {
+		name = "Chlodoric"
+		dynasty = "Ripuarian"
+		adm = 4
+		dip = 6
+		mil = 4
+	}
+}
+
+509.1.1 = { religion = chalcedonism }
+
+509.1.1 = {
+	monarch = {
+		name = "Clovis I"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+
+511.11.28 = {
+	monarch = {
+		name = "Chlothar I"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+536.1.1 = { technology_group = western }
+
+561.6.1 = {
+	monarch = {
+		name = "Chilperic I"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+584.6.1 = {
+	monarch = {
+		name = "Chlothar II"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+629.6.1 = {
+	monarch = {
+		name = "Dagobert I"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+639.6.1 = {
+	monarch = {
+		name = "Clovis II"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+655.6.1 = {
+	monarch = {
+		name = "Chlothar III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+673.4.1 = {
+	monarch = {
+		name = "Theuderic III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+673.8.1 = {
+	monarch = {
+		name = "Childeric II"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+675.6.1 = {
+	monarch = {
+		name = "Theuderic III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+691.4.13 = {
+	monarch = {
+		name = "Clovis IV"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+695.6.1 = {
+	monarch = {
+		name = "Childebert III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+711.4.24 = {
+	monarch = {
+		name = "Dagobert III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+715.12.31 = {
+	monarch = {
+		name = "Chilperic II"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+720.6.1 = {
+	monarch = {
+		name = "Theuderic IV"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+737.4.30 = {
+	monarch = {
+		name = "(regency council)"
+		regent = yes
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+743.6.1 = {
+	monarch = {
+		name = "Childeric III"
+		dynasty = "Merovingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+752.6.1 = {
+	monarch = {
+		name = "Pepin the Short"
+		dynasty = "Carolingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+768.9.25 = {
+	monarch = {
+		name = "Charlemagne"
+		dynasty = "Carolingian"
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
+
+814.1.29 = {
+	monarch = {
+		name = "Louis I the Pious"
+		dynasty = "Carolingian"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}

@@ -1,0 +1,83 @@
+newEntry210 - Navarra.txt
+#210 - Navarra
+
+owner = ROM
+controller = ROM
+add_core = ROM
+add_core = VAS
+culture = basque
+religion = animism
+hre = no
+base_tax = 3
+trade_goods = iron
+manpower = 2 
+capital = "Pompaelo" 
+citysize = 1000
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1039 }
+200.1.1 = { citysize = 1228 }
+300.1.1 = { citysize = 1417 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1607 }
+420.1.1 = { religion = chalcedonism }
+455.1.1 = { owner = VAS controller = VAS add_core = VAS remove_core = ROW capital = "Pamplona" }
+466.1.1 = { controller = GVI }
+472.1.1 = { controller = VAS }
+500.1.1 = { citysize = 1796 }
+581.1.1 = { owner = GVI controller = GVI add_core = GVI fort1 = yes capital = "Victoriacum" }
+589.1.1 = { religion = chalcedonism }
+600.1.1 = { citysize = 1985 }
+700.1.1 = { citysize = 2174 }
+711.1.1 = { owner = VAS controller = VAS remove_core = GVI }
+716.1.1 = { owner = UMA controller = UMA add_core = UMA add_core = FRK }
+778.1.1 = { owner = VAS controller = VAS }
+800.1.1 = { citysize = 2364 }
+824.1.1 = { owner = NAV controller = NAV add_core = NAV remove_core = UMA remove_core = FRK remove_core = VAS }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 2553 }
+1000.1.1 = { citysize = 2742 }
+1100.1.1 = { citysize = 2932 }
+1200.1.1 = { citysize = 3121 }
+1300.1.1 = { citysize = 3310 }
+1399.1.1 = { citysize = 3500 }
+
+1450.1.1   = { citysize = 3700 }
+1483.1.29  = { unrest = 5 } # Civil War between the Beaumont and Agramont parties in Navarra
+1485.2.5   = { unrest = 0 } # Peace of Pau between the two parties
+1500.1.1   = { citysize = 4200 }
+1512.7.24  = { controller = ARA owner = ARA add_core = ARA remove_core = NAV add_core = VAS } # Navarra's alliance with France gives Fernando the perfect excuse to invade the kingdom.
+1515.7.7   = { controller = CAS owner = CAS add_core = CAS remove_core = ARA } # Navarra's formally integrated into Castilla
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+		remove_core = CAS
+	     } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1521.5.1   = { controller = FRA } # Exploiting the turmoil provoked by the revolt of the Comunidades, France attacks the unprotected Navarrese border.
+1521.6.30  = { controller = SPA } # French troops are defeated at the battle of Quirós
+1550.1.1   = { citysize = 5130 }
+1600.1.1   = { citysize = 7200 fort2 = yes }
+1650.1.1   = { citysize = 8570 marketplace = yes }
+1700.1.1   = { citysize = 9350 }
+1750.1.1   = { citysize = 10870 }
+1800.1.1   = { citysize = 11200 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 1 } controller = REB }
+1808.12.1  = { revolt = {} controller = SPA }
+1813.6.21  = { revolt = { type = pretender_rebels size = 2 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 30000 }
+1930.1.1   = { citysize = 40000 }
+1950.1.1   = { citysize = 70000 }
+1970.1.1   = { citysize = 140000 }
+1990.1.1   = { citysize = 180000 }
+2009.1.1   = { citysize = 198491 }
+
+
+

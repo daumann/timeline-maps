@@ -1,0 +1,77 @@
+newEntry2293 - Konjikala.txt
+#437 - Atak
+
+owner = PRT
+controller = PRT
+culture = turkmeni
+religion = zoroastrianism
+capital = "Konjikala"
+trade_goods = copper
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 2980
+add_core = PRT
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 1617 }
+200.1.1 = { citysize = 1735 }
+224.1.1 = { owner = SAS controller = SAS add_core = SAS remove_core = PRT }
+300.1.1 = { citysize = 1852 }
+400.1.1 = { citysize = 1970 }
+500.1.1 = { citysize = 2087 }
+600.1.1 = { citysize = 2205 }
+647.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = SAS }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 2322 }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 2440 }
+819.1.1 = { owner = SAM controller = SAM add_core = SAM remove_core = ABB }
+875.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = SAM }
+880.1.1 = { religion = sunni }
+900.1.1 = { citysize = 2557 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+999.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1000.1.1 = { citysize = 2675 }
+1037.1.1 = { owner = SEL controller = SEL add_core = SEL remove_core = GHZ }
+1100.1.1 = { citysize = 2792 }
+1153.1.1 = { owner = KHW controller = KHW add_core = KHW remove_core = SEL }
+1200.1.1 = { citysize = 2910 fort1 = yes }
+1231.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KHW }
+1260.1.1 = { owner = ILK controller = ILK add_core = ILK remove_core = MGE }
+1300.1.1 = { citysize = 3027 }
+1335.1.1 = { owner = KRT controller = KRT add_core = KRT remove_core = ILK }
+1380.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = KRT }
+1399.1.1 = { citysize = 3145 }
+
+1447.3.12 = { unrest = 8 } # Death of Shahrukh, chaotic conditions
+1450.1.1 = { citysize = 1100 }
+1500.1.1 = { citysize = 1560 }
+1502.1.1 = { owner = KHO controller = KHO add_core = KHO remove_core = TIM } # The end of the Timurids in Samarkand
+1505.1.1 = { controller = BUK }
+1506.1.1 = {	owner = BUK add_core = BUK remove_core = KHO unrest = 0 } # Conquered by Muhammad Shaybani
+1511.1.1 = {	owner = KHI controller = KHI remove_core = BUK } # Khiva separates from Uzbeks
+1550.1.1 = { citysize = 2120 }
+1600.1.1 = { citysize = 2870 }
+1650.1.1 = { citysize = 3524 }
+1700.1.1 = { citysize = 4780 }
+1717.1.1 = { discovered_by = RUS }
+1740.1.1 = {	owner = PER controller = PER } # Captured by Nadir Shah
+1747.6.19 = {	owner = KHI controller = KHI } # The death of Nadir Shah ends the domination
+1750.1.1 = { citysize = 5112 }
+1800.1.1 = { citysize = 6411 }
+
+1850.1.1   = { citysize = 20000 }
+1873.8.12  = { owner = RUS controller = RUS add_core = RUS }
+1881.1.1   = { capital = "Ashgabat" }
+1900.1.1   = { citysize = 80000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1924.10.27 = { add_core = TRK remove_core = KHI remove_core = BUK }
+1950.1.1   = { citysize = 400000 }
+1991.10.27 = { owner = TRK controller = TRK remove_core = SOV remove_core = RUS }
+2009.1.1   = { citysize = 909000 }
+
+
+

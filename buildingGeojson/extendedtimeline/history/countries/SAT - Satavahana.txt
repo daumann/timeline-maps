@@ -1,0 +1,94 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 0
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = kannada
+religion = buddhism
+technology_group = indian
+capital = 2223	# Amaravati
+
+25.1.1 = {
+	monarch = {
+		name = "Gautamiputra Satakarni"
+		dynasty = "Satavahana"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+78.6.1 = {
+	monarch = {
+		name = "Vasisthiputra Sri Pulamavi"
+		dynasty = "Satavahana"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+120.1.1 = {
+	monarch = {
+		name = "Vashisthiputra Satakarni"
+		dynasty = "Satavahana"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+157.6.1 = {
+	monarch = {
+		name = "Shivaskanda Satakarni"
+		dynasty = "Satavahana"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+169.1.1 = {
+	monarch = {
+		name = "Yajna Sri Satakarni"
+		dynasty = "Satavahana"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+196.1.1 = {
+	monarch = {
+		name = "Vijaya"
+		dynasty = "Satavahana"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+202.1.1 = {
+	monarch = {
+		name = "Canda Sri Satakarni"
+		dynasty = "Satavahana"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+212.1.1 = {
+	monarch = {
+		name = "Pulomavi IV"
+		dynasty = "Satavahana"
+		adm = 6
+		dip = 5
+		mil = 5
+	}
+}

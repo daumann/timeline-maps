@@ -38,7 +38,10 @@ L.Storage.Xhr = {
             }
         }
 
-        var loaded = function () {if (settings.listener) settings.listener.fire('dataload', {id: id});};
+        var loaded = function () {
+            if (settings.listener) 
+                settings.listener.fire('dataload', {id: id});
+        };
 
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
@@ -85,6 +88,7 @@ L.Storage.Xhr = {
 
     // supports only JSON as response data type
     _json: function (verb, uri, options) {
+        console.debug("inside options: ", options)
         var args = arguments,
             self = this;
         var default_options = {
@@ -106,6 +110,7 @@ L.Storage.Xhr = {
         }
 
         var callback = function(responseText, response) {
+            console.debug("inside responseText, response: ", responseText,response);
             var data;
             try {
                 data = JSON.parse(responseText);
@@ -135,8 +140,8 @@ L.Storage.Xhr = {
                 }
             }
         };
-
-        this._ajax({
+        console.debug("ajax data: ", settings.data);
+        this._ajax({            
             verb: verb,
             uri: uri,
             data: settings.data,
@@ -151,6 +156,7 @@ L.Storage.Xhr = {
     },
 
     post: function(uri, options) {
+        console.debug(options);
         L.Storage.Xhr._json('POST', uri, options);
     },
 

@@ -1,0 +1,62 @@
+newEntry2621 - Alatyr.txt
+#1081 - Bolgar
+
+capital = "Alatyr"
+culture = bulgarian
+religion = tengri
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_hostileness = 2
+native_size = 4
+native_ferocity = 3
+
+600.1.1 = { discovered_by = nomad_group discovered_by = GOL discovered_by = NOG }
+660.1.1 = { owner = VBU controller = VBU add_core = VBU citysize = 1800 trade_goods = grain }
+800.1.1 = { citysize = 2000 fort1 = yes }
+900.1.1 = { citysize = 2200 discovered_by = eastern }
+922.1.1 = { religion = sunni }
+1000.1.1 = { citysize = 2400 }
+1100.1.1 = { citysize = 2600 discovered_by = western }
+1200.1.1 = { citysize = 2800 }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = KAZ }
+1250.1.1 = { culture = kazani }
+1260.1.1 = { owner = GOL controller = GOL add_core = GOL remove_core = MGE remove_core = VBU }
+1264.1.1 = { owner = VLA controller = VLA add_core = VLA remove_core = GOL }
+1280.1.1 = { culture = russian }
+1300.1.1 = { citysize = 5400 }
+1340.1.1 = { religion = orthodox }
+1389.1.1 = { owner = NZH controller = NZH add_core = NZH remove_core = VLA }
+1392.1.1 = { owner = MOS controller = MOS add_core = MOS }
+1399.1.1 = { citysize = 6700 }
+
+1450.1.1   = { citysize = 5900 discovered_by = SIB }
+1500.1.1   = { citysize = 6500 }
+1503.4.1  = {	owner = RUS controller = RUS add_core = RUS remove_core = MOS remove_core = NZH }
+1511.1.1   = { fort2 = yes marketplace = yes }
+1550.1.1   = { citysize = 7150 }
+1560.1.1   = { base_tax = 7 } # Treasury reform
+1598.1.7   = { unrest = 1 } # "Time of troubles", Nizhny Novgorod only city that supported Moscow
+1600.1.1   = { citysize = 7527 }
+1611.9.1   = { unrest = 0 } # Nizhegorod guard of Minin and Pozharsky to support Moscow
+1631.1.1   = { temple = yes } # Archangel cathedral
+1650.1.1   = { citysize = 7503 }
+1670.1.1   = { unrest = 8 } # Stepan Razin
+1671.1.1   = { unrest = 0 } # Razin is captured
+1700.1.1   = { citysize = 7650 }
+1719.1.1 = { base_tax = 8 tax_assessor = yes } # Governmental reforms and the absolutism, Nizhegorod governorate
+1750.1.1   = { citysize = 9000 }
+1773.1.1   = { unrest = 5 } # Emelian Pugachev, Cossack insurrection
+1774.9.14  = { unrest = 0 } # Pugachev is captured
+1800.1.1   = { citysize = 13100 }
+
+1850.1.1   = { citysize = 40000 }
+1900.1.1   = { citysize = 120000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 560000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 613793 }
+
+
+

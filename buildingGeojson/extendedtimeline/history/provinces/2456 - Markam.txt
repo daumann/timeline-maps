@@ -1,0 +1,64 @@
+newEntry2456 - Markam.txt
+#677 - Qamdo
+
+owner = TIB
+controller = TIB
+culture = tibetan
+religion = buddhism
+capital = "Markam"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 2
+citysize = 5517
+add_core = TIB
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+discovered_by = indian
+
+100.1.1 = { citysize = 6035 }
+200.1.1 = { citysize = 7071 }
+300.1.1 = { citysize = 8107 }
+400.1.1 = { citysize = 9142 }
+500.1.1 = { citysize = 10178 }
+600.1.1 = { citysize = 11214 }
+700.1.1 = { citysize = 12250 }
+800.1.1 = { citysize = 13285 }
+842.1.1 = { owner = KAM controller = KAM add_core = KAM remove_core = TIB }
+900.1.1 = { citysize = 14321 }
+1000.1.1 = { citysize = 15357 }
+1100.1.1 = { citysize = 16392 }
+1200.1.1 = { citysize = 17428 }
+1240.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 18464 }
+1354.1.1 = { owner = KAM controller = KAM add_core = KAM remove_core = YUA }
+1399.1.1 = { citysize = 19500 }
+
+1640.6.1  = { controller = KSD
+		owner = KSD
+		add_core = KSD }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1717.1.1 = {	owner = ZUN
+		controller = ZUN
+		} #Zunghar invasion of Tibet
+1720.1.1 = {	owner = UTS
+		controller = UTS
+		add_core = UTS
+		}
+1792.11.1  = {
+	owner = QNG
+	controller = QNG
+	add_core = QNG
+} # U-tsang integrated into Qing empire after Sino-nepalese war
+
+1850.1.1   = { citysize = 50000 }
+1900.1.1   = { citysize = 100000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG add_core = TIB remove_core = UTS }
+1950.1.1   = { citysize = 200000 }
+2008.1.1   = { citysize = 373000 }
+
+
+

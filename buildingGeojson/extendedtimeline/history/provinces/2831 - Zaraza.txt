@@ -1,0 +1,51 @@
+newEntry2831 - Zaraza.txt
+#741 - Cumana
+
+culture = carib
+religion = south_american
+capital = "Zaraza"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 15
+native_ferocity = 2
+native_hostileness = 6
+discovered_by = south_american
+
+1498.1.1   = { discovered_by = CAS } # Christopher Columbus
+1516.1.23  = { discovered_by = SPA }
+1645.1.1 = {
+	owner = SPA 
+	controller = SPA
+	add_core = SPA
+	culture = castillian
+	religion = catholic
+	citysize = 480
+	trade_goods = grain
+}
+1650.1.1   = { citysize = 1000 }
+1700.1.1   = { citysize = 4168 }
+1750.1.1   = { citysize = 5010 }
+1800.1.1   = { citysize = 6555 }
+1811.7.5   = {	owner = VNZ
+		controller = VNZ
+		add_core = VNZ
+	     } # Venezuela declared its independence
+1812.7.25  = { controller = SPA } # The revolutionary army is defeated
+1813.8.7   = { controller = VNZ } # The Second Republic of Venezuela is established
+1814.1.1   = { controller = SPA } # The end of the second republic
+1819.12.17 = {	owner = COL
+		controller = COL
+		add_core = COL
+		remove_core = SPA
+	     } # The establishment of Gran Colombia
+
+1830.1.13  = { owner = VNZ controller = VNZ remove_core = COL }
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 100000 }
+1950.1.1   = { citysize = 400000 }
+2010.1.1   = { citysize = 824764 }
+
+
+

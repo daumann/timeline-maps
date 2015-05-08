@@ -1,0 +1,35 @@
+newEntry2807 - Inhambupe.txt
+#759 - Diamentina
+
+culture = ge
+religion = south_american
+capital = "Inhambupe"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = south_american
+
+1500.4.23 = { discovered_by = POR } # Pedro Álvares Cabral
+1570.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	citysize = 450
+	trade_goods = tobacco
+	religion = catholic
+	culture = portugese
+}
+1600.1.1  = { citysize = 2600 }
+1650.1.1  = { citysize = 5488 }
+1700.1.1  = { citysize = 7537 }
+1750.1.1  = { citysize = 9710 }
+1800.1.1  = { citysize = 12444 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+
+
+

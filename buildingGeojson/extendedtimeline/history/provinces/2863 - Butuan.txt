@@ -1,0 +1,45 @@
+newEntry2863 - Butuan.txt
+#653 - Tagoloan
+
+culture = filipino
+religion = animism
+capital = "Butuan"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+native_size = 50
+native_ferocity = 3
+native_hostileness = 9
+discovered_by = chinese
+
+1450.1.1 = { religion = sunni }
+1520.1.1 = {
+		owner = MGD
+		controller = MGD
+		add_core = MGD
+		citysize = 5200
+		trade_goods = grain
+	   } # Sultanate of Maguindanao
+1521.1.1 = { discovered_by = SPA }
+1550.1.1 = { citysize = 5750 }
+1600.1.1 = { citysize = 6253 }
+1650.1.1 = { citysize = 6930 }
+1700.1.1 = { citysize = 7585 }
+1750.1.1 = { citysize = 8300 }
+1800.1.1 = { citysize = 9524 }
+
+1850.1.1   = { citysize = 15000 }
+1888.1.1   = { owner = SPA controller = SPA add_core = SPA }
+1872.1.1   = { add_core = PHI remove_core = MGD }
+1898.8.12  = { owner = USA controller = USA add_core = USA remove_core = SPA }
+1900.1.1   = { citysize = 50000 }
+1917.1.1   = { remove_core = SUL }
+1942.1.2   = { controller = JAP }
+1945.3.1   = { controller = USA }
+1946.7.4   = { owner = PHI controller = PHI remove_core = USA }
+1950.1.1   = { citysize = 140000 }
+2010.1.1   = { citysize = 271786 }
+
+
+

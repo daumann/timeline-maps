@@ -1,0 +1,36 @@
+culture = chinook
+religion = totemism
+capital = "Oregon"
+native_size = 90
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_ferocity = 4.5
+native_hostileness = 9 
+
+1805.6.1   = { discovered_by = USA } # Lewis and Clark expedition
+1863.1.1   = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant
+		citysize = 100
+		trade_goods = gold
+	      }
+1880.1.1   = { citysize = 400 }
+1883.6.11  = { capital = "Ontario" }
+1890.1.1   = { trade_goods = grain }
+1900.1.1   = { citysize = 2991 }
+1930.1.1   = { citysize = 8050 }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1950.1.1   = { citysize = 8635 }
+1980.1.1   = { citysize = 11354 }
+2010.1.1   = { citysize = 13082 }
+
+

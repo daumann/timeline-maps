@@ -1,0 +1,74 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = yemeni
+religion = south_arabian
+technology_group = muslim
+capital = 2540
+
+40.1.1 = {
+	monarch = {
+		name = "Anmar Yuha'man II"
+		dynasty = "Saba"
+		adm = 3
+		dip = 1
+		mil = 3
+	}
+}
+
+80.1.1 = {
+	monarch = {
+		name = "Yasir Yuhan'em I"
+		dynasty = "Saba"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
+
+120.1.1 = {
+	monarch = {
+		name = "Shamir Yuhar'esh"
+		dynasty = "Saba"
+		adm = 2
+		mil = 2
+		dip = 4
+	}
+}
+
+150.1.1 = {
+	monarch = {
+		name = "Yarim Aymin"
+		dynasty = "Saba"
+		adm = 2
+		mil = 2
+		dip = 3
+	}
+}
+
+220.1.1 = {
+	monarch = {
+		name = "Alhan Nahfan"
+		dynasty = "Saba"
+		adm = 2
+		mil = 3
+		dip = 2
+	}
+}
+
+250.1.1 = {
+	monarch = {
+		name = "Far'am Yanhab"
+		dynasty = "Saba"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}

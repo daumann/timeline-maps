@@ -1,0 +1,35 @@
+newEntry2907 - Chuna.txt
+#1781 - Western Siberia
+
+culture = tungus
+religion = shamanism
+capital = "Chunskaya"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 4
+native_ferocity = 1
+native_hostileness = 3
+
+1627.1.1 = {	discovered_by = RUS
+		owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		citysize = 388
+		trade_goods = fish
+	   }
+1628.1.1 = {	add_core = RUS
+	   	citysize = 1005
+	   }
+1636.1.1 = { fort1 = yes }
+1660.1.1 = { citysize = 2785 }
+1700.1.1 = { citysize = 5590 }
+1750.1.1 = { citysize = 11100 }
+
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+
+
+

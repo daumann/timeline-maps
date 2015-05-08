@@ -1,0 +1,49 @@
+newEntry848 - Tohancapan.txt
+#848 - Tohancapan
+
+owner = TOT
+controller = TOT
+culture = totonac
+religion = nahuatl
+capital = "Tohancapan"
+trade_goods = sugar
+hre = no
+base_tax = 2
+manpower = 1
+discovered_by = mesoamerican
+
+850.1.1 = { owner = TLT controller = TLT add_core = TLT }
+1179.1.1 = { owner = TOT controller = TOT add_core = TOT remove_core = TLT }
+
+1450.1.1 = { 	owner = AZT
+		controller = AZT } #Moctezuma I expand the empire along the coast
+1500.1.1  = { add_core = AZT }
+1519.3.13 = { discovered_by = SPA } # Hernán Cortés
+1521.8.13  = {	owner = SPA
+		controller = SPA
+		citysize = 2150
+		culture = castillian
+		religion = catholic
+	    } # Fall of Tenochtitlan
+1546.1.1  = { add_core = SPA }
+1550.1.1  = { citysize = 2546 }
+1600.1.1  = { citysize = 3187 }
+1636.1.1  = { fort1 = yes }
+1650.1.1  = { citysize = 3650 }
+1700.1.1  = { citysize = 4360 }
+1750.1.1  = { citysize = 4860 }
+1800.1.1  = { citysize = 5640 }
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+1847.3.29  = { controller = USA }
+1848.2.2   = { controller = MEX } # Treaty of Guadalupe Hidalgo
+1850.1.1   = { citysize = 10000 }
+1900.1.1   = { citysize = 50000 }
+1930.1.1   = { trade_goods = oil } #Chicontepec field
+1950.1.1   = { citysize = 250000 }
+1951.11.20 = { capital = "Poza Rica" }
+2010.1.1   = { citysize = 552156 }
+
+
+

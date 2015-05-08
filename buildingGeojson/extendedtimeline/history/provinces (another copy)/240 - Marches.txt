@@ -1,0 +1,92 @@
+#240 - Marches
+
+owner = ERG
+controller = ERG
+culture = briton
+religion = druidism
+hre = no
+base_tax = 5
+trade_goods = iron
+manpower = 3
+capital = "Viroconium"
+citysize = 1200
+add_core = ERG
+add_core = ELM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+47.1.1 = { owner = ROM controller = ROM add_core = ROM remove_core = ERG }
+300.1.1 = { culture = welsh }
+380.1.1 = { add_core = ELM }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2500 }
+410.1.1 = { owner = ELM controller = ELM add_core = ELM remove_core = ROW capital = "Coventry" }
+500.1.1 = { citysize = 2900 }
+527.1.1 = { owner = MRC controller = MRC add_core = MRC remove_core = ELM religion = germanic culture = anglo_saxon }
+600.1.1 = { citysize = 3300 }
+640.1.1 = { religion = chalcedonism }
+655.11.15 = { owner = NOL controller = NOL add_core = NOL }
+658.1.1 = { owner = MRC controller = MRC remove_core = NOL }
+700.1.1 = { citysize = 3700 fort1 = yes }
+800.1.1 = { citysize = 4100 }
+829.1.1 = { owner = WSX controller = WSX add_core = WSX }
+830.1.1 = { owner = MRC controller = MRC remove_core = WSX }
+867.1.1 = { religion = catholic }
+883.1.1 = { add_core = WSX }
+900.1.1 = { citysize = 4500 }
+918.12.4 = { owner = WSX controller = WSX }
+927.1.1 = { owner = ENG controller = ENG add_core = ENG remove_core = WSX }
+1000.1.1 = { citysize = 4900 remove_core = MRC }
+1066.12.25 = { culture = english }
+1100.1.1 = { citysize = 5300 }
+1200.1.1 = { citysize = 5700 }
+1300.1.1 = { citysize = 6100 }
+1399.1.1 = { citysize = 6500 }
+
+1450.1.1   = { citysize = 7000 }
+1453.1.1   = { unrest = 5 } # Start of the War of the Roses
+1461.3.1   = { unrest = 0 revolt = { type = pretender_rebels size = 1 } controller = REB } # Coventry's Switch to the Yorkists
+1461.6.28  = { revolt = {} unrest = 2 controller = ENG } # Coronation of Edward IV
+1467.1.1   = { unrest = 5 } # Rivalry between Edward IV & Warwick
+1470.9.1   = { unrest = 0 revolt = { type = pretender_rebels size = 1 } controller = REB }
+1470.10.6  = { revolt = {} controller = ENG } # Readeption of Henry VI
+1471.1.1   = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy
+1471.3.15  = { unrest = 0 revolt = { type = pretender_rebels size = 1 } controller = REB } # Capture of Warwick Castle
+1471.5.4   = { revolt = {} unrest = 2 controller = ENG } # Murder of Henry VI & Restoration of Edward IV
+1483.6.26  = { unrest = 8 } # Revulsion at Supposed Murder of the Princes in the Tower
+1485.8.23  = { unrest = 0 } # Battle of Bosworth Field & the End of the War of the Roses
+1520.1.1   = { citysize = 7000 }
+1548.1.1   = { religion = protestant }
+1550.1.1   = { marketplace = yes base_tax = 6 } # Estimated
+1585.1.1   = { religion = reformed }
+1600.1.1   = { citysize = 7500 fort2 = yes }
+1625.1.1   = { courthouse = yes } # Estimated
+1645.12.17 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB }
+1646.5.5   = { revolt = {} controller = ENG } # End of First English Civil War
+1700.1.1   = { citysize = 8500 capital = "Birmingham" }
+1707.5.12  = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	     }
+1750.1.1   = { citysize = 24000 tax_assessor = yes } # Tax Assessor Estimated
+1775.1.1   = { workshop = yes constable = yes } # Estimated
+1800.1.1   = { citysize = 70000 }
+
+1821.1.1 = { citysize = 106722 }
+1841.1.1 = { citysize = 182922 }
+1861.1.1 = { citysize = 296076 }
+1881.1.1 = { citysize = 400774 }
+1901.1.1 = { citysize = 522204 }
+1921.1.1 = { citysize = 919444 }
+1939.1.1 = { citysize = 995039 }
+1961.1.1 = { citysize = 1107187 }
+2001.1.1 = { citysize = 977087 }
+2010.1.1 = { citysize = 1073000 }
+
+
+

@@ -1,0 +1,94 @@
+newEntry198 - Rouergue.txt
+# 198 Rouergue - Principal cities: Rodez
+
+owner = ROM
+controller = ROM
+capital = "Segodunum"
+citysize = 1000
+culture = gallian
+religion = druidism
+hre = no
+base_tax = 3
+trade_goods = wool
+manpower = 2
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1171 }
+200.1.1 = { citysize = 1542 }
+300.1.1 = { citysize = 1914 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2285 }
+420.1.1 = { religion = chalcedonism }
+455.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = ROW }
+500.1.1 = { citysize = 2657 }
+507.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = GVI capital = "Rodez" }
+600.1.1 = { citysize = 3028 culture = occitain }
+700.1.1 = { citysize = 3400 }
+781.1.1 = { owner = AQT controller = AQT add_core = AQT }
+800.1.1 = { citysize = 3771 fort1 = yes }
+814.1.1 = { owner = FRK controller = FRK }
+840.6.21 = { owner = FRW controller = FRW add_core = FRW remove_core = FRK }
+849.1.1 = { owner = AUV controller = AUV add_core = AUV remove_core = AQT }
+866.1.1 = { owner = AQT controller = AQT add_core = AQT }
+867.1.1 = { religion = catholic }
+877.10.6 = { owner = AUV controller = AUV remove_core = AQT }
+900.1.1 = { citysize = 4142 }
+918.1.1 = { owner = TOU controller = TOU add_core = TOU remove_core = AUV }
+987.7.3 = { add_core = FRA add_core = GUY remove_core = FRW }
+1000.1.1 = { citysize = 4514 }
+1100.1.1 = { citysize = 4885 }
+1200.1.1 = { citysize = 5257 }
+1271.1.1 = { owner = FRA controller = FRA }
+1300.1.1 = { citysize = 5628 }
+1313.1.1 = { owner = AMG controller = AMG add_core = AMG }
+1360.5.9 = { owner = ENG controller = ENG } # Treaty of Bretigny
+1377.1.1 = { owner = AMG controller = AMG }
+1399.1.1 = { citysize = 6000 }
+
+1450.1.1 = { citysize = 7000 }
+1500.1.1 = { citysize = 9000 }
+1540.1.1 = { fort2 = yes }
+1549.12.22 = {	
+	owner = AUV
+	controller = AUV
+	add_core = AUV
+	remove_core = AMG
+}
+1550.1.1 = { citysize = 11000 }
+1588.12.1  = { unrest = 5 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1589.1.5 = { owner = NAV controller = NAV add_core = NAV remove_core = AUV }
+1589.8.2 = { owner = FRA controller = FRA } # To France proper, after Henri IV, King of France & Duke of Armagnac
+1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1600.1.1 = { citysize = 14000 temple = yes }
+1610.1.1 = { marketplace = yes }
+1640.1.1 = { fort3 = yes }
+1650.1.1 = { citysize = 16000 constable = yes }
+1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1 = { unrest = 4 } # An unstable peace is concluded
+1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.2.15  = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Fronde rebels make a foothold in the Guyenne area, under Condé
+1652.10.21 = { revolt = {} controller = FRA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1700.1.1 = { citysize = 20000 fort4 = yes courthouse = yes }
+1750.1.1 = { citysize = 20000 }
+1760.1.1 = { tax_assessor = yes }
+
+1850.1.1   = { citysize = 30000 capital = "Albi" }
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 40000 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1944.8.25  = { owner = FR2 controller = FR2 remove_core = FRV } # France liberated by allied forces
+1950.1.1   = { citysize = 50000 }
+2008.1.1   = { citysize = 51302 }
+
+
+

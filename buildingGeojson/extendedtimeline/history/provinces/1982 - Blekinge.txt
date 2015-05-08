@@ -1,0 +1,43 @@
+newEntry1982 - Blekinge.txt
+#Blekinge
+
+owner = HER
+controller = HER
+add_core = HER
+citysize = 1000
+culture = danish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 2
+trade_goods = fish
+manpower = 1
+capital = "Ronneby"
+discovered_by = HER
+
+380.1.1 = { owner = GEE controller = GEE add_core = GEE remove_core = HER }
+550.1.1 = { discovered_by = SVE discovered_by = DAN }
+650.1.1 = { owner = DAN controller = DAN add_core = DAN remove_core = GEE }
+750.1.1 = { discovered_by = western discovered_by = eastern }
+950.1.1 = { religion = catholic }
+1000.1.1 = { citysize = 1100 add_core = SWE }
+1100.1.1 = { fort1 = yes }
+1200.1.1 = { citysize = 1300 discovered_by = muslim discovered_by = ottoman }
+1399.1.1 = { citysize = 1500 }
+
+1480.1.1  = { fort1 = yes }
+1525.1.1  = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Prelude to 'Grevefejden'(Sören Norrby)
+1525.5.10 = { revolt = {} controller = DAN } # Sören Norrby is defeated
+1534.8.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # 'Grevefejden'(Christofer of Oldenburg)
+1536.3.15 = { revolt = {} controller = DAN } # Liberated by Sweden
+1536.3.15 = { religion = protestant } # Unknown date
+1658.2.26 = { owner = SWE } # The Peace of Roskilde
+1672.1.1  = { fort2 = yes }
+1680.1.1  = { 
+	capital = "Karlskrona" 
+	culture = swedish
+	shipyard = yes			# Karlskrona issued as naval base by KXI
+	}
+
+1850.1.1  = { remove_core = DAN }
+
+

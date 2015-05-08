@@ -1,0 +1,27 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = saxon
+religion = slavic
+technology_group = barbarian
+capital = 59
+
+740.1.1 = {
+	monarch = {
+		name = "Dragowit"
+		dynasty = "Veleti"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+600.1.1 = { technology_group = western }
+831.1.1 = { government = tribal_federation }

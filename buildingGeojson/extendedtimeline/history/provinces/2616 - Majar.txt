@@ -1,0 +1,57 @@
+newEntry2616 - Majar.txt
+#468 - Khazaria (Burtasia)
+
+owner = ALA
+controller = ALA
+add_core = ALA
+citysize = 1000
+culture = alan
+religion = tengri
+capital = "Majar"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 1
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+
+420.1.1 = { owner = HNS controller = HNS add_core = HNS remove_core = ALA }
+448.1.1 = { owner = KHZ controller = KHZ add_core = KHZ remove_core = HNS culture = khazar }
+600.1.1 = { citysize = 1100 }
+700.1.1 = { citysize = 1244 }
+800.1.1 = { citysize = 1488 discovered_by = eastern }
+900.1.1 = { citysize = 1732 }
+1000.1.1 = { citysize = 1977 religion = sunni }
+1048.1.1 = { owner = CUM controller = CUM add_core = CUM remove_core = KHZ culture = cuman }
+1100.1.1 = { citysize = 2221 fort1 = yes }
+1200.1.1 = { citysize = 2465 }
+1236.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = AST remove_core = CUM culture = astrakhani }
+1260.1.1 = { owner = GOL controller = GOL add_core = GOL remove_core = MGE }
+1300.1.1 = { citysize = 2709 }
+1399.1.1 = { citysize = 2954 }
+
+1450.1.1   = { citysize = 3200 }
+1459.1.1   = { 	owner = AST controller = AST remove_core = GOL } # Independence of Astrakhan
+1500.1.1   = { citysize = 3542 }
+1550.1.1   = { citysize = 4163 }
+1556.6.2   = {	owner = NOG controller = NOG add_core = NOG remove_core = AST } # Nogais migrate to the area after Russian conquest of Astrakhan
+1600.1.1   = { citysize = 5876 }
+1634.1.1   = { owner = RUS controller = RUS add_core = RUS remove_core = NOG citysize = 6544 culture = mongol religion = buddhism } # Nogais driven out by Buddhist Kalmuks, Russian protectorate
+1700.1.1   = { citysize = 7580 }
+1730.1.1   = { constable = yes }
+1750.1.1   = { citysize = 8722 }
+1777.1.1   = { capital = "Stavropol" fort2 = yes religion = orthodox culture = russian } # Kouban Cossacks, Stavropol founded
+1800.1.1   = { citysize = 9320 }
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 50000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1942.8.3   = { controller = GER }
+1943.1.21  = { controller = SOV }
+1950.1.1   = { citysize = 130000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2002.1.1   = { citysize = 170621 }
+
+
+

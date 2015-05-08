@@ -1,0 +1,46 @@
+#888 - Atakapa
+
+culture = caddo
+religion = totemism
+capital = "Ais"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1519.1.1   = { discovered_by = SPA } # Alvarez de Piñeda explored the Gulf Coast
+1690.1.1   = {	owner = SPA
+		controller = SPA
+		citysize = 500
+		religion = catholic
+		trade_goods = cotton
+		culture = castillian } #San Franciso de los Tejas mission
+1715.1.1   = {	add_core = SPA }
+1716.1.1   = {	citysize = 1000 } #Dolores de los Ais, expansion of Spanish missions
+1810.9.16  = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+
+1821.9.27  = { controller = MEX remove_core = SPA }
+1836.3.2   = { owner = TEX controller = TEX add_core = TEX culture = american } # Republic of Texas
+1838.1.1   = { capital = "Beaumont" }
+1845.12.29 = { owner = USA controller = USA add_core = USA } # Texas annexed
+1846.2.19  = { remove_core = TEX }
+1848.2.2   = { remove_core = MEX } # Treaty of Guadalupe Hidalgo
+1850.1.1   = { citysize = 6000 }
+1861.2.1   = { owner = TEX controller = TEX add_core = TEX }
+1861.3.2   = { owner = CSA controller = CSA add_core = CSA remove_core = TEX }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+1880.1.1   = { citysize = 16513 }
+1900.1.1   = { citysize = 44633 }
+1905.1.1   = { trade_goods = oil }
+1930.1.1   = { citysize = 292352 }
+1950.1.1   = { citysize = 596163 }
+1980.1.1   = { citysize = 1595138 }
+2010.1.1   = { citysize = 2099451 }
+
+
+
+

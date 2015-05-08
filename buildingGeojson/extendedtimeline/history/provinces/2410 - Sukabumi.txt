@@ -1,0 +1,56 @@
+newEntry2410 - Sukabumi.txt
+#624 - Banten
+
+culture = javanese
+religion = hinduism
+capital = "Pakuan"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 2
+native_size = 70
+native_ferocity = 2
+native_hostileness = 7
+discovered_by = chinese
+
+358.1.1 = { owner = TRM controller = TRM add_core = TRM citysize = 4000 trade_goods = spices }
+500.1.1 = { citysize = 4500 }
+600.1.1 = { citysize = 5000 }
+669.1.1 = { owner = SUN controller = SUN add_core = SUN remove_core = TRM }
+700.1.1 = { citysize = 5500 }
+800.1.1 = { citysize = 6000 }
+900.1.1 = { citysize = 6500 }
+1000.1.1 = { citysize = 7000 }
+1100.1.1 = { citysize = 7500 }
+1200.1.1 = { citysize = 8000 }
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+
+1509.1.1 = { discovered_by = POR }
+1527.1.1  = {
+		owner = BAN
+		controller = BAN
+		add_core = BAN
+		remove_core = SUN
+} # Conquered by the Cirebonese Army and Banten Sultanate was established
+1550.1.1 = { religion = sunni }
+1602.1.1  = { discovered_by = ENG } # English settlement
+1650.1.1  = { citysize = 21105 }
+1700.1.1  = { citysize = 22700 }
+1707.5.12 = { discovered_by = GBR }
+1750.1.1  = { citysize = 23430 } 
+1800.1.1  = { citysize = 25465 }
+1813.1.1  = { owner = NED controller = NED add_core = NED capital = "Sukabumi" }
+
+1850.1.1   = { citysize = 60000 }
+1900.1.1   = { citysize = 200000 }
+1912.9.10  = { add_core = IDN remove_core = BAN }
+1942.3.9   = { owner = JAP controller = JAP }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 900000 }
+1980.1.1   = { citysize = 1400000 }
+#2010.1.1   = { citysize = 2393633 }
+
+
+

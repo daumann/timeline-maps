@@ -1,0 +1,80 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 176  232  64 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	trade_ideas
+	naval_ideas
+	defensive_ideas
+	economic_ideas
+	administrative_ideas
+	religious_ideas
+	spy_ideas
+	offensive_ideas
+}
+
+historical_units = {
+	east_asian_spearmen
+	eastern_bow
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+}
+
+leader_names = {
+	Malamo Alam Mabiji Kaya Baguna Pulu 
+	Abidin Hayat Jamil Shah Kolano Majimo
+	Bakar Qadrat
+}
+
+monarch_names = {
+	"Mashur Malamo #0" = 10
+	"Poit #0" = 10
+	"Komala #0" = 10
+	"Bakuku #0" = 10
+	"Ngara Malamo #0" = 10
+	"Patsaranga Malamo #0" = 10
+	"Cili Aiya #0" = 10
+	"Panji Malamo #0" = 10
+	"Shah Alam #0" = 10
+	"Tulu Malamo #0" = 10
+	"Kie Mabiji #0" = 10
+	"Mamoli #0" = 10
+	"Gapi Malamo #0" = 10
+	"Gapi Baguna #0" = 10
+	"Komala Pulu #0" = 10
+	"Marhum #0" = 10
+	"Tabariji #0" = 10
+	"Hamzah #0" = 10
+	"Manilha #0" = 10
+	"Manlarsaha #0" = 10
+	"Fulu #0" = 10
+	"Momole #0" = 10
+	"Kalabata #0" = 10
+	"Aitsi #0" = 10
+	"A'ali #0" = 10
+	"Sibori #0" = 10
+	"Achral #0" = 10
+	"Ayanhar #0" = 10
+	"Jamin Qadrat #0" = 10
+	"Siale #0" = 10
+	"Sahjati #0" = 10
+	"Ciriliyati #0" = 10
+	"Mansur #0" = 10
+	"Mole Majimo #0" = 10
+	
+	"Cinta #0" = -1
+	"Wangi #0" = -1
+}
+
+ship_names = {
+	Balla Bulu Lompo Sallo Karaeng Bambang
+	Cipuru Doe Iyo Tena Tabe Apa Lakeko Battu Keko
+}

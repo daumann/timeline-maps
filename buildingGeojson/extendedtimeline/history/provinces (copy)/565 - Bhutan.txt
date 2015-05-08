@@ -1,0 +1,62 @@
+#565 - Bhutan
+
+owner = BHU
+controller = BHU
+culture = tibetan
+religion = animism
+capital = "Punakha"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1053
+add_core = BHU
+fort1 = yes
+discovered_by = indian
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 1107 }
+200.1.1 = { citysize = 1214 }
+300.1.1 = { citysize = 1321 }
+400.1.1 = { citysize = 1428 }
+500.1.1 = { citysize = 1535 }
+600.1.1 = { owner = TIB controller = TIB add_core = TIB }
+650.1.1 = { religion = buddhism }
+700.1.1 = { citysize = 1749 }
+800.1.1 = { citysize = 1857 }
+841.1.1 = { owner = UTS controller = UTS add_core = UTS remove_core = TIB }
+900.1.1 = { citysize = 1964 }
+1000.1.1 = { citysize = 2071 }
+1100.1.1 = { citysize = 2178 }
+1200.1.1 = { citysize = 2285 }
+1240.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = BHU }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 2392 }
+1354.1.1 = { owner = UTS controller = UTS add_core = UTS remove_core = YUA }
+1399.1.1 = { citysize = 2500 }
+
+1450.1.1 = { citysize = 2900 }
+1500.1.1 = { citysize = 3310 }
+1550.1.1 = { citysize = 3870 }
+1600.1.1 = { citysize = 4150 }
+1616.1.1 = { 	owner = BHU
+		controller = BHU 
+		add_core = BHU
+	   }
+1627.1.1 = { fort2 = yes } # Simtokha Dzong
+1634.1.1 = { discovered_by = POR } 
+1650.1.1 = { citysize = 4888 }
+1700.1.1 = { citysize = 5285 }
+1750.1.1 = { citysize = 6334 }
+1800.1.1 = { citysize = 7000 }
+
+1850.1.1  = { citysize = 10000 remove_core = TIB }
+1900.1.1  = { citysize = 20000 }
+1955.1.1  = { capital = "Thimphu" }
+1950.1.1  = { citysize = 40000 }
+2012.1.1  = { citysize = 79185 }
+
+
+

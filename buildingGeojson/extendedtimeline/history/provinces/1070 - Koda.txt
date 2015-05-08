@@ -1,0 +1,37 @@
+newEntry1070 - Koda.txt
+#1070 - Koda
+
+culture = samoyed
+religion = shamanism
+capital = "Narim"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_hostileness = 2
+native_size = 4
+native_ferocity = 3
+
+1300.1.1 = { discovered_by = nomad_group }
+1350.1.1 = { religion = sunni }
+
+1468.1.1 = {	owner = SIB controller = SIB discovered_by = SIB citysize = 4500 } # Sibir khanate formed
+1500.1.1 = { citysize = 4834 }
+1550.1.1 = { citysize = 5310 }
+1582.10.23 = {	discovered_by = RUS owner = RUS controller = RUS add_core = RUS remove_core = SIB culture = russian religion = orthodox } # Yermak Timofeevich, annexed to Muscovy
+1600.1.1 = { citysize = 4308 }
+1650.1.1 = { citysize = 4811 }
+1700.1.1 = { citysize = 5038 }
+1750.1.1 = { citysize = 6522 }
+1800.1.1 = { citysize = 7210 }
+
+1850.1.1   = { citysize = 20000 }
+1900.1.1   = { citysize = 60000 }
+1909.1.1   = { capital = "Nizhnevartovsk" }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 180000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 251860 }
+
+
+

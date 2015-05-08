@@ -1,0 +1,28 @@
+government = administrative_republic
+#aristocracy_plutocracy = 5
+#centralization_decentralization = 5
+#innovative_narrowminded = 0
+#mercantilism_freetrade = 0
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -2
+#quality_quantity = -2
+#serfdom_freesubjects = 5
+technology_group = western
+religion = catholic
+primary_culture = rheinlaender
+capital = 1878	# Aachen
+
+
+962.2.2 = {
+	monarch = {
+		name = "Stadtrat"
+		regent = yes
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1798.1.1 = { government = constitutional_republic }
+

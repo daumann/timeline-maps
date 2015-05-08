@@ -1,0 +1,50 @@
+#661 - Dali
+
+culture = shan
+religion = buddhism
+capital = "Dehong"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 2
+discovered_by = chinese
+discovered_by = nomad_group
+discovered_by = indian
+native_size = 20
+native_ferocity = 1
+native_hostileness = 5
+
+700.1.1 = { owner = TIB controller = TIB add_core = TIB citysize = 6000 trade_goods = tropical_wood }
+737.1.1 = { owner = NAN controller = NAN add_core = NAN remove_core = TIB }
+900.1.1 = { citysize = 7066 fort1 = yes }
+937.1.1 = { owner = CDL controller = CDL add_core = CDL remove_core = NAN }
+1000.1.1 = { citysize = 8133 }
+1100.1.1 = { citysize = 9200 }
+1200.1.1 = { citysize = 10266 }
+1253.1.1 = { owner = MGE controller = MGE add_core = MGE add_core = CZH }
+1260.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = MGE }
+1271.1.1 = { owner = YUA controller = YUA add_core = YUA remove_core = KHA }
+1300.1.1 = { citysize = 11333 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 12400 }
+
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1662.4.1 =  {	owner = CZH
+		controller = CZH
+		} # Three Feudatories - Wu Sangui titled as Prince of Pingxi in Yunnan
+1681.10.1 = {	owner = QNG
+	controller = QNG
+	add_core = QNG
+}
+
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 90000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CZH }
+1950.1.1   = { citysize = 350000 }
+1996.1.1   = { capital = "Luxi" }
+2008.1.1   = { capital = "Mang" }
+2010.1.1   = { citysize = 625000 }
+
+
+

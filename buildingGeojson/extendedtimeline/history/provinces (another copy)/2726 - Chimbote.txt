@@ -1,0 +1,69 @@
+#809 - Lima
+
+owner = MOC
+controller = MOC
+culture = chimuan
+religion = inti
+capital = "Chimbote"
+trade_goods = cocoa
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1065
+add_core = MOC
+discovered_by = andean
+discovered_by = south_american
+
+100.1.1 = { citysize = 1131 }
+200.1.1 = { citysize = 1263 }
+300.1.1 = { citysize = 1395 }
+400.1.1 = { citysize = 1526 }
+500.1.1 = { citysize = 1658 owner = HRI controller = HRI add_core = HRI remove_core = MOC }
+600.1.1 = { citysize = 1790 }
+700.1.1 = { citysize = 1922 }
+800.1.1 = { citysize = 2053 }
+900.1.1 = { citysize = 2185 owner = CHM controller = CHM add_core = CHM remove_core = HRI }
+1000.1.1 = { citysize = 2317 }
+1100.1.1 = { citysize = 2448 }
+1200.1.1 = { citysize = 2580 }
+1300.1.1 = { citysize = 2712 }
+1399.1.1 = { citysize = 2844 }
+
+1450.1.1  = { citysize = 1800 }
+1470.1.1 = {
+	owner = INC
+	controller = INC
+	add_core = INC
+}
+1500.1.1  = { citysize = 2580 }
+1533.8.29 = {	discovered_by = SPA
+		owner = SPA
+		controller = SPA
+		add_core = SPA
+		culture = castillian
+		religion = catholic
+	    }# The death of Atahualpa
+1537.1.1  = { unrest = 8 } # Fighting broke out when Almagro seized Cuzco
+1538.1.1  = { unrest = 5 } # Almagro is defeated & executed
+1541.1.1  = { unrest = 6 } # Pizzaro is assassinated by supporters of Almagro, his brother assumed control
+1548.1.1  = { unrest = 0 } # Gonzalo Pizzaro is also executed & Spain regains control
+1550.1.1  = { citysize = 3960 }
+1558.8.29 = { add_core = SPA }
+1600.1.1  = { citysize = 4570 }
+1650.1.1  = { citysize = 5700 }
+1700.1.1  = { citysize = 6444 }
+1750.1.1  = { citysize = 7322 }
+1800.1.1  = { citysize = 8810 }
+
+1821.7.28  = { owner = PEU controller = PEU add_core = PEU }
+1850.1.1   = { citysize = 100000 }
+1879.8.14  = { remove_core = SPA }
+1881.1.17  = { controller = CHL }
+1883.10.20 = { controller = PEU }
+1900.1.1   = { citysize = 400000 }
+1930.1.1   = { citysize = 1000000 }
+#1950.1.1   = { citysize = 2000000 }
+#2007.1.1   = { citysize = 7605742 }
+
+
+

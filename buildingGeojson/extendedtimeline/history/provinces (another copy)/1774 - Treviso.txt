@@ -1,0 +1,90 @@
+#112 - Venezia
+
+owner = ROM
+controller = ROM
+culture = roman
+religion = hellenism
+hre = no 
+base_tax = 9        
+trade_goods = fish
+manpower = 4        
+fort1 = yes 
+capital = "Tarvisium" 
+citysize = 4000	# Estimated 
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 5000 }
+200.1.1 = { citysize = 8000 }
+300.1.1 = { citysize = 11000 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+396.1.1 = { religion = chalcedonism }
+400.1.1 = { citysize = 15000 }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO culture = gothic }
+500.1.1 = { citysize = 20000 }
+552.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+568.1.1 = { owner = LOM controller = LOM add_core = LOM capital = "Treviso" remove_core = GOS remove_core = BYZ culture = lombard }
+600.1.1 = { citysize = 25000 }
+700.1.1 = { citysize = 30000 }
+773.1.1 = { owner = FRK controller = FRK add_core = FRK  }
+800.1.1 = { citysize = 35000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = ITA controller = ITA add_core = ITA remove_core = FRM remove_core = LOM }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 40000 }
+951.1.1 = { owner = BAV controller = BAV add_core = BAV remove_core = ITA add_core = CAR add_core = VER }
+962.2.2 = { hre = yes }
+976.1.1 = { owner = CAR controller = CAR remove_core = BAV }
+1000.1.1 = { citysize = 45000 marketplace = yes }
+1100.1.1 = { citysize = 50000 }
+1183.1.1 = { owner = TVS controller = TVS add_core = TVS remove_core = CAR }
+1200.1.1 = { citysize = 55000 }
+1300.1.1 = { citysize = 60000 }
+1329.1.1 = { owner = VER controller = VER add_core = VEN }
+1339.1.1 = { owner = VEN controller = VEN add_core = VEN remove_core = VER }
+1399.1.1 = { citysize = 65000 }
+
+1450.1.1 = { citysize = 70000 }
+1500.1.1 = { citysize = 75000 } 
+1550.1.1 = { citysize = 80000 } 
+1600.1.1 = { citysize = 85500 } 
+1650.1.1 = { citysize = 92500 } 
+1700.1.1 = { citysize = 96800 } 
+1750.1.1 = { citysize = 98000 } 
+1797.10.17 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+} # Treaty of Campo Formio
+1800.1.1 = { citysize = 102000 }
+1805.12.26 = {
+	owner = ITA
+	controller = ITA
+	add_core = ITA
+	remove_core = HAB
+} # Treaty of Pressburg
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	remove_core = ITA
+} # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+
+1850.1.1   = { citysize = 98000 }
+1861.3.17  = { add_core = ITA }
+1866.7.14  = { controller = ITA }
+1866.10.3  = { owner = ITA remove_core = HAB remove_core = TVS remove_core = VEN }
+1900.1.1   = { citysize = 100000 }
+1950.1.1   = { citysize = 90000 }
+2010.11.1  = { citysize = 82854 }
+
+
+

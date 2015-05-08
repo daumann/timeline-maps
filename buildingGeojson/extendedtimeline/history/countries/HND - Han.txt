@@ -1,0 +1,192 @@
+government = celestial_empire
+#aristocracy_plutocracy = -4
+#centralization_decentralization = -2
+#innovative_narrowminded = 1
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -3
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+technology_group = chinese
+religion = confucianism
+primary_culture = chihan
+capital = 685	# Chang'an
+
+faction = temples
+faction = enuchs
+faction = bureaucrats
+
+enuchs = 80
+
+25.1.1 = {
+ 	monarch={
+		name= "Guangwu Di"
+		dynasty= "Han"
+		adm = 5
+		dip = 4
+		mil = 6
+	}
+}
+
+57.3.29 = {
+ 	monarch={
+		name= "Ming Di"
+		dynasty= "Han"
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}
+
+75.1.1 = {
+ 	monarch={
+		name= "Zhang Di"
+		dynasty= "Han"
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}
+
+88.1.1 = {
+ 	monarch={
+		name= "He Di"
+		dynasty= "Han"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+105.2.13 = {
+ 	monarch={
+		name= "(regency council)"
+		regent = yes
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+
+106.9.1 = {
+ 	monarch={
+		name= "An Di"
+		dynasty= "Han"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}
+
+125.1.1 = {
+ 	monarch={
+		name= "Shun Di"
+		dynasty= "Han"
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+144.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		regent = yes
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}
+
+145.1.1 = {
+	monarch = {
+		name = "Zhi Di"
+		dynasty = "Han"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+146.1.1 = {
+	monarch = {
+		name = "Huan Di"
+		dynasty = "Han"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+168.1.1 = {
+	monarch = {
+		name = "Ling Di"
+		dynasty = "Han"
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+
+189.5.13 = {
+	monarch = {
+		name = "Lingsi"
+		dynasty = "Han"
+		adm = 3
+		dip = 4
+		mil = 2
+		female = yes
+	}
+}
+
+189.9.28 = {
+	monarch = {
+		name = "Xian Di"
+		dynasty = "Han"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
+
+907.6.1 = {
+	monarch = {
+		name = "Liu Yan"
+		dynasty = "Han"
+		adm = 3
+		dip = 4
+		mil = 5
+	}
+}
+
+941.1.1 = {
+	monarch = {
+		name = "Liu Bin"
+		dynasty = "Han"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+943.1.1 = {
+	monarch = {
+		name = "Liu Cheng"
+		dynasty = "Han"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+958.1.1 = {
+	monarch = {
+		name = "Liu Chang"
+		dynasty = "Han"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+

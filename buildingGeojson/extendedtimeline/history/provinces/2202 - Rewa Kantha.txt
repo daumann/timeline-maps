@@ -1,0 +1,97 @@
+newEntry2202 - Rewa Kantha.txt
+#518 - Udaipur
+
+owner = WSA
+controller = WSA
+culture = rajput
+religion = hinduism
+capital = "Champaner"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 1214
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 1428 }
+200.1.1 = { citysize = 1857 }
+300.1.1 = { citysize = 2285 }
+400.1.1 = { citysize = 2714 }
+405.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+500.1.1 = { citysize = 3142 }
+580.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = GUP }
+600.1.1 = { citysize = 3571 }
+620.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = GUR controller = GUR remove_core = HRS }
+700.1.1 = { citysize = 3999 }
+800.1.1 = { citysize = 4428 }
+900.1.1 = { citysize = 4857 }
+1000.1.1 = { citysize = 5285 }
+1036.1.1 = { owner = GUJ controller = GUJ add_core = GUJ remove_core = GUR }
+1100.1.1 = { citysize = 5714 }
+1150.1.1 = { religion = jainism }
+1171.1.1 = { religion = hinduism }
+1200.1.1 = { citysize = 6142 }
+1300.1.1 = { owner = CMP controller = CMP add_core = CMP remove_core = GUJ }
+1399.1.1 = { citysize = 6999 }
+
+1450.1.1 = { citysize = 14000 }
+1485.1.1 = { controller = GUJ }
+1485.11.21 = {
+	owner = GUJ
+	add_core = GUJ
+	capital = "Muhammadabad"
+	fort2 = yes
+} # Mahmud Begada captures champaner
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 30000 }
+1535.11.21 = { add_core = GUJ }
+1544.1.1 = {
+	owner = BNG
+	controller = BNG
+} # Sur expansionism
+1545.1.1 = {
+	owner = GUJ
+	controller = GUJ
+} # Death of Sher Shah
+1550.1.1 = { citysize = 33000 }
+1573.6.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+	capital = "Dahod"
+} # Conquered by Akbar
+1600.1.1 = { citysize = 16000 }
+1700.1.1 = { citysize = 18000 }
+1735.1.1 = {
+	owner = MAR
+	controller = MAR
+	add_core = MAR
+	remove_core = MUG
+	capital = "Rajpipla"
+} # Malwa is ceded to the Marathas
+1750.1.1 = { citysize = 21000 }
+1800.1.1 = { citysize = 21500 }
+1803.1.1 = {
+	owner = GBR
+	controller = GBR
+	add_core = GBR
+	remove_core = MAR
+	capital = "Godhra"
+}
+
+1850.1.1  = { citysize = 40000 }
+1900.1.1  = { citysize = 140000 }
+1930.1.1  = { add_core = IND }
+1947.8.15 = { owner = IND controller = IND remove_core = MER }
+1950.1.1  = { citysize = 300000 }
+2011.1.1  = { citysize = 571178 }
+
+
+

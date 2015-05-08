@@ -1,0 +1,65 @@
+newEntry1968 - Kulob.txt
+#1968 - Kulob
+
+owner = KUS
+controller = KUS
+culture = uzbehk
+religion = buddhism
+capital = "Kulob"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 3
+citysize = 1870
+add_core = KUS
+fort1 = yes
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+
+320.1.1 = { owner = KID controller = KID add_core = KID remove_core = KUS }
+420.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = KID }
+567.1.1 = { owner = GOK controller = GOK add_core = GOK remove_core = HEP }
+593.1.1 = { owner = WGO controller = WGO add_core = WGO remove_core = GOK }
+659.1.1 = { owner = SOG controller = SOG add_core = SOG remove_core = WGO }
+710.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = SOG }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+819.1.1 = { owner = SAM controller = SAM add_core = SAM remove_core = ABB }
+840.1.1 = { owner = KKH controller = KKH add_core = KKH remove_core = SAM }
+920.1.1 = { religion = sunni }
+1000.1.1 = { fort1 = yes }
+1211.1.1 = { owner = KKT controller = KKT add_core = KKT remove_core = KKH }
+1219.1.1 = { owner = MGE controller = MGE add_core = MGE remove_core = KKT }
+1260.1.1 = { owner = CHG controller = CHG add_core = CHG remove_core = MGE }
+1300.1.1 = { citysize = 1100 }
+1370.1.1 = { owner = TIM controller = TIM add_core = TIM remove_core = CHG }
+1399.1.1 = { citysize = 1200 }
+
+1450.1.1 = { citysize = 2100 }
+1501.1.1 = { controller = BUK } # Conquered by Muhammad Shaybani
+1502.1.1 = {	owner = BUK add_core = BUK remove_core = TIM } # The Uzbek Shaybanids brings an end to the Timurid dynasty
+1506.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 2988 }
+1600.1.1 = { citysize = 3265 }
+1650.1.1 = { citysize = 4008 }
+1673.1.1 = { discovered_by = ENG }
+1677.1.1 = { discovered_by = FRA }
+1707.5.12 = { discovered_by = GBR }
+1750.1.1 = { citysize = 6237 }
+1800.1.1 = { citysize = 7120 }
+
+1850.1.1   = { citysize = 10000 }
+1868.1.1   = { owner = RUS controller = RUS add_core = RUS }
+1900.1.1   = { citysize = 30000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1925.1.1   = { capital = "Dyushambe" }
+1929.1.1   = { capital = "Stalinabad" add_core = TJK remove_core = BUK }
+1936.1.1   = { citysize = 83000 }
+1956.1.1   = { citysize = 227000 }
+1961.1.1   = { capital = "Dushanbe" }
+1971.1.1   = { citysize = 388000 }
+1991.9.9   = { owner = TJK controller = TJK remove_core = SOV remove_core = RUS }
+2008.1.1   = { citysize = 679400 }
+
+

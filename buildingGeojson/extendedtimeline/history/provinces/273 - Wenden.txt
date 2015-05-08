@@ -1,0 +1,64 @@
+newEntry273 - Wenden.txt
+#273 - Wenden
+
+culture = latvian
+religion = romuva
+capital = "Wenden"
+trade_goods = unknown
+hre = no
+base_tax = 2
+manpower = 2
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = LTG controller = LTG add_core = LTG citysize = 1000 trade_goods = grain }
+700.1.1 = { discovered_by = western }
+1100.1.1 = { citysize = 1100 }
+1200.1.1 = { citysize = 1200 }
+1202.1.1 = { owner = LIV controller = LIV add_core = LIV }
+1209.1.1 = { fort1 = yes }
+1300.1.1 = { citysize = 1300 remove_core = LTG }
+1340.1.1 = { religion = catholic }
+1399.1.1 = { citysize = 1500 }
+
+1450.1.1   = { citysize = 1700 }
+1500.1.1   = { citysize = 1961 }
+1542.1.1   = { religion = protestant } # Unknown date
+1550.1.1   = { citysize = 2307 }
+1561.1.1   = {	owner = LIT
+		controller = LIT
+		add_core = LIT
+		remove_core = LIV
+		} # Conquered by Lithuania
+1569.7.1   = {	owner = PLC
+		controller = PLC
+		add_core = PLC
+		} # Union of Lublin
+1577.1.1   = { fort1 = no } # Castle destroyed
+1580.1.1   = { fort1 = yes } # Castle near the hill fort rebuilt, Riekstu hill
+1600.1.1   = { citysize = 2714 marketplace = yes }
+1629.9.16  = { capital = "Dünaburg" add_core = SWE religion = catholic } # Wenden ceded to Sweden, Dünaburg becomes capital of Polish Livonia
+1650.1.1   = { citysize = 3193 }
+1700.1.1   = { citysize = 3757 }
+1703.1.1   = { fort2 = yes }
+1721.8.30  = { remove_core = SWE } # The Peace of Nystad
+1750.1.1   = { citysize = 4420 }
+1772.9.22  = { owner = RUS controller = RUS add_core = RUS } # First partition of Poland
+1800.1.1   = { citysize = 5200 }
+
+1850.1.1   = { citysize = 10000 }
+1893.1.1   = { capital = "Dvinsk" }
+1900.1.1   = { citysize = 30000 }
+1918.2.1   = { controller = GER }
+1918.11.11 = { controller = RUS add_core = LTV remove_core = LIT }
+1918.11.18 = { owner = LTV controller = LTV remove_core = RUS }
+1920.1.1   = { capital = "Daugavpils" }
+1939.8.23  = { add_core = SOV }
+1940.6.17  = { owner = SOV controller = SOV }
+1941.7.10  = { controller = GER }
+1944.10.13 = { controller = SOV }
+1950.1.1   = { citysize = 60000 }
+1991.9.6   = { owner = LTV controller = LTV remove_core = SOV }
+2012.1.1   = { citysize = 101057 }
+
+
+

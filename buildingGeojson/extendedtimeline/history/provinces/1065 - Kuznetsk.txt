@@ -1,0 +1,38 @@
+newEntry1065 - Kuznetsk.txt
+#1065 - Kuznetsk
+
+culture = kirgiz
+religion = shamanism
+capital = "Kuznetsk"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 3
+discovered_by = nomad_group
+
+1450.1.1 = { discovered_by = SIB }
+1618.1.1 = { 	discovered_by = RUS 
+		owner = RUS
+		controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+		citysize = 500
+		trade_goods = fur
+	   } # Part of Russia
+1781.1.1 = { add_core = RUS citysize = 1188 }
+1800.1.1 = { citysize = 2680 }
+
+1850.1.1   = { citysize = 4000 }
+1900.1.1   = { citysize = 10000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1932.1.1   = { capital = "Stalinsk" }
+1950.1.1   = { citysize = 80000 }
+1961.1.1   = { capital = "Novokuznetsk" }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 547885 }
+
+
+

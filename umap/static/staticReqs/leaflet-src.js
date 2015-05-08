@@ -3,6 +3,80 @@
  (c) 2010-2013, Vladimir Agafonkin
  (c) 2010-2011, CloudMade
 */
+
+/*
+
+ http://www.w3.org/People/Dean/svg/texteffects/index.html
+
+ http://jsfiddle.net/uDVbn/32/
+
+ http://codepen.io/iblamefish/pen/oEseD
+ */
+var oldZoom=99;
+var currLabel = 0;
+var staticSVG;
+var isCurved = false;
+var staticYearEvent;
+var iterator = 0;
+var dontDrawLabels = false;
+var isNewDate = true;
+var newObject;
+
+function drawLabels(that) {
+    console.debug("drawing Label? ", that, that._latlngs, this)
+    
+    var geojson = that.options.geojson;
+    
+   
+
+    isCurved = true;
+
+    var staticCoords = new L.Polyline(getCoordsForPolyLine(geojson.geometry.coordinates[0]), {
+        opacity: 0,
+        smoothFactor: 1,
+        curved: true
+    }).addTo(this.map);
+
+    isCurved = false;
+
+    d3.select(document.getElementById("labels")).append("text")
+        .append("textPath").attr("class","labels").attr("id",currLabelSize).attr("startOffset","50%")
+        .attr({"xlink:href": function(d,i) {  return "#label-"+currLabel }})
+        .attr("font-size", function(d) {
+
+            tmpFontSize = constSize+(currLabelSize*(parseInt(map.getZoom())));
+
+            if(tmpFontSize>10 && tmpFontSize< 10*currLabelSize)
+                return tmpFontSize;
+            else
+                return 0;
+        } )
+        .html(geojson.properties.name || geojson.properties.birthday || geojson.properties.title || "" );
+
+    
+    //TODO: TUNE THIS - BOTTLENECK!
+    while(document.getElementsByClassName("labels")[currLabel-1].getComputedTextLength( )*1.5 > document.getElementById("label-"+currLabel).getTotalLength() ){
+
+        document.getElementsByClassName("labels")[currLabel-1].setAttribute("font-size", parseInt(document.getElementsByClassName("labels")[currLabel-1].getAttribute("font-size" )-5) );
+
+        if(document.getElementsByClassName("labels")[currLabel-1].getAttribute("font-size" ) < 10){
+            document.getElementsByClassName("labels")[currLabel-1].setAttribute("font-size", 0 );
+            break;
+       }
+    } 
+    
+
+    //.attr("id",currLabelSize)
+    d3.select(document.getElementById("labelShadows")).append("text")
+        .append("textPath").attr("class","shadow").attr("startOffset","50%")
+        .attr({"xlink:href": function(d,i) {  return "#label-"+currLabel }})
+        .attr("font-size", function(d) {
+            return document.getElementsByClassName("labels")[currLabel-1].getAttribute("font-size" );
+        } )
+        .html(geojson.properties.name || geojson.properties.birthday || geojson.properties.title || "" );
+    
+    
+}
 (function (window, document, undefined) {
 var oldL = window.L,
     L = {};
@@ -37,11 +111,15 @@ L.Util = {
 		var sources = Array.prototype.slice.call(arguments, 1),
 		    i, j, len, src;
 
-		for (j = 0, len = sources.length; j < len; j++) {
+     //   console.debug(sources);
+
+        for (j = 0, len = sources.length; j < len; j++) {
 			src = sources[j] || {};
 			for (i in src) {
 				if (src.hasOwnProperty(i)) {
 					dest[i] = src[i];
+                    
+                   // console.debug(i,src[i]);
 				}
 			}
 		}
@@ -135,6 +213,7 @@ L.Util = {
 		return ((!existingUrl || existingUrl.indexOf('?') === -1) ? '?' : '&') + params.join('&');
 	},
 	template: function (str, data) {
+  //      console.debug(str,data);
 		return str.replace(/\{ *([\w_]+) *\}/g, function (str, key) {
 			var value = data[key];
 			if (value === undefined) {
@@ -964,6 +1043,7 @@ L.DomUtil = {
 	},
 
 	addClass: function (el, name) {
+        //console.debug("addClass", name);
 		if (el.classList !== undefined) {
 			var classes = L.Util.splitWords(name);
 			for (var i = 0, len = classes.length; i < len; i++) {
@@ -1717,9 +1797,13 @@ L.Map = L.Class.extend({
 	},
 
 	removeLayer: function (layer) {
+        
+        
 		var id = L.stamp(layer);
-
-		if (!this._layers[id]) { return this; }
+        
+     //   console.debug("removeLayer", id,layer);
+		
+        if (!this._layers[id]) { return this; }
 
 		if (this._loaded) {
 			layer.onRemove(this);
@@ -3190,6 +3274,8 @@ L.ImageOverlay = L.Class.extend({
 	},
 
 	onAdd: function (map) {
+        
+        
 		this._map = map;
 
 		if (!this._image) {
@@ -4512,7 +4598,9 @@ L.Path = L.Class.extend({
 		fill: false,
 		fillColor: null, //same as color by default
 		fillOpacity: 0.2,
-
+        
+        curved: false,
+        
 		clickable: true
 	},
 
@@ -4532,7 +4620,12 @@ L.Path = L.Class.extend({
 		this._updatePath();
 
 		if (this._container) {
-			this._map._pathRoot.appendChild(this._container);
+            if($("#areaPolys")[0]){
+                $("#areaPolys")[0].appendChild(this._container);
+            }
+            else{
+			    this._map._pathRoot.appendChild(this._container);
+            }
 		}
 
 		this.fire('add');
@@ -4549,7 +4642,14 @@ L.Path = L.Class.extend({
 	},
 
 	onRemove: function (map) {
-		map._pathRoot.removeChild(this._container);
+        console.debug("removing child of ", this._container.parentNode);
+        if(this._container.parentNode == $("#areaPolys")[0]){
+            $("#areaPolys")[0].removeChild(this._container);
+        }
+        else if (this._container.parentNode != null){
+            map._pathRoot.removeChild(this._container);
+        }
+		
 
 		// Need to fire remove event before we set _map to null as the event hooks might need the object
 		this.fire('remove');
@@ -4585,6 +4685,8 @@ L.Path = L.Class.extend({
 		if (this._map) {
 			this.projectLatlngs();
 			this._updatePath();
+            
+            console.debug("!!!!   redraw   this._updatePath()");
 		}
 		return this;
 	}
@@ -4611,11 +4713,20 @@ L.Path.SVG_NS = 'http://www.w3.org/2000/svg';
 
 L.Browser.svg = !!(document.createElementNS && document.createElementNS(L.Path.SVG_NS, 'svg').createSVGRect);
 
+    console.debug("creating svg", L.Browser.svg);
+    
+    staticSVG =  L.Browser.svg;
+ //   L.Browser.svg.appendChild(svgFilter);
+    
 L.Path = L.Path.extend({
 	statics: {
 		SVG: L.Browser.svg
 	},
 
+    setYearEvent: function () {
+       console.debug("testing;")
+    },
+    
 	bringToFront: function () {
 		var root = this._map._pathRoot,
 		    path = this._container;
@@ -4642,6 +4753,7 @@ L.Path = L.Path.extend({
 	},
 
 	_createElement: function (name) {
+        console.debug("inside create Element");
 		return document.createElementNS(L.Path.SVG_NS, name);
 	},
 
@@ -4652,18 +4764,44 @@ L.Path = L.Path.extend({
 	},
 
 	_initPath: function () {
-		this._container = this._createElement('g');
+        
+        
+	//	this._container = this._createElement('g'); //setAttribute("id",iterator);  //$("#areaPolys")[0];
+      //  this._container.setAttribute('filter', 'url(#blur)');
+        console.debug("g created ",this, $("#areaPolys")[0])
+   //     this._container.setAttribute('filter', iterator);     TODO   ---> typeof $("#areaPolys")[0] === "undefined"
+        //iterator++;
 
+        this._container = this._createElement('g');
+        
+        this._container.setAttribute('filter', 'url(#blur)');
+        
+
+        console.debug("g aftercreated ",this._container, $("#areaPolys")[0])
+     //   this._container.setAttribute("id",iterator);
+        
 		this._path = this._createElement('path');
 
 		if (this.options.className) {
 			L.DomUtil.addClass(this._path, this.options.className);
 		}
+       
+        
+        this._container.appendChild(this._path);
 
-		this._container.appendChild(this._path);
+      //  $("#areaPolys")[0].appendChild(this._path);
+        //TODO: get pointerevents back
+
+        //$(this._container).remove();
+		//this._container.appendChild(this._path);
 	},
 
 	_initStyle: function () {
+        
+        if (isCurved){
+            currLabel++;
+            this._path.setAttribute('id', 'label-'+currLabel);
+        }
 		if (this.options.stroke) {
 			this._path.setAttribute('stroke-linejoin', 'round');
 			this._path.setAttribute('stroke-linecap', 'round');
@@ -4706,8 +4844,11 @@ L.Path = L.Path.extend({
 			this._path.setAttribute('fill', 'none');
 		}
 	},
+    
+    //L.Draggable._disabled = false;                  
 
 	_updatePath: function () {
+        console.debug("!!!!   updating path");
 		var str = this.getPathString();
 		if (!str) {
 			// fix webkit empty string parsing bug
@@ -4718,11 +4859,53 @@ L.Path = L.Path.extend({
 
 	// TODO remove duplication with L.Map
 	_initEvents: function () {
+
+        console.debug("insideLoop:"+insideLoop);
+        if(this._path.id == "" && !$("body").hasClass("storage-edit-enabled")){//!insideLoop !dontDrawLabels
+            drawLabels(this);
+        }
+        else{
+            console.debug("not drawing labels because edit is enabled.")
+        }
+
+
+        console.debug("creating svg", L.Browser.svg);
 		if (this.options.clickable) {
-			if (L.Browser.svg || !L.Browser.vml) {
+
+            
+            
+            
+            if(isCurved){                
+            ///    L.DomUtil.addClass(this._path, 'labels');
+            }
+			else if (L.Browser.svg || !L.Browser.vml) {
 				L.DomUtil.addClass(this._path, 'leaflet-clickable');
+
+                
+
+                if  (!$(".datetimeValue").hasClass('leaflet-clickable')){
+                    
+                    L.DomUtil.addClass($(".datetimeValue")[0], 'leaflet-clickable');
+                    newObject = jQuery.extend({}, this);
+                    console.debug("props:",newObject.properties)
+                    newObject.properties.name = $(".datetimeValue")[0].innerHTML;
+                    console.debug("props:",newObject.properties)
+                    isNewDate = false;
+                    if($(".datetimeValue")[0].innerHTML.substring(0,1) != "-"){
+                        newObject.properties.description = "chronasYear"+$(".datetimeValue")[0].innerHTML;
+                    }
+                    else{
+                        newObject.properties.description = "chronasYear"+$(".datetimeValue")[0].innerHTML.substr(1)+"_BC";
+                    }
+
+                    L.DomEvent.on($(".datetimeValue")[0], 'click', newObject._onMouseClick, newObject);
+                }
+
+                
 			}
 
+            console.debug("init event",this._path, this._container,this); //$("#areaPolys")[0]
+            
 			L.DomEvent.on(this._container, 'click', this._onMouseClick, this);
 
 			var events = ['dblclick', 'mousedown', 'mouseover',
@@ -4734,18 +4917,21 @@ L.Path = L.Path.extend({
 	},
 
 	_onMouseClick: function (e) {
-		if (this._map.dragging && this._map.dragging.moved()) { return; }
+		if (!this._map || this._map.dragging && this._map.dragging.moved()) { return; }
 
 		this._fireMouseEvent(e);
 	},
 
 	_fireMouseEvent: function (e) {
+        
 		if (!this.hasEventListeners(e.type)) { return; }
 
 		var map = this._map,
 		    containerPoint = map.mouseEventToContainerPoint(e),
 		    layerPoint = map.containerPointToLayerPoint(containerPoint),
 		    latlng = map.layerPointToLatLng(layerPoint);
+        
+       // console.debug("_fireMouseEvent",containerPoint,layerPoint,latlng)
 
 		this.fire(e.type, {
 			latlng: latlng,
@@ -4767,6 +4953,24 @@ L.Map.include({
 	_initPathRoot: function () {
 		if (!this._pathRoot) {
 			this._pathRoot = L.Path.prototype._createElement('svg');
+            
+            console.debug("init svg", this._pathRoot);
+            this._pathRoot.appendChild(svgFilter);
+
+    //        var useElement = document.createElementNS("http://www.w3.org/2000/svg","use");
+    //        useElement.setAttributeNS("http://www.w3.org/1999/xlink", 'href', '#labels');
+    //        this._pathRoot.appendChild(useElement);
+            
+            console.debug("svg this",this._pathRoot)
+
+
+            d3.select(this._pathRoot).append("g").attr("id", "areaPolys") //.attr('filter', 'url(#blur)')
+
+
+            
+            d3.select(this._pathRoot).append("g").attr("id", "labelShadows").attr("pointer-events", "none")
+            d3.select(this._pathRoot).append("g").attr("id", "labels").attr("pointer-events", "none")
+            
 			this._panes.overlayPane.appendChild(this._pathRoot);
 
 			if (this.options.zoomAnimation && L.Browser.any3d) {
@@ -4800,6 +5004,8 @@ L.Map.include({
 	},
 
 	_updateSvgViewport: function () {
+        
+       
 
 		if (this._pathZooming) {
 			// Do not update SVGs while a zoom animation is going on otherwise the animation will break.
@@ -4810,6 +5016,8 @@ L.Map.include({
 
 		this._updatePathViewport();
 
+
+        
 		var vp = this._pathViewport,
 		    min = vp.min,
 		    max = vp.max,
@@ -4823,6 +5031,7 @@ L.Map.include({
 			pane.removeChild(root);
 		}
 
+     //   console.debug("setting attribute of what?", root);
 		L.DomUtil.setPosition(root, min);
 		root.setAttribute('width', width);
 		root.setAttribute('height', height);
@@ -4831,6 +5040,7 @@ L.Map.include({
 		if (L.Browser.mobileWebkit) {
 			pane.appendChild(root);
 		}
+
 	}
 });
 
@@ -4896,8 +5106,11 @@ L.Path.include({
 	},
 
 	_openPopup: function (e) {
-		this._popup.setLatLng(e.latlng);
-		this._map.openPopup(this._popup);
+        if(this._map !== null){
+            this._popup.setLatLng(e.latlng);
+            this._map.openPopup(this._popup);
+        }
+		
 	}
 });
 
@@ -5022,6 +5235,7 @@ L.Path = L.Browser.svg || !L.Browser.vml ? L.Path : L.Path.extend({
 		style.display = 'none';
 		this._path.v = this.getPathString() + ' '; // the space fixes IE empty path string bug
 		style.display = '';
+        
 	}
 });
 
@@ -5073,6 +5287,7 @@ L.Path = (L.Path.SVG && !window.L_PREFER_CANVAS) || !L.Browser.canvas ? L.Path :
 	},
 
 	onRemove: function (map) {
+        console.debug("onRemove!")
 		map
 		    .off('viewreset', this.projectLatlngs, this)
 		    .off('moveend', this._updatePath, this);
@@ -5546,8 +5761,21 @@ L.Polyline = L.Path.extend({
 			if (round) {
 				p._round();
 			}
-			str += (j ? 'L' : 'M') + p.x + ' ' + p.y;
+            if (this.options.curved && this.options.curved == true && len2==3)
+            {
+            //    console.debug("inside curved with points: ", points)
+                if (j==0)
+                    str = 'M' + points[j].x + ' ' + points[j].y + 'Q'+ points[j+1].x + ' ' + points[j+1].y + ' ' + points[j+2].x + ' ' + points[j+2].y;
+            }
+            else{
+           //     console.debug("inside not curved with points: ", points)
+                str += (j ? 'L' : 'M') + p.x + ' ' + p.y;  
+            }
+            
+            
 		}
+
+
 		return str;
 	},
 
@@ -5676,6 +5904,7 @@ L.Polygon = L.Polyline.extend({
 	},
 
 	initialize: function (latlngs, options) {
+        console.debug("init polygon")
 		L.Polyline.prototype.initialize.call(this, latlngs, options);
 		this._initWithHoles(latlngs);
 	},
@@ -5756,6 +5985,7 @@ L.Polygon = L.Polyline.extend({
 });
 
 L.polygon = function (latlngs, options) {
+    console.debug("3. init polygon");
 	return new L.Polygon(latlngs, options);
 };
 
@@ -6450,6 +6680,12 @@ L.DomEvent = {
 
 	removeListener: function (obj, type, fn) {  // (HTMLElement, String, Function)
 
+        console.debug("removeListener");
+
+        if(document.getElementById("storage-ui-container").innerHTML == ""){
+            $(".leaflet-top.leaflet-right")[0].style.display = "block";
+        }
+        
 		var id = L.stamp(fn),
 		    key = '_leaflet_' + type + id,
 		    handler = obj[key];
@@ -8142,6 +8378,7 @@ L.Control.Attribution = L.Control.extend({
 	},
 
 	onRemove: function (map) {
+        console.debug("onRemove");
 		map
 		    .off('layeradd', this._onLayerAdd)
 		    .off('layerremove', this._onLayerRemove);
@@ -8202,15 +8439,20 @@ L.Control.Attribution = L.Control.extend({
 	},
 
 	_onLayerAdd: function (e) {
+     //   console.debug("onLayerAdd");
 		if (e.layer.getAttribution) {
 			this.addAttribution(e.layer.getAttribution());
 		}
 	},
 
 	_onLayerRemove: function (e) {
+    //    console.debug("_onLayerRemove", e.layer.getAttribution);
 		if (e.layer.getAttribution) {
+    //        console.debug("_onLayerRemove", e.layer.getAttribution());
 			this.removeAttribution(e.layer.getAttribution());
 		}
+
+        
 	}
 });
 
@@ -8400,6 +8642,7 @@ L.Control.Layers = L.Control.extend({
 	},
 
 	removeLayer: function (layer) {
+        console.debug("removeLayer");
 		var id = L.stamp(layer);
 		delete this._layers[id];
 		this._update();
@@ -8957,6 +9200,9 @@ L.Map.include(!L.DomUtil.TRANSITION ? {} : {
 
 	_onZoomTransitionEnd: function () {
 
+
+        this._container.setAttribute('filter', ''); //url(#blur)
+
 		this._animatingZoom = false;
 
 		L.DomUtil.removeClass(this._mapPane, 'leaflet-zoom-anim');
@@ -8965,6 +9211,59 @@ L.Map.include(!L.DomUtil.TRANSITION ? {} : {
 
 		if (L.Draggable) {
 			L.Draggable._disabled = false;
+            console.debug("Zoom finish to level " + map.getZoom());
+
+
+            
+            var currZoom = parseInt(map.getZoom());
+
+            beforeTime = new Date().getTime()
+            
+            if ( oldZoom!=currZoom){
+                var labelArray = document.getElementsByClassName("labels");
+                var labelShadowsArray = document.getElementsByClassName("shadow");
+
+                tmpFontSize = constSize+(10*currZoom);
+                for(var k=0; k<labelArray.length; k++){
+
+                    
+
+                    labelArray[k].setAttribute("font-size", tmpFontSize );
+/*
+
+                    console.debug(labelArray[k].getComputedTextLength()," ?>? ",
+
+                        document.getElementById(labelArray[k].getAttribute("href").substr(1)).getTotalLength());
+
+                    console.debug("font " + labelArray[k].getAttribute("font-size"));
+                    
+                    */
+                }
+
+                beforeTime2 = new Date().getTime()
+                for(var k=0; k<labelArray.length; k++){
+
+                   //TODO: TUNE THIS - BOTTLENECK!
+                   while(labelArray[k].getComputedTextLength()*1.5 > document.getElementById(labelArray[k].getAttribute("href").substr(1)).getTotalLength() ){
+
+                        labelArray[k].setAttribute("font-size", parseInt(labelArray[k].getAttribute("font-size" )-5) );
+
+                        if(labelArray[k].getAttribute("font-size") < 10){
+                            labelArray[k].setAttribute("font-size", 0 );
+                            break;
+                        }
+                    }
+                    
+
+                    labelShadowsArray[k].setAttribute("font-size", labelArray[k].getAttribute("font-size") );
+
+                }
+                console.debug("updating labels spent "+ (new Date().getTime() - beforeTime),(new Date().getTime() - beforeTime2))
+                
+            }
+
+            oldZoom=currZoom;
+            
 		}
 	}
 });

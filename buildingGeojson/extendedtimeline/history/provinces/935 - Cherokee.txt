@@ -1,0 +1,42 @@
+newEntry935 - Cherokee.txt
+#935 - Cherokee
+
+owner = CHE
+controller = CHE
+culture = cherokee
+religion = totemism
+capital = "Cherokee"
+trade_goods = naval_supplies
+hre = no
+base_tax = 3
+manpower = 1
+is_city = yes
+add_core = CHE
+native_size = 10
+native_ferocity = 7
+native_hostileness = 2
+discovered_by = north_american
+
+1450.1.1  = { citysize = 1200 }
+1500.1.1  = { citysize = 1570 }
+1550.1.1  = { citysize = 2100 }
+1600.1.1  = { citysize = 2750 }
+1650.1.1  = { citysize = 3400 }
+1673.1.1  = { discovered_by = ENG } # James Needham and Gabriel Arthur
+1700.1.1  = { citysize = 4100 }
+1707.5.12 = { discovered_by = GBR } 
+1750.1.1  = { citysize = 4542 } # Colonized by the British
+1791.7.2  = {	owner = USA
+		controller = USA
+		add_core = USA
+		culture = american
+		religion = protestant 
+		capital = "Knoxville" 
+	    } #Treaty of Fort Holston, end of Chickamauga wars and Cherokee resistance
+
+1861.5.7   = { owner = CSA controller = CSA add_core = CSA }
+1865.5.5   = { owner = USA controller = USA remove_core = CSA }
+
+
+
+

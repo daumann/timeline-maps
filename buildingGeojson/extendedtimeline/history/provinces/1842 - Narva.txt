@@ -1,0 +1,57 @@
+newEntry1842 - Narva.txt
+#1842 - Kazusa
+
+culture = estonian
+religion = suomenusko
+hre = no
+base_tax = 1
+trade_goods = unknown
+manpower = 1
+capital = "Reval"
+native_hostileness = 3
+native_size = 10
+native_ferocity = 2
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = EST controller = EST add_core = EST citysize = 1000 trade_goods = grain }
+700.1.1 = { discovered_by = western }
+1100.1.1 = { citysize = 1500 }
+1200.1.1 = { citysize = 2000 }
+1219.1.1 = { owner = DAN controller = DAN add_core = DAN religion = catholic }
+1277.1.1 = { fort1 = yes }
+1300.1.1 = { citysize = 4000 remove_core = EST }
+1346.1.1 = { owner = LIV controller = LIV add_core = LIV remove_core = DAN }
+1399.1.1 = { citysize = 7000 }
+
+1542.1.1   = { religion = protestant } # Unknown date
+1558.5.11  = {	owner = RUS
+		controller = RUS
+		add_core = RUS
+		remove_core = LIV
+		} # Russian conquest
+1581.1.1   = {	owner = SWE
+		controller = SWE
+		add_core = SWE
+		remove_core = RUS
+	     } # Swedish conquest
+1600.1.1   = { citysize = 2000 }
+1700.1.1   = { citysize = 5000 }
+1704.8.9  = { controller = RUS citysize = 2000 } # Second Battle of Narva
+1721.8.30  = {	owner = RUS
+		add_core = RUS
+		remove_core = SWE
+		} # The Peace of Nystad
+1750.1.1   = { citysize = 3000 }
+1800.1.1   = { citysize = 5000 }
+
+1869.1.1   = { add_core = EST }
+1918.2.24  = { owner = EST controller = EST }
+1918.2.25  = { controller = GER }
+1918.11.11 = { controller = EST }
+1940.6.16  = { owner = SOV controller = SOV add_core = SOV }
+1941.8.28  = { controller = GER }
+1944.9.18  = { owner = EST controller = EST }
+1944.9.22  = { owner = SOV controller = SOV }
+1991.8.20  = { owner = EST controller = EST remove_core = RUS remove_core = SOV }
+
+

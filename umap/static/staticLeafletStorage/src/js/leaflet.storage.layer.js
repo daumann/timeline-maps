@@ -1,3 +1,89 @@
+var staticCoords;
+var currLabelSize = 0;
+var constSize = 0;
+
+function getExtrema(listOfPoints){
+
+    var minX = [listOfPoints[0][0], listOfPoints[0][1]];
+    var minY =  [listOfPoints[0][0], listOfPoints[0][1]];
+    var maxX =  [listOfPoints[0][0], listOfPoints[0][1]];
+    var maxY = [listOfPoints[0][0], listOfPoints[0][1]];
+
+    for (var i = 1; i<listOfPoints.length; i++){
+        if (minX[0]>listOfPoints[i][0]) minX = [listOfPoints[i][0], listOfPoints[i][1]];
+        if (maxX[0]<listOfPoints[i][0]) maxX = [listOfPoints[i][0], listOfPoints[i][1]];
+        if (minY[1]>listOfPoints[i][1]) minY = [listOfPoints[i][0], listOfPoints[i][1]];
+        if (maxY[1]<listOfPoints[i][1]) maxY = [listOfPoints[i][0], listOfPoints[i][1]];
+    }
+
+    return ([minX,minY,maxX,maxY]);
+}
+
+function get_polygon_centroid(pts) {
+    
+    console.debug('get_polygon_centroid with pts', JSON.stringify(pts))
+    
+    var twicearea=0,
+        x=0, y=0,
+        nPts = pts.length,
+        p1, p2, f;
+    
+    for ( var i=0, j=nPts-1 ; i<nPts ; j=i++ ) {
+        p1 = pts[i]; p2 = pts[j];
+        f = p1[0]*p2[1] - p2[0]*p1[1];
+        twicearea += f;
+        x += ( p1[0] + p2[0] ) * f;
+        y += ( p1[1] + p2[1] ) * f;
+    }
+    f = twicearea * 3;
+    return [ x/f, y/f ];
+}
+
+
+function getCoordsForPolyLine(myCoords){
+    /*myCoords = []
+    
+    for (i=0;i<myCoorrds.length;i++){
+        myCoords.push([myCoorrds[i].lat,myCoorrds[i].lng]);
+    }    
+        */
+    console.debug("getCoordsForPolyLine", myCoords);
+    
+    
+    var extremas = getExtrema(myCoords);
+    var point = get_polygon_centroid(myCoords);
+    
+console.debug("extremas, centroid",extremas,point,[[extremas[1][0],extremas[1][1]],point,[extremas[3][0],extremas[3][1]]]);
+
+  
+    if ( (Math.abs(extremas[0][0]-extremas[2][0])) > Math.abs((extremas[1][1]-extremas[3][1])) ) {
+
+        currLabelSize = Math.sqrt( (  (extremas[0][1]-point[1]) * (extremas[0][1]-point[1])
+            +  (extremas[0][0]-point[0]) * (extremas[0][0]-point[0]) )) 
+                                                +
+            Math.sqrt( (extremas[2][1]-point[1]) * (extremas[2][1]-point[1])
+                +  (extremas[2][0]-point[0]) * (extremas[2][0]-point[0])  );
+        
+        console.debug("currLabelSize changed to: ", currLabelSize);
+        
+        
+        return [new L.LatLng(extremas[0][1],extremas[0][0]),new L.LatLng(point[1],point[0]),new L.LatLng(extremas[2][1],extremas[2][0])];  //angle != 0
+    }
+          
+    else {
+
+        currLabelSize = Math.sqrt( (  (extremas[0][1]-point[1]) * (extremas[0][1]-point[1])
+            +  (extremas[0][0]-point[0]) * (extremas[0][0]-point[0]) ))
+            +
+            Math.sqrt( (extremas[2][1]-point[1]) * (extremas[2][1]-point[1])
+                +  (extremas[2][0]-point[0]) * (extremas[2][0]-point[0])  );
+
+        console.debug("currLabelSize changed to: ", currLabelSize);
+        
+        return [new L.LatLng(extremas[1][1],extremas[1][0]),new L.LatLng(point[1],point[0]),new L.LatLng(extremas[3][1],extremas[3][0])];
+    }
+}
+
 L.S.Layer = {
     isBrowsable: true,
 
@@ -80,6 +166,7 @@ L.S.Layer.Heat = L.HeatLayer.extend({
     },
 
     addLayer: function (layer) {
+        
         if (layer instanceof L.Marker) {
             var latlng = layer.getLatLng(), alt;
             if (this.datalayer.options.heat && this.datalayer.options.heat.intensityProperty) {
@@ -230,7 +317,7 @@ L.Storage.DataLayer = L.Class.extend({
 
     eachLayer: function (method, context) {
         for (var i in this._layers) {
-            console.debug(i,"eachLayer", this._layers, this)
+        //    console.debug(i,"eachLayer", this._layers, this)
             method.call(context || this, this._layers[i]);
         }
         return this;
@@ -398,8 +485,11 @@ L.Storage.DataLayer = L.Class.extend({
         var id = L.stamp(feature);
         feature.connectToDataLayer(this);
         this._index.push(id);
+        
         this._layers[id] = feature;
+        
         this.layer.addLayer(feature);
+        
         if (this.hasDataLoaded()) {
             this.fire('datachanged');
         }
@@ -422,7 +512,9 @@ L.Storage.DataLayer = L.Class.extend({
         //   if (geojson.storage.name != "2014")
 
        // geojson._storage.displayOnLoad = false;
-      //  console.debug("adding data", geojson)
+        
+        console.debug("adding data", geojson)
+        
         this.geojsonToFeatures(geojson);
     },
 
@@ -482,6 +574,8 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     geojsonToFeatures: function (geojson) {
+        
+        console.debug("geojsonToFeatures", JSON.stringify(geojson));
         var features = geojson instanceof Array ? geojson : geojson.features,
             i, len;
 
@@ -490,6 +584,7 @@ L.Storage.DataLayer = L.Class.extend({
             for (i = 0, len = features.length; i < len; i++) {
                 this.geojsonToFeatures(features[i]);
             }
+         //   console.debug(JSON.stringify(this));
             return this;
         }
 
@@ -514,8 +609,26 @@ L.Storage.DataLayer = L.Class.extend({
                 layer = this._lineToLayer(geojson, latlngs);
                 break;
             case 'Polygon':
+                
+                console.debug("inside case Polygon");
+                
+
+                
                 latlngs = L.GeoJSON.coordsToLatLngs(coords, 1);
                 layer = this._polygonToLayer(geojson, latlngs);
+                console.debug("preparing to create Poly with coords: ", coords, "and properties:", geojson.properties);
+
+                
+/*
+                var polyline = new L.Polyline(getCoordsForPolyLine(coords[0]), {
+                    color: 'red',
+                    weight: 10,
+                    opacity: 0.5,
+                    curved: true,
+                    smoothFactor: 1
+
+                }).addTo(this.map);
+               */ 
                 break;
             case 'MultiLineString':
                 // Merge instead of failing for now
@@ -570,6 +683,7 @@ L.Storage.DataLayer = L.Class.extend({
         // for (var i = latlngs.length - 1; i > 0; i--) {
         //     if (!latlngs.slice()[i].length) latlngs.splice(i, 1);
         // }
+        console.debug("creating Polygon 2");
         return new L.Storage.Polygon(
             this.map,
             latlngs,
@@ -875,11 +989,17 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     save: function () {
+        console.debug("inside save");
+       // formData.append('name', formData.append('name',document.getElementById("preset-input-name").value));
+        
         if (this.isDeleted) {
             this.saveDelete();
             return;
         }
         if (!this.isLoaded()) {return;}
+        this._geojson
+        console.debug("SSSSSSSSAAAAAAAAAAVVVVVVVVVVVIIIIIINNNNNNNGGGGGGGGG",this.featuresToGeoJSON());
+        
         var geojson = {
             type: 'FeatureCollection',
             features: this.isRemoteLayer() ? [] : this.featuresToGeoJSON(),
@@ -887,7 +1007,25 @@ L.Storage.DataLayer = L.Class.extend({
         };
         this.backupOptions();
         var formData = new FormData();
+        console.debug(this.options.name);
+
+
+        console.debug(this.options);
+        // console.debug(document.getElementsByName("name")[0].value)
+        
+        
+        // formData.append('name', document.getElementsByClassName("datetimeValue")[0].innerHTML);//this.options.name //staticName);   formData.append('name',document.getElementsByName("name")[0].value);//this.options.name);
+
         formData.append('name', this.options.name);
+/*
+        var option = document.createElement("option");
+        option.text = document.getElementsByClassName("datetimeValue")[0].innerHTML;
+
+        document.getElementsByName("datalayer")[0].add(option);
+
+        document.getElementsByClassName("datetimeValue")[0].innerHTML
+        */
+
         formData.append('display_on_load', !!this.options.displayOnLoad);
         // filename support is shaky, don't do it for now
         var blob = new Blob([JSON.stringify(geojson)], {type: 'application/json'});

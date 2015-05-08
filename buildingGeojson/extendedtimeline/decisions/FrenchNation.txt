@@ -1,0 +1,81 @@
+country_decisions = {
+
+	french_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = FRA }
+			NOT = { exists = RFR }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = FR2 }
+			NOT = { tag = FRV }
+			OR = {
+				culture_group = french
+				culture_group = basque_group
+				primary_culture = breton
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {
+			adm_tech = 32
+			is_at_war = no
+			owns_core_province = 177	# Maine
+			owns_core_province = 179	# Blois
+			owns_core_province = 182	# Vermandois
+			owns_core_province = 183	# Île-de-France
+			owns_core_province = 184	# Orléannais
+			owns_core_province = 185	# Othe
+			owns_core_province = 186	# Champagne			
+		}
+		effect = {
+			gallia = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = FRA
+			}
+			aquitania = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = FRA
+			}
+			occitania = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = FRA
+			FRA = {
+				set_capital = 183
+			}
+			if = {
+				limit = { NOT = { tag = BUR } }
+				swap_free_idea_group = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

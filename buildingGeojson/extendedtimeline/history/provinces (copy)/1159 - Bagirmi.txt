@@ -1,0 +1,47 @@
+#1159 - Bagirmi
+
+owner = KBO
+controller = KBO
+add_core = KBO
+culture = bilala 
+religion = african
+capital = "Massenya"
+citysize = 2178
+manpower = 1
+trade_goods = ivory
+hre = no
+base_tax = 3
+discovered_by = sub_saharan
+
+1380.1.1 = { owner = YAO controller = YAO add_core = YAO }
+
+1450.1.1 = { citysize = 8000 }
+1573.1.1 = { owner = KBO controller = KBO add_core = KBO } #Mai Katakarmabe restores Borno authority over Baguirmi
+1580.1.1 = { religion = sunni } #rulers of Baguirmi declare Islam state religion
+1600.1.1 = { citysize = 15000 } 
+1684.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Baguirmi rebels in wake of Jukun invasions of Borno heartland
+1700.1.1 = { citysize = 25000 } 
+1720.1.1 = { revolt = {} controller = KBO } #Baguirmi restored to Borno control
+1750.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Baguirmi rebels in wake of Jukun invasions of Borno heartland
+1752.1.1 = { revolt = {} controller = KBO } #Baguirmi restored to Borno control
+1800.1.1 = { citysize = 27000 }
+1804.1.1 = { discovered_by = SOK }
+
+1850.1.1   = { citysize = 40000 }
+1890.1.1   = { discovered_by = FR2 }
+1900.1.1   = { citysize = 60000 }
+1900.4.22  = { owner = FR2 controller = FR2 add_core = FR2 } # Battle of Kousséri
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1947.1.1   = { citysize = 90000 }
+1960.8.11  = { owner = CDD controller = CDD add_core = CDD remove_core = FR2 remove_core = KBO }
+1970.1.1   = { citysize = 130000 }
+2008.1.1   = { citysize = 993492 }
+
+
+

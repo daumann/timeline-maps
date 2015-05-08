@@ -1,0 +1,103 @@
+newEntry85 - Koln.txt
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = cosmopolitan_french
+religion = hellenism
+trade_goods = grain
+capital = "Colonia Agrippina"
+base_tax = 8
+manpower = 3
+citysize = 7000
+fort1 = yes
+#customs_house = yes
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = inland_center_of_trade_modifier
+		duration = -1
+	}
+}
+
+100.1.1 = { citysize = 8000 }
+200.1.1 = { citysize = 10000 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB culture = gallian }
+274.1.1 = { controller = ROM remove_core = GLL revolt = {} culture = cosmopolitan_french }
+300.1.1 = { citysize = 12000 }
+320.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 14000 }
+459.1.1 = { owner = FRK controller = FRK add_core = FRK capital = "Köln" }
+480.6.1 = { remove_core = ROW }
+500.1.1 = { citysize = 16000 }
+600.1.1 = { citysize = 18000 }
+700.1.1 = { citysize = 21000 culture = rheinlaender }
+800.1.1 = { citysize = 24000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = LOT controller = LOT add_core = LOT remove_core = FRM }
+867.1.1 = { religion = catholic }
+870.8.8 = { owner = FRE controller = FRE add_core = FRE remove_core = LOT }
+900.1.1 = { citysize = 27000 }
+911.11.10 = { owner = LOT controller = LOT add_core = LOT remove_core = FRE }
+953.1.1 = { owner = KOL controller = KOL add_core = KOL remove_core = LOT }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 30000 }
+1100.1.1 = { citysize = 31000 }
+1200.1.1 = { citysize = 34000 marketplace = yes }
+1300.1.1 = { citysize = 37000 }
+1399.1.1 = { citysize = 40000 }
+
+1450.1.1  = { citysize = 45000 }
+1466.1.1  = { workshop = yes } # First Printer opens in Köln
+1500.1.1  = { citysize = 50000 regimental_camp = yes }
+1520.1.1  = { fort2 = yes constable = yes }
+#1553.1.1  = { stock_exchange = yes } # Stock Exchange Founded
+1600.1.1  = { citysize = 55000 }
+1638.1.1  = { weapons = yes base_tax = 10 fort3 = yes } # Köln manages to stay neutral in the 30 years war and prospers through weapon sales. 
+1716.1.1  = { base_tax = 12 } # Farnia begins exporting "Eau de Cologne" 
+1750.1.1  = { war_college = yes }
+1798.1.1  = { controller = FRA }
+1801.2.9  = {	war_college = no
+		owner = FRA
+		add_core = FRA
+	    } # Treaty of Lunéville
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = FRA
+	    } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = FRA
+	    } # Napoleon enters Paris
+1815.6.9  = {	owner = PRU
+		controller = PRU
+		add_core = PRU
+	   	remove_core = FRA
+	    } # Congress of Vienna
+
+1850.12.3  = { citysize = 95500 }
+1871.1.18  = { owner = GER controller = GER add_core = GER remove_core = PRU } # German unification
+1875.12.1  = { citysize = 135371 }
+1900.1.1   = { remove_core = KOL }
+1900.12.1  = { citysize = 372229 }
+1925.12.31 = { citysize = 705477 }
+1944.4.18  = { controller = USA }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1950.12.31 = { citysize = 603283 }
+1974.12.31 = { citysize = 825792 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2000.12.31 = { citysize = 962884 }
+2010.12.31 = { citysize = 1007119 }
+
+
+

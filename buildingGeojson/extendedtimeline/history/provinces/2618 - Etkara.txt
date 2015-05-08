@@ -1,0 +1,49 @@
+newEntry2618 - Etkara.txt
+#304 - Pensa
+      
+culture = bulgarian
+religion = tengri
+hre = no
+base_tax = 3
+trade_goods = unknown  
+manpower = 2
+capital = "Etkara"
+discovered_by = SIB
+discovered_by = KAZ
+discovered_by = NOG
+discovered_by = GOL
+
+600.1.1 = { discovered_by = nomad_group }
+660.1.1 = { owner = VBU controller = VBU add_core = VBU citysize = 1000 trade_goods = grain }
+800.1.1 = { citysize = 2028 discovered_by = eastern }
+900.1.1 = { citysize = 2557 }
+1000.1.1 = { citysize = 3085 fort1 = yes religion = sunni }
+1100.1.1 = { citysize = 3614 }
+1200.1.1 = { citysize = 4142 discovered_by = western }
+1240.1.1 = { owner = MGE controller = MGE add_core = MGE }
+1250.1.1 = { culture = mishary }
+1260.1.1 = { owner = GOL controller = GOL add_core = GOL remove_core = MGE remove_core = VBU }
+1300.1.1 = { citysize = 4671 }
+1399.1.1 = { citysize = 5200 }
+
+1450.1.1  = { citysize = 3800 }
+1500.1.1  = { citysize = 4149 }
+1502.6.1  = { owner = CRI controller = CRI add_core = CRI remove_core = GOL } # Golden Horde destroyed by Crimea
+1550.1.1  = { citysize = 4881 } 
+1572.8.2  = {	owner = RUS controller = RUS add_core = RUS remove_core = CRI } # Battle of Molodi
+1600.1.1  = { citysize = 8742 }
+1650.1.1  = { citysize = 9346 culture = russian religion = orthodox }
+1700.1.1  = { citysize = 9994 }
+1750.1.1  = { citysize = 12053 }
+1781.1.1  = { capital = "Atkarsk" }
+1800.1.1  = { citysize = 16234 }
+
+1850.1.1   = { citysize = 60000 }
+1900.1.1   = { citysize = 140000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 460000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 517137 }
+
+
+

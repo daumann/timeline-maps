@@ -1,0 +1,814 @@
+country_decisions = {
+
+	mongol_empire = {
+		major = yes
+		potential = {
+			NOT = { exists = MGE }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = YUA }
+			government = steppe_horde
+			primary_culture = mongol
+			is_year = 1150
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 717
+			owns_core_province = 720
+			owns_core_province = 721
+			owns_core_province = 1057
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nomadic_conquest"
+				duration = 21900
+			}
+			add_prestige = 25
+			change_tag = MGE
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_treasury = 1000
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	norwegian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = NOR }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = SCA }
+			primary_culture = norwegian
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 17
+			owns_core_province = 24
+			owns_core_province = 23	
+			owns_core_province = 20
+			owns_core_province = 21
+		}
+		effect = {
+			norwegian_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = NOR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = NOR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	swedish_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SWE }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = SCA }
+			primary_culture = swedish
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1
+			owns_core_province = 4
+			owns_core_province = 2	
+			owns_core_province = 3
+			owns_core_province = 7
+			owns_core_province = 1985
+		}
+		effect = {
+			swedish_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = SWE
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = SWE
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	danish_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = DAN }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = SCA }
+			primary_culture = danish
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 12
+			owns_core_province = 14
+			owns_core_province = 15	
+			owns_core_province = 1984
+		}
+		effect = {
+			danish_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = DAN
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = DAN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	breton_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BRI }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			primary_culture = breton
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 172
+			owns_core_province = 171
+			owns_core_province = 170
+			owns_core_province = 169
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = BRI
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	japanese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = JAP }
+			primary_culture = japanese
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1020
+			owns_core_province = 1021
+			owns_core_province = 1030
+			owns_core_province = 1028
+			owns_core_province = 1017
+			owns_core_province = 1818
+		}
+		effect = {
+			japanese_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = JAP
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = JAP
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	korean_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KOR }
+			primary_culture = korean
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1013
+			owns_core_province = 735
+			owns_core_province = 736
+			owns_core_province = 737
+			owns_core_province = 733
+		}
+		effect = {
+			korean_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = KOR
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = KOR
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	thai_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = THL }
+			culture_group = thai
+			NOT = { primary_culture = lao }
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 600
+			owns_core_province = 601
+			owns_core_province = 589
+			owns_core_province = 592
+			owns_core_province = 603
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = THL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	burmese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BRM }
+			NOT = { tag = MNM }
+			culture_group = burman
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 586
+			owns_core_province = 1815
+			owns_core_province = 590
+			owns_core_province = 585
+			owns_core_province = 584
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = BRM
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	cambodian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = CMB }
+			primary_culture = khmer
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 604
+			owns_core_province = 609
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = CMB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	vietnamese_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = VTN }
+			primary_culture = vietnamese
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 616
+			owns_core_province = 613
+			owns_core_province = 610
+			owns_core_province = 605
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = VTN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	laotian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = LAO }
+			primary_culture = lao
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 614
+			owns_core_province = 615
+			owns_core_province = 1844
+			owns_core_province = 611
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = LAO
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chinese_republic = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = CHN }
+			OR = {
+				primary_culture = chihan
+				primary_culture = cantonese
+				primary_culture = manchu
+			}
+		}
+		allow = {
+			adm_tech = 76
+			NOT = { government = monarchy }
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 1816
+			owns_core_province = 695
+			owns_core_province = 1822
+			owns_core_province = 667
+			owns_core_province = 679
+		}
+		effect = {
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = CHN
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_turkey = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			primary_culture = turkish
+			NOT = { exists = TKY }
+		}
+		allow = {
+			adm_tech = 81
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 151
+			owns_core_province = 317
+			owns_core_province = 318
+			owns_core_province = 326
+			owns_core_province = 327
+			owns_core_province = 331
+		}
+		effect = {
+			random_owned_province = {
+				limit = { culture = turkish }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = TKY
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_belgium = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = NED }
+			NOT = { tag = FRA }
+			OR = {
+				primary_culture = flemish
+				primary_culture = wallonian
+			}
+			NOT = { exists = BEL }
+		}
+		allow = {
+			adm_tech = 76
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 92
+			owns_core_province = 90
+			owns_core_province = 1744
+			owns_core_province = 1865
+			owns_core_province = 91
+		}
+		effect = {
+			random_owned_province = {
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = BEL
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_yugoslavia = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			culture_group = south_slavic
+			NOT = { exists = YUG }
+		}
+		allow = {
+			adm_tech = 76
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 141
+			owns_core_province = 1827
+			owns_core_province = 138
+			owns_core_province = 140
+			owns_core_province = 131
+			owns_core_province = 1826
+			owns_core_province = 139
+			owns_core_province = 136
+			owns_core_province = 1828
+		}
+		effect = {
+			random_owned_province = {
+				limit = { culture_group = south_slavic }
+				add_base_tax = 1
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = YUG
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_israel = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			religion = judaism
+			NOT = { exists = ISR }
+		}
+		allow = {
+			religion = judaism
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 379
+		}
+		effect = {
+			change_tag = ISR
+			add_prestige = 100
+			ISR = { set_capital = 379 }
+			379 = { add_base_tax = 1 }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	turkmeni_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = TRK }
+			primary_culture = turkmeni
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 437
+			owns_core_province = 2293
+			owns_core_province = 438
+			owns_core_province = 443
+			owns_core_province = 439
+			owns_core_province = 2430
+			owns_core_province = 445
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = TRK
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	uzbek_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = UZB }
+			primary_culture = uzbehk
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 441
+			owns_core_province = 1973
+			owns_core_province = 442
+			owns_core_province = 454
+			owns_core_province = 453
+			owns_core_province = 457
+			owns_core_province = 2433
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = UZB
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kyrgyz_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KYR }
+			primary_culture = kirgiz
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 2434
+			owns_core_province = 2435
+			owns_core_province = 459
+			owns_core_province = 458
+			owns_core_province = 460
+			owns_core_province = 2444
+			owns_core_province = 461
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = KYR
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kazakh_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = KZK }
+			primary_culture = khazak
+		}
+		allow = {
+			adm_tech = 78
+			is_subject = no
+			is_at_war = no
+			owns_core_province = 456
+			owns_core_province = 1969
+			owns_core_province = 2443
+			owns_core_province = 477
+			owns_core_province = 476
+			owns_core_province = 2447
+			owns_core_province = 2442
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = KZK
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	form_usa = {
+		major = yes
+		potential ={
+			tag = CSA
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = USA }
+		}	
+		allow = {
+			owns_core_province = 953
+			owns_core_province = 952
+			owns_core_province = 965
+			owns_core_province = 968
+		}
+        	effect = {
+            		change_tag = USA
+            		add_ prestige = 100
+            		952 = { add_base_tax = 1 }
+        	}
+	}
+}

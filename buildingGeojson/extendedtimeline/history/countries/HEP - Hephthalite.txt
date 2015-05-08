@@ -1,0 +1,45 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -3
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -1
+#land_naval = -4
+#quality_quantity = 3
+#serfdom_freesubjects = -3
+primary_culture = uzbehk
+religion = buddhism
+technology_group = muslim
+capital = 578	# Kohistan
+
+420.1.1 = {
+	monarch = {
+		name = "Khingila"
+		dynasty = "Huna"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}
+
+515.1.1 = {
+	monarch = {
+		name = "Toramana"
+		dynasty = "Huna"
+		adm = 4
+		dip = 5
+		mil = 6
+	}
+}
+
+528.1.1 = {
+	religion = hinduism
+	monarch = {
+		name = "Mihirakula"
+		dynasty = "Huna"
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+}

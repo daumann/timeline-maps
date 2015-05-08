@@ -1,0 +1,36 @@
+newEntry1964 - Ust-Sysolsk.txt
+#Ust-Sysolsk
+
+culture = uralic
+religion = suomenusko
+hre = no
+base_tax = 1
+trade_goods = unknown
+manpower = 1
+capital = "Ust-Sysola"
+native_size = 25
+native_ferocity = 2
+native_hostileness = 2
+
+750.1.1 = { discovered_by = PRM owner = PRM controller = PRM add_core = PRM citysize = 1000 trade_goods = fur }
+1200.1.1 = { discovered_by = eastern }
+1300.1.1 = { discovered_by = nomad_group discovered_by = western }
+1350.1.1 = { religion = orthodox }
+
+1450.1.1  = { citysize = 1200 }
+1500.1.1  = { citysize = 1400 }
+1505.4.1  = {	owner = RUS controller = RUS add_core = RUS remove_core = PRM culture = russian }
+1550.1.1  = { citysize = 1600 }
+1580.1.1  = { marketplace = yes fort1 = yes } # Town develops
+1600.1.1  = { citysize = 1800 }
+1650.1.1  = { citysize = 2000 }
+1700.1.1  = { citysize = 2200 }
+1750.1.1  = { citysize = 2400 }
+1780.1.1  = { capital = "Ust-Sysolsk" } # town renamed
+1800.1.1  = { citysize = 3000 }
+
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1930.1.1   = { capital = "Syktyvkar" }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+
+

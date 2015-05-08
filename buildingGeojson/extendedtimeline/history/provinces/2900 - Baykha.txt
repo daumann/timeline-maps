@@ -1,0 +1,33 @@
+newEntry2900 - Baykha.txt
+#1781 - Western Siberia
+
+culture = samoyed
+religion = shamanism
+capital = "Turukhansk"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 5
+native_ferocity = 2
+native_hostileness = 3
+
+1618.1.1 = {	discovered_by = RUS
+	   	owner = RUS
+	   	controller = RUS
+	   	religion = orthodox
+	   	culture = russian
+	   	citysize = 280
+	   }
+1628.1.1 = {	add_core = RUS
+	   	citysize = 1400
+		trade_goods = fur
+	   }
+1750.1.1 = { citysize = 1788 }
+1800.1.1 = { citysize = 1900 }
+
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+
+
+

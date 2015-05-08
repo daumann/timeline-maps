@@ -1,0 +1,14 @@
+government = steppe_horde
+#aristocracy_plutocracy = -4
+#centralization_decentralization = 4
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -3
+mercantilism = 0.1
+#offensive_defensive = -2
+#land_naval = -5
+#quality_quantity = 2
+#serfdom_freesubjects = -3
+technology_group = nomad_group
+religion = tengri
+primary_culture = mongol
+capital = 718

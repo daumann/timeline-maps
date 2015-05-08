@@ -1,0 +1,45 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -4
+#centralization_decentralization = -2
+#innovative_narrowminded = 0
+#mercantilism_freetrade = -2
+mercantilism = 0.1
+#offensive_defensive = 1
+#land_naval = -1
+#quality_quantity = 0
+#serfdom_freesubjects = -4
+primary_culture = korean
+religion = confucianism
+technology_group = chinese
+historical_rival = SKO
+capital = 1845	# Pyongyang
+
+1910.1.1 = { religion = secularism }
+1920.1.1 = { government = communist_dictatorship }
+
+1948.9.9 = {
+	monarch = {
+		name = "Kim Il-sung"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
+
+1994.7.8 = {
+	monarch = {
+		name = "Kim Jong-il"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+2011.12.29 = {
+	monarch = {
+		name = "Kim Jong-un"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

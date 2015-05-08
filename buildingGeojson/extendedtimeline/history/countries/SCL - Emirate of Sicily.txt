@@ -1,0 +1,126 @@
+government = despotic_monarchy
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = 1
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = al_misr_arabic
+religion = sunni
+technology_group = muslim
+capital = 125	# Balharm (Palermo)
+
+
+948.1.1 = {
+	monarch = {
+		name = "Hassan"
+		dynasty = "al-Kalbi"
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}
+
+954.6.1 = {
+	monarch = {
+		name = "Ahmad ibn Hasan"
+		dynasty = "al-Hasan"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+
+969.6.1 = {
+	monarch = {
+		name = "Abû I-Qasim 'Ali ibn"
+		dynasty = "al-Hasan"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+982.6.1 = {
+	monarch = {
+		name = "Jabir"
+		dynasty = "al-Kalbi"
+		adm = 4
+		dip = 1
+		mil = 2
+	}
+}
+
+983.6.1 = {
+	monarch = {
+		name = "Jafar"
+		dynasty = "al-Kalbi"
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}
+
+985.6.1 = {
+	monarch = {
+		name = "Abd-Allah"
+		dynasty = "al-Kalbi"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+990.6.1 = {
+	monarch = {
+		name = "Yusuf"
+		dynasty = "al-Kalbi"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+998.6.1 = {
+	monarch = {
+		name = "Ja'far"
+		dynasty = "al-Kalbi"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1019.6.1 = {
+	monarch = {
+		name = "al-Akhal"
+		dynasty = "al-Kalbi"
+		adm = 2
+		dip = 4
+		mil = 4
+	}
+}
+
+1037.6.1 = {
+	monarch = {
+		name = "Abdallah"
+		dynasty = "al-Kalbi"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1040.1.1 = {
+	monarch = {
+		name = "Hasan"
+		dynasty = "as-Samsam"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+

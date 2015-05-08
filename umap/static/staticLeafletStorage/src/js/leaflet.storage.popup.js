@@ -1,3 +1,54 @@
+function  openfullWidth(){
+    $('#chronasWiki').hide();
+    var tmpSource =  $("iframe")[0].src;
+    
+   // $("iframe")[0].src = "http://www.google.be";
+    
+    console.debug("source now: ",$("iframe")[0].src )
+    
+ //   $('#chronasWiki').hide();
+    if ($("#storage-ui-container")[0].style.width != "100%"){
+        
+        $("#storage-ui-container")[0].style.padding = "0 0px 23px 0px";
+        $("iframe")[0].style.width = "100%";
+               
+        console.debug("source now: ",$("iframe")[0].src )
+        $("iframe")[0].src = tmpSource + "?printable=yes";
+        $("#storage-ui-container")[0].style.width = "100%";
+        $("#map")[0].style.display = "none";
+        $(".fullWidth")[0].innerHTML = "Half width";
+
+        $('#chronasWiki').load(function(){
+            $('#chronasWiki').show();
+            
+        });
+        
+
+        
+
+    }
+    else{
+
+        $("#storage-ui-container")[0].style.padding = "0 20px 23px 20px";
+        $("iframe")[0].style.width = "calc(100% - 20px)";
+        
+        $("iframe")[0].src = tmpSource.replace("?printable=yes","");
+        $("#storage-ui-container")[0].style.width = "50%";
+        $("#map")[0].style.display = "block";
+        $(".fullWidth")[0].innerHTML = "Full width";
+        $('#chronasWiki').load(function(){
+
+            $('#chronasWiki').show();
+            
+        });
+        
+        
+        
+    }
+    
+}
+
+
 L.S.Popup = L.Popup.extend({
 
     options: {
@@ -5,6 +56,7 @@ L.S.Popup = L.Popup.extend({
     },
 
     initialize: function (feature) {
+        console.debug("!!!!!!! initializing feature: ",feature)
         this.feature = feature;
         this.container = L.DomUtil.create('div', 'storage-popup');
         this.format();
@@ -19,10 +71,20 @@ L.S.Popup = L.Popup.extend({
     renderTitle: function () {},
 
     renderBody: function () {
+        console.debug("!!! rendering Body!");
+
+        $(".leaflet-top.leaflet-right")[0].style.display = "none";
+        
+        
         var template = this.feature.getOption('popupContentTemplate'),
             container = L.DomUtil.create('div', ''),
             content, properties, center = this.feature.getCenter();
+        
+        
+        
+        
         if (this.options.parseTemplate) {
+            
             // Include context properties
             properties = {
                 lat: center.lat,
@@ -36,10 +98,19 @@ L.S.Popup = L.Popup.extend({
             // Resolve properties inside description
             properties.description = L.Util.greedyTemplate(this.feature.properties.description || '', properties);
             content = L.Util.greedyTemplate(template, properties);
+            console.debug("inside ha:", content, properties.description);
+            
+            if(properties){
+                if (properties.description.substring(0,11) == "chronasYear"){
+                    content = "WikiYear://en.wikipedia.org/wiki/"+properties.description.substr(11)+"?printable=yes loading year "+properties.description.substr(11);
+                }
+            }
         }
         content = L.Util.toHTML(content);
+        console.debug("content received:", content);
         container.innerHTML = content;
         var els = container.querySelectorAll('img,iframe');
+        
         for (var i = 0; i < els.length; i++) {
             this.onElementLoaded(els[i]);
         }
@@ -47,6 +118,18 @@ L.S.Popup = L.Popup.extend({
             container.innerHTML = '';
             L.DomUtil.add('h3', '', container, this.feature.getDisplayName());
         }
+        
+        console.debug(content,properties, "!iframe",$('#chronasWiki'));
+/*
+        if($('#chronasWiki') != []){
+            $('#chronasWiki').on('load', function () {
+                console.debug("inside load finish");
+                $('#loader1').hide();
+                $('#chronasWiki').show();
+            });
+        }
+        */
+        
         return container;
     },
 
@@ -87,6 +170,9 @@ L.S.Popup = L.Popup.extend({
             this.container.appendChild(title);
         }
         var body = this.renderBody();
+        
+        console.debug("!!", this.container, body);
+        
         if (body) {
             L.DomUtil.add('div', 'storage-popup-content', this.container, body);
         }
@@ -197,19 +283,65 @@ L.S.Popup.GeoRSSLink = L.S.Popup.extend({
     }
 });
 
+
 L.S.Popup.SimplePanel = L.S.Popup.extend({
 
     allButton: function () {
+        console.debug("L.S.Popup.SimplePanel allButton")
+        
         var button = L.DomUtil.create('li', '');
+        
         L.DomUtil.create('i', 'storage-icon-16 storage-list', button);
         var label = L.DomUtil.create('span', '', button);
-        label.innerHTML = label.title = L._('See all');
+        label.innerHTML = label.title = L._('See all (will move)');
+        
         L.DomEvent.on(button, 'click', this.feature.map.openBrowser, this.feature.map);
         return button;
     },
+    allButton2: function () {
+        console.debug("L.S.Popup.SimplePanel allButton")
+
+        if($($(this)[0].container).find("iframe").length  != 0){
+        var button2 = L.DomUtil.create('li', '');
+        L.DomUtil.create('i', 'chronas-icon-1 storage-fullWidth', button2);
+        var label2 = L.DomUtil.create('span', 'fullWidth', button2);
+        label2.innerHTML = label2.title = L._('Full width');
+      //  label2.id = "fullWidth";
+        
+        L.DomEvent.on(button2, 'click', openfullWidth );
+        return button2;
+        }
+        else
+            return null;
+    },
+    
+    allButton3: function () {
+
+        if($($(this)[0].container).find("iframe").length  != 0){
+            var button3 = L.DomUtil.create('li', '');
+            L.DomUtil.create('i', 'chronas-icon-2 storage-GoToWikipedia', button3);
+            var label3 = L.DomUtil.create('a', 'GoToWikipedia', button3);
+          //  label3.id = "GoToWikipedia";
+            label3.innerHTML = label3.title = L._('View on Wikipedia');
+            label3.href = $($(this)[0].container).find("iframe")[0].src.replace("?printable=yes","");
+            label3.target = "_blank";
+        //    L.DomEvent.on(button3, 'click',  goToWikipedia);
+            
+            return button3;
+        }
+        else
+        return null;
+    },
 
     update: function () {
-        L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton()]});
+        
+        if(this.allButton3() != null )
+        {
+        L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton(),this.allButton3(),this.allButton2()]});
+        }
+        else
+            L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton()]});
+        
     },
 
     onRemove: function (map) {

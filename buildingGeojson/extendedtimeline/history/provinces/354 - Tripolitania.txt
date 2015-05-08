@@ -1,0 +1,90 @@
+newEntry354 - Tripolitania.txt
+#354 - Tripolitania
+
+owner = ROM
+controller = ROM
+culture = tunisian
+religion = african
+capital = "Leptis Magna"
+trade_goods = cloth
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 3503
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 4007 }
+200.1.1 = { citysize = 5014 }
+300.1.1 = { citysize = 6021 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 7028 }
+420.1.1 = { religion = chalcedonism }
+439.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = ROW }
+450.1.1 = { fort1 = no } # Gaiseric ordered the city's walls demolished
+500.1.1 = { citysize = 8035 }
+543.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = VAN }
+570.1.1 = { fort1 = yes }
+600.1.1 = { citysize = 9042 }
+650.1.1 = { owner = RAS controller = RAS add_core = RAS remove_core = BYZ capital = "Tripoli" }
+661.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = RAS }
+700.1.1 = { citysize = 10049 religion = sunni }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 11057 owner = TUN controller = TUN add_core = TUN remove_core = ABB }
+900.1.1 = { citysize = 12064 }
+909.1.1 = { owner = FAT controller = FAT add_core = FAT }
+1000.1.1 = { citysize = 13071 }
+1048.1.1 = { owner = TUN controller = TUN add_core = TUN remove_core = FAT }
+1100.1.1 = { citysize = 14078 }
+1152.1.1 = { owner = AMH controller = AMH add_core = AMH }
+1200.1.1 = { citysize = 15085 }
+1229.1.1 = { owner = TUN controller = TUN add_core = TUN remove_core = AMH }
+1300.1.1 = { citysize = 16092 }
+1399.1.1 = { citysize = 17100 }
+
+1450.1.1  = { citysize = 20100 }
+1500.1.1  = { citysize = 22557 }
+1510.1.1  = { owner = CAS controller = CAS add_core = CAS }
+1516.1.23 = {	owner = SPA	
+		controller = SPA
+		add_core = SPA
+		remove_core = CAS
+	    }
+1528.1.1  = {	owner = KNI
+		controller = KNI
+		add_core = KNI
+		remove_core = SPA
+	    } # Ferdinand gave Tripoli to the Knights of St John
+1550.1.1  = { citysize = 24079 }
+1551.8.1  = {	owner = TRP
+		controller = TRP
+		add_core = TRP
+		remove_core = KNI
+	    } # Turgut Reis takes Tripoli
+1600.1.1  = { citysize = 25330 marketplace = yes }
+1609.1.1  = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Janissary revolt
+1610.1.1  = { revolt = {} controller = TRP }
+1650.1.1  = { citysize = 26791 }
+1700.1.1  = { citysize = 27684 tax_assessor = yes }
+1711.1.1  = { unrest = 6 } # The Ottoman governor is killed by Ahmad Karmanli
+1712.1.1  = { unrest = 0 fort2 = yes } # Fortifications are restored
+1750.1.1  = { citysize = 28675 }
+1800.1.1  = { citysize = 30405 }
+
+1850.1.1   = { citysize = 60000 }
+1900.1.1   = { citysize = 200000 }
+1912.10.18 = { owner = ITA controller = ITA add_core = ITA add_core = LIB remove_core = TRP }
+1943.1.15  = { controller = GBR }
+1943.9.8   = { owner = GBR remove_core = ITA }
+1950.1.1   = { citysize = 900000 }
+1951.12.24 = { owner = LIB controller = LIB }
+#2011.1.1   = { citysize = 2220000 }
+
+
+

@@ -1,0 +1,37 @@
+#758 - Goias
+
+culture = ge
+religion = south_american
+capital = "Arrial dos Couros"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 15
+native_ferocity = 1
+native_hostileness = 7
+discovered_by = south_american
+
+1580.1.1 = { discovered_by = POR }
+1710.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+	citysize = 280
+	culture = portugese
+	religion = catholic
+	trade_goods = spices
+}
+1750.1.1 = { citysize = 2890 }
+1800.1.1 = { citysize = 5900 }
+
+1822.9.7   = { owner = BRZ add_core = BRZ controller = BRZ remove_core = POR }
+1850.1.1   = { citysize = 10000 }
+1900.1.1   = { citysize = 60000 }
+1950.1.1   = { citysize = 200000 }
+1960.4.21  = { capital = "Brasilia" }
+1970.1.1   = { citysize = 800000 }
+#2010.1.1   = { citysize = 2562963 }
+
+
+

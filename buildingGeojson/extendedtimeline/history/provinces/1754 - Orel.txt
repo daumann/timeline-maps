@@ -1,0 +1,51 @@
+newEntry1754 - Orel.txt
+#1754 - Murom ( formerly Orel)
+      
+culture = volga_finnic
+religion = suomenusko
+hre = no
+base_tax = 4
+trade_goods = unknown    
+manpower = 4
+capital = "Murom"
+
+599.1.1 = { discovered_by = MUR discovered_by = MRY discovered_by = MAA }
+600.1.1 = { owner = MUR controller = MUR add_core = MUR citysize = 1000 trade_goods = grain }
+900.1.1 = { discovered_by = eastern }
+1010.1.1 = { fort1 = yes religion = orthodox culture = russian }
+1100.1.1 = { citysize = 1862 discovered_by = western }
+1200.1.1 = { citysize = 2725 discovered_by = nomad_group discovered_by = GOL }
+1239.1.1 = { owner = MGE controller = MGE }
+1260.1.1 = { owner = GOL controller = GOL }
+1300.1.1 = { citysize = 3587 }
+1330.1.1 = { owner = MUR controller = MUR }
+1393.1.1 = { owner = MOS controller = MOS add_core = MOS }
+1399.1.1 = { citysize = 4450 }
+
+1444.12.1  = { controller = KAZ } # taken by Ulugh Muhammed
+1445.1.1   = { controller = MOS } # retaken by Vasily II
+1445.5.1   = { controller = KAZ } # taken by Ulugh Muhammed
+1445.10.1   = { controller = MOS } # truce between Muscovy and Kazan
+1450.1.1  = { citysize = 3500 }
+1500.1.1  = { citysize = 4000 }
+1503.3.22 = {	owner = RUS controller = RUS add_core = RUS remove_core = MOS }
+1550.1.1  = { citysize = 4500 }
+1598.1.7   = { unrest = 1 } # "Time of troubles", Nizhny Novgorod only city that supported Moscow
+1600.1.1  = { citysize = 5000 }
+1613.3.3   = { unrest = 0 } # Romanov dynasty
+1650.1.1  = { citysize = 5500 }
+1700.1.1  = { citysize = 6000 }
+1750.1.1  = { citysize = 6500 }
+1779.1.1  = { fort2 = yes } # Almost entirely rebuilt.
+1780.1.1  = { marketplace = yes } # Became a large trade center.
+1800.1.1  = { citysize = 7000 }
+
+1850.1.1   = { citysize = 15000 remove_core = MUR }
+1900.1.1   = { citysize = 50000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 100000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 116075 }
+
+
+

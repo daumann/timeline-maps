@@ -1,0 +1,74 @@
+newEntry229 - Alentejo.txt
+#229 - Alentejo
+
+owner = ROM
+controller = ROM
+culture = celtiberian
+religion = animism
+capital = "Eboracum"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 3
+citysize = 1000
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 1128 }
+200.1.1 = { citysize = 1657 }
+300.1.1 = { citysize = 2185 }
+360.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 2714 }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL }
+500.1.1 = { citysize = 3242 }
+600.1.1 = { citysize = 3771 }
+700.1.1 = { citysize = 4299 fort1 = yes }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI capital = "Yaburah" }
+770.1.1 = { religion = sunni }
+800.1.1 = { citysize = 4828 culture = andalucian }
+900.1.1 = { citysize = 5357 }
+1000.1.1 = { citysize = 5885 }
+1011.1.1 = { owner = BDJ controller = BDJ add_core = BDJ remove_core = UMA }
+1027.1.1 = { owner = SEV controller = SEV add_core = SEV }
+1034.1.1 = { owner = BDJ controller = BDJ remove_core = SEV }
+1094.1.1 = { owner = AMR controller = AMR add_core = AMR remove_core = BDJ }
+1100.1.1 = { citysize = 6414 }
+1144.1.1 = { owner = BDJ controller = BDJ remove_core = AMR }
+1151.1.1 = { owner = AMH controller = AMH add_core = AMH }
+1165.9.1 = { owner = POR controller = POR add_core = POR remove_core = AMH capital = "Évora" culture = portugese }
+1200.1.1 = { citysize = 6942 }
+1220.1.1 = { religion = catholic }
+1300.1.1 = { citysize = 7471 }
+1399.1.1 = { citysize = 8000 }
+
+1450.1.1  = { citysize = 9370 }
+1500.1.1  = { citysize = 12500 }
+1600.1.1  = { citysize = 17000 }
+1640.1.1  = { unrest = 8 } # Revolt headed by John of Bragança
+1640.12.1 = { unrest = 0 }
+1650.1.1  = { citysize = 18200 marketplace = yes }
+1700.1.1  = { citysize = 20500 }
+1704.1.1  = { controller = SPA } # War of the Spanish succession
+1713.4.11 = { controller = POR } # Treaty of Utrecht
+1750.1.1  = { citysize = 21000 courthouse = yes }
+1800.1.1  = { citysize = 22200 }
+1801.5.26 = { controller = SPA } # Invaded by Spanish troops
+1801.6.6  = { controller = POR } # Treaty of Badajoz
+1810.9.15 = { controller = FRA } # Occupied by French troops
+1811.4.5  = { controller = POR }
+
+1850.1.1 =   { citysize = 25905 }
+1900.1.1 =   { citysize = 30228 }
+1950.1.1 =   { citysize = 35273 }
+2004.1.1 =   { citysize = 41159 }
+
+
+

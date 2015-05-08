@@ -1,0 +1,58 @@
+#1018 - Izumo
+
+owner = IZU
+controller = IZU
+culture = japanese
+religion = animism
+capital = "Izumo"
+trade_goods = iron
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 1344
+add_core = IZU
+fort1 = yes
+discovered_by = chinese
+temple = yes # Izumo Shrine
+
+100.1.1 = { citysize = 1488 }
+200.1.1 = { citysize = 1776 }
+300.1.1 = { citysize = 2064 }
+400.1.1 = { citysize = 2352 }
+500.1.1 = { citysize = 2640 }
+530.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = IZU }
+580.1.1 = { religion = buddhism }
+600.1.1 = { citysize = 2928 }
+700.1.1 = { citysize = 3217 }
+712.1.1 = { religion = shinto }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 3505 }
+900.1.1 = { citysize = 3793 }
+1000.1.1 = { citysize = 4081 capital = "Matsue" }
+1100.1.1 = { citysize = 4369 }
+1192.1.1 = { owner = YMN controller = YMN add_core = YMN remove_core = JAP }
+1200.1.1 = { citysize = 4657 }
+1300.1.1 = { citysize = 4945 }
+1399.1.1 = { citysize = 5234 }
+
+1399.1.1 = { owner = YMN controller = YMN add_core = YMN fort1 = yes manpower = 2 base_tax = 4 religion = shinto culture = japanese trade_goods = iron capital = "Matsue" hre = no }
+
+1486.1.1 = { owner = AMA controller = AMA remove_core = YMN }
+# Siege of Gassantoda Castle
+1542.1.1 = { discovered_by = POR }
+1558.1.1 = { add_core = MRI }
+1566.11.28  = { owner = MRI controller = MRI remove_core = AMA }
+1600.10.21 = { add_core = TKG owner = TKG controller = TKG remove_core = MRI }
+# Battle of Sekigahara
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1639.8.4  = { trade_goods = gold } # Silver mine + Sakoku reduces sword demand
+1693.1.1  = { trade_goods = fish } # Estimate, Japan stops silver export
+
+1850.1.1  = { citysize = 20000 }
+1900.1.1  = { citysize = 40000 }
+1950.1.1  = { citysize = 90000 }
+2010.12.1 = { citysize = 145008 }
+
+
+

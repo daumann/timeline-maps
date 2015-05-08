@@ -1,0 +1,83 @@
+newEntry226 - Gibraltar.txt
+#226 - Gibraltar
+
+owner = ROM
+controller = ROM
+add_core = ROM
+culture = celtiberian
+religion = animism
+hre = no
+base_tax = 5
+trade_goods = fish 
+manpower = 2
+capital = "Carteia" 
+citysize = 1000
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = roman_group
+
+100.1.1 = { citysize = 1000 }
+200.1.1 = { citysize = 1000 }
+300.1.1 = { citysize = 1000 }
+310.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 1000 }
+409.1.1 = { owner = VAN controller = VAN add_core = VAN religion = arianism culture = vandal capital = "Gibraltar" }
+425.1.1 = { owner = ROW controller = ROW remove_core = VAN }
+440.1.1 = { owner = EAL controller = EAL add_core = EAL }
+450.1.1 = { remove_core = ROW }
+456.1.1 = { owner = GVI controller = GVI add_core = GVI remove_core = EAL culture = gothic }
+500.1.1 = { citysize = 1035 }
+552.1.1 = { owner = BYZ controller = BYZ add_core = BYZ religion = chalcedonism }
+600.1.1 = { citysize = 1142 }
+620.1.1 = { owner = GVI controller = GVI remove_core = BYZ }
+700.1.1 = { citysize = 1249 }
+711.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = GVI }
+740.1.1 = { religion = sunni }
+750.1.1 = { culture = andalucian }
+800.1.1 = { citysize = 1357 fort1 = yes }
+900.1.1 = { citysize = 1464 }
+1000.1.1 = { citysize = 1571 }
+1023.1.1 = { owner = AGC controller = AGC add_core = AGC remove_core = UMA }
+1058.1.1 = { owner = SEV controller = SEV add_core = SEV }
+1091.1.1 = { owner = AMR controller = AMR add_core = AMR remove_core = SEV remove_core = AGC }
+1100.1.1 = { citysize = 1678 }
+1147.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = AMR }
+1200.1.1 = { citysize = 1785 }
+1238.1.1 = { owner = GRA controller = GRA add_core = GRA remove_core = AMH }
+1300.1.1 = { citysize = 1892 }
+1399.1.1 = { citysize = 2000 }
+
+1450.1.1  = { citysize = 2500 }
+1462.1.1  = { owner = CAS controller = CAS add_core = CAS } # Conquest of Gibraltar by King Enrique of Castilla
+1499.12.1 = { unrest = 2 } # The Inquisition forces Spanish muslims to convert back to Christianity. Occasional revolts occur.
+1500.1.1  = { citysize = 3258 }
+1502.2.1  = { unrest = 0 religion = catholic } # New capitulations where all the subjects of Granada are baptised and fully incorporated into the legal system of Castilla
+1516.1.23 = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	    } # King Fernando dies, Carlos inherits Aragon and becames co-regent of Castille
+1550.1.1  = { citysize = 3890 marketplace = yes }
+1600.1.1  = { citysize = 4300 }
+1610.1.12 = { culture = castillian } # Decree for the expulsion of the morisques in Andalucía, which is speedily and uneventfully performed
+1650.1.1  = { citysize = 4780 }
+1700.1.1  = { citysize = 5580 }
+1704.8.3  = { controller = ENG } # England occupies Gibraltar
+1707.5.12 = { controller = GBR }
+1713.4.11 = {	owner = GBR
+		add_core = GBR
+	    	remove_core = CAS
+	    } # Treaty of Utrecht
+1750.1.1  = { citysize = 6320 }
+1800.1.1  = { citysize = 7800 }
+
+1850.1.1   = { citysize = 10871 }
+1900.1.1   = { citysize = 15151 }
+1950.1.1   = { citysize = 21117 }
+2011.1.1   = { citysize = 29431 }
+
+
+

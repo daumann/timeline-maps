@@ -1,0 +1,46 @@
+government = barbarian_tribe
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 3
+#innovative_narrowminded = 0
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = -3
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -2
+primary_culture = gothic
+religion = germanic
+technology_group = barbarian
+capital = 284	# Crimea
+
+51.1.1 = {
+	monarch = {
+		name = "Gothus"
+		dynasty = "Goth"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+
+100.1.1 = {
+	monarch = {
+		name = "Gadareiks"
+		dynasty = "Goth"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+
+160.1.1 = {
+	monarch = {
+		name = "Filimer"
+		dynasty = "Goth"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+600.1.1 = { government = feudal_monarchy technology_group = western }

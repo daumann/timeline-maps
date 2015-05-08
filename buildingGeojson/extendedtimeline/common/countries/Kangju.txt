@@ -1,0 +1,63 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 240  190  210 }
+
+historical_idea_groups = {
+	early_adm_ideas
+	early_mil_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	trade_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+
+historical_units = {
+	persian_footsoldier
+	persian_cavalry_charge
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+	afsharid_reformed
+	afsharid_reformed_infantry
+	persian_rifle
+}
+
+monarch_names = {
+	"Bilge Kul #0" = 10
+	"Yelü Dashi #0" = 10
+	"Oghulcak #0" = 10
+	"Kuchlug #0" = 10
+	"Tabuyan #0" = 10
+	"Yelü Yilie #0" = 10
+	"Yelü Pusuwan #0" = 10
+	"Yelü Zhilugu #0" = 10
+	"Ebu Shuca #0" = 10
+}
+
+leader_names = {
+	Qadir
+	Tabghach
+	Tamghach
+	Chaghri
+	Jahan
+	Nyuan
+	Khwaja
+	Turmush
+	Bairam
+}
+
+ship_names = {
+	Khitai Balasagun Khujand Herat
+	Kura Sumgait Bazard'uz'u Sevan
+	Agdam K'urdamir Udzary
+}
+
+
+

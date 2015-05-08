@@ -1,0 +1,50 @@
+newEntry1843 - Kozuke.txt
+#1843 - Kozuke
+
+owner = EMI
+controller = EMI
+culture = emishi
+religion = animism
+capital = "Utsunomiya"
+trade_goods = grain
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 6255
+add_core = EMI
+fort1 = yes
+discovered_by = chinese
+
+100.1.1 = { citysize = 1746 }
+200.1.1 = { citysize = 2093 }
+300.1.1 = { citysize = 2440 }
+400.1.1 = { citysize = 2787 }
+500.1.1 = { citysize = 3133 }
+600.1.1 = { citysize = 3480 }
+607.1.1 = { religion = buddhism }
+650.1.1 = { owner = YAM controller = YAM add_core = YAM remove_core = EMI }
+700.1.1 = { citysize = 3827 }
+712.1.1 = { religion = shinto }
+750.1.1 = { culture = japanese }
+794.1.1 = { owner = JAP controller = JAP add_core = JAP remove_core = YAM }
+800.1.1 = { citysize = 4174 }
+900.1.1 = { citysize = 4521 }
+1000.1.1 = { citysize = 4867 }
+1100.1.1 = { citysize = 5214 }
+1192.1.1 = { owner = UES controller = UES add_core = UES remove_core = JAP }
+1200.1.1 = { citysize = 5561 }
+1300.1.1 = { citysize = 5908 }
+1399.1.1 = { citysize = 6255 }
+
+1582.10.27 = { add_core = HJO owner = HJO controller = HJO }
+1590.8.10  = { remove_core = HJO remove_core = UES add_core = TKG owner = TKG controller = TKG }
+1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
+# Tokugawa shogunate founded
+1850.1.1  = { citysize = 50000 }
+1900.1.1  = { citysize = 120000 }
+1950.1.1  = { citysize = 260000 }
+2010.10.1 = { citysize = 510416 }
+
+
+
+

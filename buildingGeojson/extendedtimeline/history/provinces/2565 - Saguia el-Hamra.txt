@@ -1,0 +1,32 @@
+newEntry2565 - Saguia el-Hamra.txt
+#348 - Sus
+
+culture = berber
+religion = african
+capital = "Saguia el-Hamra"
+trade_goods = unknown
+hre = no
+base_tax = 1
+manpower = 1
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+
+850.1.1    = { religion = sunni }
+1434.1.1   = { discovered_by = POR }
+1884.1.1   = { 	owner = SPA
+		controller = SPA 
+		add_core = SPA
+		trade_goods = grain
+		citysize = 2000
+	     }
+1928.1.1   = { capital = "El Aaiún" }
+1950.1.1   = { citysize = 100000 }
+1973.1.1   = { add_core = WSH }
+1975.11.14 = { owner = MOR controller = MOR add_core = MOR remove_core = SPA } # Madrid Accords
+1993.1.1   = { add_core = WSH }
+2004.1.1   = { citysize = 196331 }
+2013.1.1   = { add_core = WSH }
+
+
+

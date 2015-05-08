@@ -1,0 +1,94 @@
+#528 - Surat
+
+owner = WSA
+controller = WSA
+culture = rajput
+religion = hinduism
+capital = "Kota"
+trade_goods = cotton
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 4928
+add_core = WSA
+fort1 = yes
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+100.1.1 = { citysize = 3643 }
+200.1.1 = { citysize = 4286 }
+300.1.1 = { citysize = 4929 }
+375.1.1 = { owner = GUP controller = GUP add_core = GUP remove_core = WSA }
+400.1.1 = { citysize = 5572 }
+500.1.1 = { citysize = 6216 }
+580.1.1 = { owner = GUR controller = GUR add_core = GUR remove_core = GUP }
+600.1.1 = { citysize = 6859 }
+606.1.1 = { owner = HRS controller = HRS add_core = HRS }
+647.1.1 = { owner = GUR controller = GUR remove_core = HRS }
+700.1.1 = { citysize = 7502 }
+800.1.1 = { citysize = 8145 }
+900.1.1 = { citysize = 8788 }
+1000.1.1 = { citysize = 9432 }
+1036.1.1 = { owner = CCH controller = CCH add_core = CCH remove_core = GUR }
+1100.1.1 = { citysize = 10075 }
+1192.1.1 = { owner = PRR controller = PRR add_core = PRR remove_core = CCH }
+1200.1.1 = { citysize = 10718 }
+1226.1.1 = { owner = MER controller = MER add_core = MER remove_core = PRR }
+1241.1.1 = { owner = HAD controller = HAD add_core = HAD remove_core = MER }
+1300.1.1 = { citysize = 11361 }
+1399.1.1 = { citysize = 12005 }
+
+1450.1.1 = { citysize = 25000 }
+1455.1.1 = { controller = MLW } # Conquest by Malwa
+1456.1.1 = {
+	owner = MLW
+	add_core = MLW
+} # Conquest by Malwa
+1498.1.1 = { discovered_by = POR }
+1500.1.1 = { citysize = 27000 }
+1519.1.1 = {
+	owner = HAD
+	controller = HAD
+	remove_core = MLW
+}
+1543.1.1 = {
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+} # Sur expansion
+1550.1.1 = { citysize = 29000 }
+1553.1.1 = {
+	owner = HAD
+	controller = HAD
+	remove_core = BNG
+} # Independent
+1600.1.1 = { citysize = 31000 }
+1650.1.1 = { citysize = 35000 }
+1690.1.1  = { discovered_by = ENG }
+1700.1.1 = { citysize = 37000 }
+1707.5.12 = { discovered_by = GBR }
+1737.1.1 = {
+	owner = GWA
+	controller = GWA
+	add_core = GWA
+}
+1750.1.1 = { citysize = 39000 }
+1800.1.1 = { citysize = 41000 }
+1818.2.10 = {
+	owner = HAD
+	controller = HAD
+	remove_core = GWA
+} # Independent (british dependency)
+
+1850.1.1  = { citysize = 50000 }
+1900.1.1  = { citysize = 120000 }
+1930.1.1  = { add_core = IND }
+1947.8.15 = { owner = IND controller = IND remove_core = HAD }
+1950.1.1  = { citysize = 300000 }
+2011.1.1  = { citysize = 542580 }
+
+
+

@@ -1,0 +1,83 @@
+newEntry2258 - Mong Kawng.txt
+#582 - Kachin
+
+owner = PYU
+controller = PYU
+culture = kachin
+religion = animism
+capital = "Mong Kawng"
+trade_goods = gold
+hre = no
+base_tax = 3
+manpower = 3
+citysize = 1350
+add_core = PYU
+discovered_by = chinese
+discovered_by = indian
+
+100.1.1 = { citysize = 1500 }
+200.1.1 = { citysize = 1800 }
+300.1.1 = { citysize = 2100 }
+400.1.1 = { citysize = 2400 }
+500.1.1 = { citysize = 2700 }
+600.1.1 = { citysize = 3000 }
+700.1.1 = { citysize = 3300 }
+800.1.1 = { citysize = 3600 }
+849.1.1 = { owner = PAG controller = PAG add_core = PAG remove_core = PYU }
+900.1.1 = { citysize = 3900 }
+1000.1.1 = { citysize = 4200 religion = buddhism }
+1100.1.1 = { citysize = 4500 }
+1200.1.1 = { citysize = 4800 }
+1215.1.1 = { owner = MYA controller = MYA add_core = MYA remove_core = PAG }
+1300.1.1 = { citysize = 5100 }
+1399.1.1 = { citysize = 5400 }
+
+1450.1.1 = { citysize = 5950 }
+1500.1.1 = { citysize = 6800 }
+1502.1.1 = {
+		controller = SST
+		owner = SST
+		add_core = SST
+		remove_core = MYA
+}
+1550.1.1 = { citysize = 7525 }
+1554.1.1 = { add_core = TAU }
+1557.3.11 = { controller = TAU }
+1563.4.1 = { owner = TAU }
+1599.1.1 = {
+		owner = SST
+		controller = SST
+}
+1600.1.1 = { citysize = 8600 }
+1605.1.1 = {
+		owner = TAU
+		controller = TAU
+}
+1650.1.1 = { citysize = 9422 }
+1655.1.1 = { discovered_by = SPA }#Novus Atlas Sinensis
+1700.1.1 = { citysize = 10420 }
+1732.1.1 = {
+		owner = QNG
+		controller = QNG
+		add_core = QNG
+}
+1750.1.1 = { citysize = 11348 }
+1769.12.13 = {
+		owner = TAU
+		controller = TAU
+		remove_core = QNG
+}
+1800.1.1 = { citysize = 12678 }
+
+1850.1.1   = { citysize = 20000 }
+1885.11.29 = { owner = GBR controller = GBR add_core = GBR add_core = BRM remove_core = TAU remove_core = SST capital = "Myitkyina" }
+1900.1.1   = { citysize = 50000 }
+1942.5.1   = { controller = JAP }
+1945.3.1   = { controller = GBR }
+1948.1.4   = { owner = BRM controller = BRM remove_core = GBR }
+1950.1.1   = { citysize = 80000 }
+1989.1.1   = { owner = MNM controller = MNM add_core = MNM remove_core = BRM }
+2005.1.1   = { citysize = 146544 }
+
+
+

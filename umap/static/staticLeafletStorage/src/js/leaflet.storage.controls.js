@@ -1,3 +1,5 @@
+var creatingType = "initial";
+
 L.Storage.Toolbar = L.Control.extend({
 
     _createButton: function (options) {
@@ -715,17 +717,20 @@ L.S.Editable = L.Editable.extend({
 
     createPolyline: function (latlngs) {
         console.debug("creating Polyline");
+        creatingType = "Polyline";
         return new L.Storage.Polyline(this.map, latlngs);
     },
 
     createPolygon: function (latlngs) {
         console.debug("creating Polygon");
         var polygon = new L.Storage.Polygon(this.map, latlngs);
+        creatingType = "Polygon";
         return polygon;
     },
 
     createMarker: function (latlng) {
         console.debug("creating Marker");
+        creatingType = "Marker";
         return new L.Storage.Marker(this.map, latlng);
     },
 

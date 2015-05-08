@@ -29,6 +29,8 @@ L.Label = L.Class.extend({
 
 	initialize: function (options, source) {
 		L.setOptions(this, options);
+        
+        console.debug("init first");
 
 		this._source = source;
 		this._animated = L.Browser.any3d && this.options.zoomAnimation;
@@ -297,6 +299,7 @@ L.BaseMarkerMethods = {
 	},
 
 	bindLabel: function (content, options) {
+        console.debug("Binding Label", content, options)
 		var labelAnchor = this.options.icon ? this.options.icon.options.labelAnchor : this.options.labelAnchor,
 			anchor = L.point(labelAnchor) || L.point(0, 0);
 

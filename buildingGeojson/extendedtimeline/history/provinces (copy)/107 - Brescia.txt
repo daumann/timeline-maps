@@ -1,0 +1,97 @@
+#107 - Brescia
+
+owner = ROM
+controller = ROM
+culture = roman
+religion = hellenism
+hre = no
+base_tax = 8        
+trade_goods = cloth
+manpower = 4       
+fort1 = yes 
+capital = "Brixia" 
+citysize = 5000 
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 6000 }
+200.1.1 = { citysize = 7000 }
+300.1.1 = { citysize = 10000 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 13000 }
+420.1.1 = { religion = chalcedonism }
+476.9.4 = { owner = ODO controller = ODO add_core = ODO }
+480.1.1 = { remove_core = ROW }
+489.1.1 = { owner = GOS controller = GOS add_core = GOS remove_core = ODO culture = gothic religion = arianism }
+500.1.1 = { citysize = 16000 }
+551.1.1 = { owner = BYZ controller = BYZ add_core = BYZ }
+568.6.1 = { owner = LOM controller = LOM add_core = LOM remove_core = GOS remove_core = BYZ capital = "Brescia" culture = lombard }
+600.1.1 = { citysize = 19000 }
+640.1.1 = { religion = chalcedonism }
+700.1.1 = { citysize = 22000 }
+773.1.1 = { owner = FRK controller = FRK add_core = FRK }
+800.1.1 = { citysize = 26000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = ITA controller = ITA add_core = ITA remove_core = FRM remove_core = LOM }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 30000 }
+962.2.2 = { hre = yes owner = BRS controller = BRS add_core = BRS remove_core = ITA }
+1000.1.1 = { citysize = 34000 }
+1095.1.1 = { temple = yes }
+1100.1.1 = { citysize = 38000 }
+1200.1.1 = { citysize = 42000 }
+1300.1.1 = { citysize = 45000 }
+1319.1.1 = { owner = NAP controller = NAP add_core = NAP }
+1320.1.1 = { owner = BRS controller = BRS remove_core = NAP }
+1332.1.1 = { owner = VER controller = VER add_core = VER remove_core = BRS }
+1387.10.19 = { owner = MLO controller = MLO add_core = MLO remove_core = VER }
+1399.1.1 = { citysize = 47000 }
+
+1426.1.1   = {	owner = VEN
+		controller = VEN
+		add_core = VEN
+	     }
+1450.1.1   = { citysize = 50000 }
+1500.1.1   = { citysize = 49000 } 
+1509.6.1   = { controller = FRA } # Venice collapses
+1512.1.1   = { controller = VEN } # Brescia revolts
+1512.2.18  = { controller = FRA } # Sack of Brescia
+1513.3.23  = { owner = FRA add_core = FRA }
+1520.1.1   = { owner = VEN controller = VEN }
+1550.1.1   = { citysize = 41000 } 
+1559.1.1   = { remove_core = FRA }
+1600.1.1   = { citysize = 42000 } 
+1650.1.1   = { citysize = 25000 marketplace = yes } 
+1700.1.1   = { citysize = 35000 } 
+1750.1.1   = { citysize = 29000 }
+1797.10.17 = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+	     } # Treaty of Campo Formio
+1800.1.1   = { citysize = 28000 }
+1802.6.26  = {	owner = ITA
+		controller = ITA
+		add_core = ITA
+		remove_core = FRA
+	     } # Merged with the Cisalpine Republic
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = HAB
+		controller = HAB
+		add_core = HAB
+		remove_core = ITA
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+
+1850.1.1   = { citysize = 40000 }
+1859.11.10 = { owner = SPI controller = SPI add_core = SPI remove_core = HAB remove_core = VEN } # Treaty of Zürich
+1861.3.17  = { owner = ITA controller = ITA add_core = ITA remove_core = SPI remove_core = BRS }
+1900.1.1   = { citysize = 120000 }
+1950.1.1   = { citysize = 170000 }
+2011.4.1  = { citysize = 197250 }
+
+
+

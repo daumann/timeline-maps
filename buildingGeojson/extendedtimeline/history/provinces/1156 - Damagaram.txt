@@ -1,0 +1,48 @@
+newEntry1156 - Damagaram.txt
+#1156 - Damagaram
+
+owner = KBO
+controller = KBO
+add_core = KBO
+citysize = 1000
+trade_goods = wool
+culture = tuareg
+religion = african
+capital = "Mashina"
+hre = no
+manpower = 1
+base_tax = 1
+discovered_by = sub_saharan
+
+1100.1.1 = { religion = sunni }
+1350.1.1 = { owner = AIR controller = AIR add_core = AIR remove_core = KBO }
+
+1444.1.1 = { add_core = KBO }
+1450.1.1 = { citysize = 8000 }
+1500.1.1 = { citysize = 8500 }
+1590.1.1 = { owner = KBO controller = KBO add_core = KBO }
+1600.1.1 = { citysize = 9000 }
+1700.1.1 = { citysize = 9500 }
+1760.1.1 = { unrest = 7 } #Tuareg raids in wake of fall of Agades
+1800.1.1 = { citysize = 10200 }
+1804.1.1 = { discovered_by = SOK }
+
+1850.1.1   = { citysize = 20000 }
+1890.1.1   = { discovered_by = FR2 }
+1900.1.1   = { citysize = 40000 }
+1900.4.22  = { owner = FR2 controller = FR2 add_core = FR2 remove_core = KBO capital = "Tesker" } # Battle of Kousséri
+1910.1.1   = { discovered_by = western }
+1940.1.1   = {  discovered_by = eastern
+		discovered_by = muslim
+		discovered_by = ottoman
+		discovered_by = indian
+		discovered_by = chinese
+	     }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1942.11.16 = { owner = FR2 controller = FR2 remove_core = FRV } # Under Free French control after Operation Torch
+1950.1.1   = { citysize = 80000 }
+1960.8.3   = { owner = NGR controller = NGR add_core = NGR remove_core = FR2 remove_core = AIR }
+2011.1.1   = { citysize = 170574 }
+
+
+

@@ -1,0 +1,83 @@
+newEntry1876 - Frankfurt.txt
+# 1876 - Frankfurt
+
+owner = ALM
+controller = ALM
+add_core = ALM
+citysize = 1500
+capital = "Frankfurt"
+culture = rheinlaender
+religion = germanic
+trade_goods = grain
+base_tax = 8
+manpower = 4
+hre = no
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+10.1.1 = {
+	add_permanent_province_modifier = {
+		name = inland_center_of_trade_modifier
+		duration = -1
+	}
+}
+
+300.1.1 = { citysize = 2000 }
+260.1.1 = { owner = BUR controller = BUR add_core = BUR remove_core = ALM culture = burgundian }
+400.1.1 = { citysize = 2500 }
+443.1.1 = { owner = ALM controller = ALM add_core = ALM remove_core = BUR }
+451.1.1 = { owner = HNS controller = HNS add_core = HNS remove_core = ALM }
+454.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = HNS culture = rheinlaender }
+500.1.1 = { citysize = 3500 }
+531.1.1 = { fort1 = yes }
+600.1.1 = { citysize = 4000 }
+700.1.1 = { citysize = 4500 }
+750.1.1 = { religion = chalcedonism }
+800.1.1 = { citysize = 5000 }
+838.1.1 = { fort1 = yes }
+840.6.21 = { owner = FRE controller = FRE add_core = FRE remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 5500 }
+911.11.10 = { owner = FRC controller = FRC add_core = FRC remove_core = FRE }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 6000 }
+1100.1.1 = { citysize = 6500 }
+1200.1.1 = { citysize = 7000 }
+1250.12.13 = { owner = FRN controller = FRN add_core = FRN remove_core = FRC }
+1300.1.1 = { citysize = 7500 }
+1399.1.1 = { citysize = 8000 }
+
+1450.1.1   = { citysize = 9000 }
+1453.1.1   = { marketplace = yes }
+1495.1.1   = { courthouse = yes }
+1500.1.1   = { constable = yes }
+1556.4.19  = { religion = protestant }
+1580.4.19  = { regimental_camp = yes fort2 = yes }
+1600.1.1   = { citysize = 22000 }
+1610.1.1   = { fort3 = yes } #customs_house = yes
+1648.1.1   = { citysize = 16000 }
+1585.1.1   = { citysize = 22000 base_tax = 10} # Stock Exchange established in Frankfurt
+1700.1.1   = { citysize = 28000 }
+1720.1.1   = { citysize = 30000 fine_arts_academy = yes }
+1750.1.1   = { citysize = 35000 fort3 = yes }
+1792.10.1  = { controller = FRA } # Occupied by French troops
+1792.12.3  = { controller = FRN } # Prussian troops take control
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+
+1850.1.1   = { citysize = 70000 }
+1871.1.18  = { owner = GER controller = GER add_core = GER } # German unification
+1875.1.1   = { citysize = 100000 }
+1900.1.1   = { remove_core = FRN }
+1910.1.1   = { citysize = 414576 }
+1945.3.29  = { controller = USA }
+1945.5.8   = { owner = WGE controller = WGE add_core = WGE }
+1963.1.1   = { citysize = 691257 }
+1990.10.3  = { owner = GER controller = GER remove_core = WGE }
+2010.12.31 = { citysize = 679664 }
+
+
+

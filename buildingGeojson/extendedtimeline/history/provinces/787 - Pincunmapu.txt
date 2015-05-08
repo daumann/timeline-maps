@@ -1,0 +1,55 @@
+newEntry787 - Pincunmapu.txt
+#787 - Picunmapu
+
+culture = mapuche
+religion = south_american
+capital = "Picunmapu"
+trade_goods = unknown
+hre = no
+base_tax = 3
+manpower = 1
+native_size = 20
+native_ferocity = 2
+native_hostileness = 9	
+discovered_by = andean
+discovered_by = south_american
+
+10.1.1 = {
+		add_permanent_province_modifier = {
+			name = center_of_trade_modifier
+			duration = -1
+		}
+}
+
+1489.1.1 = {
+	owner = INC
+	controller = INC
+	add_core = INC
+	citysize = 1500
+}
+1520.1.1  = { discovered_by = SPA } # Ferdinand Magellan
+1541.2.12 = {	owner = SPA
+		controller = SPA
+		capital = "Santiago"
+	    	citysize = 100
+	    	culture = castillian
+	    	religion = catholic
+	    }
+1550.1.1  = { citysize = 350 trade_goods = grain }
+1566.2.12 = { add_core = SPA is_city = yes }
+1750.1.1  = { citysize = 1800 }
+1810.9.18 = {	owner = CHL
+		controller = CHL
+		add_core = CHL
+	    } # First National Government Junta
+
+1844.4.25  = { remove_core = SPA }
+1850.1.1   = { citysize = 80000 }
+1900.1.1   = { citysize = 300000 }
+1925.1.1   = { citysize = 700000 }
+1950.1.1   = { citysize = 1300000 }
+1980.1.1   = { citysize = 3700000 }
+2002.1.1   = { citysize = 5428590 }
+
+
+

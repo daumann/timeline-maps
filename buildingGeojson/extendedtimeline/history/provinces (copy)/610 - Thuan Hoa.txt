@@ -1,0 +1,93 @@
+#610 - Binh Tri Thien
+
+owner = HUY
+controller = HUY
+culture = vietnamese
+religion = buddhism
+capital = "Hue"
+trade_goods = spices
+hre = no
+base_tax = 5
+manpower = 3
+citysize = 1639
+add_core = HUY
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 1778 }
+192.1.1 = { owner = CHA controller = CHA add_core = CHA remove_core = HUY }
+200.1.1 = { citysize = 2057 }
+300.1.1 = { citysize = 2335 }
+400.1.1 = { citysize = 2614 }
+500.1.1 = { citysize = 2892 }
+600.1.1 = { citysize = 3171 }
+700.1.1 = { citysize = 3449 }
+800.1.1 = { citysize = 3728 }
+900.1.1 = { citysize = 4007 }
+1000.1.1 = { citysize = 4285 }
+1100.1.1 = { citysize = 4564 }
+1200.1.1 = { citysize = 4842 }
+1300.1.1 = { citysize = 5121 }
+1306.1.1 = { owner = DAI controller = DAI add_core = DAI remove_core = CHA }
+1399.1.1 = { citysize = 5400 }
+
+1413.1.1 = {	owner = MNG
+		revolt = { type = nationalist_rebels size = 0 }
+		controller = REB
+		add_core = MNG
+	   } # Vietnam is invaded by Chinese troops after the Tran dynasty is overthrowned
+1427.1.1 = {	revolt = {}
+		owner = DAI
+		controller = DAI
+		remove_core = MNG
+	   }
+1450.1.1 = { citysize = 3880 }
+1500.1.1 = { citysize = 4010 }
+1514.1.1 = { discovered_by = POR }
+1527.1.1 = {
+		owner = TOK
+		controller = TOK
+		add_core = TOK
+	   }
+1550.1.1 = { citysize = 4755 }
+1558.1.1 = {
+		owner = ANN
+		controller = ANN
+		add_core = ANN
+	   } # The Nguyen Lords became independent from the Trinh Lords
+1600.1.1 = { citysize = 6200 }
+1650.1.1 = { citysize = 7480 }
+1700.1.1 = { citysize = 8340 }
+1750.1.1 = { citysize = 9077 }
+1769.1.1 = { unrest = 6 } # Tay Son Rebellion
+1775.1.1 = {
+		unrest = 0
+		owner = TOK
+		controller = TOK
+	   } # Trinh Lords occpied Hue
+1786.6.1 = {	owner = DAI
+		controller = DAI
+		remove_core = TOK
+	   } # Tai Son and Le dynasty annexed the Trinh Lords 
+1800.1.1 = { citysize = 9500 }
+1802.7.22 = {	
+		owner = ANN
+		controller = ANN
+		remove_core = DAI
+	   } # Nguyen Phuc Anh annexed the Tay Son Dynasty
+
+1850.1.1   = { citysize = 40000 }
+1886.4.1   = { owner = FR2 controller = FR2 add_core = FR2 add_core = VTN remove_core = DAI }
+1900.1.1   = { citysize = 150000 }
+1941.1.1   = { controller = JAP }
+1945.3.11  = { owner = VTN controller = VTN add_core = VTN } # Empire of Vietnam, Japanese puppet
+1945.8.23  = { owner = FR2 controller = FR2 }
+1945.9.2   = { owner = NVI controller = NVI add_core = NVI remove_core = FR2 }
+1950.1.1   = { citysize = 500000 }
+1976.7.2   = { owner = VTN controller = VTN remove_core = NVI }
+2009.1.1   = { citysize = 887069 }
+
+
+

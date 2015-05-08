@@ -1,0 +1,42 @@
+government = noble_republic
+#aristocracy_plutocracy = 4
+#centralization_decentralization = -3
+#innovative_narrowminded = -2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 5
+#land_naval = -3
+#quality_quantity = 2
+#serfdom_freesubjects = -2
+primary_culture = andalucian
+religion = sunni
+add_accepted_culture = berber
+technology_group = muslim
+capital = 225	# Cordoba
+
+1031.1.1 = {
+	monarch = {
+		name = "Abu I Hazm Jahwar"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}
+
+1043.1.1 = {
+	monarch = {
+		name = "Abu I Walid Muhammad"
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+1050.1.1 = {
+	monarch = {
+		name = "'Abd al-Malik"
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}

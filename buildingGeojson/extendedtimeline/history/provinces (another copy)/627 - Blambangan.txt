@@ -1,0 +1,52 @@
+#627 - Blambangan
+
+culture = javanese
+religion = hinduism
+capital = "Blambangan"
+trade_goods = unknown
+hre = no
+base_tax = 4
+manpower = 3
+native_size = 30
+native_ferocity = 2
+native_hostileness = 6
+discovered_by = chinese
+
+1019.1.1 = { owner = BLI controller = BLI add_core = BLI citysize = 1000 trade_goods = cotton }
+1049.1.1 = { owner = KDR controller = KDR add_core = KDR remove_core = BLI }
+1222.1.1 = { owner = SIN controller = SIN add_core = SIN remove_core = KDR }
+1293.1.1 = { owner = MAJ controller = MAJ add_core = MAJ remove_core = SIN }
+1300.1.1 = { discovered_by = indian discovered_by = muslim discovered_by = ottoman }
+
+1509.1.1 = { discovered_by = POR }
+1527.1.1  = {
+		owner = BLM
+		controller = BLM
+		add_core = BLM
+		remove_core = MAJ
+} # Blambangan Kingdom was established
+1650.1.1 = { citysize = 21040 }
+1700.1.1 = { citysize = 23300 }
+1750.1.1 = { citysize = 24570 }
+1768.1.1  = {
+		owner = NED
+		controller = NED
+		add_core = NED
+		remove_core = BLM
+		capital = "Banyuwangi"
+} # Dutch conquered Blambangan
+1800.1.1 = { citysize = 26544 }
+
+1850.1.1   = { citysize = 50000 }
+1900.1.1   = { citysize = 150000 }
+1912.9.10  = { add_core = IDN remove_core = MTR }
+1942.3.1   = { controller = JAP }
+1942.3.9   = { owner = JAP }
+1945.8.15  = { owner = NED revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1945.8.17  = { owner = IDN revolt = {} controller = IDN }
+1949.12.27 = { remove_core = NED }
+1950.1.1   = { citysize = 400000 }
+2010.1.1   = { citysize = 819708 }
+
+
+

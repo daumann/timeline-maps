@@ -1,0 +1,41 @@
+  
+#use only owner
+
+echo \{ >> ID-Name-Color.json
+
+counter=1
+while read line           
+do   
+
+NAME=$line
+
+
+ID=`ls /home/aumannd/Code/github/uMap/buildingGeojson/extendedtimeline/history/countries/$NAME\ -* | grep -oP '\ - \K.*?(?=.txt)'`
+#echo $ID
+lineC=`grep -i /"$ID".txt colorProvs.txt`
+
+if [ -z "$lineC" ]
+then
+
+echo failed with $ID and line $line
+
+fi
+
+rgb=`echo "$lineC"  | awk  -F':' '{ print $2; }'  | grep -oP 'color = { \K.*?(?=\ })'`
+
+r=`echo "$rgb"  | awk  -F' ' '{ print $1; }'`
+g=`echo "$rgb"  | awk  -F' ' '{ print $2; }'`
+b=`echo "$rgb"  | awk  -F' ' '{ print $3; }'`
+
+COUNTRYNAME=`echo "$lineC" | grep -oP 'countries/\K.*?(?=\.txt)'`
+
+echo -e \"$NAME\" \: \[\"$COUNTRYNAME\",\[$r,$g,$b\]\] >> ID-Name-Color.json
+
+
+
+             let counter=counter+1 
+done </home/aumannd/Code/github/uMap/buildingGeojson/listOfCountryAbb.txt
+
+echo \} >> ID-Name-Color.json
+
+# write in format for province settings (not geojson! - as efficient as possible)    for updating labels

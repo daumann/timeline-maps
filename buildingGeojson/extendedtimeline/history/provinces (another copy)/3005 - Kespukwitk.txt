@@ -1,0 +1,40 @@
+#984 - Acadia
+
+add_core = MIK
+owner = MIK
+controller = MIK
+is_city = yes
+culture = mikmaq
+religion = totemism
+capital = "Kespukwitk"
+trade_goods = fish
+hre = no
+base_tax = 4
+manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+discovered_by = north_american
+
+1534.1.1  = { discovered_by = FRA }# Jacques Cartier
+1753.1.1  = { owner = GBR
+		controller = GBR
+		culture = scottish
+		religion = protestant 
+		capital = "Lunenburg" } #Lunenburg
+1778.1.1  = {	add_core = GBR }
+
+
+1867.7.1   = { owner = CAN add_core = CAN controller = CAN remove_core = GBR }
+1851.1.1   = { citysize = 39914 }
+1881.1.1   = { citysize = 67917 }
+1899.2.13  = { capital = "Bridgewater" }
+1901.1.1   = { citysize = 74662 }
+1931.1.1   = { citysize = 100204 }
+1951.1.1   = { citysize = 162217 }
+1981.1.1   = { citysize = 288126 }
+2011.1.1   = { citysize = 390096 }
+
+
+
+

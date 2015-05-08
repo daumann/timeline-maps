@@ -1,0 +1,6 @@
+government = imperial_government
+mercantilism = 0.1
+primary_culture = gallian
+religion = hellenism
+technology_group = roman_group
+capital = 85

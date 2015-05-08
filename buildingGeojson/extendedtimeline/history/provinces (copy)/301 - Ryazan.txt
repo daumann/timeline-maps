@@ -1,0 +1,51 @@
+#301 - Ryazan
+  
+culture = hungarian
+religion = tengri
+hre = no
+base_tax = 6
+trade_goods = unknown
+manpower = 5
+capital = "Pereyaslavl-Ryazansky"
+
+599.1.1 = { discovered_by = MUR discovered_by = MRY discovered_by = MAA discovered_by = HUN }
+600.1.1 = { owner = HUN controller = HUN add_core = HUN citysize = 1000 trade_goods = wool }
+720.1.1 = { owner = MUR controller = MUR add_core = MUR remove_core = HUN culture = volga_finnic religion = suomenusko }
+800.1.1 = { discovered_by = eastern }
+1000.1.1 = { owner = KRU controller = KRU add_core = KRU remove_core = MUR discovered_by = western }
+1050.1.1 = { culture = russian }
+1054.2.20 = { owner = CHR controller = CHR add_core = CHR remove_core = KRU }
+1090.1.1 = { religion = orthodox }
+1097.1.1 = { owner = RYA controller = RYA add_core = RYA remove_core = CHR }
+1100.1.1 = { citysize = 1712 discovered_by = nomad_group discovered_by = GOL }
+1150.1.1 = { fort1 = yes }
+1200.1.1 = { citysize = 2425 }
+1300.1.1 = { citysize = 3137 }
+1399.1.1 = { citysize = 3850 }
+
+1450.1.1  = { citysize = 4250 discovered_by = SIB }
+1500.1.1  = { citysize = 5000 }
+1521.8.1  = {	owner = RUS controller = RUS add_core = RUS } # Ryazan annexed by Vasily III
+1550.1.1  = { citysize = 5750 fort2 = yes } 
+1598.1.7  = { unrest = 5 manpower = 6 } # "Time of troubles", peasantry brought into serfdom
+1600.1.1  = { citysize = 4800 }
+1613.3.3  = { unrest = 0 } # Order returned, Romanov dynasty
+1650.1.1  = { citysize = 4667 }
+1656.1.1  = { unrest = 4 } # Tatar revolt
+1657.1.1  = { unrest = 0 }
+1700.1.1  = { citysize = 5491 }
+1711.1.1  = { base_tax = 7 } # Governmental reforms and the absolutism
+1750.1.1  = { citysize = 6460 tax_assessor = yes }
+1767.1.1  = { base_tax = 8 } # Legislative reform
+1778.1.1  = { capital = "Ryazan" } # Ryazan governorate formed, city renamed
+1800.1.1  = { citysize = 7600 }
+
+1850.1.1   = { citysize = 50000 remove_core = RYA }
+1900.1.1   = { citysize = 150000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1950.1.1   = { citysize = 450000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 524927 }
+
+
+

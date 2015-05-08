@@ -1,0 +1,50 @@
+#296 - Vyazma
+ 
+culture = russian
+religion = slavic
+hre = no
+base_tax = 2
+trade_goods = unknown
+manpower = 2
+capital = "Mozhaisk"
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = VYA controller = VYA add_core = VYA citysize = 1000 trade_goods = grain }
+800.1.1 = { discovered_by = western }
+980.1.1 = { owner = KRU controller = KRU add_core = KRU remove_core = VYA }
+1054.2.20 = { owner = SMO controller = SMO add_core = SMO remove_core = KRU }
+1100.1.1 = { citysize = 1250 }
+1200.1.1 = { citysize = 1500 religion = orthodox discovered_by = nomad_group }
+1230.1.1 = { fort1 = yes }
+1300.1.1 = { citysize = 1750 }
+1303.1.1 = { owner = MOS controller = MOS add_core = MOS remove_core = SMO }
+1399.1.1 = { citysize = 2010 }
+
+1450.1.1  = { citysize = 3450 discovered_by = SIB }
+1500.1.1  = { citysize = 4412 }
+1503.4.1 = {	owner = RUS controller = RUS add_core = RUS remove_core = MOS }
+1550.1.1  = { citysize = 7543 }
+1598.1.7  = { unrest = 5 } # "Time of troubles"
+1600.1.1  = { citysize = 8874 }
+1610.7.1  = { controller = PLC } # Polish-Lithuanian occupation
+1613.1.1  = { controller = RUS } # Poles driven out
+1613.3.3  = { unrest = 0 } # Order returned, Romanov dynasty
+1650.1.1  = { citysize = 10440 }
+1682.1.1  = { constable = yes }
+1700.1.1  = { citysize = 12283 }
+1711.1.1  = { base_tax = 3 } # Governmental reforms and the absolutism
+1750.1.1  = { citysize = 14450 }
+1767.1.1  = { base_tax = 4 } # Legislative reform
+1800.1.1  = { citysize = 17000 }
+
+1850.1.1   = { citysize = 40000 capital = "Kaluga" }
+1900.1.1   = { citysize = 70000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1941.10.13 = { controller = GER }
+1941.12.18 = { controller = SOV }
+1950.1.1   = { citysize = 260000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 324698 }
+
+
+

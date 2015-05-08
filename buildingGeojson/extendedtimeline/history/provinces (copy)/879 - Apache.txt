@@ -1,0 +1,34 @@
+#879 - Apache
+
+add_core = HOH
+owner = HOH
+controller = HOH
+culture = piman
+religion = totemism
+capital = "Apache" 
+trade_goods = salt 
+hre = no 
+base_tax = 1 
+manpower = 1 
+is_city = yes
+native_size = 5 
+native_ferocity = 2 
+native_hostileness = 5 
+discovered_by = north_american
+
+1375.1.1 = { owner = APA controller = APA add_core = APA remove_core = HOH culture = navajo }
+
+1541.1.1  = { discovered_by = SPA } # Francisco Vásquez de Coronado
+
+1860.1.1   = { 	owner = USA 
+		controller = USA
+		add_core = USA 
+		remove_core = PIM
+		culture = american
+		religion = catholic
+	     }
+1875.1.1   = { capital = "Globe" }
+
+
+
+

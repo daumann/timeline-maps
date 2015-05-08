@@ -1,0 +1,76 @@
+#572 - Jaffna
+
+owner = CEY
+controller = CEY
+culture = tamil
+religion = buddhism
+capital = "Yapapatuna"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+manpower = 1
+citysize = 1096
+add_core = CEY
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = chinese
+
+100.1.1 = { citysize = 1193 }
+200.1.1 = { citysize = 1386 }
+300.1.1 = { citysize = 1580 }
+400.1.1 = { citysize = 1773 }
+436.1.1 = { owner = PAN controller = PAN add_core = PAN }
+463.1.1 = { owner = CEY controller = CEY remove_core = PAN }
+500.1.1 = { citysize = 1967 }
+600.1.1 = { citysize = 2160 }
+700.1.1 = { citysize = 2353 }
+800.1.1 = { citysize = 2547 }
+900.1.1 = { citysize = 2740 }
+910.1.1 = { owner = CLS controller = CLS add_core = CLS }
+1000.1.1 = { citysize = 2934 }
+1070.1.1 = { owner = CEY controller = CEY remove_core = CLS }
+1100.1.1 = { citysize = 3127 }
+1200.1.1 = { citysize = 3321 }
+1215.1.1 = { owner = JFN controller = JFN add_core = JFN remove_core = CEY religion = hinduism }
+1258.1.1 = { owner = PAN controller = PAN add_core = PAN }
+1300.1.1 = { citysize = 3514 }
+1323.1.1 = { owner = JFN controller = JFN remove_core = PAN }
+1399.1.1 = { citysize = 3708 }
+
+1411.1.1 = {
+	owner = CEY
+	controller = CEY
+}	#Sangamas expelled by Zheng He
+1432.1.1 = {
+	owner = JFN
+	controller = JFN
+}	#Reconquest by Vijayanagar
+1505.1.1 = { discovered_by = POR } # Francisco de Almeida
+1619.1.1 = {
+	owner = POR
+	controller = POR
+	add_core = POR
+}
+1660.1.1 = {
+	owner = NED
+	controller = NED
+	add_core = NED
+	remove_core = POR
+} # Dutch control
+1799.8.1  = { controller = GBR } # Occupied by England
+1802.3.25 = {
+	owner = GBR
+	add_core = GBR
+	remove_core = NED
+} # Treaty of Amiens
+
+1850.1.1  = { citysize = 15000 }
+1900.1.1  = { citysize = 30000 }
+1948.2.4  = { owner = CEY controller = CEY remove_core = GBR }
+1950.1.1  = { citysize = 60000 }
+1972.5.22 = { owner = SRL controller = SRL add_core = SRL remove_core = CEY }
+2010.1.1  = { citysize = 90416 }
+
+
+

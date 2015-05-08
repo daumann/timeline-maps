@@ -44,8 +44,12 @@ L.Util.escapeHTML = function (s) {
     return s.replace(/</gm, '&lt;');
 };
 L.Util.toHTML = function (r) {
+    console.debug("include here?", r);
+    
     var ii;
 
+    r.replace(/\r\n\r\n/g, '');
+    
     // detect newline format
     var newline = r.indexOf('\r\n') != -1 ? '\r\n' : r.indexOf('\n') != -1 ? '\n' : '';
 
@@ -67,6 +71,8 @@ L.Util.toHTML = function (r) {
     r = r.replace(/^\*\* (.*)/gm, '<ul><ul><li>$1</li></ul></ul>');
     r = r.replace(/^\* (.*)/gm, '<ul><li>$1</li></ul>');
     for (ii = 0; ii < 3; ii++) r = r.replace(new RegExp('</ul>' + newline + '<ul>', 'g'), newline);
+    
+
 
     // links
     r = r.replace(/(\[\[http)/g, '[[h_t_t_p');  // Escape for avoiding clash between [[http://xxx]] and http://xxx
@@ -81,6 +87,24 @@ L.Util.toHTML = function (r) {
     r = r.replace(/{{{(h_t_t_ps?[^ |]*)}}}/g, '<iframe frameBorder="0" src="$1" width="100%" height="300px"></iframe>');
     r = r.replace(/{{{(h_t_t_ps?[^ |]*)\|(\d*?)}}}/g, '<iframe frameBorder="0" src="$1" width="100%" height="$2px"></iframe>');
 
+    //var wikiURLtmp = $1;
+    //wikiURLtmp = "http"+ data.wikiUrl.substr(7);
+
+    r = r.replace("WikiURL", "http");
+    
+    if(r.indexOf("WikiYear") != -1){
+        r = r.replace("WikiYear", "http");
+
+        // chronas year iframes
+        r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" class="wikiYear" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
+    }
+    else{
+    // chronas iframes
+    r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
+    }
+
+    
+
     // images
     r = r.replace(/{{([^\]|]*?)}}/g, '<img src="$1">');
     r = r.replace(/{{([^|]*?)\|(\d*?)}}/g, '<img src="$1" width="$2">');
@@ -91,6 +115,15 @@ L.Util.toHTML = function (r) {
     // Preserver line breaks
     if (newline) r = r.replace(new RegExp(newline + '(?=[^]+)', 'g'), '<br>' + newline);
 
+    console.debug("include here?", r);
+    /*
+        Include here
+        
+     <iframe src="http://en.m.wikipedia.org/wiki/Timurid_dynasty" height="700px" width="100%">
+     &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;
+     </iframe>
+    
+     */
     return r;
 };
 L.Util.isObject = function (what) {
@@ -107,7 +140,11 @@ L.Util.latLngsForGeoJSON = function (latlngs) {
     return coords;
 };
 L.Util.CopyJSON = function (geojson) {
+    
+    console.debug("JSON.stringify(geojson)1",JSON.stringify(geojson));
+    
     return JSON.parse(JSON.stringify(geojson));
+    
 };
 L.Util.detectFileType = function (f) {
     var filename = f.name ? escape(f.name.toLowerCase()) : '';
@@ -130,6 +167,10 @@ L.Util.usableOption = function (options, option) {
 };
 
 L.Util.greedyTemplate = function (str, data, ignore) {
+    
+    if(data.wikiUrl && data.wikiUrl.substring(0,4) == "http"){
+        data.wikiUrl = "WikiURL"+ data.wikiUrl.substr(4) + "?printable=yes";
+    }
     // Don't throw error if some key is missing
     return str.replace(/\{ *([\w_\:]+) *\}/g, function (str, key) {
         var value = data[key];
@@ -291,7 +332,21 @@ L.Storage.Help = L.Class.extend({
         var label = L.DomUtil.create('span', '', closeLink);
         label.title = label.innerHTML = L._('Close');
         this.content = L.DomUtil.create('div', 'storage-help-content', this.box);
-        L.DomEvent.on(closeLink, 'click', this.hide, this);
+        
+        L.DomEvent.on(closeLink, 'click', function(){
+
+console.debug("inh!")
+            if ($("#storage-ui-container")[0].style.width == "100%"){
+                $("#storage-ui-container")[0].style.width = "50%";
+                $("#map")[0].style.display = "block";
+                $(".fullWidth")[0].innerHTML = "Full width";
+                $("iframe")[0].src =$("iframe")[0].src.replace("?printable=yes","");
+            }
+
+            this.hide()
+
+
+        }, this);
         L.DomEvent.addListener(this.parentContainer, 'keydown', this.onKeyDown, this);
     },
 
@@ -313,6 +368,9 @@ L.Storage.Help = L.Class.extend({
     },
 
     hide: function () {
+
+        console.debug("inHIDE");
+
         L.DomUtil.removeClass(document.body, 'storage-help-on');
     },
 

@@ -1,0 +1,63 @@
+newEntry293 - Smolensk.txt
+#293 - Smolensk
+
+culture = russian
+religion = slavic
+hre = no
+base_tax = 4
+trade_goods = unknown
+manpower = 5
+capital = "Smolensk"
+
+500.1.1 = { discovered_by = eastern }
+550.1.1 = { owner = KRI controller = KRI add_core = KRI citysize = 2000 trade_goods = grain }
+800.1.1 = { discovered_by = western }
+882.1.1 = { owner = KRU controller = KRU add_core = KRU remove_core = KRI fort1 = yes }
+1000.1.1 = { citysize = 3340 religion = orthodox }
+1054.2.20 = { owner = SMO controller = SMO add_core = SMO remove_core = KRU }
+1100.1.1 = { citysize = 4680 }
+1150.1.1 = { temple = yes } # Assumption cathedral, 1150
+1200.1.1 = { citysize = 6020 discovered_by = nomad_group }
+1300.1.1 = { citysize = 7360 }
+1395.1.1 = { owner = LIT controller = LIT } # Vytautas seizes Smolensk while Yury is away
+1399.1.1 = { citysize = 8700 }
+
+1395.1.1  = { owner = LIT controller = LIT } # Vytautas seizes Smolensk while Yury is away
+1399.1.1  = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Vytautas is defeated by the Golden Horde, rebel sentiment in Smolensk
+1401.1.1  = { revolt = {} owner = SMO controller = SMO } # Yury takes Smolensk back
+1404.1.1  = { owner = LIT controller = LIT add_core = LIT } # Vytautas strikes back once more
+1450.1.1   = { citysize = 10000 }
+1453.1.1   = { add_core = MOS }
+1460.1.1   = { marketplace = yes }
+1500.1.1   = { citysize = 11500 }
+1503.3.22  = { remove_core = MOS add_core = RUS }
+1514.1.1   = { controller = RUS } # Captured by Vasili III
+1522.1.1   = { owner = RUS }
+1550.1.1   = { citysize = 13225 }
+1569.7.4   = { add_core = PLC } # Polish-Lithuanian Commonwealth
+1597.1.1   = { fort2 = yes } # The city was heavily fortified
+1600.1.1   = { citysize = 9050 }
+1611.1.1   = { controller = PLC }
+1618.12.11 = { owner = PLC } # Truce of Deulino
+1650.1.1   = { citysize = 10408 } # Starvation and epidemics since 1610
+1654.9.23  = { owner = RUS controller = RUS } # Reqonquered
+1667.1.1   = { remove_core = LIT remove_core = PLC } # Treaty of Andrusovo
+1700.1.1   = { citysize = 11969 }
+1708.1.1   = { fort3 = yes } # Valued by the tsars as a key fortress
+1711.1.1   = { base_tax = 5 } # Governmental reforms and the absolutism
+1750.1.1   = { citysize = 10200 }
+1800.1.1   = { citysize = 12000 }
+1812.8.17  = { controller = FRA } # Battle of Smolensk
+1812.11.9  = { controller = RUS }
+
+1850.1.1   = { citysize = 40000 remove_core = SMO }
+1900.1.1   = { citysize = 70000 }
+1922.12.30 = { owner = SOV controller = SOV add_core = SOV }
+1941.7.16  = { controller = GER }
+1943.9.25  = { controller = SOV }
+1950.1.1   = { citysize = 300000 }
+1991.12.25 = { owner = RUS controller = RUS remove_core = SOV }
+2010.1.1   = { citysize = 326861 }
+
+
+

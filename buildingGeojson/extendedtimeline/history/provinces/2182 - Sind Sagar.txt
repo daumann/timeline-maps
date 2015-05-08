@@ -1,0 +1,112 @@
+newEntry2182 - Sind Sagar.txt
+#578 - Kohistan
+
+owner = IPA
+controller = IPA
+culture = panjabi
+religion = hinduism
+capital = "Karor"
+trade_goods = grain
+hre = no
+base_tax = 4
+manpower = 2
+citysize = 2237
+fort1 = yes
+add_core = IPA
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
+discovered_by = chinese
+
+76.1.1 = { owner = KUS controller = KUS add_core = KUS remove_core = IPA }
+100.1.1 = { citysize = 2475 }
+200.1.1 = { citysize = 2950 }
+300.1.1 = { citysize = 3425 }
+375.1.1 = { owner = HEP controller = HEP add_core = HEP remove_core = KUS }
+400.1.1 = { citysize = 3900 }
+500.1.1 = { citysize = 4375 }
+550.1.1 = { owner = SHH controller = SHH add_core = SHH remove_core = HEP }
+600.1.1 = { citysize = 4850 }
+700.1.1 = { citysize = 5325 }
+800.1.1 = { citysize = 5800 }
+870.1.1 = { owner = SAF controller = SAF add_core = SAF remove_core = SHH }
+900.1.1 = { citysize = 6275 owner = SAM controller = SAM add_core = SAM remove_core = SAF }
+1000.1.1 = { citysize = 6750 }
+1002.1.1 = { owner = GHZ controller = GHZ add_core = GHZ remove_core = SAM }
+1100.1.1 = { citysize = 7225 }
+1175.1.1 = { owner = GHU controller = GHU add_core = GHU remove_core = GHZ }
+1200.1.1 = { marketplace = yes }
+1215.1.1 = { owner = DLH controller = DLH add_core = DLH add_core = PUN remove_core = GHU }
+1300.1.1 = { citysize = 8175 }
+1398.1.1 = { owner = MUL controller = MUL add_core = MUL remove_core = DLH }
+1399.1.1 = { citysize = 8650 }
+
+1414.1.1 = {
+	owner = DLH
+	controller = DLH
+}
+1437.1.1 = {
+	owner = MUL
+	controller = MUL
+} # Captured by Langas and separated from Sultanate
+1450.1.1 = { citysize = 7000 }
+1500.1.1 = { citysize = 9000 }
+1526.1.1 = {
+	owner = SND
+	controller = SND
+} # Conquered by Arguns
+1527.1.1 = {
+	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Turned over to Babur
+1544.1.1 = {
+	owner = BNG
+	controller = BNG
+	add_core = BNG
+} # Sur expansion
+1550.1.1 = { citysize = 14000 }
+1553.1.1 = {
+	owner = MUL
+	controller = MUL
+	capital = "Dera Ismail Khan"
+	remove_core = BNG
+	citysize = 18000
+} # Independent
+1557.7.1 = {
+	controller = MUG
+	owner = MUG
+	add_core = MUG
+} #Bairam Khan occupies Multan
+1600.1.1 = { citysize = 25000 discovered_by = TUR }
+1650.1.1 = { citysize = 28000 }
+1690.1.1  = { discovered_by = ENG }
+1700.1.1 = { citysize = 24000 }
+1707.5.12 = { discovered_by = GBR }
+1738.1.1 = { controller = PER } # Captured by Persia, Nadir Shah
+1739.5.1 = {
+	owner = PER
+	add_core = PER
+} # Captured by Persia, Nadir Shah
+1747.10.1 = {
+	owner = AFG
+	controller = AFG
+	add_core = AFG
+	remove_core = MUG
+} # Ahmad Shah established the Durrani empire
+1750.1.1 = { citysize = 21000 }
+1800.1.1 = { citysize = 16000 }
+
+1834.1.1   = { owner = PUN controller = PUN add_core = PUN remove_core = AFG }
+1849.1.1   = { owner = GBR controller = GBR add_core = GBR }
+1850.1.1   = { citysize = 30000 }
+1900.1.1   = { citysize = 60000 }
+1930.12.29 = { add_core = PAK remove_core = PUN }
+1947.8.14  = { owner = PAK controller = PAK remove_core = GBR }
+1951.1.1   = { citysize = 95940 }
+1981.1.1   = { citysize = 340286 }
+2011.1.1   = { citysize = 1151868 }
+
+
+

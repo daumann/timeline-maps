@@ -1,0 +1,83 @@
+newEntry340 - Constantine.txt
+#340 - Constantine
+
+owner = ROM
+controller = ROM 
+culture = berber
+religion = african
+capital = "Colonia Sittlanorum"
+trade_goods = grain
+hre = no
+base_tax = 3
+manpower = 2
+citysize = 1571
+fort1 = yes
+add_core = ROM
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2142 }
+200.1.1 = { citysize = 3285 }
+300.1.1 = { citysize = 4428 religion = chalcedonism }
+313.1.1 = { capital = "Constantine" }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 5571 }
+432.1.1 = { owner = VAN controller = VAN add_core = VAN remove_core = ROW culture = vandal religion = arianism }
+500.1.1 = { citysize = 6714 }
+534.1.1 = { owner = BYZ controller = BYZ add_core = BYZ remove_core = VAN }
+550.1.1 = { religion = chalcedonism culture = berber }
+600.1.1 = { citysize = 7857 }
+697.1.1 = { owner = UMA controller = UMA add_core = UMA remove_core = BYZ }
+700.1.1 = { citysize = 9000 }
+740.1.1 = { religion = sunni culture = algerian }
+750.1.1 = { owner = ABB controller = ABB add_core = ABB remove_core = UMA }
+800.1.1 = { citysize = 10142 owner = TUN controller = TUN add_core = TUN remove_core = ABB }
+900.1.1 = { citysize = 11285 }
+909.1.1 = { owner = FAT controller = FAT add_core = FAT remove_core = TUN }
+1000.1.1 = { citysize = 12428 }
+1018.1.1 = { owner = KBA controller = KBA add_core = KBA remove_core = FAT }
+1100.1.1 = { citysize = 13571 }
+1152.1.1 = { owner = AMH controller = AMH add_core = AMH remove_core = KBA }
+1200.1.1 = { citysize = 14714 }
+1229.1.1 = { owner = TUN controller = TUN add_core = TUN remove_core = AMH }
+1300.1.1 = { citysize = 15857 }
+1399.1.1 = { citysize = 17000 }
+
+1450.1.1 = { citysize = 19600 }
+1500.1.1 = { citysize = 20110 }
+1521.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+}
+1550.1.1 = { citysize = 22648 }
+1600.1.1 = { citysize = 24657 }
+1650.1.1 = { citysize = 26341 marketplace = yes }
+1700.1.1 = { citysize = 28514 }
+1750.1.1 = { citysize = 30177 tax_assessor = yes }
+1800.1.1 = { citysize = 33210 }
+
+1830.7.5   = {  owner = FRA 
+		controller = FRA 
+		add_core = FRA 
+		add_core = AGR
+		remove_core = ALG
+	     } # Conquered by France
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 120000 }
+1940.6.14  = { owner = FRV controller = FRV add_core = FRV } # Vichy France
+1942.11.16 = { owner = FR2 controller = FR2 remove_core = FRV } # Under Free French control after Operation Torch
+1950.1.1   = { citysize = 300000 }
+1962.7.3   = { owner = AGR controller = AGR remove_core = FR2 }
+2008.1.1   = { citysize = 448374 }
+
+
+

@@ -1,0 +1,76 @@
+newEntry1821 - Nanjing.txt
+#1821 - Nanjing
+
+owner = HND
+controller = HND
+culture = chihan
+religion = confucianism
+capital = "Nanjing"
+trade_goods = silk
+hre = no
+base_tax = 15
+manpower = 3
+citysize = 27500
+add_core = HND
+add_core = WUU
+fort1 = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+100.1.1 = { citysize = 45000 }
+200.1.1 = { citysize = 80000 }
+220.1.1 = { owner = WUU controller = WUU add_core = WUU remove_core = HND }
+280.1.1 = { owner = JIN controller = JIN add_core = JIN remove_core = WUU }
+300.1.1 = { citysize = 115000 }
+400.1.1 = { citysize = 150000 }
+420.1.1 = { owner = LSO controller = LSO add_core = LSO remove_core = JIN }
+479.1.1 = { owner = QIC controller = QIC add_core = QIC remove_core = LSO }
+500.1.1 = { citysize = 185000 }
+502.1.1 = { owner = LNG controller = LNG add_core = LNG remove_core = QIC }
+557.1.1 = { owner = CEN controller = CEN add_core = CEN remove_core = LNG }
+589.3.4 = { owner = SUI controller = SUI add_core = SUI remove_core = CEN }
+600.1.1 = { citysize = 220000 }
+618.6.18 = { owner = TNG controller = TNG add_core = TNG remove_core = SUI }
+700.1.1 = { citysize = 255000 }
+800.1.1 = { citysize = 290000 }
+900.1.1 = { citysize = 325000 }
+907.6.1 = { owner = WUU controller = WUU add_core = WUU remove_core = TNG }
+937.1.1 = { owner = TNG controller = TNG add_core = TNG remove_core = MNN }
+975.1.1 = { owner = SNG controller = SNG add_core = SNG remove_core = TNG }
+1000.1.1 = { citysize = 360000 }
+1100.1.1 = { citysize = 395000 }
+1200.1.1 = { citysize = 430000 }
+1279.3.19 = { owner = YUA controller = YUA add_core = YUA add_core = CSH remove_core = SNG }
+1300.1.1 = { citysize = 465000 }
+1368.1.1 = { owner = KHA controller = KHA add_core = KHA remove_core = YUA fort2 = yes }
+1382.1.1 = { owner = MNG controller = MNG add_core = MNG remove_core = KHA }
+1399.1.1 = { citysize = 500000 }
+
+1450.1.1 = { citysize = 565000 }
+1500.1.1 = { citysize = 595000 }
+1505.1.1 = { marketplace = yes }
+1550.1.1 = { citysize = 625000 }
+1580.1.1 = { fine_arts_academy = yes }
+1600.1.1 = { citysize = 680000 }
+1645.6.16 = { controller = QNG }
+1650.1.1 = { citysize = 705000 }
+1661.6.1 = {
+	owner = QNG
+	add_core = QNG
+} # The Qing Dynasty
+1683.1.1 = { remove_core = MNG } # The government in Taiwan surrendered
+1700.1.1 = { citysize = 720000 }
+1740.1.1 = { tax_assessor = yes }
+1750.1.1 = { citysize = 780000 }
+1800.1.1 = { citysize = 830000 }
+
+1850.1.1   = { citysize = 900000 }
+1900.1.1   = { citysize = 1500000 }
+1912.2.12  = { owner = CHN controller = CHN add_core = CHN remove_core = QNG remove_core = CSH }
+1937.11.26 = { controller = JAP }
+1945.8.15  = { controller = CHN }
+#1953.1.1   = { citysize = 4000000 }
+#2010.1.1   = { citysize = 8109100 }
+
+
+

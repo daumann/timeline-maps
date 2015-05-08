@@ -1,0 +1,7 @@
+
+oil = {
+	color = { 0 0 0 }
+	modifier = {
+		naval_maintenance_modifier = -0.20
+	}
+}

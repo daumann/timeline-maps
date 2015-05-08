@@ -1,0 +1,102 @@
+newEntry184 - Orleanais.txt
+# 184 Orléannais - Principal cities: Orléans
+
+owner = ROM
+controller = ROM
+capital = "Cenabum"
+citysize = 1500
+culture = gallian
+religion = druidism
+hre = no
+base_tax = 8
+trade_goods = grain
+manpower = 7
+add_core = ROM
+#university = yes # L'Université d'Orléans
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2000 }
+200.1.1 = { citysize = 3000 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB }
+268.1.1 = { controller = ROM remove_core = GLL revolt = {} }
+272.1.1 = { capital = "Aureliana Civitas" fort1 = yes }
+300.1.1 = { citysize = 4000 }
+360.1.1 = { religion = chalcedonism }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 5000 }
+461.11.1 = { owner = SOI controller = SOI add_core = SOI }
+480.6.1 = { remove_core = ROW }
+486.6.1 = { owner = FRK controller = FRK add_core = FRK remove_core = SOI capital = "Orléans" culture = cosmopolitan_french }
+500.1.1 = { citysize = 6000 }
+600.1.1 = { citysize = 7000 }
+700.1.1 = { citysize = 8000 }
+800.1.1 = { citysize = 9000 }
+840.6.21 = { owner = FRW controller = FRW add_core = FRW remove_core = FRK }
+867.1.1 = { religion = catholic }
+900.1.1 = { citysize = 10000 }
+987.7.3 = { owner = FRA controller = FRA add_core = FRA remove_core = FRW }
+1000.1.1 = { citysize = 11000 }
+1100.1.1 = { citysize = 12000 marketplace = yes }
+1193.1.1 = { temple = yes } # La Notre Dame de Chartres
+1200.1.1 = { citysize = 13000 }
+1300.1.1 = { citysize = 14000 }
+1344.1.1 = { owner = ORL controller = ORL add_core = ORL }
+1399.1.1 = { citysize = 15500 }
+
+1450.1.1   = { citysize = 17000 }
+1500.1.1   = { citysize = 19000 }
+1515.1.1   = { fort2 = yes }
+1520.1.1   = { fine_arts_academy = yes }
+1550.1.1   = { citysize = 21000 constable = yes }
+1560.1.1   = { religion = reformed }
+1562.3.1   = { unrest = 5 }
+1562.3.20  = { revolt = { type = heretic_rebels size = 2 } controller = REB } # Huguenot rebels garrison Orléans & Dreux
+1563.3.19  = { revolt = {} controller = ORL unrest = 3 } # Temporary truce negotiated after the assassination of de Guise
+1565.1.1   = { unrest = 8 } # France is restless once again as ultra-catholic intentions become clear
+1568.9.1   = { unrest = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks
+1570.8.8   = { unrest = 10 } # Edict of Saint-Germain: temporary pacification
+1573.9.1   = { unrest = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
+1574.5.1   = { unrest = 7 } # Charles IX dies, situation cools a bit	
+1574.5.3   = { owner = FRA controller = FRA }
+1580.1.1   = { regimental_camp = yes }
+1584.1.1   = { unrest = 12 } # Situation heats up again
+1588.12.1  = { unrest = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1589.1.1   = { base_tax = 9 } # At the Walls of Paris: French Wars of Religion
+#1590.1.1   = { customs_house = yes } # Henri IV's quest to eliminate corruption and establish state control
+1594.1.1   = { unrest = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1598.4.13  = { unrest = 3 } # Edict of Nantes, alot more freedom to the protestants
+1598.5.2   = { unrest = 0 } # Peace of Vervins, formal end to the Wars of Religion
+1600.1.1   = { citysize = 24000 courthouse = yes }
+1621.1.1   = { base_tax = 10 } # Richelieu
+1630.1.1   = { fort3 = yes }
+1650.1.1   = { citysize = 27000 }
+1650.1.14  = { unrest = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1   = { unrest = 4 } # An unstable peace is concluded
+1651.12.1  = { unrest = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.7.2   = { unrest = 0 revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Condé takes Orléannais
+1652.10.21 = { revolt = {} controller = FRA } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1670.1.1   = { tax_assessor = yes }
+1685.1.1   = { fort4 = yes }
+1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
+1686.1.17  = { religion = catholic unrest = 0 } # Dragonnard campaign succesful: region reverts back to catholicism
+1700.1.1   = { citysize = 30000 }
+1750.1.1   = { citysize = 37000 workshop = yes }
+
+1870.9.4   = {  owner = FR2
+		controller = FR2
+		add_core = FR2
+		remove_core = FRA
+	     } # Republic proclaimed
+1900.1.1   = { citysize = 80000 }
+1940.6.14  = { owner = GER controller = GER } # France surrendered to Nazi Garmany
+1944.8.25  = { owner = FR2 controller = FR2 } # France liberated by allied forces
+1950.1.1   = { citysize = 90000 }
+2009.1.1   = { citysize = 116490 }
+
+
+

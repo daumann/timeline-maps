@@ -1,0 +1,112 @@
+newEntry95 - Breda.txt
+# 95 Breda - Principal cities: 's Hertogenbosch & Breda
+
+owner = ROM
+controller = ROM
+capital = "Noviomagus"
+citysize = 1800
+culture = dutch
+religion = germanic
+hre = no
+base_tax = 7
+trade_goods = cloth
+manpower = 4
+add_core = ROM
+discovered_by = eastern
+discovered_by = roman_group
+discovered_by = western
+discovered_by = barbarian
+discovered_by = muslim
+discovered_by = ottoman
+
+100.1.1 = { citysize = 2000 }
+200.1.1 = { citysize = 3000 }
+260.1.1 = { add_core = GLL revolt = { type = nationalist_rebels size = 1 } controller = REB culture = gallian }
+274.1.1 = { controller = ROM remove_core = GLL revolt = {} culture = dutch }
+300.1.1 = { citysize = 4000 }
+395.1.17 = { controller = ROW owner = ROW add_core = ROW remove_core = ROM } # Final division of the empire
+400.1.1 = { citysize = 5000 religion = chalcedonism }
+420.1.1 = { owner = FRK controller = FRK add_core = FRK remove_core = ROW capital = "'s Hertogenbosch" }
+480.6.1 = { remove_core = ROW }
+500.1.1 = { citysize = 6000 }
+600.1.1 = { citysize = 7000 }
+700.1.1 = { citysize = 8000 }
+800.1.1 = { citysize = 9000 }
+840.6.21 = { owner = FRM controller = FRM add_core = FRM remove_core = FRK }
+855.9.30 = { owner = LOT controller = LOT add_core = LOT remove_core = FRM }
+867.1.1 = { religion = catholic }
+870.8.8 = { owner = FRW controller = FRW add_core = FRW }
+880.1.1 = { owner = FRE controller = FRE add_core = FRE remove_core = FRW }
+900.1.1 = { citysize = 10000 }
+911.11.10 = { owner = LOT controller = LOT remove_core = FRE }
+962.2.2 = { hre = yes }
+1000.1.1 = { citysize = 11000 }
+1100.1.1 = { citysize = 12000 }
+1183.1.1 = { owner = BRB controller = BRB add_core = BRB remove_core = LOT }
+1200.1.1 = { citysize = 13000 }
+1252.1.1 = { fort1 = yes }
+1300.1.1 = { citysize = 14500 }
+1399.1.1 = { citysize = 16000 }
+
+1430.8.14  = { owner = BUR controller = BUR add_core = BUR } # Philip dies without an heir
+1450.1.1   = { citysize = 18000 }
+1477.1.5   = { owner = HAB controller = HAB add_core = HAB remove_core = BUR unrest = 4 } # Charles the Bold dies, Lowlands to Austria
+1492.7.12  = { unrest = 0 } # Peace of Cadzand, peace returns
+1500.1.1   = { citysize = 26000 }
+1519.1.12  = { owner = SPA controller = SPA add_core = SPA remove_core = HAB } # Charles V gets total control over his Burgundian inheritance
+1525.1.1   = { temple = yes } # Sint-John's Cathedral finished in 's Hertogenbosch
+1530.1.1   = { fort2 = yes }
+1540.1.1   = { courthouse = yes }
+1542.1.1   = { controller = GEL } # Gelre occupies Noord-Brabant in the Austro-Gelrian War
+1543.1.1   = { controller = SPA } # Charles V is back in control
+1550.1.1   = { citysize = 33000 }
+1559.5.12  = { unrest = 3 } # New bishoprics in the Lowlands create an outrage
+1565.1.1   = { unrest = 5 } # Letters of Segovia, Philip I orders the harsh persecution of Calvinists
+1566.4.5   = { unrest = 3 } # 'Eedverbond der Edelen', Margaretha of Parma promises leniency
+1567.9.10  = { unrest = 4 } # Counts of Egmont & Hoorne arrested
+1568.6.5   = { unrest = 6 } # Counts of Egmont & Hoorne beheaded
+1569.1.1   = { unrest = 12 } # The Duke of Alba reforms the taxation system ('tiende penning')
+1570.1.1   = { unrest = 20 marketplace = yes constable = yes } # The Duke of Alba reforms the penal system, 'Blood Council' (Bloedraad) established
+1572.1.1   = { religion = reformed }
+1577.2.12  = { unrest = 16 } # 'Perpetual Edict' (Eeuwig Edict) accepted by Don Juan
+1579.1.23  = { owner = NED controller = NED add_core = NED remove_core = SPA unrest = 0 } # Union of Utrecht - Noord-Brabant joins
+1581.7.2   = { controller = SPA unrest = 12 } # Alessandro Farnese takes Breda
+1590.3.4   = { controller = NED unrest = 0 } # Breda is retaken after a succesful diversion
+1595.1.1   = { regimental_camp = yes } # Later on: Generality Lands, military important
+1600.1.1   = { fort3 = yes citysize = 30000 }
+1616.1.1   = { textile = yes } # Vereenigte Westindische Compagnie
+1620.1.1   = { workshop = yes }
+1625.4.3   = { controller = SPA unrest = 15 } # After the 12-year armistice, the fight is resume: Spinola takes Breda 
+1629.1.1   = { controller = NED unrest = 0 } # Frederik Hendrik captures 's Hertogenbosch
+1648.10.24 = { hre = no } # The Peace of Westphalia
+1650.1.1   = { capital = "Breda" citysize = 33000 }
+1672.5.15  = { controller = FRA } # France blitzes through the Lowlands in the Franco-Dutch War
+1678.8.10  = { controller = NED } # Peace of Nijmegen (Netherlands-France)
+1681.1.1   = { base_tax = 10 } # Protestants expelled from France
+1700.1.1   = { citysize = 39000 }
+#1710.1.1   = { customs_house = yes }
+1715.1.1   = { fort4 = yes }
+1747.9.18  = { controller = FRA } # French troops storm and take Bergen-op-Zoom
+1748.10.18 = { controller = NED } # Peace of Aachen
+1750.1.1   = { citysize = 33000 }
+1800.1.1   = { citysize = 39000 }
+1810.7.10  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+	     } # Annexed by France
+1813.11.30 = {	owner = NED
+		controller = NED
+		remove_core = FRA
+	     } # William returns to the Netherlands
+
+1850.1.1   = { citysize = 60000 }
+1900.1.1   = { citysize = 100000 remove_core = BRB }
+1940.5.14  = { controller = GER }
+1940.5.17  = { owner = GER } # Netherlands surrendered to Nazi Germany
+1944.10.29 = { controller = GBR }
+1945.5.5   = { owner = NED controller = NED }
+1950.1.1   = { citysize = 150000 }
+2010.12.31 = { citysize = 174544 }
+
+
+

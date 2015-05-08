@@ -1,0 +1,67 @@
+#374 - Leinster
+
+owner = MNS
+controller = MNS
+add_core = MNS
+citysize = 1000
+culture = irish
+religion = druidism
+hre = no
+base_tax = 4
+trade_goods = fish
+manpower = 2
+capital = "Waterford"
+discovered_by = western
+discovered_by = barbarian
+discovered_by = eastern
+discovered_by = roman_group
+
+400.1.1 = { owner = LEI controller = LEI add_core = LEI remove_core = MNS }
+600.1.1 = { citysize = 1200 religion = chalcedonism }
+800.1.1 = { citysize = 1400 fort1 = yes }
+867.1.1 = { religion = catholic }
+996.1.1 = { owner = MNS controller = MNS }
+998.1.1 = { owner = LEI controller = LEI }
+999.1.1 = { owner = MNS controller = MNS add_core = MNS }
+1000.1.1 = { citysize = 1600 }
+1002.1.1 = { owner = IRE controller = IRE add_core = IRE remove_core = MNS }
+1012.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB }
+1014.4.23 = { revolt = {} owner = LEI controller = LEI remove_core = IRE }
+1100.1.1 = { discovered_by = muslim discovered_by = ottoman }
+1200.1.1 = { citysize = 1800 }
+
+1450.1.1  = { citysize = 2000 }
+1600.1.1  = { citysize = 2500 }
+1632.1.1  = {	owner = ENG
+		controller = ENG
+	   	add_core = ENG
+	    } # Succession of the Protestant James, 1st Duke of Ormond
+1642.1.1  = { revolt = { type = nationalist_rebels size = 0 } controller = REB } # Estimated
+1642.6.7  = { revolt = {}
+		owner = IRE
+		controller = IRE
+		add_core = IRE
+	    } # Confederation of Kilkenny
+1650.3.28 = { controller = ENG } # Capture of Kilkenny
+1652.4.1  = { owner = ENG } # End of the Irish Confederates
+1655.1.1  = { fort2 = yes }
+1675.1.1  = { courthouse = yes } # Estimated
+1689.3.12 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # James II Lands in Ireland
+1690.8.1  = { revolt = {} controller = ENG } # Estimated
+1700.1.1  = { citysize = 5000 marketplace = yes } # Marketplace Estimated
+1707.5.12 = {	owner = GBR
+		controller = GBR
+		add_core = GBR
+	    	remove_core = ENG
+	    }
+1800.1.1  = { citysize = 20000 }
+
+1850.1.1   = { citysize = 24729 }
+1900.1.1   = { citysize = 30577 }
+1919.1.21  = { owner = IRE controller = IRE }
+1922.12.7  = { remove_core = GBR remove_core = LEI }
+1950.1.1   = { citysize = 37807 }
+2000.1.1   = { citysize = 46747 }
+
+
+
