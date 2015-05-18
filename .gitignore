@@ -1,6 +1,1 @@
-*.pyc
-*.egg-info
-umap/settings/local.py
-umap/settings/local/*
-docs/_build
-umap/remote_static
+buildingGeojson/provinceLayers/
