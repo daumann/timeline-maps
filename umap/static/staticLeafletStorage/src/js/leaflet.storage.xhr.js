@@ -88,7 +88,7 @@ L.Storage.Xhr = {
 
     // supports only JSON as response data type
     _json: function (verb, uri, options) {
-        console.debug("inside options: ", options)
+        console.debug("inside options: ",verb, uri, options)
         var args = arguments,
             self = this;
         var default_options = {
@@ -110,9 +110,10 @@ L.Storage.Xhr = {
         }
 
         var callback = function(responseText, response) {
-            console.debug("inside responseText, response: ", responseText,response);
+            console.debug("inside responseText, response: ", responseText.substr(0,300),response);
             var data;
             try {
+                
                 data = JSON.parse(responseText);
             }
             catch (err) {
@@ -140,7 +141,7 @@ L.Storage.Xhr = {
                 }
             }
         };
-        console.debug("ajax data: ", settings.data);
+        console.debug("ajax data: ", settings.headers,settings.data, settings.listener);
         this._ajax({            
             verb: verb,
             uri: uri,
@@ -152,6 +153,7 @@ L.Storage.Xhr = {
     },
 
     get: function(uri, options) {
+        console.debug("bevor get",uri,options)
         L.Storage.Xhr._json('GET', uri, options);
     },
 

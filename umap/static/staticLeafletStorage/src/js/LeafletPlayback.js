@@ -1,5 +1,5 @@
 var lastDate ="";
-
+var loadedLayers = [];
 
 L.Playback = L.Playback || {};
 
@@ -584,11 +584,19 @@ L.Playback.DateControl = L.Control.extend({
 
             if (lastDate != newDate){
                 
-                $("text").empty()
-                $("g").empty()
+                //TODO: text, g supposed to be empty _
+            //    $("text").empty()
+            //    $("g").empty()
                 currLabel = 0;
                 isNewDate = true;
                 console.log("year changed from",lastDate,"to",newDate);
+                
+                
+                if(loadedLayers.indexOf(newDate) == -1){
+                    staticLayerThis.createDataLayer({"displayOnLoad":false,"name":newDate.toString(),"id":newDate,"remoteData":{}})
+                    loadedLayers.push(newDate)
+                }
+                
                 if($("#year_"+lastDate).length != 0)
                     $("#year_"+lastDate).find(".layer-toggle")[0].click()
                 if($("#year_"+newDate).length != 0)

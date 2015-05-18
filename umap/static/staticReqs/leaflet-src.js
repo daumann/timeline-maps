@@ -21,7 +21,7 @@ var iterator = 0;
 var dontDrawLabels = false;
 var isNewDate = true;
 var newObject;
-
+/*
 function drawLabels(that) {
     console.debug("drawing Label? ", that, that._latlngs, this)
     
@@ -77,6 +77,9 @@ function drawLabels(that) {
     
     
 }
+
+*/
+
 (function (window, document, undefined) {
 var oldL = window.L,
     L = {};
@@ -3340,6 +3343,7 @@ L.ImageOverlay = L.Class.extend({
 	},
 
 	_initImage: function () {
+        console.debug("!! initImage")
 		this._image = L.DomUtil.create('img', 'leaflet-image-layer');
 
 		if (this._map.options.zoomAnimation && L.Browser.any3d) {
@@ -3661,6 +3665,7 @@ L.Marker = L.Class.extend({
 	},
 
 	_initIcon: function () {
+        console.debug("!! initIcon")
 		var options = this.options,
 		    map = this._map,
 		    animation = (map.options.zoomAnimation && map.options.markerZoomAnimation),
@@ -4715,7 +4720,7 @@ L.Browser.svg = !!(document.createElementNS && document.createElementNS(L.Path.S
 
     console.debug("creating svg", L.Browser.svg);
     
-    staticSVG =  L.Browser.svg;
+   // staticSVG =  L.Browser.svg;
  //   L.Browser.svg.appendChild(svgFilter);
     
 L.Path = L.Path.extend({
@@ -4768,10 +4773,10 @@ L.Path = L.Path.extend({
         
 	//	this._container = this._createElement('g'); //setAttribute("id",iterator);  //$("#areaPolys")[0];
       //  this._container.setAttribute('filter', 'url(#blur)');
-        console.debug("g created ",this, $("#areaPolys")[0])
+    //    console.debug("g created ",this, $("#areaPolys")[0])
    //     this._container.setAttribute('filter', iterator);     TODO   ---> typeof $("#areaPolys")[0] === "undefined"
         //iterator++;
-
+/*
         this._container = this._createElement('g');
         
         this._container.setAttribute('filter', 'url(#blur)');
@@ -4779,7 +4784,8 @@ L.Path = L.Path.extend({
 
         console.debug("g aftercreated ",this._container, $("#areaPolys")[0])
      //   this._container.setAttribute("id",iterator);
-        
+     */
+        /*
 		this._path = this._createElement('path');
 
 		if (this.options.className) {
@@ -4788,7 +4794,7 @@ L.Path = L.Path.extend({
        
         
         this._container.appendChild(this._path);
-
+*/
       //  $("#areaPolys")[0].appendChild(this._path);
         //TODO: get pointerevents back
 
@@ -4797,18 +4803,22 @@ L.Path = L.Path.extend({
 	},
 
 	_initStyle: function () {
-        
+        /*
         if (isCurved){
             currLabel++;
             this._path.setAttribute('id', 'label-'+currLabel);
         }
+    
+        
 		if (this.options.stroke) {
 			this._path.setAttribute('stroke-linejoin', 'round');
 			this._path.setAttribute('stroke-linecap', 'round');
 		}
+         */
 		if (this.options.fill) {
 			this._path.setAttribute('fill-rule', 'evenodd');
 		}
+		
 		if (this.options.pointerEvents) {
 			this._path.setAttribute('pointer-events', this.options.pointerEvents);
 		}
@@ -4862,25 +4872,24 @@ L.Path = L.Path.extend({
 
         console.debug("insideLoop:"+insideLoop);
         if(this._path.id == "" && !$("body").hasClass("storage-edit-enabled")){//!insideLoop !dontDrawLabels
-            drawLabels(this);
+            console.debug("is this the place where I call reset?")
+           // drawLabels(this);
         }
         else{
             console.debug("not drawing labels because edit is enabled.")
         }
 
 
-        console.debug("creating svg", L.Browser.svg);
+        console.debug("creating svgg", this, L.Browser.svg);
 		if (this.options.clickable) {
-
-            
-            
             
             if(isCurved){                
             ///    L.DomUtil.addClass(this._path, 'labels');
             }
 			else if (L.Browser.svg || !L.Browser.vml) {
+                
 				L.DomUtil.addClass(this._path, 'leaflet-clickable');
-
+console.debug("!23!")
                 
 
                 if  (!$(".datetimeValue").hasClass('leaflet-clickable')){
@@ -4951,11 +4960,13 @@ L.Path = L.Path.extend({
 
 L.Map.include({
 	_initPathRoot: function () {
+
 		if (!this._pathRoot) {
 			this._pathRoot = L.Path.prototype._createElement('svg');
-            
+       
             console.debug("init svg", this._pathRoot);
-            this._pathRoot.appendChild(svgFilter);
+            /** DEPRECATED
+             //       this._pathRoot.appendChild(svgFilter);
 
     //        var useElement = document.createElementNS("http://www.w3.org/2000/svg","use");
     //        useElement.setAttributeNS("http://www.w3.org/1999/xlink", 'href', '#labels');
@@ -4981,12 +4992,16 @@ L.Map.include({
 					'zoomend': this._endPathZoom
 				});
 			} else {
+                console.debug("!! initElse")
 				L.DomUtil.addClass(this._pathRoot, 'leaflet-zoom-hide');
 			}
 
 			this.on('moveend', this._updateSvgViewport);
 			this._updateSvgViewport();
+             */
+            
 		}
+
 	},
 
 	_animatePathZoom: function (e) {
@@ -9210,10 +9225,11 @@ L.Map.include(!L.DomUtil.TRANSITION ? {} : {
 		this._resetView(this._animateToCenter, this._animateToZoom, true, true);
 
 		if (L.Draggable) {
+            
 			L.Draggable._disabled = false;
             console.debug("Zoom finish to level " + map.getZoom());
 
-
+/*
             
             var currZoom = parseInt(map.getZoom());
 
@@ -9237,7 +9253,7 @@ L.Map.include(!L.DomUtil.TRANSITION ? {} : {
 
                     console.debug("font " + labelArray[k].getAttribute("font-size"));
                     
-                    */
+                    
                 }
 
                 beforeTime2 = new Date().getTime()
@@ -9263,7 +9279,7 @@ L.Map.include(!L.DomUtil.TRANSITION ? {} : {
             }
 
             oldZoom=currZoom;
-            
+            */
 		}
 	}
 });

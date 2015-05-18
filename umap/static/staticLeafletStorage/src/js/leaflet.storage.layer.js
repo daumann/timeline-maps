@@ -1,6 +1,9 @@
 var staticCoords;
 var currLabelSize = 0;
 var constSize = 0;
+var ultimateMarker;
+
+
 
 function getExtrema(listOfPoints){
 
@@ -102,10 +105,18 @@ L.S.Layer.Default = L.FeatureGroup.extend({
     includes: [L.S.Layer],
 
     initialize: function (datalayer) {
+        
         this.datalayer = datalayer;
         this.datalayer.visible = false;
         console.debug("XXXXXXXXX init datalayer",datalayer)
         L.FeatureGroup.prototype.initialize.call(this);
+        if(ultimateMarker === undefined){
+            ultimateMarker = new L.Storage.Marker(map, new L.LatLng(42.5,1.4833))
+            ultimateMarker.datalayer = datalayer;
+        }
+        
+      
+        
     }
 
 });
@@ -222,7 +233,8 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     initialize: function (map, data) {
-        console.debug("DataLayer initializing with ", map, data)
+        
+        console.debug("DataLayer initializing with ", map, JSON.stringify(data))
         this.map = map;
         this._index = Array();
         this._layers = {};
@@ -287,6 +299,7 @@ L.Storage.DataLayer = L.Class.extend({
                 }
             }, this);
         });
+        
     },
 
     resetLayer: function (force) {
@@ -333,11 +346,64 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     fetchData: function () {
+        var newYear = parseInt($(".datetimeValue")[0].innerHTML);
+        
+        
+        console.info(" *** fetching data for layer with this.storage_id",this);
         if (!this.storage_id) {
             return;
         }
+
+        var b_area = document.getElementById("areaChecked").checked;
+        var b_people = document.getElementById("peopleChecked").checked;
+        var b_city = document.getElementById("cityChecked").checked;
+        var b_events = document.getElementById("eventsChecked").checked;
+        
+        
+        console.info(this._dataUrl()," *** getting all datalayer dimensions for this year. \n\tArea:",b_area, "\n\tPeople:",b_people, "\n\tCities:",b_city, "\n\tEvents:",b_events)
+
+        
+        if (b_area){
+            //query then draw
+            console.debug("starting call")
+            
+            if (newYear<0)
+                tmpFix="-10"+(newYear*-1);
+            else
+                tmpFix="10"+(newYear);
+            this.map.get("/en/datalayer/"+tmpFix+"/", {
+                
+                callback: function (geojson, response) {
+                    console.debug("ending call")
+                    
+                    changeYear(newYear,geojson);
+                    
+/*
+                    ttt = DL50;
+                    activeYear = jQuery.extend({}, DL50);
+                    dl50 = jQuery.extend({}, DL50);
+                    dl500 = jQuery.extend({}, DL500);
+
+                    provinceCollection = jQuery.extend({}, tprovinceCollection);
+
+                    console.debug(provinceCollection);
+                    setupCollections();
+                    addTextFeat('country');
+                    addAreaFeat('country');
+                    */
+                    
+                    
+                    console.debug("area data load complete", geojson)
+                },
+                context: this
+            });
+            
+        }
+        
+        if (b_people){
         this.map.get(this._dataUrl(), {
             callback: function (geojson, response) {
+                console.debug("ending call2")
                 if (geojson._storage) {
                     this.setOptions(geojson._storage);
                 }
@@ -354,6 +420,9 @@ L.Storage.DataLayer = L.Class.extend({
             },
             context: this
         });
+            
+        }
+        
     },
 
     fromGeoJSON: function (geojson) {
@@ -494,7 +563,7 @@ L.Storage.DataLayer = L.Class.extend({
             this.fire('datachanged');
         }
 
-        console.debug("adding layer", feature)
+        console.debug("adding feature", feature)
     },
 
     removeLayer: function (feature) {
@@ -910,19 +979,24 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     show: function () {
+        console.log("*** showing layer which is already loaded?", this.isLoaded())
         if(!this.isLoaded()) {
+            console.log("*** fetching data")
             this.fetchData();
         }
+        console.log("*** adding layer to map: this.layer", this)
         this.map.addLayer(this.layer);
         this.fire('show');
     },
 
     hide: function () {
+        console.log("*** hiding (removing) layer")
         this.map.removeLayer(this.layer);
         this.fire('hide');
     },
 
     toggle: function () {
+        console.debug("*** inside clicked on layer button which is visible? ",this.isVisible(),this)
         if (!this.isVisible()) {
             this.show();
         }

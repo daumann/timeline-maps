@@ -1,4 +1,5 @@
 var staticX;
+var popUpTemplate;
 var chosenFeature = "initial";
 var containercontainer;
 var builderbuilder;
@@ -88,7 +89,7 @@ L.Storage.FeatureMixin = {
         }
         // DataLayer the marker belongs to
         
-      //  console.debug("initialize feature_form datalayer",this.datalayer, options.datalayer)
+        console.debug("initialize feature_form datalayer",this.datalayer, options.datalayer)
      //   console.debug(options.geojson)
         this.datalayer = options.datalayer || null;
         this.properties = {_storage_options: {}};
@@ -128,6 +129,7 @@ L.Storage.FeatureMixin = {
     },
 
     view: function(latlng) {
+        
         if (this.map.editEnabled) {
             return;
         }
@@ -139,7 +141,8 @@ L.Storage.FeatureMixin = {
             this.map.slideshow.current = this;
         }
         this.attachPopup();
-        this.openPopup(latlng || this.getCenter());
+     //   this.openPopup(latlng || this.getCenter());
+        
     },
 
     openPopup: function () {
@@ -329,6 +332,7 @@ L.Storage.FeatureMixin = {
 
     attachPopup: function () {
         var Class = this.getPopupClass();
+        popUpTemplate = this;
         this.bindPopup(new Class(this));
     },
 
@@ -569,7 +573,7 @@ L.Storage.Marker = L.Marker.extend({
             this.isDirty = true;
             this.edit(e);
         }, this);
-        this.on('click', this._onClick);
+            this.on('click', this._onClick);
         if (!this.isReadOnly()) {
             this.on('mouseover', this._enableDragging);
         }
@@ -578,6 +582,7 @@ L.Storage.Marker = L.Marker.extend({
     },
 
     _onClick: function(e){
+        console.debug("*** inside onclick with e",e)
         if(this.map.editEnabled) {
             this.edit(e);
         }

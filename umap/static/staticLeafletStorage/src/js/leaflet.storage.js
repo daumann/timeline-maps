@@ -374,6 +374,9 @@ L.Storage.Map.include({
     },
 
     initDatalayers: function () {
+        console.debug("*** iniializing all datalayers");
+        staticLayerThis = this;
+        /*
         var toload = 0, datalayer, seen = 0, self = this;
         var decrementToLoad = function () {
             toload--;
@@ -396,7 +399,8 @@ L.Storage.Map.include({
         if (seen === 0) { // no datalayer
             loaded();
         }
-    },
+        */
+    }, // this.createDataLayer({"displayOnLoad":false,"name":"2014","id":2014,"remoteData":{}})
 
     onceDatalayersLoaded: function (callback, context) {
         if (this.datalayersLoaded) {

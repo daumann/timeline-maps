@@ -1,53 +1,101 @@
 function  openfullWidth(){
     $('#chronasWiki').hide();
-    var tmpSource =  $("iframe")[0].src;
+    $('#notFoundNotice').hide();
+    console.debug("hiding notice 0")
     
-   // $("iframe")[0].src = "http://www.google.be";
+    var tmpSource =  $("iframe")[0].src; //.replace("?printable=yes","");
+
+
+   
+
     
-    console.debug("source now: ",$("iframe")[0].src )
+    console.debug("source now: ",$("iframe")[0].src );
     
  //   $('#chronasWiki').hide();
     if ($("#storage-ui-container")[0].style.width != "100%"){
         
         $("#storage-ui-container")[0].style.padding = "0 0px 23px 0px";
         $("iframe")[0].style.width = "100%";
-               
-        console.debug("source now: ",$("iframe")[0].src )
-        $("iframe")[0].src = tmpSource + "?printable=yes";
+
+        $("iframe")[0].src = tmpSource.replace("?printable=yes","");      
+        
+        console.debug("1source now: ",$("iframe")[0].src )
+        
         $("#storage-ui-container")[0].style.width = "100%";
         $("#map")[0].style.display = "none";
         $(".fullWidth")[0].innerHTML = "Half width";
-
+        
+        
         $('#chronasWiki').load(function(){
-            $('#chronasWiki').show();
-            
+            if($("iframe")[0].src != 'http://en.wikipedia.org/wiki/' && $("iframe")[0].src != 'http://en.wikipedia.org/wiki/?printable=yes'){
+                $('#chronasWiki').show(); 
+                $('#notFoundNotice').hide()
+                $('#loader1').hide()
+                console.debug($("iframe")[0].src,"hiding notice 1")
+            } else { 
+                $('#chronasWiki').hide(); 
+                $('#notFoundNotice').show()
+                $('#loader1').hide()
+                console.debug($("iframe")[0].src,"show notice 1")
+            }             
         });
         
-
         
-
     }
     else{
 
         $("#storage-ui-container")[0].style.padding = "0 20px 23px 20px";
         $("iframe")[0].style.width = "calc(100% - 20px)";
+       
+
+        if(tmpSource.indexOf("?printable=yes") == -1)
+            $("iframe")[0].src = tmpSource + "?printable=yes";
+        else
+            $("iframe")[0].src = tmpSource;
+
+        console.debug("2source now: ",$("iframe")[0].src )
         
-        $("iframe")[0].src = tmpSource.replace("?printable=yes","");
         $("#storage-ui-container")[0].style.width = "50%";
         $("#map")[0].style.display = "block";
         $(".fullWidth")[0].innerHTML = "Full width";
         $('#chronasWiki').load(function(){
-
-            $('#chronasWiki').show();
-            
+            if(tmpSource != 'http://en.wikipedia.org/wiki/' && tmpSource != 'http://en.wikipedia.org/wiki/?printable=yes'){  
+                $('#chronasWiki').show(); 
+                $('#notFoundNotice').hide()
+                $('#loader1').hide()
+                console.debug(tmpSource,"hide notice 2")
+            } else { 
+                $('#chronasWiki').hide(); 
+                $('#notFoundNotice').show()
+                $('#loader1').hide()
+                console.debug(tmpSource,"show notice 2")
+            }
         });
-        
-        
         
     }
     
 }
 
+function  openOverview(){
+    
+    var tmpSource =  $("iframe")[0].src;
+
+    if ($("#specific")[0].style.display == "block"){
+
+        $("#specific")[0].style.display = "none";
+        $("#overview")[0].style.display = "block";
+        $(".overview")[0].innerHTML = "Back";
+        $("#loader1")[0].style.display = "none";
+    }
+    else{
+
+        $("#specific")[0].style.display = "block";
+        $("#overview")[0].style.display = "none";
+        $("#loader1")[0].style.display = "block";
+        $(".overview")[0].innerHTML = "Overview";
+    }
+
+}
 
 L.S.Popup = L.Popup.extend({
 
@@ -314,6 +362,22 @@ L.S.Popup.SimplePanel = L.S.Popup.extend({
         else
             return null;
     },
+    allButton4: function () {
+        console.debug("L.S.Popup.SimplePanel allButton")
+
+        if($($(this)[0].container).find("iframe").length  != 0){
+            var button4 = L.DomUtil.create('li', '');
+            L.DomUtil.create('i', 'chronas-icon-1 storage-overview', button4);
+            var label4 = L.DomUtil.create('span', 'overview', button4);
+            label4.innerHTML = label4.title = L._('Overview');
+            //  label2.id = "fullWidth";
+
+            L.DomEvent.on(button4, 'click', openOverview);
+            return button4;
+        }
+        else
+            return null;
+    },
     
     allButton3: function () {
 
@@ -333,11 +397,27 @@ L.S.Popup.SimplePanel = L.S.Popup.extend({
         return null;
     },
 
+    allButton5: function () {
+
+        if($($(this)[0].container).find("iframe").length  != 0){
+            var button5 = L.DomUtil.create('li', '');
+            L.DomUtil.create('i', 'chronas-icon-2 storage-report', button5);
+            var label5 = L.DomUtil.create('a', 'report', button5)
+            label5.innerHTML = label5.title = L._('(!) Report');
+            label5.target = "_blank";
+
+            return button5;
+        }
+        else
+            return null;
+    },
+    
+
     update: function () {
         
         if(this.allButton3() != null )
         {
-        L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton(),this.allButton3(),this.allButton2()]});
+        L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton5(),this.allButton(),this.allButton3(),this.allButton4(),this.allButton2()]});
         }
         else
             L.S.fire('ui:start', {data: {html: this._content}, actions: [this.allButton()]});

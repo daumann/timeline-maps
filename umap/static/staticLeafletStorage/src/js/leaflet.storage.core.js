@@ -70,6 +70,7 @@ L.Util.toHTML = function (r) {
     // unordered lists
     r = r.replace(/^\*\* (.*)/gm, '<ul><ul><li>$1</li></ul></ul>');
     r = r.replace(/^\* (.*)/gm, '<ul><li>$1</li></ul>');
+
     for (ii = 0; ii < 3; ii++) r = r.replace(new RegExp('</ul>' + newline + '<ul>', 'g'), newline);
     
 
@@ -99,8 +100,11 @@ L.Util.toHTML = function (r) {
         r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" class="wikiYear" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
     }
     else{
+        console.debug("include here?", r);
     // chronas iframes
-    r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
+    r = r.replace(/(http?:[^ \n]*)/g, '<div id="overview" style="display: none; text-align: center;"> <h1> Overview</h1><br>-> <h2 id="regionSpec" style="font-style: italic; cursor: pointer; "></h2> <br></br> with the culture -> <span style="font-style: italic; cursor: pointer;" id="cultureSpec"></span><br> and the religion -> <span style="font-style: italic; cursor: pointer;" id="religionSpec"></span> ( -> <span style="font-style: italic; cursor: pointer;" id="mainRelSpec"></span> ) <br> has a total population of <span style="font-style: italic; cursor: pointer;" id="populationSpec"></span> <br> with the capital -> <span style="font-style: italic; cursor: pointer;" id="capitalSpec""></span> <br> and is ruled by -> <span style="font-style: italic; cursor: pointer;" id="rulerSpec"></span> <br> </div>' +
+        '' +
+        '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/> <div id="specific" style="display: block;"> <div style="display: none; text-align: center;" id="notFoundNotice">[no Wikipedia page linked for entry "<span id="missingEntry"></span>", contribute and click <strong>here</strong> to make a suggestion]</div> <iframe id="chronasWiki" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe></div>');
     }
 
     
@@ -334,8 +338,7 @@ L.Storage.Help = L.Class.extend({
         this.content = L.DomUtil.create('div', 'storage-help-content', this.box);
         
         L.DomEvent.on(closeLink, 'click', function(){
-
-console.debug("inh!")
+            
             if ($("#storage-ui-container")[0].style.width == "100%"){
                 $("#storage-ui-container")[0].style.width = "50%";
                 $("#map")[0].style.display = "block";

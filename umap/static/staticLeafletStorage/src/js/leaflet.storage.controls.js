@@ -125,6 +125,7 @@ L.Storage.MoreControls = L.Control.extend({
     },
 
     toggle: function () {
+        console.debug('inside this toggle',this)
         var pos = this.getPosition(),
             corner = this._map._controlCorners[pos],
             className = 'storage-more-controls';

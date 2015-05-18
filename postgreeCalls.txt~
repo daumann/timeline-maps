@@ -1,0 +1,8 @@
+ psql umap
+
+select * from leaflet_storage_datalayer;
+DELETE FROM leaflet_storage_datalayer;
+
+COPY leaflet_storage_datalayer FROM '/home/aumannd/Code/github/uMap/buildingGeojson/layers.csv' CSV;
+DELETE FROM leaflet_storage_datalayer WHERE id > 1800;
+DELETE FROM leaflet_storage_datalayer WHERE id < -1000;

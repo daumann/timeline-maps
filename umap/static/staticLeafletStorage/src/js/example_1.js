@@ -1,5 +1,5 @@
 $(function() {
-    // Get start/end times
+    // Get start end times
 
     // Set timeline options
     var timelineOptions = {
@@ -9,9 +9,6 @@ $(function() {
         "axisOnTop": true,
         "showCustomTime":true
     };
-
-    
-
 
     var startTime = new Date(); //demoTracks[0].properties.time[0]
     var endTime = new Date(demoTracks[0].properties.time[demoTracks[0].properties.time.length - 1]);

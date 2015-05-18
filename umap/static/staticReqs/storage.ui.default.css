@@ -69,12 +69,16 @@ select[multiple="multiple"] {
 .formbox select {
     width: calc(100% - 14px);
 }
+
+/*
 label {
     display: block;
     font-size: 14px;
     line-height: 21px;
     width: 100%;
 }
+*/
+
 input[type="checkbox"] + label, input[type="radio"] + label {
     display: inline;
     padding: 0 14px;

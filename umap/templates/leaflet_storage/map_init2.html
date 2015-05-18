@@ -1,8 +1,104 @@
 {% load leaflet_storage_tags %}
-    <div id="map" style="width: 100%;position: absolute;top: 0;/* bottom: 0; */left: 0;right: 0;bottom: 120px;"></div>
+    <div id="map" style="width: 100%;position: absolute;top: 0; /* bottom: 0; */left: 0;right: 0;bottom: 120px;">
+
+
+        <div id="featureForms" style="position: relative; margin-top: 200px; margin-left: 20px;  z-index: 20; width: 150px; ">
+            <form id="colorFeat" style="float: left">
+    
+                <input type="radio" name="Area" checked="checked" onclick="addAreaFeat('country')" value="A-Country" /><br>
+                <input type="radio" name="Area" onclick="addAreaFeat('culture')" value="A-Culture" /><br>
+                <input type="radio" name="Area" onclick="addAreaFeat('religion')" value="A-Religion" /><br>
+                <input type="radio" name="Area" onclick="addAreaFeat('religionGeneral')" value="A-Main Religions" /><br>
+                <input type="radio" name="Area" onclick="addAreaFeat('population')" value="A-Population" /><br>
+    
+            </form>
+    
+            <form>
+    
+                <input type="radio" name="Text" checked="checked" onclick="addTextFeat('country')" value="T-Country" > T-Country<br>
+                <input type="radio" name="Text" onclick="addTextFeat('culture')" value="T-Culture" > T-Culture<br>
+                <input type="radio" name="Text" onclick="addTextFeat('religion')" value="T-Religion" > T-Religion<br>
+                <input type="radio" name="Text" onclick="addTextFeat('religionGeneral')" value="T-Main Religions" > T-Main Religions<br>
+                <input type="radio" name="Text" onclick="addTextFeat('none')" value="none" >none<br>
+    
+            </form>
+<br>
+            <input id="areaChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Area" data-off="Area" >
+            <br>
+            <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People">
+            <br>
+            <input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="City" data-off="City">
+            <br>
+            <input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Events" data-off="Events">
+            
+        </div>
+        
+    </div>
     <div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
+
+
     <script type="text/javascript">
+        console.log("*** initializing map");
+
+        $(function() {
+            $('#areaChecked').bootstrapToggle('on')
+        })
+        
         var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
+
+        
+
+       map.on("viewreset", reset);
+console.debug("before")
+        svgProv = d3.select(map.getPanes().overlayPane).append("svg");
+        map.on("zoomstart", function () {
+            svgProv.attr("visibility", "hidden")
+        });
+        map.on("zoomend", function () {
+            svgProv.attr("visibility", "visible ")
+        });
+
+        g00 = svgProv.append("g").attr("class", "leaflet-zoom-hide");
+
+        g1 = g00.append("g");
+        g0 = g00.append("g");
+
+
+        gProvinceAreas = g1.append("g").attr("id", "provinceAreas");
+        gProvinceLabels = g1.append("g").attr("id", "provinceLabels");
+
+        gActiveCouLabels = g0.append("g").attr("id", "activeCouLabels");
+        gActiveCulLabels = g0.append("g").attr("id", "activeCulLabels");
+        gActiveRelLabels = g0.append("g").attr("id", "activeRelLabels");
+        gActiveRelGenLabels = g0.append("g").attr("id", "activeRelGenLabels");
+        transform2 = d3.geo.transform({point: projectPoint});
+        path = d3.geo.path().projection(transform2);
+
+        var ttt = [];
+        
+        
+        /*
+        d3.json("/static/svgOverlay/DL500x.geojson", function (DL500) {
+            
+                d3.json("/static/svgOverlay/DL50a.geojson", function (DL50) {
+
+                                    ttt = DL50;
+                                    activeYear = jQuery.extend({}, DL50);
+                                    dl50 = jQuery.extend({}, DL50);
+                                    dl500 = jQuery.extend({}, DL500);
+
+                                    provinceCollection = jQuery.extend({}, tprovinceCollection);
+
+                                    console.debug(provinceCollection);
+                                    setupCollections();
+                                    addTextFeat('country');
+                                    addAreaFeat('country');
+
+                });
+            });
+        });
+        
+        */
 
         $( "#timeline" ).mouseup(function(event) {
 
