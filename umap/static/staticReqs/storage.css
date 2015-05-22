@@ -504,7 +504,7 @@ a.storage-control-text {
 .storage-caption i,
 .leaflet-control-browse .storage-browse-datalayers i {
     background-repeat: no-repeat;
-    background-image: url("../../src/img/16.png");
+    background-image: url("/static/staticReqs/src/img/16.png");
     display: inline;
     padding: 0 10px;
     cursor: pointer;
@@ -752,7 +752,7 @@ a.storage-control-text {
 /* ********************************* */
 .storage-icon-16 {
     background-repeat: no-repeat;
-    background-image: url("../../src/img/16.png");
+    background-image: url("/static/staticReqs/src/img/16.png");
     display: inline;
     padding: 0 10px;
 }

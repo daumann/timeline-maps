@@ -58,60 +58,60 @@ then
 
 tmpName=`echo $oldNAME`
 
-	if [[ $iLappland == "tt"  && $tmpName == "Lappland"]]; then
+	if [[ $iLappland == "tt"  && $tmpName == "Lappland" ]]; then
 	tmpName=`echo Lappland East`
-	elif [[ $iLappland == "ff" && $tmpName == "Lappland"]]; then
+	elif [[ $iLappland == "ff" && $tmpName == "Lappland" ]]; then
 	tmpName=`echo Lappland West`
 
 
-	elif [[ $iAru == "tt" && $tmpName == "Aru"]]; then
+	elif [[ $iAru == "tt" && $tmpName == "Aru" ]]; then
 	tmpName=`echo Aru Moluccan`
 
-	elif [[ $iHannover == "tt" && $tmpName == "Hannove"]]; then
+	elif [[ $iHannover == "tt" && $tmpName == "Hannove" ]]; then
 	tmpName=`echo Hannover`
-	elif [[ $iHannover == "ff" ]&& $tmpName == "Hannove"]; then
+	elif [[ $iHannover == "ff" && $tmpName == "Hannove" ]]; then
 	tmpName=`echo Braunschweig`
 
-	elif [[ $iSalonica == "tt" && $tmpName == "Salonica"]]; then
+	elif [[ $iSalonica == "tt" && $tmpName == "Salonica" ]]; then
 	tmpName=`echo Salonica`
-	elif [[ $iSalonica == "ff" && $tmpName == "Salonica"]]; then
+	elif [[ $iSalonica == "ff" && $tmpName == "Salonica" ]]; then
 	tmpName=`echo Larissa`
 
-	elif [[ $iGrodno == "tt" && $tmpName == "Grodno"]]; then
+	elif [[ $iGrodno == "tt" && $tmpName == "Grodno" ]]; then
 	tmpName=`echo Grodno`
-	elif [[ $iGrodno == "ff" && $tmpName == "Grodno"]]; then
+	elif [[ $iGrodno == "ff" && $tmpName == "Grodno" ]]; then
 	tmpName=`echo Brest`
 
-	elif [[ $iAsyut == "ff" && $tmpName == "Asyut"]]; then
+	elif [[ $iAsyut == "ff" && $tmpName == "Asyut" ]]; then
 	tmpName=`echo Asyut South`
 
-	elif [ $iAlJawf == "ff" && $tmpName == "Al Jawf"]]; then
+	elif [ $iAlJawf == "ff" && $tmpName == "Al Jawf" ]]; then
 	tmpName=`echo Dumat`
 
-	elif [[ $iSaoTome == "tt" && $tmpName == "Sao Tome"]]; then
+	elif [[ $iSaoTome == "tt" && $tmpName == "Sao Tome" ]]; then
 	tmpName=`echo Sao Tome2`
 
-	elif [[ $iCuenca == "ff" && $tmpName == "Cuenca"]]; then
+	elif [[ $iCuenca == "ff" && $tmpName == "Cuenca" ]]; then
 	tmpName=`echo Santa Ana`
 
-	elif [[ $iJicarilla == "tt" && $tmpName == "Jicarilla"]]; then
+	elif [[ $iJicarilla == "tt" && $tmpName == "Jicarilla" ]]; then
 	tmpName=`echo Jicarilla West`
-	elif [[ $iJicarilla == "ff" && $tmpName == "Jicarilla"]]; then
+	elif [[ $iJicarilla == "ff" && $tmpName == "Jicarilla" ]]; then
 	tmpName=`echo Jicarilla East`
 
-	elif [[ $iLakota == "tt" && $tmpName == "Lakota"]]; then
+	elif [[ $iLakota == "tt" && $tmpName == "Lakota" ]]; then
 	tmpName=`echo Lakota West`
-	elif [[ $iLakota == "ff" && $tmpName == "Lakota"]]; then
+	elif [[ $iLakota == "ff" && $tmpName == "Lakota" ]]; then
 	tmpName=`echo Lakota East`
 
-	elif [[ $iAcre == "ff" && $tmpName == "Acre"]]; then
+	elif [[ $iAcre == "ff" && $tmpName == "Acre" ]]; then
 	tmpName=`echo Acre State`
 
-	elif [[ $iHuizhou == "tt" && $tmpName == "Huizhou"]]; then
+	elif [[ $iHuizhou == "tt" && $tmpName == "Huizhou" ]]; then
 	tmpName=`echo Huizhou Wu`
-	elif [[ $iBourbon == "tt" && $tmpName == "Bourbon"]]; then
+	elif [[ $iBourbon == "tt" && $tmpName == "Bourbon" ]]; then
 	tmpName=`echo Réunion`
-	elif [[ $iCaceres == "tt" && $tmpName == "Caceres"]]; then
+	elif [[ $iCaceres == "tt" && $tmpName == "Caceres" ]]; then
 	tmpName=`echo Mato Caceres`
 
 	fi

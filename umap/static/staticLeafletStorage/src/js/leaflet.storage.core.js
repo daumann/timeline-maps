@@ -97,14 +97,14 @@ L.Util.toHTML = function (r) {
         r = r.replace("WikiYear", "http");
 
         // chronas year iframes
-        r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" class="wikiYear" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
+        r = r.replace(/(http?:[^ \)\n]*)/g, '<img id="loader1" src="/static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/>  <iframe id="chronasWiki" class="wikiYear" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe>');
     }
     else{
         console.debug("include here?", r);
     // chronas iframes
     r = r.replace(/(http?:[^ \n]*)/g, '<div id="overview" style="display: none; text-align: center;"> <h1> Overview</h1><br>-> <h2 id="regionSpec" style="font-style: italic; cursor: pointer; "></h2> <br></br> with the culture -> <span style="font-style: italic; cursor: pointer;" id="cultureSpec"></span><br> and the religion -> <span style="font-style: italic; cursor: pointer;" id="religionSpec"></span> ( -> <span style="font-style: italic; cursor: pointer;" id="mainRelSpec"></span> ) <br> has a total population of <span style="font-style: italic; cursor: pointer;" id="populationSpec"></span> <br> with the capital -> <span style="font-style: italic; cursor: pointer;" id="capitalSpec""></span> <br> and is ruled by -> <span style="font-style: italic; cursor: pointer;" id="rulerSpec"></span> <br> </div>' +
         '' +
-        '<img id="loader1" src="../../static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/> <div id="specific" style="display: block;"> <div style="display: none; text-align: center;" id="notFoundNotice">[no Wikipedia page linked for entry "<span id="missingEntry"></span>", contribute and click <strong>here</strong> to make a suggestion]</div> <iframe id="chronasWiki" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe></div>');
+        '<img id="loader1" src="/static/storage/src/img/loading.gif" width="36" height="36" alt="loading gif"/> <div id="specific" style="display: block;"> <div style="display: none; text-align: center;" id="notFoundNotice">[no Wikipedia page linked for entry "<span id="missingEntry"></span>", contribute and click <strong>here</strong> to make a suggestion]</div> <iframe id="chronasWiki" src="$1" height="100%" style="position: absolute; width: calc(100% - 20px)" frameborder="0" >        &lt;p&gt;Your browser does not support iframes.&lt;/p&gt;    </iframe></div>');
     }
 
     
@@ -171,9 +171,11 @@ L.Util.usableOption = function (options, option) {
 };
 
 L.Util.greedyTemplate = function (str, data, ignore) {
-    
-    if(data.wikiUrl && data.wikiUrl.substring(0,4) == "http"){
+    console.debug("data.wikiUrl", data.wikiUrl);
+    if(data.wikiUrl && data.wikiUrl.substring(0,4) == "http" ){
         data.wikiUrl = "WikiURL"+ data.wikiUrl.substr(4) + "?printable=yes";
+    } else if ( data.wikiUrl.substring(0,7) != "WikiURL" ){
+        data.wikiUrl = "WikiURL://en.wikipedia.org/wiki/"+ data.wikiUrl + "?printable=yes";
     }
     // Don't throw error if some key is missing
     return str.replace(/\{ *([\w_\:]+) *\}/g, function (str, key) {

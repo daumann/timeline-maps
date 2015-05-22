@@ -25,7 +25,7 @@ var gActiveCulLabels;
 var gActiveRelLabels;
 var gActiveRelGenLabels;
 var provinceLoaded = false;
-
+var activeYear;
 var activeLoaded;
 var activeAreaFeature;
 var activeFeatureCollection;
@@ -65,9 +65,10 @@ var transform2;
  });
  */
 
-function changeYear(newYear,activeYear) {
+function changeYear(newYear,myActiveYear) {
 
     console.debug("*** changing area year", newYear,activeYear)
+    activeYear = jQuery.extend({}, myActiveYear);
     /*
     switch (newYear) {
         case 50:
@@ -97,11 +98,11 @@ function changeYear(newYear,activeYear) {
     relIsSetup = false;
     relGenIsSetup = false;
 
-    setupCollections(activeTextFeat,activeYear);
+    setupCollections(activeTextFeat);
 
-    addTextFeat(activeTextFeat,activeYear);
+    addTextFeat(activeTextFeat);
 
-    addAreaFeat(activeAreaFeat,activeYear);
+    addAreaFeat(activeAreaFeat);
 
     console.debug("finished loading")
 
@@ -138,7 +139,7 @@ function getExtrema2(listOfPoints) {
             if (maxY[1] < listOfPoints[j][i][1]) maxY = [listOfPoints[j][i][0], listOfPoints[j][i][1]];
         }
     }
-
+    
     return ([minX, minY, maxX, maxY]);
 }
 
@@ -162,7 +163,26 @@ function get_polygon_centroid(pts) {
 }
 
 function get_polygon_centroid2(fullpts) {
+/*
+    console.debug(pts)
+    pts=pts[0]
+ console.debug(pts)
 
+    var twicearea=0,
+        x=0, y=0,
+        nPts = pts.length,
+        p1, p2, f;
+    for ( var i=0, j=nPts-1 ; i<nPts ; j=i++ ) {
+        p1 = pts[i]; p2 = pts[j];
+        f = p1[0]*p2[1] - p2[0]*p1[1];
+        twicearea += f;
+        x += ( p1[0] + p2[0] ) * f;
+        y += ( p1[1] + p2[1] ) * f;
+    }
+    f = twicearea * 3;
+    return [ x/f, y/f ];
+    
+    */
     var pts = [];
     for (var j = 0; j < fullpts.length; j++) {
         for (var k = 0; k < fullpts[j].length; k++) {
@@ -185,6 +205,7 @@ function get_polygon_centroid2(fullpts) {
     }
     f = twicearea * 3;
     return [ x / f, y / f ];
+    
 }
 
 
@@ -193,7 +214,8 @@ function getCoordsForMultiPolyLine(myCoords) {
     var extremas = getExtrema2(myCoords);
     var point = get_polygon_centroid2(myCoords);
 
-    if (extremas[0][0] - extremas[2][0] < 1) {
+    // max x - min x > max y - min y
+    if (extremas[2][0] - extremas[0][0] > extremas[3][1] - extremas[1][1] ) {
 
         currLabelSize = Math.sqrt((  (extremas[0][1] - point[1]) * (extremas[0][1] - point[1])
             + (extremas[0][0] - point[0]) * (extremas[0][0] - point[0]) ))
@@ -201,13 +223,14 @@ function getCoordsForMultiPolyLine(myCoords) {
             Math.sqrt((extremas[2][1] - point[1]) * (extremas[2][1] - point[1])
                 + (extremas[2][0] - point[0]) * (extremas[2][0] - point[0]));
 
+        //    minX to  maxX
         return [
             [extremas[0][0], extremas[0][1]],
             [point[0], point[1]],
             [extremas[2][0], extremas[2][1]]
         ];  //angle != 0
     }
-
+    //    minX, minY, maxX, maxY
     else {
 
         currLabelSize = Math.sqrt((  (extremas[0][1] - point[1]) * (extremas[0][1] - point[1])
@@ -216,11 +239,19 @@ function getCoordsForMultiPolyLine(myCoords) {
             Math.sqrt((extremas[2][1] - point[1]) * (extremas[2][1] - point[1])
                 + (extremas[2][0] - point[0]) * (extremas[2][0] - point[0]));
 
-        return [
-            [extremas[2][0], extremas[2][1]],
-            [point[0], point[1]],
-            [extremas[0][0], extremas[0][1]]
-        ];
+        if (extremas[1][0] - extremas[3][0] < 1){
+            return [
+                [extremas[1][0], extremas[1][1]],
+                [point[0], point[1]],
+                [extremas[3][0], extremas[3][1]]
+            ];
+        } else{
+            return [
+                [extremas[3][0], extremas[3][1]],
+                [point[0], point[1]],
+                [extremas[1][0], extremas[1][1]]
+            ];
+        }
     }
 }
 
@@ -521,7 +552,7 @@ function fillCollectionId(myId, addTo, postfix) {
         })
 
 }
-function setupCollections(myActiveTextFeat,activeYear) {
+function setupCollections(myActiveTextFeat) {
 
     g0.selectAll("text").remove()
     g0.selectAll("path").remove()
@@ -554,12 +585,16 @@ function setupCollections(myActiveTextFeat,activeYear) {
 
 
         if (activeYear.hasOwnProperty(tmpProv)) {
+            try{
             tmpCountry = activeYear[tmpProv][0];
             tmpCul = activeYear[tmpProv][1];
             tmpRel = activeYear[tmpProv][2];
             tmpCap = activeYear[tmpProv][3];
             tmpPop = activeYear[tmpProv][4];
-
+            }
+            catch(e){
+                console.error("tmpProv",tmpProv,"not found in activeYear") 
+            }
             provinceCollection.features[i].properties.Cul = tmpCul;
             provinceCollection.features[i].properties.Rel = tmpRel;
             provinceCollection.features[i].properties.Pop = tmpPop;
@@ -716,26 +751,25 @@ function setupCollections(myActiveTextFeat,activeYear) {
                 var tmpTitle = "";
                 switch (getAreaChecked()){
                     case "A-Country":
-                        ultimateMarker.properties.wikiUrl = "http://en.wikipedia.org/wiki/" + rulerWiki
+                        ultimateMarker.properties.wikiUrl = rulerWiki
                         tmpTitle = "Region: "+ d.properties.nameCountry;
                         break;
                     case "A-Culture":
-                        ultimateMarker.properties.wikiUrl = "http://en.wikipedia.org/wiki/" + culPlus[d.properties.Cul][2]
+                        ultimateMarker.properties.wikiUrl =  culPlus[d.properties.Cul][2]
                         tmpTitle = "Culture: "+ d.properties.Cul;
                         break;
                     case "A-Religion":
-                        ultimateMarker.properties.wikiUrl = "http://en.wikipedia.org/wiki/" + relPlus[d.properties.Rel][2]
+                        ultimateMarker.properties.wikiUrl = relPlus[d.properties.Rel][2]
                         tmpTitle = "Religion: "+ relPlus[d.properties.Rel][0];
                         break;
                     case "A-Main Religions":
-                        ultimateMarker.properties.wikiUrl = "http://en.wikipedia.org/wiki/" + relGen[d.properties.Rel][2]
+                        ultimateMarker.properties.wikiUrl =  relGen[d.properties.Rel][2]
                         tmpTitle = "Main Religions: "+ relGen[d.properties.Rel][0];
                         break;
                     case "A-Population":
-                        ultimateMarker.properties.wikiUrl = "http://en.wikipedia.org/wiki/" + capitalURL[d.properties.Cap]
+                        ultimateMarker.properties.wikiUrl =  capitalURL[d.properties.Cap]
                         tmpTitle = "Capital: "+ d.properties.Cap;
-                        break;                      
-                    
+                        break;
                 }
 
                 
@@ -746,12 +780,12 @@ function setupCollections(myActiveTextFeat,activeYear) {
                 ultimateMarker.attachPopup()
 // 
                 
-                var tmpculture=  "http://en.wikipedia.org/wiki/" + escape(culPlus[d.properties.Cul][2])
-                var tmpreligion= "http://en.wikipedia.org/wiki/" + escape(relPlus[d.properties.Rel][2])
-                var tmpruler=    "http://en.wikipedia.org/wiki/" + escape(rulerWiki);
-                var tmpmainRel=  "http://en.wikipedia.org/wiki/" + escape(relGen[d.properties.Rel][2])
-                var tmpcapital=  "http://en.wikipedia.org/wiki/" + escape(capitalURL[d.properties.Cap]);
-                var tmpregion=   "http://en.wikipedia.org/wiki/" + escape(provURL[d.properties.name]);
+                var tmpculture=  escape(culPlus[d.properties.Cul][2])
+                var tmpreligion= escape(relPlus[d.properties.Rel][2])
+                var tmpruler=    escape(rulerWiki);
+                var tmpmainRel=  escape(relGen[d.properties.Rel][2])
+                var tmpcapital=  escape(capitalURL[d.properties.Cap]);
+                var tmpregion=   escape(provURL[d.properties.name]);
                 /*
                 if ($("#storage-ui-container")[0].style.width != "100%"){
                     tmpculture = tmpculture + "?printable=yes";
@@ -772,20 +806,22 @@ function setupCollections(myActiveTextFeat,activeYear) {
                 $("#populationSpec")[0].innerHTML = d.properties.Pop;
 
                 
-                var js = "$('#notFoundNotice').hide(); $('#chronasWiki').hide(); $('#overview')[0].style.display = 'none'; $('#loader1')[0].style.display = 'block';  $('#specific')[0].style.display = 'block';  var tmpURL='"
-                var jsRight = "'; $('.GoToWikipedia')[0].href=tmpURL;  if($('#storage-ui-container')[0].style.width != '100%'){tmpURL=tmpURL+'?printable=yes'} ; $('iframe')[0].src=tmpURL; $('#chronasWiki').load(function(){ $('#chronasWiki').show(); }); $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();  $('#notFoundNotice').hide() } else {$('#chronasWiki').hide(); $('#notFoundNotice').show()  }    }); $('.overview')[0].innerHTML = 'Overview';     ";
+                var js = "';$('#notFoundNotice').hide(); $('#chronasWiki').hide(); $('#overview')[0].style.display = 'none'; $('#loader1')[0].style.display = 'block';  $('#specific')[0].style.display = 'block';  var tmpURL='http://en.wikipedia.org/wiki/"
+                var jsRight = "'; $('.GoToWikipedia')[0].href=tmpURL;  if($('#storage-ui-container')[0].style.width != '100%'){tmpURL=tmpURL+'?printable=yes'} ; $('iframe')[0].src=tmpURL; $('#chronasWiki').load(function(){ $('#chronasWiki').show(); }); $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();  $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show()  }    }); $('.overview')[0].innerHTML = 'Overview';     ";
                 
-                $("#cultureSpec").click(new Function(js+tmpculture+jsRight))        
-                $("#religionSpec").click(new Function(js+tmpreligion+jsRight))
-                $("#rulerSpec").click(new Function(js+tmpruler+jsRight))
-                $("#mainRelSpec").click(new Function(js+tmpmainRel+jsRight))
-                $("#capitalSpec").click(new Function(js+tmpcapital+jsRight))
-                $("#regionSpec").click(new Function(js+tmpregion+jsRight))
+                $("#cultureSpec").click(new Function("tmpTitle = 'culture: "+$("#cultureSpec")[0].innerHTML+js+tmpculture+jsRight))
+                $("#religionSpec").click(new Function("tmpTitle = 'religion: "+$("#religionSpec")[0].innerHTML+js+tmpreligion+jsRight))
+                $("#rulerSpec").click(new Function("tmpTitle = 'ruler: "+$("#rulerSpec")[0].innerHTML+js+tmpruler+jsRight))
+                $("#mainRelSpec").click(new Function("tmpTitle = 'main religion: "+$("#mainRelSpec")[0].innerHTML+js+tmpmainRel+jsRight))
+                $("#capitalSpec").click(new Function("tmpTitle = 'capital: "+$("#capitalSpec")[0].innerHTML+js+tmpcapital+jsRight))
+                $("#regionSpec").click(new Function("tmpTitle = 'region: "+$("#regionSpec")[0].innerHTML+js+tmpregion+jsRight))
 
 
 
                 if($("iframe")[0].src != 'http://en.wikipedia.org/wiki/' && $("iframe")[0].src != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show(); $('#notFoundNotice').hide()  } 
                 else { 
+                    
+                    console.debug("inside not show with tmpTitle",tmpTitle)
                     $('#chronasWiki').hide();
                     $('#missingEntry')[0].innerHTML = tmpTitle;
                     $('#notFoundNotice').show()
@@ -821,7 +857,7 @@ function setupCollections(myActiveTextFeat,activeYear) {
 }
 
 
-function addAreaFeat(setActiveFeat,activeYear) {
+function addAreaFeat(setActiveFeat) {
 
     activeAreaFeat = setActiveFeat;
 
@@ -838,7 +874,7 @@ function addAreaFeat(setActiveFeat,activeYear) {
                 }
 
 
-                if (tmpCountry != "undefined" && tmpCountry != "XXX")
+                if (tmpCountry != "undefined")
                     provinceCollection.features[i].properties.Acolor = countryPlus[tmpCountry][1];
                 else {
                     provinceCollection.features[i].properties.Acolor = undefinedColor;
@@ -903,10 +939,10 @@ function addAreaFeat(setActiveFeat,activeYear) {
 
 }
 
-function addTextFeat(setActiveFeat,activeYear) {
+function addTextFeat(setActiveFeat) {
 
 
-    console.debug("setting active text to " + setActiveFeat)
+    console.debug("setting active text to " + setActiveFeat,activeYear)
 
     activeTextFeat = setActiveFeat; //"country";
 
@@ -1089,7 +1125,7 @@ function reset() {
 
         activeTextFeature0.attr("font-size", function (d, i) {
 
-            tmpSize = d.totalLength / (Math.sqrt(19 * Math.sqrt(d.properties.name.length)) * 1.4);
+            tmpSize = d.totalLength / (Math.sqrt(20 * Math.sqrt(d.properties.name.length)) * 1.4);
 
             if (tmpSize > 7)
                 return tmpSize

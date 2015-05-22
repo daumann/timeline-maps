@@ -10,8 +10,8 @@ $(function() {
         "showCustomTime":true
     };
 
-    var startTime = new Date(); //demoTracks[0].properties.time[0]
-    var endTime = new Date(demoTracks[0].properties.time[demoTracks[0].properties.time.length - 1]);
+    var startTime = new Date().setFullYear(300); //demoTracks[0].properties.time[0]
+    var endTime = new Date().setFullYear(300);
 
     // Create a DataSet with data
     var timelineData = new vis.DataSet([{ start: startTime, end: startTime, content: 'Test interval' }]);
@@ -21,7 +21,7 @@ $(function() {
     var timeline = new vis.Timeline(document.getElementById('timeline'), timelineData, timelineOptions);// timelineData, timelineOptions);
         
     // Set custom time marker (blue)
-    timeline.setCustomTime(startTime);
+    timeline.setCustomTime(startTime)
 /*
     // Setup leaflet map
     var map = new L.Map('map');
@@ -109,7 +109,7 @@ $(function() {
     
     // 
     function onCustomTimeChange(properties) {
-        //     console.debug(properties);
+             console.debug(properties);
         if (!playback.isPlaying()){
             playback.setCursor(properties.time.getTime());
         }        

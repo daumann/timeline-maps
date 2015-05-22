@@ -3,7 +3,7 @@ for f in *.txt ; do sed -i 'newEntry$f' $f; done
 
 
 
-
+cat citiesAndArtFinalCleanNull3.csv | awk  -F'\t' '{ if ( $2 !~ /monastery/ ) print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6; }' >> citiesAndArtFinalCleanNull4.csv
 
 
 

@@ -3,6 +3,41 @@ var currLabelSize = 0;
 var constSize = 0;
 var ultimateMarker;
 
+function loadEvents(that,newYear,type){
+    
+    
+    if (type == "events"){
+        console.log("*** drawing Events")
+    
+        var tmpFix;
+        console.debug("starting call",newYear)
+    
+        if (newYear<0)
+            tmpFix="21"+(newYear*-1);
+        else
+            tmpFix="20"+(newYear);
+    
+        that.map.get("/en/datalayer/"+tmpFix+"/", {
+            callback: function (geojson, response) {
+    
+                if (geojson._storage) {
+                    that.setOptions(geojson._storage);
+                }
+                that._etag = response.getResponseHeader('ETag');
+                if (that.isRemoteLayer()) {
+                    that.fetchRemoteData();
+                } else {
+                    that.fromGeoJSON(geojson);
+                }
+                that._loaded = true;
+                that.fire('loaded');
+    
+                console.debug("fetchData",geojson)
+            },
+            context: that
+        });
+    }
+}
 
 
 function getExtrema(listOfPoints){
@@ -346,12 +381,22 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     fetchData: function () {
-        var newYear = parseInt($(".datetimeValue")[0].innerHTML);
+
+       // $("#eventsChecked").off('change');
+  //      $("#eventsChecked").change(function(){
+            
+            // search for storage id of current year in object and do:
+            //map.datalayers[146].toggle()
+  //      });
         
+        var newYear;
         
         console.info(" *** fetching data for layer with this.storage_id",this);
         if (!this.storage_id) {
             return;
+        }
+        else{
+            var newYear = this.storage_id;
         }
 
         var b_area = document.getElementById("areaChecked").checked;
@@ -365,12 +410,14 @@ L.Storage.DataLayer = L.Class.extend({
         
         if (b_area){
             //query then draw
-            console.debug("starting call")
+            var tmpFix;
+            console.debug("starting call",newYear)
             
             if (newYear<0)
-                tmpFix="-10"+(newYear*-1);
+                tmpFix="11"+(newYear*-1);
             else
                 tmpFix="10"+(newYear);
+            
             this.map.get("/en/datalayer/"+tmpFix+"/", {
                 
                 callback: function (geojson, response) {
@@ -398,6 +445,12 @@ L.Storage.DataLayer = L.Class.extend({
                 context: this
             });
             
+        }
+        if (b_events){
+            
+            loadEvents(this,newYear,"events");
+           
+
         }
         
         if (b_people){

@@ -28,9 +28,8 @@ rawurlencode() {
 
 
 while read line           
-do   
+do
 
- 
 NAME=`echo "$line"  | awk  -F'\t' '{ print $1; }'`
 ALTERNATIVENAMES=`echo "$line"  | awk  -F'\t' '{ print $2; }'`
 SHORTDESCRIPTION=`echo "$line"  | awk  -F'\t' '{ print $3; }'`

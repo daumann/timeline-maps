@@ -40,9 +40,11 @@
     <script type="text/javascript">
         console.log("*** initializing map");
 
-        $(function() {
-            $('#areaChecked').bootstrapToggle('on')
-        })
+        $("#eventsChecked").change(function(){
+            console.debug("map.datalayers:",map.datalayers)
+            // search for storage id of iterate map.datalayers_index    year in object and do:
+            //map.datalayers[146].toggle()
+        });
         
         var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
 
