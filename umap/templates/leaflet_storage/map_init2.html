@@ -1,128 +1,276 @@
 {% load leaflet_storage_tags %}
-    <div id="map" style="width: 100%;position: absolute;top: 0; /* bottom: 0; */left: 0;right: 0;bottom: 120px;">
+<div id="map" style="width: 100%;position: absolute;top: 0; /* bottom: 0; */left: 0;right: 0;bottom: 120px;">
 
 
-        <div id="featureForms" style="position: relative; margin-top: 200px; margin-left: 20px;  z-index: 20; width: 150px; ">
-            <form id="colorFeat" style="float: left">
-    
-                <input type="radio" name="Area" checked="checked" onclick="addAreaFeat('country')" value="A-Country" /><br>
-                <input type="radio" name="Area" onclick="addAreaFeat('culture')" value="A-Culture" /><br>
-                <input type="radio" name="Area" onclick="addAreaFeat('religion')" value="A-Religion" /><br>
-                <input type="radio" name="Area" onclick="addAreaFeat('religionGeneral')" value="A-Main Religions" /><br>
-                <input type="radio" name="Area" onclick="addAreaFeat('population')" value="A-Population" /><br>
-    
-            </form>
-    
-            <form>
-    
-                <input type="radio" name="Text" checked="checked" onclick="addTextFeat('country')" value="T-Country" > T-Country<br>
-                <input type="radio" name="Text" onclick="addTextFeat('culture')" value="T-Culture" > T-Culture<br>
-                <input type="radio" name="Text" onclick="addTextFeat('religion')" value="T-Religion" > T-Religion<br>
-                <input type="radio" name="Text" onclick="addTextFeat('religionGeneral')" value="T-Main Religions" > T-Main Religions<br>
-                <input type="radio" name="Text" onclick="addTextFeat('none')" value="none" >none<br>
-    
-            </form>
-<br>
-            <input id="areaChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Area" data-off="Area" >
-            <br>
-            <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People">
-            <br>
-            <input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="City" data-off="City">
-            <br>
-            <input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Events" data-off="Events">
-            
+    <div id="featureForms" style="position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
+        <div  >
+            <div id="featureTree" style="overflow-x: hidden; ">
+                <ul class="nav nav-list">
+                    <li><label class="tree-toggler nav-header">Area</label>
+                        <ul class="nav nav-list tree">
+                            <form id="colorFeat" style="float: left" >
+
+                                <input type="radio" name="Area" checked="checked" onclick="addAreaFeat('country')" value="A-Country" /><br>
+                                <input type="radio" name="Area" onclick="addAreaFeat('culture')" value="A-Culture" /><br>
+                                <input type="radio" name="Area" onclick="addAreaFeat('religion')" value="A-Religion" /><br>
+                                <input type="radio" name="Area" onclick="addAreaFeat('religionGeneral')" value="A-Main Religions" /><br>
+                                <input type="radio" name="Area" onclick="addAreaFeat('population')" value="A-Population" /><br>
+
+                            </form>
+                            <form>
+
+                                <input type="radio" name="Text" checked="checked" onclick="addTextFeat('country')" value="T-Country" > T-Country<br>
+                                <input type="radio" name="Text" onclick="addTextFeat('culture')" value="T-Culture" > T-Culture<br>
+                                <input type="radio" name="Text" onclick="addTextFeat('religion')" value="T-Religion" > T-Religion<br>
+                                <input type="radio" name="Text" onclick="addTextFeat('religionGeneral')" value="T-Main Religions" > T-Main Religions<br>
+                                <input type="radio" name="Text" onclick="addTextFeat('none')" value="none" >none<br>
+
+                            </form>
+                            <li><label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">      | Area | Labels</a></li>
+                                    <li><a href="#">Ruler |   O  |    O  </a></li>
+                                    <li><a href="#">Table in on li |   O  |    O  </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><label class="tree-toggler nav-header">Marker</label>
+                        <ul class="nav nav-list tree">
+                            <li><input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Cities" data-off="Cities"> <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">o Cities</a></li>
+                                    <li><a href="#">o Castles</a></li>
+                                    <li><a href="#">o Buildings</a></li>
+                                </ul>
+                            </li>
+                            <li> <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People"> <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">o Military</a></li>
+                                    <li><a href="#">o Politician</a></li>
+                                    <li><a href="#">o Scientist</a></li>
+                                    <li><a href="#">o Religious</a></li>
+                                    <li><a href="#">o Athlet</a></li>
+                                </ul>
+                            </li>
+                            <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles"> <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">o Battle</a></li>
+                                    <li><a href="#">o Siege</a></li>
+                                </ul>
+                            </li>
+                            <li><input id="areaChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Area" data-off="Area" >
+                            </li>
+                            <li><input id="otherChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">o Artefacts</a></li>
+                                    <li><a href="#">o Unclassified</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
         
+
     </div>
-    <div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
+
+</div>
+<div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
 
 
-    <script type="text/javascript">
-        console.log("*** initializing map");
+<script type="text/javascript">
 
-        $("#eventsChecked").change(function(){
-            console.debug("map.datalayers:",map.datalayers)
-            // search for storage id of iterate map.datalayers_index    year in object and do:
-            //map.datalayers[146].toggle()
-        });
+
+    
+    console.log("*** initializing map");
+
+    var b_area = true;
+    var b_people = false;
+    var b_city = false;
+    var b_events = false
+
+
+    $("#areaChecked").change(function(){
+        b_area = document.getElementById("areaChecked").checked;
+
         
-        var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
+        if(b_area){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('svg').show();
+        }
+        else{
+            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+                $('svg').hide()
+            }
+        }
+    });
 
+    $("#peopleChecked").change(function(){
+        b_people = document.getElementById("peopleChecked").checked;
+        console.debug("map.datalayers:",map.datalayers);
         
-
-       map.on("viewreset", reset);
-console.debug("before")
-        svgProv = d3.select(map.getPanes().overlayPane).append("svg");
-        map.on("zoomstart", function () {
-            svgProv.attr("visibility", "hidden")
-        });
-        map.on("zoomend", function () {
-            svgProv.attr("visibility", "visible ")
-        });
-
-        g00 = svgProv.append("g").attr("class", "leaflet-zoom-hide");
-
-        g1 = g00.append("g");
-        g0 = g00.append("g");
-
-
-        gProvinceAreas = g1.append("g").attr("id", "provinceAreas");
-        gProvinceLabels = g1.append("g").attr("id", "provinceLabels");
-
-        gActiveCouLabels = g0.append("g").attr("id", "activeCouLabels");
-        gActiveCulLabels = g0.append("g").attr("id", "activeCulLabels");
-        gActiveRelLabels = g0.append("g").attr("id", "activeRelLabels");
-        gActiveRelGenLabels = g0.append("g").attr("id", "activeRelGenLabels");
-        transform2 = d3.geo.transform({point: projectPoint});
-        path = d3.geo.path().projection(transform2);
-
-        var ttt = [];
+        // search for storage id of iterate map.datalayers_index    year in object and do:
         
-        
-        /*
-        d3.json("/static/svgOverlay/DL500x.geojson", function (DL500) {
+        if(b_people){
+            $('.people').show()
+            map.getDataLayerByStorageId(newYear).fetchData()
+        }
             
-                d3.json("/static/svgOverlay/DL50a.geojson", function (DL50) {
-
-                                    ttt = DL50;
-                                    activeYear = jQuery.extend({}, DL50);
-                                    dl50 = jQuery.extend({}, DL50);
-                                    dl500 = jQuery.extend({}, DL500);
-
-                                    provinceCollection = jQuery.extend({}, tprovinceCollection);
-
-                                    console.debug(provinceCollection);
-                                    setupCollections();
-                                    addTextFeat('country');
-                                    addAreaFeat('country');
-
-                });
-            });
-        });
+        else{
+            if ($.inArray(newYear, a_peopleLoaded) != -1){
+                $('.people').hide()
+            }
+        }
         
-        */
+    });
+    $("#cityChecked").change(function(){
+        b_city = document.getElementById("cityChecked").checked;
+        console.debug("map.datalayers:",map.datalayers)
+        // search for storage id of iterate map.datalayers_index    year in object and do:
+        
+        if(b_city){
+            $('.castles').show()
+            map.getDataLayerByStorageId(newYear).fetchData()
+        }
+        else{
+            if ($.inArray(newYear, a_castlesLoaded) != -1){
+                $('.castles').hide()
+            }
+        }
+        
+    });
+    $("#eventsChecked").change(function(){
+        b_events = document.getElementById("eventsChecked").checked;
+        console.debug("map.datalayers:",map.datalayers)
+        // search for storage id of iterate map.datalayers_index    year in object and do:
+        
+        if(b_events){
+            $('.events').show()
+            map.getDataLayerByStorageId(newYear).fetchData()
+        }
+            
+        else{
+            if ($.inArray(newYear, a_eventsLoaded) != -1){
+                $('.events').hide()
+            }
+        }
+        
+            
+    });
 
-        $( "#timeline" ).mouseup(function(event) {
 
-            if (isdragging) return;
-            console.debug("!mouseup");
-            //      if (staticCore.eventParams.dragging) return;
-
-            var deltaX = event.clientX,
-                    x = deltaX,
-
-                    time = staticCore.body.util.toTime(x);
-
-            staticCore.setCustomTime(time);
-
-            // fire a timechange event
-            staticCore.body.emitter.emit('timechange', {
-                time: new Date(staticCore.customTime.valueOf())
-            });
+    var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
 
 
+
+    map.on("viewreset", reset);
+    console.debug("before")
+    svgProv = d3.select(map.getPanes().overlayPane).append("svg");
+    map.on("zoomstart", function () {
+        svgProv.attr("visibility", "hidden")
+    });
+    map.on("zoomend", function () {
+        svgProv.attr("visibility", "visible ")
+    });
+
+    g00 = svgProv.append("g").attr("class", "leaflet-zoom-hide");
+
+    g1 = g00.append("g");
+    g0 = g00.append("g");
+
+
+    gProvinceAreas = g1.append("g").attr("id", "provinceAreas");
+    gProvinceLabels = g1.append("g").attr("id", "provinceLabels");
+
+    gActiveCouLabels = g0.append("g").attr("id", "activeCouLabels");
+    gActiveCulLabels = g0.append("g").attr("id", "activeCulLabels");
+    gActiveRelLabels = g0.append("g").attr("id", "activeRelLabels");
+    gActiveRelGenLabels = g0.append("g").attr("id", "activeRelGenLabels");
+    transform2 = d3.geo.transform({point: projectPoint});
+    path = d3.geo.path().projection(transform2);
+
+    var ttt = [];
+
+
+    /*
+     d3.json("/static/svgOverlay/DL500x.geojson", function (DL500) {
+
+     d3.json("/static/svgOverlay/DL50a.geojson", function (DL50) {
+
+     ttt = DL50;
+     activeYear = jQuery.extend({}, DL50);
+     dl50 = jQuery.extend({}, DL50);
+     dl500 = jQuery.extend({}, DL500);
+
+     provinceCollection = jQuery.extend({}, tprovinceCollection);
+
+     console.debug(provinceCollection);
+     setupCollections();
+     addTextFeat('country');
+     addAreaFeat('country');
+
+     });
+     });
+     });
+
+     */
+
+    $( "#timeline" ).mouseup(function(event) {
+
+        if (isdragging) return;
+        console.debug("!mouseup");
+        //      if (staticCore.eventParams.dragging) return;
+
+        var deltaX = event.clientX,
+                x = deltaX,
+
+                time = staticCore.body.util.toTime(x);
+
+        staticCore.setCustomTime(time);
+
+        // fire a timechange event
+        staticCore.body.emitter.emit('timechange', {
+            time: new Date(staticCore.customTime.valueOf())
         });
 
 
+    });
 
-    </script>
+
+    $("#featureForms")
+            .prependTo(".storage-browse-actions");
+
+    $(".storage-browse-toggle").click(function(){ 
+        if($(".storage-browse-actions").css("display") == "none"){
+            $(".storage-browse-actions").css("display","block");
+
+            $(".storage-browse-toggle").addClass( "storage-browse-toggle-active" );
+            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
+            
+        }
+        else{
+            $(".storage-browse-toggle").removeClass( "storage-browse-toggle-active" );
+            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
+            $(".storage-browse-actions").css("display","none");
+        }
+    
+    })
+
+    
+    
+</script>
+<script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('label.tree-toggler').click(function () {
+            $(this).parent().children('ul.tree').toggle(300);
+        });
+
+        $('#featureTree .tree-toggler').click()
+       
+    });
+</script>

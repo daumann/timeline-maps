@@ -10,8 +10,8 @@ $(function() {
         "showCustomTime":true
     };
 
-    var startTime = new Date().setFullYear(300); //demoTracks[0].properties.time[0]
-    var endTime = new Date().setFullYear(300);
+    var startTime = new Date().setFullYear(1000); //demoTracks[0].properties.time[0]
+    var endTime = new Date().setFullYear(1000);
 
     // Create a DataSet with data
     var timelineData = new vis.DataSet([{ start: startTime, end: startTime, content: 'Test interval' }]);
@@ -83,8 +83,8 @@ $(function() {
     };
         
     // Initialize playback
-    var playback = new L.Playback(map, demoTracks, onPlaybackTimeChange, playbackOptions);
-    
+    playback = new L.Playback(map, demoTracks, onPlaybackTimeChange, playbackOptions);
+
     playback.setData(demoTracks);    
     //playback.addData(blueMountain);
 
@@ -137,5 +137,7 @@ $(function() {
     }
     
 */
+    
+    playback.setCursor(startTime);
     
 });

@@ -2,41 +2,107 @@ var staticCoords;
 var currLabelSize = 0;
 var constSize = 0;
 var ultimateMarker;
+var a_areaLoaded = [];
+var a_peopleLoaded = [];
+var a_settlementsLoaded = [];
+var a_castlesLoaded = [];
+var a_artefactLoaded = [];
+var a_areaInfoLoaded = [];
+var a_eventsLoaded = [];
+var newYear;
 
-function loadEvents(that,newYear,type){
-    
-    
+function hideAllUnchecked(){
+
+
+    if (!b_area && $.inArray(newYear, a_areaLoaded) != -1){
+        $('svg').hide()
+    }
+    if (!b_events && $.inArray(newYear, a_eventsLoaded) != -1){
+        $('.events').hide()
+    }
+    if (!b_city && $.inArray(newYear, a_castlesLoaded) != -1){
+        $('.castles').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_peopleLoaded) != -1){
+        $('.people').hide()
+    }
+}
+function loadFeatures(that,newYear,type){
+
+    var tmpFix;
     if (type == "events"){
         console.log("*** drawing Events")
-    
-        var tmpFix;
-        console.debug("starting call",newYear)
-    
+        
         if (newYear<0)
             tmpFix="21"+(newYear*-1);
         else
-            tmpFix="20"+(newYear);
-    
-        that.map.get("/en/datalayer/"+tmpFix+"/", {
-            callback: function (geojson, response) {
-    
-                if (geojson._storage) {
-                    that.setOptions(geojson._storage);
-                }
-                that._etag = response.getResponseHeader('ETag');
-                if (that.isRemoteLayer()) {
-                    that.fetchRemoteData();
-                } else {
-                    that.fromGeoJSON(geojson);
-                }
-                that._loaded = true;
-                that.fire('loaded');
-    
-                console.debug("fetchData",geojson)
-            },
-            context: that
-        });
+            tmpFix="20"+(newYear);   
     }
+
+    if (type == "city"){
+        console.log("*** drawing city")
+        
+        if (newYear<0)
+            tmpFix="31"+(newYear*-1);
+        else
+            tmpFix="30"+(newYear);
+    }
+
+    if (type == "castles"){
+        console.log("*** drawing Castles")
+        
+        if (newYear<0)
+            tmpFix="41"+(newYear*-1);
+        else
+            tmpFix="40"+(newYear);
+    }
+
+    if (type == "art"){
+        console.log("*** drawing Artefacts")
+        
+        if (newYear<0)
+            tmpFix="51"+(newYear*-1);
+        else
+            tmpFix="50"+(newYear);
+    }
+
+    if (type == "areaInfo"){
+        console.log("*** drawing area Info")
+
+        if (newYear<0)
+            tmpFix="61"+(newYear*-1);
+        else
+            tmpFix="60"+(newYear);
+    }
+
+    if (type == "unc"){
+        console.log("*** drawing unclassified Marker")
+
+        if (newYear<0)
+            tmpFix="71"+(newYear*-1);
+        else
+            tmpFix="70"+(newYear);
+    }
+
+    that.map.get("/en/datalayer/"+tmpFix+"/", {
+        callback: function (geojson, response) {
+
+            if (geojson._storage) {
+                that.setOptions(geojson._storage);
+            }
+            that._etag = response.getResponseHeader('ETag');
+            if (that.isRemoteLayer()) {
+                console.debug("fetching remote layer")
+                that.fetchRemoteData();
+            } else {
+                console.debug("fetching local layer")
+                that.fromGeoJSON(geojson,type);
+            }
+            that._loaded = true;
+            that.fire('loaded');
+        },
+        context: that
+    });
 }
 
 
@@ -389,68 +455,55 @@ L.Storage.DataLayer = L.Class.extend({
             //map.datalayers[146].toggle()
   //      });
         
-        var newYear;
-        
-        console.info(" *** fetching data for layer with this.storage_id",this);
-        if (!this.storage_id) {
-            return;
-        }
-        else{
-            var newYear = this.storage_id;
-        }
-
-        var b_area = document.getElementById("areaChecked").checked;
-        var b_people = document.getElementById("peopleChecked").checked;
-        var b_city = document.getElementById("cityChecked").checked;
-        var b_events = document.getElementById("eventsChecked").checked;
         
         
-        console.info(this._dataUrl()," *** getting all datalayer dimensions for this year. \n\tArea:",b_area, "\n\tPeople:",b_people, "\n\tCities:",b_city, "\n\tEvents:",b_events)
-
-        
-        if (b_area){
-            //query then draw
-            var tmpFix;
-            console.debug("starting call",newYear)
-            
-            if (newYear<0)
-                tmpFix="11"+(newYear*-1);
-            else
-                tmpFix="10"+(newYear);
-            
-            this.map.get("/en/datalayer/"+tmpFix+"/", {
-                
-                callback: function (geojson, response) {
-                    console.debug("ending call")
-                    
-                    changeYear(newYear,geojson);
-                    
-/*
-                    ttt = DL50;
-                    activeYear = jQuery.extend({}, DL50);
-                    dl50 = jQuery.extend({}, DL50);
-                    dl500 = jQuery.extend({}, DL500);
-
-                    provinceCollection = jQuery.extend({}, tprovinceCollection);
-
-                    console.debug(provinceCollection);
-                    setupCollections();
-                    addTextFeat('country');
-                    addAreaFeat('country');
-                    */
-                    
-                    
-                    console.debug("area data load complete", geojson)
-                },
-                context: this
-            });
-            
-        }
         if (b_events){
             
-            loadEvents(this,newYear,"events");
-           
+            if ($.inArray(newYear, a_eventsLoaded) == -1){
+                a_eventsLoaded.push(newYear);
+                loadFeatures(this,newYear,"events");
+            }
+            else{
+                $('.events').show()
+                console.log("*** Events not loaded in for layer",newYear,"Data already loaded.");
+            }
 
+        }
+        if (b_city){
+
+            if ($.inArray(newYear, a_settlementsLoaded) == -1){
+                a_settlementsLoaded.push(newYear);
+
+             //   loadFeatures(this,newYear,"city"); // todo fix ]} issue on .env
+            }
+            else{
+                $('.city').show()
+                console.log("*** Cities not loaded in for layer",newYear,"Data already loaded.");
+            }
+
+            if ($.inArray(newYear, a_castlesLoaded) == -1){                
+                a_castlesLoaded.push(newYear);                
+                loadFeatures(this,newYear,"castles");
+            }
+            else{
+                $('.castles').show()
+            }
+
+            if ($.inArray(newYear, a_artefactLoaded) == -1){
+                a_artefactLoaded.push(newYear);
+           //     loadFeatures(this,newYear,"art");
+            }
+            
+            else{
+                $('.art').show()
+                console.log("*** Artefacts not loaded in for layer",newYear,"Data already loaded.");
+            }
+
+        }
+        else{
+            if ($.inArray(newYear, a_castlesLoaded) != -1){
+                $('.castles').hide()
+            }
         }
         
         if (b_people){
@@ -475,10 +528,20 @@ L.Storage.DataLayer = L.Class.extend({
         });
             
         }
+        else{
+            if ($.inArray(newYear, a_peopleLoaded) != -1){
+                $('.people').hide()
+            }
+        }
         
     },
 
-    fromGeoJSON: function (geojson) {
+    fromGeoJSON: function (geojson,type) {
+        
+        for (var j=0; j<geojson.features.length; j++){
+            geojson.features[j].properties.ty=type;
+        }
+        console.debug("!geojson",geojson,type)
         this.addData(geojson);
         this._geojson = geojson;
         this.fire('dataloaded');
@@ -1032,7 +1095,50 @@ L.Storage.DataLayer = L.Class.extend({
     },
 
     show: function () {
+
+        console.info(" *** fetching data for layer with this.storage_id",this);
+        if (!this.storage_id) {
+            return;
+        }
+        else{
+            newYear = this.storage_id;
+        }
+
+
+
+
+        console.info(this._dataUrl()," *** getting all datalayer dimensions for this year. \n\tArea:",b_area, "\n\tPeople:",b_people, "\n\tCities:",b_city, "\n\tEvents:",b_events)
+
+
+        if (b_area){
+            
+            //query then draw
+            var tmpFix;
+            console.debug("starting call",newYear)
+
+            if (newYear<0)
+                tmpFix="11"+(newYear*-1);
+            else
+                tmpFix="10"+(newYear);
+
+            this.map.get("/en/datalayer/"+tmpFix+"/", {
+
+                callback: function (geojson, response) {
+                    console.debug("ending call")
+
+                    changeYear(newYear,geojson);
+
+
+                    console.debug("area data load complete", geojson)
+                },
+                context: this
+            });
+
+        }
+
+
         console.log("*** showing layer which is already loaded?", this.isLoaded())
+
         if(!this.isLoaded()) {
             console.log("*** fetching data")
             this.fetchData();
@@ -1040,6 +1146,7 @@ L.Storage.DataLayer = L.Class.extend({
         console.log("*** adding layer to map: this.layer", this)
         this.map.addLayer(this.layer);
         this.fire('show');
+
     },
 
     hide: function () {

@@ -1,8 +1,6 @@
 {% load compress %}
 {% compress js %}
-        
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+       
         
     <script src='{{ STATIC_URL }}staticReqs/lib/d3.v3.js'></script>
     <script src='{{ STATIC_URL }}staticReqs/lib/osmauth.js'></script>
@@ -56,7 +54,7 @@
     <script src="{{ STATIC_URL }}staticReqs/contrib/js/storage.ui.default.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
-<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+<script src="{{ STATIC_URL }}/staticReqs/bootstrap-toggle.min.js"></script>
     <script src="{{ STATIC_URL }}staticLeafletStorage/src/js/vis.js"></script>
 <!--    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet-src.js"></script>  
 

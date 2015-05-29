@@ -1,3 +1,33 @@
+
+# Fuer bots posting to wikidata:
+https://www.wikidata.org/wiki/Wikidata:Creating_a_bot
+
+# here is a post to set a property:
+JSON.stringify(dodger)
+"{"claims":[{"mainsnak":{"snaktype":"value","property":"P585","datavalue":{"value":{"time":"+2013-01-01T00:00:00Z","timezone":0,"before":0,"after":0,"precision":9,"calendarmodel":"http://www.wikidata.org/entity/Q1985727"},"type":"time"}},"type":"statement","rank":"normal"}]}"
+
+function addEditPointInTimeProperty ( newtime, editToken ) {
+    $.ajax({
+        url: 'https://www.wikidata.org/w/api.php?format=json&action=wbeditentity&id=Q7068331',
+        contentType: "application/json; charset=utf-8",
+        
+        data: {
+          	data: JSON.stringify(dodger),
+		token: editToken, 
+	},
+        dataType: 'json',
+        type: 'POST',
+        success: function( data ) {
+            console.debug("Succesfull post with data",data);
+        },
+        error: function( xhr ) {
+            alert( 'Error: Request failed.' );
+        }
+    });
+}
+
+# TODO: get token programaticaly, and find Qvalue
+
 for f in *.txt ; do sed -i 'newEntry$f' $f; done
 
 

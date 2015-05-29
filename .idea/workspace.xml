@@ -2,149 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ff64dd-6816-4474-b8d9-91ebf3a7bcce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/24.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/arrow-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/arrow-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/background-pattern-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/background-pattern-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/background-pattern-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/background-pattern-opacity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/bing_maps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/bing_maps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/cemetery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/cemetery.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/construction.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/construction.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw-connect-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw-connect-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw-connect-line2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw-connect-line2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw-connect-vertex.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw-connect-vertex.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw-connect-vertex2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw-connect-vertex2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-draw2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-draw2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-grab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-grab.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-grab2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-grab2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-grabbing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-grabbing2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-grabbing2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-pointer2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-pointer2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-pointing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-pointing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-pointing2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-pointing2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-acting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-acting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-acting2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-acting2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-add2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-add2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-area.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-area.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-area2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-area2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-line2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-line2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-mapillary.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-mapillary.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-mapillary2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-mapillary2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-point.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-point.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-point2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-point2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-remove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-remove.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-remove2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-remove2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-split.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-split.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-split2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-split2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-vertex.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-vertex.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/cursor-select-vertex2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/cursor-select-vertex2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/dots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/dots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/edit-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/edit-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/farmland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/farmland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/icon-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/icon-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/line-presets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/line-presets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/loader-black.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/loader-black.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/loader-white.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/loader-white.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/loader_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/loader_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/logo_filigree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/logo_filigree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/maki-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/maki-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/marker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/marker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/mini-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/mini-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/orchard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/orchard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/relation-presets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/relation-presets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/search.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/search.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/vineyard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/vineyard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/pattern/wetland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/pattern/wetland.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/16.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/16.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/24.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/24.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/edit.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/edit.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/opensource.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/opensource.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/osm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/osm.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/src/img/sprite.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/src/img/sprite.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/reqs/leaflet/leaflet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umap/static/storage/reqs/leaflet/leaflet2.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/umap/static/staticReqs/leaflet.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage" afterPath="$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js" afterPath="$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/demo-tracks.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/demo-tracks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/templates/base.html" afterPath="$PROJECT_DIR$/umap/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css" afterPath="$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.core.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/templates/leaflet_storage/js.html" afterPath="$PROJECT_DIR$/umap/templates/leaflet_storage/js.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js" afterPath="$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.icon.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.icon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/svgOverlay/logic.js" afterPath="$PROJECT_DIR$/umap/static/svgOverlay/logic.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html" afterPath="$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css" afterPath="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/storage.css" afterPath="$PROJECT_DIR$/umap/static/staticReqs/storage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css" afterPath="$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/storage.ui.default.css" afterPath="$PROJECT_DIR$/umap/static/staticReqs/storage.ui.default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/staticReqs/contrib/css/storage.ui.default.css" afterPath="$PROJECT_DIR$/umap/static/staticReqs/contrib/css/storage.ui.default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umap/static/storage/src/css/storage.css" afterPath="$PROJECT_DIR$/umap/static/storage/src/css/storage.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="uMap.iws" />
@@ -167,107 +40,146 @@
     <favorites_list name="uMap" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7641369">
+    <splitter split-orientation="horizontal" split-proportion="0.6353436">
       <split-first>
-        <leaf>
-          <file leaf-file-name="leaflet.storage.layer.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="387" column="12" selection-start="12195" selection-end="12296" vertical-scroll-proportion="-0.2" vertical-offset="6960" max-vertical-offset="22374">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="map_init2.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="68" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.24822696" vertical-offset="831" max-vertical-offset="2556">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="chronasUtilityFunctions.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/chronasUtilityFunctions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="1" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="demo-tracks.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/demo-tracks.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="30" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1530">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="logic.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/logic.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="812" column="100" selection-start="26496" selection-end="26581" vertical-scroll-proportion="66.7" vertical-offset="16617" max-vertical-offset="25902">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="leaflet.storage.popup.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.popup.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="81" column="0" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0" vertical-offset="1333" max-vertical-offset="8784">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="example_1.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="26" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.0" vertical-offset="2034" max-vertical-offset="2646">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LeafletPlayback.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="702" column="0" selection-start="20441" selection-end="20441" vertical-scroll-proportion="2.5" vertical-offset="12711" max-vertical-offset="15984">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="datadefinitions.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26299" column="36" selection-start="869256" selection-end="869256" vertical-scroll-proportion="343.6182" vertical-offset="492281" max-vertical-offset="2670084">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.6420323">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="leaflet-src.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="4896" column="16" selection-start="114751" selection-end="114751" vertical-scroll-proportion="0.0" vertical-offset="88128" max-vertical-offset="171018">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="example_1.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="2408" max-vertical-offset="2898">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="map_init2.html" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="4" column="94" selection-start="238" selection-end="238" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="5058">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="js.html" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/js.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="262" column="0" selection-start="15588" selection-end="15588" vertical-scroll-proportion="0.5723542" vertical-offset="4613" max-vertical-offset="5076">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/templates/base.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="8" column="84" selection-start="304" selection-end="304" vertical-scroll-proportion="18.666666" vertical-offset="648" max-vertical-offset="48474">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="bootstrap-toggle.min.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/bootstrap-toggle.min.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="7" column="840" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="leaflet.css" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/storage/reqs/leaflet/leaflet.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8748">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="chronasUtilityFunctions.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/chronasUtilityFunctions.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="5" column="5" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="342">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="LeafletPlayback.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="471" column="2" selection-start="13693" selection-end="13693" vertical-scroll-proportion="0.0" vertical-offset="8478" max-vertical-offset="15606">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="vis.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/vis.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="15148" column="53" selection-start="690015" selection-end="690015" vertical-scroll-proportion="0.0" vertical-offset="272664" max-vertical-offset="613098">
+                      <folding>
+                        <marker date="1417714870848" expanded="false" signature="1537120:1537132" placeholder="..." />
+                        <marker date="1417714870848" expanded="false" signature="1539580:1539592" placeholder="..." />
+                        <marker date="1417714870848" expanded="false" signature="1541981:1541993" placeholder="..." />
+                        <marker date="1417714870848" expanded="false" signature="1546071:1546082" placeholder="..." />
+                        <marker date="1417714870848" expanded="false" signature="1546216:1546227" placeholder="..." />
+                        <marker date="1417714870848" expanded="false" signature="1546365:1546376" placeholder="..." />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="map_init2.html" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="267" column="35" selection-start="10935" selection-end="10935" vertical-scroll-proportion="0.55279505" vertical-offset="7239" max-vertical-offset="7812">
+                      <folding>
+                        <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#form#0;n#ul#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
           <file leaf-file-name="leaflet.storage.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="357" column="9" selection-start="14301" selection-end="14301" vertical-scroll-proportion="0.0" vertical-offset="13212" max-vertical-offset="62496">
+                <state line="1068" column="15" selection-start="42331" selection-end="42963" vertical-scroll-proportion="0.0" vertical-offset="19224" max-vertical-offset="30312">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="storage.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css">
+            <entry file="file://$PROJECT_DIR$/umap/static/storage/src/css/storage.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13572" max-vertical-offset="24048">
+                <state line="1335" column="42" selection-start="0" selection-end="31550" vertical-scroll-proportion="0.0" vertical-offset="23986" max-vertical-offset="24552">
                   <folding />
                 </state>
               </provider>
@@ -282,37 +194,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="storage.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13572" max-vertical-offset="24048">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="storage.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/storage.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13572" max-vertical-offset="23994">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="storage.ui.default.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/storage.ui.default.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="306" column="24" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.0" vertical-offset="5253" max-vertical-offset="6084">
+                <state line="306" column="24" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.0" vertical-offset="5508" max-vertical-offset="6066">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="leaflet.storage.controls.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="leaflet.storage.controls.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="232" column="58" selection-start="7138" selection-end="7138" vertical-scroll-proportion="0.9052632" vertical-offset="7270" max-vertical-offset="26136">
+                <state line="160" column="0" selection-start="4542" selection-end="4542" vertical-scroll-proportion="0.0" vertical-offset="6081" max-vertical-offset="34884">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="chronas-default.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="162" column="0" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.8886598" vertical-offset="2485" max-vertical-offset="3024">
                   <folding />
                 </state>
               </provider>
@@ -321,7 +224,7 @@
           <file leaf-file-name="leaflet.storage.core.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.core.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="104" column="18" selection-start="3677" selection-end="3677" vertical-scroll-proportion="118.53333" vertical-offset="5428" max-vertical-offset="30276">
+                <state line="104" column="18" selection-start="3677" selection-end="3677" vertical-scroll-proportion="0.0" vertical-offset="1872" max-vertical-offset="8748">
                   <folding>
                     <marker date="1432305289583" expanded="false" signature="3432:3476" placeholder="..." />
                     <marker date="1432305289583" expanded="false" signature="3724:3758" placeholder="..." />
@@ -332,9 +235,9 @@
                     <marker date="1432305289583" expanded="false" signature="4192:4228" placeholder="..." />
                     <marker date="1432305289583" expanded="false" signature="4296:4332" placeholder="..." />
                     <marker date="1432305289583" expanded="false" signature="4397:4433" placeholder="..." />
-                    <marker date="1432305289583" expanded="true" signature="4624:4639" placeholder="..." />
-                    <marker date="1432305289583" expanded="true" signature="4654:4688" placeholder="..." />
-                    <marker date="1432305289583" expanded="true" signature="4907:4951" placeholder="..." />
+                    <marker date="1432305289583" expanded="false" signature="4624:4639" placeholder="..." />
+                    <marker date="1432305289583" expanded="false" signature="4654:4688" placeholder="..." />
+                    <marker date="1432305289583" expanded="false" signature="4907:4951" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -355,10 +258,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/umap/static/umap/leaflet_storage_tags.py" />
-        <option value="$PROJECT_DIR$/umap/static/storage/src/css/storage.css" />
-        <option value="$PROJECT_DIR$/umap/static/staticReqs/leaflet.contextmenu-src.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage/leaflet_storage/models.py" />
         <option value="$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage/leaflet_storage/tests/base.py" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/vis.js" />
         <option value="$PROJECT_DIR$/umap/static/storage/contrib/css/storage.ui.default.css" />
@@ -379,41 +278,45 @@
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/locale/en.json" />
         <option value="$PROJECT_DIR$/umap/static/umap/umap.css" />
         <option value="$PROJECT_DIR$/umap/static/js/id/renderer/mapillary_layer.js" />
-        <option value="$PROJECT_DIR$/umap/templates/base.html" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/src/js/leaflet.storage.core.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/leaflet.label-src.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js" />
         <option value="$PROJECT_DIR$/umap/static/chronasUtilityFunctions.js" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.features.js" />
-        <option value="$PROJECT_DIR$/umap/templates/leaflet_storage/js.html" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.forms.js" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.popup.js" />
         <option value="$PROJECT_DIR$/umap/static/svgOverlay/DL50a.geojson" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.xhr.js" />
         <option value="$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/demo-tracks.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js" />
-        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/contrib/css/storage.ui.default.css" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/storage.css" />
         <option value="$PROJECT_DIR$/umap/static/staticReqs/storage.ui.default.css" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.core.js" />
         <option value="$PROJECT_DIR$/umap/static/svgOverlay/logic.js" />
+        <option value="$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js" />
+        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.icon.js" />
+        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js" />
         <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js" />
+        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css" />
+        <option value="$PROJECT_DIR$/umap/static/staticReqs/leaflet.css" />
+        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js" />
+        <option value="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js" />
+        <option value="$PROJECT_DIR$/umap/static/storage/src/css/storage.css" />
+        <option value="$PROJECT_DIR$/umap/templates/leaflet_storage/js.html" />
+        <option value="$PROJECT_DIR$/umap/static/staticReqs/bootstrap-toggle.min.js" />
+        <option value="$PROJECT_DIR$/umap/templates/base.html" />
+        <option value="$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css" />
         <option value="$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2143" />
-    <option name="y" value="335" />
-    <option name="width" value="1590" />
-    <option name="height" value="986" />
+    <option name="x" value="271" />
+    <option name="y" value="74" />
+    <option name="width" value="2159" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -473,6 +376,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="umap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="umap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="umap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uMap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="umap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reqs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaflet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -487,30 +494,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistory" value="&#10;Po" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/umap/static/storage/reqs/leaflet" />
       <recent name="$PROJECT_DIR$/umap/static/storage/src/img" />
       <recent name="$PROJECT_DIR$/umap/src" />
       <recent name="$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js" />
       <recent name="$PROJECT_DIR$/umap/static/staticReqs" />
-      <recent name="$PROJECT_DIR$/umap/static/umap" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/umap/static/storage/reqs/leaflet" />
+      <recent name="$PROJECT_DIR$/umap/static/storage/src/css" />
       <recent name="$PROJECT_DIR$/umap/static/storage/src/img" />
       <recent name="$PROJECT_DIR$/umap/static/storage/src" />
       <recent name="$PROJECT_DIR$/umap/static/storage" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -521,15 +523,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -568,26 +578,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2143" y="335" width="1590" height="986" extended-state="0" />
+    <frame x="271" y="74" width="2159" height="1012" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39616254" sideWeight="0.8993711" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.375" sideWeight="0.877258" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497309" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15471698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.052802224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39616254" sideWeight="0.10062893" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.375" sideWeight="0.12274201" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -611,46 +621,11 @@
           <line>1397</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html</url>
-          <line>40</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage/leaflet_storage/templates/leaflet_storage/css2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="603" selection-end="603" vertical-scroll-proportion="-4.6666665" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/js/id/ui/inspector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="42" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.0" vertical-offset="981" max-vertical-offset="1962" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticDjango-leaflet-storage/leaflet_storage/templates/leaflet_storage/js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="13" selection-start="3915" selection-end="3915" vertical-scroll-proportion="0.0" vertical-offset="721" max-vertical-offset="1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/storage/src/css/storage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24048" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/umap/umap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2132" column="11" selection-start="43044" selection-end="43044" vertical-scroll-proportion="0.0" vertical-offset="38064" max-vertical-offset="59580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/js/id/renderer/mapillary_layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="41" selection-start="2125" selection-end="2125" vertical-scroll-proportion="0.0" vertical-offset="1064" max-vertical-offset="2988" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/js/id/modes/browse.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="61" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1008" />
@@ -674,11 +649,6 @@
     <entry file="file://$PROJECT_DIR$/umap/templates/umap/about_summary.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="74" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="558" max-vertical-offset="1854" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/leaflet.label-src.js">
@@ -711,29 +681,9 @@
         <state line="599" column="32" selection-start="17697" selection-end="17697" vertical-scroll-proportion="0.0" vertical-offset="10615" max-vertical-offset="18054" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4747" column="36" selection-start="110393" selection-end="110393" vertical-scroll-proportion="-2.8666666" vertical-offset="85288" max-vertical-offset="170946" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.forms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="257" column="22" selection-start="8017" selection-end="8017" vertical-scroll-proportion="-4.4333334" vertical-offset="4493" max-vertical-offset="15174" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.features.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="6" selection-start="3615" selection-end="3615" vertical-scroll-proportion="0.0" vertical-offset="930" max-vertical-offset="13518" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/js.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="94" selection-start="3116" selection-end="3116" vertical-scroll-proportion="-6.0" vertical-offset="666" max-vertical-offset="4950" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/vis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1194" column="29" selection-start="49647" selection-end="49647" vertical-scroll-proportion="0.0" vertical-offset="21322" max-vertical-offset="616194" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/data/core.yaml">
@@ -749,11 +699,6 @@
     <entry file="file://$PROJECT_DIR$/umap/static/umap/js/autocomplete.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="331" column="17" selection-start="9351" selection-end="9351" vertical-scroll-proportion="0.0" vertical-offset="5725" max-vertical-offset="6786" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="17" selection-start="1445" selection-end="1445" vertical-scroll-proportion="-5.962963" vertical-offset="523" max-vertical-offset="34866" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/DL500x.geojson">
@@ -773,9 +718,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/demo-tracks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="30" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="51" column="30" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/umap/img/16.png">
@@ -783,9 +726,120 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/provinces.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60197" column="26" selection-start="1089624" selection-end="1089624" vertical-scroll-proportion="2215.8406" vertical-offset="0" max-vertical-offset="2495286" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/data/wikipedia.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2857" selection-start="2857" selection-end="2857" vertical-scroll-proportion="1.5782881" vertical-offset="0" max-vertical-offset="2448" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/data/introGraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="77506" selection-start="77506" selection-end="77506" vertical-scroll-proportion="0.3583815" vertical-offset="21504" max-vertical-offset="399384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26299" column="36" selection-start="869256" selection-end="869256" vertical-scroll-proportion="0.0" vertical-offset="473382" max-vertical-offset="2651076" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0" vertical-offset="1333" max-vertical-offset="8784" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="812" column="100" selection-start="26496" selection-end="26581" vertical-scroll-proportion="0.0" vertical-offset="14616" max-vertical-offset="22068" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13387" max-vertical-offset="24084" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/storage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13387" max-vertical-offset="24030" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/css/storage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13378" max-vertical-offset="24084">
+        <state line="61" column="0" selection-start="1401" selection-end="1440" vertical-scroll-proportion="0.0" vertical-offset="849" max-vertical-offset="24066" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/storage/src/img/16.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/src/img/24.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="0" selection-start="6277" selection-end="6277" vertical-scroll-proportion="0.0" vertical-offset="3978" max-vertical-offset="23976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.features.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="34" selection-start="2825" selection-end="2825" vertical-scroll-proportion="0.0" vertical-offset="1836" max-vertical-offset="21492">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="356" selection-end="360" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="3528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/leaflet-src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4896" column="16" selection-start="114751" selection-end="114751" vertical-scroll-proportion="0.0" vertical-offset="88128" max-vertical-offset="171018">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/chronasUtilityFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="5" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="471" column="2" selection-start="13693" selection-end="13693" vertical-scroll-proportion="0.0" vertical-offset="8297" max-vertical-offset="15948">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/vis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15148" column="53" selection-start="690015" selection-end="690015" vertical-scroll-proportion="0.0" vertical-offset="330839" max-vertical-offset="756864">
+          <folding>
+            <marker date="1417714870848" expanded="false" signature="1537120:1537132" placeholder="..." />
+            <marker date="1417714870848" expanded="false" signature="1539580:1539592" placeholder="..." />
+            <marker date="1417714870848" expanded="false" signature="1541981:1541993" placeholder="..." />
+            <marker date="1417714870848" expanded="false" signature="1546071:1546082" placeholder="..." />
+            <marker date="1417714870848" expanded="false" signature="1546216:1546227" placeholder="..." />
+            <marker date="1417714870848" expanded="false" signature="1546365:1546376" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1068" column="15" selection-start="42331" selection-end="42963" vertical-scroll-proportion="0.0" vertical-offset="43148" max-vertical-offset="68562">
           <folding />
         </state>
       </provider>
@@ -797,27 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/src/css/storage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13387" max-vertical-offset="24084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/storage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="754" column="27" selection-start="17931" selection-end="17931" vertical-scroll-proportion="0.0" vertical-offset="13387" max-vertical-offset="24030">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="26" selection-start="3689" selection-end="3689" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="3402">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/storage.ui.default.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="306" column="24" selection-start="6519" selection-end="6519" vertical-scroll-proportion="0.0" vertical-offset="5253" max-vertical-offset="6084">
@@ -825,65 +858,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/provinces.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60197" column="26" selection-start="1089624" selection-end="1089624" vertical-scroll-proportion="2215.8406" vertical-offset="0" max-vertical-offset="2495286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/data/wikipedia.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2857" selection-start="2857" selection-end="2857" vertical-scroll-proportion="1.5782881" vertical-offset="0" max-vertical-offset="2448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/data/introGraph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="77506" selection-start="77506" selection-end="77506" vertical-scroll-proportion="0.3583815" vertical-offset="21504" max-vertical-offset="399384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/datadefinitions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26299" column="36" selection-start="869256" selection-end="869256" vertical-scroll-proportion="343.6182" vertical-offset="492281" max-vertical-offset="2670084">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/chronasUtilityFunctions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/LeafletPlayback.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="702" column="0" selection-start="20441" selection-end="20441" vertical-scroll-proportion="2.5" vertical-offset="12711" max-vertical-offset="15984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="2706" selection-end="2706" vertical-scroll-proportion="0.0" vertical-offset="1333" max-vertical-offset="8784">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/svgOverlay/logic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="812" column="100" selection-start="26496" selection-end="26581" vertical-scroll-proportion="66.7" vertical-offset="16617" max-vertical-offset="25902">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.core.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="18" selection-start="3677" selection-end="3677" vertical-scroll-proportion="118.53333" vertical-offset="5428" max-vertical-offset="30276">
+        <state line="104" column="18" selection-start="3677" selection-end="3677" vertical-scroll-proportion="0.0" vertical-offset="1872" max-vertical-offset="8748">
           <folding>
             <marker date="1432305289583" expanded="false" signature="3432:3476" placeholder="..." />
             <marker date="1432305289583" expanded="false" signature="3724:3758" placeholder="..." />
@@ -894,37 +871,72 @@
             <marker date="1432305289583" expanded="false" signature="4192:4228" placeholder="..." />
             <marker date="1432305289583" expanded="false" signature="4296:4332" placeholder="..." />
             <marker date="1432305289583" expanded="false" signature="4397:4433" placeholder="..." />
-            <marker date="1432305289583" expanded="true" signature="4624:4639" placeholder="..." />
-            <marker date="1432305289583" expanded="true" signature="4654:4688" placeholder="..." />
-            <marker date="1432305289583" expanded="true" signature="4907:4951" placeholder="..." />
+            <marker date="1432305289583" expanded="false" signature="4624:4639" placeholder="..." />
+            <marker date="1432305289583" expanded="false" signature="4654:4688" placeholder="..." />
+            <marker date="1432305289583" expanded="false" signature="4907:4951" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="357" column="9" selection-start="14301" selection-end="14301" vertical-scroll-proportion="0.0" vertical-offset="13212" max-vertical-offset="62496">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.controls.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="58" selection-start="7138" selection-end="7138" vertical-scroll-proportion="0.9052632" vertical-offset="7270" max-vertical-offset="26136">
+        <state line="160" column="0" selection-start="4542" selection-end="4542" vertical-scroll-proportion="0.0" vertical-offset="6081" max-vertical-offset="34884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/leaflet.storage.layer.js">
+    <entry file="file://$PROJECT_DIR$/umap/static/storage/reqs/leaflet/leaflet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="12" selection-start="12195" selection-end="12296" vertical-scroll-proportion="-0.2" vertical-offset="6960" max-vertical-offset="22374">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="31248">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/storage/src/css/storage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1335" column="42" selection-start="0" selection-end="31550" vertical-scroll-proportion="0.0" vertical-offset="23986" max-vertical-offset="24552">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/bootstrap-toggle.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="840" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticReqs/chronas-default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="0" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.8886598" vertical-offset="2485" max-vertical-offset="3024">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="84" selection-start="304" selection-end="304" vertical-scroll-proportion="18.666666" vertical-offset="648" max-vertical-offset="48474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/static/staticLeafletStorage/src/js/example_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="2898">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/map_init2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="68" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.24822696" vertical-offset="831" max-vertical-offset="2556">
+        <state line="4" column="94" selection-start="238" selection-end="238" vertical-scroll-proportion="-2.6666667" vertical-offset="0" max-vertical-offset="5058">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umap/templates/leaflet_storage/js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="262" column="0" selection-start="15588" selection-end="15588" vertical-scroll-proportion="0.5723542" vertical-offset="4613" max-vertical-offset="5076">
           <folding />
         </state>
       </provider>

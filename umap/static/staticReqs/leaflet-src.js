@@ -3728,6 +3728,7 @@ L.Marker = L.Class.extend({
 		var panes = this._map._panes;
 
 		if (addIcon) {
+            console.debug(addIcon,this._icon)
 			panes.markerPane.appendChild(this._icon);
 		}
 

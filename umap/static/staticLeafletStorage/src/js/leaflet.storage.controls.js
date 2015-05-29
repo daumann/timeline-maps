@@ -152,20 +152,22 @@ L.Storage.DataLayersControl = L.Control.extend({
     },
 
     onAdd: function (map) {
-        var container = L.DomUtil.create('div', 'leaflet-control-browse storage-control'),
-            actions = L.DomUtil.create('div', 'storage-browse-actions', container);
+        var container = L.DomUtil.create('div', 'leaflet-control-browse storage-control');
+            
+        var toggle = L.DomUtil.create('a', 'storage-browse-toggle', container), actions = L.DomUtil.create('div', 'storage-browse-actions', container);
+        toggle.href = '#';
+        
         this._datalayers_container = L.DomUtil.create('ul', 'storage-browse-datalayers', actions);
 
         var link = L.DomUtil.create('a', 'storage-browse-link', actions);
         link.href = '#';
-        link.title = link.innerHTML = L._('Browse data');
+        link.title = link.innerHTML = L._('List loaded markers');
 
         var add = L.DomUtil.create('a', 'show-on-edit block add-datalayer', actions);
         add.href = '#';
         add.innerHTML = add.title = L._('Add a layer');
 
-        var toggle = L.DomUtil.create('a', 'storage-browse-toggle', container);
-        toggle.href = '#';
+        
 
         L.DomEvent
             .on(toggle, 'click', L.DomEvent.stop);

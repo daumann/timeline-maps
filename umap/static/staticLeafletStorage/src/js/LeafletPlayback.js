@@ -604,7 +604,7 @@ L.Playback.DateControl = L.Control.extend({
                 lastDate = newDate;
                 self._date.innerHTML = newDate; // L.Playback.Util.DateStr(1369786384250);
                 console.debug("year changed");
-                
+                hideAllUnchecked();
                 
 
 
