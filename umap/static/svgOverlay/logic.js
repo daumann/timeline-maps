@@ -779,11 +779,19 @@ function setupCollections(myActiveTextFeat) {
                 
                 ultimateMarker.attachPopup()
 // 
-                
-                var tmpculture=  escape(culPlus[d.properties.Cul][2])
-                var tmpreligion= escape(relPlus[d.properties.Rel][2])
+                if (culPlus[d.properties.Cul])
+                    var tmpculture=  escape(culPlus[d.properties.Cul][2])
+                else
+                    var tmpculture= ""
+                if (relPlus[d.properties.Rel])
+                    var tmpreligion= escape(relPlus[d.properties.Rel][2])
+                else
+                    var tmpreligion= ""
                 var tmpruler=    escape(rulerWiki);
-                var tmpmainRel=  escape(relGen[d.properties.Rel][2])
+                if (relGen[d.properties.Rel])
+                    var tmpmainRel=  escape(relGen[d.properties.Rel][2])
+                else
+                    var tmpmainRel=""
                 var tmpcapital=  escape(capitalURL[d.properties.Cap]);
                 var tmpregion=   escape(provURL[d.properties.name]);
                 /*
@@ -856,93 +864,161 @@ function setupCollections(myActiveTextFeat) {
 
 }
 
+function hideAndAdd(idNotTo,selectedFeat){
+    var deselect=true;
+    var activeCount=0;
+ 
+    var textToIterate = ["T-Country","T-Culture","T-Religion","T-MainRel"];
+    var areaToIterate = ["A-Country","A-Culture","A-Religion","A-MainRel","A-Population"];
+    
+    
+    if(idNotTo.substr(0,1) == "T"){
+        for (var i=0; i<textToIterate.length;i++){
+            if($("#"+textToIterate[i]).prop('checked') === true){
+                activeCount++;
+                if(textToIterate[i] !== idNotTo) {
+                    //only cosmetics
+                    $("#"+textToIterate[i]).parent().removeClass("btn-info");
+                    $("#"+textToIterate[i]).parent().addClass("btn-default off");
+                    $("#"+textToIterate[i]).prop('checked',false);
+                    deselect = false;
+                }
+            }
+        }
+        console.debug("activeCount is ",activeCount)
+        if(!deselect || activeCount == 0){
+            addTextFeat(selectedFeat);
+        }
+        else{
+            addTextFeat('none');
+        }
+        
+    }
+    else
+    {
+        if($("#lockIcon").hasClass("fa-unlock-alt")){
+            if(idNotTo === "A-Population"){
+                hideAndAdd("T-Population","none")
+            }
+            else{
+                $("#"+idNotTo.replace("A-","T-")).parent().click();
+            }
+            
+        }
+        for (var i=0; i<areaToIterate.length;i++){
+            if($("#"+areaToIterate[i]).prop('checked') === true){
+                activeCount++;
+                if(areaToIterate[i] !== idNotTo) {
+                    $("#"+areaToIterate[i]).parent().removeClass("btn-info");
+                    $("#"+areaToIterate[i]).parent().addClass("btn-default off");
+                    $("#"+areaToIterate[i]).prop('checked',false);
+                    deselect = false;
+                }
+            }
+        }
+        if(!deselect || activeCount == 0){
+            addAreaFeat(selectedFeat);
+        }
+        else{
+            addAreaFeat('none');
+        }
+        
+    }
+}
 
 function addAreaFeat(setActiveFeat) {
-
     activeAreaFeat = setActiveFeat;
-
-
-    switch (activeAreaFeat) {
-        case "country":
-
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-                tmpCountry = "undefined";
-                tmpProv = provinceCollection.features[i].properties.name;
-
-                if (activeYear.hasOwnProperty(tmpProv)) {
-                    tmpCountry = activeYear[tmpProv][0];
-                }
-
-
-                if (tmpCountry != "undefined")
-                    provinceCollection.features[i].properties.Acolor = countryPlus[tmpCountry][1];
-                else {
-                    provinceCollection.features[i].properties.Acolor = undefinedColor;
-                }
-
-            }
-
-//        activeFeatureCollection = jQuery.extend({}, countriesArea);
-            break;
-        case "culture":
-
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-                provinceCollection.features[i].properties.Acolor = (culPlus[provinceCollection.features[i].properties.Cul] !== undefined) ? culPlus[provinceCollection.features[i].properties.Cul][1] : undefinedColor;
-            }
-//        activeFeatureCollection = jQuery.extend({}, culArea);
-            break;
-        case "religion":
-
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-
-                provinceCollection.features[i].properties.Acolor = (relPlus[provinceCollection.features[i].properties.Rel] !== undefined) ? relPlus[provinceCollection.features[i].properties.Rel][1] : undefinedColor;
-            }
-            break;
-
-
-        case "religionGeneral":
-
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-
-                provinceCollection.features[i].properties.Acolor =
-                    (relGen[provinceCollection.features[i].properties.Rel] !== undefined)
-                        ? relGen[provinceCollection.features[i].properties.Rel][1]
-                        : undefinedColor;
-            }
-
-//         activeFeatureCollection = jQuery.extend({}, relArea);
-            break;
-        case "population":
-
-            var max = 1000;
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-                if (provinceCollection.features[i].properties.Pop > max)
-                    max = provinceCollection.features[i].properties.Pop;
-            }
-            max = Math.log(max / 1000);
-            var fraction = 0
-            for (var i = 0; i < provinceCollection.features.length; i++) {
-                fraction = Math.log(provinceCollection.features[i].properties.Pop / 1000) / max;
-
-                provinceCollection.features[i].properties.Acolor = "rgb(" + Math.round(200 + fraction * 55) + "," + Math.round(200 - fraction * 200) + "," + Math.round(200 - fraction * 200) + ")";
-            }
-            //         activeFeatureCollection = jQuery.extend({}, popArea);
-            break;
-
-
+    if (setActiveFeat === 'none'){
+        $("#provinceAreas").css("visibility", "hidden")
     }
-
-    activeAreaFeature
-        .style("fill", function (d) {
-            return d.properties.Acolor; //._storage_options
-        })
-
+    else {
+        $("#provinceAreas").css("visibility", "visible")
+        console.debug("setting active Area to " + setActiveFeat)
+        
+    
+    
+        switch (activeAreaFeat) {
+            case "country":
+    
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+                    tmpCountry = "undefined";
+                    tmpProv = provinceCollection.features[i].properties.name;
+    
+                    if (activeYear.hasOwnProperty(tmpProv)) {
+                        tmpCountry = activeYear[tmpProv][0];
+                    }
+    
+    
+                    if (tmpCountry != "undefined")
+                        provinceCollection.features[i].properties.Acolor = countryPlus[tmpCountry][1];
+                    else {
+                        provinceCollection.features[i].properties.Acolor = undefinedColor;
+                    }
+    
+                }
+    
+    //        activeFeatureCollection = jQuery.extend({}, countriesArea);
+                break;
+            case "culture":
+    
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+                    provinceCollection.features[i].properties.Acolor = (culPlus[provinceCollection.features[i].properties.Cul] !== undefined) ? culPlus[provinceCollection.features[i].properties.Cul][1] : undefinedColor;
+                }
+    //        activeFeatureCollection = jQuery.extend({}, culArea);
+                break;
+            case "religion":
+    
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+    
+                    provinceCollection.features[i].properties.Acolor = (relPlus[provinceCollection.features[i].properties.Rel] !== undefined) ? relPlus[provinceCollection.features[i].properties.Rel][1] : undefinedColor;
+                }
+                break;
+    
+    
+            case "religionGeneral":
+    
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+    
+                    provinceCollection.features[i].properties.Acolor =
+                        (relGen[provinceCollection.features[i].properties.Rel] !== undefined)
+                            ? relGen[provinceCollection.features[i].properties.Rel][1]
+                            : undefinedColor;
+                }
+    
+    //         activeFeatureCollection = jQuery.extend({}, relArea);
+                break;
+            case "population":
+    
+                var max = 1000;
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+                    if (provinceCollection.features[i].properties.Pop > max)
+                        max = provinceCollection.features[i].properties.Pop;
+                }
+                max = Math.log(max / 1000);
+                var fraction = 0
+                for (var i = 0; i < provinceCollection.features.length; i++) {
+                    fraction = Math.log(provinceCollection.features[i].properties.Pop / 1000) / max;
+    
+                    provinceCollection.features[i].properties.Acolor = "rgb(" + Math.round(200 + fraction * 55) + "," + Math.round(200 - fraction * 200) + "," + Math.round(200 - fraction * 200) + ")";
+                }
+                //         activeFeatureCollection = jQuery.extend({}, popArea);
+                break;
+            
+    
+    
+        }
+    
+        activeAreaFeature
+            .style("fill", function (d) {
+                return d.properties.Acolor; //._storage_options
+            })
+    }
 }
 
 function addTextFeat(setActiveFeat) {
 
 
-    console.debug("setting active text to " + setActiveFeat,activeYear)
+    console.debug("setting active text to " + setActiveFeat)
 
     activeTextFeat = setActiveFeat; //"country";
 
@@ -955,10 +1031,6 @@ function addTextFeat(setActiveFeat) {
 
         console.debug(activeTextFeat, "---", countryIsSetup, culIsSetup, relIsSetup, relGenIsSetup);
 
-        countryIsSetup = true;
-        culIsSetup = true;
-        relIsSetup = true;
-        relGenIsSetup = true;
 
         countriesArea = {"type": "FeatureCollection",
             "features": []
@@ -1010,17 +1082,30 @@ function addTextFeat(setActiveFeat) {
 
             }
             //          console.debug(countryCollection, tmpCountry, i);
+            if (!countryIsSetup)
             prepareCollectionIDs(countryCollection, tmpCountry, i);
+            if (!culIsSetup)
             prepareCollectionIDs(culCollection, tmpCul, i);
+            if (!relIsSetup)
             prepareCollectionIDs(relCollection, tmpRel, i);
+            if (!relGenIsSetup)
             prepareCollectionIDs(relGenIdCollection, relGen[tmpRel][0], i);
 
         }
 
+        if (!countryIsSetup)
         fillCollectionId(countryCollection, gActiveCouLabels, "co");
+        if (!culIsSetup)
         fillCollectionId(culCollection, gActiveCulLabels, "cu");
+        if (!relIsSetup)
         fillCollectionId(relCollection, gActiveRelLabels, "r");
+        if (!relGenIsSetup)
         fillCollectionId(relGenIdCollection, gActiveRelGenLabels, "rg");
+
+        countryIsSetup = true;
+        culIsSetup = true;
+        relIsSetup = true;
+        relGenIsSetup = true;
 
     }
 
@@ -1179,7 +1264,88 @@ function reset() {
 
 }
 
+function lockFeatureSelection() {
 
+    if( $("#rulerTR td:eq(2)").css("display") !== "none" ){
+
+        $("#lockIcon").removeClass("fa-lock")
+        $("#lockIcon").addClass("fa-unlock-alt")
+
+        $("#lockFeatureButton").attr("title","Select labels and area feature separately");
+
+        $("#rulerTR td:eq(2)").css("display","none")
+        $("#rulerTR td:eq(1)").attr("colspan","2")
+        $("#rulerTR div:eq(0)").css("width","98px")
+
+        $("#cultureTR td:eq(2)").css("display","none")
+        $("#cultureTR td:eq(1)").attr("colspan","2")
+        $("#cultureTR div:eq(0)").css("width","98px")
+
+        $("#religionTR td:eq(2)").css("display","none")
+        $("#religionTR td:eq(1)").attr("colspan","2")
+        $("#religionTR div:eq(0)").css("width","98px")
+
+        $("#mainreligionTR td:eq(2)").css("display","none")
+        $("#mainreligionTR td:eq(1)").attr("colspan","2")
+        $("#mainreligionTR div:eq(0)").css("width","98px")
+
+        $("#populationTR td:eq(2)").css("display","none")
+        $("#populationTR td:eq(1)").attr("colspan","2")
+        $("#populationTR div:eq(0)").css("width","98px")
+
+        $("#noneTR td:eq(2)").css("display","none")
+        $("#noneTR td:eq(1)").attr("colspan","2")
+        $("#noneTR div:eq(0)").css("width","98px")
+
+        var textToIterate = ["T-Country","T-Culture","T-Religion","T-MainRel","T-Population"];
+        var areaToIterate = ["A-Country","A-Culture","A-Religion","A-MainRel","A-Population"];
+
+        for (var i=0; i<areaToIterate.length;i++){
+            if($("#"+areaToIterate[i]).prop('checked') && !$("#"+textToIterate[i]).prop('checked')){
+                if (textToIterate[i] === "T-Population"){
+                    hideAndAdd("T-Population","none")
+                }
+                else{
+                    $("#"+textToIterate[i]).parent().click();
+                }
+
+            }
+        }
+    }
+
+    else {
+
+        $("#lockIcon").removeClass("fa-unlock-alt")
+        $("#lockIcon").addClass("fa-lock")
+        $("#lockFeatureButton").attr("title","Always use labels of the area feature");
+
+        $("#rulerTR td:eq(2)").css("display","block")
+        $("#rulerTR td:eq(1)").attr("colspan","1")
+        $("#rulerTR div:eq(0)").css("width","39px")
+
+        $("#cultureTR td:eq(2)").css("display","block")
+        $("#cultureTR td:eq(1)").attr("colspan","1")
+        $("#cultureTR div:eq(0)").css("width","39px")
+
+        $("#religionTR td:eq(2)").css("display","block")
+        $("#religionTR td:eq(1)").attr("colspan","1")
+        $("#religionTR div:eq(0)").css("width","39px")
+
+        $("#mainreligionTR td:eq(2)").css("display","block")
+        $("#mainreligionTR td:eq(1)").attr("colspan","1")
+        $("#mainreligionTR div:eq(0)").css("width","39px")
+
+        $("#populationTR td:eq(2)").css("display","block")
+        $("#populationTR td:eq(1)").attr("colspan","1")
+        $("#populationTR div:eq(0)").css("width","39px")
+
+        
+
+    }
+
+
+
+};
 /*
 
 

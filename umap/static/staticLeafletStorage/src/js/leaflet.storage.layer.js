@@ -9,6 +9,7 @@ var a_castlesLoaded = [];
 var a_artefactLoaded = [];
 var a_areaInfoLoaded = [];
 var a_eventsLoaded = [];
+var a_unclassifiedLoaded = [];
 var newYear;
 
 function hideAllUnchecked(){
@@ -82,6 +83,15 @@ function loadFeatures(that,newYear,type){
             tmpFix="71"+(newYear*-1);
         else
             tmpFix="70"+(newYear);
+    }
+
+    if (type == "people"){
+        console.log("*** drawing people Marker")
+
+        if (newYear<0)
+            tmpFix="81"+(newYear*-1);
+        else
+            tmpFix="80"+(newYear);
     }
 
     that.map.get("/en/datalayer/"+tmpFix+"/", {
@@ -469,31 +479,18 @@ L.Storage.DataLayer = L.Class.extend({
             }
 
         }
-        if (b_city){
+        else{
+            if ($.inArray(newYear, a_eventsLoaded) != -1){
+                $('.events').hide()
+            }
+        }
 
-            if ($.inArray(newYear, a_settlementsLoaded) == -1){
-                a_settlementsLoaded.push(newYear);
-
-             //   loadFeatures(this,newYear,"city"); // todo fix ]} issue on .env
-            }
-            else{
-                $('.city').show()
-                console.log("*** Cities not loaded in for layer",newYear,"Data already loaded.");
-            }
-
-            if ($.inArray(newYear, a_castlesLoaded) == -1){                
-                a_castlesLoaded.push(newYear);                
-                loadFeatures(this,newYear,"castles");
-            }
-            else{
-                $('.castles').show()
-            }
+        if (b_art){
 
             if ($.inArray(newYear, a_artefactLoaded) == -1){
                 a_artefactLoaded.push(newYear);
-           //     loadFeatures(this,newYear,"art");
+                loadFeatures(this,newYear,"art");
             }
-            
             else{
                 $('.art').show()
                 console.log("*** Artefacts not loaded in for layer",newYear,"Data already loaded.");
@@ -501,12 +498,51 @@ L.Storage.DataLayer = L.Class.extend({
 
         }
         else{
+            if ($.inArray(newYear, a_eventsLoaded) != -1){
+                $('.art').hide()
+            }
+        }
+        
+        if (b_city){
+
+            if (b_sub_cities && $.inArray(newYear, a_settlementsLoaded) == -1){
+                loadFeatures(this,newYear,"city");
+                a_settlementsLoaded.push(newYear);
+            }
+            else if (b_sub_cities){
+                $('.city').show()
+                console.log("*** Cities not loaded in for layer",newYear,"Data already loaded.");
+            }
+
+            if (b_sub_castles && $.inArray(newYear, a_castlesLoaded) == -1){                
+                a_castlesLoaded.push(newYear);                
+                loadFeatures(this,newYear,"castles");
+            }
+            else if (b_sub_castles){
+                $('.castles').show()
+            }
+
+        }
+        else{
             if ($.inArray(newYear, a_castlesLoaded) != -1){
                 $('.castles').hide()
+            }
+            if ($.inArray(newYear, a_settlementsLoaded) != -1){
+                $('.city').hide()
             }
         }
         
         if (b_people){
+
+            if ($.inArray(newYear, a_peopleLoaded) == -1){
+                a_peopleLoaded.push(newYear);
+                loadFeatures(this,newYear,"people");
+            }
+            else{
+                $('.people').show()
+                console.log("*** People not loaded in for layer",newYear,"Data already loaded.");
+            }
+            /*
         this.map.get(this._dataUrl(), {
             callback: function (geojson, response) {
                 console.debug("ending call2")
@@ -526,11 +562,29 @@ L.Storage.DataLayer = L.Class.extend({
             },
             context: this
         });
-            
+            */
         }
         else{
             if ($.inArray(newYear, a_peopleLoaded) != -1){
                 $('.people').hide()
+            }
+        }
+
+        if (b_other){
+
+            if (b_sub_areaInfo && $.inArray(newYear, a_unclassifiedLoaded) == -1){
+                a_unclassifiedLoaded.push(newYear);
+                loadFeatures(this,newYear,"unc");
+            }
+            else{
+                $('.unc').show()
+                console.log("*** Unclassified not loaded in for layer",newYear,"Data already loaded.");
+            }
+
+        }
+        else{
+            if ($.inArray(newYear, a_eventsLoaded) != -1){
+                $('.unc').hide()
             }
         }
         

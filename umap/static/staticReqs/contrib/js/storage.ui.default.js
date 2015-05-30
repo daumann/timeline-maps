@@ -44,6 +44,16 @@ L.Storage.on('ui:start', function (e) {
 L.Storage.on('ui:end', function () {
     
     if(!insideLoop){
+
+        if ($("#storage-ui-container")[0].style.width == "100%"){
+            $("#storage-ui-container")[0].style.padding = "0 20px 23px 20px";
+            $("iframe")[0].style.width = "calc(100% - 20px)";
+            $("#storage-ui-container")[0].style.width = "50%";
+            $("#map")[0].style.display = "block";
+            $(".fullWidth")[0].innerHTML = "Full width";
+            $("iframe")[0].src =$("iframe")[0].src.replace("?printable=yes","");
+        }
+        
         var div = L.DomUtil.get('storage-ui-container');
         div.innerHTML = '';
         L.DomUtil.removeClass(document.body, 'storage-ui');

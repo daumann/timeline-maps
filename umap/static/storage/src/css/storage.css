@@ -592,14 +592,14 @@ a.storage-control-text {
 .leaflet-control-browse a.add-datalayer,
 .leaflet-control-browse a.storage-browse-link {
     background-image: none;
-    background-color: rgb(68, 68, 68);
+    background-color: rgb(55, 132, 154);
     color: white;
     display: block;
     height: 24px;
     line-height: 24px;
     margin-top: 14px;
-    padding: 0 5px;
-    text-align: right;
+    padding: 0 5px 0px 18px;
+    /* text-align: center; */
     min-width: 160px;
     width: 100%;
     border-radius: 2px;

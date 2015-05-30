@@ -8,8 +8,45 @@
                 <ul class="nav nav-list">
                     <li><label class="tree-toggler nav-header">Area</label>
                         <ul class="nav nav-list tree">
+                            
+                            <table style="width:182px">
+                                <tr>
+                                    <td style="    width: 80px;"></td>
+                                    <td colspan="2" style="text-align: center;"><span style="    float: left;">Area</span>
+                                        <button onclick="lockFeatureSelection()"  id="lockFeatureButton" title="Always use labels of the area feature" type="submit"                                                class="btn btn-default lowerButton">
+                                            <i id="lockIcon" class="fa fa-lock"></i>
+                                        </button><span style="    float: right;">Label</span>
+                                    </td>
+                                </tr>
+                                <tr id="rulerTR">
+                                    <td>Ruler</td>
+                                    <td><input id="A-Country" data-style="sharp"  data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" checked data-on=" " data-off=" "></td>
+                                    <td><input id="T-Country"  data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" checked data-on=" " data-off=" "></td>
+                                </tr>
+                                <tr id="cultureTR">
+                                    <td>Culture</td>
+                                    <td><input id="A-Culture" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                    <td><input id="T-Culture" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                </tr>
+                                <tr id="religionTR">
+                                    <td>Religion</td>
+                                    <td><input id="A-Religion" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                    <td><input id="T-Religion" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                </tr>
+                                <tr id="mainreligionTR">
+                                    <td>Main Religion</td>
+                                    <td><input id="A-MainRel" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                    <td><input id="T-MainRel" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                </tr>
+                                <tr id="populationTR">
+                                    <td>Population</td>
+                                    <td><input id="A-Population" data-style="sharp" data-onstyle="info" type="checkbox" data-size="mini" data-toggle="toggle" data-on=" " data-off=" "></td>
+                                    <td><!--<input id="T-Population" data-style="sharp" data-onstyle="info" type="checkbox" disabled data-size="mini" data-toggle="toggle" data-on=" " data-off=" "> --></td>
+                                </tr>
+                            </table>
+                            <!--
                             <form id="colorFeat" style="float: left" >
-
+Area LOCK-UNLOCK Text
                                 <input type="radio" name="Area" checked="checked" onclick="addAreaFeat('country')" value="A-Country" /><br>
                                 <input type="radio" name="Area" onclick="addAreaFeat('culture')" value="A-Culture" /><br>
                                 <input type="radio" name="Area" onclick="addAreaFeat('religion')" value="A-Religion" /><br>
@@ -25,14 +62,9 @@
                                 <input type="radio" name="Text" onclick="addTextFeat('religionGeneral')" value="T-Main Religions" > T-Main Religions<br>
                                 <input type="radio" name="Text" onclick="addTextFeat('none')" value="none" >none<br>
 
-                            </form>
-                            <li><label class="tree-toggler nav-header advanced">>></label>
-                                <ul class="nav nav-list tree">
-                                    <li><a href="#">      | Area | Labels</a></li>
-                                    <li><a href="#">Ruler |   O  |    O  </a></li>
-                                    <li><a href="#">Table in on li |   O  |    O  </a></li>
-                                </ul>
-                            </li>
+                            </form>      
+                            
+                                                  -->
                         </ul>
                     </li>
                     <li class="divider"></li>
@@ -54,19 +86,17 @@
                                     <li><a href="#">o Athlet</a></li>
                                 </ul>
                             </li>
-                            <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles"> <label class="tree-toggler nav-header advanced">>></label>
-                                <ul class="nav nav-list tree">
-                                    <li><a href="#">o Battle</a></li>
-                                    <li><a href="#">o Siege</a></li>
-                                </ul>
+                            <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles">
                             </li>
-                            <li><input id="areaChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Area" data-off="Area" >
+                            <li><input id="artChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Artefacts" data-off="Artefacts" >
                             </li>
-                            <li><input id="otherChecked"  data-onstyle="default" checked type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
+                            <li><input id="otherChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
                                 <ul class="nav nav-list tree">
-                                    <li><a href="#">o Artefacts</a></li>
+                                    <li><a href="#">o Area Information</a></li>
                                     <li><a href="#">o Unclassified</a></li>
                                 </ul>
+                            </li>
+                            <li id="listPlaceholder">
                             </li>
                         </ul>
                     </li>
@@ -82,16 +112,30 @@
 
 
 <script type="text/javascript">
-
-
     
     console.log("*** initializing map");
 
     var b_area = true;
+    
     var b_people = false;
     var b_city = false;
-    var b_events = false
+    var b_events = false;
+    var b_art = false;
+    var b_other = false;
 
+    var b_sub_cities = true;
+    var b_sub_castles = true;
+    var b_sub_buildings = true;
+    var b_sub_military = true;
+    var b_sub_politician = true;
+    var b_sub_scientist = true;
+    var b_sub_religious = true;
+    var b_sub_athlet = true;
+    var b_sub_areaInfo = true;
+    //var b_sub_battle = false;
+    //var b_sub_siege = false;
+    //var b_sub_artefact = true;
+    var b_sub_unclassified = true;
 
     $("#areaChecked").change(function(){
         b_area = document.getElementById("areaChecked").checked;
@@ -112,8 +156,6 @@
         b_people = document.getElementById("peopleChecked").checked;
         console.debug("map.datalayers:",map.datalayers);
         
-        // search for storage id of iterate map.datalayers_index    year in object and do:
-        
         if(b_people){
             $('.people').show()
             map.getDataLayerByStorageId(newYear).fetchData()
@@ -126,27 +168,48 @@
         }
         
     });
+    
     $("#cityChecked").change(function(){
         b_city = document.getElementById("cityChecked").checked;
         console.debug("map.datalayers:",map.datalayers)
         // search for storage id of iterate map.datalayers_index    year in object and do:
         
         if(b_city){
-            $('.castles').show()
+            if (b_sub_castles) $('.castles').show()
+            else{
+                $('.castles').hide()
+            }
+            if (b_sub_cities) $('.city').show()
+            else{
+                $('.city').hide()
+            }
             map.getDataLayerByStorageId(newYear).fetchData()
         }
         else{
             if ($.inArray(newYear, a_castlesLoaded) != -1){
                 $('.castles').hide()
+                $('.city').hide()
             }
         }
         
     });
+
+    $("#artChecked").change(function(){
+        b_art = document.getElementById("artChecked").checked;
+        if(b_art){
+            $('.art').show()
+            map.getDataLayerByStorageId(newYear).fetchData()
+        }
+
+        else{
+            if ($.inArray(newYear, a_artefactLoaded) != -1){
+                $('.art').hide()
+            }
+        }
+    });
+    
     $("#eventsChecked").change(function(){
         b_events = document.getElementById("eventsChecked").checked;
-        console.debug("map.datalayers:",map.datalayers)
-        // search for storage id of iterate map.datalayers_index    year in object and do:
-        
         if(b_events){
             $('.events').show()
             map.getDataLayerByStorageId(newYear).fetchData()
@@ -157,10 +220,29 @@
                 $('.events').hide()
             }
         }
-        
-            
     });
 
+    $("#otherChecked").change(function(){
+        b_other = document.getElementById("otherChecked").checked;
+        console.debug("map.datalayers:",map.datalayers)
+        // search for storage id of iterate map.datalayers_index    year in object and do:
+
+        if(b_other){
+            if(b_sub_unclassified) {
+                $('.unc').show()
+            }
+            else{
+                $('.unc').hide()
+            }
+            map.getDataLayerByStorageId(newYear).fetchData()
+        }
+        else{
+            if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
+                $('.unc').hide()
+            }
+        }
+
+    });
 
     var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
 
@@ -243,6 +325,8 @@
     $("#featureForms")
             .prependTo(".storage-browse-actions");
 
+    $('#listPlaceholder').append($(".storage-browse-link").detach());
+
     $(".storage-browse-toggle").click(function(){ 
         if($(".storage-browse-actions").css("display") == "none"){
             $(".storage-browse-actions").css("display","block");
@@ -258,19 +342,65 @@
         }
     
     })
-
+/*
+$("input:checkbox").change(function(){
+    var group = ":checkbox[name='"+ $(this).attr("name") + "']";
+   
+    console.debug("group",group,$(this).prop('checked'),$(group).not($(this)))
+    
+    if($(this).prop('checked')){
+        console.debug("now doing it")
+        $(group).not($(this)).click();
+        $(this).parent().click();
+    }
     
     
+});
+*/  
 </script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
+        
         $('label.tree-toggler').click(function () {
             $(this).parent().children('ul.tree').toggle(300);
         });
 
         $('#featureTree .tree-toggler').click()
+
+       // $('#toggle-one').bootstrapToggle();
+
+
+
+        $( "#A-Country" ).parent().on( "click", function() {
+            hideAndAdd('A-Country','country');
+        });
+        $( "#T-Country" ).parent().on( "click", function() {
+            hideAndAdd('T-Country','country');
+        });
+        $( "#A-Culture" ).parent().on( "click", function() {
+            hideAndAdd('A-Culture','culture')
+        });
+        $( "#T-Culture" ).parent().on( "click", function() {
+            hideAndAdd('T-Culture','culture')
+        });
+        $( "#A-Religion" ).parent().on( "click", function() {
+            hideAndAdd('A-Religion','religion')
+        });
+        $( "#T-Religion" ).parent().on( "click", function() {
+            hideAndAdd('T-Religion','religion')
+        });
+        $( "#A-MainRel" ).parent().on( "click", function() {
+            hideAndAdd('A-MainRel','religionGeneral')
+        });
+        $( "#T-MainRel" ).parent().on( "click", function() {
+            hideAndAdd('T-MainRel','religionGeneral')
+        });
+        $( "#A-Population" ).parent().on( "click", function() {
+            hideAndAdd('A-Population','population')
+        });
+
        
     });
 </script>

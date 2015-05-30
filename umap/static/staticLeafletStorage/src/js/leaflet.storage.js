@@ -813,7 +813,7 @@ L.Storage.Map.include({
                 link = L.DomUtil.add('a', '', licence, this.options.licence.name);
             link.href = this.options.licence.url;
         } else {
-            L.DomUtil.add('p', '', credits, L._('No licence has been set'));
+            L.DomUtil.addw('p', '', credits, L._('No licence has been set'));
         }
         L.DomUtil.create('hr', '', credits);
         title = L.DomUtil.create('h5', '', credits);
