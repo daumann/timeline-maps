@@ -374,6 +374,7 @@ L.Storage.FeatureMixin = {
             this.datalayer.isDirty = true;
             this.datalayer.removeLayer(this);
         }
+        console.debug("!-! 3")
         datalayer.addLayer(this);
         datalayer.isDirty = true;
         this._redraw();

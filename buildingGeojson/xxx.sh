@@ -3,9 +3,7 @@ blue='\033[0;34m'
 yellow='\033[1;33m'
 green='\033[0;32m'
 red='\033[0;31m'
-NC='\033[0m' # No Color
-
-#umap=# COPY leaflet_storage_datalayer FROM '/home/aumannd/my-app/subjects.csv' CSV;
+NC='\033[0m' # No ColorV;
 
 
 

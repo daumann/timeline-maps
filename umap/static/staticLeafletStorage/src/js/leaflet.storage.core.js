@@ -174,9 +174,15 @@ L.Util.greedyTemplate = function (str, data, ignore) {
     console.debug("data.wikiUrl", data.wikiUrl);
     if(data.wikiUrl && data.wikiUrl.substring(0,4) == "http" ){
         data.wikiUrl = "WikiURL"+ data.wikiUrl.substr(4) + "?printable=yes";
-    } else if ( data.wikiUrl.substring(0,7) != "WikiURL" ){
+    } else if ( data.wikiUrl && data.wikiUrl.substring(0,7) != "WikiURL" ){
         data.wikiUrl = "WikiURL://en.wikipedia.org/wiki/"+ data.wikiUrl + "?printable=yes";
+    } else if ( data.Url && data.Url.substring(0,4) == "http" ){
+        data.wikiUrl = "WikiURL"+ data.Url.substr(4) + "?printable=yes";
+    } else if ( data.Url && data.Url.substring(0,7) != "WikiURL" ){
+    data.wikiUrl = "WikiURL://en.wikipedia.org/wiki/"+ data.Url + "?printable=yes";
     }
+    
+    
     // Don't throw error if some key is missing
     return str.replace(/\{ *([\w_\:]+) *\}/g, function (str, key) {
         var value = data[key];

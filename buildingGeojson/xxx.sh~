@@ -23,7 +23,7 @@ PLACEOFDEATH=`echo "$line"  | awk  -F'\t' '{ print $7; }'`
 LATITUDE=`echo "$line"  | awk  -F'\t' '{ print $8; }'`
 LONGITUDE=`echo "$line"  | awk  -F'\t' '{ print $9; }'`
 
-      line="xxx"$ALTERNATIVENAMES >> newFile.csv
+echo "xxx"$ALTERNATIVENAMES >> newFile.csv
 done </home/aumannd/Code/github/uMap/buildingGeojson/personDataSnippet2.csv
 
 

@@ -1,3 +1,35 @@
+ sudo sh -c "echo 1 > /proc/sys/vm/drop_caches" # did not work
+
+
+sed -i 's/old-word/new-word/g' *.txt
+
+sed -i 's#iconUrl":"../img/#iconUrl":"/static/i/#g' relDL*
+
+cd /home/aumannd/.virtualenvs/umap/var/uploads/datalayer/people/
+
+! group layers ! http://www.vicchi.org/2015/03/22/vagamente-maleducato-the-vaguely-rude-places-map-goes-international/
+
+https://github.com/turban/Leaflet.Photo
+Leaflet.markercluster
+
+changed: polDL1384 heatmap , 1385 cluster, 1386 cluster ohne attr
+
+iconv -f ISO-8859-1 -t UTF-8 DL50.geojson >DL50b.geojson
+sed -i '$s/,$//' datalayersbs/bsDL*
+
+
+# ALL IMAGES OF WIKIDATA
+https://wdq.wmflabs.org/api?q=BETWEEN[571,1000,1010]%20AND%20claim[18]%20AND%20claim[625]
+
+
+
+
+# SETTINGS FOR PSQL - settings: {"geometry": {"type": "Point", "coordinates": [50, 4]}, "type": "Feature", "properties": {"popupTemplate": "SimplePanel", "miniMap": false, "captionBar": false, "description": "descriptiondescriptiondescription", "scrollWheelZoom": true, "limitBounds": {}, "color": "#1f6377", "displayPopupFooter": false, "zoom": 6, "slideshow": {}, "scaleControl": true, "tilelayer": {}, "datalayersControl": true, "moreControl": true, "licence": "", "tilelayersControl": true, "zoomControl": true, "name": "testName"}}
+
+
+
+
+
 
 # Fuer bots posting to wikidata:
 https://www.wikidata.org/wiki/Wikidata:Creating_a_bot

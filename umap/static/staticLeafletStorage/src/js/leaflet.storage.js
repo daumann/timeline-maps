@@ -458,6 +458,7 @@ L.Storage.Map.include({
         try {
             this.fire('baselayerchange', {layer: tilelayer});
             this.addLayer(tilelayer);
+            console.debug("!-! 4")
             if (this.selected_tilelayer) {
                 this.removeLayer(this.selected_tilelayer);
             }

@@ -72,18 +72,114 @@ Area LOCK-UNLOCK Text
                         <ul class="nav nav-list tree">
                             <li><input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Cities" data-off="Cities"> <label class="tree-toggler nav-header advanced">>></label>
                                 <ul class="nav nav-list tree">
-                                    <li><a href="#">o Cities</a></li>
-                                    <li><a href="#">o Castles</a></li>
-                                    <li><a href="#">o Buildings</a></li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="citiesBox" name="check" />
+                                            <label for="citiesBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Cities
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="castlesBox" name="check" />
+                                            <label for="castlesBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Castles
+                                        </div>
+                                    </li>
+                                    <li style="display: none">
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="buildingsBox" name="check" />
+                                            <label for="buildingsBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Buildings
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li> <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People"> <label class="tree-toggler nav-header advanced">>></label>
                                 <ul class="nav nav-list tree">
-                                    <li><a href="#">o Military</a></li>
-                                    <li><a href="#">o Politician</a></li>
-                                    <li><a href="#">o Scientist</a></li>
-                                    <li><a href="#">o Religious</a></li>
-                                    <li><a href="#">o Athlet</a></li>
+                                    
+                                    <li>
+                                    
+                                    <div class="squaredOne">
+                                        <input type="checkbox" checked value="None" id="milBox" name="check" />
+                                        <label for="milBox"></label>
+                                    </div>
+                                        <div class="labelForBox">
+                                            Military
+                                        </div>                         
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="expBox" name="check" />
+                                            <label for="expBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Explorer
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="polBox" name="check" />
+                                            <label for="polBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Politician
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="sciBox" name="check" />
+                                            <label for="sciBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Scientist
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="artBox" name="check" />
+                                            <label for="artBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Artist
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="relBox" name="check" />
+                                            <label for="relBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Religious
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="athBox" name="check" />
+                                            <label for="athBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Athlete
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="uncBox" name="check" />
+                                            <label for="uncBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Other
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles">
@@ -92,8 +188,26 @@ Area LOCK-UNLOCK Text
                             </li>
                             <li><input id="otherChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
                                 <ul class="nav nav-list tree">
-                                    <li><a href="#">o Area Information</a></li>
-                                    <li><a href="#">o Unclassified</a></li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="areaInfoBox" name="check" />
+                                            <label for="areaInfoBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Area Information
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="unclassifiedBox" name="check" />
+                                            <label for="unclassifiedBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Unclassified
+                                        </div>
+                                    </li>
                                 </ul>
                             </li>
                             <li id="listPlaceholder">
@@ -123,20 +237,181 @@ Area LOCK-UNLOCK Text
     var b_art = false;
     var b_other = false;
 
+    var b_sub_areaInfo = true;
     var b_sub_cities = true;
     var b_sub_castles = true;
     var b_sub_buildings = true;
+    
     var b_sub_military = true;
     var b_sub_politician = true;
     var b_sub_scientist = true;
     var b_sub_religious = true;
-    var b_sub_athlet = true;
-    var b_sub_areaInfo = true;
+    var b_sub_athlete = true;
+    var b_sub_uncP = false;  // !!
+    var b_sub_exp = true;
+    var b_sub_artist = true;
     //var b_sub_battle = false;
     //var b_sub_siege = false;
     //var b_sub_artefact = true;
-    var b_sub_unclassified = true;
+    var b_sub_unclassified = false;
 
+    $("#citiesBox").change(function(){
+        b_sub_cities = document.getElementById("citiesBox").checked;
+        if(b_city && b_sub_cities){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.city').show();
+        }
+        else{
+            if ($.inArray(newYear, a_settlementsLoaded) != -1){
+                $('.city').hide()
+            }
+        }
+    });
+            
+    $("#castlesBox").change(function(){
+        b_sub_castles = document.getElementById("castlesBox").checked;
+        if(b_city && b_sub_castles){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.castles').show();
+        }
+        else{
+            if ($.inArray(newYear, a_castlesLoaded) != -1){
+                $('.castles').hide()
+            }
+        }
+    });
+    
+    $("#unclassifiedBox").change(function(){
+        b_sub_unclassified = document.getElementById("unclassifiedBox").checked;
+        if(b_other && b_sub_unclassified){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.unc').show();
+        }
+        else{
+            if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
+                $('.unc').hide()
+            }
+        }
+    });
+
+    $("#areaInfoBox").change(function(){
+        b_sub_areaInfo = document.getElementById("areaInfoBox").checked;
+        if(b_other && b_sub_areaInfo){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.areaInfo').show();
+        }
+        else{
+            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+                $('.areaInfo').hide()
+            }
+        }
+    });
+    
+    $("#milBox").change(function(){
+        b_sub_military = document.getElementById("milBox").checked;
+        if(b_people && b_sub_military){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.mil').show();
+        }
+        else{
+            if ($.inArray(newYear, a_milLoaded) != -1){
+                $('.mil').hide()
+            }
+        }
+    });
+
+    $("#polBox").change(function(){
+        b_sub_politician = document.getElementById("polBox").checked;
+        if(b_people && b_sub_politician){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.pol').show();
+        }
+        else{
+            if ($.inArray(newYear, a_polLoaded) != -1){
+                $('.pol').hide()
+            }
+        }
+    });
+
+    $("#sciBox").change(function(){
+        b_sub_scientist = document.getElementById("sciBox").checked;
+        if(b_people && b_sub_scientist){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.sci').show();
+        }
+        else{
+            if ($.inArray(newYear, a_sciLoaded) != -1){
+                $('.sci').hide()
+            }
+        }
+    });
+
+    $("#relBox").change(function(){
+        b_sub_religious = document.getElementById("relBox").checked;
+        if(b_people && b_sub_religious){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.rel').show();
+        }
+        else{
+            if ($.inArray(newYear, a_relLoaded) != -1){
+                $('.rel').hide()
+            }
+        }
+    });
+
+    $("#uncBox").change(function(){
+        b_sub_uncP = document.getElementById("uncBox").checked;
+        if(b_people && b_sub_uncP){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.uncP').show();
+        }
+        else{
+            if ($.inArray(newYear, a_uncPLoaded) != -1){
+                $('.uncP').hide()
+            }
+        }
+    });
+
+    $("#expBox").change(function(){
+        b_sub_exp = document.getElementById("expBox").checked;
+        if(b_people && b_sub_exp){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.exp').show();
+        }
+        else{
+            if ($.inArray(newYear, a_expLoaded) != -1){
+                $('.exp').hide()
+            }
+        }
+    });
+
+    $("#artBox").change(function(){
+        b_sub_artist = document.getElementById("artBox").checked;
+        if(b_people && b_sub_artist){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.arti').show();
+        }
+        else{
+            if ($.inArray(newYear, a_artistLoaded) != -1){
+                $('.arti').hide()
+            }
+        }
+    });
+
+    $("#athBox").change(function(){
+        b_sub_athlete = document.getElementById("athBox").checked;
+        if(b_people && b_sub_athlete){
+            map.getDataLayerByStorageId(newYear).fetchData();
+            $('.ath').show();
+        }
+        else{
+            if ($.inArray(newYear, a_athLoaded) != -1){
+                $('.ath').hide()
+            }
+        }
+    });
+    
+    
     $("#areaChecked").change(function(){
         b_area = document.getElementById("areaChecked").checked;
 
@@ -165,6 +440,31 @@ Area LOCK-UNLOCK Text
             if ($.inArray(newYear, a_peopleLoaded) != -1){
                 $('.people').hide()
             }
+            
+            if ($.inArray(newYear, a_milLoaded) != -1){
+                $('.mil').hide()
+            }
+            if ($.inArray(newYear, a_polLoaded) != -1){
+                $('.pol').hide()
+            }
+            if ($.inArray(newYear, a_sciLoaded) != -1){
+                $('.sci').hide()
+            }
+            if ($.inArray(newYear, a_relLoaded) != -1){
+                $('.rel').hide()
+            }
+            if ($.inArray(newYear, a_uncPLoaded) != -1){
+                $('.uncP').hide()
+            }
+            if ($.inArray(newYear, a_expLoaded) != -1){
+                $('.exp').hide()
+            }
+            if ($.inArray(newYear, a_artistLoaded) != -1){
+                $('.arti').hide()
+            }
+            if ($.inArray(newYear, a_athLoaded) != -1){
+                $('.ath').hide()
+            }
         }
         
     });
@@ -185,9 +485,11 @@ Area LOCK-UNLOCK Text
             }
             map.getDataLayerByStorageId(newYear).fetchData()
         }
-        else{
+        else{      
             if ($.inArray(newYear, a_castlesLoaded) != -1){
                 $('.castles').hide()
+            }
+            if ($.inArray(newYear, a_settlementsLoaded) != -1){
                 $('.city').hide()
             }
         }
@@ -234,11 +536,20 @@ Area LOCK-UNLOCK Text
             else{
                 $('.unc').hide()
             }
+            if(b_sub_areaInfo) {
+                $('.areaInfo').show()
+            }
+            else{
+                $('.areaInfo').hide()
+            }
             map.getDataLayerByStorageId(newYear).fetchData()
         }
         else{
             if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
                 $('.unc').hide()
+            }
+            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+                $('.areaInfo').hide()
             }
         }
 
@@ -353,15 +664,17 @@ $("input:checkbox").change(function(){
         $(group).not($(this)).click();
         $(this).parent().click();
     }
-    
-    
-});
-*/  
+
+
+    });
+ */
 </script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 <script>
     $(document).ready(function () {
+        
+        map.addLayer(ClusterSuperGroup);
         
         $('label.tree-toggler').click(function () {
             $(this).parent().children('ul.tree').toggle(300);

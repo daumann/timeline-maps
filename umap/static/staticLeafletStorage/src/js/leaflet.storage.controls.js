@@ -741,6 +741,7 @@ L.S.Editable = L.Editable.extend({
         // Overrided from Leaflet.Editable
         var datalayer = this.map.defaultDataLayer();
         datalayer.addLayer(layer);
+        console.debug("!-! 2")
         layer.isDirty = true;
         return layer;
     },

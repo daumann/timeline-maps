@@ -1,3 +1,33 @@
+var clusterCount = 0;
+
+var ClusterSuperGroup = L.markerClusterGroup({ 
+    spiderfyOnMaxZoom: false, 
+    showCoverageOnHover: false, 
+    zoomToBoundsOnClick: false,
+    maxClusterRadius: 40 
+    /*function() { 
+        console.debug("clusterCount",clusterCount)
+        if (clusterCount>1000) {
+            return 80;
+        }
+        else if (clusterCount>100) {
+            return 2
+        }
+        else {
+            return 40;
+        }        
+    }
+    */
+});
+
+ClusterSuperGroup.on('clusterclick', function (a) {
+   console.debug("tata");
+    drawingSpiderweb=true;
+    a.layer.spiderfy();
+    drawingSpiderweb=false;
+});
+
+
 var staticCoords;
 var currLabelSize = 0;
 var constSize = 0;
@@ -6,27 +36,73 @@ var a_areaLoaded = [];
 var a_peopleLoaded = [];
 var a_settlementsLoaded = [];
 var a_castlesLoaded = [];
+var a_citiesLoaded = [];
 var a_artefactLoaded = [];
 var a_areaInfoLoaded = [];
 var a_eventsLoaded = [];
 var a_unclassifiedLoaded = [];
+
+
+var a_milLoaded = [];
+var a_polLoaded = [];
+var a_sciLoaded = [];
+var a_relLoaded = [];
+var a_uncPLoaded = [];
+var a_expLoaded = [];
+var a_artistLoaded = [];
+var a_athLoaded = [];
+
 var newYear;
 
 function hideAllUnchecked(){
 
-
     if (!b_area && $.inArray(newYear, a_areaLoaded) != -1){
         $('svg').hide()
     }
+    if (!b_other && $.inArray(newYear, a_areaInfoLoaded) != -1){
+        $('.areaInfo').hide()
+    }
+    if (!b_other && $.inArray(newYear, a_unclassifiedLoaded) != -1){
+        $('.unc').hide()
+    }
+    
     if (!b_events && $.inArray(newYear, a_eventsLoaded) != -1){
         $('.events').hide()
     }
     if (!b_city && $.inArray(newYear, a_castlesLoaded) != -1){
         $('.castles').hide()
     }
+    if (!b_city && $.inArray(newYear, a_settlementsLoaded) != -1){
+        $('.city').hide()
+    }
     if (!b_people && $.inArray(newYear, a_peopleLoaded) != -1){
         $('.people').hide()
     }
+    if (!b_people && $.inArray(newYear, a_milLoaded) != -1){
+        $('.mil').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_polLoaded) != -1){
+        $('.pol').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_sciLoaded) != -1){
+        $('.sci').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_relLoaded) != -1){
+        $('.rel').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_uncPLoaded) != -1){
+        $('.uncP').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_expLoaded) != -1){
+        $('.exp').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_artistLoaded) != -1){
+        $('.arti').hide()
+    }
+    if (!b_people && $.inArray(newYear, a_athLoaded) != -1){
+        $('.ath').hide()
+    }
+    
 }
 function loadFeatures(that,newYear,type){
 
@@ -84,14 +160,54 @@ function loadFeatures(that,newYear,type){
         else
             tmpFix="70"+(newYear);
     }
-
-    if (type == "people"){
-        console.log("*** drawing people Marker")
-
+    
+    if (type == "mil"){
         if (newYear<0)
             tmpFix="81"+(newYear*-1);
         else
             tmpFix="80"+(newYear);
+    }
+    if (type == "pol"){
+        if (newYear<0)
+            tmpFix="91"+(newYear*-1);
+        else
+            tmpFix="90"+(newYear);
+    }
+    if (type == "sci"){
+        if (newYear<0)
+            tmpFix="13"+(newYear*-1);
+        else
+            tmpFix="12"+(newYear);
+    }
+    if (type == "rel"){
+        if (newYear<0)
+            tmpFix="15"+(newYear*-1);
+        else
+            tmpFix="14"+(newYear);
+    }
+    if (type == "uncP"){
+        if (newYear<0)
+            tmpFix="17"+(newYear*-1);
+        else
+            tmpFix="16"+(newYear);
+    }
+    if (type == "exp"){
+        if (newYear<0)
+            tmpFix="19"+(newYear*-1);
+        else
+            tmpFix="18"+(newYear);
+    }
+    if (type == "arti"){
+        if (newYear<0)
+            tmpFix="23"+(newYear*-1);
+        else
+            tmpFix="22"+(newYear);
+    }
+    if (type == "ath"){
+        if (newYear<0)
+            tmpFix="25"+(newYear*-1);
+        else
+            tmpFix="24"+(newYear);
     }
 
     that.map.get("/en/datalayer/"+tmpFix+"/", {
@@ -433,6 +549,7 @@ L.Storage.DataLayer = L.Class.extend({
         this.eachLayer(function (layer) {
             this.layer.addLayer(layer);
         });
+        console.debug("!-! 1")
         if (visible) {
             this.map.addLayer(this.layer);
         }
@@ -534,13 +651,68 @@ L.Storage.DataLayer = L.Class.extend({
         
         if (b_people){
 
-            if ($.inArray(newYear, a_peopleLoaded) == -1){
-                a_peopleLoaded.push(newYear);
-                loadFeatures(this,newYear,"people");
+            if (b_sub_military && $.inArray(newYear, a_milLoaded) == -1){
+                loadFeatures(this,newYear,"mil");
+                a_milLoaded.push(newYear);
             }
-            else{
-                $('.people').show()
-                console.log("*** People not loaded in for layer",newYear,"Data already loaded.");
+            else if (b_sub_military){
+                $('.mil').show()
+            }
+
+            if (b_sub_politician && $.inArray(newYear, a_polLoaded) == -1){
+                loadFeatures(this,newYear,"pol");
+                a_polLoaded.push(newYear);
+            }
+            else if (b_sub_politician){
+                $('.pol').show()
+            }
+
+            if (b_sub_scientist && $.inArray(newYear, a_sciLoaded) == -1){
+                loadFeatures(this,newYear,"sci");
+                a_sciLoaded.push(newYear);
+            }
+            else if (b_sub_scientist){
+                $('.sci').show()
+            }
+
+            if (b_sub_religious && $.inArray(newYear, a_relLoaded) == -1){
+                loadFeatures(this,newYear,"rel");
+                a_relLoaded.push(newYear);
+            }
+            else if (b_sub_religious){
+                $('.rel').show()
+            }
+
+            if (b_sub_uncP && $.inArray(newYear, a_uncPLoaded) == -1){
+                loadFeatures(this,newYear,"uncP");
+                a_uncPLoaded.push(newYear);
+            }
+            else if (b_sub_uncP){
+                $('.uncP').show()
+            }
+
+            if (b_sub_exp && $.inArray(newYear, a_expLoaded) == -1){
+                loadFeatures(this,newYear,"exp");
+                a_expLoaded.push(newYear);
+            }
+            else if (b_sub_exp){
+                $('.exp').show()
+            }
+
+            if (b_sub_artist && $.inArray(newYear, a_artistLoaded) == -1){
+                loadFeatures(this,newYear,"arti");
+                a_artistLoaded.push(newYear);
+            }
+            else if (b_sub_artist){
+                $('.arti').show()
+            }
+
+            if (b_sub_athlete && $.inArray(newYear, a_athLoaded) == -1){
+                loadFeatures(this,newYear,"ath");
+                a_athLoaded.push(newYear);
+            }
+            else if (b_sub_athlete){
+                $('.ath').show()
             }
             /*
         this.map.get(this._dataUrl(), {
@@ -572,13 +744,20 @@ L.Storage.DataLayer = L.Class.extend({
 
         if (b_other){
 
-            if (b_sub_areaInfo && $.inArray(newYear, a_unclassifiedLoaded) == -1){
+            if (b_sub_areaInfo && $.inArray(newYear, a_areaInfoLoaded) == -1){
+                a_areaInfoLoaded.push(newYear);
+                loadFeatures(this,newYear,"areaInfo");
+            }
+            else if (b_sub_areaInfo){
+                $('.areaInfo').show()
+            }
+
+            if (b_sub_unclassified && $.inArray(newYear, a_unclassifiedLoaded) == -1){
                 a_unclassifiedLoaded.push(newYear);
                 loadFeatures(this,newYear,"unc");
             }
-            else{
+            else if (b_sub_unclassified){
                 $('.unc').show()
-                console.log("*** Unclassified not loaded in for layer",newYear,"Data already loaded.");
             }
 
         }
@@ -726,14 +905,17 @@ L.Storage.DataLayer = L.Class.extend({
         this._index.push(id);
         
         this._layers[id] = feature;
+
+   //     clusterCount++;
+        ClusterSuperGroup.addLayer(feature);
+        //this.layer.addLayer(feature);
         
-        this.layer.addLayer(feature);
-        
+     //   console.debug("!-! 5")
         if (this.hasDataLoaded()) {
             this.fire('datachanged');
         }
 
-        console.debug("adding feature", feature)
+     //   console.debug("adding feature", feature)
     },
 
     removeLayer: function (feature) {
@@ -752,13 +934,13 @@ L.Storage.DataLayer = L.Class.extend({
 
        // geojson._storage.displayOnLoad = false;
         
-        console.debug("adding data", geojson)
+     //   console.debug("adding data", geojson)
         
         this.geojsonToFeatures(geojson);
     },
 
     addRawData: function (c, type) {
-        console.debug("adding RawData", c, type)
+    //    console.debug("adding RawData", c, type)
         var self = this;
         this.rawToGeoJSON(c, type, function (geojson) {
             self.addData(geojson);
@@ -814,7 +996,7 @@ L.Storage.DataLayer = L.Class.extend({
 
     geojsonToFeatures: function (geojson) {
         
-        console.debug("geojsonToFeatures", JSON.stringify(geojson));
+     //   console.debug("geojsonToFeatures", JSON.stringify(geojson));
         var features = geojson instanceof Array ? geojson : geojson.features,
             i, len;
 
@@ -893,7 +1075,9 @@ L.Storage.DataLayer = L.Class.extend({
                 L.S.fire('ui:alert', {content: L._('Skipping unkown geometry.type: {type}', {type: geometry.type}), level: 'error'});
         }
         if (layer) {
+            console.debug("!-! 6")
             this.addLayer(layer);
+         //   ClusterSuperGroup.addLayer(layer);
             return layer;
         }
     },
@@ -1198,7 +1382,11 @@ L.Storage.DataLayer = L.Class.extend({
             this.fetchData();
         }
         console.log("*** adding layer to map: this.layer", this)
-        this.map.addLayer(this.layer);
+
+ //       clusterCount = 0;
+        ClusterSuperGroup.clearLayers();
+        
+        console.debug("!-! 7")
         this.fire('show');
 
     },
