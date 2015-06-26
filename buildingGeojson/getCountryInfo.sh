@@ -76,7 +76,7 @@ if [ "$lastEntry" != "$newLineMinusYear" ] ; then
 
 if [[ $currentYear -gt $blockingYear ]] ; then
 
-echo -e $waitingToWrite >> provinceHistory.csv
+echo -e $waitingToWrite # >> provinceHistory.csv
 
 fi
 

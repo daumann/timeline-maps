@@ -1,3 +1,4 @@
+NEWCOUNTRYKTS - Katsina.txt
 # No previous file for Katsina
 
 government = tribal_kingdom

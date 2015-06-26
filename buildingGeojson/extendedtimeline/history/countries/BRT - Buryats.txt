@@ -1,3 +1,4 @@
+NEWCOUNTRYBRT - Buryats.txt
 government = siberian_native_council
 mercantilism = 0.1
 primary_culture = buryat

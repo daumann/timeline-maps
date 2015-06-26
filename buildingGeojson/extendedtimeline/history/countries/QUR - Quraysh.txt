@@ -1,3 +1,4 @@
+NEWCOUNTRYQUR - Quraysh.txt
 government = tribal_despotism
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 2

@@ -1,3 +1,4 @@
+NEWCOUNTRYBGL - Bagelkhand.txt
 government = feudal_monarchy
 technology_group = indian
 religion = hinduism

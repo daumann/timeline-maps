@@ -1,3 +1,4 @@
+NEWCOUNTRYGOL - Golden Horde.txt
 government = steppe_horde
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 5

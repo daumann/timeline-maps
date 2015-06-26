@@ -119,17 +119,17 @@ fieldset.toggle legend {
     cursor: pointer;
 }
 fieldset.toggle .more_style_options:before {
-    content: "…";
+    content: "â€¦";
 }
 fieldset.toggle legend:before {
-    content: "▶";
+    content: "â–¶";
     padding-right: 5px;
     color: #666;
     font-size: 0.9em;
     vertical-align: middle;
 }
 fieldset.toggle.on legend:before {
-    content: "▼";
+    content: "â–¼";
 }
 fieldset.toggle.on > * {
     display: block;
@@ -208,7 +208,7 @@ fieldset.toggle.on .more_style_options {
     text-decoration: underline;
 }
 #storage-ui-container .toolbox li + li {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 /* *********** */
@@ -296,17 +296,89 @@ fieldset.toggle.on .more_style_options {
 /* *********** */
 /* Close link  */
 /* *********** */
-.storage-close-icon {
+.overviewContainer{
+    float: left !important;
+    margin-left: -30px !important;
+}
+.fullWidth{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/src/img/16.png");
-    background-position: -52px -9px;
+    background-image: url("/static/staticReqs/flaticons/expanding5.png");
+    background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
+    opacity: 0.6;
 }
+.fullWidth:hover{
+    opacity: 1;
+}
+
+.halfWidth{
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/multimediaoption30.png");
+    background-size: 16px 16px;
+    display: inline;
+    padding: 0 10px;
+    opacity: 0.6;
+}
+.halfWidth:hover{
+    opacity: 1;
+}
+
+
+.GoToWikipedia{
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/wikipedia2.png");
+    background-size: 16px 16px;
+    display: inline;
+    padding: 0 10px;
+    opacity: 0.6;
+}
+.GoToWikipedia:hover{
+    opacity: 1;
+}
+.storage-list{
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    background-size: 16px 16px;
+    display: inline;
+    padding: 0 10px;
+    background-position: inherit !important;
+    opacity: 0.6;
+}
+.storage-list:hover{
+    opacity: 1;
+}
+.report{
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/warning45.png");
+    background-size: 16px 16px;
+    display: inline;
+    padding: 0 10px;
+    fill: red;
+    opacity: 0.6;
+}
+.report:hover{
+    opacity: 1;
+}
+.storage-close-icon {
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-size: 16px 16px;
+    display: inline;
+    margin-top: 10px;
+    background-position: inherit;;
+    padding: 0px 10px;
+    opacity: 0.5;
+}
+.storage-close-icon:hover {
+    opacity: 1;
+}
+
 .storage-alert .storage-close-link {
     color: #fff;
     float: right;
-    padding-right: 10px;
+    display: inline;
+    padding: 0 10px;
 }
 .storage-alert .storage-close-icon {
     background-position: -128px -90px;
@@ -593,4 +665,62 @@ path:hover {
     /* margin-top: 3px; */
     line-height: 25px;
     vertical-align: middle;
+}
+
+.pull-left{float:left!important;}
+.pull-right{float:right!important;}
+
+.hier {
+    float: left;
+    margin-right: 0px !important;
+}
+
+.centerClass {
+    cursor: pointer;
+    background-image: inherit !important;
+    line-height: 15px !important;
+    height: inherit !important;
+
+}
+
+.singImage{
+    padding-right: 2px; max-height:100px;
+
+}
+#geoGallery {
+    max-height: 110px;
+    overflow-y: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    clear: none;
+    float: right;
+    right: 45px;
+
+}
+#geoGallery:hover {
+    overflow-x: visible;
+}
+
+.leaflet-control-edit-enable.storage-control {
+    position: absolute;
+    right: 0px;
+    top: 45px;
+}
+
+.resource{
+    width: 100px;
+    float: left !important;
+
+}
+
+
+.form-control{
+    padding: 1px 5px !important;
+
+}
+
+
+.input-group-addon{
+    padding: 1px 5px !important;
+
 }

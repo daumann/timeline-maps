@@ -1,3 +1,4 @@
+NEWCOUNTRYRWA - Rwanda.txt
 government = tribal_despotism
 mercantilism = 0.1
 primary_culture = eastern_bantu

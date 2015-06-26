@@ -1,3 +1,4 @@
+NEWCOUNTRYERE - Eretna.txt
 government = iqta
 mercantilism = 0.1
 primary_culture = turkish

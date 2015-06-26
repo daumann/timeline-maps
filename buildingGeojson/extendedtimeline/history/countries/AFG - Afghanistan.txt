@@ -1,3 +1,4 @@
+NEWCOUNTRYAFG - Afghanistan.txt
 government = feudal_monarchy
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 3

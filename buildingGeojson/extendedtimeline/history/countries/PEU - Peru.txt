@@ -1,3 +1,4 @@
+NEWCOUNTRYPEU - Peru.txt
 government = administrative_republic
 #aristocracy_plutocracy = -4
 #centralization_decentralization = -4

@@ -1,3 +1,4 @@
+NEWCOUNTRYBSH - Bashkiria.txt
 government = steppe_horde
 mercantilism = 0.1
 primary_culture = bashkir

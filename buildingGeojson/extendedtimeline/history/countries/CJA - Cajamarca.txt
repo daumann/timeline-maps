@@ -1,3 +1,4 @@
+NEWCOUNTRYCJA - Cajamarca.txt
 government = tribal_kingdom
 mercantilism = 0.1
 primary_culture = inca

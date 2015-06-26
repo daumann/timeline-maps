@@ -36,7 +36,7 @@ decodedString=`echo $NAME | tr "|" " "  | tr "?" " "`
 encodedString="$(perl -MURI::Escape -e 'print uri_escape($ARGV[0]);' "$decodedString")"
 
 
-wikiURL=`curl --silent "http://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=2&srwhat=text&srsearch=$encodedString" | jq . | grep -oP '\"title\": \"\K.*?(?=\"\,)' | head -n 1`
+wikiURL=`curl --silent "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srlimit=2&srwhat=text&srsearch=$encodedString" | jq . | grep -oP '\"title\": \"\K.*?(?=\"\,)' | head -n 1`
 
 
 

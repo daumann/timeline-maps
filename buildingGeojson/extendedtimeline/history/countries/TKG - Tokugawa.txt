@@ -1,3 +1,4 @@
+NEWCOUNTRYTKG - Tokugawa.txt
 government = daimyo
 primary_culture = japanese
 religion = shinto

@@ -1,3 +1,4 @@
+NEWCOUNTRYNZH - Nizhny Novgorod.txt
 # Principality of Nizhny Novgorod-Suzdal
 
 government = principality

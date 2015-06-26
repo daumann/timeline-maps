@@ -1,3 +1,4 @@
+NEWCOUNTRYKOC - Kochin.txt
 government = feudal_monarchy
 mercantilism = 0.1
 technology_group = indian

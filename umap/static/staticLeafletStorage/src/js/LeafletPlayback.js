@@ -591,6 +591,58 @@ L.Playback.DateControl = L.Control.extend({
                 isNewDate = true;
                 console.log("year changed from",lastDate,"to",newDate);
                 
+                /*
+
+                 var sortRuler = [];
+                 var sortCul = [];
+                 var sortRel = [];
+
+                 var total = 0;
+                 var rulerPops = {}
+                 var culPops = {}
+                 var relPops = {}
+                 var mainRelPops = {}
+
+
+
+                 for (var key in y1500) {
+                     total +=  y1500[key][4]
+    
+                     if (isNaN(rulerPops[y1500[key][0]])){
+                        rulerPops[y1500[key][0]] = y1500[key][4];
+                     } else {
+                        rulerPops[y1500[key][0]] += y1500[key][4];
+                     }
+    
+                     if (isNaN(culPops[y1500[key][1]])){
+                        culPops[y1500[key][1]] = y1500[key][4];
+                     } else {
+                        culPops[y1500[key][1]] += y1500[key][4];
+                     }
+    
+                     if (isNaN(relPops[y1500[key][2]])){
+                        relPops[y1500[key][2]] = y1500[key][4];
+                     } else {
+                        relPops[y1500[key][2]] += y1500[key][4];
+                     }
+                 }
+
+                 sortRuler = [];
+                 sortCul = [];
+                 sortRel = [];
+
+                 for (var key in rulerPops)
+                    sortRuler.push([key, rulerPops[key]])
+                 for (var key in culPops)
+                    sortCul.push([key, culPops[key]])
+                 for (var key in relPops)
+                    sortRel.push([key, relPops[key]])
+
+                 sortRuler.sort(function(b, a) {return a[1] - b[1]})
+                 sortCul.sort(function(b, a) {return a[1] - b[1]})
+                 sortRel.sort(function(b, a) {return a[1] - b[1]})
+                                 
+                 */
                 
                 if(loadedLayers.indexOf(newDate) == -1){
                     staticLayerThis.createDataLayer({"displayOnLoad":false,"name":newDate.toString(),"id":newDate,"remoteData":{}})
@@ -604,7 +656,7 @@ L.Playback.DateControl = L.Control.extend({
                 lastDate = newDate;
                 self._date.innerHTML = newDate; // L.Playback.Util.DateStr(1369786384250);
                 console.debug("year changed");
-                hideAllUnchecked();
+                //hideAllUnchecked();
                 
 
 

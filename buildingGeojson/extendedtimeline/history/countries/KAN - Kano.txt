@@ -1,3 +1,4 @@
+NEWCOUNTRYKAN - Kano.txt
 # No previous file for Kano
 
 government = tribal_kingdom

@@ -1,3 +1,4 @@
+NEWCOUNTRYLTG - Latgalia.txt
 government = tribal_despotism
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 1

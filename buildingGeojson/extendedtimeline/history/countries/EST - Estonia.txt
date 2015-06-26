@@ -1,3 +1,4 @@
+NEWCOUNTRYEST - Estonia.txt
 government = tribal_democracy
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 1

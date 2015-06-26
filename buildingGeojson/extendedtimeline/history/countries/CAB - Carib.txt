@@ -1,3 +1,4 @@
+NEWCOUNTRYCAB - Carib.txt
 government = native_council
 mercantilism = 0.1
 primary_culture = carib

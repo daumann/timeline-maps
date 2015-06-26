@@ -1,3 +1,4 @@
+NEWCOUNTRYMDI - Mogadishu.txt
 government = despotic_monarchy
 mercantilism = 0.15
 technology_group = indian

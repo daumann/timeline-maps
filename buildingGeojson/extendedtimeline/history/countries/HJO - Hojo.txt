@@ -1,3 +1,4 @@
+NEWCOUNTRYHJO - Hojo.txt
 government = daimyo
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 3

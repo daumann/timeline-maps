@@ -1,3 +1,4 @@
+NEWCOUNTRYKIB - Kibi.txt
 government = despotic_monarchy
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 2

@@ -1,3 +1,4 @@
+NEWCOUNTRYCSA - CSA.txt
 government = revolutionary_republic
 #aristocracy_plutocracy = 1
 #centralization_decentralization = 1

@@ -1,3 +1,4 @@
+NEWCOUNTRYAAC - Aachen.txt
 government = administrative_republic
 #aristocracy_plutocracy = 5
 #centralization_decentralization = 5

@@ -1,3 +1,4 @@
+NEWCOUNTRYKRI - Krivichs.txt
 government = tribal_federation
 mercantilism = 0.1
 technology_group = eastern

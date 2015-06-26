@@ -9,7 +9,7 @@ L.Storage.Icon = L.DivIcon.extend({
         options = L.Util.extend({}, default_options, options);
         L.Icon.prototype.initialize.call(this, options);
         this.feature = this.options.feature;
-        this.options.className += ' '+this.options.feature.properties.ty;
+     //   this.options.className += ' '+this.options.feature.properties.ty;
         if (this.feature && this.feature.isReadOnly()) {
             this.options.className += ' readonly';
         }

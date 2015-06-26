@@ -1,3 +1,4 @@
+NEWCOUNTRYMSI - Mossi.txt
 # No previous file for Mossi
 
 government = tribal_kingdom

@@ -1,3 +1,4 @@
+NEWCOUNTRYPLS - Palestine.txt
 government = constitutional_republic
 mercantilism = 0.1
 primary_culture = palestinian

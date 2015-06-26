@@ -1,3 +1,4 @@
+NEWCOUNTRYSKN - St. Kitts and Nevis.txt
 government = parliamentary_republic
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 0

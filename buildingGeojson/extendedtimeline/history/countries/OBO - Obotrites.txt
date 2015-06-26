@@ -1,3 +1,4 @@
+NEWCOUNTRYOBO - Obotrites.txt
 government = feudal_monarchy
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 4

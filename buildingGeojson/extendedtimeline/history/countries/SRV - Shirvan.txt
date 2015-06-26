@@ -1,3 +1,4 @@
+NEWCOUNTRYSRV - Shirvan.txt
 government = despotic_monarchy
 primary_culture = azerbaijani
 technology_group = muslim

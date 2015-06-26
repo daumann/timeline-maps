@@ -1,3 +1,4 @@
+NEWCOUNTRYDUL - Dulkadir.txt
 government = iqta
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 0

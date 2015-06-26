@@ -1,3 +1,4 @@
+NEWCOUNTRYTGT - Touggourt.txt
 government = tribal_despotism
 primary_culture = berber
 religion = african

@@ -1,3 +1,4 @@
+NEWCOUNTRYCIR - Circassia.txt
 government = tribal_federation
 mercantilism = 0.1
 primary_culture = circassian

@@ -1,3 +1,4 @@
+NEWCOUNTRYCYI - Yi.txt
 government = despotic_monarchy
 primary_culture = yi
 religion = animism

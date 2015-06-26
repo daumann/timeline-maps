@@ -1,3 +1,4 @@
+NEWCOUNTRYPRM - Perm.txt
 government = tribal_despotism
 ##aristocracy_plutocracy = 4
 ##centralization_decentralization = 4

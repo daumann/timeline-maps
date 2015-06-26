@@ -1,3 +1,4 @@
+NEWCOUNTRYABB - Abbasids.txt
 government = caliphate
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 1

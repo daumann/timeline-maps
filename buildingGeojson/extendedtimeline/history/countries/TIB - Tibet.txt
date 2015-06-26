@@ -1,3 +1,4 @@
+NEWCOUNTRYTIB - Tibet.txt
 government = despotic_monarchy
 #aristocracy_plutocracy = 0
 #centralization_decentralization = 5

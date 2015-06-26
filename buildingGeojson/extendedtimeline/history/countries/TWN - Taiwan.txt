@@ -1,3 +1,4 @@
+NEWCOUNTRYTWN - Taiwan.txt
 government = constitutional_republic
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 0

@@ -1,3 +1,4 @@
+NEWCOUNTRYPTA - Patiala.txt
 government = feudal_monarchy
 technology_group = indian
 primary_culture = panjabi

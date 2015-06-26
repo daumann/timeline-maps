@@ -1,3 +1,4 @@
+NEWCOUNTRYVAS - Vasconia.txt
 government = barbarian_tribe
 #aristocracy_plutocracy = -1
 #centralization_decentralization = -4

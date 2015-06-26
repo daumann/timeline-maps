@@ -1,3 +1,4 @@
+NEWCOUNTRYNAT - Natives.txt
 #aristocracy_plutocracy = 0
 #centralization_decentralization = 0
 #innovative_narrowminded = 0

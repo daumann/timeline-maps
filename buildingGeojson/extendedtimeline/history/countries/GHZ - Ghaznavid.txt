@@ -1,3 +1,4 @@
+NEWCOUNTRYGHZ - Ghaznavid.txt
 government = despotic_monarchy
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 3

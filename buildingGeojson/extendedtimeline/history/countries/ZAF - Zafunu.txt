@@ -1,3 +1,4 @@
+NEWCOUNTRYZAF - Zafunu.txt
 # No previous file for Zafunu (tag changed from Zafunu to Macina)
 
 government = tribal_despotism

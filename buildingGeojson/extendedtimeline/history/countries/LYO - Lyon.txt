@@ -1,3 +1,4 @@
+NEWCOUNTRYLYO - Lyon.txt
 government = theocratic_government
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 3

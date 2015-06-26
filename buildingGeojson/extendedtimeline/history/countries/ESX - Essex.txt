@@ -1,3 +1,4 @@
+NEWCOUNTRYESX - Essex.txt
 government = feudal_monarchy
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 3

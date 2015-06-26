@@ -1,3 +1,4 @@
+NEWCOUNTRYAUS - Australia.txt
 government = parliamentary_republic
 #aristocracy_plutocracy = 5
 #centralization_decentralization = -3

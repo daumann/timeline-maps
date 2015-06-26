@@ -1,3 +1,4 @@
+NEWCOUNTRYASH - Ashanti.txt
 government = tribal_despotism
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 5

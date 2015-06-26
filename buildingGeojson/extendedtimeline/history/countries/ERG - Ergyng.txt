@@ -1,3 +1,4 @@
+NEWCOUNTRYERG - Ergyng.txt
 government = barbarian_tribe
 mercantilism = 0.1
 technology_group = barbarian

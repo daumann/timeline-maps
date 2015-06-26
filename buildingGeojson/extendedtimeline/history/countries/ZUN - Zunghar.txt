@@ -1,3 +1,4 @@
+NEWCOUNTRYZUN - Zunghar.txt
 government = steppe_horde
 primary_culture = oirats
 religion = buddhism

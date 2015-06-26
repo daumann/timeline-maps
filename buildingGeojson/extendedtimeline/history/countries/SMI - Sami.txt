@@ -1,3 +1,4 @@
+NEWCOUNTRYSMI - Sami.txt
 government = tribal_democracy
 mercantilism = 0.1
 technology_group = western

@@ -1,3 +1,4 @@
+NEWCOUNTRYVEP - Veps.txt
 government = tribal_despotism
 mercantilism = 0.1
 technology_group = eastern

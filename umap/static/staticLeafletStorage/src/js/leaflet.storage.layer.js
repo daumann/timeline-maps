@@ -1,10 +1,25 @@
 var clusterCount = 0;
+var progress = document.getElementById('progress');
+var progressBar = document.getElementById('progress-bar');
 
+function updateProgressBar(processed, total, elapsed, layersArray) {
+    if (elapsed > 1000) {
+        // if it takes more than a second to load, display the progress bar:
+        progress.style.display = 'block';
+        progressBar.style.width = Math.round(processed/total*100) + '%';
+    }
+
+    if (processed === total) {
+        // all markers processed - hide the progress bar:
+        progress.style.display = 'none';
+    }
+}
 var ClusterSuperGroup = L.markerClusterGroup({ 
     spiderfyOnMaxZoom: false, 
     showCoverageOnHover: false, 
-    zoomToBoundsOnClick: false,
-    maxClusterRadius: 40 
+    zoomToBoundsOnClick: false, 
+    chunkProgress: updateProgressBar,
+    maxClusterRadius: 40
     /*function() { 
         console.debug("clusterCount",clusterCount)
         if (clusterCount>1000) {
@@ -21,13 +36,13 @@ var ClusterSuperGroup = L.markerClusterGroup({
 });
 
 ClusterSuperGroup.on('clusterclick', function (a) {
-   console.debug("tata");
+   //console.debug("tata");
     drawingSpiderweb=true;
-    a.layer.spiderfy();
+    a.layer.spiderfy(); //explodeCluster();
     drawingSpiderweb=false;
 });
 
-
+var oldYear = 1000000;
 var staticCoords;
 var currLabelSize = 0;
 var constSize = 0;
@@ -36,13 +51,10 @@ var a_areaLoaded = [];
 var a_peopleLoaded = [];
 var a_settlementsLoaded = [];
 var a_castlesLoaded = [];
-var a_citiesLoaded = [];
 var a_artefactLoaded = [];
 var a_areaInfoLoaded = [];
 var a_eventsLoaded = [];
 var a_unclassifiedLoaded = [];
-
-
 var a_milLoaded = [];
 var a_polLoaded = [];
 var a_sciLoaded = [];
@@ -52,158 +64,183 @@ var a_expLoaded = [];
 var a_artistLoaded = [];
 var a_athLoaded = [];
 
+var a_areaData = [];
+var a_peopleData = [];
+var a_settlementsData = [];
+var a_castlesData = [];
+var a_artefactData = [];
+var a_areaInfoData = [];
+var a_eventsData = [];
+var a_unclassifiedData = [];
+var a_milData = [];
+var a_polData = [];
+var a_sciData = [];
+var a_relData = [];
+var a_uncPData = [];
+var a_expData = [];
+var a_artistData = [];
+var a_athData = [];
+var b_areaLoaded = false;
 var newYear;
 
 function hideAllUnchecked(){
-
-    if (!b_area && $.inArray(newYear, a_areaLoaded) != -1){
+/*
+    if (!b_area && a_areaLoaded) != -1){
         $('svg').hide()
     }
-    if (!b_other && $.inArray(newYear, a_areaInfoLoaded) != -1){
+    if (!b_other && a_areaInfoLoaded) != -1){
         $('.areaInfo').hide()
     }
-    if (!b_other && $.inArray(newYear, a_unclassifiedLoaded) != -1){
+    if (!b_other && a_unclassifiedLoaded) != -1){
         $('.unc').hide()
     }
     
-    if (!b_events && $.inArray(newYear, a_eventsLoaded) != -1){
+    if (!b_events && a_eventsLoaded) != -1){
         $('.events').hide()
     }
-    if (!b_city && $.inArray(newYear, a_castlesLoaded) != -1){
+    if (!b_city && a_castlesLoaded) != -1){
         $('.castles').hide()
     }
-    if (!b_city && $.inArray(newYear, a_settlementsLoaded) != -1){
+    if (!b_city && a_settlementsLoaded) != -1){
         $('.city').hide()
     }
-    if (!b_people && $.inArray(newYear, a_peopleLoaded) != -1){
+    if (!b_people && a_peopleLoaded) != -1){
         $('.people').hide()
     }
-    if (!b_people && $.inArray(newYear, a_milLoaded) != -1){
+    if (!b_people && a_milLoaded) != -1){
         $('.mil').hide()
     }
-    if (!b_people && $.inArray(newYear, a_polLoaded) != -1){
+    if (!b_people && a_polLoaded) != -1){
         $('.pol').hide()
     }
-    if (!b_people && $.inArray(newYear, a_sciLoaded) != -1){
+    if (!b_people && a_sciLoaded) != -1){
         $('.sci').hide()
     }
-    if (!b_people && $.inArray(newYear, a_relLoaded) != -1){
+    if (!b_people && a_relLoaded) != -1){
         $('.rel').hide()
     }
-    if (!b_people && $.inArray(newYear, a_uncPLoaded) != -1){
+    if (!b_people && a_uncPLoaded) != -1){
         $('.uncP').hide()
     }
-    if (!b_people && $.inArray(newYear, a_expLoaded) != -1){
+    if (!b_people && a_expLoaded) != -1){
         $('.exp').hide()
     }
-    if (!b_people && $.inArray(newYear, a_artistLoaded) != -1){
+    if (!b_people && a_artistLoaded) != -1){
         $('.arti').hide()
     }
-    if (!b_people && $.inArray(newYear, a_athLoaded) != -1){
+    if (!b_people && a_athLoaded) != -1){
         $('.ath').hide()
     }
-    
+   */ 
 }
 function loadFeatures(that,newYear,type){
 
     var tmpFix;
     if (type == "events"){
         console.log("*** drawing Events")
-        
+        a_eventsData=[];
         if (newYear<0)
             tmpFix="21"+(newYear*-1);
         else
             tmpFix="20"+(newYear);   
     }
 
-    if (type == "city"){
+    else if (type == "city"){
         console.log("*** drawing city")
-        
+        a_settlementsData=[];
         if (newYear<0)
             tmpFix="31"+(newYear*-1);
         else
             tmpFix="30"+(newYear);
     }
 
-    if (type == "castles"){
+    else if (type == "castles"){
         console.log("*** drawing Castles")
-        
+        a_castlesData=[];
         if (newYear<0)
             tmpFix="41"+(newYear*-1);
         else
             tmpFix="40"+(newYear);
     }
 
-    if (type == "art"){
+    else if (type == "art"){
         console.log("*** drawing Artefacts")
-        
+        a_artefactData=[];
         if (newYear<0)
             tmpFix="51"+(newYear*-1);
         else
             tmpFix="50"+(newYear);
     }
 
-    if (type == "areaInfo"){
+    else if (type == "areaInfo"){
         console.log("*** drawing area Info")
-
+        a_areaInfoData=[];
         if (newYear<0)
             tmpFix="61"+(newYear*-1);
         else
             tmpFix="60"+(newYear);
     }
 
-    if (type == "unc"){
+    else if (type == "unc"){
         console.log("*** drawing unclassified Marker")
-
+        a_unclassifiedData=[];
         if (newYear<0)
             tmpFix="71"+(newYear*-1);
         else
             tmpFix="70"+(newYear);
     }
-    
-    if (type == "mil"){
+
+    else if (type == "mil"){
+        a_milData=[];
         if (newYear<0)
             tmpFix="81"+(newYear*-1);
         else
             tmpFix="80"+(newYear);
     }
-    if (type == "pol"){
+    else if (type == "pol"){
+        a_polData =[];
         if (newYear<0)
             tmpFix="91"+(newYear*-1);
         else
             tmpFix="90"+(newYear);
     }
-    if (type == "sci"){
+    else if (type == "sci"){
+        a_sciData=[];
         if (newYear<0)
             tmpFix="13"+(newYear*-1);
         else
             tmpFix="12"+(newYear);
     }
-    if (type == "rel"){
+    else if (type == "rel"){
+        a_relData=[];
         if (newYear<0)
             tmpFix="15"+(newYear*-1);
         else
             tmpFix="14"+(newYear);
     }
-    if (type == "uncP"){
+    else if (type == "uncP"){
+        a_uncPData=[];
         if (newYear<0)
             tmpFix="17"+(newYear*-1);
         else
             tmpFix="16"+(newYear);
     }
-    if (type == "exp"){
+    else if (type == "exp"){
+        a_expData=[];
         if (newYear<0)
             tmpFix="19"+(newYear*-1);
         else
             tmpFix="18"+(newYear);
     }
-    if (type == "arti"){
+    else if (type == "arti"){
+        a_artistData=[];
         if (newYear<0)
             tmpFix="23"+(newYear*-1);
         else
             tmpFix="22"+(newYear);
     }
-    if (type == "ath"){
+    else if (type == "ath"){
+        a_athData=[];
         if (newYear<0)
             tmpFix="25"+(newYear*-1);
         else
@@ -212,20 +249,91 @@ function loadFeatures(that,newYear,type){
 
     that.map.get("/en/datalayer/"+tmpFix+"/", {
         callback: function (geojson, response) {
-
+            var  tmpDataArray = []
             if (geojson._storage) {
                 that.setOptions(geojson._storage);
             }
+            console.debug("x1")
             that._etag = response.getResponseHeader('ETag');
             if (that.isRemoteLayer()) {
-                console.debug("fetching remote layer")
-                that.fetchRemoteData();
+                console.debug("fetching remote layer");
+                that.fetchRemoteData(tmpDataArray);
             } else {
-                console.debug("fetching local layer")
-                that.fromGeoJSON(geojson,type);
+                console.debug("fetching local layer");
+                that.fromGeoJSON(geojson,tmpDataArray);
+            }
+ 
+            
+            /*
+             var features = geojson instanceof Array ? geojson : geojson.features,
+             i, len;
+
+             if (features) {
+             L.Util.sortFeatures(features, this.map.getOption('sortKey'));
+             for (i = 0, len = features.length; i < len; i++) {
+             this.geojsonToFeatures(features[i],myDataArray);
+             }
+             
+             */
+            if (type == "events"){ 
+                a_eventsData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_eventsData);
+            }
+            else if (type == "city"){
+                a_settlementsData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_settlementsData);
+            }
+            else if (type == "castles"){ 
+                a_castlesData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_castlesData);
+            }
+            else if (type == "art"){ 
+                a_artefactData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_artefactData);
+            }
+            else if (type == "areaInfo"){ 
+                a_areaInfoData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_areaInfoData);
+            }
+            else if (type == "unc"){ 
+                a_unclassifiedData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_unclassifiedData);
+            }
+            else if (type == "mil"){ 
+                a_milData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_milData);
+            }
+            else if (type == "pol"){ 
+                a_polData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_polData);
+            }
+            else if (type == "sci"){ 
+                a_sciData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_sciData);
+            }
+            else if (type == "rel"){ 
+                a_relData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_relData);
+            }
+            else if (type == "uncP"){ 
+                a_uncPData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_uncPData);
+            }
+            else if (type == "exp"){ 
+                a_expData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_expData);
+            }
+            else if (type == "arti"){ 
+                a_artistData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_artistData);
+            }
+            else if (type == "ath"){ 
+                a_athData=tmpDataArray;
+                ClusterSuperGroup.addLayers(a_athData);
+                
             }
             that._loaded = true;
-            that.fire('loaded');
+            that.fire('loaded');           
         },
         context: that
     });
@@ -586,133 +694,128 @@ L.Storage.DataLayer = L.Class.extend({
         
         if (b_events){
             
-            if ($.inArray(newYear, a_eventsLoaded) == -1){
+            if (a_eventsData.length == 0){
                 a_eventsLoaded.push(newYear);
                 loadFeatures(this,newYear,"events");
             }
             else{
-                $('.events').show()
+                ClusterSuperGroup.addLayers(a_eventsData)
                 console.log("*** Events not loaded in for layer",newYear,"Data already loaded.");
             }
 
         }
         else{
-            if ($.inArray(newYear, a_eventsLoaded) != -1){
-                $('.events').hide()
-            }
+                ClusterSuperGroup.removeLayers(a_eventsData)
+            
         }
 
         if (b_art){
 
-            if ($.inArray(newYear, a_artefactLoaded) == -1){
+            if (a_artefactData.length == 0){
                 a_artefactLoaded.push(newYear);
                 loadFeatures(this,newYear,"art");
             }
             else{
-                $('.art').show()
+                ClusterSuperGroup.addLayers(a_artefactData)
                 console.log("*** Artefacts not loaded in for layer",newYear,"Data already loaded.");
             }
 
         }
         else{
-            if ($.inArray(newYear, a_eventsLoaded) != -1){
-                $('.art').hide()
-            }
+                ClusterSuperGroup.removeLayers(a_artefactData)
+            
         }
         
         if (b_city){
 
-            if (b_sub_cities && $.inArray(newYear, a_settlementsLoaded) == -1){
+            if (b_sub_cities && a_settlementsData.length == 0){
                 loadFeatures(this,newYear,"city");
                 a_settlementsLoaded.push(newYear);
             }
             else if (b_sub_cities){
-                $('.city').show()
+                ClusterSuperGroup.addLayers(a_settlementsData)
                 console.log("*** Cities not loaded in for layer",newYear,"Data already loaded.");
             }
 
-            if (b_sub_castles && $.inArray(newYear, a_castlesLoaded) == -1){                
+            if (b_sub_castles && a_castlesData.length == 0){                
                 a_castlesLoaded.push(newYear);                
                 loadFeatures(this,newYear,"castles");
             }
             else if (b_sub_castles){
-                $('.castles').show()
+                ClusterSuperGroup.addLayers(a_castlesData)
             }
 
         }
         else{
-            if ($.inArray(newYear, a_castlesLoaded) != -1){
-                $('.castles').hide()
-            }
-            if ($.inArray(newYear, a_settlementsLoaded) != -1){
-                $('.city').hide()
-            }
+                ClusterSuperGroup.removeLayers(a_castlesData)            
+                ClusterSuperGroup.removeLayers(a_settlementsData)
+            
         }
         
         if (b_people){
 
-            if (b_sub_military && $.inArray(newYear, a_milLoaded) == -1){
+            if (b_sub_military && a_milData.length == 0){
                 loadFeatures(this,newYear,"mil");
                 a_milLoaded.push(newYear);
             }
             else if (b_sub_military){
-                $('.mil').show()
+                ClusterSuperGroup.addLayers(a_milData)
             }
 
-            if (b_sub_politician && $.inArray(newYear, a_polLoaded) == -1){
+            if (b_sub_politician && a_polData.length == 0){
                 loadFeatures(this,newYear,"pol");
                 a_polLoaded.push(newYear);
             }
             else if (b_sub_politician){
-                $('.pol').show()
+                ClusterSuperGroup.addLayers(a_polData)
             }
 
-            if (b_sub_scientist && $.inArray(newYear, a_sciLoaded) == -1){
+            if (b_sub_scientist && a_sciData.length == 0){
                 loadFeatures(this,newYear,"sci");
                 a_sciLoaded.push(newYear);
             }
             else if (b_sub_scientist){
-                $('.sci').show()
+                ClusterSuperGroup.addLayers(a_sciData)
             }
 
-            if (b_sub_religious && $.inArray(newYear, a_relLoaded) == -1){
+            if (b_sub_religious && a_relData.length == 0){
                 loadFeatures(this,newYear,"rel");
                 a_relLoaded.push(newYear);
             }
             else if (b_sub_religious){
-                $('.rel').show()
+                ClusterSuperGroup.addLayers(a_relData)
             }
 
-            if (b_sub_uncP && $.inArray(newYear, a_uncPLoaded) == -1){
+            if (b_sub_uncP && a_uncPData.length == 0){
                 loadFeatures(this,newYear,"uncP");
                 a_uncPLoaded.push(newYear);
             }
             else if (b_sub_uncP){
-                $('.uncP').show()
+                ClusterSuperGroup.addLayers(a_uncPData)
             }
 
-            if (b_sub_exp && $.inArray(newYear, a_expLoaded) == -1){
+            if (b_sub_exp && a_expData.length == 0){
                 loadFeatures(this,newYear,"exp");
                 a_expLoaded.push(newYear);
             }
             else if (b_sub_exp){
-                $('.exp').show()
+                ClusterSuperGroup.addLayers(a_expData)
             }
 
-            if (b_sub_artist && $.inArray(newYear, a_artistLoaded) == -1){
+            if (b_sub_artist && a_artistData.length == 0){
                 loadFeatures(this,newYear,"arti");
                 a_artistLoaded.push(newYear);
             }
             else if (b_sub_artist){
-                $('.arti').show()
+                ClusterSuperGroup.addLayers(a_artistData)
             }
 
-            if (b_sub_athlete && $.inArray(newYear, a_athLoaded) == -1){
+            if (b_sub_athlete && a_athData.length == 0){
                 loadFeatures(this,newYear,"ath");
                 a_athLoaded.push(newYear);
             }
             else if (b_sub_athlete){
-                $('.ath').show()
+                ClusterSuperGroup.addLayers(a_athData)
             }
             /*
         this.map.get(this._dataUrl(), {
@@ -736,46 +839,38 @@ L.Storage.DataLayer = L.Class.extend({
         });
             */
         }
-        else{
-            if ($.inArray(newYear, a_peopleLoaded) != -1){
-                $('.people').hide()
-            }
-        }
 
         if (b_other){
 
-            if (b_sub_areaInfo && $.inArray(newYear, a_areaInfoLoaded) == -1){
+            if (b_sub_areaInfo && a_areaInfoData.length == 0){
                 a_areaInfoLoaded.push(newYear);
                 loadFeatures(this,newYear,"areaInfo");
             }
             else if (b_sub_areaInfo){
-                $('.areaInfo').show()
+                ClusterSuperGroup.addLayers(a_areaInfoData)
             }
 
-            if (b_sub_unclassified && $.inArray(newYear, a_unclassifiedLoaded) == -1){
+            if (b_sub_unclassified && a_unclassifiedData.length == 0){
                 a_unclassifiedLoaded.push(newYear);
                 loadFeatures(this,newYear,"unc");
             }
             else if (b_sub_unclassified){
-                $('.unc').show()
+                ClusterSuperGroup.addLayers(a_unclassifiedData)
             }
 
         }
-        else{
-            if ($.inArray(newYear, a_eventsLoaded) != -1){
-                $('.unc').hide()
-            }
-        }
+
         
     },
 
-    fromGeoJSON: function (geojson,type) {
-        
+    fromGeoJSON: function (geojson,myDataArray) {
+        /*
         for (var j=0; j<geojson.features.length; j++){
             geojson.features[j].properties.ty=type;
         }
-        console.debug("!geojson",geojson,type)
-        this.addData(geojson);
+        */
+        
+        this.addData(geojson,myDataArray);
         this._geojson = geojson;
         this.fire('dataloaded');
         this.fire('datachanged');
@@ -803,7 +898,7 @@ L.Storage.DataLayer = L.Class.extend({
         }
     },
 
-    fetchRemoteData: function () {
+    fetchRemoteData: function (myDataArray) {
         var from = parseInt(this.options.remoteData.from, 10),
             to = parseInt(this.options.remoteData.to, 10);
         if ((!isNaN(from) && this.map.getZoom() < from) ||
@@ -821,7 +916,7 @@ L.Storage.DataLayer = L.Class.extend({
             verb: 'GET',
             callback: function (raw) {
                 self.clear();
-                self.rawToGeoJSON(raw, self.options.remoteData.format, function (geojson) {self.fromGeoJSON(geojson);});
+                self.rawToGeoJSON(raw, self.options.remoteData.format, function (geojson) {self.fromGeoJSON(geojson,myDataArray);});
 
                 console.debug("fetched remote data ",self, raw)
             }
@@ -929,14 +1024,14 @@ L.Storage.DataLayer = L.Class.extend({
         }
     },
 
-    addData: function (geojson) {
+    addData: function (geojson,myDataArray) {
         //   if (geojson.storage.name != "2014")
 
        // geojson._storage.displayOnLoad = false;
         
      //   console.debug("adding data", geojson)
         
-        this.geojsonToFeatures(geojson);
+        this.geojsonToFeatures(geojson,myDataArray);
     },
 
     addRawData: function (c, type) {
@@ -994,7 +1089,7 @@ L.Storage.DataLayer = L.Class.extend({
         }
     },
 
-    geojsonToFeatures: function (geojson) {
+    geojsonToFeatures: function (geojson,myDataArray) {
         
      //   console.debug("geojsonToFeatures", JSON.stringify(geojson));
         var features = geojson instanceof Array ? geojson : geojson.features,
@@ -1003,7 +1098,7 @@ L.Storage.DataLayer = L.Class.extend({
         if (features) {
             L.Util.sortFeatures(features, this.map.getOption('sortKey'));
             for (i = 0, len = features.length; i < len; i++) {
-                this.geojsonToFeatures(features[i]);
+                this.geojsonToFeatures(features[i],myDataArray);
             }
          //   console.debug(JSON.stringify(this));
             return this;
@@ -1076,7 +1171,8 @@ L.Storage.DataLayer = L.Class.extend({
         }
         if (layer) {
             console.debug("!-! 6")
-            this.addLayer(layer);
+            myDataArray.push(layer)
+          //  this.addLayer(layer);
          //   ClusterSuperGroup.addLayer(layer);
             return layer;
         }
@@ -1335,20 +1431,35 @@ L.Storage.DataLayer = L.Class.extend({
     show: function () {
 
         console.info(" *** fetching data for layer with this.storage_id",this);
+        
         if (!this.storage_id) {
             return;
         }
         else{
             newYear = this.storage_id;
+            
         }
+        if(newYear != oldYear){
+            oldYear = newYear
+            
+        a_settlementsData = [];
+        a_castlesData = [];
+        a_artefactData = [];
+        a_areaInfoData = [];
+        a_eventsData = [];
+        a_unclassifiedData = [];
+        a_milData = [];
+        a_polData = [];
+        a_sciData = [];
+        a_relData = [];
+        a_uncPData = [];
+        a_expData = [];
+        a_artistData = [];
+        a_athData = [];
+        b_areaLoaded = false;
 
 
-
-
-        console.info(this._dataUrl()," *** getting all datalayer dimensions for this year. \n\tArea:",b_area, "\n\tPeople:",b_people, "\n\tCities:",b_city, "\n\tEvents:",b_events)
-
-
-        if (b_area){
+        if (b_area && !b_areaLoaded && !this.isLoaded()){
             
             //query then draw
             var tmpFix;
@@ -1358,10 +1469,12 @@ L.Storage.DataLayer = L.Class.extend({
                 tmpFix="11"+(newYear*-1);
             else
                 tmpFix="10"+(newYear);
-
+            
+            b_areaLoaded = true;
             this.map.get("/en/datalayer/"+tmpFix+"/", {
 
                 callback: function (geojson, response) {
+                    
                     console.debug("ending call")
 
                     changeYear(newYear,geojson);
@@ -1377,18 +1490,20 @@ L.Storage.DataLayer = L.Class.extend({
 
         console.log("*** showing layer which is already loaded?", this.isLoaded())
 
-        if(!this.isLoaded()) {
+       // if(!this.isLoaded()) {
             console.log("*** fetching data")
             this.fetchData();
-        }
-        console.log("*** adding layer to map: this.layer", this)
+       // }
+      //  console.log("*** adding layer to map: this.layer", this)
 
  //       clusterCount = 0;
         ClusterSuperGroup.clearLayers();
+
+        
         
         console.debug("!-! 7")
         this.fire('show');
-
+    }
     },
 
     hide: function () {

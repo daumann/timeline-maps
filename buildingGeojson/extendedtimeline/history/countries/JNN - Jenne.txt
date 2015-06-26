@@ -1,3 +1,4 @@
+NEWCOUNTRYJNN - Jenne.txt
 # No previous file for Jenne
 
 government = tribal_kingdom

@@ -1,3 +1,4 @@
+NEWCOUNTRYFUL - Fulo.txt
 # No previous file for Fulo
 
 government = tribal_despotism

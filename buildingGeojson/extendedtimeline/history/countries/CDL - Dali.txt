@@ -1,3 +1,4 @@
+NEWCOUNTRYCDL - Dali.txt
 government = despotic_monarchy
 primary_culture = bai
 religion = buddhism

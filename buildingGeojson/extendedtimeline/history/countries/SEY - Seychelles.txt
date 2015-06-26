@@ -1,3 +1,4 @@
+NEWCOUNTRYSEY - Seychelles.txt
 government = constitutional_republic
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 0

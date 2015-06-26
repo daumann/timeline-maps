@@ -1,3 +1,4 @@
+NEWCOUNTRYLDK - Ladakh.txt
 government = feudal_monarchy
 primary_culture = kashmiri
 religion = buddhism

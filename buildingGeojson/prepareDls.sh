@@ -1,8 +1,8 @@
-n=2014
-for i in {1..13000}
+n=2015
+for i in {1..4016}
 do    
 
-   echo "}" >> provinceLayers/DL$n.geojson
+   echo "{" >> /home/aumannd/Videos/kingsDL/kingsDL$n.geojson
    (( n -= 1 )) 
 
 

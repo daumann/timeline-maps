@@ -1,3 +1,4 @@
+NEWCOUNTRYBGA - Baglana.txt
 government = feudal_monarchy
 technology_group = indian
 religion = hinduism

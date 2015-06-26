@@ -1,3 +1,4 @@
+NEWCOUNTRYGBR - Great Britain.txt
 government = constitutional_monarchy
 #aristocracy_plutocracy = 5
 #centralization_decentralization = -3

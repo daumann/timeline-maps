@@ -1,3 +1,4 @@
+NEWCOUNTRYTRP - Tripoli.txt
 government = iqta
 mercantilism = 0.1
 technology_group = muslim

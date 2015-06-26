@@ -1,3 +1,4 @@
+NEWCOUNTRYTOT - Totonac.txt
 government = tribal_democracy
 mercantilism = 0.1
 primary_culture = totonac

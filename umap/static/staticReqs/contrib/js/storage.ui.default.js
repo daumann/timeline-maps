@@ -25,7 +25,7 @@ L.Storage.on('ui:start', function (e) {
     var closeLink = L.DomUtil.create('li', 'storage-close-link', actionsContainer);
     L.DomUtil.add('i', 'storage-close-icon', closeLink);
     var label = L.DomUtil.create('span', '', closeLink);
-    label.title = label.innerHTML = L._('Close');
+    label.title = label.innerHTML = L._('');
     if (e.actions) {
         for (var i = 0; i < e.actions.length; i++) {
             actionsContainer.appendChild(e.actions[i]);
@@ -111,7 +111,7 @@ L.Storage.on('ui:alert', function (e) {
         closeLink.href = '#';
         L.DomUtil.add('i', 'storage-close-icon', closeLink);
         var label = L.DomUtil.create('span', '', closeLink);
-        label.title = label.innerHTML = L._('Close');
+        label.title = label.innerHTML = L._('');
         L.DomEvent.on(closeLink, 'click', L.DomEvent.stop)
                   .on(closeLink, 'click', close);
         UI_ALERT_ID = timeoutID = window.setTimeout(close, e.duration || 3000);

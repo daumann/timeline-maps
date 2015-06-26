@@ -1,3 +1,4 @@
+NEWCOUNTRYDAS - Dasarna.txt
 government = despotic_monarchy
 mercantilism = 0.1
 primary_culture = telegu

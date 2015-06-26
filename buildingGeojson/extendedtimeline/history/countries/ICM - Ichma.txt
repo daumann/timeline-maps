@@ -1,3 +1,4 @@
+NEWCOUNTRYICM - Ichma.txt
 government = theocratic_government
 mercantilism = 0.1
 primary_culture = aimara

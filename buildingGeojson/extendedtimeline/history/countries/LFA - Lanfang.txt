@@ -1,3 +1,4 @@
+NEWCOUNTRYLFA - Lanfang.txt
 government = oligarchic_republic
 mercantilism = 0.1
 primary_culture = hakka

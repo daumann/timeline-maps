@@ -1,3 +1,4 @@
+NEWCOUNTRYASY - Assyria.txt
 government = despotic_monarchy
 mercantilism = 0.1
 technology_group = muslim

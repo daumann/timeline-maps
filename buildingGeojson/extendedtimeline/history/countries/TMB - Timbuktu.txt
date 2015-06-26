@@ -1,3 +1,4 @@
+NEWCOUNTRYTMB - Timbuktu.txt
 # No previous file for Timbuktu
 
 government = tribal_federation

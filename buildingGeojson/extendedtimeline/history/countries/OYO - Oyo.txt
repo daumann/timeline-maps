@@ -1,3 +1,4 @@
+NEWCOUNTRYOYO - Oyo.txt
 government = tribal_democracy
 #aristocracy_plutocracy = 0
 #centralization_decentralization = 5

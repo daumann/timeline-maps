@@ -1,3 +1,4 @@
+NEWCOUNTRYYAO - Yao.txt
 # No previous file for Yao
 
 government = tribal_despotism

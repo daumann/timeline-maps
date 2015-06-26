@@ -1,3 +1,4 @@
+NEWCOUNTRYKAM - Mdo Khams.txt
 government = tribal_federation
 mercantilism = 0.1
 primary_culture = tibetan

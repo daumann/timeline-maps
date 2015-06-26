@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     {% compress css %}
     <!-- Included CSS Files (Compressed) -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/jquery.dataTables.min.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/storage.ui.default.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/chronas-default.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}umap/umap.css">
@@ -14,7 +15,8 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}markercluster/MarkerCluster.css">
     <link rel="stylesheet" href="{{ STATIC_URL }}markercluster/MarkerCluster.Default.css">
-    
+    <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/sequences.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}staticReqs/lightbox/css/lightbox.css">
     {% endcompress css %}
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>

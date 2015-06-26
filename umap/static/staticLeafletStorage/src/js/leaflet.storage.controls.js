@@ -154,9 +154,9 @@ L.Storage.DataLayersControl = L.Control.extend({
     onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-control-browse storage-control');
             
-        var toggle = L.DomUtil.create('a', 'storage-browse-toggle', container), actions = L.DomUtil.create('div', 'storage-browse-actions', container);
+        var toggle = L.DomUtil.create('a', 'storage-browse-toggle', container), hierarchy = L.DomUtil.create('a', 'storage-browse-hierarchy', container), actions = L.DomUtil.create('div', 'storage-browse-actions', container);
         toggle.href = '#';
-        
+        hierarchy.href = '#';
         this._datalayers_container = L.DomUtil.create('ul', 'storage-browse-datalayers', actions);
 
         var link = L.DomUtil.create('a', 'storage-browse-link', actions);
@@ -167,7 +167,8 @@ L.Storage.DataLayersControl = L.Control.extend({
         add.href = '#';
         add.innerHTML = add.title = L._('Add a layer');
 
-        
+        L.DomEvent
+            .on(hierarchy, 'click', L.DomEvent.stop);
 
         L.DomEvent
             .on(toggle, 'click', L.DomEvent.stop);

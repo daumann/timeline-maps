@@ -1,8 +1,9 @@
 {% load leaflet_storage_tags %}
+        
+<div id="progress"><div id="progress-bar"></div></div>
 <div id="map" style="width: 100%;position: absolute;top: 0; /* bottom: 0; */left: 0;right: 0;bottom: 120px;">
 
-
-    <div id="featureForms" style="position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
+<div id="featureForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
         <div  >
             <div id="featureTree" style="overflow-x: hidden; ">
                 <ul class="nav nav-list">
@@ -44,27 +45,7 @@
                                     <td><!--<input id="T-Population" data-style="sharp" data-onstyle="info" type="checkbox" disabled data-size="mini" data-toggle="toggle" data-on=" " data-off=" "> --></td>
                                 </tr>
                             </table>
-                            <!--
-                            <form id="colorFeat" style="float: left" >
-Area LOCK-UNLOCK Text
-                                <input type="radio" name="Area" checked="checked" onclick="addAreaFeat('country')" value="A-Country" /><br>
-                                <input type="radio" name="Area" onclick="addAreaFeat('culture')" value="A-Culture" /><br>
-                                <input type="radio" name="Area" onclick="addAreaFeat('religion')" value="A-Religion" /><br>
-                                <input type="radio" name="Area" onclick="addAreaFeat('religionGeneral')" value="A-Main Religions" /><br>
-                                <input type="radio" name="Area" onclick="addAreaFeat('population')" value="A-Population" /><br>
-
-                            </form>
-                            <form>
-
-                                <input type="radio" name="Text" checked="checked" onclick="addTextFeat('country')" value="T-Country" > T-Country<br>
-                                <input type="radio" name="Text" onclick="addTextFeat('culture')" value="T-Culture" > T-Culture<br>
-                                <input type="radio" name="Text" onclick="addTextFeat('religion')" value="T-Religion" > T-Religion<br>
-                                <input type="radio" name="Text" onclick="addTextFeat('religionGeneral')" value="T-Main Religions" > T-Main Religions<br>
-                                <input type="radio" name="Text" onclick="addTextFeat('none')" value="none" >none<br>
-
-                            </form>      
                             
-                                                  -->
                         </ul>
                     </li>
                     <li class="divider"></li>
@@ -220,11 +201,80 @@ Area LOCK-UNLOCK Text
         
 
     </div>
+<div id="hierarchyForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
+    <div>
+        <div id="hierarchyTree" style="overflow-x: hidden; ">
+            <ul class="nav nav-list">
+                <li> <label id="polHier" class="tree-toggler nav-header hier">Ruler</label> <label id="culHier" class="tree-toggler nav-header hier">Culture</label> <label id="relHier" class="tree-toggler nav-header hier">Religion</label> <label id="mrelHier" class="tree-toggler nav-header hier">Main Religion</label>
+                    <label id="allProvinces" class="tree-toggler nav-header hier">All Provinces</label>
+
+                    <label id="btn_visualize" class="tree-toggler nav-header hier">Visualize</label>
+                </li>
+                <br>
+                <div id="hierTables">
+                <table id="aggregatedDatatable" class="display" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th id="metricName">Metric</th>
+                        <th>Total Area</th>
+                        <th>Total Population</th>
+                        <th>GoTo</th>
+                    </tr>
+                    </thead>
+                </table>
+                <table id="fullDatatable" class="display" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Province</th>
+                        <th>Ruler</th>
+                        <th>Culture</th>
+                        <th>Religion</th>
+                        <th>Main Religion</th>
+                        <th>Capital</th>
+                        <th>Area</th>
+                        <th>Population</th>
+                        <th>GoTo</th>
+                    </tr>
+                    </thead>
+                </table>
+                </div>
+                
+                <div id="hierVis" style="display: none">
+                    <div id="main-sunburst">
+                        <div id="sequence"></div>
+                        <div id="sunBurstchart">
+                            <div id="explanation" style="visibility: hidden;">
+                                <span id="percentage"></span><br/>
+                                of people living in <span id="yearSB"></span> are estimated to belong to the selected group
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sidebar2" style=" background-color: transparent; /* pointer-events: none; */  "> 
+                        <a title="Toggle grouping: Religion <-> Ruler" onclick="toggleSBData();" style=" float: left; " class="btn faButton">
+                        <i class="fa fa-exchange"></i></a>
+                        &nbsp;
+                        <a title="Legend" id="togglelegend" style=" float: right; " class="btn faButton">
+                            <i class="fa fa-list-ol"></i></a>
+                        <br></div>
+                    <div id="sidebar" style=" background-color: transparent;pointer-events: none;  ">
+                        
+                        <div id="legend" style="visibility: hidden; pointer-events: none;line-height: 15px;margin-top: 35px;">Circle layers<br>(inner to outer):<br><br></div>
+                    </div>
+                </div>
+                
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</div>
+        
 
 </div>
 <div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
 
-
+<script src="{{ STATIC_URL }}staticReqs/sequences.js"></script>
 <script type="text/javascript">
     
     console.log("*** initializing map");
@@ -254,29 +304,32 @@ Area LOCK-UNLOCK Text
     //var b_sub_siege = false;
     //var b_sub_artefact = true;
     var b_sub_unclassified = false;
-
+    var a_hierLoaded = false;
+    
     $("#citiesBox").change(function(){
+        console.debug("start go")
         b_sub_cities = document.getElementById("citiesBox").checked;
         if(b_city && b_sub_cities){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.city').show();
+            ClusterSuperGroup.addLayers(a_settlementsData)
         }
         else{
             if ($.inArray(newYear, a_settlementsLoaded) != -1){
-                $('.city').hide()
+                ClusterSuperGroup.removeLayers(a_settlementsData);
             }
         }
+        console.debug("end go")
     });
             
     $("#castlesBox").change(function(){
         b_sub_castles = document.getElementById("castlesBox").checked;
         if(b_city && b_sub_castles){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.castles').show();
+            ClusterSuperGroup.addLayers(a_castlesData)
         }
         else{
             if ($.inArray(newYear, a_castlesLoaded) != -1){
-                $('.castles').hide()
+                ClusterSuperGroup.removeLayers(a_castlesData)
             }
         }
     });
@@ -285,11 +338,11 @@ Area LOCK-UNLOCK Text
         b_sub_unclassified = document.getElementById("unclassifiedBox").checked;
         if(b_other && b_sub_unclassified){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.unc').show();
+            ClusterSuperGroup.addLayers(a_unclassifiedData)
         }
         else{
             if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
-                $('.unc').hide()
+                ClusterSuperGroup.removeLayers(a_unclassifiedData)
             }
         }
     });
@@ -298,11 +351,11 @@ Area LOCK-UNLOCK Text
         b_sub_areaInfo = document.getElementById("areaInfoBox").checked;
         if(b_other && b_sub_areaInfo){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.areaInfo').show();
+            ClusterSuperGroup.addLayers(a_areaInfoData)
         }
         else{
             if ($.inArray(newYear, a_areaInfoLoaded) != -1){
-                $('.areaInfo').hide()
+                ClusterSuperGroup.removeLayers(a_areaInfoData)
             }
         }
     });
@@ -311,11 +364,11 @@ Area LOCK-UNLOCK Text
         b_sub_military = document.getElementById("milBox").checked;
         if(b_people && b_sub_military){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.mil').show();
+            ClusterSuperGroup.addLayers(a_milData)
         }
         else{
             if ($.inArray(newYear, a_milLoaded) != -1){
-                $('.mil').hide()
+                ClusterSuperGroup.removeLayers(a_milData)
             }
         }
     });
@@ -324,11 +377,11 @@ Area LOCK-UNLOCK Text
         b_sub_politician = document.getElementById("polBox").checked;
         if(b_people && b_sub_politician){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.pol').show();
+            ClusterSuperGroup.addLayers(a_polData)
         }
         else{
             if ($.inArray(newYear, a_polLoaded) != -1){
-                $('.pol').hide()
+                ClusterSuperGroup.removeLayers(a_polData)
             }
         }
     });
@@ -337,11 +390,11 @@ Area LOCK-UNLOCK Text
         b_sub_scientist = document.getElementById("sciBox").checked;
         if(b_people && b_sub_scientist){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.sci').show();
+            ClusterSuperGroup.addLayers(a_sciData)
         }
         else{
             if ($.inArray(newYear, a_sciLoaded) != -1){
-                $('.sci').hide()
+                ClusterSuperGroup.removeLayers(a_sciData)
             }
         }
     });
@@ -350,11 +403,11 @@ Area LOCK-UNLOCK Text
         b_sub_religious = document.getElementById("relBox").checked;
         if(b_people && b_sub_religious){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.rel').show();
+            ClusterSuperGroup.addLayers(a_relData)
         }
         else{
             if ($.inArray(newYear, a_relLoaded) != -1){
-                $('.rel').hide()
+                ClusterSuperGroup.removeLayers(a_relData)
             }
         }
     });
@@ -363,11 +416,11 @@ Area LOCK-UNLOCK Text
         b_sub_uncP = document.getElementById("uncBox").checked;
         if(b_people && b_sub_uncP){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.uncP').show();
+            ClusterSuperGroup.addLayers(a_uncPData)
         }
         else{
             if ($.inArray(newYear, a_uncPLoaded) != -1){
-                $('.uncP').hide()
+                ClusterSuperGroup.removeLayers(a_uncPData)
             }
         }
     });
@@ -376,11 +429,11 @@ Area LOCK-UNLOCK Text
         b_sub_exp = document.getElementById("expBox").checked;
         if(b_people && b_sub_exp){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.exp').show();
+            ClusterSuperGroup.addLayers(a_expData)
         }
         else{
             if ($.inArray(newYear, a_expLoaded) != -1){
-                $('.exp').hide()
+                ClusterSuperGroup.removeLayers(a_expData)
             }
         }
     });
@@ -389,11 +442,11 @@ Area LOCK-UNLOCK Text
         b_sub_artist = document.getElementById("artBox").checked;
         if(b_people && b_sub_artist){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.arti').show();
+            ClusterSuperGroup.addLayers(a_artistData)
         }
         else{
             if ($.inArray(newYear, a_artistLoaded) != -1){
-                $('.arti').hide()
+                ClusterSuperGroup.removeLayers(a_artistData)
             }
         }
     });
@@ -402,11 +455,11 @@ Area LOCK-UNLOCK Text
         b_sub_athlete = document.getElementById("athBox").checked;
         if(b_people && b_sub_athlete){
             map.getDataLayerByStorageId(newYear).fetchData();
-            $('.ath').show();
+            ClusterSuperGroup.addLayers(a_athData)
         }
         else{
             if ($.inArray(newYear, a_athLoaded) != -1){
-                $('.ath').hide()
+                ClusterSuperGroup.removeLayers(a_athData)
             }
         }
     });
@@ -421,9 +474,9 @@ Area LOCK-UNLOCK Text
             $('svg').show();
         }
         else{
-            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+         //   if ($.inArray(newYear, a_area != -1){
                 $('svg').hide()
-            }
+         //   }
         }
     });
 
@@ -432,38 +485,37 @@ Area LOCK-UNLOCK Text
         console.debug("map.datalayers:",map.datalayers);
         
         if(b_people){
-            $('.people').show()
             map.getDataLayerByStorageId(newYear).fetchData()
         }
             
         else{
             if ($.inArray(newYear, a_peopleLoaded) != -1){
-                $('.people').hide()
+               ClusterSuperGroup.removeLayers(a_peopleLoaded)
             }
             
             if ($.inArray(newYear, a_milLoaded) != -1){
-                $('.mil').hide()
+                ClusterSuperGroup.removeLayers(a_milData)
             }
             if ($.inArray(newYear, a_polLoaded) != -1){
-                $('.pol').hide()
+                ClusterSuperGroup.removeLayers(a_polData)
             }
             if ($.inArray(newYear, a_sciLoaded) != -1){
-                $('.sci').hide()
+                ClusterSuperGroup.removeLayers(a_sciData)
             }
             if ($.inArray(newYear, a_relLoaded) != -1){
-                $('.rel').hide()
+                ClusterSuperGroup.removeLayers(a_relData)
             }
             if ($.inArray(newYear, a_uncPLoaded) != -1){
-                $('.uncP').hide()
+                ClusterSuperGroup.removeLayers(a_uncPData)
             }
             if ($.inArray(newYear, a_expLoaded) != -1){
-                $('.exp').hide()
+                ClusterSuperGroup.removeLayers(a_expData)
             }
             if ($.inArray(newYear, a_artistLoaded) != -1){
-                $('.arti').hide()
+                ClusterSuperGroup.removeLayers(a_artistData)
             }
             if ($.inArray(newYear, a_athLoaded) != -1){
-                $('.ath').hide()
+                ClusterSuperGroup.removeLayers(a_artistData)
             }
         }
         
@@ -475,22 +527,22 @@ Area LOCK-UNLOCK Text
         // search for storage id of iterate map.datalayers_index    year in object and do:
         
         if(b_city){
-            if (b_sub_castles) $('.castles').show()
+            if (b_sub_castles) ClusterSuperGroup.addLayers(a_castlesData)
             else{
-                $('.castles').hide()
+                ClusterSuperGroup.removeLayers(a_castlesData)
             }
-            if (b_sub_cities) $('.city').show()
+            if (b_sub_cities) ClusterSuperGroup.addLayers(a_settlementsData)
             else{
-                $('.city').hide()
+                ClusterSuperGroup.removeLayers(a_settlementsData)
             }
             map.getDataLayerByStorageId(newYear).fetchData()
         }
         else{      
             if ($.inArray(newYear, a_castlesLoaded) != -1){
-                $('.castles').hide()
+                ClusterSuperGroup.removeLayers(a_castlesData)
             }
             if ($.inArray(newYear, a_settlementsLoaded) != -1){
-                $('.city').hide()
+                ClusterSuperGroup.removeLayers(a_settlementsData)
             }
         }
         
@@ -499,13 +551,13 @@ Area LOCK-UNLOCK Text
     $("#artChecked").change(function(){
         b_art = document.getElementById("artChecked").checked;
         if(b_art){
-            $('.art').show()
+            ClusterSuperGroup.addLayers(a_artefactData)
             map.getDataLayerByStorageId(newYear).fetchData()
         }
 
         else{
             if ($.inArray(newYear, a_artefactLoaded) != -1){
-                $('.art').hide()
+                ClusterSuperGroup.removeLayers(a_artefactData)
             }
         }
     });
@@ -513,13 +565,13 @@ Area LOCK-UNLOCK Text
     $("#eventsChecked").change(function(){
         b_events = document.getElementById("eventsChecked").checked;
         if(b_events){
-            $('.events').show()
+            ClusterSuperGroup.addLayers(a_eventsData)
             map.getDataLayerByStorageId(newYear).fetchData()
         }
             
         else{
             if ($.inArray(newYear, a_eventsLoaded) != -1){
-                $('.events').hide()
+                ClusterSuperGroup.removeLayers(a_eventsData)
             }
         }
     });
@@ -531,37 +583,42 @@ Area LOCK-UNLOCK Text
 
         if(b_other){
             if(b_sub_unclassified) {
-                $('.unc').show()
+                ClusterSuperGroup.removeLayers(a_unclassifiedData)
             }
             else{
-                $('.unc').hide()
+                ClusterSuperGroup.addLayers(a_unclassifiedData)
             }
             if(b_sub_areaInfo) {
-                $('.areaInfo').show()
+                ClusterSuperGroup.addLayers(a_areaInfoData)
             }
             else{
-                $('.areaInfo').hide()
+                ClusterSuperGroup.removeLayers(a_areaInfoData)
             }
             map.getDataLayerByStorageId(newYear).fetchData()
         }
         else{
             if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
-                $('.unc').hide()
+                ClusterSuperGroup.removeLayers(a_unclassifiedData)
             }
             if ($.inArray(newYear, a_areaInfoLoaded) != -1){
-                $('.areaInfo').hide()
+                ClusterSuperGroup.removeLayers(a_areaInfoData)
             }
         }
 
     });
 
+    
     var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
-
-
-
+    map.setMaxBounds(L.latLngBounds(L.latLng(-90, -240), L.latLng(90, 240)));
+    map.options.maxZoom=9
+    map.options.minZoom=2
+    
     map.on("viewreset", reset);
     console.debug("before")
     svgProv = d3.select(map.getPanes().overlayPane).append("svg");
+
+    svgProv.style("z-index","3");
+    
     map.on("zoomstart", function () {
         svgProv.attr("visibility", "hidden")
     });
@@ -635,23 +692,49 @@ Area LOCK-UNLOCK Text
 
     $("#featureForms")
             .prependTo(".storage-browse-actions");
-
+    $("#hierarchyForms")
+            .prependTo(".storage-browse-actions");
+    
     $('#listPlaceholder').append($(".storage-browse-link").detach());
 
     $(".storage-browse-toggle").click(function(){ 
-        if($(".storage-browse-actions").css("display") == "none"){
+        if($("#featureForms").css("display") == "none"){
             $(".storage-browse-actions").css("display","block");
-
+            $("#featureForms").css("display","block");
+            
+            $("#hierarchyForms").css("display","none");
             $(".storage-browse-toggle").addClass( "storage-browse-toggle-active" );
+            $(".storage-browse-hierarchy").removeClass( "storage-browse-toggle-active" );
             $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
             
         }
         else{
+            $("#featureForms").css("display","none");
             $(".storage-browse-toggle").removeClass( "storage-browse-toggle-active" );
             $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
             $(".storage-browse-actions").css("display","none");
+        }    
+    })
+
+    $(".storage-browse-hierarchy").click(function(){
+        console.debug($("#hierarchyForms").css("display"))
+        if($("#hierarchyForms").css("display") == "none"){
+            $(".storage-browse-hierarchyForms").css("display","block");
+            $(".storage-browse-actions").css("display","block");
+            $("#hierarchyForms").css("display","block");
+            $("#featureForms").css("display","none");
+            $(".storage-browse-hierarchy").addClass( "storage-browse-toggle-active" );
+            $(".storage-browse-toggle").removeClass( "storage-browse-toggle-active" );
+            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
+
         }
-    
+        else{
+            $("#hierarchyForms").css("display","none");
+            $(".storage-browse-hierarchy").removeClass( "storage-browse-toggle-active" );
+            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
+            $(".storage-browse-actions").css("display","none");
+        }
+
     })
 /*
 $("input:checkbox").change(function(){
@@ -671,8 +754,57 @@ $("input:checkbox").change(function(){
 </script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+<script src="{{ STATIC_URL }}staticReqs/jquery.dataTables.min.js"></script>
+
+
 <script>
+    var aggTable, fulTable;
     $(document).ready(function () {
+        
+        $(".leaflet-top.leaflet-right").prepend('<div class="leaflet-control" id="geoGallery" style="display:none"></div><div class="storage-control leaflet-control" style=" clear: none; float: none; position: absolute; right: 0px; top: 0px; "><a class="btnOpenGallery" href="#" title="Open Gallery"></a></div>')
+        $(".leaflet-top.leaflet-right").css("width","96%")
+        $(".leaflet-top.leaflet-right").css("height","130px");
+
+        $(".btnOpenGallery").click(function () {
+            if($('#geoGallery').css("display") !== "none"){
+                $('#geoGallery').css("display","none")
+                $(".leaflet-top.leaflet-right").css("overflow","inherit");
+            }
+            else {
+                $('#geoGallery').css("display","block")
+                $(".leaflet-top.leaflet-right").css("overflow","hidden");
+                if($('#geoGallery').html() == ""){
+                    updateGeoGallery(newYear-10,newYear+10,"people");
+                }                
+            }
+            
+        });
+        
+        aggTable = $('#aggregatedDatatable').dataTable({
+            "bLengthChange": false,
+            "bFilter": true,
+            "bInfo": true,
+            "dom": '<"pull-left"f><"pull-right">tip',
+            "oLanguage": { "sSearch": "" },
+            "order": [[ 2, "desc" ]],
+            "bAutoWidth": false
+    });
+        fulTable = $('#fullDatatable').dataTable({
+            "bLengthChange": false,
+            "bFilter": true,
+            "bInfo": true,
+            "dom": '<"pull-left"f><"pull-right"l>tip',
+            "oLanguage": { "sSearch": "" },
+            "bAutoWidth": false
+    });
+
+    
+        
+        $("#fullDatatable_wrapper").css("display","none");
+        $("#aggregatedDatatable_wrapper").css("display","none");
+        
+        $('.dataTables_filter input').attr("placeholder", "Search");
         
         map.addLayer(ClusterSuperGroup);
         
@@ -714,6 +846,101 @@ $("input:checkbox").change(function(){
             hideAndAdd('A-Population','population')
         });
 
-       
+        $( "#relHier" ).on( "click", function() {
+            $("#hierTables").css("display","block");
+            $("#hierVis").css("display","none");
+            
+            $("#fullDatatable_wrapper").css("display","none");
+            $("#aggregatedDatatable_wrapper").css("display","table");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+            aggTable.fnClearTable();
+            aggTable.fnAddData( sortRel );
+            activeListFeature="rel";
+        });
+        $( "#mrelHier" ).on( "click", function() {
+            $("#hierTables").css("display","block");
+            $("#hierVis").css("display","none");
+            $("#fullDatatable_wrapper").css("display","none");
+            $("#aggregatedDatatable_wrapper").css("display","table");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+            aggTable.fnClearTable();
+            aggTable.fnAddData( sortmRel );
+            activeListFeature="mrel";
+        });
+        $( "#culHier" ).on( "click", function() {
+            $("#hierTables").css("display","block");
+            $("#hierVis").css("display","none");
+            $("#fullDatatable_wrapper").css("display","none");
+            $("#aggregatedDatatable_wrapper").css("display","table");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+
+            aggTable.fnClearTable();
+            aggTable.fnAddData( sortCul );
+            activeListFeature="cul";
+        });
+        $( "#polHier" ).on( "click", function() {
+            $("#hierTables").css("display","block");
+            $("#hierVis").css("display","none");
+            $("#fullDatatable_wrapper").css("display","none");
+            $("#aggregatedDatatable_wrapper").css("display","table");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+            aggTable.fnClearTable();
+            aggTable.fnAddData( sortRuler );
+            activeListFeature="rul";
+        });
+
+        $( "#allProvinces" ).on( "click", function() {
+            $("#hierTables").css("display","block");
+            $("#hierVis").css("display","none");
+            $("#aggregatedDatatable_wrapper").css("display","none");
+            $("#fullDatatable_wrapper").css("display","table");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+            fulTable.fnClearTable();
+            fulTable.fnAddData( sortAll );
+        });
+
+        
+
+        $( "#btn_visualize" ).on( "click", function() {
+            
+            $("#hierTables").css("display","none");
+            $("#hierVis").css("display","block");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+                
+            }
+            switchSBData(currSB);
+        });
+        
+        lockFeatureSelection();
     });
+    
+    function toggleSBData(){
+        if(currSB == "rel"){
+            currSB='rul';
+            switchSBData("rul");
+        }
+        else {
+            currSB='rel';
+            switchSBData("rel");
+        }               
+    }
+
+
 </script>

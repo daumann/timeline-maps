@@ -1,3 +1,4 @@
+NEWCOUNTRYMID - Mide.txt
 government = barbarian_tribe
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 4

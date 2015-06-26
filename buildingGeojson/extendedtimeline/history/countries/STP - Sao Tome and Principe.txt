@@ -1,3 +1,4 @@
+NEWCOUNTRYSTP - Sao Tome and Principe.txt
 government = parliamentary_republic
 ##aristocracy_plutocracy = -2
 ##centralization_decentralization = 0

@@ -1,3 +1,4 @@
+NEWCOUNTRYSMZ - Shimazu.txt
 government = daimyo
 primary_culture = japanese
 religion = shinto

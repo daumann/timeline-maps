@@ -1,3 +1,4 @@
+NEWCOUNTRYGDW - Gondwana.txt
 government = tribal_kingdom
 mercantilism = 0.1
 technology_group = indian

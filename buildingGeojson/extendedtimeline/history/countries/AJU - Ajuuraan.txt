@@ -1,3 +1,4 @@
+NEWCOUNTRYAJU - Ajuuraan.txt
 government = theocratic_government
 mercantilism = 0.1
 technology_group = sub_saharan

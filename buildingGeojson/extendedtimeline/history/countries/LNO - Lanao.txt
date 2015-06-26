@@ -1,3 +1,4 @@
+NEWCOUNTRYLNO - Lanao.txt
 government = noble_republic
 mercantilism = 0.1
 technology_group = chinese

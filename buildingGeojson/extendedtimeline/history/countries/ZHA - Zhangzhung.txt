@@ -1,3 +1,4 @@
+NEWCOUNTRYZHA - Zhangzhung.txt
 government = despotic_monarchy
 primary_culture = tibetan
 religion = buddhism

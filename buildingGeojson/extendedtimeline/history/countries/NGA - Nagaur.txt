@@ -1,3 +1,4 @@
+NEWCOUNTRYNGA - Nagaur.txt
 government = feudal_monarchy
 primary_culture = rajput
 religion = sunni

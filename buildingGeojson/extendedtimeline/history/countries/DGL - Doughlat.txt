@@ -1,3 +1,4 @@
+NEWCOUNTRYDGL - Doughlat.txt
 government = steppe_horde
 primary_culture = uyghur
 religion = sunni

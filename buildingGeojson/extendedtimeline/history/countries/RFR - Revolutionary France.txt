@@ -1,3 +1,4 @@
+NEWCOUNTRYRFR - Revolutionary France.txt
 government = constitutional_monarchy
 #aristocracy_plutocracy = -4
 #centralization_decentralization = -2

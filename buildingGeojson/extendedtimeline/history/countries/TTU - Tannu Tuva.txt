@@ -1,3 +1,4 @@
+NEWCOUNTRYTTU - Tannu Tuva.txt
 government = revolutionary_republic
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 3

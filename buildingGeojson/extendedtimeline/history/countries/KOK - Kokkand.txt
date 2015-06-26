@@ -1,3 +1,4 @@
+NEWCOUNTRYKOK - Kokkand.txt
 government = iqta
 #aristocracy_plutocracy = -4
 #centralization_decentralization = 5

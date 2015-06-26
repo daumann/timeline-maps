@@ -1,3 +1,4 @@
+NEWCOUNTRYYAT - Yatenga.txt
 # No previous file for Mossi
 
 government = tribal_despotism

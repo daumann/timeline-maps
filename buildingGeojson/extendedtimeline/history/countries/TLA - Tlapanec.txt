@@ -1,3 +1,4 @@
+NEWCOUNTRYTLA - Tlapanec.txt
 government = tribal_democracy
 mercantilism = 0.1
 primary_culture = tlapanec

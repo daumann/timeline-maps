@@ -1,3 +1,4 @@
+NEWCOUNTRYKNY - Konya.txt
 government = iqta
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 1

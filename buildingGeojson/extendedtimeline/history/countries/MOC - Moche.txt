@@ -1,3 +1,4 @@
+NEWCOUNTRYMOC - Moche.txt
 government = tribal_democracy
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 5

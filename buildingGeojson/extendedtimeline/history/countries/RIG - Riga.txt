@@ -1,3 +1,4 @@
+NEWCOUNTRYRIG - Riga.txt
 government = theocratic_government
 #aristocracy_plutocracy = -5
 #centralization_decentralization = 1

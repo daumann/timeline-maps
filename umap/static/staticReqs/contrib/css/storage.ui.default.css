@@ -5,18 +5,18 @@ input[type="text"], input[type="password"], input[type="date"],
 input[type="datetime"], input[type="email"], input[type="number"],
 input[type="search"], input[type="tel"], input[type="time"],
 input[type="url"], textarea {
-    background-color: white;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px 2px 2px 2px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
-    color: rgba(0, 0, 0, 0.75);
-    display: block;
-    font-family: inherit;
-    font-size: 14px;
-    height: 56px;
-    margin: 0 0 14px;
-    padding: 7px;
-    width: 100%;
+    /* background-color: white; */
+    /* border: 1px solid #CCCCCC; */
+    /* border-radius: 2px 2px 2px 2px; */
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; */
+    /* color: rgba(0, 0, 0, 0.75); */
+    /* display: block; */
+    /* font-family: inherit; */
+    /* font-size: 14px; */
+    /* height: 56px; */
+    /* margin: 0 0 14px; */
+    /* padding: 7px; */
+    /* width: 100%; */
 }
 textarea {
     height: inherit;
@@ -69,15 +69,19 @@ select[multiple="multiple"] {
 .formbox select {
     width: calc(100% - 14px);
 }
+
+/*
 label {
     display: block;
     font-size: 14px;
     line-height: 21px;
     width: 100%;
 }
+*/
+
 input[type="checkbox"] + label, input[type="radio"] + label {
     display: inline;
-    padding: 0 14px; 
+    padding: 0 14px;
 }
 select + .error,
 input + .error {
@@ -141,12 +145,12 @@ fieldset.toggle.on .more_style_options {
 /* *********** */
 
 #storage-ui-container {
-    width: 400px;
+    width: 50%;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 0 20px 40px 20px;
+    padding: 0 20px 23px 20px;
     border-left: 1px solid #ddd;
     display: none;
     overflow-x: auto;
@@ -170,7 +174,7 @@ fieldset.toggle.on .more_style_options {
     display: block;
 }
 .storage-ui .leaflet-right {
-    right: 400px;
+    right: 50%;
 }
 #storage-ui-container,
 #storage-alert-container,
@@ -202,7 +206,7 @@ fieldset.toggle.on .more_style_options {
     text-decoration: underline;
 }
 #storage-ui-container .toolbox li + li {
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 /* *********** */
@@ -279,14 +283,21 @@ fieldset.toggle.on .more_style_options {
     display: block;
 }
 
+.datetimeControl {
 
+    font-family: "Papyrus";
+    opacity: 0.6;
+    font-size: 70px;
+    margin-bottom: 100px;
+
+}
 /* *********** */
 /* Close link  */
 /* *********** */
 .storage-close-icon {
     background-repeat: no-repeat;
     background-image: url("/static/staticReqs/src/img/16.png");
-    background-position: -52px -9px;
+    /* background-position: -52px -9px; */
     display: inline;
     padding: 0 10px;
 }
@@ -317,3 +328,4 @@ fieldset.toggle.on .more_style_options {
         right: 0;
     }
 }
+

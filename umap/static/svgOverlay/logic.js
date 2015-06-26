@@ -1,5 +1,328 @@
 console.log("*** enter svgProv overlay logic definitions");
 
+var alert = function(){ console.log.apply(console,arguments); };
+
+var activeListFeature = "rel";
+var total = 0;
+var total2 = 0;
+
+var sortRuler = [];
+var sortCul = [];
+var sortRel = [];
+var sortmRel = [];
+var rulerPops = {}
+var culPops = {}
+var relPops = {}
+var mainRelPops = {}
+
+var sortAll = [];
+var rulerPops2 = {}
+var culPops2 = {}
+var relPops2 = {}
+var mainRelPops2 = {}
+
+var sunburstRel = []
+var sunburstRul = []
+
+var mainRelPops2 = {}
+
+var blocklist=[]
+var imageMap={}
+
+var limit=50
+
+function detailsToAll(e) {
+    var provinceToCenter = e;
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            ultimateMarker.properties.wikiUrl=escape(provinceCollection.features[i].properties.wikiUrl);
+            ultimateMarker.attachPopup()
+            break;
+        }
+    }
+};
+
+function goToAll(e) {
+    var provinceToCenter = e;
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            map.panTo(new L.LatLng(provinceCollection.features[i].geometry.coordinates[0][0][1],provinceCollection.features[i].geometry.coordinates[0][0][0]));
+            break;
+        }
+    }
+};
+
+function goToRuler(e) {
+    var rulerAcr =e;
+    var provinceToCenter = e;
+
+    for (var key in countryPlus){
+        if(countryPlus[key][0] == e)
+            rulerAcr = key;
+    }
+
+    for (var key in activeYear){
+        if(activeYear[key][0] == rulerAcr)
+            provinceToCenter = key;
+    }
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            map.panTo(new L.LatLng(provinceCollection.features[i].geometry.coordinates[0][0][1],provinceCollection.features[i].geometry.coordinates[0][0][0]));
+            break;
+        }
+    }
+};
+
+function goToCul(e) {
+    var culAcr =e;
+    var provinceToCenter = e;
+
+    for (var key in culPlus){
+        if(culPlus[key][0] == e)
+            culAcr = key;
+    }
+
+    for (var key in activeYear){
+        if(activeYear[key][1] == culAcr)
+            provinceToCenter = key;
+    }
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            map.panTo(new L.LatLng(provinceCollection.features[i].geometry.coordinates[0][0][1],provinceCollection.features[i].geometry.coordinates[0][0][0]));
+            break;
+        }
+    }
+};
+
+function goToRel(e) {
+    var culAcr =e;
+    var provinceToCenter = e;
+
+    for (var key in relPlus){
+        if(relPlus[key][0] == e)
+            culAcr = key;
+    }
+
+    for (var key in activeYear){
+        if(activeYear[key][2] == culAcr)
+            provinceToCenter = key;
+    }
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            map.panTo(new L.LatLng(provinceCollection.features[i].geometry.coordinates[0][0][1],provinceCollection.features[i].geometry.coordinates[0][0][0]));
+            break;
+        }
+    }
+};
+
+function goTomRel(e) {
+    var culAcr =e;
+    var isFin=false;
+    var provinceToCenter = "notFound";
+    var searchId = 0;
+    
+function selectRel(myFoundId){
+
+    var foundCount=0;
+    for (var key in relGen){
+        if(relGen[key][0] == e){
+            culAcr = key;
+            foundCount++;
+            if(foundCount == myFoundId){
+                break;
+            }
+        }
+    }
+
+    for (var key in activeYear){
+        if(activeYear[key][2] == culAcr)
+            provinceToCenter = key;
+    }
+
+    for (var i = 0; i< provinceCollection.features.length; i++)
+    {
+        if (provinceCollection.features[i].properties.name === provinceToCenter){
+            map.panTo(new L.LatLng(provinceCollection.features[i].geometry.coordinates[0][0][1],provinceCollection.features[i].geometry.coordinates[0][0][0]));
+            isFin=true;
+            break;
+        }
+    }
+    
+    
+}
+
+    while(searchId<10 && !isFin) {
+        selectRel(searchId);
+        searchId++;
+    }
+    
+    
+};
+
+
+
+function detailsToRul(e) {
+
+    for (var key in countryPlus){
+        if(countryPlus[key][0] == e)
+        {
+            ultimateMarker.properties.wikiUrl=escape(countryPlus[key][2]);
+            ultimateMarker.attachPopup()
+            break;
+        }
+    }
+};
+
+function detailsToCul(e) {
+
+    for (var key in culPlus){
+        if(culPlus[key][0] == e)
+        {            
+            ultimateMarker.properties.wikiUrl=escape(culPlus[key][2]);
+            ultimateMarker.attachPopup()
+            break;
+        }
+    }
+
+};
+
+function detailsToRel(e) {
+
+    for (var key in relPlus){
+        if(relPlus[key][0] == e)
+        {
+            ultimateMarker.properties.wikiUrl=escape(relPlus[key][2]);
+            ultimateMarker.attachPopup()
+            break;
+        }
+    }
+};
+
+function detailsTomRel(e) {
+
+        for (var key in relGen){
+            if(relGen[key][0] == e)
+            {
+                ultimateMarker.properties.wikiUrl=escape(relGen[key][2]);
+                ultimateMarker.attachPopup()
+                break;
+            }
+        }
+};
+
+
+function reloadHierarchy()
+{
+    console.log("*** reloading hierarchy");
+    
+    var tmpKey = "";
+    sortAll = [];
+    sunburstRel = [];
+    sunburstRul = [];
+    for (var key in activeYear) {
+        tmpKey = activeYear[key];
+        tmpPop = tmpKey[4];
+        tmpArea =  provArea[key];
+        
+        total +=  tmpKey[4]
+        total2 +=  provArea[key];
+
+        if(culPlus[tmpKey[1]] !== undefined)
+            sortAll.push([key, countryPlus[tmpKey[0]][0], culPlus[tmpKey[1]][0], relPlus[tmpKey[2]][0], relGen[tmpKey[2]][0], tmpKey[3], tmpArea, tmpPop, "<a class='centerClass' onclick='goToAll(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToAll(&#39;"+key+"&#39;)'>details</a>"])
+        else{
+            tmpKey[1] = "sapmi";
+        }
+        
+        sunburstRel.push([relGen[ tmpKey[2] ][0]+"-"+relPlus[tmpKey[2]][0]+"-"+countryPlus[tmpKey[0]][0]+"-"+culPlus[tmpKey[1]][0]+"-"+key,tmpPop]);
+        
+        sunburstRul.push([countryPlus[tmpKey[0]][0]+"-"+relGen[ tmpKey[2] ][0]+"-"+relPlus[tmpKey[2]][0]+"-"+tmpKey[1]+"-"+key,tmpPop]);
+        if (isNaN(rulerPops[countryPlus[tmpKey[0]][0]])){
+            rulerPops[countryPlus[tmpKey[0]][0]] = tmpPop;
+        } else {
+            rulerPops[countryPlus[tmpKey[0]][0]] += tmpPop;
+        }
+    
+        if (isNaN(culPlus[tmpKey[1]][0])){
+            culPops[culPlus[tmpKey[1]][0]] = tmpPop;
+        } else {
+            culPops[culPlus[tmpKey[1]][0]] += tmpPop;
+        }
+    
+        if (isNaN(relPops[relPlus[tmpKey[2]][0]])){
+            relPops[relPlus[tmpKey[2]][0]] = tmpPop;
+        } else {
+            relPops[relPlus[tmpKey[2]][0]] += tmpPop;
+        }
+
+        if (isNaN( mainRelPops[relGen[ tmpKey[2] ][0]] )){
+            mainRelPops[relGen[ tmpKey[2] ][0]] = tmpPop;
+        } else {
+            mainRelPops[relGen[ tmpKey[2] ][0]] += tmpPop;
+        }
+        
+        
+
+        if (isNaN(rulerPops2[countryPlus[tmpKey[0]][0]])){
+            rulerPops2[countryPlus[tmpKey[0]][0]] = tmpArea;
+        } else {
+            rulerPops2[countryPlus[tmpKey[0]][0]] += tmpArea;
+        }
+
+        if (isNaN(culPops2[culPlus[tmpKey[1]][0]])){
+            culPops2[culPlus[tmpKey[1]][0]] = tmpArea;
+        } else {
+            culPops2[culPlus[tmpKey[1]][0]] +=tmpArea;
+        }
+
+        if (isNaN(relPops2[relPlus[tmpKey[2]][0]])){
+            relPops2[relPlus[tmpKey[2]][0]] = tmpArea;
+        } else {
+            relPops2[relPlus[tmpKey[2]][0]] += tmpArea;
+        }
+
+        if (isNaN( mainRelPops2[relGen[ tmpKey[2] ][0]] )){
+            mainRelPops2[relGen[ tmpKey[2] ][0]] = tmpArea;
+        } else {
+            mainRelPops2[relGen[ tmpKey[2] ][0]] += tmpArea;
+        }
+    }
+    
+    sortRuler = [];
+    sortCul = [];
+    sortRel = [];
+    sortmRel = [];
+    console.debug("sunburstRel",sunburstRel);
+    console.debug("sunburstRul",sunburstRul);
+    
+    for (var key in rulerPops)
+        sortRuler.push([key, rulerPops2[key], rulerPops[key], "<a class='centerClass' onclick='goToRuler(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToRul(&#39;"+key+"&#39;)'>details</a>"])
+    for (var key in culPops)
+        sortCul.push([key, culPops2[key], culPops[key], "<a class='centerClass' onclick='goToCul(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToCul(&#39;"+key+"&#39;)'>details</a>"])
+    for (var key in relPops)
+        sortRel.push([key, relPops2[key], relPops[key], "<a class='centerClass' onclick='goToRel(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToRel(&#39;"+key+"&#39;)'>details</a>"])
+    for (var key in mainRelPops)
+        sortmRel.push([key, mainRelPops2[key], mainRelPops[key], "<a class='centerClass' onclick='goTomRel(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsTomRel(&#39;"+key+"&#39;)'>details</a>"])
+
+   // createVisualization(buildHierarchy(sunburstRul));
+    
+    /*
+    sortRuler.sort(function(b, a) {return a[1] - b[1]})
+    sortCul.sort(function(b, a) {return a[1] - b[1]})
+    sortRel.sort(function(b, a) {return a[1] - b[1]})
+    sortmRel.sort(function(b, a) {return a[1] - b[1]})
+    */
+}
+
 function aud_play_pause() {
     var myAudio = document.getElementById("audio");
     if (myAudio.paused) {
@@ -66,9 +389,40 @@ var transform2;
  */
 
 function changeYear(newYear,myActiveYear) {
-
+    a_hierLoaded=false;
     console.debug("*** changing area year", newYear,activeYear)
+    $("#yearSB").html(newYear)
     activeYear = jQuery.extend({}, myActiveYear);
+    $('#geoGallery').empty();
+    if ($("#geoGallery").css("display") !== "none"){
+        updateGeoGallery(newYear-10,newYear+10,"people");
+    }
+    
+    if ($(".storage-browse-actions").css("display") === "block"){
+        a_hierLoaded=true;
+        reloadHierarchy();
+        aggTable.fnClearTable();
+        fulTable.fnClearTable();
+        fulTable.fnAddData( sortAll );
+        
+        switch (activeListFeature){
+            case ("rel"):
+                aggTable.fnAddData( sortRel );
+                break;
+            case ("mrel"):
+                aggTable.fnAddData( sortmRel );
+                break;
+            case ("cul"):
+                aggTable.fnAddData( sortCul );
+                break;
+            case ("rul"):
+                aggTable.fnAddData( sortRuler );
+                break;
+        }
+
+        switchSBData(currSB);
+        
+    }
     /*
     switch (newYear) {
         case 50:
@@ -730,7 +1084,11 @@ function setupCollections(myActiveTextFeat) {
             .style("fill", function (d) {
                 return d.properties.Acolor; //._storage_options
             })
+           // .on("dragstart", function() { d3.event.sourceEvent.preventDefault(); })
             .on('click', function (d, i) {
+console.debug("clickevent",d3.event.defaultPrevented);
+              //  if (d3.event.defaultPrevented) return; // click suppressed
+                
                 console.debug(d.properties.nameCountry)
 
                 var rulerWiki = "";
@@ -753,22 +1111,27 @@ function setupCollections(myActiveTextFeat) {
                     case "A-Country":
                         ultimateMarker.properties.wikiUrl = rulerWiki
                         tmpTitle = "Region: "+ d.properties.nameCountry;
+                        currSearchKey = d.properties.nameCountry;
                         break;
                     case "A-Culture":
                         ultimateMarker.properties.wikiUrl =  culPlus[d.properties.Cul][2]
                         tmpTitle = "Culture: "+ d.properties.Cul;
+                        currSearchKey =  d.properties.Cul;
                         break;
                     case "A-Religion":
                         ultimateMarker.properties.wikiUrl = relPlus[d.properties.Rel][2]
                         tmpTitle = "Religion: "+ relPlus[d.properties.Rel][0];
+                        currSearchKey = relPlus[d.properties.Rel][0];
                         break;
                     case "A-Main Religions":
                         ultimateMarker.properties.wikiUrl =  relGen[d.properties.Rel][2]
                         tmpTitle = "Main Religions: "+ relGen[d.properties.Rel][0];
+                        currSearchKey = relGen[d.properties.Rel][0];
                         break;
                     case "A-Population":
                         ultimateMarker.properties.wikiUrl =  capitalURL[d.properties.Cap]
                         tmpTitle = "Capital: "+ d.properties.Cap;
+                        currSearchKey = d.properties.Cap;
                         break;
                 }
 
@@ -812,6 +1175,16 @@ function setupCollections(myActiveTextFeat) {
                 $("#capitalSpec")[0].innerHTML = d.properties.Cap;
                 $("#regionSpec")[0].innerHTML = d.properties.name;
                 $("#populationSpec")[0].innerHTML = d.properties.Pop;
+
+                
+                $("#content_cul")[0].value =  $("#cultureSpec")[0].innerHTML
+                $("#content_rel")[0].value = $("#religionSpec")[0].innerHTML
+                $("#content_rul")[0].value =  $("#rulerSpec")[0].innerHTML
+                //  $("#mainRelSpec")[0].value = relGen[d.properties.Rel][0];
+                $("#content_cap")[0].value =  $("#capitalSpec")[0].innerHTML
+                //       $("#regionSpec")[0].value = d.properties.name;
+                $("#content_Size")[0].value = $("#populationSpec")[0].innerHTML
+                
 
                 
                 var js = "';$('#notFoundNotice').hide(); $('#chronasWiki').hide(); $('#overview')[0].style.display = 'none'; $('#loader1')[0].style.display = 'block';  $('#specific')[0].style.display = 'block';  var tmpURL='http://en.wikipedia.org/wiki/"
@@ -1346,6 +1719,277 @@ function lockFeatureSelection() {
 
 
 };
+
+
+function asyncCall(myUrl){
+
+    $.ajax({
+        url: myUrl,
+        jsonp: "callback",
+        dataType: "jsonp",
+
+        success: function( response ) {
+
+            var geoTagged=[];
+            var bakedImages={};
+
+
+            // blocking all cities and city likes 253019
+            for (var i=0; i<response.props["31"].length && i<limit; i++){
+                if (response.props["31"][i][2] == "515" ||
+                    response.props["31"][i][2] == "253019"||
+                    response.props["31"][i][2] == "2983893") blocklist.push(response.props["31"][i][0])
+            }
+
+            // baking imageMap
+            for (var i=0; i<response.props["18"].length; i++){
+                if (blocklist.indexOf(response.props["18"][i][0]) == -1){
+                    imageMap[response.props["18"][i][0]] = response.props["18"][i][2]
+
+                }
+            }
+
+
+            // gathering coordinates
+
+            if (response.props["625"]){
+                for (var i=0; i<response.props["625"].length && i<limit; i++){
+                    if (blocklist.indexOf(response.props["625"][i][0]) == -1){
+                        blocklist.push(response.props["625"][i][0])
+
+                        $.ajax({
+                            url: "//wikidata.org/w/api.php?action=wbgetentities&ids=Q"+response.props["625"][i][0]+"&props=sitelinks&languages=en&format=json",
+                            jsonp: "callback",
+                            dataType: "jsonp",
+                            indexValue2: response.props["625"][i][0],
+                            indexValue3: response.props["625"][i][2],
+                            success: function( response2 ) {
+                                var returningObj = {};
+                                getObject(response2,returningObj)
+                                appendImage(imageMap[this.indexValue2], this.indexValue3,returningObj.enwiki);
+                            }
+                        });
+                    }
+                }
+            }
+
+            if (response.props["276"]){
+                // get 276
+                for (var i=0; i<response.props["276"].length && i<limit; i++){
+                    if (blocklist.indexOf(response.props["276"][i][0]) == -1){
+                        blocklist.push(response.props["276"][i][0])
+
+                        $.ajax({
+                            url: "//wdq.wmflabs.org/api?q=ITEMS["+response.props["276"][i][2]+"]&props=625",
+                            dataType: "jsonp",
+                            indexValue: response.props["276"][i][0],
+                            success: function( response ) {
+                                if(response.props["625"] ){
+                                    // console.log( "625 received", imageMap[this.indexValue], response.props["625"][0][2] );
+                                    //		appendImage(imageMap[this.indexValue], response.props["625"][0][2]);
+
+                                    $.ajax({
+                                        url: "//wikidata.org/w/api.php?action=wbgetentities&ids=Q"+this.indexValue+"&props=sitelinks&languages=en&format=json",
+                                        jsonp: "callback",
+                                        dataType: "jsonp",
+                                        indexValue2: this.indexValue,
+                                        indexValue3: response.props["625"][0][2],
+                                        success: function( response2 ) {
+                                            var returningObj = {};
+                                            getObject(response2,returningObj)
+                                            appendImage(imageMap[this.indexValue2], this.indexValue3,returningObj.enwiki);
+                                        }
+                                    });
+                                }
+                            }
+                        });
+
+                    }
+                }
+            }
+            if (response.props["19"]){
+                // get 19
+                for (var i=0; i<response.props["19"].length && i<limit; i++){
+                    if (blocklist.indexOf(response.props["19"][i][0]) == -1){
+                        blocklist.push(response.props["19"][i][0])
+
+                        $.ajax({
+                            url: "//wdq.wmflabs.org/api?q=ITEMS["+response.props["19"][i][2]+"]&props=625",
+                            indexValue: response.props["19"][i][0],
+                            dataType: "jsonp",
+
+                            success: function( response ) {
+                                if(response.props["625"] && response.props["625"][0]){
+                                    // console.log( "!625 received",imageMap[this.indexValue], response.props["625"][0][2] );
+                                    //appendImage(imageMap[this.indexValue], response.props["625"][0][2]);
+                                    $.ajax({
+                                        url: "//wikidata.org/w/api.php?action=wbgetentities&ids=Q"+this.indexValue+"&props=sitelinks&languages=en&format=json",
+                                        jsonp: "callback",
+                                        dataType: "jsonp",
+                                        indexValue2: this.indexValue,
+                                        indexValue3: response.props["625"][0][2],
+                                        success: function( response2 ) {
+                                            var returningObj = {};
+                                            getObject(response2,returningObj)
+                                            appendImage(imageMap[this.indexValue2], this.indexValue3,returningObj.enwiki);
+                                        }
+                                    });
+                                }
+
+                            }
+                        });
+
+                    }
+                }
+            }
+            if (response.props["189"]){
+                // get 189
+                for (var i=0; i<response.props["189"].length && i<limit; i++){
+                    if (blocklist.indexOf(response.props["189"][i][0]) == -1){
+                        blocklist.push(response.props["189"][i][0])
+
+                        $.ajax({
+                            url: "//wdq.wmflabs.org/api?q=ITEMS["+response.props["189"][i][2]+"]&props=625",
+                            indexValue: response.props["189"][i][0],
+                            dataType: "jsonp",
+
+                            success: function( response ) {
+                                if(response.props["625"] && response.props["625"][0]){
+                                    // console.log( "!625 received",imageMap[this.indexValue], response.props["625"][0][2] );
+                                    //appendImage(imageMap[this.indexValue], response.props["625"][0][2]);
+                                    $.ajax({
+                                        url: "//wikidata.org/w/api.php?action=wbgetentities&ids=Q"+this.indexValue+"&props=sitelinks&languages=en&format=json",
+                                        jsonp: "callback",
+                                        dataType: "jsonp",
+                                        indexValue2: this.indexValue,
+                                        indexValue3: response.props["625"][0][2],
+                                        success: function( response2 ) {
+                                            var returningObj = {};
+                                            getObject(response2,returningObj)
+                                            appendImage(imageMap[this.indexValue2], this.indexValue3,returningObj.enwiki);
+                                        }
+                                    });
+                                }
+
+                            }
+                        });
+
+                    }
+                }
+            }
+
+        }
+
+    });
+
+}
+
+function updateGeoGallery (myStart,myEnd,scope){
+    $('#geoGallery').empty();
+
+    blocklist=[],
+    imageMap={},
+        
+    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[189] &props=31,18,189");
+    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[625] &props=31,18,625");
+    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[276] &props=31,18,276");
+    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[19] &props=31,18,19");
+
+
+};
+
+function appendImage(myImageId,myCoords,enwiki) {
+    $.ajax({
+        url: "//commons.wikimedia.org/w/api.php?action=query&titles=File%3A"+myImageId+"&prop=imageinfo&iiurlwidth=260&iiurlheight=400&iiprop=url%7Csize&format=json",
+        dataType: "jsonp",
+
+        success: function( response ) {
+            //	console.log( "last response", response.query.pages );
+            var buildingBlock={}
+            getObject2(response.query.pages,buildingBlock);
+            //	console.log( "!!! final:", myCoords, buildingBlock.thumb, buildingBlock.url );
+
+
+            $( "#geoGallery" ).append( '<a  title="'+enwiki+' '+myCoords+'" href="'+buildingBlock.url+'" data-lightbox="geogal"><img class="singImage" src="'+buildingBlock.thumb+'"></a>' );
+
+
+        }
+    });
+}
+
+function getObject(theObject,returningObj) {
+    var result = null;
+
+    if(theObject instanceof Array) {
+        for(var i = 0; i < theObject.length; i++) {
+            result = getObject(theObject[i],returningObj);
+            if (result) {
+                break;
+            }
+        }
+    }
+    else
+    {
+        for(var prop in theObject) {
+            if(prop == "enwiki")
+                returningObj.enwiki=theObject[prop].title;
+
+            if(prop == 'id') {
+                if(theObject[prop] == 1) {
+                    return theObject;
+                }
+            }
+            if(theObject[prop] instanceof Object || theObject[prop] instanceof Array) {
+                result = getObject(theObject[prop],returningObj);
+                if (result) {
+                    break;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+
+function getObject2(theObject,returningObj) {
+    var result = null;
+
+    if(theObject instanceof Array) {
+        for(var i = 0; i < theObject.length; i++) {
+            result = getObject2(theObject[i],returningObj);
+            if (result) {
+                break;
+            }
+        }
+    }
+    else
+    {
+        for(var prop in theObject) {
+            //	console.debug(prop,theObject[prop]);
+            if(theObject[prop] && theObject[prop].imageinfo && theObject[prop].imageinfo[0]  ){
+                returningObj.thumb=theObject[prop].imageinfo[0].thumburl;
+                returningObj.url=theObject[prop].imageinfo[0].url;
+            }
+
+            if(prop == 'id') {
+                if(theObject[prop] == 1) {
+                    return theObject;
+                }
+            }
+            if(theObject[prop] instanceof Object || theObject[prop] instanceof Array) {
+                result = getObject2(theObject[prop],returningObj);
+                if (result) {
+                    break;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+
 /*
 
 

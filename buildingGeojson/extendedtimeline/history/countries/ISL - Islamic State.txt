@@ -1,3 +1,4 @@
+NEWCOUNTRYISL - Islamic State.txt
 government = caliphate
 mercantilism = 0.1
 primary_culture = al_iraqiya_arabic

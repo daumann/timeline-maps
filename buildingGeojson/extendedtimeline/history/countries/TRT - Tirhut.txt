@@ -1,3 +1,4 @@
+NEWCOUNTRYTRT - Tirhut.txt
 government = feudal_monarchy
 primary_culture = bihari
 religion = hinduism

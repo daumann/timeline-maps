@@ -1,3 +1,4 @@
+NEWCOUNTRYLAP - La Plata.txt
 government = republican_dictatorship
 #aristocracy_plutocracy = -2
 #centralization_decentralization = 0

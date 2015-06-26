@@ -1,3 +1,4 @@
+NEWCOUNTRYPRY - Principality of Pereyaslavl.txt
 government = principality
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 2

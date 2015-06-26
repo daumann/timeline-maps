@@ -3,7 +3,7 @@
 
 sed -i 's/old-word/new-word/g' *.txt
 
-sed -i 's#iconUrl":"/img/#iconUrl":"../img/#g' relDL*
+sed -i 's#iconUrl":"../img/#iconUrl":"/static/i/#g' relDL*
 
 cd /home/aumannd/.virtualenvs/umap/var/uploads/datalayer/people/
 
@@ -26,9 +26,7 @@ https://wdq.wmflabs.org/api?q=BETWEEN[571,1000,1010]%20AND%20claim[18]%20AND%20c
 
 # SETTINGS FOR PSQL - settings: {"geometry": {"type": "Point", "coordinates": [50, 4]}, "type": "Feature", "properties": {"popupTemplate": "SimplePanel", "miniMap": false, "captionBar": false, "description": "descriptiondescriptiondescription", "scrollWheelZoom": true, "limitBounds": {}, "color": "#1f6377", "displayPopupFooter": false, "zoom": 6, "slideshow": {}, "scaleControl": true, "tilelayer": {}, "datalayersControl": true, "moreControl": true, "licence": "", "tilelayersControl": true, "zoomControl": true, "name": "testName"}}
 
-
-
-
+for f in *.txt; do sed -i "1s/^/$f\n/"  "$f"; done
 
 
 # Fuer bots posting to wikidata:
@@ -67,6 +65,22 @@ for f in *.txt ; do sed -i 'newEntry$f' $f; done
 
 cat citiesAndArtFinalCleanNull3.csv | awk  -F'\t' '{ if ( $2 !~ /monastery/ ) print $1"\t"$2"\t"$3"\t"$4"\t"$5"\t"$6; }' >> citiesAndArtFinalCleanNull4.csv
 
+
+# calculate area on nodejs
+var provAreas={};
+
+
+for (var i=0; i<provinceCollection.features.length; i++ ){
+    provinceCollection.features[i].properties.area=Math.round(geojsonArea.geometry(provinceCollection.features[i].geometry)/1000000 * 100) / 100;
+    
+	if (isNaN(provAreas[provinceCollection.features[i].properties.name])){
+	    provAreas[provinceCollection.features[i].properties.name] = Math.round(geojsonArea.geometry(provinceCollection.features[i].geometry)/1000000 * 100) / 100;
+	} else {
+	    provAreas[provinceCollection.features[i].properties.name] += Math.round(geojsonArea.geometry(provinceCollection.features[i].geometry)/1000000 * 100) / 100;
+	}
+}
+
+console.log(JSON.stringify(provAreas))
 
 
 mv 11-Vasterbotten.txt "11 - Vasterbotten.txt";

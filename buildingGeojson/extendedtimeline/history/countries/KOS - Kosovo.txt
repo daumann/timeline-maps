@@ -1,3 +1,4 @@
+NEWCOUNTRYKOS - Kosovo.txt
 government = constitutional_republic
 #aristocracy_plutocracy = -3
 #centralization_decentralization = 2

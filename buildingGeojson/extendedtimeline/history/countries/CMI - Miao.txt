@@ -1,3 +1,4 @@
+NEWCOUNTRYCMI - Miao.txt
 government = despotic_monarchy
 primary_culture = miao
 religion = animism
