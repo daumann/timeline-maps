@@ -500,19 +500,21 @@ a.storage-control-text {
 }
 
 .leaflet-control-browse .storage-browse-toggle-active {
-    background-image: url("../img/24.png");
+   /* background-image: url("../img/24.png");*/
     width: 36px;
     height: 36px;
-    background-position: -39px -82px;
+    /* background-position: -39px -82px; */
     background-color: rgba(255,255,255,0.9);
+    opacity: 1;
 }
 
 .leaflet-control-browse .storage-browse-toggle-active:hover {
-    background-image: url("../img/24.png");
+
     width: 36px;
     height: 36px;
-    background-position: -39px -82px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.9);
+
+    opacity: 1;
 }
 
 .leaflet-control-browse .storage-browse-actions {
@@ -788,7 +790,7 @@ a.storage-control-text {
     background-position: -12px -49px;
 }
 .storage-list {
-    /* background-position: -52px -168px; */
+    background-position: -52px -168px;
 }
 .storage-list-white {
     background-position: -92px -168px;

@@ -7,7 +7,7 @@
         <div  >
             <div id="featureTree" style="overflow-x: hidden; ">
                 <ul class="nav nav-list">
-                    <li><label class="tree-toggler nav-header">Area</label>
+                    <li class=""><label class="markerBullets tree-toggler nav-header">Area</label>
                         <ul class="nav nav-list tree">
                             
                             <table style="width:182px">
@@ -49,7 +49,7 @@
                         </ul>
                     </li>
                     <li class="divider"></li>
-                    <li><label class="tree-toggler nav-header">Marker</label>
+                    <li class=""><label class="markerBullets tree-toggler nav-header">Marker</label>
                         <ul class="nav nav-list tree">
                             <li><input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Cities" data-off="Cities"> <label class="tree-toggler nav-header advanced">>></label>
                                 <ul class="nav nav-list tree">
@@ -201,14 +201,24 @@
         
 
     </div>
+<a id ="CloseMarker" class="storage-close-icon storage-browse-toggle" href="#" style="float: right; margin-top: -50px; display: none"></a>
+
+<a id ="CloseAna" class="storage-close-icon storage-browse-hierarchy" href="#" style="float: right; margin-top: -50px;"></a>
+
 <div id="hierarchyForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
     <div>
         <div id="hierarchyTree" style="overflow-x: hidden; ">
             <ul class="nav nav-list">
-                <li> <label id="polHier" class="tree-toggler nav-header hier">Ruler</label> <label id="culHier" class="tree-toggler nav-header hier">Culture</label> <label id="relHier" class="tree-toggler nav-header hier">Religion</label> <label id="mrelHier" class="tree-toggler nav-header hier">Main Religion</label>
+                <li> 
+                    <label id="polHier" class="tree-toggler nav-header hier">Ruler</label> 
+                    <label id="culHier" class="tree-toggler nav-header hier">Culture</label> 
+                    <label id="relHier" class="tree-toggler nav-header hier">Religion</label> 
+                    <label id="mrelHier" class="tree-toggler nav-header hier">Main Religion</label>
                     <label id="allProvinces" class="tree-toggler nav-header hier">All Provinces</label>
 
-                    <label id="btn_visualize" class="tree-toggler nav-header hier">Visualize</label>
+                    <label id="btn_sun-visualize" class="tree-toggler nav-header hier">Sunburst Visualization</label>
+                    <label id="btn_bub-visualize" class="tree-toggler nav-header hier">Bubble Visualization</label>
+                    <label id="btn_static-visualize" class="tree-toggler nav-header hier">Full View</label>
                 </li>
                 <br>
                 <div id="hierTables">
@@ -261,7 +271,62 @@
                         <div id="legend" style="visibility: hidden; pointer-events: none;line-height: 15px;margin-top: 35px;">Circle layers<br>(inner to outer):<br><br></div>
                     </div>
                 </div>
-                
+                <div id="hierBubbs" style="display: none">
+                    <div role="main">
+                        <div id="view_selection" class="btn-group">
+                            <span style="float: left">Cluster by</span>
+                            <a href="#" id="allClustering" class="btn bubble-btn active activeClustering">All</a>
+                            <a href="#" id="rulClustering" class="btn bubble-btn">Ruler</a>                            
+                            <a href="#" id="relClustering" class="btn bubble-btn">Sub Religion</a>
+                            <a href="#" id="mRelClustering" class="btn bubble-btn">Main Religion</a>
+                        </div>
+                        <div class="btn-group" style="position: absolute; left:0px">
+                            <span style="float: left">Color by</span>
+                            <a class="btn dropdown-toggle btn-select" data-toggle="dropdown" href="#">Religion<span class="caret"></span></a>
+                            <ul id="coloring" class="dropdown-menu">
+                                <li><a href="#">Ruler</a></li>
+                                <li><a href="#">Culture</a></li>
+                                <li><a class="activeColoring" href="#">Religion</a></li>
+                                <li><a href="#">Main Religion</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="bubbles_vis"></div>
+                        <aside>Mouseover for tooltips, click for center on province.</aside>
+                    </div>
+                </div>
+                <div id="hierStatic" style="display: none">
+                    <label id="btn_animFull" class="tree-toggler nav-header hier">Animation View</label>
+                    <label id="btn_staticFull" class="tree-toggler nav-header hier">Static View</label>
+                    
+                    <div id="staticFullView" style="display: none">
+                        <div id="view_selection_static" class="btn-group">
+                            <a href="#" id="rulStatic" class="btn bubble-btn">Ruler</a>
+                            <a href="#" id="relStatic" class="btn bubble-btn">Religion</a>
+                            <a href="#" id="mRelStatic" class="btn bubble-btn">Main Religion</a>
+                        </div>
+                        <div>
+                            <svg class="stackedChart" id="stackedRul" style="display: block"></svg>
+                            <svg class="stackedChart" id="stackedRel" style="display: none"></svg>
+                            <svg class="stackedChart" id="stackedmRel" style="display: none"></svg>
+                        </div>
+                    </div>
+                    <div id="animFullView" style="display: block">
+                        <div id="view_selection_anim" class="btn-group">
+                            <a href="#" id="rulAnim" class="btn bubble-btn active activeClustering">Ruler</a>
+                            <a href="#" id="relAnim" class="btn bubble-btn">Religion</a>
+                            <a href="#" id="mRelAnim" class="btn bubble-btn">Main Religion</a>
+                        </div>
+
+                        <aside>Mouseover the year to move forward and backwards through time, mouseover circles for labels or <span id="startAniRul" style="display:inline; text-decoration: underline;">restart locked animation</span><span id="startAniRel" style="display:none; text-decoration: underline;">restart locked animation</span><span id="startAnimRel" style="display:none; text-decoration: underline;">restart locked animation</span>.</aside>
+
+                        <div>
+                            <p id="aniRul" style="display: block"></p>
+                            <p id="aniRel" style="display: none"></p>
+                            <p id="animRel" style="display: none"></p>
+                        </div>
+                    </div>
+                </div>
             </ul>
         </div>
     </div>
@@ -275,6 +340,7 @@
 <div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
 
 <script src="{{ STATIC_URL }}staticReqs/sequences.js"></script>
+<script src="{{ STATIC_URL }}staticReqs/nv.d3.js"></script>
 <script type="text/javascript">
     
     console.log("*** initializing map");
@@ -305,311 +371,21 @@
     //var b_sub_artefact = true;
     var b_sub_unclassified = false;
     var a_hierLoaded = false;
+    var a_bubLoadedOnce = false;
+    var a_bubLoaded = false;
+    var a_fullTimeLoaded = false;
+    var rulAnimLoaded = false;
+    var relAnimLoaded = false;
+    var mRelAnimLoaded = false;
+    var rulStaticLoaded = false;
+    var relStaticLoaded = false;
+    var mRelStaticLoaded = false;
     
-    $("#citiesBox").change(function(){
-        console.debug("start go")
-        b_sub_cities = document.getElementById("citiesBox").checked;
-        if(b_city && b_sub_cities){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_settlementsData)
-        }
-        else{
-            if ($.inArray(newYear, a_settlementsLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_settlementsData);
-            }
-        }
-        console.debug("end go")
-    });
-            
-    $("#castlesBox").change(function(){
-        b_sub_castles = document.getElementById("castlesBox").checked;
-        if(b_city && b_sub_castles){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_castlesData)
-        }
-        else{
-            if ($.inArray(newYear, a_castlesLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_castlesData)
-            }
-        }
-    });
-    
-    $("#unclassifiedBox").change(function(){
-        b_sub_unclassified = document.getElementById("unclassifiedBox").checked;
-        if(b_other && b_sub_unclassified){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_unclassifiedData)
-        }
-        else{
-            if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_unclassifiedData)
-            }
-        }
-    });
-
-    $("#areaInfoBox").change(function(){
-        b_sub_areaInfo = document.getElementById("areaInfoBox").checked;
-        if(b_other && b_sub_areaInfo){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_areaInfoData)
-        }
-        else{
-            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_areaInfoData)
-            }
-        }
-    });
-    
-    $("#milBox").change(function(){
-        b_sub_military = document.getElementById("milBox").checked;
-        if(b_people && b_sub_military){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_milData)
-        }
-        else{
-            if ($.inArray(newYear, a_milLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_milData)
-            }
-        }
-    });
-
-    $("#polBox").change(function(){
-        b_sub_politician = document.getElementById("polBox").checked;
-        if(b_people && b_sub_politician){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_polData)
-        }
-        else{
-            if ($.inArray(newYear, a_polLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_polData)
-            }
-        }
-    });
-
-    $("#sciBox").change(function(){
-        b_sub_scientist = document.getElementById("sciBox").checked;
-        if(b_people && b_sub_scientist){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_sciData)
-        }
-        else{
-            if ($.inArray(newYear, a_sciLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_sciData)
-            }
-        }
-    });
-
-    $("#relBox").change(function(){
-        b_sub_religious = document.getElementById("relBox").checked;
-        if(b_people && b_sub_religious){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_relData)
-        }
-        else{
-            if ($.inArray(newYear, a_relLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_relData)
-            }
-        }
-    });
-
-    $("#uncBox").change(function(){
-        b_sub_uncP = document.getElementById("uncBox").checked;
-        if(b_people && b_sub_uncP){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_uncPData)
-        }
-        else{
-            if ($.inArray(newYear, a_uncPLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_uncPData)
-            }
-        }
-    });
-
-    $("#expBox").change(function(){
-        b_sub_exp = document.getElementById("expBox").checked;
-        if(b_people && b_sub_exp){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_expData)
-        }
-        else{
-            if ($.inArray(newYear, a_expLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_expData)
-            }
-        }
-    });
-
-    $("#artBox").change(function(){
-        b_sub_artist = document.getElementById("artBox").checked;
-        if(b_people && b_sub_artist){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_artistData)
-        }
-        else{
-            if ($.inArray(newYear, a_artistLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_artistData)
-            }
-        }
-    });
-
-    $("#athBox").change(function(){
-        b_sub_athlete = document.getElementById("athBox").checked;
-        if(b_people && b_sub_athlete){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            ClusterSuperGroup.addLayers(a_athData)
-        }
-        else{
-            if ($.inArray(newYear, a_athLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_athData)
-            }
-        }
-    });
-    
-    
-    $("#areaChecked").change(function(){
-        b_area = document.getElementById("areaChecked").checked;
-
-        
-        if(b_area){
-            map.getDataLayerByStorageId(newYear).fetchData();
-            $('svg').show();
-        }
-        else{
-         //   if ($.inArray(newYear, a_area != -1){
-                $('svg').hide()
-         //   }
-        }
-    });
-
-    $("#peopleChecked").change(function(){
-        b_people = document.getElementById("peopleChecked").checked;
-        console.debug("map.datalayers:",map.datalayers);
-        
-        if(b_people){
-            map.getDataLayerByStorageId(newYear).fetchData()
-        }
-            
-        else{
-            if ($.inArray(newYear, a_peopleLoaded) != -1){
-               ClusterSuperGroup.removeLayers(a_peopleLoaded)
-            }
-            
-            if ($.inArray(newYear, a_milLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_milData)
-            }
-            if ($.inArray(newYear, a_polLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_polData)
-            }
-            if ($.inArray(newYear, a_sciLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_sciData)
-            }
-            if ($.inArray(newYear, a_relLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_relData)
-            }
-            if ($.inArray(newYear, a_uncPLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_uncPData)
-            }
-            if ($.inArray(newYear, a_expLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_expData)
-            }
-            if ($.inArray(newYear, a_artistLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_artistData)
-            }
-            if ($.inArray(newYear, a_athLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_artistData)
-            }
-        }
-        
-    });
-    
-    $("#cityChecked").change(function(){
-        b_city = document.getElementById("cityChecked").checked;
-        console.debug("map.datalayers:",map.datalayers)
-        // search for storage id of iterate map.datalayers_index    year in object and do:
-        
-        if(b_city){
-            if (b_sub_castles) ClusterSuperGroup.addLayers(a_castlesData)
-            else{
-                ClusterSuperGroup.removeLayers(a_castlesData)
-            }
-            if (b_sub_cities) ClusterSuperGroup.addLayers(a_settlementsData)
-            else{
-                ClusterSuperGroup.removeLayers(a_settlementsData)
-            }
-            map.getDataLayerByStorageId(newYear).fetchData()
-        }
-        else{      
-            if ($.inArray(newYear, a_castlesLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_castlesData)
-            }
-            if ($.inArray(newYear, a_settlementsLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_settlementsData)
-            }
-        }
-        
-    });
-
-    $("#artChecked").change(function(){
-        b_art = document.getElementById("artChecked").checked;
-        if(b_art){
-            ClusterSuperGroup.addLayers(a_artefactData)
-            map.getDataLayerByStorageId(newYear).fetchData()
-        }
-
-        else{
-            if ($.inArray(newYear, a_artefactLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_artefactData)
-            }
-        }
-    });
-    
-    $("#eventsChecked").change(function(){
-        b_events = document.getElementById("eventsChecked").checked;
-        if(b_events){
-            ClusterSuperGroup.addLayers(a_eventsData)
-            map.getDataLayerByStorageId(newYear).fetchData()
-        }
-            
-        else{
-            if ($.inArray(newYear, a_eventsLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_eventsData)
-            }
-        }
-    });
-
-    $("#otherChecked").change(function(){
-        b_other = document.getElementById("otherChecked").checked;
-        console.debug("map.datalayers:",map.datalayers)
-        // search for storage id of iterate map.datalayers_index    year in object and do:
-
-        if(b_other){
-            if(b_sub_unclassified) {
-                ClusterSuperGroup.removeLayers(a_unclassifiedData)
-            }
-            else{
-                ClusterSuperGroup.addLayers(a_unclassifiedData)
-            }
-            if(b_sub_areaInfo) {
-                ClusterSuperGroup.addLayers(a_areaInfoData)
-            }
-            else{
-                ClusterSuperGroup.removeLayers(a_areaInfoData)
-            }
-            map.getDataLayerByStorageId(newYear).fetchData()
-        }
-        else{
-            if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_unclassifiedData)
-            }
-            if ($.inArray(newYear, a_areaInfoLoaded) != -1){
-                ClusterSuperGroup.removeLayers(a_areaInfoData)
-            }
-        }
-
-    });
-
-    
-    var map = new L.Storage.Map("map", {{ map_settings|notag|safe }});
-    map.setMaxBounds(L.latLngBounds(L.latLng(-90, -240), L.latLng(90, 240)));
+    var mapOptions = {"geometry":{"type":"Point","coordinates":[50,4]},"type":"Feature","properties":{"popupTemplate":"SimplePanel","miniMap":false,"description":"chronas map description","scrollWheelZoom":true,"color":"#1f6377","displayPopupFooter":false,"allowEdit":false,"slideshow":{},"shortUrl":"http://s.hort/m/6/","scaleControl":true,"tilelayer":{},"datalayers":[],"moreControl":true,"licence":"","tilelayersControl":true,"locale":"en","default_iconUrl":"/static/storage/src/img/marker.png","name":"testName","author":{"link":"/en/user/aumannd/","name":"aumannd"},"tilelayers":[{"attribution":"Stamen","name":"WaterColor","url_template":"http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg","rank":1,"minZoom":1,"maxZoom":18,"id":7},{"attribution":"MapQuest","name":"Satelite","url_template":"http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg","rank":3,"minZoom":0,"maxZoom":18,"id":8},{"attribution":"Esi","name":"Satelite 2","url_template":"http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}","rank":4,"minZoom":0,"maxZoom":18,"id":9},{"attribution":"ttar","name":"z1","url_template":"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","selected":true,"rank":5,"minZoom":0,"maxZoom":18,"id":6}],"zoom":6,"zoomControl":true,"limitBounds":{},"datalayersControl":true,"urls":{"map":"/en/map/{slug}_{pk}","datalayer_view":"/en/datalayer/{pk}/","map_update":"/en/map/{map_id}/update/settings/","map_old_url":"/en/map/{username}/{slug}/","ajax_proxy":"/ajax-proxy/?url={url}","map_geojson":"/en/map/{pk}/geojson/","map_short_url":"/en/m/{pk}/","map_anonymous_edit_url":"/en/map/anonymous-edit/{signature}","map_new":"/en/map/new/","datalayer_update":"/en/map/{map_id}/datalayer/update/{pk}/","map_delete":"/en/map/{map_id}/update/delete/","map_create":"/en/map/create/","logout":"/en/logout/","routing":"http://map.project-osrm.org/?loc={lat},{lng}&hl={locale}","datalayer_create":"/en/map/{map_id}/datalayer/create/","map_clone":"/en/map/{map_id}/update/clone/","login_popup_end":"/en/login/popup/end/","login":"/en/login/","datalayer_delete":"/en/map/{map_id}/datalayer/delete/{pk}/","pictogram_list_json":"/en/pictogram/json/","map_update_permissions":"/en/map/{map_id}/update/permissions/"},"storage_id":6,"captionBar":false,"licences":{"No licence set":{"url":"","name":"No licence set"},"Apache 2":{"url":"http://www.apache.org/licenses/LICENSE-2.0.html","name":"Apache 2"}}}}; //{//{ map_settings|notag|safe }//}
+   //  mapOptions.properties.datalayers = [];
+  //  console.debug("these settings were not necessarily taken: ", JSON.stringify(mapOptions))
+    var map = new L.Storage.Map("map", mapOptions);
+ //   map.setMaxBounds(L.latLngBounds(L.latLng(-90, -240), L.latLng(90, 240)));
     map.options.maxZoom=9
     map.options.minZoom=2
     
@@ -694,9 +470,60 @@
             .prependTo(".storage-browse-actions");
     $("#hierarchyForms")
             .prependTo(".storage-browse-actions");
+
+    $("#CloseAna")
+            .prependTo("#hierarchyForms");
+    $("#CloseMarker")
+            .prependTo("#featureForms");
     
     $('#listPlaceholder').append($(".storage-browse-link").detach());
 
+    $("#coloring li a").click(function(){
+        console.debug("changed coloring")
+        $('#coloring li a').removeClass('activeColoring');
+        $(this).toggleClass('activeColoring');
+        var selText = $(this).text();
+        $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+
+        d3.select("#svg_vis").selectAll("circle").attr("r", function(d) {
+            return d.radius;
+        })
+
+        switch(selText){
+            case "Main Religion":
+
+                d3.select("#svg_vis").selectAll("circle").attr("fill", function(d) {
+                    return colorAreas[d.mRelB]
+                }).attr("stroke-width", 2).attr("stroke", function(d) {
+                            return d3.rgb(colorAreas[d.mRelB]).darker();
+                        });
+                break;
+            case "Culture":
+                d3.select("#svg_vis").selectAll("circle").attr("fill", function(d) {
+                    return colorAreas[d.culB]
+                }).attr("stroke-width", 2).attr("stroke", function(d) {
+                            return d3.rgb(colorAreas[d.culB]).darker();
+                        });
+                break;
+            case "Religion":
+                d3.select("#svg_vis").selectAll("circle").attr("fill", function(d) {
+                    return colorAreas[d.relB]
+                }).attr("stroke-width", 2).attr("stroke", function(d) {
+                            return d3.rgb(colorAreas[d.relB]).darker();
+                        });
+                break;
+            case "Ruler":
+                d3.select("#svg_vis").selectAll("circle").attr("fill", function(d) {
+                    return colorAreas[d.rulB]
+                }).attr("stroke-width", 2).attr("stroke", function(d) {
+                            return d3.rgb(colorAreas[d.rulB]).darker();
+                        });
+                break;
+        }
+    });
+
+
+    
     $(".storage-browse-toggle").click(function(){ 
         if($("#featureForms").css("display") == "none"){
             $(".storage-browse-actions").css("display","block");
@@ -752,33 +579,453 @@ $("input:checkbox").change(function(){
     });
  */
 </script>
-<script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script class="cssdeck" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
+<script src="{{ STATIC_URL }}staticReqs/bootstrap-toggle.min.js"></script>
 <script src="{{ STATIC_URL }}staticReqs/jquery.dataTables.min.js"></script>
 
 
 <script>
-    var aggTable, fulTable;
+    var aggTable, fulTable, myLightGallery;
     $(document).ready(function () {
+
+        $('#view_selection a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection a').removeClass('active');
+            $('#view_selection a').removeClass('activeClustering');
+            $(this).toggleClass('active');
+            $(this).toggleClass('activeClustering');
+            toggle_view(view_type);
+            return false;
+        });
+
+        $('#view_selection_anim a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection_anim a').removeClass('active');
+            $('#view_selection_anim a').removeClass('activeClustering');
+            $(this).toggleClass('active');
+            $(this).toggleClass('activeClustering');
+            toggle_animView(view_type);
+            return false;
+        });
+
+        $('#view_selection_static a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection_static a').removeClass('active');
+            $('#view_selection_static a').removeClass('activeClustering');
+            $(this).toggleClass('active');
+            $(this).toggleClass('activeClustering');
+            toggle_staticView(view_type);
+            return false;
+        });
         
-        $(".leaflet-top.leaflet-right").prepend('<div class="leaflet-control" id="geoGallery" style="display:none"></div><div class="storage-control leaflet-control" style=" clear: none; float: none; position: absolute; right: 0px; top: 0px; "><a class="btnOpenGallery" href="#" title="Open Gallery"></a></div>')
+        function toggle_staticView(myId){
+            switch (myId){
+                case "rulStatic":
+
+                    $("#stackedRul").css("display","block")
+                    $("#stackedRel").css("display","none")
+                    $("#stackedmRel").css("display","none")
+
+
+                    if (!rulStaticLoaded){
+                        rulStaticLoaded = true;
+                        runStackedRul();
+                    }
+                    break;
+                case "relStatic":
+
+                    $("#stackedRul").css("display","none")
+                    $("#stackedRel").css("display","block")
+                    $("#stackedmRel").css("display","none")
+                    if (!relStaticLoaded){
+                        relStaticLoaded = true;
+                        runStackedRel();
+                    }
+                    break;
+                case "mRelStatic":
+
+                    $("#stackedRul").css("display","none")
+                    $("#stackedRel").css("display","none")
+                    $("#stackedmRel").css("display","block")
+                    if (!mRelStaticLoaded){
+                        mRelStaticLoaded = true;
+                        runStackedmRel();
+                    }
+                    break;
+            }
+        }
+        
+        function toggle_animView(myId){
+            switch (myId){
+                case "rulAnim":
+
+                    $("#aniRul").css("display","block")
+                    $("#animRel").css("display","none")
+                    $("#aniRel").css("display","none")
+
+                    $("#startAniRul").css("display","inline")
+                    $("#startAniRel").css("display","none")
+                    $("#startAnimRel").css("display","none")
+                    
+                        /* Is already initialy loaded!
+                    if (!rulAnimLoaded){
+                        rulAnimLoaded = true;
+                        runRulChart();
+                    }
+                        */
+                    break;
+                case "relAnim":
+
+                    $("#aniRul").css("display","none")
+                    $("#animRel").css("display","none")
+                    $("#aniRel").css("display","block")
+
+                    $("#startAniRul").css("display","none")
+                    $("#startAniRel").css("display","inline")
+                    $("#startAnimRel").css("display","none")
+                    if (!relAnimLoaded){
+                        relAnimLoaded = true;
+                        runRelChart();
+                    }
+                    break;
+                case "mRelAnim":
+
+                    $("#aniRul").css("display","none")
+                    $("#animRel").css("display","block")
+                    $("#aniRel").css("display","none")
+
+                    $("#startAniRul").css("display","none")
+                    $("#startAniRel").css("display","none")
+                    $("#startAnimRel").css("display","inline")
+                    if (!mRelAnimLoaded){
+                        mRelAnimLoaded = true;
+                        runmRelChart();
+                    }
+                    break;
+            }
+        }
+               
+        $(".leaflet-top.leaflet-right").prepend('<div class="leaflet-control" id="lightGallery" style="display:none"></div><div class="storage-control leaflet-control" style=" clear: none; float: none; position: absolute; right: 0px; top: 0px; "><a class="btnOpenGallery" href="#" title="Open Gallery"></a></div>')
         $(".leaflet-top.leaflet-right").css("width","96%")
         $(".leaflet-top.leaflet-right").css("height","130px");
 
         $(".btnOpenGallery").click(function () {
-            if($('#geoGallery').css("display") !== "none"){
-                $('#geoGallery').css("display","none")
+            if($('#lightGallery').css("display") !== "none"){
+                $('#lightGallery').css("display","none")
                 $(".leaflet-top.leaflet-right").css("overflow","inherit");
             }
             else {
-                $('#geoGallery').css("display","block")
+                $('#lightGallery').css("display","block")
                 $(".leaflet-top.leaflet-right").css("overflow","hidden");
-                if($('#geoGallery').html() == ""){
+                if($('#lightGallery').html() == ""){
                     updateGeoGallery(newYear-10,newYear+10,"people");
                 }                
             }
             
+        });
+
+
+        $("#citiesBox").change(function(){
+            console.debug("start go")
+            b_sub_cities = document.getElementById("citiesBox").checked;
+            if(b_city && b_sub_cities){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_settlementsData)
+            }
+            else{
+                if ($.inArray(newYear, a_settlementsLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_settlementsData);
+                }
+            }
+            console.debug("end go")
+        });
+
+        $("#castlesBox").change(function(){
+            b_sub_castles = document.getElementById("castlesBox").checked;
+            if(b_city && b_sub_castles){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_castlesData)
+            }
+            else{
+                if ($.inArray(newYear, a_castlesLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_castlesData)
+                }
+            }
+        });
+
+        $("#unclassifiedBox").change(function(){
+            b_sub_unclassified = document.getElementById("unclassifiedBox").checked;
+            if(b_other && b_sub_unclassified){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_unclassifiedData)
+            }
+            else{
+                if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_unclassifiedData)
+                }
+            }
+        });
+
+        $("#areaInfoBox").change(function(){
+            b_sub_areaInfo = document.getElementById("areaInfoBox").checked;
+            if(b_other && b_sub_areaInfo){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_areaInfoData)
+            }
+            else{
+                if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_areaInfoData)
+                }
+            }
+        });
+
+        $("#milBox").change(function(){
+            b_sub_military = document.getElementById("milBox").checked;
+            if(b_people && b_sub_military){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_milData)
+            }
+            else{
+                if ($.inArray(newYear, a_milLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_milData)
+                }
+            }
+        });
+
+        $("#polBox").change(function(){
+            b_sub_politician = document.getElementById("polBox").checked;
+            if(b_people && b_sub_politician){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_polData)
+            }
+            else{
+                if ($.inArray(newYear, a_polLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_polData)
+                }
+            }
+        });
+
+        $("#sciBox").change(function(){
+            b_sub_scientist = document.getElementById("sciBox").checked;
+            if(b_people && b_sub_scientist){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_sciData)
+            }
+            else{
+                if ($.inArray(newYear, a_sciLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_sciData)
+                }
+            }
+        });
+
+        $("#relBox").change(function(){
+            b_sub_religious = document.getElementById("relBox").checked;
+            if(b_people && b_sub_religious){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_relData)
+            }
+            else{
+                if ($.inArray(newYear, a_relLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_relData)
+                }
+            }
+        });
+
+        $("#uncBox").change(function(){
+            b_sub_uncP = document.getElementById("uncBox").checked;
+            if(b_people && b_sub_uncP){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_uncPData)
+            }
+            else{
+                if ($.inArray(newYear, a_uncPLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_uncPData)
+                }
+            }
+        });
+
+        $("#expBox").change(function(){
+            b_sub_exp = document.getElementById("expBox").checked;
+            if(b_people && b_sub_exp){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_expData)
+            }
+            else{
+                if ($.inArray(newYear, a_expLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_expData)
+                }
+            }
+        });
+
+        $("#artBox").change(function(){
+            b_sub_artist = document.getElementById("artBox").checked;
+            if(b_people && b_sub_artist){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_artistData)
+            }
+            else{
+                if ($.inArray(newYear, a_artistLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_artistData)
+                }
+            }
+        });
+
+        $("#athBox").change(function(){
+            b_sub_athlete = document.getElementById("athBox").checked;
+            if(b_people && b_sub_athlete){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                ClusterSuperGroup.addLayers(a_athData)
+            }
+            else{
+                if ($.inArray(newYear, a_athLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_athData)
+                }
+            }
+        });
+
+
+        $("#areaChecked").change(function(){
+            b_area = document.getElementById("areaChecked").checked;
+
+
+            if(b_area){
+                map.getDataLayerByStorageId(newYear).fetchData();
+                $('svg').show();
+            }
+            else{
+                //   if ($.inArray(newYear, a_area != -1){
+                $('svg').hide()
+                //   }
+            }
+        });
+
+        $("#peopleChecked").change(function(){
+            b_people = document.getElementById("peopleChecked").checked;
+            console.debug("map.datalayers:",map.datalayers);
+
+            if(b_people){
+                map.getDataLayerByStorageId(newYear).fetchData()
+            }
+
+            else{
+                if ($.inArray(newYear, a_peopleLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_peopleLoaded)
+                }
+
+                if ($.inArray(newYear, a_milLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_milData)
+                }
+                if ($.inArray(newYear, a_polLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_polData)
+                }
+                if ($.inArray(newYear, a_sciLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_sciData)
+                }
+                if ($.inArray(newYear, a_relLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_relData)
+                }
+                if ($.inArray(newYear, a_uncPLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_uncPData)
+                }
+                if ($.inArray(newYear, a_expLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_expData)
+                }
+                if ($.inArray(newYear, a_artistLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_artistData)
+                }
+                if ($.inArray(newYear, a_athLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_artistData)
+                }
+            }
+
+        });
+
+        $("#cityChecked").change(function(){
+            b_city = document.getElementById("cityChecked").checked;
+            console.debug("map.datalayers:",map.datalayers)
+            // search for storage id of iterate map.datalayers_index    year in object and do:
+
+            if(b_city){
+                if (b_sub_castles) ClusterSuperGroup.addLayers(a_castlesData)
+                else{
+                    ClusterSuperGroup.removeLayers(a_castlesData)
+                }
+                if (b_sub_cities) ClusterSuperGroup.addLayers(a_settlementsData)
+                else{
+                    ClusterSuperGroup.removeLayers(a_settlementsData)
+                }
+                map.getDataLayerByStorageId(newYear).fetchData()
+            }
+            else{
+                if ($.inArray(newYear, a_castlesLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_castlesData)
+                }
+                if ($.inArray(newYear, a_settlementsLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_settlementsData)
+                }
+            }
+
+        });
+
+        $("#artChecked").change(function(){
+            b_art = document.getElementById("artChecked").checked;
+            if(b_art){
+                ClusterSuperGroup.addLayers(a_artefactData)
+                map.getDataLayerByStorageId(newYear).fetchData()
+            }
+
+            else{
+                if ($.inArray(newYear, a_artefactLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_artefactData)
+                }
+            }
+        });
+
+        $("#eventsChecked").change(function(){
+            b_events = document.getElementById("eventsChecked").checked;
+            if(b_events){
+                ClusterSuperGroup.addLayers(a_eventsData)
+                map.getDataLayerByStorageId(newYear).fetchData()
+            }
+
+            else{
+                if ($.inArray(newYear, a_eventsLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_eventsData)
+                }
+            }
+        });
+
+        $("#otherChecked").change(function(){
+            b_other = document.getElementById("otherChecked").checked;
+            console.debug("map.datalayers:",map.datalayers)
+            // search for storage id of iterate map.datalayers_index    year in object and do:
+
+            if(b_other){
+                if(b_sub_unclassified) {
+                    ClusterSuperGroup.removeLayers(a_unclassifiedData)
+                }
+                else{
+                    ClusterSuperGroup.addLayers(a_unclassifiedData)
+                }
+                if(b_sub_areaInfo) {
+                    ClusterSuperGroup.addLayers(a_areaInfoData)
+                }
+                else{
+                    ClusterSuperGroup.removeLayers(a_areaInfoData)
+                }
+                map.getDataLayerByStorageId(newYear).fetchData()
+            }
+            else{
+                if ($.inArray(newYear, a_unclassifiedLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_unclassifiedData)
+                }
+                if ($.inArray(newYear, a_areaInfoLoaded) != -1){
+                    ClusterSuperGroup.removeLayers(a_areaInfoData)
+                }
+            }
+
         });
         
         aggTable = $('#aggregatedDatatable').dataTable({
@@ -809,7 +1056,18 @@ $("input:checkbox").change(function(){
         map.addLayer(ClusterSuperGroup);
         
         $('label.tree-toggler').click(function () {
+
             $(this).parent().children('ul.tree').toggle(300);
+
+
+
+            setTimeout(function(){
+                if($(".nav.nav-list.tree")[0].style.display == "none" && $(".nav.nav-list.tree")[1].style.display == "none" )
+                    $("#CloseMarker").css("display","none")
+                else
+                    $("#CloseMarker").css("display","block")
+            }, 320);
+            
         });
 
         $('#featureTree .tree-toggler').click()
@@ -848,6 +1106,8 @@ $("input:checkbox").change(function(){
 
         $( "#relHier" ).on( "click", function() {
             $("#hierTables").css("display","block");
+            $("#hierBubbs").css("display","none");
+            $("#hierStatic").css("display","none");
             $("#hierVis").css("display","none");
             
             $("#fullDatatable_wrapper").css("display","none");
@@ -862,6 +1122,8 @@ $("input:checkbox").change(function(){
         });
         $( "#mrelHier" ).on( "click", function() {
             $("#hierTables").css("display","block");
+            $("#hierStatic").css("display","none");
+            $("#hierBubbs").css("display","none");
             $("#hierVis").css("display","none");
             $("#fullDatatable_wrapper").css("display","none");
             $("#aggregatedDatatable_wrapper").css("display","table");
@@ -875,6 +1137,8 @@ $("input:checkbox").change(function(){
         });
         $( "#culHier" ).on( "click", function() {
             $("#hierTables").css("display","block");
+            $("#hierStatic").css("display","none");
+            $("#hierBubbs").css("display","none");
             $("#hierVis").css("display","none");
             $("#fullDatatable_wrapper").css("display","none");
             $("#aggregatedDatatable_wrapper").css("display","table");
@@ -889,6 +1153,8 @@ $("input:checkbox").change(function(){
         });
         $( "#polHier" ).on( "click", function() {
             $("#hierTables").css("display","block");
+            $("#hierStatic").css("display","none");
+            $("#hierBubbs").css("display","none");
             $("#hierVis").css("display","none");
             $("#fullDatatable_wrapper").css("display","none");
             $("#aggregatedDatatable_wrapper").css("display","table");
@@ -903,7 +1169,9 @@ $("input:checkbox").change(function(){
 
         $( "#allProvinces" ).on( "click", function() {
             $("#hierTables").css("display","block");
+            $("#hierBubbs").css("display","none");
             $("#hierVis").css("display","none");
+            $("#hierStatic").css("display","none");
             $("#aggregatedDatatable_wrapper").css("display","none");
             $("#fullDatatable_wrapper").css("display","table");
             if(!a_hierLoaded){
@@ -916,19 +1184,90 @@ $("input:checkbox").change(function(){
 
         
 
-        $( "#btn_visualize" ).on( "click", function() {
-            
+        $( "#btn_sun-visualize" ).on( "click", function() {
+            $("#hierBubbs").css("display","none");
             $("#hierTables").css("display","none");
             $("#hierVis").css("display","block");
+            $("#hierStatic").css("display","none");
             if(!a_hierLoaded){
                 a_hierLoaded=true;
                 reloadHierarchy()
-                
             }
             switchSBData(currSB);
         });
+
+        $( "#btn_bub-visualize" ).on( "click", function() {
+
+            $("#hierTables").css("display","none");
+            $("#hierVis").css("display","none");
+            $("#hierBubbs").css("display","block");
+            $("#hierStatic").css("display","none");
+            if(!a_hierLoaded){
+                a_hierLoaded=true;
+                reloadHierarchy()
+            }
+            
+            if(!a_bubLoadedOnce){
+                
+                a_bubLoadedOnce=true;
+                a_bubLoaded=true;
+                runBubbles()
+             //   loadData();
+            }
+            else if (!a_bubLoaded){
+                a_bubLoaded=true;
+                reloadData();            
+            }
+            //switchSBData(currSB);
+        });
+
+        $( "#btn_static-visualize" ).on( "click", function() {
+
+            $("#hierTables").css("display","none");
+            $("#hierVis").css("display","none");
+            $("#hierBubbs").css("display","none");
+            $("#hierStatic").css("display","block");
+
+            if(!a_fullTimeLoaded){
+                a_fullTimeLoaded=true;
+                loadFullTimeLoaded()
+            }
+
+            if(!a_bubLoadedOnce){
+           //     a_bubLoadedOnce=true;
+            //    a_bubLoaded=true;
+            //    loadData();
+            }
+            else if (!a_bubLoaded){
+           //     a_bubLoaded=true;
+            //    reloadData();
+            }
+            //switchSBData(currSB);
+        });
+
+        $( "#btn_staticFull" ).on( "click", function() {
+
+            $("#staticFullView").css("display","block");
+            $("#animFullView").css("display","none");
+
+            if(!rulStaticLoaded){
+                rulStaticLoaded = true;
+                runStackedRul();
+            }
+            
+        });
+
+        $( "#btn_animFull" ).on( "click", function() {
+
+            $("#staticFullView").css("display","none");
+            $("#animFullView").css("display","block");
+        });
         
         lockFeatureSelection();
+
+
+
+        myLightGallery = $("#lightGallery").lightGallery();
     });
     
     function toggleSBData(){
@@ -941,6 +1280,5 @@ $("input:checkbox").change(function(){
             switchSBData("rel");
         }               
     }
-
 
 </script>

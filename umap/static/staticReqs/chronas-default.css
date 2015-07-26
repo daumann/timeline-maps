@@ -119,17 +119,17 @@ fieldset.toggle legend {
     cursor: pointer;
 }
 fieldset.toggle .more_style_options:before {
-    content: "â€¦";
+    content: "Ã¢â‚¬Â¦";
 }
 fieldset.toggle legend:before {
-    content: "â–¶";
+    content: "Ã¢â€“Â¶";
     padding-right: 5px;
     color: #666;
     font-size: 0.9em;
     vertical-align: middle;
 }
 fieldset.toggle.on legend:before {
-    content: "â–¼";
+    content: "Ã¢â€“Â¼";
 }
 fieldset.toggle.on > * {
     display: block;
@@ -196,7 +196,7 @@ fieldset.toggle.on .more_style_options {
 }
 #storage-ui-container .toolbox li {
     color: #464646;
-    line-height: 46px;
+    line-height: 30px;
     cursor: pointer;
     float: right;
     display: inline;
@@ -312,6 +312,17 @@ fieldset.toggle.on .more_style_options {
     opacity: 1;
 }
 
+.bubble-btn{
+
+    background-position: inherit !important;
+    background-repeat: inherit !important;
+    display: inherit !important;
+    height: inherit !important;
+    width: inherit !important;
+    line-height: inherit !important;
+    background-image: inherit !important;
+    pointer-events: auto !important;
+}
 .halfWidth{
     background-repeat: no-repeat;
     background-image: url("/static/staticReqs/flaticons/multimediaoption30.png");
@@ -348,6 +359,30 @@ fieldset.toggle.on .more_style_options {
 .storage-list:hover{
     opacity: 1;
 }
+
+.leaflet-control-browse .storage-browse-hierarchy{
+    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    width: 36px;
+    height: 36px;
+    background-size: 25px 25px;
+    /*   background-position: -39px -82px;*/
+    background-color: rgba(255,255,255,0.9);
+    /*
+        background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    
+    
+    padding: 0 10px;
+    background-position: inherit !important;
+    */
+    opacity: 0.6;
+
+}
+.leaflet-control-browse .storage-browse-hierarchy:hover{
+
+    opacity: 1;
+}
+
 .report{
     background-repeat: no-repeat;
     background-image: url("/static/staticReqs/flaticons/warning45.png");
@@ -371,6 +406,64 @@ fieldset.toggle.on .more_style_options {
     opacity: 0.5;
 }
 .storage-close-icon:hover {
+    opacity: 1;
+}
+
+.markerBullets{
+    cursor: pointer !important;
+    text-align: center;
+    opacity: 0.6;
+}
+.markerBullets:hover{
+    opacity: 1;
+}
+
+.divider{
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 8px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
+#CloseMarker.storage-close-icon {
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-size: 10px 10px;
+    display: block;
+    margin-top: -35px !important;
+    background-position: 5px 5px;
+    /* padding: 10px 10px; */
+    opacity: 0.5;
+    margin-right: -10px;
+    height: 20px;
+    width: 20px;
+}
+#CloseMarker.storage-close-icon:hover {
+    opacity: 1;
+}
+
+#CloseAna.storage-close-icon {
+    background-repeat: no-repeat;
+    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-size: 10px 10px;
+    display: inline;
+    margin-top: -35px !important;
+    background-position: 5px 5px;;
+    /* padding: 10px 10px; */
+    opacity: 0.5;
+    margin-right: -10px;
+    height: 20px;
+    width: 20px;
+}
+#CloseAna.storage-close-icon:hover {
     opacity: 1;
 }
 
@@ -684,21 +777,64 @@ path:hover {
 }
 
 .singImage{
-    padding-right: 2px; max-height:100px;
+    padding: 2px !important;
+    max-height:100px !important;
 
+    /* float: right !important; */
 }
-#geoGallery {
+
+
+#lightGallery li {
+    display:inline-block;
+    vertical-align: top;
+    /* width: 50%; */
+
+    /* float: right; */
+    /* padding: 2px !important; */ max-height: 100px !important;
+    /* float: right !important; */;
+}
+#lightGallery li img {
+    opacity: 0.9;
+    text-decoration:none;
+    outline: none;
+    display: block;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+#lightGallery li img:active,
+#lightGallery li img:hover {
+    opacity: 1;
+}
+/*
+#lightGallery {
     max-height: 110px;
     overflow-y: hidden;
     white-space: nowrap;
-    overflow: hidden;
     clear: none;
     float: right;
     right: 45px;
+    
+    margin: 0;
+    padding:0;
+    font-size: 17px;
+    width: 100%;
+    
+}
+*/
+#lightGallery {
+    max-height: 110px !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    overflow: hidden;
+    clear: none !important;
+    float: right !important;
+    /*  right: 45px !important;*/
+
+    border: 2px solid rgb(164, 183, 185);
 
 }
-#geoGallery:hover {
-    overflow-x: visible;
+#lightGallery:hover {
+    overflow-x: visible !important;
 }
 
 .leaflet-control-edit-enable.storage-control {
@@ -710,9 +846,12 @@ path:hover {
 .resource{
     width: 100px;
     float: left !important;
-
+    cursor: pointer !important;
 }
 
+.resource input {
+    cursor: pointer !important;
+}
 
 .form-control{
     padding: 1px 5px !important;
@@ -723,4 +862,130 @@ path:hover {
 .input-group-addon{
     padding: 1px 5px !important;
 
+}
+
+
+
+
+
+
+#bubbles_vis {
+    /* width: 100%; */
+    /* height: 100%; */
+    clear: both;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+#view_selection {
+    right: 0px;
+    position: absolute;
+}
+
+.years {
+    font-size: 13px !important;
+    fill: #aaa !important;
+}
+
+.leaflet-control-browse {
+    pointer-events: none;
+
+}
+
+.storage-browse-actions,
+.storage-browse-toggle,
+.storage-browse-hierarchy{
+    pointer-events: auto;
+}
+
+.tooltip {
+    pointer-events: none !important;
+    position: absolute !important;
+    top: 100px;
+    left: 100px;
+    -moz-border-radius:5px !important;
+    border-radius: 5px !important;
+    border: 2px solid #000 !important;
+    /* background: #222222; */
+    background: #fff !important;
+    opacity: .9 !important;
+    /* color: #eeeeee; */
+    color: black !important;
+    padding: 10px !important;
+    width: 300px;
+    font-size: 12px !important;
+    z-index: 10 !important;
+
+}
+
+.tooltip .title {
+    font-size: 13px !important;
+}
+
+.tooltip .name {
+    font-weight:bold !important;
+}
+
+
+.dot:hover {
+    stroke: #000;
+}
+
+.dot {
+    stroke-width: 2px;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.label {
+    fill: #777;
+}
+
+.year.label {
+    font: 500 196px "Helvetica Neue";
+    fill: #ddd;
+}
+
+.bubbleLabels {
+    font: 500 18px "Helvetica Neue";
+    fill: #444;
+
+
+}
+
+.tooltipText{
+    font: 500 28px "Helvetica Neue";
+}
+
+
+.year.label.active {
+    fill: #aaa;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+    cursor: ew-resize;
+}
+
+.stackedChart{
+    height: 400px !important;
+    width: 100%;
+}
+
+.lightGalleryOverlay{
+    position: absolute !important;
+    float: left;
+    z-index: 10;
+    bottom: 1px;
+    opacity: 0.6;
+}
+
+.lightGalleryOverlay:hover{
+
+    opacity: 1;
 }

@@ -1,5 +1,5 @@
-var currSearchKey = "Roman";
-var oldSearchKey = "Roman";
+var currSearchKey = "";
+var oldSearchKey = "";
 function openDatatable(searchKey){
     if ($("#hierarchyForms").css("display") == "none"){
         $(".storage-browse-hierarchy")[0].click();
@@ -397,7 +397,7 @@ L.S.Popup.SimplePanel = L.S.Popup.extend({
             L.DomUtil.create('i', 'chronas-icon-1 storage-overview', button4);
             var label4 = L.DomUtil.create('span', 'overview', button4);
             label4.innerHTML = 
-'<div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_gov">@</span> <input type="text" class="form-control" placeholder="Government" id="content_gov" aria-describedby="btn_gov"> </div>  <div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_mon">@</span> <input type="text" class="form-control" placeholder="Monarch" aria-describedby="btn_mon"  id="content_mon"> </div>  <div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rul">@</span> <input type="text" class="form-control" placeholder="Ruler" aria-describedby="btn_rul"  id="content_rul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cul">@</span> <input type="text" class="form-control" placeholder="Culture" aria-describedby="btn_cul"  id="content_cul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rel">@</span> <input type="text" class="form-control" placeholder="Religion" aria-describedby="btn_rel"  id="content_rel"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cap">@</span> <input type="text" class="form-control" placeholder="Capital" aria-describedby="btn_cap"  id="content_cap"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_size">@</span> <input type="text" class="form-control" placeholder="Size" aria-describedby="btn_size"  id="content_Size"> </div>'
+'<div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_mon">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_mon"  id="content_mon"> </div>  <div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rul">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_rul"  id="content_rul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cul">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_cul"  id="content_cul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rel">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_rel"  id="content_rel"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cap">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_cap"  id="content_cap"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_size">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_size"  id="content_Size"> </div>'
 
 /*
 
@@ -410,7 +410,7 @@ L.S.Popup.SimplePanel = L.S.Popup.extend({
             $("#content_Size")[0].value = $("#populationSpec")[0].innerHTML
 
 */
-            label4.title = L._('monarch, govern, cap, cul, rel, area (rank), pop');
+            
             //  label2.id = "fullWidth";
 
         //    L.DomEvent.on(button4, 'click', openOverview);
