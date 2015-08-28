@@ -181,11 +181,11 @@
 /* visual tweaks */
 
 .leaflet-container {
-    background: #ddd;
+    background: #F1EEE4;
     outline: 0;
 }
 .leaflet-container a {
-    color: #0078A8;
+    color: #606967;
 }
 .leaflet-container a.leaflet-active {
     outline: 2px solid orange;

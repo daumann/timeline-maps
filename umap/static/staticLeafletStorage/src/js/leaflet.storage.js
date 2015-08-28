@@ -328,13 +328,13 @@ L.Storage.Map.include({
             this._controls.homeControl = (new L.Storage.HomeControl()).addTo(this);
             this._controls.locateControl = (new L.Storage.LocateControl()).addTo(this);
             this._controls.jumpToLocationControl = (new L.Storage.JumpToLocationControl()).addTo(this);
-            this._controls.embedControl = (new L.Control.Embed(this, this.options.embedOptions)).addTo(this);
+            //this._controls.embedControl = (new L.Control.Embed(this, this.options.embedOptions)).addTo(this);
             this._controls.tilelayersControl = new L.Storage.TileLayerControl().addTo(this);
             var editInOSMControlOptions = {
                 position: 'topleft',
                 widgetOptions: {helpText: L._('Open this map extent in a map editor to provide more accurate data to OpenStreetMap')}
             };
-            this._controls.editInOSMControl = (new L.Control.EditInOSM(editInOSMControlOptions)).addTo(this);
+            //this._controls.editInOSMControl = (new L.Control.EditInOSM(editInOSMControlOptions)).addTo(this);
             var measureOptions = {
                 handler: {
                     icon: new L.DivIcon({
@@ -351,10 +351,10 @@ L.Storage.Map.include({
                     }
                 }
             };
-            this._controls.measureControl = (new L.S.MeasureControl(measureOptions).addTo(this));
+          //  this._controls.measureControl = (new L.S.MeasureControl(measureOptions).addTo(this));
         }
         if (this.options.scaleControl) {
-            this._controls.scaleControl = L.control.scale().addTo(this);
+       //     this._controls.scaleControl = L.control.scale().addTo(this);
         }
         this._controls.attribution = new L.S.AttributionControl().addTo(this);
         if (this.options.miniMap) {
@@ -1545,8 +1545,8 @@ L.Storage.Map.include({
     },
 
     initContextMenu: function () {
-        this.contextmenu = new L.S.ContextMenu(this);
-        this.contextmenu.enable();
+     //   this.contextmenu = new L.S.ContextMenu(this);
+      //  this.contextmenu.enable();
     },
 
     setContextMenuItems: function (e) {

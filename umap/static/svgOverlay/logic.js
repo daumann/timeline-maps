@@ -23,6 +23,7 @@ var mainRelPops2 = {}
 var sunburstRel = []
 var sunburstRul = []
 
+var drawingImageLine = false;
 
 var blocklist=[]
 var imageMap={}
@@ -62,7 +63,13 @@ function detailsToAll(e) {
         if (provinceCollection.features[i].properties.name === provinceToCenter){
             ultimateMarker.properties.wikiUrl=escape(provinceCollection.features[i].properties.wikiUrl);
             ultimateMarker.attachPopup()
-            break;
+
+            $('#chronasWiki').hide();
+            $('#loader1').show();
+            $('#chronasWiki').load(function(){
+                $('#loader1').hide(); $('#chronasWiki').show();
+            });
+                break;
         }
     }
 };
@@ -201,6 +208,12 @@ function detailsToRul(e) {
         {
             ultimateMarker.properties.wikiUrl=escape(countryPlus[key][2]);
             ultimateMarker.attachPopup()
+            
+            $('#chronasWiki').hide();
+            $('#loader1').show();
+            $('#chronasWiki').load(function(){
+                $('#loader1').hide();$('#chronasWiki').show();
+            });
             break;
         }
     }
@@ -213,6 +226,12 @@ function detailsToCul(e) {
         {            
             ultimateMarker.properties.wikiUrl=escape(culPlus[key][2]);
             ultimateMarker.attachPopup()
+
+            $('#chronasWiki').hide();
+            $('#loader1').show();
+            $('#chronasWiki').load(function(){
+                $('#loader1').hide();$('#chronasWiki').show();
+            });
             break;
         }
     }
@@ -226,6 +245,12 @@ function detailsToRel(e) {
         {
             ultimateMarker.properties.wikiUrl=escape(relPlus[key][2]);
             ultimateMarker.attachPopup()
+
+            $('#chronasWiki').hide();
+            $('#loader1').show();
+            $('#chronasWiki').load(function(){
+                $('#loader1').hide();$('#chronasWiki').show();
+            });
             break;
         }
     }
@@ -238,6 +263,12 @@ function detailsTomRel(e) {
             {
                 ultimateMarker.properties.wikiUrl=escape(relGen[key][2]);
                 ultimateMarker.attachPopup()
+
+                $('#chronasWiki').hide();
+                $('#loader1').show();
+                $('#chronasWiki').load(function(){
+                    $('#loader1').hide();$('#chronasWiki').show();
+                });
                 break;
             }
         }
@@ -272,10 +303,10 @@ function reloadHierarchy()
         total2 +=  provArea[key];
 
         if(culPlus[tmpKey[1]] !== undefined)
-            sortAll.push([key, countryPlus[tmpKey[0]][0], culPlus[tmpKey[1]][0], relPlus[tmpKey[2]][0], relGen[tmpKey[2]][0], tmpKey[3], tmpArea, tmpPop, "<a class='centerClass' onclick='goToAll(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToAll(&#39;"+key+"&#39;)'>details</a>"])
+            sortAll.push([key, countryPlus[tmpKey[0]][0], culPlus[tmpKey[1]][0], relPlus[tmpKey[2]][0], relGen[tmpKey[2]][0], tmpKey[3], tmpArea, tmpPop, "<span class='centerClass' onclick='goToAll(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsToAll(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
         else{
             tmpKey[1] = "sapmi";
-            sortAll.push([key, countryPlus[tmpKey[0]][0], culPlus[tmpKey[1]][0], relPlus[tmpKey[2]][0], relGen[tmpKey[2]][0], tmpKey[3], tmpArea, tmpPop, "<a class='centerClass' onclick='goToAll(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToAll(&#39;"+key+"&#39;)'>details</a>"])
+            sortAll.push([key, countryPlus[tmpKey[0]][0], culPlus[tmpKey[1]][0], relPlus[tmpKey[2]][0], relGen[tmpKey[2]][0], tmpKey[3], tmpArea, tmpPop, "<span class='centerClass' onclick='goToAll(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsToAll(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
             
         }
         
@@ -339,13 +370,13 @@ function reloadHierarchy()
     sortmRel = [];
     
     for (var key in rulerPops)
-        sortRuler.push([key, rulerPops2[key], rulerPops[key], "<a class='centerClass' onclick='goToRuler(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToRul(&#39;"+key+"&#39;)'>details</a>"])
+        sortRuler.push([key, rulerPops2[key], rulerPops[key], "<span class='centerClass' onclick='goToRuler(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsToRul(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
     for (var key in culPops)
-        sortCul.push([key, culPops2[key], culPops[key], "<a class='centerClass' onclick='goToCul(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToCul(&#39;"+key+"&#39;)'>details</a>"])
+        sortCul.push([key, culPops2[key], culPops[key], "<span class='centerClass' onclick='goToCul(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsToCul(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
     for (var key in relPops)
-        sortRel.push([key, relPops2[key], relPops[key], "<a class='centerClass' onclick='goToRel(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsToRel(&#39;"+key+"&#39;)'>details</a>"])
+        sortRel.push([key, relPops2[key], relPops[key], "<span class='centerClass' onclick='goToRel(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsToRel(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
     for (var key in mainRelPops)
-        sortmRel.push([key, mainRelPops2[key], mainRelPops[key], "<a class='centerClass' onclick='goTomRel(&#39;"+key+"&#39;)'>center</a><a class='centerClass' onclick='detailsTomRel(&#39;"+key+"&#39;)'>details</a>"])
+        sortmRel.push([key, mainRelPops2[key], mainRelPops[key], "<span class='centerClass' onclick='goTomRel(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class='detailsClass' onclick='detailsTomRel(&#39;"+key+"&#39;)'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"])
 
    // createVisualization(buildHierarchy(sunburstRul));
     
@@ -508,7 +539,7 @@ function changeYear(newYear,myActiveYear) {
     myLightGallery.destroy();
     $('#lightGallery').empty();
     if ($("#lightGallery").css("display") !== "none"){
-        updateGeoGallery(newYear-10,newYear+10,"people");
+        updateGeoGallery(newYear-parseInt($("#deviationYears").val()),newYear+parseInt($("#deviationYears").val()),"people");
     }
     
     if ($(".storage-browse-actions").css("display") === "block"){
@@ -1224,11 +1255,18 @@ console.debug("clickevent",d3.event.defaultPrevented);
                                     var relKing = getRelevantKing(geojson);
                                     if(relKing !== undefined){
                                         $("#content_mon")[0].value =  relKing[0];
-                                        $("#content_mon")[0].onclick = function() {
+                                        $("#content_monA")[0].onclick = function() {
                                             if($(".halfWidth").length==0)
-                                                $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(relKing[2])+"?printable=yes";
+                                                var tmpURL = "http://en.wikipedia.org/wiki/"+escape(relKing[2])+"?printable=yes";
                                             else
-                                                $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(relKing[2]);
+                                                var tmpURL = "http://en.wikipedia.org/wiki/"+escape(relKing[2]);
+
+                                            $("#chronasWiki")[0].src = tmpURL;
+                                            $('#chronasWiki').hide();
+                                            $('#loader1').show();
+
+                                            $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){   $('#loader1').hide();$('#chronasWiki').show(); $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }
+                                            });
                                         }
                                         
                                     }
@@ -1288,6 +1326,13 @@ console.debug("clickevent",d3.event.defaultPrevented);
                 console.debug(getAreaChecked(),"->",ultimateMarker.properties.wikiUrl)
                 
                 ultimateMarker.attachPopup()
+                    $('#loader1').show();
+                    $('#chronasWiki').hide();
+                    $('#chronasWiki').load(function(){
+                        $('#loader1').hide();$('#chronasWiki').show();
+                    });
+
+                    $(".overviewContainer").css("display","block")
 // 
                 if (culPlus[d.properties.Cul])
                     var tmpculture=  escape(culPlus[d.properties.Cul][2])
@@ -1326,38 +1371,59 @@ console.debug("clickevent",d3.event.defaultPrevented);
                 
                 $("#content_cul")[0].value =  $("#cultureSpec")[0].innerHTML
                 $("#content_cul")[0].title =  $("#cultureSpec")[0].innerHTML
-                $("#content_cul")[0].onclick = function() {
+                $("#content_culA")[0].onclick = function() {
                     if($(".halfWidth").length==0)
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(culPlus[d.properties.Cul][2])+"?printable=yes";
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(culPlus[d.properties.Cul][2])+"?printable=yes"
                     else
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(culPlus[d.properties.Cul][2]);
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(culPlus[d.properties.Cul][2]);
+
+                    $("#chronasWiki")[0].src = tmpURL;
+                    $('#loader1').show();
+                    $('#chronasWiki').hide();
+                    $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show(); $('#chronasWiki').show();  $('#loader1').hide();alert('loaded!'); $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }
+                    });
                 }
                 
                 $("#content_rel")[0].value = $("#religionSpec")[0].innerHTML
                 $("#content_rel")[0].title = $("#religionSpec")[0].innerHTML
-                $("#content_rel")[0].onclick = function() {
+                $("#content_relA")[0].onclick = function() {
                     if($(".halfWidth").length==0)
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(relPlus[d.properties.Rel][2])+"?printable=yes";
+                        var tmpURL =  "http://en.wikipedia.org/wiki/"+escape(relPlus[d.properties.Rel][2])+"?printable=yes";
                     else
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(relPlus[d.properties.Rel][2]);
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(relPlus[d.properties.Rel][2]);
+                    $("#chronasWiki")[0].src = tmpURL;
+                    $('#loader1').show();
+                    $('#chronasWiki').hide();
+                    $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();   $('#loader1').hide();$('#chronasWiki').show(); $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }
+                    });
                 }
                 
                 $("#content_rul")[0].value =  $("#rulerSpec")[0].innerHTML
                 $("#content_rul")[0].title =  $("#rulerSpec")[0].innerHTML
-                $("#content_rul")[0].onclick = function() {
+                $("#content_rulA")[0].onclick = function() {
                     if($(".halfWidth").length==0)
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(rulerWiki)+"?printable=yes";
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(rulerWiki)+"?printable=yes";
                     else
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(rulerWiki);
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(rulerWiki);
+                    $("#chronasWiki")[0].src = tmpURL;
+                    $('#loader1').show();
+                    $('#chronasWiki').hide();
+                    $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();   $('#loader1').hide();$('#chronasWiki').show(); $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }
+                    });
                 }
                 
                 $("#content_cap")[0].value =  $("#capitalSpec")[0].innerHTML
                 $("#content_cap")[0].title =  $("#capitalSpec")[0].innerHTML
-                $("#content_cap")[0].onclick = function() {
+                $("#content_capA")[0].onclick = function() {
                     if($(".halfWidth").length==0)
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(capitalURL[d.properties.Cap])+"?printable=yes";
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(capitalURL[d.properties.Cap])+"?printable=yes";
                     else
-                        $("#chronasWiki")[0].src = "http://en.wikipedia.org/wiki/"+escape(capitalURL[d.properties.Cap]);
+                        var tmpURL = "http://en.wikipedia.org/wiki/"+escape(capitalURL[d.properties.Cap]);
+                    $("#chronasWiki")[0].src = tmpURL;
+                    $('#loader1').show();
+                    $('#chronasWiki').hide();
+                    $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();   $('#loader1').hide();$('#chronasWiki').show(); $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }
+                    });
                 }
                 //       $("#regionSpec")[0].value = d.properties.name;
                 $("#content_Size")[0].value = $("#populationSpec")[0].innerHTML
@@ -1366,8 +1432,8 @@ console.debug("clickevent",d3.event.defaultPrevented);
                 map.get("/en/datalayer/26"+5+"/", {
                     callback: function (geojson, response) { console.debug(geojson) } });
     */            
-                var js = "';$('#notFoundNotice').hide(); $('#chronasWiki').hide(); $('#overview')[0].style.display = 'none'; $('#loader1')[0].style.display = 'block';  $('#specific')[0].style.display = 'block';  var tmpURL='http://en.wikipedia.org/wiki/"
-                var jsRight = "'; $('.GoToWikipedia')[0].href=tmpURL;  if($('#storage-ui-container')[0].style.width != '100%'){tmpURL=tmpURL+'?printable=yes'} ; $('iframe')[0].src=tmpURL; $('#chronasWiki').load(function(){ $('#chronasWiki').show(); }); $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();  $('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show()  }    }); $('.overview')[0].innerHTML = 'Overview';     ";
+                var js = "';alert('loaded!2'); $('#notFoundNotice').hide(); $('#chronasWiki').hide(); $('#overview')[0].style.display = 'none'; $('#loader1')[0].style.display = 'block';  $('#specific')[0].style.display = 'block';  var tmpURL='http://en.wikipedia.org/wiki/"
+                var jsRight = "'; alert('loaded!'); $('.GoToWikipedia')[0].href=tmpURL;  if($('#storage-ui-container')[0].style.width != '100%'){tmpURL=tmpURL+'?printable=yes'} ; $('iframe')[0].src=tmpURL; $('#chronasWiki').load(function(){ if(tmpURL != 'http://en.wikipedia.org/wiki/' && tmpURL != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show();   $('#loader1').hide();$('#chronasWiki').show();$('#notFoundNotice').hide() } else { $('#missingEntry')[0].innerHTML = tmpTitle;  $('#chronasWiki').hide(); $('#notFoundNotice').show();  $('#loader1').hide();alert('loaded!'); }    }); $('.overview')[0].innerHTML = 'Overview';     ";
                 
                 $("#cultureSpec").click(new Function("tmpTitle = 'culture: "+$("#cultureSpec")[0].innerHTML+js+tmpculture+jsRight))
                 $("#religionSpec").click(new Function("tmpTitle = 'religion: "+$("#religionSpec")[0].innerHTML+js+tmpreligion+jsRight))
@@ -1376,7 +1442,7 @@ console.debug("clickevent",d3.event.defaultPrevented);
                 $("#capitalSpec").click(new Function("tmpTitle = 'capital: "+$("#capitalSpec")[0].innerHTML+js+tmpcapital+jsRight))
                 $("#regionSpec").click(new Function("tmpTitle = 'region: "+$("#regionSpec")[0].innerHTML+js+tmpregion+jsRight))
 
-
+console.debug("!!!x")
 
                 if($("iframe")[0].src != 'http://en.wikipedia.org/wiki/' && $("iframe")[0].src != 'http://en.wikipedia.org/wiki/?printable=yes'){  $('#chronasWiki').show(); $('#notFoundNotice').hide()  } 
                 else { 
@@ -2064,42 +2130,84 @@ function asyncCall(myUrl){
 
 }
 
+
 function updateGeoGallery (myStart,myEnd,scope){
+    $(".tempImageLine").parent().remove()
     myLightGallery.destroy();
     $('#lightGallery').empty();
 
-    blocklist=[],
-    imageMap={},
-        
-    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[189] &props=31,18,189");
-    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[625] &props=31,18,625");
-    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[276] &props=31,18,276");
-    asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[19] &props=31,18,19");
+    blocklist=[];
+    imageMap={};
 
+        if (document.getElementById("itemsImgBox").checked){
+
+            // location of discovery   (item)
+            asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[189] &props=31,18,189");
+            
+    
+        }
+        else if (document.getElementById("otherImgBox").checked){
+        // coordinate location  (building - event)
+        asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[625] &props=31,18,625");
+
+            // location of item   (item)
+            asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[276] &props=31,18,276");
+            
+
+        }
+    else if (document.getElementById("peopleImgBox").checked){                
+        // Place of Birth     (person)
+        asyncCall("//wdq.wmflabs.org/api?q=(BETWEEN[569,"+myStart+","+myEnd+"] OR BETWEEN[571,"+myStart+","+myEnd+"] OR BETWEEN[580,"+myStart+","+myEnd+"] OR BETWEEN[582,"+myStart+","+myEnd+"] OR BETWEEN[585,"+myStart+","+myEnd+"]) AND claim[18] AND claim[19] &props=31,18,19");
+        }
 
 };
 
 function appendImage(myImageId,myCoords,enwiki) {
+    if (parseInt($("#limitYears").val()) > $("#lightGallery").find("li").length){
     $.ajax({
         url: "//commons.wikimedia.org/w/api.php?action=query&titles=File%3A"+myImageId+"&prop=imageinfo&iiurlwidth=260&iiurlheight=400&iiprop=url%7Csize&format=json",
         dataType: "jsonp",
 
         success: function( response ) {
-            //	console.log( "last response", response.query.pages );
-            var buildingBlock={}
-            getObject2(response.query.pages,buildingBlock);
-            //	console.log( "!!! final:", myCoords, buildingBlock.thumb, buildingBlock.url );  data-lightbox="geogal"><img class="singImage"
-            //  '+enwiki+' '+myCoords+'" 
-            $( "#lightGallery" ).append('<li data-sub-html="<div class=&#34;custom-html&#34;>                <h4>'+enwiki+'</h4>                <p><a href=&#34;#&#34; onclick=&#39;closeAndOpenWikipediaTab(&#34;'+enwiki+'&#34;,&#34;'+myCoords+'&#34;)&#39;>Open related Wikipedia article</a></p>                </div>" data-src="'+buildingBlock.url+'"> <span class="lightGalleryOverlay fa-stack fa-lg" onclick="runFunctionAndPan(event,&#34;'+myCoords+'&#34;)"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-search fa-stack-1x fa-inverse"></i> </span> <img title="'+enwiki+'" class="singImage" src="'+buildingBlock.thumb+'" /> </li>' );
-            myLightGallery.destroy();
-            myLightGallery.lightGallery();
 
+            if (parseInt($("#limitYears").val()) > $("#lightGallery").find("li").length){
+                //	console.log( "last response", response.query.pages );
+                var buildingBlock={}
+                getObject2(response.query.pages,buildingBlock);
+                //	console.log( "!!! final:", myCoords, buildingBlock.thumb, buildingBlock.url );  data-lightbox="geogal"><img class="singImage"
+                //  '+enwiki+' '+myCoords+'" 
 
+                var newLi = document.createElement("li");
+                if (enwiki !== undefined) {
+                    
+                    newLi.setAttribute("data-sub-html", "<div class='custom-html'>                <h4>"+enwiki+"</h4>                <p><a style='cursor: pointer' onclick=\"closeAndOpenWikipediaTab('"+enwiki.replace("'","&#39;")+"','"+myCoords+"')\">Open related Wikipedia article</a></p>                </div>");
+                    newLi.setAttribute("data-src", buildingBlock.url);
+                
+                    newLi.innerHTML = "<span class='lightGalleryOverlay fa-stack fa-lg' onclick='runFunctionAndPan(this,event,\""+myCoords+"\",\""+enwiki.replace("'","&#39;")+"\")'><i class='fa fa-circle fa-stack-2x'></i><i class='fa fa-search fa-stack-1x fa-inverse'></i> </span> <img onmouseover='mouseOverImageLine (this,\""+myCoords+"\")' title='"+enwiki+"' class='singImage' src='"+buildingBlock.thumb+"' />";
+
+                    $( "#lightGallery" ).append(newLi);
+                }
+                else {
+
+                    newLi.setAttribute("data-src", buildingBlock.url);
+                    newLi.innerHTML = "<img onmouseover='mouseOverImageLine (this,\""+myCoords+"\")' class='singImage' src='"+buildingBlock.thumb+"' />"
+                        $( "#lightGallery" ).append(newLi);
+                                       
+                }
+
+                if($("#seeLocationsButton").hasClass("activeToggle")  &&  $(".leaflet-right").css("display") !== "none"){
+                    mouseOverImageLine ($(newLi).find("img")[0],myCoords);
+                }
+                myLightGallery.destroy();
+                myLightGallery.lightGallery();
+
+            }
         }
     });
+    }
 }
 
-function runFunctionAndPan (evt,myCoords) {
+function runFunctionAndPan (that,evt,myCoords,enwiki) {
 
     // stops the default-action from happening
     // means you need to find another way to fire it, if you want to later
@@ -2115,17 +2223,144 @@ function runFunctionAndPan (evt,myCoords) {
     event.cancelBubble = true;
     event.returnValue = false;
 
-    panImage(myCoords)
+    openWikipediaTab(enwiki,myCoords)
 }
+
+function seeAllLocations (){
+
+if($("#seeLocationsButton").hasClass("activeToggle")){    
+
+    $("#seeLocationsButton").removeClass( "activeToggle" );
+
+    $(".tempImageLine").parent().remove();
+
+    $('#lightGallery').find("img").trigger('mouseout');
+}
+    else{
+    $("#seeLocationsButton").addClass( "activeToggle" );
+    $('#lightGallery').find("img").trigger('mouseover');
+    
+}
+    
+}
+
+function posY(elm) {
+    var test = elm, top = 0;
+
+    while(!!test && test.tagName.toLowerCase() !== "body") {
+        top += test.offsetTop;
+        test = test.offsetParent;
+    }
+
+    return top;
+}
+
+function viewPortHeight() {
+    var de = document.documentElement;
+
+    if(!!window.innerWidth)
+    { return window.innerHeight; }
+    else if( de && !isNaN(de.clientHeight) )
+    { return de.clientHeight; }
+
+    return 0;
+}
+
+function scrollY() {
+    if( window.pageYOffset ) { return window.pageYOffset; }
+    return Math.max(document.documentElement.scrollTop, document.body.scrollTop);
+}
+
+function checkVisible( elm ) {
+        if (elm.offsetLeft > $('#lightGallery')[0].scrollLeft +  $('#lightGallery')[0].clientWidth || elm.offsetLeft < $('#lightGallery')[0].scrollLeft )  {
+            return false;
+        } else { return true; }
+}
+
+function mouseOverImageLine (that,myCoords) {
+
+    var myClientRect = that.getBoundingClientRect();
+    var widthPercent = (myClientRect.left + (myClientRect.width / 2)) / window.innerWidth;   //(myClientRect.left + myClientRect.right);
+    var heightPercent = 50 /*(myClientRect.top + (myClientRect.height / 2))*/ / window.innerHeight;
+
+    //lng is width, lat is height
+    var myMapBounds = map.getBounds();
+    var markerLng = myMapBounds._southWest.lng + widthPercent *  (myMapBounds._northEast.lng - myMapBounds._southWest.lng);
+    var markerLat = myMapBounds._northEast.lat - (2 * (((myMapBounds._northEast.lat - myMapBounds._southWest.lat) / 160))) - (heightPercent *  (myMapBounds._northEast.lat - myMapBounds._southWest.lat)) * (1-((myMapBounds._northEast.lat - myMapBounds._southWest.lat) / 160));
+
+    rCoo = myCoords.split("|")
+
+    
+    drawingImageLine = true;
+    if(checkVisible(that)){
+        var temPolyline = new L.Polyline([new L.LatLng(markerLat, markerLng), new L.LatLng(parseInt(rCoo[0]),parseInt(rCoo[1]))], {
+            weight: 5,
+            opacity: 0.9,
+            smoothFactor: 1
+    
+        });
+        temPolyline.addTo(map);
+    }
+    var circleMarkerOptions = {
+        radius: 5,
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.9
+    };
+    
+    var temCircleMarker = new L.circleMarker(new L.LatLng(parseInt(rCoo[0]),parseInt(rCoo[1])), circleMarkerOptions);
+
+
+    temCircleMarker.addTo(map);
+    
+    $(temPolyline).addClass('tempImageLine');
+    
+    drawingImageLine = false;
+
+    $( that ).mouseout(function() {
+
+        if(!$("#seeLocationsButton").hasClass("activeToggle")){
+            map.removeLayer(temPolyline);
+            map.removeLayer(temCircleMarker);
+        }
+        
+    });
+    
+    //  panImage(myCoords)
+}
+
 
 function closeAndOpenWikipediaTab(myWikiUrl,myCoords){
     rCoo = myCoords.split("|")
     $("#lg-close").click();
     ultimateMarker.properties.wikiUrl=escape(myWikiUrl);
-    ultimateMarker.attachPopup();
-    panImage(myCoords)
+    ultimateMarker.attachPopup()
+    $('#chronasWiki').hide();
+    $('#loader1').show();
+    $('#chronasWiki').load(function(){
+        $('#loader1').hide();$('#chronasWiki').show();
+    });
     
+    panImage(myCoords)
+        $(".overviewContainer").css("display","none")
 }
+
+function openWikipediaTab(myWikiUrl,myCoords){
+    rCoo = myCoords.split("|")
+    ultimateMarker.properties.wikiUrl=escape(myWikiUrl);
+    ultimateMarker.attachPopup();
+    
+    $('#chronasWiki').hide();
+    $('#loader1').show();
+    $('#chronasWiki').load(function(){
+        $('#loader1').hide();
+        $('#chronasWiki').show();
+    });
+
+    $(".overviewContainer").css("display","none")
+    panImage(myCoords)
+}
+
 function panImage(myCoords){
     
     rCoo = myCoords.split("|")
@@ -2136,7 +2371,6 @@ function panImage(myCoords){
     }
     
     var myTempMarker = new L.marker(new L.LatLng(rCoo[0],rCoo[1])).addTo(map);
-
     setTimeout(function(){ 
         map.removeLayer(myTempMarker)
         setTimeout(function(){
@@ -2150,7 +2384,7 @@ function panImage(myCoords){
 
                         }, 5000);
                     }, 500);
-            }, 1000);
+            }, 500);
         }, 500);
     }, 500);
     
@@ -2190,19 +2424,26 @@ function getObject(theObject,returningObj) {
     return result;
 }
 
-function loadFullTimeLoaded(){
+function loadFullTimeLoaded(ident){
     map.get("/en/datalayer/270/", {
         callback: function (geojson) {
 
             fullTimeData = geojson;
-            rulAnimLoaded = true;
-            runRulChart();
             
+            if (ident == "anim"){
 
-
-
+                rulAnimLoaded = true;
+                runRulChart(); 
+            }
+            else if (ident == "static"){
+                rulStaticLoaded = true;
+                runStackedRul();
+            }
+            
+            
         } });
 }
+
 function getObject2(theObject,returningObj) {
     var result = null;
 
@@ -3736,3 +3977,9 @@ function runBubbles() {
     loadData();
 } //).call(this);
 
+function compareLast(source, key){
+    if (source.substr(source.length-key.length) === key)
+        return true;
+    else
+        return false;
+}

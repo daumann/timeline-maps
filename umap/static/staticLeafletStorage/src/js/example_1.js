@@ -1,27 +1,35 @@
+
+
 $(function() {
     // Get start end times
-
+    var d = new Date();
+    d.setFullYear(2020);
+    var d2 = new Date();
+    d2.setFullYear(-10000);
     // Set timeline options
     var timelineOptions = {
         "width":  "100%",
         "height": "120px",
         "style": "box",
         "axisOnTop": true,
-        "showCustomTime":true
+        "showCustomTime":true,
+        "max": d,
+        "min": d2
     };
 
     var startTime = new Date().setFullYear(1000); //demoTracks[0].properties.time[0]
     var endTime = new Date().setFullYear(1000);
 
     // Create a DataSet with data
-    var timelineData = new vis.DataSet([{ start: startTime, end: startTime, content: 'Test interval' }]);
+    var timelineData = new vis.DataSet([{ start: startTime, end: startTime,  content: 'Test interval' }]);
 
 
     // Setup timeline
-    var timeline = new vis.Timeline(document.getElementById('timeline'), timelineData, timelineOptions);// timelineData, timelineOptions);
+    var timeline2 = new vis.Timeline(document.getElementById('timeline'), timelineData, timelineOptions);// timelineData, timelineOptions);
         
     // Set custom time marker (blue)
-    timeline.setCustomTime(startTime)
+    timeline2.setCustomTime(startTime)
+    timeline2.setWindow(0,2000);
 /*
     // Setup leaflet map
     var map = new L.Map('map');
@@ -92,13 +100,13 @@ $(function() {
     //playback.setData(blueMountain);    
     
     // Set timeline time change event, so cursor is set after moving custom time (blue)
-    timeline.on('timechange', onCustomTimeChange);
-    timeline.on(this._slider, 'mousemove', onSliderChange, this);
+    timeline2.on('timechange', onCustomTimeChange);
+    timeline2.on(this._slider, 'mousemove', onSliderChange, this);
 
     // A callback so timeline is set after changing playback time
     function onPlaybackTimeChange (ms) {
         //   console.debug(ms);
-        timeline.setCustomTime(new Date(ms));
+        timeline2.setCustomTime(new Date(ms));
     };
 
     function onSliderChange(e) {
@@ -139,5 +147,6 @@ $(function() {
 */
     
     playback.setCursor(startTime);
-    
+
+    timeline2.setWindow(new Date().setFullYear(0),new Date().setFullYear(2000));
 });

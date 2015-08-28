@@ -3,13 +3,160 @@
 <div id="progress"><div id="progress-bar"></div></div>
 <div id="map" style="width: 100%;position: absolute;top: 0; /* bottom: 0; */left: 0;right: 0;bottom: 120px;">
 
-<div id="featureForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
+<div id="featureForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; transition: all 0.5s ease;  /*width: 150px; */">
         <div  >
             <div id="featureTree" style="overflow-x: hidden; ">
                 <ul class="nav nav-list">
-                    <li class=""><label class="markerBullets tree-toggler nav-header">Area</label>
+                    <li class=""><label class="markerBullets tree-toggler nav-header justActive"><label id="markerIcon" class="tree-toggler nav-header hier2" title="Marker"></label>Marker&nbsp&nbsp&nbsp&nbsp</label>
                         <ul class="nav nav-list tree">
-                            
+                            <li><input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Cities" data-off="Cities"> <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="citiesBox" name="check" />
+                                            <label id="citiesBoxA" for="citiesBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Cities
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="castlesBox" name="check" />
+                                            <label id="castlesBoxA" for="castlesBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Castles
+                                        </div>
+                                    </li>
+                                    <li style="display: none">
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="buildingsBox" name="check" />
+                                            <label id="buildingsBoxA" for="buildingsBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Buildings
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li> <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People"> <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="milBox" name="check" />
+                                            <label id="milBoxA" for="milBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Military
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="expBox" name="check" />
+                                            <label id="expBoxA" for="expBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Explorer
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="polBox" name="check" />
+                                            <label id="polBoxA" for="polBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Politician
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="sciBox" name="check" />
+                                            <label id="sciBoxA" for="sciBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Scientist
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="artBox" name="check" />
+                                            <label id="artBoxA" for="artBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Artist
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="relBox" name="check" />
+                                            <label  id="relBoxA" for="relBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Religious
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="athBox" name="check" />
+                                            <label id="athBoxA" for="athBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Athlete
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="uncBox" name="check" />
+                                            <label id="uncBoxA" for="uncBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Other
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles">
+                            </li>
+                            <li><input id="artChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Artefacts" data-off="Artefacts" >
+                            </li>
+                            <li><input id="otherChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
+                                <ul class="nav nav-list tree">
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" checked value="None" id="areaInfoBox" name="check" />
+                                            <label id="areaInfoBoxA" for="areaInfoBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Area Information
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="squaredOne">
+                                            <input type="checkbox" value="None" id="unclassifiedBox" name="check" />
+                                            <label id="unclassifiedBoxA" for="unclassifiedBox"></label>
+                                        </div>
+                                        <div class="labelForBox">
+                                            Unclassified
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="listPlaceholder">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li class=""><label class="markerBullets tree-toggler nav-header justActive"><label id="areaIcon" class="tree-toggler nav-header hier2" title="Area"></label>Area</label>
+                        <ul class="nav nav-list tree">
+
                             <table style="width:182px">
                                 <tr>
                                     <td style="    width: 80px;"></td>
@@ -45,156 +192,9 @@
                                     <td><!--<input id="T-Population" data-style="sharp" data-onstyle="info" type="checkbox" disabled data-size="mini" data-toggle="toggle" data-on=" " data-off=" "> --></td>
                                 </tr>
                             </table>
-                            
+
                         </ul>
-                    </li>
-                    <li class="divider"></li>
-                    <li class=""><label class="markerBullets tree-toggler nav-header">Marker</label>
-                        <ul class="nav nav-list tree">
-                            <li><input id="cityChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Cities" data-off="Cities"> <label class="tree-toggler nav-header advanced">>></label>
-                                <ul class="nav nav-list tree">
-                                    <li>
-
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="citiesBox" name="check" />
-                                            <label for="citiesBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Cities
-                                        </div>
-                                    </li>
-                                    <li>
-
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="castlesBox" name="check" />
-                                            <label for="castlesBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Castles
-                                        </div>
-                                    </li>
-                                    <li style="display: none">
-
-                                        <div class="squaredOne">
-                                            <input type="checkbox" value="None" id="buildingsBox" name="check" />
-                                            <label for="buildingsBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Buildings
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li> <input id="peopleChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="People" data-off="People"> <label class="tree-toggler nav-header advanced">>></label>
-                                <ul class="nav nav-list tree">
-                                    
-                                    <li>
-                                    
-                                    <div class="squaredOne">
-                                        <input type="checkbox" checked value="None" id="milBox" name="check" />
-                                        <label for="milBox"></label>
-                                    </div>
-                                        <div class="labelForBox">
-                                            Military
-                                        </div>                         
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="expBox" name="check" />
-                                            <label for="expBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Explorer
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="polBox" name="check" />
-                                            <label for="polBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Politician
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="sciBox" name="check" />
-                                            <label for="sciBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Scientist
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="artBox" name="check" />
-                                            <label for="artBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Artist
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="relBox" name="check" />
-                                            <label for="relBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Religious
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="athBox" name="check" />
-                                            <label for="athBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Athlete
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="squaredOne">
-                                            <input type="checkbox" value="None" id="uncBox" name="check" />
-                                            <label for="uncBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Other
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><input id="eventsChecked" data-onstyle="default" type="checkbox" data-size="small" data-toggle="toggle" data-on="Battles" data-off="Battles">
-                            </li>
-                            <li><input id="artChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Artefacts" data-off="Artefacts" >
-                            </li>
-                            <li><input id="otherChecked"  data-onstyle="default"  type="checkbox" data-size="small" data-toggle="toggle" data-on="Other" data-off="Other" > <label class="tree-toggler nav-header advanced">>></label>
-                                <ul class="nav nav-list tree">
-                                    <li>
-
-                                        <div class="squaredOne">
-                                            <input type="checkbox" checked value="None" id="areaInfoBox" name="check" />
-                                            <label for="areaInfoBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Area Information
-                                        </div>
-                                    </li>
-                                    <li>
-
-                                        <div class="squaredOne">
-                                            <input type="checkbox" value="None" id="unclassifiedBox" name="check" />
-                                            <label for="unclassifiedBox"></label>
-                                        </div>
-                                        <div class="labelForBox">
-                                            Unclassified
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li id="listPlaceholder">
-                            </li>
-                        </ul>
-                    </li>
+                    </li>                    
                 </ul>
             </div>
         </div>
@@ -205,20 +205,23 @@
 
 <a id ="CloseAna" class="storage-close-icon storage-browse-hierarchy" href="#" style="float: right; margin-top: -50px;"></a>
 
-<div id="hierarchyForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; /*width: 150px; */">
+<div id="hierarchyForms" style="display:none; position: relative; /*margin-top: 200px; margin-left: 20px;*/  z-index: 20; transition: all 0.5s ease; /*width: 150px; */">
     <div>
         <div id="hierarchyTree" style="overflow-x: hidden; ">
             <ul class="nav nav-list">
                 <li> 
-                    <label id="polHier" class="tree-toggler nav-header hier">Ruler</label> 
-                    <label id="culHier" class="tree-toggler nav-header hier">Culture</label> 
-                    <label id="relHier" class="tree-toggler nav-header hier">Religion</label> 
-                    <label id="mrelHier" class="tree-toggler nav-header hier">Main Religion</label>
-                    <label id="allProvinces" class="tree-toggler nav-header hier">All Provinces</label>
-
-                    <label id="btn_sun-visualize" class="tree-toggler nav-header hier">Sunburst Visualization</label>
-                    <label id="btn_bub-visualize" class="tree-toggler nav-header hier">Bubble Visualization</label>
-                    <label id="btn_static-visualize" class="tree-toggler nav-header hier">Full View</label>
+                    <label id="polHier" class="tree-toggler nav-header hier" title="Aggregation by ruler" ></label> 
+                    <label id="culHier" class="tree-toggler nav-header hier" title="Aggregation by culture" ></label> 
+                    <label id="relHier" class="tree-toggler nav-header hier" title="Aggregation by religion" ></label> 
+                    <label id="mrelHier" class="tree-toggler nav-header hier" title="Aggregation by main religion" ></label>
+                    <label id="allProvinces" class="tree-toggler nav-header hier" title="Aggregation by province" ></label>
+                    
+                    <label id="btn_sun-visualize" class="tree-toggler nav-header hier" title="Sunburst Visualization" ></label>
+                    <label id="btn_bub-visualize" class="tree-toggler nav-header hier" title="Clustering Visualization" ></label>
+                    
+                    <!-- <label id="btn_static-visualize" class="tree-toggler nav-header hier" ></label> -->
+                    <label id="btn_animFull" class="tree-toggler nav-header hier" title="All Years: Animated View"></label>
+                    <label id="btn_staticFull" class="tree-toggler nav-header hier" title="All Years: Static View"></label>
                 </li>
                 <br>
                 <div id="hierTables">
@@ -296,8 +299,6 @@
                     </div>
                 </div>
                 <div id="hierStatic" style="display: none">
-                    <label id="btn_animFull" class="tree-toggler nav-header hier">Animation View</label>
-                    <label id="btn_staticFull" class="tree-toggler nav-header hier">Static View</label>
                     
                     <div id="staticFullView" style="display: none">
                         <div id="view_selection_static" class="btn-group">
@@ -337,7 +338,7 @@
         
 
 </div>
-<div id="timeline" style="height: 120px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
+<div id="timeline" style="height: 85px; position: absolute; left: 0; right: 0; bottom: 0;"></div>
 
 <script src="{{ STATIC_URL }}staticReqs/sequences.js"></script>
 <script src="{{ STATIC_URL }}staticReqs/nv.d3.js"></script>
@@ -381,7 +382,11 @@
     var relStaticLoaded = false;
     var mRelStaticLoaded = false;
     
-    var mapOptions = {"geometry":{"type":"Point","coordinates":[50,4]},"type":"Feature","properties":{"popupTemplate":"SimplePanel","miniMap":false,"description":"chronas map description","scrollWheelZoom":true,"color":"#1f6377","displayPopupFooter":false,"allowEdit":false,"slideshow":{},"shortUrl":"http://s.hort/m/6/","scaleControl":true,"tilelayer":{},"datalayers":[],"moreControl":true,"licence":"","tilelayersControl":true,"locale":"en","default_iconUrl":"/static/storage/src/img/marker.png","name":"testName","author":{"link":"/en/user/aumannd/","name":"aumannd"},"tilelayers":[{"attribution":"Stamen","name":"WaterColor","url_template":"http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg","rank":1,"minZoom":1,"maxZoom":18,"id":7},{"attribution":"MapQuest","name":"Satelite","url_template":"http://oatile{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg","rank":3,"minZoom":0,"maxZoom":18,"id":8},{"attribution":"Esi","name":"Satelite 2","url_template":"http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}","rank":4,"minZoom":0,"maxZoom":18,"id":9},{"attribution":"ttar","name":"z1","url_template":"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","selected":true,"rank":5,"minZoom":0,"maxZoom":18,"id":6}],"zoom":6,"zoomControl":true,"limitBounds":{},"datalayersControl":true,"urls":{"map":"/en/map/{slug}_{pk}","datalayer_view":"/en/datalayer/{pk}/","map_update":"/en/map/{map_id}/update/settings/","map_old_url":"/en/map/{username}/{slug}/","ajax_proxy":"/ajax-proxy/?url={url}","map_geojson":"/en/map/{pk}/geojson/","map_short_url":"/en/m/{pk}/","map_anonymous_edit_url":"/en/map/anonymous-edit/{signature}","map_new":"/en/map/new/","datalayer_update":"/en/map/{map_id}/datalayer/update/{pk}/","map_delete":"/en/map/{map_id}/update/delete/","map_create":"/en/map/create/","logout":"/en/logout/","routing":"http://map.project-osrm.org/?loc={lat},{lng}&hl={locale}","datalayer_create":"/en/map/{map_id}/datalayer/create/","map_clone":"/en/map/{map_id}/update/clone/","login_popup_end":"/en/login/popup/end/","login":"/en/login/","datalayer_delete":"/en/map/{map_id}/datalayer/delete/{pk}/","pictogram_list_json":"/en/pictogram/json/","map_update_permissions":"/en/map/{map_id}/update/permissions/"},"storage_id":6,"captionBar":false,"licences":{"No licence set":{"url":"","name":"No licence set"},"Apache 2":{"url":"http://www.apache.org/licenses/LICENSE-2.0.html","name":"Apache 2"}}}}; //{//{ map_settings|notag|safe }//}
+    var mapOptions = {"geometry":{"type":"Point","coordinates":[50,4]},"type":"Feature","properties":{"popupTemplate":"SimplePanel","miniMap":false,"description":"chronas map description","scrollWheelZoom":true,"color":"#1f6377","displayPopupFooter":false,"allowEdit":false,"slideshow":{},"shortUrl":"http://s.hort/m/6/","scaleControl":true,"tilelayer":{},"datalayers":[],"moreControl":true,"licence":"","tilelayersControl":true,"locale":"en","default_iconUrl":"/static/storage/src/img/marker.png","name":"testtName", "author":{"link":"/en/user/aumannd/","name":"aumannd"},"tilelayers":[{"attribution":"Stamen","name":"WaterColor", "bounds":[
+        new L.LatLng(71.343013,177.187500),
+        new L.LatLng(-56.712097,-179.296875)
+    ], "noWrap":true, "url_template":"http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg","rank":1,"minZoom":1,"maxZoom":18,"id":7},{"attribution":"Esi","name":"Satelite ","noWrap":true,
+        "url_template":"http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}","rank":4,"minZoom":0,"maxZoom":18,"id":9},{"attribution":"ttar","name":"z1","noWrap":true,"url_template":"http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","selected":true,"rank":5,"minZoom":0,"maxZoom":18,"id":6}],"zoom":6,"zoomControl":true,"limitBounds":{},"datalayersControl":true,"urls":{"map":"/en/map/{slug}_{pk}","datalayer_view":"/en/datalayer/{pk}/","map_update":"/en/map/{map_id}/update/settings/","map_old_url":"/en/map/{username}/{slug}/","ajax_proxy":"/ajax-proxy/?url={url}","map_geojson":"/en/map/{pk}/geojson/","map_short_url":"/en/m/{pk}/","map_anonymous_edit_url":"/en/map/anonymous-edit/{signature}","map_new":"/en/map/new/","datalayer_update":"/en/map/{map_id}/datalayer/update/{pk}/","map_delete":"/en/map/{map_id}/update/delete/","map_create":"/en/map/create/","logout":"/en/logout/","routing":"http://map.project-osrm.org/?loc={lat},{lng}&hl={locale}","datalayer_create":"/en/map/{map_id}/datalayer/create/","map_clone":"/en/map/{map_id}/update/clone/","login_popup_end":"/en/login/popup/end/","login":"/en/login/","datalayer_delete":"/en/map/{map_id}/datalayer/delete/{pk}/","pictogram_list_json":"/en/pictogram/json/","map_update_permissions":"/en/map/{map_id}/update/permissions/"},"storage_id":6,"captionBar":false,"licences":{"No licence set":{"url":"","name":"No licence set"},"Apache 2":{"url":"http://www.apache.org/licenses/LICENSE-2.0.html","name":"Apache 2"}}}}; //{//{ map_settings|notag|safe }//}
    //  mapOptions.properties.datalayers = [];
   //  console.debug("these settings were not necessarily taken: ", JSON.stringify(mapOptions))
     var map = new L.Storage.Map("map", mapOptions);
@@ -400,7 +405,37 @@
     });
     map.on("zoomend", function () {
         svgProv.attr("visibility", "visible ")
+
+        if($("#seeLocationsButton").hasClass("activeToggle")  &&  $(".leaflet-right").css("display") !== "none"  &&  $("#lightGallery").css("display") !== "none" ){
+            $(".tempImageLine").parent().remove()
+            
+            $('#lightGallery').find("img").trigger('mouseout');
+            setTimeout(
+                    function(){ 
+                        $('#lightGallery').find("img").trigger('mouseover'); 
+                    },
+                    200);            
+        }
+        
     });
+
+
+    map.on("dragend", function () {
+
+        if($("#seeLocationsButton").hasClass("activeToggle")  &&  $(".leaflet-right").css("display") !== "none"  &&  $("#lightGallery").css("display") !== "none"  ){
+            $(".tempImageLine").parent().remove();
+            
+            $('#lightGallery').find("img").trigger('mouseout');
+            setTimeout(
+                    function(){
+                        $('#lightGallery').find("img").trigger('mouseover');
+                    },
+                    200);
+        }
+
+    });
+
+
 
     g00 = svgProv.append("g").attr("class", "leaflet-zoom-hide");
 
@@ -477,7 +512,17 @@
             .prependTo("#featureForms");
     
     $('#listPlaceholder').append($(".storage-browse-link").detach());
-
+    
+    
+    $(".markerBullets").click(function(){ 
+        if($(this).hasClass("justActive") )
+            $(this).removeClass("justActive")
+        else
+            $(this).addClass("justActive") 
+    });
+    
+    
+    
     $("#coloring li a").click(function(){
         console.debug("changed coloring")
         $('#coloring li a').removeClass('activeColoring');
@@ -532,13 +577,13 @@
             $("#hierarchyForms").css("display","none");
             $(".storage-browse-toggle").addClass( "storage-browse-toggle-active" );
             $(".storage-browse-hierarchy").removeClass( "storage-browse-toggle-active" );
-            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
+          //  $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
             
         }
         else{
             $("#featureForms").css("display","none");
             $(".storage-browse-toggle").removeClass( "storage-browse-toggle-active" );
-            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
+           // $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
             $(".storage-browse-actions").css("display","none");
         }    
     })
@@ -552,13 +597,13 @@
             $("#featureForms").css("display","none");
             $(".storage-browse-hierarchy").addClass( "storage-browse-toggle-active" );
             $(".storage-browse-toggle").removeClass( "storage-browse-toggle-active" );
-            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
+       //     $(".leaflet-control-browse.storage-control.leaflet-control").css("border","0px solid rgb(187, 187, 187)")
 
         }
         else{
             $("#hierarchyForms").css("display","none");
             $(".storage-browse-hierarchy").removeClass( "storage-browse-toggle-active" );
-            $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
+        //    $(".leaflet-control-browse.storage-control.leaflet-control").css("border","1px solid rgb(187, 187, 187)")
             $(".storage-browse-actions").css("display","none");
         }
 
@@ -707,21 +752,53 @@ $("input:checkbox").change(function(){
             }
         }
                
-        $(".leaflet-top.leaflet-right").prepend('<div class="leaflet-control" id="lightGallery" style="display:none"></div><div class="storage-control leaflet-control" style=" clear: none; float: none; position: absolute; right: 0px; top: 0px; "><a class="btnOpenGallery" href="#" title="Open Gallery"></a></div>')
+        $(".leaflet-top.leaflet-right").prepend('<div class="leaflet-control" id="lightGallery" style="display:none"></div><div class="storage-control leaflet-control" style=" clear: none; float: none; position: absolute; right: 0px; top: 0px; "><a class="btnOpenGallery" href="#" title="Open Gallery" style=" text-align: center; vertical-align: middle; line-height: 35px; "><i class="fa fa-eye fa-2x btnOpenGalleryIcon" style="color: rgb(77, 77, 77); align-content: center; line-height: 35px; vertical-align: middle; text-align: center;"></i></a></div>')
+
+        $(".leaflet-top.leaflet-right").prepend('<ul id="galleryOptions" ondblclick="event.stopPropagation();" ondrag="event.stopPropagation();" onclick="event.stopPropagation();" style="transition: all 0.5s ease; clear: none; float: none; position: absolute; right: -200px; display: none; top: 14px;" class="leaflet-control nav nav-list tree"><li><button onclick="updateGeoGallery(newYear-parseInt($(\'#deviationYears\').val()), newYear+parseInt($(\'#deviationYears\').val()))"  id="reloadImagesButton" title="Reload Images" type="submit"                                                class="btn btn-default lowerButton"><i id="refreshIcon" class="fa fa-refresh"></i></button></li><li><button onclick="seeAllLocations()"  id="seeLocationsButton" title="See all Locations" type="submit" class="btn btn-default lowerButto"><i id="allLocationsIcon" class="fa fa-location-arrow"></i></button></li><li><div class="squaredOne"><input type="checkbox" checked value="None" id="peopleImgBox" name="check" /><label for="peopleImgBox"></label></div><div class="labelForBox">People</div></li><li>  <div class="squaredOne"><input type="checkbox"  value="None" id="itemsImgBox" name="check" /><label for="itemsImgBox"></label></div><div class="labelForBox">Items</div></li><li>  <div class="squaredOne"><input type="checkbox" checked value="None" id="otherImgBox" name="check" /><label for="otherImgBox"></label></div><div class="labelForBox">Other</div></li><li><div class="input-group" style="width: 100px; margin-left: -71px;"><div class="input-group-addon">Deviation</div><input type="number" min="0" step="1" class="form-control" id="deviationYears" value="10"></div></li><li><div class="input-group" style="width: 100px; margin-left: -43px;"><div class="input-group-addon">Limit</div><input type="number" min="1" step="1" class="form-control" style="width: 60px;" id="limitYears" value="20"></div></li></ul>');
+                
+                
         $(".leaflet-top.leaflet-right").css("width","96%")
-        $(".leaflet-top.leaflet-right").css("height","130px");
+        $(".leaflet-top.leaflet-right").css("height","230px");
 
         $(".btnOpenGallery").click(function () {
             if($('#lightGallery').css("display") !== "none"){
                 $('#lightGallery').css("display","none")
+                $('#galleryOptions').css("right","-200px")
+
+               
+                setTimeout(function(){  $('#galleryOptions').css("display","none") }, 500);
+                
                 $(".leaflet-top.leaflet-right").css("overflow","inherit");
+                $(".btnOpenGallery").css("background-color","rgba(255,255,255,0.4)");
+                $(".btnOpenGallery").removeClass( "activeToggle" );
+
+                $(".tempImageLine").parent().remove();
+                
+                
             }
             else {
                 $('#lightGallery').css("display","block")
+
+                $('#galleryOptions').css("display","block");
+                $('#galleryOptions').css("right","3px")
+                
                 $(".leaflet-top.leaflet-right").css("overflow","hidden");
+
+                $(".btnOpenGallery").addClass( "activeToggle" );
+           //     $(".btnOpenGallery").css("background-color","rgba(255,255,255,0.8)");
+                
                 if($('#lightGallery').html() == ""){
-                    updateGeoGallery(newYear-10,newYear+10,"people");
-                }                
+                    updateGeoGallery(newYear-parseInt($("#deviationYears").val()),newYear+parseInt($("#deviationYears").val()),"people");
+                }
+
+                $(".tempImageLine").parent().remove();
+
+                $('#lightGallery').find("img").trigger('mouseout');
+                setTimeout(
+                        function(){
+                            $('#lightGallery').find("img").trigger('mouseover');
+                        },
+                200);
             }
             
         });
@@ -1071,7 +1148,8 @@ $("input:checkbox").change(function(){
         });
 
         $('#featureTree .tree-toggler').click()
-
+        $('#markerIcon').click()
+        $('#areaIcon').click()
        // $('#toggle-one').bootstrapToggle();
 
 
@@ -1105,6 +1183,9 @@ $("input:checkbox").change(function(){
         });
 
         $( "#relHier" ).on( "click", function() {
+            $(".background-active").removeClass( "background-active" );
+            $("#relHier").addClass( "background-active" );
+            
             $("#hierTables").css("display","block");
             $("#hierBubbs").css("display","none");
             $("#hierStatic").css("display","none");
@@ -1121,6 +1202,9 @@ $("input:checkbox").change(function(){
             activeListFeature="rel";
         });
         $( "#mrelHier" ).on( "click", function() {
+            $(".background-active").removeClass( "background-active" );
+            $("#mrelHier").addClass( "background-active" );
+            
             $("#hierTables").css("display","block");
             $("#hierStatic").css("display","none");
             $("#hierBubbs").css("display","none");
@@ -1136,6 +1220,9 @@ $("input:checkbox").change(function(){
             activeListFeature="mrel";
         });
         $( "#culHier" ).on( "click", function() {
+            $(".background-active").removeClass( "background-active" );
+            $("#culHier").addClass( "background-active" );
+            
             $("#hierTables").css("display","block");
             $("#hierStatic").css("display","none");
             $("#hierBubbs").css("display","none");
@@ -1152,6 +1239,10 @@ $("input:checkbox").change(function(){
             activeListFeature="cul";
         });
         $( "#polHier" ).on( "click", function() {
+
+            $(".background-active").removeClass( "background-active" );
+            $("#polHier").addClass( "background-active" );
+            
             $("#hierTables").css("display","block");
             $("#hierStatic").css("display","none");
             $("#hierBubbs").css("display","none");
@@ -1168,6 +1259,10 @@ $("input:checkbox").change(function(){
         });
 
         $( "#allProvinces" ).on( "click", function() {
+
+            $(".background-active").removeClass( "background-active" );
+            $("#allProvinces").addClass( "background-active" );
+            
             $("#hierTables").css("display","block");
             $("#hierBubbs").css("display","none");
             $("#hierVis").css("display","none");
@@ -1185,6 +1280,10 @@ $("input:checkbox").change(function(){
         
 
         $( "#btn_sun-visualize" ).on( "click", function() {
+
+            $(".background-active").removeClass( "background-active" );
+            $("#btn_sun-visualize").addClass( "background-active" );
+            
             $("#hierBubbs").css("display","none");
             $("#hierTables").css("display","none");
             $("#hierVis").css("display","block");
@@ -1197,7 +1296,10 @@ $("input:checkbox").change(function(){
         });
 
         $( "#btn_bub-visualize" ).on( "click", function() {
-
+            
+            $(".background-active").removeClass( "background-active" );
+            $("#btn_bub-visualize").addClass( "background-active" );
+            
             $("#hierTables").css("display","none");
             $("#hierVis").css("display","none");
             $("#hierBubbs").css("display","block");
@@ -1220,9 +1322,12 @@ $("input:checkbox").change(function(){
             }
             //switchSBData(currSB);
         });
-
+/*
         $( "#btn_static-visualize" ).on( "click", function() {
 
+            $(".background-active").removeClass( "background-active" );
+            $("#btn_static-visualize").addClass( "background-active" );
+            
             $("#hierTables").css("display","none");
             $("#hierVis").css("display","none");
             $("#hierBubbs").css("display","none");
@@ -1233,24 +1338,49 @@ $("input:checkbox").change(function(){
                 loadFullTimeLoaded()
             }
 
-            if(!a_bubLoadedOnce){
-           //     a_bubLoadedOnce=true;
-            //    a_bubLoaded=true;
-            //    loadData();
-            }
-            else if (!a_bubLoaded){
-           //     a_bubLoaded=true;
-            //    reloadData();
-            }
-            //switchSBData(currSB);
         });
-
+*/
+        $("#peopleChecked").parent().find(".toggle-on").css({"background-color": "#899b37", "color": "white", "font-weight": "bolder"});
+        $("#milBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#expBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#polBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#sciBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#artBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#relBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#athBox").parent().find("label").css({"background-color": "#899b37"});
+        $("#uncBox").parent().find("label").css({"background-color": "#899b37"});    
+        
+        $("#cityChecked").parent().find(".toggle-on").css({"background-color": "#2e8282", "color": "white", "font-weight": "bolder"});
+        $("#citiesBox").parent().find("label").css({"background-color": "#2e8282"});
+        $("#castlesBox").parent().find("label").css({"background-color": "#2e8282"});
+        
+        
+        $("#eventsChecked").parent().find(".toggle-on").css({"background-color": "#c9352b", "color": "white", "font-weight": "bolder"});
+        
+        $("#otherChecked").parent().find(".toggle-on").css({"background-color": "#727272", "color": "white", "font-weight": "bolder"});
+        $("#areaInfoBox").parent().find("label").css({"background-color": "#727272"});
+        $("#unclassifiedBox").parent().find("label").css({"background-color": "#727272"});
+        
+        $("#artChecked").parent().find(".toggle-on").css({"background-color": "#764a25", "color": "white", "font-weight": "bolder"});
+        
+        
         $( "#btn_staticFull" ).on( "click", function() {
 
+            $("#hierTables").css("display","none");
+            $("#hierVis").css("display","none");
+            $("#hierBubbs").css("display","none");
+            $("#hierStatic").css("display","block");
+            
+            $(".background-active").removeClass( "background-active" );
+            $("#btn_staticFull").addClass( "background-active" );
+            
             $("#staticFullView").css("display","block");
             $("#animFullView").css("display","none");
 
-            if(!rulStaticLoaded){
+            if(!a_fullTimeLoaded){
+                a_fullTimeLoaded=true;
+                loadFullTimeLoaded("static")
+            } else if(!rulStaticLoaded){
                 rulStaticLoaded = true;
                 runStackedRul();
             }
@@ -1259,15 +1389,52 @@ $("input:checkbox").change(function(){
 
         $( "#btn_animFull" ).on( "click", function() {
 
+            $("#hierTables").css("display","none");
+            $("#hierVis").css("display","none");
+            $("#hierBubbs").css("display","none");
+            $("#hierStatic").css("display","block");
+
+            if(!a_fullTimeLoaded){
+                a_fullTimeLoaded=true;
+                loadFullTimeLoaded("anim")
+            } else if(!rulAnimLoaded){
+                rulAnimLoaded = true;
+                runRulChart();
+            }
+            
+            $(".background-active").removeClass( "background-active" );
+            $("#btn_animFull").addClass( "background-active" );
+            
             $("#staticFullView").css("display","none");
             $("#animFullView").css("display","block");
+            
         });
         
         lockFeatureSelection();
+        $(".leaflet-overlay-pane").find(".leaflet-zoom-animated").css("z-index","4")
 
-
-
+        $(".leaflet-overlay-pane").find(".leaflet-zoom-animated").css("pointer-events","none")
+        
+        $(".datetimeControl").parent().css("pointer-events","none")
         myLightGallery = $("#lightGallery").lightGallery();
+
+
+        $("#lightGallery").on("scrollstop",function(){
+            if($("#seeLocationsButton").hasClass("activeToggle")){
+
+                $(".tempImageLine").parent().remove();
+                
+                $('#lightGallery').find("img").trigger('mouseout');
+                setTimeout(
+                        function(){
+                            $('#lightGallery').find("img").trigger('mouseover');
+                        },
+                        200);
+            }
+        });
+        
+        
+        
     });
     
     function toggleSBData(){

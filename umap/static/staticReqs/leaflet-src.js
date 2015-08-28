@@ -3670,6 +3670,108 @@ var newObject;
 
         _initIcon: function () {
             console.debug("!! initIcon")
+
+            if(this._childCount === undefined){
+                var tmpURL = this._getIconUrl('icon')
+                console.debug("!! looking up icon",tmpURL)
+                var tmpOptions = {
+                    iconUrl: '/static/staticReqs/customIcons/otherMarkerArea.png',
+                    // shadowUrl: 'leaf-shadow.png',
+                    iconSize:     [38, 38], // size of the icon
+                    iconAnchor:   [19, 38] // point of the icon which will correspond to marker's location
+                }
+                //TODO:
+                if (compareLast(tmpURL,"tary.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerMil.png';
+                }
+                else if (compareLast(tmpURL,"cian.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerPol.png';
+                }
+                else if (compareLast(tmpURL,"Artist.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerArt.png';
+                }
+                else if (compareLast(tmpURL,"ntist.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerSci.png';
+                }
+                else if (compareLast(tmpURL,"xp.png")){ //!
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerExp.png';
+                }
+                else if (compareLast(tmpURL,"-C.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerR-C.png';
+                }
+                else if (compareLast(tmpURL,"-I.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerR-I.png';
+                }
+                else if (compareLast(tmpURL,"-J.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerR-J.png';
+                }
+                else if (compareLast(tmpURL,"-B.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerR-B.png';
+                }
+                else if (compareLast(tmpURL,"Ath.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerAth.png';
+                }
+                else if (compareLast(tmpURL,"fined.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/personMarkerOth.png';
+                }
+                else if (compareLast(tmpURL,"null.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/otherMarkerUnc.png';
+                }
+                else if (compareLast(tmpURL,"sculpture.png") ||
+                    compareLast(tmpURL,"0art.png") ||
+                    compareLast(tmpURL,"0type.png") ||
+                    compareLast(tmpURL,"ting.png") ||
+                    compareLast(tmpURL,"lisk.png") ||
+                    compareLast(tmpURL,"krater.png") ||
+                    compareLast(tmpURL,"hora.png") ){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/artMarker.png';
+                }
+                else if (compareLast(tmpURL,"castle.png") ||
+                    compareLast(tmpURL,"ruin.png") ||
+                    compareLast(tmpURL,"fortification.png") ||
+                    compareLast(tmpURL,"palace.png") ||
+                    compareLast(tmpURL,"teau.png") ){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/castleMarker.png';
+                }
+                else if (compareLast(tmpURL,"city.png") ||
+                    compareLast(tmpURL,"town.png") ||
+                    compareLast(tmpURL,"village.png") ||
+                    compareLast(tmpURL,"university.png") ||
+                    compareLast(tmpURL,"0inhabitants.png") ||
+                    compareLast(tmpURL,"church.png") ||
+                    compareLast(tmpURL,"settlement.png") ||
+                    compareLast(tmpURL,"structure.png")
+                    ||
+                    compareLast(tmpURL,"building.png") ||
+                    compareLast(tmpURL,"monastry.png") ||
+                    compareLast(tmpURL,"cathedral.png")
+                    ||
+                    compareLast(tmpURL,"building.png") ||
+                    compareLast(tmpURL,"capital.png") ||
+                    compareLast(tmpURL,"quarry.png")
+                    ||
+                    compareLast(tmpURL,"city-state.png") ||
+                    compareLast(tmpURL,"Tell.png") ||
+                    compareLast(tmpURL,"0type.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/cityMarker.png';
+                }
+                else if (compareLast(tmpURL,"/b0.png") ||
+                    compareLast(tmpURL,"/b1.png") ||
+                    compareLast(tmpURL,"/b2.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/battleMarker.png';
+                }
+                else if (compareLast(tmpURL,"/s0.png") ||
+                    compareLast(tmpURL,"/s1.png") ||
+                    compareLast(tmpURL,"/s2.png")){
+                    tmpOptions.iconUrl = '/static/staticReqs/customIcons/siegeMarker.png';
+                }
+                
+                this.options.icon = L.icon(tmpOptions);
+
+            }
+            //console.debug("!! initIcon",this._getIconUrl('icon'))
+            
+            
             var options = this.options,
                 map = this._map,
                 animation = (map.options.zoomAnimation && map.options.markerZoomAnimation),
@@ -4655,7 +4757,7 @@ var newObject;
             if(!this._container){
                 console.debug("ERROR: this._container not found. this: ",this);
             }
-            if(this._container && this._container.parentNode == $("#areaPolys")[0]){
+            if(this._container && this._container.parentNode === $("#areaPolys")[0]){
                 $("#areaPolys")[0].removeChild(this._container);
             }
             else if (this._container && this._container.parentNode != null){
@@ -4788,6 +4890,14 @@ var newObject;
     
                 this._container.appendChild(this._path);
             }
+            else if (drawingImageLine) {
+                this._container = this._createElement('g');
+
+                this._path = this._createElement('path');
+                this._container.appendChild(this._path);
+
+                this._map._pathRoot.appendChild(this._container);
+            }
             
             //	this._container = this._createElement('g'); //setAttribute("id",iterator);  //$("#areaPolys")[0];
             //  this._container.setAttribute('filter', 'url(#blur)');
@@ -4907,10 +5017,12 @@ var newObject;
                 else if (L.Browser.svg || !L.Browser.vml) {
 
                     L.DomUtil.addClass(this._path, 'leaflet-clickable');
-                    console.debug("!23!")
 
-
-                    if  (!$(".datetimeValue").hasClass('leaflet-clickable') && !drawingSpiderweb){
+                    
+                    if (drawingImageLine){
+                        L.DomUtil.addClass(this._path, 'tempImageLine');
+                    }
+                    else if  (!$(".datetimeValue").hasClass('leaflet-clickable') && !drawingSpiderweb){
 
                         L.DomUtil.addClass($(".datetimeValue")[0], 'leaflet-clickable');
                         newObject = jQuery.extend({}, this);
@@ -5004,7 +5116,7 @@ var newObject;
 
                 if (this.options.zoomAnimation && L.Browser.any3d) {
                     L.DomUtil.addClass(this._pathRoot, 'leaflet-zoom-animated');
-
+                    
                     this.on({
                         'zoomanim': this._animatePathZoom,
                         'zoomend': this._endPathZoom

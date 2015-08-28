@@ -135,6 +135,7 @@ function hideAllUnchecked(){
 }
 function loadFeatures(that,newYear,type){
 
+
     var tmpFix;
     if (type == "events"){
         console.log("*** drawing Events")

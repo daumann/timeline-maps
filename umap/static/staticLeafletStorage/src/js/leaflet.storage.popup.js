@@ -22,16 +22,16 @@ function openDatatable(searchKey){
     
     var tmpSource =  $("iframe")[0].src; //.replace("?printable=yes","");
 
-
-   
-
-    
-    console.debug("source now: ",$("iframe")[0].src );
-    
  //   $('#chronasWiki').hide();
     if ($("#storage-ui-container")[0].style.width != "100%"){
         
+        
+        $("#storage-ui-container").addClass("fullWidthContainer")
+/*
+        $("#storage-ui-container").css("background","white");
         $("#storage-ui-container")[0].style.padding = "0 0px 23px 0px";
+        */
+        
         $("iframe")[0].style.width = "100%";
 
         $("iframe")[0].src = tmpSource.replace("?printable=yes","");      
@@ -46,6 +46,8 @@ function openDatatable(searchKey){
         $(".fullWidth").removeClass("fullWidth")
         
         $('#chronasWiki').load(function(){
+
+            console.debug("!x!   finished loading");
             if($("iframe")[0].src != 'http://en.wikipedia.org/wiki/' && $("iframe")[0].src != 'http://en.wikipedia.org/wiki/?printable=yes'){
                 $('#chronasWiki').show(); 
                 $('#notFoundNotice').hide()
@@ -63,8 +65,13 @@ function openDatatable(searchKey){
     }
     else{
 
-        $("#storage-ui-container")[0].style.padding = "0 20px 23px 20px";
-        $("iframe")[0].style.width = "calc(100% - 20px)";
+        $("#storage-ui-container").removeClass("fullWidthContainer")
+   /*     
+        $("#storage-ui-container").css({'background':'url("/static/staticReqs/rightPaper.jpg") fixed center',
+            'background-color': 'initial'});
+        $("#storage-ui-container")[0].style.padding = "0px 0px 10px 10px;";
+   */
+        $("iframe")[0].style.width = "calc(100% - 15px)";
        
 
         if(tmpSource.indexOf("?printable=yes") == -1)
@@ -82,6 +89,8 @@ function openDatatable(searchKey){
         
         
         $('#chronasWiki').load(function(){
+            
+            console.debug("!x!   finished loading")
             if(tmpSource != 'http://en.wikipedia.org/wiki/' && tmpSource != 'http://en.wikipedia.org/wiki/?printable=yes'){  
                 $('#chronasWiki').show(); 
                 $('#notFoundNotice').hide()
@@ -145,7 +154,8 @@ L.S.Popup = L.Popup.extend({
         console.debug("!!! rendering Body!");
 
         $(".leaflet-top.leaflet-right")[0].style.display = "none";
-        
+
+        $(".tempImageLine").hide();
         
         var template = this.feature.getOption('popupContentTemplate'),
             container = L.DomUtil.create('div', ''),
@@ -191,6 +201,12 @@ L.S.Popup = L.Popup.extend({
         }
         
         console.debug(content,properties, "!iframe",$('#chronasWiki'));
+        $('#chronasWiki').hide();
+        $('#loader1').show();
+        $('#chronasWiki').load(function(){
+            $('#loader1').hide();
+            $('#chronasWiki').show();
+        });
 /*
         if($('#chronasWiki') != []){
             $('#chronasWiki').on('load', function () {
@@ -394,26 +410,12 @@ L.S.Popup.SimplePanel = L.S.Popup.extend({
 
         if($($(this)[0].container).find("iframe").length  != 0){
             var button4 = L.DomUtil.create('li', 'overviewContainer');
+            button4.style.display = "none";
             L.DomUtil.create('i', 'chronas-icon-1 storage-overview', button4);
             var label4 = L.DomUtil.create('span', 'overview', button4);
             label4.innerHTML = 
-'<div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_mon">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_mon"  id="content_mon"> </div>  <div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rul">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_rul"  id="content_rul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cul">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_cul"  id="content_cul"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rel">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_rel"  id="content_rel"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cap">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_cap"  id="content_cap"> </div><div class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_size">@</span> <input type="text" class="form-control" placeholder="n/a" aria-describedby="btn_size"  id="content_Size"> </div>'
+'<div id="content_monA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_mon"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_mon"  id="content_mon"> </div>  <div id="content_rulA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rul"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_rul"  id="content_rul"> </div><div id="content_culA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cul"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_cul"  id="content_cul"> </div><div id="content_relA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_rel"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_rel"  id="content_rel"> </div><div id="content_capA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_cap"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_cap"  id="content_cap"> </div><div id="content_SizeA" class="resource input-group input-group-sm"> <span class="input-group-addon" id="btn_size"></span> <input type="text" readonly class="form-control" placeholder="n/a" aria-describedby="btn_size"  id="content_Size"> </div>'
 
-/*
-
-            $("#content_cul")[0].value =  $("#cultureSpec")[0].innerHTML
-            $("#content_rel")[0].value = $("#religionSpec")[0].innerHTML
-            $("#content_rul")[0].value =  $("#rulerSpec")[0].innerHTML
-          //  $("#mainRelSpec")[0].value = relGen[d.properties.Rel][0];
-            $("#content_cap")[0].value =  $("#capitalSpec")[0].innerHTML
-     //       $("#regionSpec")[0].value = d.properties.name;
-            $("#content_Size")[0].value = $("#populationSpec")[0].innerHTML
-
-*/
-            
-            //  label2.id = "fullWidth";
-
-        //    L.DomEvent.on(button4, 'click', openOverview);
             return button4;
         }
         else

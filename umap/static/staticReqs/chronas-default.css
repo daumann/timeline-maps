@@ -172,6 +172,8 @@ fieldset.toggle.on .more_style_options {
 }
 .storage-ui #storage-ui-container {
     display: block;
+    transition: all 1s ease;
+    overflow-y: hidden;
 }
 .storage-ui .leaflet-right {
     right: 50%;
@@ -287,22 +289,54 @@ fieldset.toggle.on .more_style_options {
 
 .datetimeControl {
 
+
+    pointer-events: none;
     font-family: "Papyrus";
     opacity: 0.6;
     font-size: 70px;
+
+
+
     margin-bottom: 100px;
 
+    text-shadow: 0px 0px 8px #FFFFFF;
 }
 /* *********** */
 /* Close link  */
 /* *********** */
 .overviewContainer{
     float: left !important;
-    margin-left: -30px !important;
+    display: block;
+    display: block;
+    margin-top: 7px;
+    padding-left: 35px;
+}
+
+body {
+    overflow-y: hidden;
+}
+#storage-ui-container{
+    background: url("/static/staticReqs/rightPaper.jpg") fixed center;
+    background-size: contain;
+
+    /* background-repeat: no-repeat; */
+    background-position: right;
+
+    background-size: 50%;
+
+
+
+    border: 15px solid transparent;
+
+
+    border-image: url("/static/staticReqs/customIcons/border.png") 62 62 repeat;
+
+
+    padding: 0px 0px 10px 10px;
 }
 .fullWidth{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/expanding5.png");
+    background-image: url("/static/staticReqs/customIcons/expanding5.png");
     background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
@@ -325,7 +359,7 @@ fieldset.toggle.on .more_style_options {
 }
 .halfWidth{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/multimediaoption30.png");
+    background-image: url("/static/staticReqs/customIcons/multimediaoption30.png");
     background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
@@ -338,7 +372,7 @@ fieldset.toggle.on .more_style_options {
 
 .GoToWikipedia{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/wikipedia2.png");
+    background-image: url("/static/staticReqs/customIcons/wikipedia2.png");
     background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
@@ -349,7 +383,7 @@ fieldset.toggle.on .more_style_options {
 }
 .storage-list{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    background-image: url("/static/staticReqs/customIcons/Spreadsheet_chart_64.png");
     background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
@@ -361,7 +395,7 @@ fieldset.toggle.on .more_style_options {
 }
 
 .leaflet-control-browse .storage-browse-hierarchy{
-    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    background-image: url("/static/staticReqs/customIcons/spreadsheetPlusAnalytics.png");
     width: 36px;
     height: 36px;
     background-size: 25px 25px;
@@ -369,7 +403,7 @@ fieldset.toggle.on .more_style_options {
     background-color: rgba(255,255,255,0.9);
     /*
         background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/Spreadsheet_chart_64.png");
+    background-image: url("/static/staticReqs/customIcons/Spreadsheet_chart_64.png");
     
     
     padding: 0 10px;
@@ -377,6 +411,8 @@ fieldset.toggle.on .more_style_options {
     */
     opacity: 0.6;
 
+    border: 1px solid rgb(140, 135, 132);
+    margin-top: 2px;
 }
 .leaflet-control-browse .storage-browse-hierarchy:hover{
 
@@ -385,7 +421,7 @@ fieldset.toggle.on .more_style_options {
 
 .report{
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/warning45.png");
+    background-image: url("/static/staticReqs/customIcons/warning45.png");
     background-size: 16px 16px;
     display: inline;
     padding: 0 10px;
@@ -397,7 +433,7 @@ fieldset.toggle.on .more_style_options {
 }
 .storage-close-icon {
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-image: url("/static/staticReqs/customIcons/cancel30.png");
     background-size: 16px 16px;
     display: inline;
     margin-top: 10px;
@@ -413,9 +449,11 @@ fieldset.toggle.on .more_style_options {
     cursor: pointer !important;
     text-align: center;
     opacity: 0.6;
+    line-height: 40px;
+    /* margin-bottom: 0px; */
 }
 .markerBullets:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .divider{
@@ -435,14 +473,14 @@ fieldset.toggle.on .more_style_options {
 }
 #CloseMarker.storage-close-icon {
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-image: url("/static/staticReqs/customIcons/cancel30.png");
     background-size: 10px 10px;
     display: block;
-    margin-top: -35px !important;
+    margin-top: -49px !important;
     background-position: 5px 5px;
     /* padding: 10px 10px; */
     opacity: 0.5;
-    margin-right: -10px;
+    margin-right: -24px;
     height: 20px;
     width: 20px;
 }
@@ -452,14 +490,14 @@ fieldset.toggle.on .more_style_options {
 
 #CloseAna.storage-close-icon {
     background-repeat: no-repeat;
-    background-image: url("/static/staticReqs/flaticons/cancel30.png");
+    background-image: url("/static/staticReqs/customIcons/cancel30.png");
     background-size: 10px 10px;
     display: inline;
-    margin-top: -35px !important;
+    margin-top: -49px !important;
     background-position: 5px 5px;;
     /* padding: 10px 10px; */
     opacity: 0.5;
-    margin-right: -10px;
+    margin-right: -24px;
     height: 20px;
     width: 20px;
 }
@@ -521,6 +559,13 @@ path:hover {
     fill-opacity: .8;
 }
 
+.tempImageLine {
+    fill: #000;
+    fill-opacity: .9;
+    stroke-opacity: .8;
+    stroke: #0b0d1d;
+    stroke-width: 0.4px;
+}
 
 .labels {
     text-anchor: middle;
@@ -655,6 +700,7 @@ path:hover {
 
 .advanced {
     white-space: nowrap !important;
+    cursor: pointer;
     display: inline-block !important;
 }
 
@@ -669,6 +715,18 @@ path:hover {
 
 }
 
+#reloadImagesButton{
+    padding: 1px 5px;
+    margin-top: -13px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+#seeLocationsButton{
+    padding: 1px 5px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+button#reloadImagesButton {}
 
 
 
@@ -725,13 +783,7 @@ path:hover {
     position: absolute;
     width: 12px;
     height: 12px;
-    background: #49afcd;
 
-    background: -webkit-linear-gradient(top, #5bc0de 0%, #2f96b4 100%);
-    background: -moz-linear-gradient(top, #00bf00 0%, #009400 100%);
-    background: -o-linear-gradient(top, #00bf00 0%, #009400 100%);
-    background: -ms-linear-gradient(top, #00bf00 0%, #009400 100%);
-    background: linear-gradient(top, #00bf00 0%, #009400 100%);
 
     top: 1px;
     left: 1px;
@@ -741,6 +793,57 @@ path:hover {
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
 }
 
+.squaredOne #milBoxA:after {
+    background-color: #899b37;
+}
+.squaredOne #expBoxA:after {
+    background: #899b37;
+}
+.squaredOne #polBoxA:after {
+    background-color: #899b37;
+}
+.squaredOne #sciBoxA:after {
+    background: #899b37;
+}
+
+.squaredOne #artBoxA:after {
+    background-color: #899b37;
+}
+.squaredOne #relBoxA:after {
+    background: #899b37;
+}
+.squaredOne #athBoxA:after {
+    background-color: #899b37;
+}
+.squaredOne #uncBoxA:after {
+    background: #899b37;
+}
+
+.squaredOne #citiesBoxA:after {
+    background-color: #2e8282;
+}
+.squaredOne #castlesBoxA:after {
+    background: #2e8282;
+}
+
+
+.squaredOne #areaInfoBoxA:after {
+    background-color: #727272;
+}
+.squaredOne #unclassifiedBoxA:after {
+    background: #727272;
+}
+
+/*
+$("#milBox").parent().find("label").css({"background-color": "#899b37"});
+$("#expBox").parent().find("label").css({"background-color": "#899b37"});
+$("#polBox").parent().find("label").css({"background-color": "#899b37"});
+$("#sciBox").parent().find("label").css({"background-color": "#899b37"});
+$("#artBox").parent().find("label").css({"background-color": "#899b37"});
+$("#relBox").parent().find("label").css({"background-color": "#899b37"});
+$("#athBox").parent().find("label").css({"background-color": "#899b37"});
+$("#uncBox").parent().find("label").css({"background-color": "#899b37"});
+*/
 .squaredOne label:hover::after {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
     filter: alpha(opacity=30);
@@ -764,8 +867,37 @@ path:hover {
 .pull-right{float:right!important;}
 
 .hier {
+    opacity: 0.6;
     float: left;
     margin-right: 0px !important;
+
+    background-image: url("/static/staticReqs/customIcons/Spreadsheet_chart_64.png");
+    width: 36px;
+    height: 36px;
+    background-size: 25px 25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+
+.hier2 {
+    opacity: 0.8;
+    float: left;
+    margin-right: 0px !important;
+
+    background-image: url("/static/staticReqs/customIcons/Spreadsheet_chart_64.png");
+    width: 36px;
+    height: 36px;
+    background-size: 25px 25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+
+.hier:hover {
+    opacity: 0.9;
 }
 
 .centerClass {
@@ -774,6 +906,25 @@ path:hover {
     line-height: 15px !important;
     height: inherit !important;
 
+    background-image: url("/static/staticReqs/customIcons/center.png") !important;
+
+    background-size: 15px 15px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.detailsClass {
+    cursor: pointer;
+    background-image: inherit !important;
+    line-height: 15px !important;
+    height: inherit !important;
+
+    background-image: url("/static/staticReqs/customIcons/details.png") !important;
+
+    background-size: 15px 15px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .singImage{
@@ -792,6 +943,7 @@ path:hover {
     /* float: right; */
     /* padding: 2px !important; */ max-height: 100px !important;
     /* float: right !important; */;
+    right: 0px;
 }
 #lightGallery li img {
     opacity: 0.9;
@@ -822,19 +974,24 @@ path:hover {
 }
 */
 #lightGallery {
-    max-height: 110px !important;
-    overflow-y: hidden !important;
+    width: 95%;
+    max-height: 104px !important;
     white-space: nowrap !important;
     overflow: hidden;
     clear: none !important;
     float: right !important;
-    /*  right: 45px !important;*/
+    right: 68px !important;
+    border-top: 14px;
 
-    border: 2px solid rgb(164, 183, 185);
-
+    border-image: url("/static/staticReqs/customIcons/border.png") 58 60 0 repeat;
+    padding: 0px 0px 0px 0px;
+    background-color: rgba(245, 239, 233, 0.9);
 }
+
+
+
 #lightGallery:hover {
-    overflow-x: visible !important;
+    overflow-x: auto !important;
 }
 
 .leaflet-control-edit-enable.storage-control {
@@ -846,6 +1003,7 @@ path:hover {
 .resource{
     width: 100px;
     float: left !important;
+    margin-right: 3px;
     cursor: pointer !important;
 }
 
@@ -864,10 +1022,71 @@ path:hover {
 
 }
 
+#btn_mon{
+    background-image: url("/static/staticReqs/customIcons/king.png");
+    width: 30px;
+    height: 30px;
+    background-size: 21px 21px;
+    background-position: 4px 3px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
 
+#btn_rul{
+    background-image: url("/static/staticReqs/customIcons/rul.png");
+    width: 30px;
+    height: 30px;
+    background-size: 20px 20px;
+    background-position: 5px 4px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
 
+#btn_cul{
+    background-image: url("/static/staticReqs/customIcons/cul.png");
+    width: 30px;
+    height: 30px;
+    background-size: 22px 22px;
+    background-position: 4px 4px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
 
+#btn_rel{
+    background-image: url("/static/staticReqs/customIcons/rel.png");
+    width: 30px;
+    height: 30px;
+    background-size: 22px 22px;
+    background-position: 3px 3px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
 
+#btn_cap{
+    background-image: url("/static/staticReqs/customIcons/cap.png");
+    width: 30px;
+    height: 30px;
+    background-size: 21px 21px;
+    background-position: 4px 3px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
+
+#btn_size{
+    background-image: url("/static/staticReqs/customIcons/pop.png");
+    width: 30px;
+    height: 30px;
+    background-size: 20px 20px;
+    background-position: 5px 4px;
+    background-color: rgba(255,255,255,0.9);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+}
 
 #bubbles_vis {
     /* width: 100%; */
@@ -905,12 +1124,12 @@ path:hover {
     left: 100px;
     -moz-border-radius:5px !important;
     border-radius: 5px !important;
-    border: 2px solid #000 !important;
+    border: 2px solid #737A76 !important;
     /* background: #222222; */
     background: #fff !important;
     opacity: .9 !important;
     /* color: #eeeeee; */
-    color: black !important;
+    color: rgb(94, 106, 104) !important;
     padding: 10px !important;
     width: 300px;
     font-size: 12px !important;
@@ -961,7 +1180,6 @@ path:hover {
     font: 500 28px "Helvetica Neue";
 }
 
-
 .year.label.active {
     fill: #aaa;
 }
@@ -988,4 +1206,101 @@ path:hover {
 .lightGalleryOverlay:hover{
 
     opacity: 1;
+}
+
+#deviationYears{
+    width: 60px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+#limitYears{
+    background-color: rgba(255,255,255,0.4);
+}
+
+.btnOpenGallery{
+    background-image: none !important;
+    background-color: rgba(255,255,255,0.4) !important;
+}
+
+.btnOpenGalleryIcon{
+    color: rgb(77, 77, 77);
+}
+
+.btnOpenGalleryIcon:hover{
+    color: rgb(127, 127, 127);
+}
+
+.btnOpenGallery:hover{
+    background-color: rgba(255,255,255,0.8) !important;
+}
+
+.activeToggle{
+    background-color: rgba(255,255,255,0.9) !important;
+    opacity: 1 !important;
+}
+
+#polHier{
+    background-image: url("/static/staticReqs/customIcons/tableRul.png");
+}
+#culHier{
+    background-image: url("/static/staticReqs/customIcons/tableCul.png");
+}
+#relHier{
+    background-image: url("/static/staticReqs/customIcons/tableRel.png");
+}
+#mrelHier{
+    background-image: url("/static/staticReqs/customIcons/tablemRel.png");
+}
+#allProvinces{
+    background-image: url("/static/staticReqs/customIcons/tableProv.png");
+}
+#btn_sun-visualize{
+    background-image: url("/static/staticReqs/customIcons/sunburst.png");
+    /* margin-left: 20px; */
+}
+#btn_bub-visualize{
+    background-image: url("/static/staticReqs/customIcons/clustering.png");
+}
+#btn_static-visualize{
+    background-image: url("");
+}
+#btn_animFull{
+    background-image: url("/static/staticReqs/customIcons/animation.png");
+    margin-left: 40px;
+}
+#btn_staticFull{
+    background-image: url("/static/staticReqs/customIcons/static.png");
+}
+
+#areaIcon{
+    background-image: url("/static/staticReqs/customIcons/static.png");
+}
+
+#markerIcon{
+    background-image: url("/static/staticReqs/customIcons/marker.png");
+}
+
+#areaIcon{
+    background-image: url("/static/staticReqs/customIcons/area.png");
+}
+
+.justActive{
+    opacity: 0.9;
+}
+
+#animFullView {
+    margin-top: 20px;
+}
+
+#hierBubbs {
+    margin-top: 20px;
+}
+
+#hierStatic {
+    margin-top: 20px;
+}
+
+.fullWidthContainer{
+    background: white !important;
+    padding: 0 0px 23px 0px !important;
 }

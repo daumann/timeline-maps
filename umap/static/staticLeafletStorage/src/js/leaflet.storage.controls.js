@@ -158,11 +158,11 @@ L.Storage.DataLayersControl = L.Control.extend({
         toggle.href = '#';
         hierarchy.href = '#';
         this._datalayers_container = L.DomUtil.create('ul', 'storage-browse-datalayers', actions);
-
+/*
         var link = L.DomUtil.create('a', 'storage-browse-link', actions);
         link.href = '#';
         link.title = link.innerHTML = L._('List loaded markers');
-
+*/
         var add = L.DomUtil.create('a', 'show-on-edit block add-datalayer', actions);
         add.href = '#';
         add.innerHTML = add.title = L._('Add a layer');
@@ -172,11 +172,11 @@ L.Storage.DataLayersControl = L.Control.extend({
 
         L.DomEvent
             .on(toggle, 'click', L.DomEvent.stop);
-
+/*
         L.DomEvent
             .on(link, 'click', L.DomEvent.stop)
             .on(link, 'click', map.openBrowser, map);
-
+*/
         L.DomEvent
             .on(add, 'click', L.DomEvent.stop)
             .on(add, 'click', this.newDataLayer, this);
@@ -454,7 +454,7 @@ L.Storage.HomeControl = L.Control.extend({
             link = L.DomUtil.create('a', '', container);
 
         link.href = '/';
-        link.title = L._('Go to home page');
+        link.title = L._('Go to community page');
 
         return container;
     }

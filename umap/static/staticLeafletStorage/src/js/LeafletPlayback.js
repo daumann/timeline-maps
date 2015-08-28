@@ -654,7 +654,7 @@ L.Playback.DateControl = L.Control.extend({
                 if($("#year_"+newDate).length != 0)
                     $("#year_"+newDate).find(".layer-toggle")[0].click()
                 lastDate = newDate;
-                self._date.innerHTML = newDate; // L.Playback.Util.DateStr(1369786384250);
+                self._date.innerHTML = (newDate.toString().indexOf("-") === -1) ? newDate : newDate.toString().substr(1) + " BC"; // L.Playback.Util.DateStr(1369786384250);
                 console.debug("year changed");
                 //hideAllUnchecked();
                 
